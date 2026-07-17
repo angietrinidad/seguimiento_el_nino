@@ -1,0 +1,86 @@
+---
+title: "4. Asunción y área metropolitana"
+---
+
+Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —los
+**bañados Norte y Sur** y **La Chacarita**—, donde reside población en situación
+de vulnerabilidad social. El riesgo es doble: **fluvial** (crecida del río
+Paraguay) y **pluvial** (lluvias intensas sobre drenaje insuficiente).
+
+## 4.1 Hidrología del río Paraguay
+
+```{python}
+#| echo: false
+import csv
+from IPython.display import Markdown
+rows = list(csv.DictReader(open("datos/nivel-rio-paraguay.csv", encoding="utf-8")))
+if not rows:
+    md = "::: {.vacio}\nSerie del nivel del río Paraguay pendiente de carga.\n:::"
+else:
+    head="| Episodio | Fecha | Nivel (m) | Estación | Fuente | Conf. |\n|---|---|---|---|---|---|"
+    body="\n".join(f"| {r['episodio']} | {r['fecha']} | {r['nivel_m']} | {r['estacion']} | {r['fuente']} | {r['confiabilidad']} |" for r in rows)
+    md = head+"\n"+body
+Markdown(md)
+```
+
+: Niveles del río Paraguay en Asunción. `NC` = no confirmado en fuente primaria.
+
+La estación hidrométrica de Asunción registra niveles diarios **desde el 1 de
+enero de 1904** [prensa]{.badge-prensa} [@paraguayfluvial_2024]. El contraste
+entre fases del ENOS es marcado: frente a las crecidas de El Niño, la fase fría
+(La Niña) trajo una **bajante extrema de −1,61 m el 2 de noviembre de 2024**
+[prensa]{.badge-prensa} [@paraguayfluvial_2024].
+
+::: {.vacio}
+El pico exacto de 2015-16 (prensa: 7,85 m) y la serie completa de máximos por
+episodio deben cargarse desde el registro/anuario hidrológico oficial de la
+DINAC.
+:::
+
+## 4.2 Población desplazada en episodios recientes
+
+- **El Niño 2015-16 (muy fuerte):** **>72.000 personas** desplazadas en Asunción
+  (>100.000 nacional), según estimaciones gubernamentales
+  [estimación]{.badge-estimacion} [@uh_desplazados_2015]. Por zona:
+  **Bañado Sur/Tacumbú 1.765 familias**, **Bañado Norte 1.695 familias**,
+  **La Chacarita 756 familias** [prensa]{.badge-prensa} [@uh_desplazados_2015].
+- **El Niño 2018-19 (débil):** **14.823 familias / >47.400 personas** desplazadas
+  desde marzo de 2019 (río en 7,57 m). Distribución en albergues:
+  **Bañado Sur 6.500 familias** (48 albergues), **Bañado Norte 4.404 familias**
+  (49 zonas), **La Chacarita >1.800 familias** (21 albergues)
+  [oficial]{.badge-oficial} (DGRRD, 2019-05-30) [@muni_2019].
+
+## 4.3 Gestión municipal del riesgo (DGRRD)
+
+La **Dirección General de Gestión y Reducción de Riesgos de Desastres (DGRRD)**
+de la Municipalidad de Asunción coordina la respuesta: **sistema de albergues**
+(118 albergues activos y a capacidad durante el pico de 2019), reportes de
+situación y atención a población vulnerable [oficial]{.badge-oficial}
+[@muni_2019].
+
+::: {.vacio}
+Protocolos formales, umbrales de alerta temprana y planes de contingencia
+vigentes de la DGRRD pendientes de incorporar desde documento oficial.
+:::
+
+## 4.4 Inundaciones pluviales urbanas
+
+Además del desborde del río, Asunción sufre **inundaciones pluviales** por
+lluvias intensas sobre una **infraestructura de drenaje insuficiente**: en abril
+de 2024 un temporal dejó destrozos e inundaciones en Asunción y Central
+[prensa]{.badge-prensa} [@lanacion_2024].
+
+::: {.vacio}
+Falta caracterización cuantitativa del drenaje urbano (puntos críticos,
+capacidad, población expuesta a anegamiento pluvial) con fuente técnica.
+:::
+
+## 4.5 Población en situación de vulnerabilidad
+
+Los bañados y La Chacarita concentran **asentamientos informales** con viviendas
+precárias en la ribera. El reporte municipal de 2019 registró en los albergues
+**13.500 menores de edad**, **778 embarazadas** y **~1.000 adultos mayores**,
+indicativo del perfil de vulnerabilidad de la población desplazada
+[oficial]{.badge-oficial} (DGRRD, 2019-05-30) [@muni_2019]. UNICEF brindó
+asistencia psicosocial a niñez afectada por inundaciones
+[oficial]{.badge-oficial} [@unicef_py_inund].

@@ -1,0 +1,57 @@
+---
+title: "Metodología y convenciones"
+---
+
+## Principios
+
+Este repositorio se rige por cuatro reglas, derivadas del encargo original:
+
+1. **Prioridad a fuentes primarias.** Ante un mismo dato, se prefiere el
+   organismo oficial o el estudio académico por sobre la nota de prensa.
+2. **No fabricación de cifras.** Ningún valor numérico se incorpora sin fuente
+   verificable. Las estimaciones no confirmadas se marcan como tales.
+3. **Vacíos explícitos.** Cuando falta información se declara con una caja de
+   *vacío de información*, en vez de omitir el punto en silencio.
+4. **Trazabilidad.** Cada afirmación empírica remite a una entrada del
+   [registro de fuentes](fuentes/index.qmd).
+
+## Niveles de confiabilidad
+
+| Etiqueta | Uso |
+|---|---|
+| [oficial]{.badge-oficial} | Organismos estatales (DINAC, SEN, MAG, DGRRD, BCP) e intergubernamentales (WMO, NOAA, CEPAL, OCHA). |
+| [académico]{.badge-academico} | Revistas indexadas e instituciones científicas. |
+| [prensa]{.badge-prensa} | Medios de comunicación. Usado cuando no hay fuente primaria disponible. |
+| [estimación]{.badge-estimacion} | Dato inferido o no confirmado; requiere nota. |
+
+## Cómo señalar un vacío
+
+En el texto `.qmd`:
+
+```markdown
+::: {.vacio}
+No se localizó dato oficial sobre X para el episodio 2015-16.
+:::
+```
+
+## Datos numéricos
+
+Las series de tiempo viven en `datos/*.csv` con las columnas descritas en el
+[diccionario de datos](https://github.com/angietrinidad/seguimiento_el_nino/blob/main/datos/diccionario-datos.md).
+Convenciones para celdas: vacía = no recolectado · `s/d` = la fuente no lo
+reporta · `NC` = no confirmado.
+
+## Citas
+
+Las referencias se gestionan con BibTeX (`referencias.bib`) y se formatean en
+**APA 7** vía CSL. Para citar en el texto: `[@clave]` o `@clave`.
+
+## Reproducibilidad
+
+Las tablas y gráficos se generan desde los CSV con bloques de código Python.
+Para renderizar el sitio localmente:
+
+```bash
+pip install -r requirements.txt
+quarto render
+```

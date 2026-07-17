@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: _site
+  # Ejecutar todo el código con la raíz del proyecto como directorio de trabajo,
+  # para que las rutas a datos/*.csv sean idénticas en todas las páginas.
+  execute-dir: project
+
+website:
+  title: "Seguimiento El Niño (ENOS)"
+  description: >-
+    Repositorio documental sobre el fenómeno El Niño-Oscilación del Sur (ENOS)
+    con foco en América Latina, Paraguay y el área metropolitana de Asunción.
+  site-url: "https://angietrinidad.github.io/seguimiento_el_nino/"
+  repo-url: "https://github.com/angietrinidad/seguimiento_el_nino"
+  repo-actions: [edit, source, issue]
+  page-navigation: true
+  reader-mode: true
+  search: true
+  navbar:
+    background: primary
+    left:
+      - text: "Inicio"
+        file: index.qmd
+      - text: "Marco conceptual"
+        file: 01-marco-conceptual/index.qmd
+      - text: "América Latina"
+        file: 02-america-latina/index.qmd
+      - text: "Paraguay"
+        file: 03-paraguay/nacional.qmd
+      - text: "Asunción"
+        file: 04-asuncion-metropolitana/index.qmd
+      - text: "Fuentes"
+        file: fuentes/index.qmd
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "1. Marco conceptual"
+        contents:
+          - 01-marco-conceptual/index.qmd
+      - section: "2. América Latina"
+        contents:
+          - 02-america-latina/index.qmd
+      - section: "3. Paraguay"
+        contents:
+          - 03-paraguay/nacional.qmd
+          - 03-paraguay/departamentos/index.qmd
+      - section: "4. Asunción y área metropolitana"
+        contents:
+          - 04-asuncion-metropolitana/index.qmd
+      - section: "Anexos"
+        contents:
+          - fuentes/index.qmd
+          - metodologia.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-title: "En esta página"
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+    lang: es
+
+bibliography: referencias.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+lang: es
+
+execute:
+  freeze: auto
+  warning: false

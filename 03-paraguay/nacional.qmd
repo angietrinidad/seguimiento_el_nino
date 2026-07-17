@@ -1,0 +1,111 @@
+---
+title: "3. Paraguay (nivel nacional)"
+---
+
+En Paraguay, la fase cálida del ENOS (El Niño) se asocia a **precipitaciones por
+encima de lo normal** y a **crecidas de los ríos Paraguay y Paraná**, con
+inundaciones ribereñas y pluviales. Esta sección reúne el pronóstico oficial
+para 2026-27 y el registro de los episodios recientes.
+
+## 3.1 Pronóstico oficial para el episodio 2026-2027
+
+- La **Dirección de Meteorología e Hidrología (DINAC/DMH)**, por su director
+  **Eduardo Mingo**, estimó un **80 % de probabilidad** de que El Niño se
+  manifieste como factor climático dominante entre **julio y agosto de 2026**, y
+  advirtió que la primavera será una **temporada lluviosa**, con riesgo de
+  **lluvias intensas e inundaciones hacia finales de 2026**
+  [prensa]{.badge-prensa} (ABC Color citando a la DMH, 2026-06-03)
+  [@abc_dmh_2026].
+- El patrón estacional previsto por la DMH combina un **invierno 2026 con lluvias
+  por debajo de lo normal** en buena parte del país (salvo extremo norte y
+  nordeste) y una **primavera con superávit de precipitación**, tendencia que
+  podría intensificarse en el primer trimestre de 2027 [prensa]{.badge-prensa}
+  [@abc_dmh_2026].
+
+::: {.callout-note}
+Los **boletines de perspectivas climáticas trimestrales** de la DINAC se
+publican en [meteorologia.gov.py](https://www.meteorologia.gov.py/) y son la
+fuente primaria a la que remitir para cada actualización.
+:::
+
+## 3.2 Historial de episodios recientes
+
+### El Niño 2015-2016 (muy fuerte)
+El episodio muy fuerte de 2015-16 produjo la mayor crecida reciente del río
+Paraguay asociada a El Niño, con desbordes en Asunción y desplazamientos masivos
+en las zonas ribereñas.
+
+- **>72.000 personas desplazadas** en Asunción y **>100.000 a nivel nacional**,
+  según estimaciones gubernamentales [estimación]{.badge-estimacion}
+  (SEN, citado por prensa, dic-2015) [@uh_desplazados_2015].
+
+::: {.vacio}
+El pico exacto del río Paraguay en Asunción durante 2015-16 (la prensa cita
+**7,85 m**, presentado como máximo desde 1904) **no pudo confirmarse en un
+registro primario de la DINAC**. Debe verificarse contra el anuario/registro
+hidrológico oficial antes de citarse como dato. Nótese además que existió una
+crecida histórica mayor en 1983.
+:::
+
+### El Niño 2018-2019 (débil)
+Aun tratándose de un El Niño **débil**, la crecida de 2019 generó una emergencia
+prolongada en Asunción, con datos oficiales de la Municipalidad:
+
+- Río Paraguay en **7,57 m** (30-may-2019); **14.823 familias / >47.400 personas
+  desplazadas** desde marzo [oficial]{.badge-oficial} (DGRRD, 2019-05-30)
+  [@muni_2019].
+
+### El Niño 2023-2024 (muy fuerte)
+El episodio 2023-24 se expresó con inundaciones fluviales y pluviales,
+especialmente en **Ñeembucú**:
+
+- **~2.150 familias evacuadas** en 11 distritos de Ñeembucú (abril-mayo 2024); la
+  Cámara de Diputados sancionó la **declaración de emergencia** del departamento
+  por 90 días [prensa]{.badge-prensa} [@anf_neembucu_2024].
+- Inundaciones **pluviales** en Asunción y Central por temporales en abril de 2024
+  [prensa]{.badge-prensa} [@lanacion_2024].
+
+## 3.3 Sectores afectados
+
+- **Agricultura y ganadería (MAG):** el exceso hídrico en primavera-verano afecta
+  cultivos y campos ganaderos, sobre todo en el sur y la cuenca del Paraná.
+- **Crecidas de ríos:** ejes Paraguay y Paraná; ciudades ribereñas como Alberdi
+  y Pilar (Ñeembucú) y Fuerte Olimpo (Alto Paraguay). El Gobierno anunció obras
+  de refuerzo de muros de contención ante la llegada de El Niño
+  [prensa]{.badge-prensa} [@anf_neembucu_2024].
+- **Salud pública:** inundaciones y albergues; asistencia psicosocial a niñez
+  afectada (UNICEF) [oficial]{.badge-oficial} [@unicef_py_inund].
+- **Infraestructura vial:** afectación por anegamientos.
+
+::: {.vacio}
+Faltan series cuantificadas por sector (hectáreas agrícolas afectadas, pérdidas
+económicas del BCP, km de rutas dañadas) con fuente primaria por episodio.
+:::
+
+## 3.4 Marco institucional nacional
+
+**SEN** (respuesta y declaraciones de emergencia) · **DINAC** (pronóstico y
+monitoreo hidrológico) · **MAG** (riesgos agrícolas) · **municipalidades** ·
+cooperación internacional (**Cruz Roja Paraguaya, PNUD, UNICEF**).
+
+## 3.5 Series comparativas — población afectada
+
+```{python}
+#| echo: false
+import csv
+from IPython.display import Markdown
+rows = list(csv.DictReader(open("datos/poblacion-afectada.csv", encoding="utf-8")))
+if not rows:
+    md = "::: {.vacio}\nAún no se han cargado series numéricas verificadas.\n:::"
+else:
+    head = "| Episodio | Ubicación | Indicador | Valor | Fecha | Fuente | Conf. |\n|---|---|---|---:|---|---|---|"
+    body = "\n".join(
+        f"| {r['episodio']} | {r['ubicacion']} | {r['indicador'].replace('_',' ')} | "
+        f"{int(r['valor']):,} {r['unidad']} | {r['fecha_publicacion']} | {r['fuente']} | {r['confiabilidad']} |"
+        for r in rows)
+    md = head + "\n" + body
+Markdown(md)
+```
+
+Cifras de 2015-16 a nivel ciudad/país: estimaciones gubernamentales vía prensa;
+las de 2018-19 provienen del reporte oficial de la Municipalidad de Asunción.

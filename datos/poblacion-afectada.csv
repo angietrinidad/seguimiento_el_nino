@@ -1,0 +1,13 @@
+episodio,nivel_geografico,ubicacion,indicador,valor,unidad,fecha_publicacion,fuente,confiabilidad,nota
+2015-16,ciudad,Asunción,personas_desplazadas,72000,personas,2015-12,SEN,estimacion,Estimación gubernamental citada por prensa (>72.000 en Asunción)
+2015-16,nacional,Paraguay,personas_desplazadas,100000,personas,2015-12,SEN,estimacion,Estimación gubernamental citada por prensa (>100.000 a nivel país)
+2015-16,barrio,Bañado Sur (Tacumbú),familias_desplazadas,1765,familias,2015-12,prensa,prensa,
+2015-16,barrio,Bañado Norte,familias_desplazadas,1695,familias,2015-12,prensa,prensa,
+2015-16,barrio,La Chacarita (Ricardo Brugada),familias_desplazadas,756,familias,2015-12,prensa,prensa,
+2018-19,ciudad,Asunción,familias_desplazadas,14823,familias,2019-05-30,DGRRD,oficial,Desde marzo 2019; >47.400 personas
+2018-19,ciudad,Asunción,personas_desplazadas,47400,personas,2019-05-30,DGRRD,oficial,
+2018-19,barrio,Bañado Sur,familias_albergadas,6500,familias,2019-05-30,DGRRD,oficial,48 albergues
+2018-19,barrio,Bañado Norte,familias_albergadas,4404,familias,2019-05-30,DGRRD,oficial,49 zonas de albergue
+2018-19,barrio,La Chacarita,familias_albergadas,1800,familias,2019-05-30,DGRRD,oficial,Más de 1.800 en 21 albergues
+2018-19,ciudad,Asunción,ninez_en_albergues,13500,personas,2019-05-30,DGRRD,oficial,Menores en albergues; además 778 embarazadas y ~1.000 adultos mayores
+2023-24,departamento,Ñeembucú,familias_evacuadas,2150,familias,2024-05,prensa,prensa,11 distritos; ~6 albergues; abril-mayo 2024

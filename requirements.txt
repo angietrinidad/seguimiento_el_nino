@@ -1,0 +1,6 @@
+# Dependencias mínimas para renderizar el sitio con Quarto.
+# La generación de tablas usa solo la librería estándar de Python.
+# Descomentar si se agregan gráficos:
+# pandas>=2.0
+# matplotlib>=3.7
+jupyter>=1.0

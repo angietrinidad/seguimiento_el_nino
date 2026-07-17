@@ -1,0 +1,19 @@
+id,nombre,tipo,confiabilidad,nivel_geografico,url,notas
+DINAC,Dirección de Meteorología e Hidrología (DINAC),organismo_oficial,oficial,paraguay,https://www.meteorologia.gov.py/,Boletines climáticos trimestrales y pronósticos ENOS
+SEN,Secretaría de Emergencia Nacional,organismo_oficial,oficial,paraguay,https://www.sen.gov.py/,Declaraciones de emergencia y reportes de afectación
+MAG,Ministerio de Agricultura y Ganadería,organismo_oficial,oficial,paraguay,https://www.mag.gov.py/,Dirección de Gestión de Riesgos Agrícolas
+DGRRD,Dir. Gral. de Gestión y Reducción de Riesgos - Municipalidad de Asunción,organismo_oficial,oficial,asuncion,https://www.asuncion.gov.py/,Protocolos, refugios, alertas
+BCP,Banco Central del Paraguay,organismo_oficial,oficial,paraguay,https://www.bcp.gov.py/,Impacto económico
+NOAA_ONI,NOAA Climate Prediction Center - ONI,organismo_oficial,oficial,global,https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php,Índice Oceánico El Niño y clasificación de episodios
+NOAA_CPC_pronostico,NOAA CPC / IRI ENSO forecast,organismo_oficial,oficial,global,https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/,Diagnóstico y pronóstico ENOS
+WMO,Organización Meteorológica Mundial,organismo_internacional,oficial,global,https://wmo.int/,Boletines El Niño/La Niña Update
+CIIFEN,Centro Internacional para la Investigación del Fenómeno de El Niño,organismo_internacional,oficial,latam,https://ciifen.org/,Perspectivas climáticas regionales
+CEPAL,Comisión Económica para América Latina y el Caribe,organismo_internacional,oficial,latam,https://www.cepal.org/,Impacto socioeconómico
+OCHA,OCHA / ReliefWeb,organismo_internacional,oficial,global,https://reliefweb.int/,Reportes de situación humanitaria
+IFRC,Federación Internacional de la Cruz Roja / Cruz Roja Paraguaya,organismo_internacional,oficial,latam,https://www.ifrc.org/,Acción anticipatoria y DREF
+UNICEF_PY,UNICEF Paraguay,organismo_internacional,oficial,paraguay,https://www.unicef.org/paraguay/,Impacto en niñez
+CRC_SAS,Centro Regional del Clima para el Sur de Sudamérica,organismo_internacional,oficial,cono_sur,https://www.crc-sas.org/,Monitoreo y pronóstico regional
+ABC,ABC Color,prensa,prensa,paraguay,https://www.abc.com.py/,Prensa nacional
+UH,Última Hora,prensa,prensa,paraguay,https://www.ultimahora.com/,Prensa nacional
+LN_PY,La Nación (Paraguay),prensa,prensa,paraguay,https://www.lanacion.com.py/,Prensa nacional
+FACSO_UNA,FACSO - Universidad Nacional de Asunción,academico,academico,paraguay,https://www.face.una.py/,Revistas científicas paraguayas

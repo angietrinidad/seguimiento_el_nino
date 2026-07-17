@@ -1,0 +1,31 @@
+---
+title: "Registro de fuentes"
+---
+
+Inventario de fuentes consultadas y priorizadas, clasificadas por tipo y nivel
+de confiabilidad. Se genera desde `fuentes/registro.csv`.
+
+```{python}
+#| echo: false
+import csv
+from IPython.display import Markdown
+
+rows = list(csv.DictReader(open("fuentes/registro.csv", encoding="utf-8")))
+head = "| Fuente | Tipo | Confiabilidad | Nivel | Enlace |\n|---|---|---|---|---|"
+def link(r):
+    return f"[{r['nombre']}]({r['url']})" if r['url'] else r['nombre']
+body = "\n".join(
+    f"| {link(r)} | {r['tipo']} | {r['confiabilidad']} | {r['nivel_geografico']} | [↗]({r['url']}) |"
+    for r in rows
+)
+Markdown(head + "\n" + body)
+```
+
+## Prioridad de consulta
+
+1. **Organismos oficiales nacionales:** DINAC, SEN, MAG, DGRRD (Municipalidad de
+   Asunción), Banco Central del Paraguay.
+2. **Organismos internacionales:** WMO, NOAA/ENSO, CIIFEN, CEPAL, OCHA/ReliefWeb,
+   UNICEF Paraguay, IFRC/Cruz Roja.
+3. **Medios y academia:** ABC Color, Última Hora, La Nación, CRC-SAS, revistas
+   científicas paraguayas (FACSO-UNA).

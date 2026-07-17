@@ -1,0 +1,69 @@
+---
+title: "Seguimiento El Niño (ENOS)"
+subtitle: "Repositorio documental — América Latina · Paraguay · Asunción"
+date: last-modified
+date-format: "D [de] MMMM [de] YYYY"
+---
+
+## Sobre este repositorio
+
+Base empírica y documental sobre el fenómeno **El Niño-Oscilación del Sur
+(ENOS)** para investigación en sociología y gestión del riesgo de desastres,
+organizada en tres niveles de resolución geográfica:
+
+1. [**América Latina**](02-america-latina/index.qmd) — panorama regional.
+2. [**Paraguay**](03-paraguay/nacional.qmd) — nacional y por departamentos.
+3. [**Asunción y área metropolitana**](04-asuncion-metropolitana/index.qmd).
+
+El repositorio prioriza **fuentes oficiales y datos primarios**, señala de forma
+explícita los **vacíos de información** y **no incorpora cifras sin fuente
+verificable** (ver [metodología](metodologia.qmd)).
+
+::: {.callout-note}
+## Foco actual
+Episodio **El Niño 2026-2027**, actualmente en desarrollo, con valor comparativo
+de los episodios históricos de 1997-98, 2015-16 y 2023-24.
+:::
+
+## Convención de confiabilidad
+
+Cada hallazgo se etiqueta según su fuente:
+
+[oficial]{.badge-oficial} organismo estatal o intergubernamental ·
+[académico]{.badge-academico} revista/institución científica ·
+[prensa]{.badge-prensa} medios ·
+[estimación]{.badge-estimacion} dato no confirmado.
+
+## Tabla resumen comparativa por episodio
+
+Clasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA. Las
+columnas de afectación se completan a medida que se recolectan datos verificados
+(las celdas vacías indican dato aún no recolectado).
+
+```{python}
+#| label: tbl-episodios
+#| echo: false
+import csv
+from IPython.display import Markdown
+
+rows = list(csv.DictReader(open("datos/episodios.csv", encoding="utf-8")))
+cols = ["episodio", "intensidad_oni", "oni_pico", "fuente_clasificacion"]
+head = "| Episodio | Intensidad (ONI) | Pico ONI (°C) | Fuente |\n|---|---|---|---|"
+body = "\n".join(
+    "| " + " | ".join((r[c] or "—") for c in cols) + " |" for r in rows
+)
+Markdown(head + "\n" + body)
+```
+
+: Episodios El Niño considerados en el repositorio. {#tbl-episodios}
+
+## Estado de avance
+
+| Sección | Estado |
+|---|---|
+| Marco conceptual | 🟢 Redactado y citado (fuentes oficiales) |
+| América Latina | 🟢 Redactado y citado (OMM, OPS, IRI, OCHA) |
+| Paraguay (nacional) | 🟢 Redactado y citado (DINAC, DGRRD, prensa) |
+| Departamentos | 🟡 Ñeembucú/Central/Alto Paraguay con datos; resto pendiente |
+| Asunción metropolitana | 🟢 Redactado y citado (DGRRD, prensa) |
+| Series de datos numéricos | 🟡 ONI + población afectada 2015-16/2018-19/2024 cargadas; niveles del río y sectores pendientes |

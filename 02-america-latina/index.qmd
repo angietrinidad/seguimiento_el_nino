@@ -1,0 +1,106 @@
+---
+title: "2. América Latina"
+---
+
+Panorama regional del ENOS: estado actual del episodio 2026, impactos del
+episodio 2023-24 por subregión y sector, y marco institucional de alerta
+temprana. Toda cifra remite a su fuente; los datos sin respaldo primario se
+marcan como vacío.
+
+## 2.1 Estado del episodio en curso (2026)
+
+A julio de 2026 hay un episodio de **El Niño en curso y en fortalecimiento** —no
+La Niña ni condiciones neutrales—. Las tres autoridades de referencia coinciden:
+
+- **NOAA/CPC** mantiene un **Aviso de El Niño**; el índice Niño 3.4 más reciente
+  era **+1,2 °C**, con **81 %** de probabilidad de un El Niño *muy fuerte* en
+  octubre-diciembre de 2026 y **97 %** de que persista hasta inicios de la
+  primavera boreal de 2027 [oficial]{.badge-oficial} [@noaa_enso_disc_2026].
+- El **IRI** (Universidad de Columbia) asignaba **100 %** de probabilidad a El
+  Niño entre junio-agosto y septiembre-noviembre de 2026 (y 0 % a La Niña); el
+  Niño 3.4 semanal llegó a **+1,7 °C** el 17 de junio de 2026
+  [oficial]{.badge-oficial} [@iri_enso_2026].
+- La **OMM** daba **80 %** de probabilidad de El Niño para junio-agosto de 2026,
+  ascendiendo a ≥90 % en los trimestres siguientes [oficial]{.badge-oficial}
+  [@wmo_update_2026].
+
+::: {.callout-note}
+**Trazabilidad de la transición:** a inicios de 2026 la OMM aún reportaba una La
+Niña débil desvaneciéndose hacia neutralidad; la transición a El Niño se
+consolidó hacia mediados de 2026.
+:::
+
+## 2.2 Mapa de impactos por subregión (episodio 2023-2024)
+
+La síntesis regional proviene del informe del Estado del Clima para América
+Latina y el Caribe de la OMM [@wmo_alc_2023].
+
+| Subregión | Impacto dominante 2023-24 |
+|---|---|
+| **Amazonía** | Sequía extrema; el **río Negro** alcanzó su nivel más bajo en +120 años de registro (desde 1902) |
+| **Centroamérica y Panamá** | Sequía en el Corredor Seco; el **Canal de Panamá** restringió el tránsito de buques desde agosto de 2023 por bajos niveles de agua |
+| **Región andina (costa de Ecuador y Perú)** | Lluvias intensas e inundaciones |
+| **Cono Sur y México** | Calor extremo: México registró **51,4 °C** (29-ago-2023) y 76 % del territorio con sequía; Brasil superó 41 °C |
+| **Caribe** | Huracán **Otis**: daños por **USD 12 000 millones** |
+
+Todos: [oficial]{.badge-oficial} OMM (2024-05-08) [@wmo_alc_2023].
+
+## 2.3 Impactos sectoriales (2023-2024)
+
+### Agricultura y seguridad alimentaria
+En 2023, **13,8 millones de personas** en crisis alimentaria aguda (fase 3+ de
+la CIF), sobre todo en Centroamérica y el Caribe [oficial]{.badge-oficial}
+[@wmo_alc_2023].
+
+### Salud
+- **Dengue:** 2024 fue la mayor epidemia registrada en las Américas: más de
+  **12,6 millones de casos**, ~21 000 graves y más de **7 700 muertes**, casi el
+  triple que 2023; Argentina, Brasil, Colombia y México concentraron el 90 % de
+  los casos [oficial]{.badge-oficial} [@paho_dengue_2024].
+- **Calor:** exceso anual de muertes por calor estimado en **36 695**
+  (promedio 2000-2019) [oficial]{.badge-oficial} [@wmo_alc_2023].
+
+### Seguridad hídrica
+El estrés hídrico se refleja en los bajos niveles del Canal de Panamá y de ríos
+amazónicos (río Negro, mínimo en +120 años) [oficial]{.badge-oficial}
+[@wmo_alc_2023].
+
+### Daños económicos
+Daños reportados por **USD 21 000 millones** en la región, 66 % asociados a
+tormentas (incluidos los USD 12 000 M del huracán Otis)
+[oficial]{.badge-oficial} [@wmo_alc_2023].
+
+### Migración y desplazamiento
+::: {.vacio}
+No se localizó una cifra oficial de desplazamiento atribuida específicamente a
+El Niño 2023-2024 en fuente primaria. El informe de OCHA que lo abordaría no fue
+accesible directamente (HTTP 403); pendiente de revisar el PDF original.
+:::
+
+## 2.4 Marco institucional regional
+
+- **OMM (WMO):** emite las actualizaciones oficiales El Niño/La Niña y el informe
+  del Estado del Clima regional [@wmo_update_2026].
+- **CIIFEN** (Guayaquil): promueve investigación y alerta temprana del ENOS a
+  escala regional; organiza foros con el Centro Regional del Clima para el Oeste
+  de Sudamérica (CRC-OSA) y publica boletines mensuales [@ciifen].
+- **IFRC / Cruz Roja:** opera con **Protocolos de Acción Temprana (EAP)** que
+  liberan financiamiento al cruzarse umbrales científicos [@ifrc_2026].
+- **OCHA / ReliefWeb:** publicó el informe de efectos humanitarios de El Niño
+  2023/2024, que identifica países en riesgo y zonas de monitoreo (Corredor Seco,
+  Amazonía, Gran Chaco, Andes) [@ocha_enso_2024].
+
+::: {.vacio}
+**CEPAL:** no se localizó un informe primario de CEPAL con cifras propias sobre
+El Niño 2023-2024. Los datos regionales anteriores provienen de OMM y OPS.
+:::
+
+::: {.callout-warning collapse="true"}
+## Datos descartados por falta de respaldo primario
+Se excluyeron por no confirmarse en fuente primaria: cifras de exposición a
+sequía y de acción anticipatoria atribuidas a OCHA/FAO (documento OCHA no
+accesible; datos FAO solo en literatura secundaria); "22 000 personas protegidas"
+por EAP de IFRC (comunicación institucional sin informe de evaluación); y la
+cifra de "13 millones" de casos de dengue en 2024 (el valor oficial de cierre de
+OPS es 12,6 millones).
+:::

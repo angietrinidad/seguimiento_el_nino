@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+$primary: #1b5e7a;
+$body-color: #1f2933;
+$font-family-sans-serif: "Source Sans Pro", -apple-system, system-ui, sans-serif;
+
+/*-- scss:rules --*/
+// Etiquetas de nivel de confiabilidad de cada hallazgo
+.badge-oficial   { background:#1b5e7a; color:#fff; padding:.1em .5em; border-radius:.4em; font-size:.75em; }
+.badge-academico { background:#4a7c59; color:#fff; padding:.1em .5em; border-radius:.4em; font-size:.75em; }
+.badge-prensa    { background:#b26a00; color:#fff; padding:.1em .5em; border-radius:.4em; font-size:.75em; }
+.badge-estimacion{ background:#8a1c1c; color:#fff; padding:.1em .5em; border-radius:.4em; font-size:.75em; }
+
+// Caja para señalar vacíos de información (exigido por el CONTEXTO)
+.vacio {
+  border-left: 4px solid #8a1c1c;
+  background: #fbeaea;
+  padding: .6em 1em;
+  margin: 1em 0;
+  border-radius: 0 .4em .4em 0;
+}
+.vacio::before { content: "⚠ Vacío de información / dato no confirmado"; font-weight:700; display:block; color:#8a1c1c; }

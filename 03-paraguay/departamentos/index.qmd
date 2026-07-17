@@ -1,0 +1,50 @@
+---
+title: "3.6 Impacto por departamento"
+---
+
+Departamentos priorizados por su exposición a crecidas de la cuenca del
+Paraná/Paraguay y a variabilidad agrícola. Las fichas se completan a medida que
+se localizan datos verificados por episodio.
+
+## Ñeembucú
+
+Departamento ribereño del sur, entre los ríos Paraguay y Paraná; uno de los más
+expuestos a inundación por crecida.
+
+- **El Niño 2023-24:** **~2.150 familias evacuadas** en 11 distritos
+  (abril-mayo 2024); localidades aisladas (Guazucuá, Tacuara, Belén, Humaitá,
+  Paso de Patria, Alberdi, entre otras). La Cámara de Diputados sancionó la
+  **declaración de emergencia** del departamento por 90 días
+  [prensa]{.badge-prensa} [@anf_neembucu_2024].
+- **Ciudad de Pilar:** históricamente vulnerable (la inundación de 1983 dejó a la
+  ciudad bajo agua); en 2024 volvió a una situación crítica
+  [prensa]{.badge-prensa} [@abc_pilar_2024].
+- **Obras anunciadas:** refuerzo de muros de contención en **Alberdi** y **Pilar**
+  ante El Niño [prensa]{.badge-prensa} [@anf_neembucu_2024].
+
+## Central
+
+Departamento más poblado, contiguo a Asunción; afectado sobre todo por
+inundaciones **pluviales** urbanas.
+
+- **2024:** temporales causaron destrozos e inundaciones en Asunción y Central
+  (abril 2024) [prensa]{.badge-prensa} [@lanacion_2024].
+
+::: {.vacio}
+Series cuantificadas de afectación por episodio para Central pendientes de
+fuente primaria.
+:::
+
+## Alto Paraguay
+
+- Ciudad ribereña de **Fuerte Olimpo** incluida en las obras de refuerzo de muros
+  de contención ante El Niño [prensa]{.badge-prensa} [@anf_neembucu_2024].
+
+## Concepción · San Pedro · Presidente Hayes · Misiones · Itapúa · Alto Paraná
+
+::: {.vacio}
+Fichas pendientes de redacción con datos verificados por episodio (afectación
+agrícola, ganadera y de infraestructura; población desplazada). Priorizar
+boletines de la DINAC, reportes de la SEN y de la Dirección de Gestión de
+Riesgos Agrícolas del MAG.
+:::

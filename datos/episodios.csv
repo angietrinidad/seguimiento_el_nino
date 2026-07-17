@@ -1,0 +1,5 @@
+episodio,anio_inicio,anio_fin,intensidad_oni,oni_pico,fuente_clasificacion,confiabilidad
+1997-98,1997,1998,muy fuerte,2.4,NOAA_ONI,oficial
+2015-16,2015,2016,muy fuerte,2.6,NOAA_ONI,oficial
+2023-24,2023,2024,muy fuerte,2.0,NOAA_ONI,oficial
+2026-27,2026,2027,en desarrollo,,NOAA_CPC_pronostico,oficial
