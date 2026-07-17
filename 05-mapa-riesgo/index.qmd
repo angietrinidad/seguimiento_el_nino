@@ -10,19 +10,19 @@ confiabilidad.
 
 ::: {.callout-important}
 ## Alcance y honestidad del mapa
-Este mapa **no dibuja polígonos de inundación estimados a ojo**. Muestra
-únicamente: (1) los límites departamentales oficiales, (2) los puntos de riesgo
-para los que existe afectación documentada con fuente. La **huella real de las
-crecidas** (extensión exacta del área anegada) requiere datos geoespaciales
-primarios —imágenes satelitales de **Copernicus EMS**/**UNOSAT** o cartografía
-de la **SEN**/**DINAC**— que se incorporarán como capa cuando se obtengan
-(ver [vacío](#vacio-capa)).
+Este mapa **no dibuja polígonos de inundación a ojo**. Muestra: (1) límites
+departamentales oficiales; (2) puntos de riesgo con afectación documentada; y
+(3) una capa de **agua detectada por satélite** (Sentinel-1) para la crecida de
+enero de 2016, **derivada de imágenes reales con un método reproducible** —no
+una estimación manual— y con límites explícitos (ver
+[metodología](#agua-satelital)). No existe aún una capa **oficial validada** de
+huella de inundación (ver [vacío](#vacio-capa)).
 :::
 
 ```{python}
 #| label: mapa-riesgo
 #| echo: false
-import csv, json, unicodedata
+import csv, json, os, unicodedata
 import folium
 
 # --- Departamentos prioritarios (según el marco del repositorio) ---
@@ -49,6 +49,16 @@ folium.GeoJson(
     style_function=estilo,
     tooltip=folium.GeoJsonTooltip(fields=["shapeName"], aliases=["Departamento:"]),
 ).add_to(m)
+
+# --- Huella de agua detectada por satélite (Sentinel-1, 14-ene-2016) ---
+ruta_agua = "datos/geo/agua-s1-20160114.geojson"
+if os.path.exists(ruta_agua):
+    agua = json.load(open(ruta_agua, encoding="utf-8"))
+    folium.GeoJson(
+        agua, name="Agua detectada · Sentinel-1 · 14-ene-2016",
+        style_function=lambda f: {"fillColor": "#2b6cb0", "color": "#2b6cb0",
+                                  "weight": 0, "fillOpacity": 0.5},
+    ).add_to(m)
 
 # --- Zonas de riesgo documentadas ---
 color_conf = {"oficial": "#1b5e7a", "prensa": "#b26a00",
@@ -108,6 +118,35 @@ público). La afectación proviene de los CSV del repositorio; ver
 - **Estación hidrométrica de Asunción:** referencia del nivel del río Paraguay
   (pico de **7,84 m** el 7-ene-2016; **etapa crítica 5,5 m**) [@floodlist_2016].
 
+## Capa de agua detectada por satélite (enero 2016) {#agua-satelital}
+
+La capa azul es la **extensión de agua detectada** durante la crecida de
+2015-16, derivada de radar satelital. Es un producto **preliminar y automático**,
+no cartografía oficial.
+
+**Método (reproducible):** se procesa la escena **Sentinel-1 RTC** (gamma0
+terreno-corregido; Copernicus/ESA, vía Microsoft Planetary Computer) del
+**14-ene-2016** —la más cercana al pico del río del 7-ene; el 12-ene no tiene
+paso del satélite sobre el área—. El agua abierta refleja poca señal al radar,
+así que se clasifica como agua todo píxel con retrodispersión **VV < −17 dB**
+(descartando el relleno de borde de escena por debajo de −28 dB y las manchas
+menores a 5 ha). El script está en
+[`scripts/derivar_huella_agua.py`](https://github.com/angietrinidad/seguimiento_el_nino/blob/main/scripts/derivar_huella_agua.py)
+[@sentinel1; @planetary_computer].
+
+::: {.callout-warning}
+## Cómo leer (y cómo no leer) esta capa
+- Es **detección automática, no validada en campo**.
+- Muestra **agua total** en la fecha: incluye el **cauce permanente** del río,
+  no solo el área anegada. Aislar solo la inundación exigiría diferenciar contra
+  una fecha de aguas bajas (trabajo pendiente).
+- La cobertura es **irregular**: el viento sobre el agua eleva la señal y puede
+  hacer que zonas realmente inundadas no aparezcan. La ausencia de azul **no**
+  prueba ausencia de agua.
+- Un dato aparte: la banda recta que aparecía en una versión previa era un
+  **artefacto** del borde de la escena y fue eliminada tras validación visual.
+:::
+
 ## Umbrales de referencia del río Paraguay {#umbrales}
 
 | Nivel en Asunción | Interpretación |
@@ -119,10 +158,13 @@ público). La afectación proviene de los CSV del repositorio; ver
 ## Vacío de información — capa de huella de inundación {#vacio-capa}
 
 ::: {.vacio}
-No se incorporó una **capa de extensión real de inundación** (polígonos del área
-anegada por episodio) porque, tras una búsqueda sistemática (julio de 2026), **no
-se localizó un vector abierto y descargable** para los episodios de El Niño en
-Paraguay. El mapa se limita, por tanto, a límites oficiales y puntos documentados.
+El mapa incluye una capa de agua **derivada por nosotros** de Sentinel-1
+(preliminar, ver [arriba](#agua-satelital)), pero **falta una capa oficial y
+validada** de huella de inundación por episodio. Tras una búsqueda sistemática
+(julio de 2026) **no se localizó un vector oficial abierto** para los episodios
+de El Niño en Paraguay. También queda pendiente **aislar la inundación del cauce
+permanente** (diferenciando contra una fecha de aguas bajas) y **extender la
+detección a otros episodios** (2018-19, 2023-24).
 :::
 
 **Búsqueda realizada (para no repetirla):**
