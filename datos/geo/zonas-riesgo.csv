@@ -1,0 +1,8 @@
+id,zona,departamento,lat,lon,tipo_riesgo,familias_max,episodio_dato,fuente,confiabilidad,detalle
+banado_norte,Bañado Norte,Asunción,-25.246,-57.615,fluvial,4404,2018-19,DGRRD,oficial,4.404 familias albergadas en 2019 (49 zonas); 1.695 familias en 2015-16
+banado_sur,Bañado Sur (Tacumbú),Asunción,-25.320,-57.655,fluvial,6500,2018-19,DGRRD,oficial,6.500 familias albergadas en 2019 (48 albergues); 1.765 familias en 2015-16
+chacarita,La Chacarita (Ricardo Brugada),Asunción,-25.283,-57.645,fluvial,1800,2018-19,DGRRD,oficial,Más de 1.800 familias en 2019 (21 albergues); 756 familias en 2015-16
+pilar,Pilar,Ñeembucú,-26.859,-58.303,fluvial,,2023-24,prensa,prensa,Ciudad ribereña; crítica en 1983 y 2024; emergencia departamental 2024
+alberdi,Alberdi,Ñeembucú,-26.241,-58.139,fluvial,,2023-24,prensa,prensa,Evacuaciones en 2024; obras de muro de contención anunciadas
+fuerte_olimpo,Fuerte Olimpo,Alto Paraguay,-21.041,-57.874,fluvial,,2026-27,prensa,prensa,Obras de refuerzo de muros de contención ante El Niño
+estacion_asu,Estación hidrométrica Asunción,Asunción,-25.283,-57.640,hidrometrica,,2015-16,FloodList_DMH,prensa,Pico 7.84 m (2016-01-07); etapa crítica 5.5 m; registro desde 1904

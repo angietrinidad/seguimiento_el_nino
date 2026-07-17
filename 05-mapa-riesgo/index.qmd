@@ -1,0 +1,127 @@
+---
+title: "5. Mapa de riesgo de inundación"
+---
+
+Mapa interactivo de zonas expuestas a inundación en Paraguay, con foco nacional y
+posibilidad de acercarse a Asunción y su área metropolitana. Combina **límites
+departamentales oficiales** con las **zonas de riesgo documentadas** en este
+repositorio. Hacé clic en cada punto para ver el dato, su fuente y su nivel de
+confiabilidad.
+
+::: {.callout-important}
+## Alcance y honestidad del mapa
+Este mapa **no dibuja polígonos de inundación estimados a ojo**. Muestra
+únicamente: (1) los límites departamentales oficiales, (2) los puntos de riesgo
+para los que existe afectación documentada con fuente. La **huella real de las
+crecidas** (extensión exacta del área anegada) requiere datos geoespaciales
+primarios —imágenes satelitales de **Copernicus EMS**/**UNOSAT** o cartografía
+de la **SEN**/**DINAC**— que se incorporarán como capa cuando se obtengan
+(ver [vacío](#vacio-capa)).
+:::
+
+```{python}
+#| label: mapa-riesgo
+#| echo: false
+import csv, json, unicodedata
+import folium
+
+# --- Departamentos prioritarios (según el marco del repositorio) ---
+PRIORIDAD = {"CENTRAL", "CONCEPCION", "SAN PEDRO", "PRESIDENTE HAYES",
+             "ÑEEMBUCU", "MISIONES", "ITAPUA", "ALTO PARANA"}
+def norm(s):
+    return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().upper().strip()
+PRIORIDAD_N = {norm(x) for x in PRIORIDAD}
+
+geo = json.load(open("datos/geo/departamentos-py.geojson", encoding="utf-8"))
+
+m = folium.Map(location=[-23.8, -58.0], zoom_start=6,
+               tiles="cartodbpositron", control_scale=True)
+
+def estilo(feat):
+    prio = norm(feat["properties"].get("shapeName", "")) in PRIORIDAD_N
+    return {"fillColor": "#c0392b" if prio else "#4a7c59",
+            "color": "#8a1c1c" if prio else "#888",
+            "weight": 1.6 if prio else 0.6,
+            "fillOpacity": 0.28 if prio else 0.04}
+
+folium.GeoJson(
+    geo, name="Departamentos (prioritarios resaltados)",
+    style_function=estilo,
+    tooltip=folium.GeoJsonTooltip(fields=["shapeName"], aliases=["Departamento:"]),
+).add_to(m)
+
+# --- Zonas de riesgo documentadas ---
+color_conf = {"oficial": "#1b5e7a", "prensa": "#b26a00",
+              "estimacion": "#8a1c1c", "academico": "#4a7c59"}
+capa_zonas = folium.FeatureGroup(name="Zonas de riesgo documentadas").add_to(m)
+capa_hidro = folium.FeatureGroup(name="Estación hidrométrica").add_to(m)
+
+for r in csv.DictReader(open("datos/geo/zonas-riesgo.csv", encoding="utf-8")):
+    lat, lon = float(r["lat"]), float(r["lon"])
+    col = color_conf.get(r["confiabilidad"], "#555")
+    fam = r["familias_max"]
+    radio = 6 + (min(int(fam), 8000) / 8000 * 18) if fam else 7
+    popup = folium.Popup(
+        f"<b>{r['zona']}</b><br><i>{r['departamento']}</i><br>{r['detalle']}<br>"
+        f"<small>Fuente: {r['fuente']} · <b>{r['confiabilidad']}</b> · "
+        f"dato {r['episodio_dato']}</small>", max_width=290)
+    if r["tipo_riesgo"] == "hidrometrica":
+        folium.Marker([lat, lon], popup=popup, tooltip=r["zona"],
+                      icon=folium.Icon(color="blue", icon="tint", prefix="fa")
+                      ).add_to(capa_hidro)
+    else:
+        folium.CircleMarker([lat, lon], radius=radio, color=col, fill=True,
+                            fill_color=col, fill_opacity=0.7, weight=1,
+                            popup=popup, tooltip=r["zona"]).add_to(capa_zonas)
+
+folium.LayerControl(collapsed=False).add_to(m)
+
+leyenda = """
+<div style="position:fixed; bottom:26px; left:12px; z-index:9999; background:white;
+  padding:10px 12px; border:1px solid #ccc; border-radius:6px; font-size:12px;
+  line-height:1.5; box-shadow:0 1px 4px rgba(0,0,0,.2);">
+  <b>Confiabilidad del dato</b><br>
+  <span style="color:#1b5e7a">●</span> Oficial &nbsp;
+  <span style="color:#b26a00">●</span> Prensa<br>
+  Tamaño ∝ familias afectadas (máx. documentado)<br>
+  <span style="color:#c0392b">▮</span> Departamento prioritario
+</div>"""
+m.get_root().html.add_child(folium.Element(leyenda))
+m
+```
+
+*Coordenadas de las zonas: aproximadas al centro del área (dato geográfico
+público). La afectación proviene de los CSV del repositorio; ver
+[Asunción](../04-asuncion-metropolitana/index.qmd) y
+[Paraguay](../03-paraguay/nacional.qmd) para el detalle y las citas.*
+
+## Capas del mapa
+
+- **Departamentos:** límites oficiales de geoBoundaries (fuente: Dirección
+  General de Estadística, Encuestas y Censos, Paraguay; licencia CC BY 4.0)
+  [@geoboundaries_py]. Se resaltan los ocho departamentos priorizados por
+  exposición ribereña y agrícola.
+- **Zonas de riesgo documentadas:** puntos con afectación registrada (bañados de
+  Asunción, ciudades ribereñas de Ñeembucú y Alto Paraguay). El tamaño del
+  círculo es proporcional al máximo de familias afectadas documentado; el color
+  indica la confiabilidad de la fuente.
+- **Estación hidrométrica de Asunción:** referencia del nivel del río Paraguay
+  (pico de **7,84 m** el 7-ene-2016; **etapa crítica 5,5 m**) [@floodlist_2016].
+
+## Umbrales de referencia del río Paraguay {#umbrales}
+
+| Nivel en Asunción | Interpretación |
+|---|---|
+| **5,5 m** | Etapa crítica (inicio de afectación en zonas bajas) [@floodlist_2016] |
+| **7,57 m** | Crecida de 2019 (14.823 familias desplazadas) [@muni_2019] |
+| **7,84 m** | Pico de 2015-16, 7-ene-2016 [@floodlist_2016] |
+
+## Vacío de información — capa de huella de inundación {#vacio-capa}
+
+::: {.vacio}
+Falta la **capa de extensión real de inundación** (polígonos del área anegada por
+episodio). Fuentes primarias a incorporar: activaciones de **Copernicus EMS Rapid
+Mapping**, análisis de **UNOSAT**, mapas de la **SEN** y cartografía de riesgo de
+la **DINAC**/MADES. Mientras no se obtengan, el mapa se limita a puntos
+documentados y no representa la superficie exacta inundable.
+:::

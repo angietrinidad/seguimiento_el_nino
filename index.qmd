@@ -66,4 +66,5 @@ Markdown(head + "\n" + body)
 | Paraguay (nacional) | 🟢 Redactado y citado (DINAC, DGRRD, prensa) |
 | Departamentos | 🟡 Ñeembucú/Central/Alto Paraguay con datos; resto pendiente |
 | Asunción metropolitana | 🟢 Redactado y citado (DGRRD, prensa) |
-| Series de datos numéricos | 🟡 ONI + población afectada 2015-16/2018-19/2024 cargadas; niveles del río y sectores pendientes |
+| Mapa de riesgo interactivo | 🟢 Mapa Leaflet: departamentos oficiales + zonas documentadas (huella de inundación pendiente) |
+| Series de datos numéricos | 🟡 ONI + población afectada + niveles del río (2015-16/2018-19) cargados; sectores pendientes |

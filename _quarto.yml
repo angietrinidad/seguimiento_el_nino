@@ -29,6 +29,8 @@ website:
         file: 03-paraguay/nacional.qmd
       - text: "Asunción"
         file: 04-asuncion-metropolitana/index.qmd
+      - text: "Mapa de riesgo"
+        file: 05-mapa-riesgo/index.qmd
       - text: "Fuentes"
         file: fuentes/index.qmd
   sidebar:
@@ -48,6 +50,9 @@ website:
       - section: "4. Asunción y área metropolitana"
         contents:
           - 04-asuncion-metropolitana/index.qmd
+      - section: "5. Mapa de riesgo"
+        contents:
+          - 05-mapa-riesgo/index.qmd
       - section: "Anexos"
         contents:
           - fuentes/index.qmd

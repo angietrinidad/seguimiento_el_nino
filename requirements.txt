@@ -1,6 +1,10 @@
-# Dependencias mínimas para renderizar el sitio con Quarto.
-# La generación de tablas usa solo la librería estándar de Python.
+# Dependencias para renderizar el sitio con Quarto.
+# Las tablas usan la librería estándar; el mapa de riesgo usa folium.
+jupyter>=1.0
+pyyaml>=6.0
+nbformat>=5.0
+nbclient>=0.7
+folium>=0.20
 # Descomentar si se agregan gráficos:
 # pandas>=2.0
 # matplotlib>=3.7
-jupyter>=1.0
