@@ -119,9 +119,23 @@ público). La afectación proviene de los CSV del repositorio; ver
 ## Vacío de información — capa de huella de inundación {#vacio-capa}
 
 ::: {.vacio}
-Falta la **capa de extensión real de inundación** (polígonos del área anegada por
-episodio). Fuentes primarias a incorporar: activaciones de **Copernicus EMS Rapid
-Mapping**, análisis de **UNOSAT**, mapas de la **SEN** y cartografía de riesgo de
-la **DINAC**/MADES. Mientras no se obtengan, el mapa se limita a puntos
-documentados y no representa la superficie exacta inundable.
+No se incorporó una **capa de extensión real de inundación** (polígonos del área
+anegada por episodio) porque, tras una búsqueda sistemática (julio de 2026), **no
+se localizó un vector abierto y descargable** para los episodios de El Niño en
+Paraguay. El mapa se limita, por tanto, a límites oficiales y puntos documentados.
 :::
+
+**Búsqueda realizada (para no repetirla):**
+
+| Fuente | Resultado |
+|---|---|
+| **Copernicus EMS** Rapid Mapping | Sin activación para Paraguay en estos episodios (p. ej., EMSR853 = Bolivia; EMSR154 = Irlanda) |
+| **International Charter** (activación 609, Paraguay 2019) | 34 productos, pero **solo mapas PDF**, sin capa vectorial pública [@charter609] |
+| **Dartmouth Flood Observatory** — Global Archive | Geometría de **puntos/centroides**, no polígonos; cobertura hasta ~2009 [@dfo_archive] |
+| **HDX** (búsqueda "paraguay flood") | 5 datasets, ninguno de huella de inundación (desplazamiento IDMC, indicadores, hidrografía OSM, FAPAR) |
+
+**Vías pendientes para obtener la huella real:** solicitar los productos
+vectoriales a la **SEN**/**DINAC**/MADES por canal oficial; revisar el
+**geoportal de UNOSAT** (`floods.unosat.org`) y sus productos históricos; o
+digitalizar la extensión a partir de imágenes satelitales documentadas (NASA
+Earth Observatory publicó imágenes de la crecida de Asunción del 12-ene-2016).
