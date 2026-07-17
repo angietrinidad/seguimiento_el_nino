@@ -12,11 +12,12 @@ confiabilidad.
 ## Alcance y honestidad del mapa
 Este mapa **no dibuja polígonos de inundación a ojo**. Muestra: (1) límites
 departamentales oficiales; (2) puntos de riesgo con afectación documentada; y
-(3) una capa de **agua detectada por satélite** (Sentinel-1) para la crecida de
-enero de 2016, **derivada de imágenes reales con un método reproducible** —no
-una estimación manual— y con límites explícitos (ver
-[metodología](#agua-satelital)). No existe aún una capa **oficial validada** de
-huella de inundación (ver [vacío](#vacio-capa)).
+(3) la **huella de inundación de enero de 2016** derivada de radar satelital
+(Sentinel-1), **aislando el área anegada del cauce permanente del río** con un
+método reproducible (ver [metodología](#agua-satelital)). Como validación
+independiente, la inundación resultante **coincide con los bañados** Norte, Sur y
+La Chacarita, donde se concentró el desplazamiento. No existe aún una capa
+**oficial validada** (ver [vacío](#vacio-capa)).
 :::
 
 ```{python}
@@ -50,14 +51,23 @@ folium.GeoJson(
     tooltip=folium.GeoJsonTooltip(fields=["shapeName"], aliases=["Departamento:"]),
 ).add_to(m)
 
-# --- Huella de agua detectada por satélite (Sentinel-1, 14-ene-2016) ---
-ruta_agua = "datos/geo/agua-s1-20160114.geojson"
-if os.path.exists(ruta_agua):
-    agua = json.load(open(ruta_agua, encoding="utf-8"))
+# --- Cauce permanente (JRC) y huella de inundación aislada (Sentinel-1, ene-2016) ---
+ruta_perm = "datos/geo/cauce-permanente-s1-2016.geojson"
+if os.path.exists(ruta_perm):
     folium.GeoJson(
-        agua, name="Agua detectada · Sentinel-1 · 14-ene-2016",
+        json.load(open(ruta_perm, encoding="utf-8")),
+        name="Cauce permanente del río (JRC)",
         style_function=lambda f: {"fillColor": "#2b6cb0", "color": "#2b6cb0",
-                                  "weight": 0, "fillOpacity": 0.5},
+                                  "weight": 0, "fillOpacity": 0.55},
+    ).add_to(m)
+
+ruta_inund = "datos/geo/inundacion-s1-2016.geojson"
+if os.path.exists(ruta_inund):
+    folium.GeoJson(
+        json.load(open(ruta_inund, encoding="utf-8")),
+        name="Inundación aislada · Sentinel-1 · ene-2016",
+        style_function=lambda f: {"fillColor": "#d1495b", "color": "#d1495b",
+                                  "weight": 0, "fillOpacity": 0.6},
     ).add_to(m)
 
 # --- Zonas de riesgo documentadas ---
@@ -90,10 +100,13 @@ leyenda = """
 <div style="position:fixed; bottom:26px; left:12px; z-index:9999; background:white;
   padding:10px 12px; border:1px solid #ccc; border-radius:6px; font-size:12px;
   line-height:1.5; box-shadow:0 1px 4px rgba(0,0,0,.2);">
-  <b>Confiabilidad del dato</b><br>
+  <b>Capas satelitales (ene-2016)</b><br>
+  <span style="color:#d1495b">▮</span> Inundación aislada &nbsp;
+  <span style="color:#2b6cb0">▮</span> Cauce permanente<br>
+  <b>Zonas documentadas</b><br>
   <span style="color:#1b5e7a">●</span> Oficial &nbsp;
-  <span style="color:#b26a00">●</span> Prensa<br>
-  Tamaño ∝ familias afectadas (máx. documentado)<br>
+  <span style="color:#b26a00">●</span> Prensa
+  (tamaño ∝ familias)<br>
   <span style="color:#c0392b">▮</span> Departamento prioritario
 </div>"""
 m.get_root().html.add_child(folium.Element(leyenda))
@@ -118,33 +131,43 @@ público). La afectación proviene de los CSV del repositorio; ver
 - **Estación hidrométrica de Asunción:** referencia del nivel del río Paraguay
   (pico de **7,84 m** el 7-ene-2016; **etapa crítica 5,5 m**) [@floodlist_2016].
 
-## Capa de agua detectada por satélite (enero 2016) {#agua-satelital}
+## Huella de inundación aislada (enero 2016) {#agua-satelital}
 
-La capa azul es la **extensión de agua detectada** durante la crecida de
-2015-16, derivada de radar satelital. Es un producto **preliminar y automático**,
-no cartografía oficial.
+La capa **roja** es la **inundación** de la crecida de 2015-16; la **azul**, el
+**cauce permanente** del río. Es un producto **preliminar y automático**, no
+cartografía oficial.
 
-**Método (reproducible):** se procesa la escena **Sentinel-1 RTC** (gamma0
-terreno-corregido; Copernicus/ESA, vía Microsoft Planetary Computer) del
-**14-ene-2016** —la más cercana al pico del río del 7-ene; el 12-ene no tiene
-paso del satélite sobre el área—. El agua abierta refleja poca señal al radar,
-así que se clasifica como agua todo píxel con retrodispersión **VV < −17 dB**
-(descartando el relleno de borde de escena por debajo de −28 dB y las manchas
-menores a 5 ha). El script está en
-[`scripts/derivar_huella_agua.py`](https://github.com/angietrinidad/seguimiento_el_nino/blob/main/scripts/derivar_huella_agua.py)
-[@sentinel1; @planetary_computer].
+**Método (reproducible), en dos pasos:**
+
+1. **Agua en el pico.** Se procesa la escena **Sentinel-1 RTC** (gamma0
+   terreno-corregido; Copernicus/ESA, vía Microsoft Planetary Computer) del
+   **14-ene-2016** —la más cercana al pico del río del 7-ene; el 12-ene no tiene
+   paso del satélite—. El agua abierta refleja poca señal al radar: se clasifica
+   como agua todo píxel con **VV < −17 dB** (con piso en −28 dB para descartar el
+   borde de escena).
+2. **Resta del cauce permanente.** Al agua del pico se le resta el **agua
+   permanente** del **JRC Global Surface Water** (ocurrencia ≥ 50 %, derivada de
+   1984-2021). Lo que queda es la **inundación**; lo común a ambos, el cauce.
+
+Se usa el JRC (37 años de imágenes) y **no** una sola fecha de aguas bajas
+porque una referencia SAR de estación seca confunde suelo desnudo con agua —de
+hecho arrojaba *más* "agua" que el propio pico— y habría borrado inundación real.
+Scripts:
+[`derivar_huella_agua.py`](https://github.com/angietrinidad/seguimiento_el_nino/blob/main/scripts/derivar_huella_agua.py)
+y
+[`aislar_inundacion.py`](https://github.com/angietrinidad/seguimiento_el_nino/blob/main/scripts/aislar_inundacion.py)
+[@sentinel1; @jrc_gsw; @planetary_computer].
 
 ::: {.callout-warning}
 ## Cómo leer (y cómo no leer) esta capa
-- Es **detección automática, no validada en campo**.
-- Muestra **agua total** en la fecha: incluye el **cauce permanente** del río,
-  no solo el área anegada. Aislar solo la inundación exigiría diferenciar contra
-  una fecha de aguas bajas (trabajo pendiente).
+- Es **detección automática, no validada en campo**; producto preliminar.
 - La cobertura es **irregular**: el viento sobre el agua eleva la señal y puede
-  hacer que zonas realmente inundadas no aparezcan. La ausencia de azul **no**
-  prueba ausencia de agua.
-- Un dato aparte: la banda recta que aparecía en una versión previa era un
-  **artefacto** del borde de la escena y fue eliminada tras validación visual.
+  hacer que zonas realmente inundadas no aparezcan. La ausencia de rojo **no**
+  prueba ausencia de inundación.
+- **Coincidencia que da confianza:** la inundación aislada se ubica sobre los
+  bañados Norte, Sur y La Chacarita, consistente con el desplazamiento documentado.
+- La banda recta que aparecía en una versión previa era un **artefacto** del
+  borde de escena; se eliminó tras validación visual.
 :::
 
 ## Umbrales de referencia del río Paraguay {#umbrales}
@@ -158,13 +181,13 @@ menores a 5 ha). El script está en
 ## Vacío de información — capa de huella de inundación {#vacio-capa}
 
 ::: {.vacio}
-El mapa incluye una capa de agua **derivada por nosotros** de Sentinel-1
-(preliminar, ver [arriba](#agua-satelital)), pero **falta una capa oficial y
-validada** de huella de inundación por episodio. Tras una búsqueda sistemática
-(julio de 2026) **no se localizó un vector oficial abierto** para los episodios
-de El Niño en Paraguay. También queda pendiente **aislar la inundación del cauce
-permanente** (diferenciando contra una fecha de aguas bajas) y **extender la
-detección a otros episodios** (2018-19, 2023-24).
+El mapa incluye una huella de inundación **derivada por nosotros** de Sentinel-1,
+ya con el cauce permanente restado (preliminar, ver [arriba](#agua-satelital)),
+pero **falta una capa oficial y validada** de huella de inundación por episodio.
+Tras una búsqueda sistemática (julio de 2026) **no se localizó un vector oficial
+abierto** para los episodios de El Niño en Paraguay. Queda pendiente **extender la
+detección a otros episodios** (2018-19, 2023-24) y **validar en campo** el
+resultado automático.
 :::
 
 **Búsqueda realizada (para no repetirla):**
