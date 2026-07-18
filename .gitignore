@@ -31,3 +31,11 @@ datos/oficial/mspbs_salud.geojson
 datos/oficial/*.kml
 datos/oficial/kontur_py.gpkg
 datos/oficial/*.gpkg.gz
+
+# Artefactos de build de Quarto en la raíz (no versionar; van a _site/)
+/site_libs/
+/*.html
+/search.json
+/sitemap.xml
+/robots.txt
+/.nojekyll
