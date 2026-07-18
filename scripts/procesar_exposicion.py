@@ -23,6 +23,7 @@ from shapely.prepared import prep
 
 GEO = os.path.join(os.path.dirname(__file__), "..", "datos", "geo")
 EXP = os.path.join(os.path.dirname(__file__), "..", "datos", "exposicion")
+OFI = os.path.join(os.path.dirname(__file__), "..", "datos", "oficial")
 PRIORITARIOS = {"CENTRAL", "CONCEPCION", "SAN PEDRO", "PRESIDENTE HAYES",
                 "ÑEEMBUCU", "MISIONES", "ITAPUA", "ALTO PARANA"}
 
@@ -64,11 +65,49 @@ for r in csv.DictReader(open(os.path.join(EXP, "poblacion_adm1_2023.csv"), encod
     may = sum(int(r[c]) for c in ["T_65_69", "T_70_74", "T_75_79", "T_80Plus"])
     pop[n] = {"total": int(r["T_TL"]), "ninez": ninez, "mayores": may}
 
-# --- Puntos de salud y educación ---
+# --- Salud: OSM (healthsites) ---
 salud = puntos(os.path.join(GEO, "health_raw.geojson"), "salud", {"hospital", "clinic", "doctors"})
-escuelas = puntos(os.path.join(GEO, "education_facilities.geojson"), "educacion",
-                  {"school", "kindergarten", "college", "university"})
-print(f"salud: {len(salud)} | escuelas: {len(escuelas)}")
+
+# --- Educación: directorio OFICIAL del MEC (georreferenciado, con nombre) ---
+def cargar_escuelas_oficiales(path):
+    out = []
+    for f in json.load(open(path, encoding="utf-8"))["features"]:
+        p = f["properties"]; lon, lat = f["geometry"]["coordinates"]
+        detalle = {k: v for k, v in {"distrito": p.get("distrito"), "barrio": p.get("barrio"),
+                   "instituciones": p.get("n_instituciones")}.items() if v}
+        out.append({"lon": lon, "lat": lat, "nombre": p.get("nombre"),
+                    "tipo": "establecimiento educativo", "codigo": p.get("codigo_establecimiento"),
+                    "detalle": detalle})
+    return out
+escuelas = cargar_escuelas_oficiales(os.path.join(OFI, "mec_escuelas_oficiales.geojson"))
+print(f"salud (OSM): {len(salud)} | escuelas (MEC oficial): {len(escuelas)}")
+
+# Matrícula oficial (tc=13) — solo para establecimientos expuestos; con caché.
+import urllib.request
+_mat_cache = {}
+def matricula(codigo):
+    if codigo in _mat_cache:
+        return _mat_cache[codigo]
+    res = (None, None)
+    try:
+        url = ("https://datos.mec.gov.py/app/mapa_establecimientos/datos"
+               f"?tipo_consulta=13&periodo=2014&establecimiento={codigo}")
+        raw = urllib.request.urlopen(url, timeout=30).read()
+        try:
+            data = json.loads(raw.decode("utf-8"))
+        except UnicodeDecodeError:
+            data = json.loads(raw.decode("latin-1"))
+        por_anio = {}
+        for inst in data:
+            for y, v in (inst.get("cantidad_matriculados") or {}).items():
+                if v and v not in ("--", ""):
+                    por_anio[y] = por_anio.get(y, 0) + int(v)
+        if por_anio:
+            a = max(por_anio); res = (por_anio[a], a)
+    except Exception:
+        pass
+    _mat_cache[codigo] = res
+    return res
 
 # --- Departamentos con conteos ---
 deps = json.load(open(os.path.join(GEO, "departamentos-py.geojson"), encoding="utf-8"))
@@ -139,6 +178,10 @@ for z in ZONAS:
                 else: ne += 1
                 props = {"clase": clase, "tipo": r["tipo"], "nombre": r["nombre"], "zona": z["nombre"]}
                 props.update(r["detalle"])
+                if clase == "educacion" and r.get("codigo"):
+                    tot, anio = matricula(r["codigo"])
+                    if tot is not None:
+                        props["matricula"] = tot; props["matricula_anio"] = anio
                 exp_feats.append({"type": "Feature", "properties": props,
                                   "geometry": {"type": "Point", "coordinates": [r["lon"], r["lat"]]}})
     resumen_zonas[z["id"]] = {"nombre": z["nombre"], "salud_expuestos": ns, "escuelas_expuestos": ne}

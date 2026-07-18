@@ -157,8 +157,10 @@ establecimientos expuestos.*
 
 - Población: **COD-PS 2023** (UNFPA a partir de proyecciones DGEEC), CC BY-IGO
   [@codps_pry].
-- Servicios de salud: **healthsites.io / OpenStreetMap**, ODbL [@healthsites].
-- Centros educativos: **Humanitarian OpenStreetMap Team**, ODbL [@hotosm_edu].
+- Servicios de salud: **healthsites.io / OpenStreetMap**, ODbL [@healthsites]
+  (pendiente cruce con MSPBS; OSM no trae camas).
+- Centros educativos: **registro oficial del MEC** (datos.mec.gov.py, período 2014),
+  georreferenciado y con **matrícula** por establecimiento [@mec_datos].
 - Departamentos: **geoBoundaries** [@geoboundaries_py].
 - Zonas inundables: derivadas de **Sentinel-1** en este repositorio.
 
@@ -171,10 +173,11 @@ cobertura de OSM en pueblos chicos es escasa; muchos establecimientos quedan
 apenas fuera del buffer. Es una cota inferior, no la exposición real.
 
 ::: {.vacio}
-- La cobertura de salud y educación de **OpenStreetMap no es exhaustiva ni
-  oficial**: subestima establecimientos, sobre todo en el interior. Pendiente
-  contrastar con **MSPBS** (salud) y **MEC** (educación). OSM tampoco trae
-  **capacidad/matrícula** (número de personas por establecimiento).
+- **Educación** usa el registro **oficial del MEC** con matrícula, pero del
+  **período 2014** (último publicado en el portal); la ubicación es representativa
+  aunque desactualizada.
+- **Salud** sigue en **OpenStreetMap** (no exhaustivo ni oficial, sin camas);
+  pendiente cruzar con el registro georreferenciado del **MSPBS**.
 - **Concepción** quedó pendiente: no hay cobertura de Sentinel-1 RTC reciente
   (2022-2024) sobre el norte para derivar su zona de anegamiento con este método.
 - La exposición **no** incorpora aún **vulnerabilidad social** (asentamientos

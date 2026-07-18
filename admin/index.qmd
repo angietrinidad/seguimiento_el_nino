@@ -15,13 +15,10 @@ caen dentro de las zonas de riesgo de inundación, para planificación operativa
   cualquiera con esta URL puede verla. Para privacidad real, esta página debe
   dejar de publicarse (generarse solo en local) o alojarse en un repositorio con
   control de acceso (ver nota al pie).
-- Los datos provienen de **OpenStreetMap** (healthsites.io / HOT) y **no son
-  exhaustivos ni oficiales**: pueden faltar establecimientos y sobrar cierres.
-  Contrastar con registros del MSPBS (salud) y MEC (educación).
-- **La cantidad de personas (matrícula/capacidad) NO está disponible en OSM**
-  (campo vacío en todos los registros); se muestran solo los datos existentes
-  (ciudad, operador, especialidad, emergencia). Para esa cifra hará falta cruzar
-  con el MEC (matrícula por escuela) y el MSPBS (camas/consultas por servicio).
+- **Educación: registro OFICIAL del MEC** (datos.mec.gov.py, período 2014),
+  georreferenciado y con **matrícula** (cantidad de alumnos) por establecimiento.
+- **Salud: OpenStreetMap** (healthsites.io) — **no oficial ni exhaustivo**;
+  pendiente cruzar con el **MSPBS**. OSM no trae camas/capacidad.
 
 Se regenera automáticamente con cada actualización de los datos (fecha arriba).
 :::
@@ -33,39 +30,57 @@ import json
 from IPython.display import Markdown
 
 feats = json.load(open("datos/geo/expuestos-inundacion.geojson", encoding="utf-8"))["features"]
-CAMPOS = ["ciudad", "operador", "especialidad", "emergencia"]
 
-# Agrupar por zona -> clase
+def loc(lat, lon):
+    u = f"https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map=17/{lat}/{lon}"
+    return f"[{lat:.5f}, {lon:.5f}]({u})"
+
 zonas = {}
 for f in feats:
     p = f["properties"]
     lon, lat = f["geometry"]["coordinates"]
+    p["_lat"], p["_lon"] = lat, lon
     zonas.setdefault(p.get("zona", "—"), {"salud": [], "educacion": []})
-    datos = "; ".join(f"{k}: {p[k]}" for k in CAMPOS if p.get(k)) or "—"
-    zonas[p["zona"]][p["clase"]].append((p.get("nombre") or "(sin nombre)", p.get("tipo") or "—", datos, lat, lon))
+    zonas[p["zona"]][p["clase"]].append(p)
 
-def tabla(items):
+def tabla_salud(items):
     if not items:
         return "_Ninguno detectado en esta zona._\n"
+    campos = ["ciudad", "operador", "especialidad", "emergencia"]
     head = "| # | Nombre | Tipo | Datos (OSM) | Ubicación |\n|---:|---|---|---|---|"
     filas = []
-    for i, (nom, tipo, datos, lat, lon) in enumerate(sorted(items), 1):
-        osm = f"https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map=17/{lat}/{lon}"
-        filas.append(f"| {i} | {nom} | {tipo} | {datos} | [{lat:.5f}, {lon:.5f}]({osm}) |")
+    for i, p in enumerate(sorted(items, key=lambda x: x.get("nombre") or ""), 1):
+        datos = "; ".join(f"{k}: {p[k]}" for k in campos if p.get(k)) or "—"
+        filas.append(f"| {i} | {p.get('nombre') or '(sin nombre)'} | {p.get('tipo') or '—'} | {datos} | {loc(p['_lat'], p['_lon'])} |")
+    return head + "\n" + "\n".join(filas)
+
+def tabla_educacion(items):
+    if not items:
+        return "_Ninguno detectado en esta zona._\n"
+    head = "| # | Institución (MEC) | Matrícula (año) | Distrito / barrio | Ubicación |\n|---:|---|---:|---|---|"
+    filas = []
+    for i, p in enumerate(sorted(items, key=lambda x: x.get("nombre") or ""), 1):
+        mat = f"{p['matricula']} ({p.get('matricula_anio','')})" if p.get("matricula") is not None else "s/d"
+        ubic = " / ".join(x for x in [p.get("distrito"), p.get("barrio")] if x) or "—"
+        filas.append(f"| {i} | {p.get('nombre') or '—'} | {mat} | {ubic} | {loc(p['_lat'], p['_lon'])} |")
     return head + "\n" + "\n".join(filas)
 
 out = []
-tot_s = tot_e = 0
+tot_s = tot_e = tot_mat = 0
 for zona in sorted(zonas):
     s = zonas[zona]["salud"]; e = zonas[zona]["educacion"]
     tot_s += len(s); tot_e += len(e)
+    tot_mat += sum(p.get("matricula", 0) or 0 for p in e)
     out.append(f"## {zona}\n")
     out.append(f"**Servicios de salud expuestos: {len(s)}**\n")
-    out.append(tabla(s) + "\n")
-    out.append(f"**Centros educativos expuestos: {len(e)}**\n")
-    out.append(tabla(e) + "\n")
+    out.append(tabla_salud(s) + "\n")
+    out.append(f"**Centros educativos expuestos: {len(e)}** "
+               f"(matrícula sumada: {sum(p.get('matricula', 0) or 0 for p in e):,})\n")
+    out.append(tabla_educacion(e) + "\n")
 
-resumen = f"**Total: {tot_s} servicios de salud y {tot_e} centros educativos** en zonas de riesgo de inundación.\n"
+resumen = (f"**Total: {tot_s} servicios de salud y {tot_e} centros educativos** en zonas "
+           f"de riesgo de inundación, con **{tot_mat:,} alumnos** matriculados (MEC) en las "
+           f"escuelas expuestas.\n")
 Markdown(resumen + "\n" + "\n".join(out))
 ```
 
