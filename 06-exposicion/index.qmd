@@ -46,8 +46,9 @@ html = "<div style='display:flex;gap:1em;flex-wrap:wrap'>" + card(
 HTML(html)
 ```
 
-*Población: proyección 2023 (COD-PS, UNFPA/DGEEC). Salud y educación: OpenStreetMap
-(healthsites.io / HOT). Zona de riesgo: huellas Sentinel-1 + buffer de 550 m.*
+*Población: proyección 2023 (COD-PS, UNFPA/DGEEC). Salud: registro oficial
+MSPBS/DIGIES. Educación: registro oficial MEC (2014). Zona de riesgo: huellas
+Sentinel-1 + buffer de 550 m.*
 
 ## Mapa
 
@@ -157,8 +158,8 @@ establecimientos expuestos.*
 
 - Población: **COD-PS 2023** (UNFPA a partir de proyecciones DGEEC), CC BY-IGO
   [@codps_pry].
-- Servicios de salud: **healthsites.io / OpenStreetMap**, ODbL [@healthsites]
-  (pendiente cruce con MSPBS; OSM no trae camas).
+- Servicios de salud: **registro oficial del MSPBS/DIGIES** (establecimientos
+  georreferenciados, 1.056 con categoría oficial) [@mspbs_datos].
 - Centros educativos: **registro oficial del MEC** (datos.mec.gov.py, período 2014),
   georreferenciado y con **matrícula** por establecimiento [@mec_datos].
 - Departamentos: **geoBoundaries** [@geoboundaries_py].
@@ -176,8 +177,8 @@ apenas fuera del buffer. Es una cota inferior, no la exposición real.
 - **Educación** usa el registro **oficial del MEC** con matrícula, pero del
   **período 2014** (último publicado en el portal); la ubicación es representativa
   aunque desactualizada.
-- **Salud** sigue en **OpenStreetMap** (no exhaustivo ni oficial, sin camas);
-  pendiente cruzar con el registro georreferenciado del **MSPBS**.
+- **Salud** usa el registro **oficial del MSPBS/DIGIES** (georreferenciado, con
+  categoría oficial). No incluye camas ni dotación de personal por establecimiento.
 - **Concepción** quedó pendiente: no hay cobertura de Sentinel-1 RTC reciente
   (2022-2024) sobre el norte para derivar su zona de anegamiento con este método.
 - La exposición **no** incorpora aún **vulnerabilidad social** (asentamientos

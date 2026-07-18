@@ -65,8 +65,17 @@ for r in csv.DictReader(open(os.path.join(EXP, "poblacion_adm1_2023.csv"), encod
     may = sum(int(r[c]) for c in ["T_65_69", "T_70_74", "T_75_79", "T_80Plus"])
     pop[n] = {"total": int(r["T_TL"]), "ninez": ninez, "mayores": may}
 
-# --- Salud: OSM (healthsites) ---
-salud = puntos(os.path.join(GEO, "health_raw.geojson"), "salud", {"hospital", "clinic", "doctors"})
+# --- Salud: registro OFICIAL del MSPBS (DIGIES) ---
+def cargar_salud_oficial(path):
+    out = []
+    for f in json.load(open(path, encoding="utf-8"))["features"]:
+        p = f["properties"]; lon, lat = f["geometry"]["coordinates"]
+        detalle = {k: v for k, v in {"categoria": p.get("categoria"), "subtipo": p.get("tipo"),
+                   "distrito": p.get("distrito")}.items() if v}
+        out.append({"lon": lon, "lat": lat, "nombre": p.get("nombre"),
+                    "tipo": p.get("categoria") or "establecimiento de salud", "detalle": detalle})
+    return out
+salud = cargar_salud_oficial(os.path.join(OFI, "mspbs_salud.geojson"))
 
 # --- Educación: directorio OFICIAL del MEC (georreferenciado, con nombre) ---
 def cargar_escuelas_oficiales(path):

@@ -17,8 +17,8 @@ caen dentro de las zonas de riesgo de inundación, para planificación operativa
   control de acceso (ver nota al pie).
 - **Educación: registro OFICIAL del MEC** (datos.mec.gov.py, período 2014),
   georreferenciado y con **matrícula** (cantidad de alumnos) por establecimiento.
-- **Salud: OpenStreetMap** (healthsites.io) — **no oficial ni exhaustivo**;
-  pendiente cruzar con el **MSPBS**. OSM no trae camas/capacidad.
+- **Salud: registro OFICIAL del MSPBS/DIGIES** (establecimientos georreferenciados),
+  con categoría oficial (USF, puesto, centro, hospital). No incluye camas.
 
 Se regenera automáticamente con cada actualización de los datos (fecha arriba).
 :::
@@ -46,12 +46,11 @@ for f in feats:
 def tabla_salud(items):
     if not items:
         return "_Ninguno detectado en esta zona._\n"
-    campos = ["ciudad", "operador", "especialidad", "emergencia"]
-    head = "| # | Nombre | Tipo | Datos (OSM) | Ubicación |\n|---:|---|---|---|---|"
+    head = "| # | Establecimiento (MSPBS) | Categoría | Subtipo | Distrito | Ubicación |\n|---:|---|---|---|---|---|"
     filas = []
     for i, p in enumerate(sorted(items, key=lambda x: x.get("nombre") or ""), 1):
-        datos = "; ".join(f"{k}: {p[k]}" for k in campos if p.get(k)) or "—"
-        filas.append(f"| {i} | {p.get('nombre') or '(sin nombre)'} | {p.get('tipo') or '—'} | {datos} | {loc(p['_lat'], p['_lon'])} |")
+        cat = p.get("categoria") or p.get("tipo") or "—"
+        filas.append(f"| {i} | {p.get('nombre') or '(sin nombre)'} | {cat} | {p.get('subtipo') or '—'} | {p.get('distrito') or '—'} | {loc(p['_lat'], p['_lon'])} |")
     return head + "\n" + "\n".join(filas)
 
 def tabla_educacion(items):
