@@ -1,5 +1,5 @@
 ---
-title: "5. Mapa de riesgo de inundación"
+title: "Mapa histórico de inundaciones"
 ---
 
 Mapa interactivo de zonas expuestas a inundación en Paraguay, con foco nacional y

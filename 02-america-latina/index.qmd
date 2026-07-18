@@ -1,36 +1,18 @@
 ---
-title: "2. América Latina"
+title: "América Latina: panorama regional"
 ---
 
-Panorama regional del ENOS: estado actual del episodio 2026, impactos del
-episodio 2023-24 por subregión y sector, y marco institucional de alerta
-temprana. Toda cifra remite a su fuente; los datos sin respaldo primario se
-marcan como vacío.
+Panorama regional del ENOS: impactos del episodio **2023-24** por subregión y
+sector, y marco institucional de alerta temprana. Toda cifra remite a su fuente;
+los datos sin respaldo primario se marcan como vacío.
 
-## 2.1 Estado del episodio en curso (2026)
-
-A julio de 2026 hay un episodio de **El Niño en curso y en fortalecimiento** —no
-La Niña ni condiciones neutrales—. Las tres autoridades de referencia coinciden:
-
-- **NOAA/CPC** mantiene un **Aviso de El Niño**; el índice Niño 3.4 más reciente
-  era **+1,2 °C**, con **81 %** de probabilidad de un El Niño *muy fuerte* en
-  octubre-diciembre de 2026 y **97 %** de que persista hasta inicios de la
-  primavera boreal de 2027 [oficial]{.badge-oficial} [@noaa_enso_disc_2026].
-- El **IRI** (Universidad de Columbia) asignaba **100 %** de probabilidad a El
-  Niño entre junio-agosto y septiembre-noviembre de 2026 (y 0 % a La Niña); el
-  Niño 3.4 semanal llegó a **+1,7 °C** el 17 de junio de 2026
-  [oficial]{.badge-oficial} [@iri_enso_2026].
-- La **OMM** daba **80 %** de probabilidad de El Niño para junio-agosto de 2026,
-  ascendiendo a ≥90 % en los trimestres siguientes [oficial]{.badge-oficial}
-  [@wmo_update_2026].
-
-::: {.callout-note}
-**Trazabilidad de la transición:** a inicios de 2026 la OMM aún reportaba una La
-Niña débil desvaneciéndose hacia neutralidad; la transición a El Niño se
-consolidó hacia mediados de 2026.
+::: {.callout-tip}
+El **estado del episodio en curso (2026-27)** —diagnóstico de NOAA, IRI y OMM— se
+sigue en [Situación actual](../situacion-actual/index.qmd). Esta página cubre los
+**antecedentes**.
 :::
 
-## 2.2 Mapa de impactos por subregión (episodio 2023-2024)
+## Mapa de impactos por subregión (episodio 2023-2024)
 
 La síntesis regional proviene del informe del Estado del Clima para América
 Latina y el Caribe de la OMM [@wmo_alc_2023].
@@ -45,7 +27,7 @@ Latina y el Caribe de la OMM [@wmo_alc_2023].
 
 Todos: [oficial]{.badge-oficial} OMM (2024-05-08) [@wmo_alc_2023].
 
-## 2.3 Impactos sectoriales (2023-2024)
+## Impactos sectoriales (2023-2024)
 
 ### Agricultura y seguridad alimentaria
 En 2023, **13,8 millones de personas** en crisis alimentaria aguda (fase 3+ de
@@ -77,7 +59,7 @@ El Niño 2023-2024 en fuente primaria. El informe de OCHA que lo abordaría no f
 accesible directamente (HTTP 403); pendiente de revisar el PDF original.
 :::
 
-## 2.4 Marco institucional regional
+## Marco institucional regional
 
 - **OMM (WMO):** emite las actualizaciones oficiales El Niño/La Niña y el informe
   del Estado del Clima regional [@wmo_update_2026].

@@ -1,0 +1,76 @@
+---
+title: "Situación actual: episodio 2026-2027"
+date: last-modified
+date-format: "D [de] MMMM [de] YYYY"
+---
+
+Página de **seguimiento del episodio de El Niño en curso (2026-2027)**. Reúne en
+un solo lugar el estado del fenómeno, el pronóstico para Paraguay y la exposición
+de la población. Para el registro de episodios pasados, ver
+[Antecedentes históricos](../05-mapa-riesgo/index.qmd).
+
+::: {.callout-important}
+## Estado al día
+**El Niño en curso y en fortalecimiento.** NOAA/CPC mantiene un **Aviso de El
+Niño** (boletín del 9-jul-2026): Niño 3.4 en **+1,2 °C**, con **97 %** de
+probabilidad de persistir hasta inicios de 2027 y **81 %** de alcanzar categoría
+*muy fuerte* en octubre-diciembre de 2026 [@noaa_enso_disc_2026].
+:::
+
+## 1. El fenómeno hoy
+
+| Autoridad | Diagnóstico (mediados de 2026) |
+|---|---|
+| **NOAA/CPC** | Aviso de El Niño; Niño 3.4 +1,2 °C; 81 % *muy fuerte* en oct-dic [@noaa_enso_disc_2026] |
+| **IRI (Columbia)** | ~100 % de probabilidad de El Niño hasta fin de 2026 [@iri_enso_2026] |
+| **OMM** | 80 % para jun-ago 2026, ≥90 % en los trimestres siguientes [@wmo_update_2026] |
+
+Impactos regionales de episodios pasados en
+[América Latina](../02-america-latina/index.qmd).
+
+## 2. Qué se espera en Paraguay
+
+La **DINAC/DMH** (director Eduardo Mingo) estima **80 %** de probabilidad de que
+El Niño domine entre julio y agosto de 2026, y anticipa una **primavera lluviosa**
+con riesgo de **lluvias intensas e inundaciones hacia finales de 2026**, tendencia
+que podría intensificarse en el primer trimestre de 2027 [@abc_dmh_2026].
+
+Detalle y episodios previos en [Paraguay](../03-paraguay/nacional.qmd).
+
+## 3. Quién está expuesto
+
+La exposición estructural que este episodio pondría a prueba (evidencia empírica +
+población, salud y educación):
+
+```{python}
+#| echo: false
+import json
+from IPython.display import Markdown
+r = json.load(open("datos/exposicion/resumen.json", encoding="utf-8"))
+p = r["departamentos_prioritarios"]; z = r["zona_riesgo_asuncion"]
+Markdown(
+f"""| Indicador | Valor |
+|---|---:|
+| Población en departamentos ribereños prioritarios | **{p['poblacion']:,}** |
+| — de ella, niñez (0-14) | {p['ninez']:,} |
+| — de ella, adultos mayores (65+) | {p['mayores']:,} |
+| Servicios de salud expuestos (zona de riesgo Asunción) | **{z['salud_expuestos']}** |
+| Centros educativos expuestos (zona de riesgo Asunción) | **{z['escuelas_expuestos']}** |
+""")
+```
+
+Mapa completo e interactivo en
+[Exposición y población en riesgo](../06-exposicion/index.qmd).
+
+## 4. Cómo se compara con episodios pasados
+
+El episodio en curso se lee sobre el registro de 1997-98, 2015-16, 2018-19 y
+2023-24. La comparación de intensidad (ONI) está en la
+[portada](../index.qmd#tabla-resumen-comparativa-por-episodio); las huellas de
+inundación derivadas de satélite, en el
+[mapa histórico de inundaciones](../05-mapa-riesgo/index.qmd).
+
+::: {.callout-note}
+Página viva: se actualiza con cada nuevo boletín de la DINAC y de NOAA/OMM. La
+fecha de arriba indica la última actualización.
+:::

@@ -1,5 +1,5 @@
 ---
-title: "4. Asunción y área metropolitana"
+title: "Asunción y área metropolitana"
 ---
 
 Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —los
@@ -7,7 +7,7 @@ Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —lo
 de vulnerabilidad social. El riesgo es doble: **fluvial** (crecida del río
 Paraguay) y **pluvial** (lluvias intensas sobre drenaje insuficiente).
 
-## 4.1 Hidrología del río Paraguay
+## Hidrología del río Paraguay
 
 ```{python}
 #| echo: false
@@ -37,7 +37,7 @@ episodio deben cargarse desde el registro/anuario hidrológico oficial de la
 DINAC.
 :::
 
-## 4.2 Población desplazada en episodios recientes
+## Población desplazada en episodios recientes
 
 - **El Niño 2015-16 (muy fuerte):** **>72.000 personas** desplazadas en Asunción
   (>100.000 nacional), según estimaciones gubernamentales
@@ -50,7 +50,7 @@ DINAC.
   (49 zonas), **La Chacarita >1.800 familias** (21 albergues)
   [oficial]{.badge-oficial} (DGRRD, 2019-05-30) [@muni_2019].
 
-## 4.3 Gestión municipal del riesgo (DGRRD)
+## Gestión municipal del riesgo (DGRRD)
 
 La **Dirección General de Gestión y Reducción de Riesgos de Desastres (DGRRD)**
 de la Municipalidad de Asunción coordina la respuesta: **sistema de albergues**
@@ -63,7 +63,7 @@ Protocolos formales, umbrales de alerta temprana y planes de contingencia
 vigentes de la DGRRD pendientes de incorporar desde documento oficial.
 :::
 
-## 4.4 Inundaciones pluviales urbanas
+## Inundaciones pluviales urbanas
 
 Además del desborde del río, Asunción sufre **inundaciones pluviales** por
 lluvias intensas sobre una **infraestructura de drenaje insuficiente**: en abril
@@ -75,7 +75,7 @@ Falta caracterización cuantitativa del drenaje urbano (puntos críticos,
 capacidad, población expuesta a anegamiento pluvial) con fuente técnica.
 :::
 
-## 4.5 Población en situación de vulnerabilidad
+## Población en situación de vulnerabilidad
 
 Los bañados y La Chacarita concentran **asentamientos informales** con viviendas
 precárias en la ribera. El reporte municipal de 2019 registró en los albergues

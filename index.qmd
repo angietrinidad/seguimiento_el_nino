@@ -5,40 +5,58 @@ date: last-modified
 date-format: "D [de] MMMM [de] YYYY"
 ---
 
-## Sobre este repositorio
-
 Base empírica y documental sobre el fenómeno **El Niño-Oscilación del Sur
-(ENOS)** para investigación en sociología y gestión del riesgo de desastres,
-organizada en tres niveles de resolución geográfica:
+(ENOS)** para investigación en sociología y gestión del riesgo de desastres.
+Prioriza **fuentes oficiales y datos primarios**, señala de forma explícita los
+**vacíos de información** y **no incorpora cifras sin fuente verificable**
+(ver [metodología](metodologia.qmd)).
 
-1. [**América Latina**](02-america-latina/index.qmd) — panorama regional.
-2. [**Paraguay**](03-paraguay/nacional.qmd) — nacional y por departamentos.
-3. [**Asunción y área metropolitana**](04-asuncion-metropolitana/index.qmd).
+## Cómo está organizado
 
-El repositorio prioriza **fuentes oficiales y datos primarios**, señala de forma
-explícita los **vacíos de información** y **no incorpora cifras sin fuente
-verificable** (ver [metodología](metodologia.qmd)).
+El repositorio se recorre en dos ejes: **qué ya ocurrió** y **qué está pasando
+ahora**.
 
-::: {.callout-note}
-## Foco actual
-Episodio **El Niño 2026-2027**, actualmente en desarrollo, con valor comparativo
-de los episodios históricos de 1997-98, 2015-16 y 2023-24.
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### 🧭 Marco conceptual
+Qué es el ENOS, sus fases y por qué importa para Paraguay.
+
+- [Qué es el ENOS](01-marco-conceptual/index.qmd)
 :::
 
-## Convención de confiabilidad
+::: {.g-col-12 .g-col-md-4}
+### 📚 Antecedentes históricos
+El registro de episodios pasados (1997-98, 2015-16, 2018-19, 2023-24) por nivel
+geográfico.
 
-Cada hallazgo se etiqueta según su fuente:
+- [América Latina — panorama regional](02-america-latina/index.qmd)
+- [Paraguay — nivel nacional](03-paraguay/nacional.qmd)
+- [Impacto por departamento](03-paraguay/departamentos/index.qmd)
+- [Asunción y área metropolitana](04-asuncion-metropolitana/index.qmd)
+- [Mapa histórico de inundaciones](05-mapa-riesgo/index.qmd)
+:::
 
-[oficial]{.badge-oficial} organismo estatal o intergubernamental ·
-[académico]{.badge-academico} revista/institución científica ·
-[prensa]{.badge-prensa} medios ·
-[estimación]{.badge-estimacion} dato no confirmado.
+::: {.g-col-12 .g-col-md-4}
+### 🔴 Situación actual (2026-27)
+El episodio en curso y quién está expuesto.
+
+- [Estado del episodio 2026-27](situacion-actual/index.qmd)
+- [Exposición y población en riesgo](06-exposicion/index.qmd)
+:::
+
+:::
+
+::: {.callout-important}
+## Episodio en curso
+**El Niño 2026-2027** en desarrollo (Aviso de El Niño de NOAA/CPC, jul-2026). El
+seguimiento del estado actual y de la población expuesta está en
+[Situación actual](situacion-actual/index.qmd).
+:::
 
 ## Tabla resumen comparativa por episodio
 
-Clasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA. Las
-columnas de afectación se completan a medida que se recolectan datos verificados
-(las celdas vacías indican dato aún no recolectado).
+Clasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA.
 
 ```{python}
 #| label: tbl-episodios
@@ -57,15 +75,25 @@ Markdown(head + "\n" + body)
 
 : Episodios El Niño considerados en el repositorio. {#tbl-episodios}
 
+## Convención de confiabilidad
+
+Cada hallazgo se etiqueta según su fuente:
+[oficial]{.badge-oficial} organismo estatal o intergubernamental ·
+[académico]{.badge-academico} revista/institución científica ·
+[prensa]{.badge-prensa} medios ·
+[estimación]{.badge-estimacion} dato no confirmado.
+
 ## Estado de avance
 
-| Sección | Estado |
-|---|---|
-| Marco conceptual | 🟢 Redactado y citado (fuentes oficiales) |
-| América Latina | 🟢 Redactado y citado (OMM, OPS, IRI, OCHA) |
-| Paraguay (nacional) | 🟢 Redactado y citado (DINAC, DGRRD, prensa) |
-| Departamentos | 🟡 Ñeembucú/Central/Alto Paraguay con datos; resto pendiente |
-| Asunción metropolitana | 🟢 Redactado y citado (DGRRD, prensa) |
-| Mapa de riesgo histórico | 🟢 Leaflet: huellas de inundación 2016/2019/2024 (Sentinel-1, comparables) + zonas + cauce permanente |
-| Mapa de exposición actual | 🟢 Nacional: población, salud y educación por departamento + expuestos en zona de riesgo de Asunción |
-| Series de datos numéricos | 🟡 ONI + población afectada + niveles del río (2015-16/2018-19) cargados; sectores pendientes |
+| Bloque | Sección | Estado |
+|---|---|---|
+| Marco | Qué es el ENOS | 🟢 Redactado y citado |
+| Histórico | América Latina | 🟢 Redactado y citado (OMM, OPS, IRI, OCHA) |
+| Histórico | Paraguay (nacional) | 🟢 Redactado y citado (DINAC, DGRRD, prensa) |
+| Histórico | Departamentos | 🟡 Ñeembucú/Central/Alto Paraguay; resto pendiente |
+| Histórico | Asunción metropolitana | 🟢 Redactado y citado (DGRRD, prensa) |
+| Histórico | Mapa de inundaciones | 🟢 Huellas Sentinel-1 2016/2019/2024 (comparables) |
+| Actual | Estado del episodio 2026-27 | 🟢 NOAA/IRI/OMM + DINAC |
+| Actual | Exposición y población en riesgo | 🟢 Nacional: población, salud y educación |
+| Datos | Series numéricas | 🟡 ONI, población afectada, niveles del río; sectores pendientes |
+| Actual | Inundación en Pilar/Ñeembucú | 🔴 Detección satelital pendiente de ajuste |

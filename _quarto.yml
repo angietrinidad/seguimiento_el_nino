@@ -23,45 +23,56 @@ website:
         file: index.qmd
       - text: "Marco conceptual"
         file: 01-marco-conceptual/index.qmd
-      - text: "América Latina"
-        file: 02-america-latina/index.qmd
-      - text: "Paraguay"
-        file: 03-paraguay/nacional.qmd
-      - text: "Asunción"
-        file: 04-asuncion-metropolitana/index.qmd
-      - text: "Mapa de riesgo"
-        file: 05-mapa-riesgo/index.qmd
-      - text: "Exposición"
-        file: 06-exposicion/index.qmd
+      - text: "Antecedentes históricos"
+        menu:
+          - text: "América Latina (panorama regional)"
+            file: 02-america-latina/index.qmd
+          - text: "Paraguay (nacional)"
+            file: 03-paraguay/nacional.qmd
+          - text: "Paraguay por departamento"
+            file: 03-paraguay/departamentos/index.qmd
+          - text: "Asunción y área metropolitana"
+            file: 04-asuncion-metropolitana/index.qmd
+          - text: "Mapa histórico de inundaciones"
+            file: 05-mapa-riesgo/index.qmd
+      - text: "Situación actual (2026-27)"
+        menu:
+          - text: "Estado del episodio 2026-27"
+            file: situacion-actual/index.qmd
+          - text: "Exposición y población en riesgo"
+            file: 06-exposicion/index.qmd
       - text: "Fuentes"
         file: fuentes/index.qmd
   sidebar:
     style: docked
     contents:
       - index.qmd
-      - section: "1. Marco conceptual"
+      - section: "Marco conceptual"
         contents:
-          - 01-marco-conceptual/index.qmd
-      - section: "2. América Latina"
+          - text: "Qué es el ENOS"
+            file: 01-marco-conceptual/index.qmd
+      - section: "Antecedentes históricos"
         contents:
-          - 02-america-latina/index.qmd
-      - section: "3. Paraguay"
+          - text: "América Latina (panorama regional)"
+            file: 02-america-latina/index.qmd
+          - text: "Paraguay (nivel nacional)"
+            file: 03-paraguay/nacional.qmd
+          - text: "Impacto por departamento"
+            file: 03-paraguay/departamentos/index.qmd
+          - text: "Asunción y área metropolitana"
+            file: 04-asuncion-metropolitana/index.qmd
+          - text: "Mapa histórico de inundaciones"
+            file: 05-mapa-riesgo/index.qmd
+      - section: "Situación actual (2026-27)"
         contents:
-          - 03-paraguay/nacional.qmd
-          - 03-paraguay/departamentos/index.qmd
-      - section: "4. Asunción y área metropolitana"
-        contents:
-          - 04-asuncion-metropolitana/index.qmd
-      - section: "5. Mapa de riesgo"
-        contents:
-          - 05-mapa-riesgo/index.qmd
-      - section: "6. Exposición y población en riesgo"
-        contents:
-          - 06-exposicion/index.qmd
+          - text: "Estado del episodio en curso"
+            file: situacion-actual/index.qmd
+          - text: "Exposición y población en riesgo"
+            file: 06-exposicion/index.qmd
       - section: "Anexos"
         contents:
-          - fuentes/index.qmd
           - metodologia.qmd
+          - fuentes/index.qmd
 
 format:
   html:
@@ -71,7 +82,7 @@ format:
     toc: true
     toc-title: "En esta página"
     toc-depth: 3
-    number-sections: true
+    number-sections: false
     code-fold: true
     code-tools: true
     df-print: paged

@@ -1,5 +1,5 @@
 ---
-title: "3. Paraguay (nivel nacional)"
+title: "Paraguay: nivel nacional"
 ---
 
 En Paraguay, la fase cálida del ENOS (El Niño) se asocia a **precipitaciones por
@@ -7,7 +7,7 @@ encima de lo normal** y a **crecidas de los ríos Paraguay y Paraná**, con
 inundaciones ribereñas y pluviales. Esta sección reúne el pronóstico oficial
 para 2026-27 y el registro de los episodios recientes.
 
-## 3.1 Pronóstico oficial para el episodio 2026-2027
+## Pronóstico oficial para el episodio 2026-2027
 
 - La **Dirección de Meteorología e Hidrología (DINAC/DMH)**, por su director
   **Eduardo Mingo**, estimó un **80 % de probabilidad** de que El Niño se
@@ -28,7 +28,7 @@ publican en [meteorologia.gov.py](https://www.meteorologia.gov.py/) y son la
 fuente primaria a la que remitir para cada actualización.
 :::
 
-## 3.2 Historial de episodios recientes
+## Historial de episodios recientes
 
 ### El Niño 2015-2016 (muy fuerte)
 El episodio muy fuerte de 2015-16 produjo la mayor crecida reciente del río
@@ -65,7 +65,7 @@ especialmente en **Ñeembucú**:
 - Inundaciones **pluviales** en Asunción y Central por temporales en abril de 2024
   [prensa]{.badge-prensa} [@lanacion_2024].
 
-## 3.3 Sectores afectados
+## Sectores afectados
 
 - **Agricultura y ganadería (MAG):** el exceso hídrico en primavera-verano afecta
   cultivos y campos ganaderos, sobre todo en el sur y la cuenca del Paraná.
@@ -82,13 +82,13 @@ Faltan series cuantificadas por sector (hectáreas agrícolas afectadas, pérdid
 económicas del BCP, km de rutas dañadas) con fuente primaria por episodio.
 :::
 
-## 3.4 Marco institucional nacional
+## Marco institucional nacional
 
 **SEN** (respuesta y declaraciones de emergencia) · **DINAC** (pronóstico y
 monitoreo hidrológico) · **MAG** (riesgos agrícolas) · **municipalidades** ·
 cooperación internacional (**Cruz Roja Paraguaya, PNUD, UNICEF**).
 
-## 3.5 Series comparativas — población afectada
+## Series comparativas — población afectada
 
 ```{python}
 #| echo: false

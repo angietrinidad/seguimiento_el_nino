@@ -1,8 +1,8 @@
 ---
-title: "1. Marco conceptual"
+title: "Marco conceptual: qué es el ENOS"
 ---
 
-## 1.1 ¿Qué es El Niño-Oscilación del Sur (ENOS)?
+## ¿Qué es El Niño-Oscilación del Sur (ENOS)?
 
 El **El Niño-Oscilación del Sur (ENOS)** —*El Niño–Southern Oscillation*, ENSO—
 es un patrón climático recurrente de interacción **océano-atmósfera** en el
@@ -19,7 +19,7 @@ planeta [@wmo_enso]. Tiene dos componentes acoplados:
 El monitoreo operativo se basa en la región **Niño 3.4** (5°N–5°S, 170°W–120°W),
 cuya anomalía de TSM resume el estado del sistema [@noaa_oni].
 
-## 1.2 Fases: El Niño, La Niña y fase neutral
+## Fases: El Niño, La Niña y fase neutral
 
 | Fase | Estado del Pacífico ecuatorial | Alisios |
 |---|---|---|
@@ -32,7 +32,7 @@ duración de cada episodio de entre 9 y 12 meses, ocasionalmente más
 [@wmo_enso]. Las fases suelen consolidarse hacia el final del año calendario del
 hemisferio norte.
 
-## 1.3 Umbrales de clasificación (ONI)
+## Umbrales de clasificación (ONI)
 
 NOAA clasifica los episodios mediante el **Oceanic Niño Index (ONI)**, la media
 móvil trimestral de la anomalía de TSM en Niño 3.4. Un episodio se declara
@@ -67,7 +67,7 @@ Oceanic Niño Index (RONI)* como índice de referencia operativo, para corregir 
 calentamiento de fondo del océano [@noaa_roni].
 :::
 
-## 1.4 Mecanismos físicos de impacto en Sudamérica
+## Mecanismos físicos de impacto en Sudamérica
 
 Durante **El Niño**, el desplazamiento hacia el este de la convección tropical
 altera la circulación atmosférica por **teleconexión**, con efectos
@@ -86,7 +86,7 @@ La señal es **probabilística**, no determinista: El Niño **inclina la balanza
 hacia ciertos regímenes de lluvia/temperatura, pero no garantiza un resultado en
 un punto y momento dados.
 
-## 1.5 Por qué importa para la cuenca del Plata y Paraguay
+## Por qué importa para la cuenca del Plata y Paraguay
 
 Para Paraguay, la relevancia de El Niño es directa: la fase cálida tiende a
 **aumentar las precipitaciones** sobre la cuenca del Paraná-Paraguay, lo que se
@@ -98,11 +98,8 @@ lluvia → crecida → afectación social— es el eje que estructura las seccio
 [Asunción](../04-asuncion-metropolitana/index.qmd).
 
 ::: {.callout-important}
-## Episodio en curso 2026-2027
-Al **9 de julio de 2026**, NOAA/CPC mantiene un **Aviso de El Niño** (*El Niño
-Advisory*): el episodio está presente y se prevé que se **intensifique** hacia
-fin de año, con **97 % de probabilidad** de persistir hasta comienzos de la
-primavera boreal de 2027 y **81 %** de alcanzar categoría **muy fuerte** en el
-trimestre octubre-diciembre de 2026. El índice Niño 3.4 semanal se ubicaba en
-**+1,2 °C** [@noaa_enso_disc_2026].
+## Episodio en curso
+Hay un episodio de El Niño **2026-2027 en desarrollo**. Su estado detallado,
+pronóstico y la población expuesta se siguen en
+[Situación actual](../situacion-actual/index.qmd).
 :::
