@@ -62,6 +62,13 @@ deps = json.load(open("datos/geo/departamentos-exposicion.geojson", encoding="ut
 
 m = folium.Map(location=[-23.8, -58.0], zoom_start=6, tiles="cartodbpositron", control_scale=True)
 
+# Popup con los datos disponibles del establecimiento (OSM no trae capacidad)
+CAMPOS_POP = [("ciudad", "Ciudad"), ("operador", "Operador"),
+              ("especialidad", "Especialidad"), ("emergencia", "Emergencia")]
+def popup_html(p, prefijo=""):
+    filas = "".join(f"<br><small>{lab}: {p[k]}</small>" for k, lab in CAMPOS_POP if p.get(k))
+    return f"<b>{prefijo}{p['nombre']}</b><br><i>{p['tipo']}</i>{filas}"
+
 # Coropleta de población por departamento
 def color_pop(v):
     v = v or 0
@@ -89,12 +96,13 @@ mc = MarkerCluster(name=f"Servicios de salud ({len(salud['features'])})").add_to
 for f in salud["features"]:
     lon, lat = f["geometry"]["coordinates"]
     folium.CircleMarker([lat, lon], radius=3, color="#1b5e7a", fill=True, fill_opacity=0.8,
-                        popup=f"{f['properties']['nombre']} ({f['properties']['tipo']})").add_to(mc)
+                        popup=folium.Popup(popup_html(f["properties"]), max_width=260)).add_to(mc)
 
-# Zona de riesgo de inundación (Asunción)
+# Zonas de riesgo de inundación (todas las zonas detectadas)
 zona = json.load(open("datos/geo/zona-riesgo-inundacion.geojson", encoding="utf-8"))
-folium.GeoJson(zona, name="Zona de riesgo de inundación (Asunción)",
-    style_function=lambda f: {"fillColor": "#d1495b", "color": "#d1495b", "weight": 0, "fillOpacity": 0.45}
+folium.GeoJson(zona, name="Zonas de riesgo de inundación",
+    style_function=lambda f: {"fillColor": "#d1495b", "color": "#d1495b", "weight": 0, "fillOpacity": 0.5},
+    tooltip=folium.GeoJsonTooltip(fields=["zona"], aliases=["Zona de riesgo:"])
 ).add_to(m)
 
 # Establecimientos expuestos dentro de la zona de riesgo
@@ -106,7 +114,7 @@ for f in exp["features"]:
     pr = f["properties"]
     folium.CircleMarker([lat, lon], radius=5, color=col.get(pr["clase"], "#555"),
                         fill=True, fill_color=col.get(pr["clase"], "#555"), fill_opacity=0.9, weight=1,
-                        popup=f"[{pr['clase']}] {pr['nombre']} ({pr['tipo']})",
+                        popup=folium.Popup(popup_html(pr, prefijo=f"[{pr['clase']}] "), max_width=260),
                         tooltip=pr["nombre"]).add_to(capa_exp)
 
 folium.LayerControl(collapsed=False).add_to(m)
@@ -156,14 +164,19 @@ establecimientos expuestos.*
 
 ## Vacíos y límites
 
+Hay **zonas de riesgo detalladas** para Asunción, Pilar/Ñeembucú, Alberdi y Villa
+Hayes. La exposición fuera de Asunción es **baja** (0-2 establecimientos por zona):
+las zonas de anegamiento son los canales del río —no los centros urbanos— y la
+cobertura de OSM en pueblos chicos es escasa; muchos establecimientos quedan
+apenas fuera del buffer. Es una cota inferior, no la exposición real.
+
 ::: {.vacio}
 - La cobertura de salud y educación de **OpenStreetMap no es exhaustiva ni
-  oficial**: probablemente subestima establecimientos, sobre todo rurales.
-  Pendiente contrastar con registros del **MSPBS** (salud) y **MEC** (educación).
-- La **zona de riesgo con detalle** solo existe para **Asunción** (donde se
-  derivaron las huellas). Para el resto del país se usa la aproximación por
-  departamento prioritario; falta extender la detección de inundación a Pilar/
-  Ñeembucú y otras zonas ribereñas.
-- La exposición **no** incorpora aún vulnerabilidad social (asentamientos
+  oficial**: subestima establecimientos, sobre todo en el interior. Pendiente
+  contrastar con **MSPBS** (salud) y **MEC** (educación). OSM tampoco trae
+  **capacidad/matrícula** (número de personas por establecimiento).
+- **Concepción** quedó pendiente: no hay cobertura de Sentinel-1 RTC reciente
+  (2022-2024) sobre el norte para derivar su zona de anegamiento con este método.
+- La exposición **no** incorpora aún **vulnerabilidad social** (asentamientos
   informales, pobreza), que agravaría el riesgo en las mismas zonas.
 :::

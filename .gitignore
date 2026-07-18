@@ -14,3 +14,6 @@ _quarto_internal_scss_error.scss
 datos/geo/education_facilities.geojson
 datos/geo/health_raw.geojson
 datos/geo/*.zip
+
+# Export local privado del panel administrativo (no publicar)
+admin-privado/

@@ -29,8 +29,10 @@ PRIORITARIOS = {"CENTRAL", "CONCEPCION", "SAN PEDRO", "PRESIDENTE HAYES",
 def norm(s):
     return unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().upper().strip()
 
-def puntos(path, amenities):
-    """Devuelve lista de (lon, lat, nombre, tipo) filtrando por amenity."""
+def puntos(path, clase, amenities):
+    """Lista de dicts (lon, lat, nombre, tipo, detalle) filtrando por amenity.
+    OSM NO trae capacidad/matrícula (campo vacío), así que no se incluye.
+    A los establecimientos sin nombre se les arma una etiqueta por tipo + ciudad."""
     out = []
     for f in json.load(open(path, encoding="utf-8"))["features"]:
         p = f["properties"]
@@ -39,8 +41,19 @@ def puntos(path, amenities):
             continue
         g = shape(f["geometry"])
         c = g if g.geom_type == "Point" else g.centroid
-        out.append((round(c.x, 5), round(c.y, 5),
-                    p.get("name") or p.get("name_es") or "(sin nombre)", tipo))
+        nombre = p.get("name") or p.get("name_es") or p.get("name_gn")
+        ciudad = p.get("addr_city") or p.get("adm2_name")
+        if clase == "salud":
+            detalle = {"ciudad": ciudad, "operador": p.get("operator"),
+                       "especialidad": p.get("speciality"),
+                       "emergencia": "sí" if p.get("emergency") in ("yes", "emergency") else None}
+        else:
+            detalle = {"ciudad": ciudad, "operador": p.get("operator_type")}
+        if not nombre:
+            nombre = f"{tipo} sin nombre" + (f" ({ciudad})" if ciudad else "")
+        detalle = {k: v for k, v in detalle.items() if v}
+        out.append({"lon": round(c.x, 5), "lat": round(c.y, 5),
+                    "nombre": nombre, "tipo": tipo, "detalle": detalle})
     return out
 
 # --- Población por departamento (0-14 niñez, 65+ mayores) ---
@@ -52,8 +65,8 @@ for r in csv.DictReader(open(os.path.join(EXP, "poblacion_adm1_2023.csv"), encod
     pop[n] = {"total": int(r["T_TL"]), "ninez": ninez, "mayores": may}
 
 # --- Puntos de salud y educación ---
-salud = puntos(os.path.join(GEO, "health_raw.geojson"), {"hospital", "clinic", "doctors"})
-escuelas = puntos(os.path.join(GEO, "education_facilities.geojson"),
+salud = puntos(os.path.join(GEO, "health_raw.geojson"), "salud", {"hospital", "clinic", "doctors"})
+escuelas = puntos(os.path.join(GEO, "education_facilities.geojson"), "educacion",
                   {"school", "kindergarten", "college", "university"})
 print(f"salud: {len(salud)} | escuelas: {len(escuelas)}")
 
@@ -69,11 +82,11 @@ def depto_de(lon, lat):
     return None
 
 cnt_salud, cnt_esc = {}, {}
-for lon, lat, *_ in salud:
-    d = depto_de(lon, lat)
+for r in salud:
+    d = depto_de(r["lon"], r["lat"])
     if d: cnt_salud[d] = cnt_salud.get(d, 0) + 1
-for lon, lat, *_ in escuelas:
-    d = depto_de(lon, lat)
+for r in escuelas:
+    d = depto_de(r["lon"], r["lat"])
     if d: cnt_esc[d] = cnt_esc.get(d, 0) + 1
 
 for f in deps["features"]:
@@ -95,6 +108,8 @@ ZONAS = [
                  "inundacion-2023-24-s1.geojson"]},
     {"id": "neembucu", "nombre": "Pilar / Ñeembucú",
      "huellas": ["zona-anegamiento-neembucu-s1.geojson"]},
+    {"id": "alberdi", "nombre": "Alberdi / bajo Ñeembucú", "huellas": ["anegamiento-alberdi-s1.geojson"]},
+    {"id": "villahayes", "nombre": "Villa Hayes", "huellas": ["anegamiento-villahayes-s1.geojson"]},
 ]
 
 def guardar(obj, path):
@@ -117,33 +132,30 @@ for z in ZONAS:
     zona = unary_union(geoms).buffer(BUFFER_DEG)
     pz = prep(zona)
     ns = ne = 0
-    for lon, lat, nom, tipo in salud:
-        if pz.contains(Point(lon, lat)):
-            ns += 1
-            exp_feats.append({"type": "Feature",
-                              "properties": {"clase": "salud", "tipo": tipo, "nombre": nom, "zona": z["nombre"]},
-                              "geometry": {"type": "Point", "coordinates": [lon, lat]}})
-    for lon, lat, nom, tipo in escuelas:
-        if pz.contains(Point(lon, lat)):
-            ne += 1
-            exp_feats.append({"type": "Feature",
-                              "properties": {"clase": "educacion", "tipo": tipo, "nombre": nom, "zona": z["nombre"]},
-                              "geometry": {"type": "Point", "coordinates": [lon, lat]}})
+    for clase, lista in (("salud", salud), ("educacion", escuelas)):
+        for r in lista:
+            if pz.contains(Point(r["lon"], r["lat"])):
+                if clase == "salud": ns += 1
+                else: ne += 1
+                props = {"clase": clase, "tipo": r["tipo"], "nombre": r["nombre"], "zona": z["nombre"]}
+                props.update(r["detalle"])
+                exp_feats.append({"type": "Feature", "properties": props,
+                                  "geometry": {"type": "Point", "coordinates": [r["lon"], r["lat"]]}})
     resumen_zonas[z["id"]] = {"nombre": z["nombre"], "salud_expuestos": ns, "escuelas_expuestos": ne}
     zona_feats.append({"type": "Feature", "properties": {"zona": z["nombre"]},
                        "geometry": mapping(zona.simplify(0.0003))})
     print(f"{z['nombre']}: salud {ns} | escuelas {ne}")
 
 # --- Guardar capas ---
+def pts_fc(lista):
+    return {"type": "FeatureCollection",
+            "features": [{"type": "Feature",
+                          "properties": {"nombre": r["nombre"], "tipo": r["tipo"], **r["detalle"]},
+                          "geometry": {"type": "Point", "coordinates": [r["lon"], r["lat"]]}} for r in lista]}
+
 guardar(deps, os.path.join(GEO, "departamentos-exposicion.geojson"))
-guardar({"type": "FeatureCollection",
-         "features": [{"type": "Feature", "properties": {"nombre": n, "tipo": t},
-                       "geometry": {"type": "Point", "coordinates": [x, y]}} for x, y, n, t in salud]},
-        os.path.join(GEO, "salud-puntos.geojson"))
-guardar({"type": "FeatureCollection",
-         "features": [{"type": "Feature", "properties": {"nombre": n, "tipo": t},
-                       "geometry": {"type": "Point", "coordinates": [x, y]}} for x, y, n, t in escuelas]},
-        os.path.join(GEO, "escuelas-puntos.geojson"))
+guardar(pts_fc(salud), os.path.join(GEO, "salud-puntos.geojson"))
+guardar(pts_fc(escuelas), os.path.join(GEO, "escuelas-puntos.geojson"))
 guardar({"type": "FeatureCollection", "features": exp_feats},
         os.path.join(GEO, "expuestos-inundacion.geojson"))
 guardar({"type": "FeatureCollection", "features": zona_feats},

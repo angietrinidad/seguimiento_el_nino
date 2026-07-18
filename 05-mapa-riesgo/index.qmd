@@ -76,10 +76,12 @@ for etiqueta, fn, color in episodios_huella:
                                                  "weight": 0, "fillOpacity": 0.6})(color),
         ).add_to(m)
 
-# --- Pilar / Ñeembucú (detección por anomalía temporal) ---
+# --- Zonas de anegamiento recurrente (detección satelital) ---
 capas_ne = [
     ("Anegamiento recurrente · Ñeembucú", "zona-anegamiento-neembucu-s1.geojson", "#e8871e"),
     ("Anomalía 2024 · Ñeembucú", "anomalia-neembucu-2024-s1.geojson", "#7b2cbf"),
+    ("Anegamiento recurrente · Alberdi", "anegamiento-alberdi-s1.geojson", "#e8871e"),
+    ("Anegamiento recurrente · Villa Hayes", "anegamiento-villahayes-s1.geojson", "#e8871e"),
 ]
 for etiqueta, fn, color in capas_ne:
     ruta = f"datos/geo/{fn}"

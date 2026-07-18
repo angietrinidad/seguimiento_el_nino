@@ -1,0 +1,82 @@
+---
+title: "Panel administrativo — establecimientos expuestos"
+date: last-modified
+date-format: "D [de] MMMM [de] YYYY, HH:mm"
+---
+
+::: {.callout-warning}
+## Uso administrativo — leer antes
+Esta página **individualiza** los servicios de salud y centros educativos que
+caen dentro de las zonas de riesgo de inundación, para planificación operativa
+(evacuación, refugios, continuidad de servicios).
+
+- **No está enlazada** en la navegación pública del sitio.
+- **No es una página privada:** se publica en GitHub Pages, que es **público**;
+  cualquiera con esta URL puede verla. Para privacidad real, esta página debe
+  dejar de publicarse (generarse solo en local) o alojarse en un repositorio con
+  control de acceso (ver nota al pie).
+- Los datos provienen de **OpenStreetMap** (healthsites.io / HOT) y **no son
+  exhaustivos ni oficiales**: pueden faltar establecimientos y sobrar cierres.
+  Contrastar con registros del MSPBS (salud) y MEC (educación).
+- **La cantidad de personas (matrícula/capacidad) NO está disponible en OSM**
+  (campo vacío en todos los registros); se muestran solo los datos existentes
+  (ciudad, operador, especialidad, emergencia). Para esa cifra hará falta cruzar
+  con el MEC (matrícula por escuela) y el MSPBS (camas/consultas por servicio).
+
+Se regenera automáticamente con cada actualización de los datos (fecha arriba).
+:::
+
+```{python}
+#| label: tablas-expuestos
+#| echo: false
+import json
+from IPython.display import Markdown
+
+feats = json.load(open("datos/geo/expuestos-inundacion.geojson", encoding="utf-8"))["features"]
+CAMPOS = ["ciudad", "operador", "especialidad", "emergencia"]
+
+# Agrupar por zona -> clase
+zonas = {}
+for f in feats:
+    p = f["properties"]
+    lon, lat = f["geometry"]["coordinates"]
+    zonas.setdefault(p.get("zona", "—"), {"salud": [], "educacion": []})
+    datos = "; ".join(f"{k}: {p[k]}" for k in CAMPOS if p.get(k)) or "—"
+    zonas[p["zona"]][p["clase"]].append((p.get("nombre") or "(sin nombre)", p.get("tipo") or "—", datos, lat, lon))
+
+def tabla(items):
+    if not items:
+        return "_Ninguno detectado en esta zona._\n"
+    head = "| # | Nombre | Tipo | Datos (OSM) | Ubicación |\n|---:|---|---|---|---|"
+    filas = []
+    for i, (nom, tipo, datos, lat, lon) in enumerate(sorted(items), 1):
+        osm = f"https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map=17/{lat}/{lon}"
+        filas.append(f"| {i} | {nom} | {tipo} | {datos} | [{lat:.5f}, {lon:.5f}]({osm}) |")
+    return head + "\n" + "\n".join(filas)
+
+out = []
+tot_s = tot_e = 0
+for zona in sorted(zonas):
+    s = zonas[zona]["salud"]; e = zonas[zona]["educacion"]
+    tot_s += len(s); tot_e += len(e)
+    out.append(f"## {zona}\n")
+    out.append(f"**Servicios de salud expuestos: {len(s)}**\n")
+    out.append(tabla(s) + "\n")
+    out.append(f"**Centros educativos expuestos: {len(e)}**\n")
+    out.append(tabla(e) + "\n")
+
+resumen = f"**Total: {tot_s} servicios de salud y {tot_e} centros educativos** en zonas de riesgo de inundación.\n"
+Markdown(resumen + "\n" + "\n".join(out))
+```
+
+---
+
+::: {.callout-note collapse="true"}
+## Cómo hacer este panel realmente privado
+1. **Solo local (recomendado para datos sensibles):** excluir `admin/` del sitio
+   publicado (agregarlo a `.gitignore` y renderizarlo solo en tu máquina), o
+   generar la planilla con `scripts/exportar_admin.py`.
+2. **Repositorio privado:** mover este panel a un repo GitHub privado, donde el
+   acceso se controla por permisos.
+3. **Sitio con autenticación:** alojar en un servicio con login (no GitHub Pages).
+:::
