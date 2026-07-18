@@ -1,0 +1,167 @@
+---
+title: "6. Exposición y población en riesgo"
+---
+
+Mapa de la **situación actual de exposición** ante el episodio de El Niño
+**2026-27 en curso** (con pronóstico de primavera lluviosa e inundaciones para
+Paraguay). Cruza las **zonas inundables** —definidas empíricamente por las
+huellas de inundación de episodios pasados— con la **población**, los
+**servicios de salud** y los **centros educativos**.
+
+::: {.callout-note}
+Este mapa responde "¿quién está expuesto?" combinando dónde se inunda (evidencia
+satelital de 2016/2019/2024) con quién y qué hay allí. No predice el episodio
+2026-27; muestra la exposición estructural que ese episodio pondría a prueba.
+:::
+
+## Tablero de exposición
+
+```{python}
+#| label: tablero
+#| echo: false
+import json
+from IPython.display import HTML
+r = json.load(open("datos/exposicion/resumen.json", encoding="utf-8"))
+n, p, z = r["nacional"], r["departamentos_prioritarios"], r["zona_riesgo_asuncion"]
+
+def card(titulo, filas, color):
+    lis = "".join(f"<div style='display:flex;justify-content:space-between;gap:1em'>"
+                  f"<span>{k}</span><b>{v}</b></div>" for k, v in filas)
+    return (f"<div style='flex:1;min-width:230px;border-top:4px solid {color};background:#f7f9fa;"
+            f"padding:.8em 1em;border-radius:6px'><div style='font-weight:700;margin-bottom:.4em'>{titulo}</div>{lis}</div>")
+
+html = "<div style='display:flex;gap:1em;flex-wrap:wrap'>" + card(
+    "Paraguay (total)",
+    [("Población", f"{n['poblacion']:,}"), ("Servicios de salud", f"{n['salud']:,}"),
+     ("Centros educativos", f"{n['escuelas']:,}")], "#1b5e7a") + card(
+    "Departamentos ribereños prioritarios",
+    [("Población", f"{p['poblacion']:,}"), ("Niñez (0-14)", f"{p['ninez']:,}"),
+     ("Adultos mayores (65+)", f"{p['mayores']:,}"), ("Servicios de salud", f"{p['salud']:,}"),
+     ("Centros educativos", f"{p['escuelas']:,}")], "#b26a00") + card(
+    "Zona de riesgo de inundación · Asunción",
+    [("Servicios de salud expuestos", f"{z['salud_expuestos']}"),
+     ("Centros educativos expuestos", f"{z['escuelas_expuestos']}")], "#8a1c1c") + "</div>"
+HTML(html)
+```
+
+*Población: proyección 2023 (COD-PS, UNFPA/DGEEC). Salud y educación: OpenStreetMap
+(healthsites.io / HOT). Zona de riesgo: huellas Sentinel-1 + buffer de 550 m.*
+
+## Mapa
+
+```{python}
+#| label: mapa-exposicion
+#| echo: false
+import json, os
+import folium
+from folium.plugins import MarkerCluster
+
+deps = json.load(open("datos/geo/departamentos-exposicion.geojson", encoding="utf-8"))
+
+m = folium.Map(location=[-23.8, -58.0], zoom_start=6, tiles="cartodbpositron", control_scale=True)
+
+# Coropleta de población por departamento
+def color_pop(v):
+    v = v or 0
+    return ("#08519c" if v > 600000 else "#3182bd" if v > 300000 else
+            "#6baed6" if v > 150000 else "#bdd7e7" if v > 50000 else "#eff3ff")
+
+def estilo(f):
+    p = f["properties"]
+    return {"fillColor": color_pop(p.get("pop_total")),
+            "color": "#c0392b" if p.get("prioritario") else "#888",
+            "weight": 1.8 if p.get("prioritario") else 0.6, "fillOpacity": 0.75}
+
+folium.GeoJson(
+    deps, name="Población por departamento",
+    style_function=estilo,
+    tooltip=folium.GeoJsonTooltip(
+        fields=["shapeName", "pop_total", "pop_ninez", "pop_mayores", "n_salud", "n_escuelas"],
+        aliases=["Departamento:", "Población:", "Niñez (0-14):", "Mayores (65+):",
+                 "Serv. de salud:", "Centros educativos:"], localize=True),
+).add_to(m)
+
+# Servicios de salud (cluster)
+salud = json.load(open("datos/geo/salud-puntos.geojson", encoding="utf-8"))
+mc = MarkerCluster(name=f"Servicios de salud ({len(salud['features'])})").add_to(m)
+for f in salud["features"]:
+    lon, lat = f["geometry"]["coordinates"]
+    folium.CircleMarker([lat, lon], radius=3, color="#1b5e7a", fill=True, fill_opacity=0.8,
+                        popup=f"{f['properties']['nombre']} ({f['properties']['tipo']})").add_to(mc)
+
+# Zona de riesgo de inundación (Asunción)
+zona = json.load(open("datos/geo/zona-riesgo-inundacion.geojson", encoding="utf-8"))
+folium.GeoJson(zona, name="Zona de riesgo de inundación (Asunción)",
+    style_function=lambda f: {"fillColor": "#d1495b", "color": "#d1495b", "weight": 0, "fillOpacity": 0.45}
+).add_to(m)
+
+# Establecimientos expuestos dentro de la zona de riesgo
+exp = json.load(open("datos/geo/expuestos-inundacion.geojson", encoding="utf-8"))
+capa_exp = folium.FeatureGroup(name=f"Expuestos en zona de riesgo ({len(exp['features'])})").add_to(m)
+col = {"salud": "#1b5e7a", "educacion": "#b26a00"}
+for f in exp["features"]:
+    lon, lat = f["geometry"]["coordinates"]
+    pr = f["properties"]
+    folium.CircleMarker([lat, lon], radius=5, color=col.get(pr["clase"], "#555"),
+                        fill=True, fill_color=col.get(pr["clase"], "#555"), fill_opacity=0.9, weight=1,
+                        popup=f"[{pr['clase']}] {pr['nombre']} ({pr['tipo']})",
+                        tooltip=pr["nombre"]).add_to(capa_exp)
+
+folium.LayerControl(collapsed=False).add_to(m)
+
+leyenda = """
+<div style="position:fixed; bottom:26px; left:12px; z-index:9999; background:white;
+  padding:10px 12px; border:1px solid #ccc; border-radius:6px; font-size:12px; line-height:1.5;
+  box-shadow:0 1px 4px rgba(0,0,0,.2);">
+  <b>Población (departamento)</b><br>
+  <span style="color:#08519c">■</span> &gt;600k &nbsp;
+  <span style="color:#6baed6">■</span> 150-300k &nbsp;
+  <span style="color:#eff3ff;text-shadow:0 0 1px #999">■</span> &lt;50k<br>
+  <span style="color:#c0392b">▮</span> Departamento ribereño prioritario<br>
+  <span style="color:#d1495b">▮</span> Zona de riesgo de inundación (Asunción)<br>
+  <span style="color:#1b5e7a">●</span> Salud &nbsp;
+  <span style="color:#b26a00">●</span> Educación (expuestos)
+</div>"""
+m.get_root().html.add_child(folium.Element(leyenda))
+m
+```
+
+*Las 5.202 escuelas se muestran agregadas por departamento (conteo en el tooltip);
+solo se dibujan individualmente las expuestas en la zona de riesgo, para no
+sobrecargar el mapa. Acercá el mapa a Asunción para ver la zona de riesgo y los
+establecimientos expuestos.*
+
+## Cómo se define la exposición
+
+- **Zona de riesgo de inundación:** unión de las huellas de inundación derivadas
+  de Sentinel-1 para 2015-16, 2018-19 y 2023-24 (ver
+  [mapa histórico](../05-mapa-riesgo/index.qmd)), más un **buffer de 550 m** para
+  incluir los barrios afectados adyacentes, no solo la lámina de agua.
+- **Expuestos:** servicios de salud y centros educativos cuya ubicación cae
+  dentro de esa zona de riesgo.
+- **Departamentos prioritarios:** los ocho de mayor exposición ribereña/agrícola
+  (Central, Concepción, San Pedro, Pdte. Hayes, Ñeembucú, Misiones, Itapúa, Alto
+  Paraná), usados como aproximación de exposición a escala nacional.
+
+## Fuentes
+
+- Población: **COD-PS 2023** (UNFPA a partir de proyecciones DGEEC), CC BY-IGO
+  [@codps_pry].
+- Servicios de salud: **healthsites.io / OpenStreetMap**, ODbL [@healthsites].
+- Centros educativos: **Humanitarian OpenStreetMap Team**, ODbL [@hotosm_edu].
+- Departamentos: **geoBoundaries** [@geoboundaries_py].
+- Zonas inundables: derivadas de **Sentinel-1** en este repositorio.
+
+## Vacíos y límites
+
+::: {.vacio}
+- La cobertura de salud y educación de **OpenStreetMap no es exhaustiva ni
+  oficial**: probablemente subestima establecimientos, sobre todo rurales.
+  Pendiente contrastar con registros del **MSPBS** (salud) y **MEC** (educación).
+- La **zona de riesgo con detalle** solo existe para **Asunción** (donde se
+  derivaron las huellas). Para el resto del país se usa la aproximación por
+  departamento prioritario; falta extender la detección de inundación a Pilar/
+  Ñeembucú y otras zonas ribereñas.
+- La exposición **no** incorpora aún vulnerabilidad social (asentamientos
+  informales, pobreza), que agravaría el riesgo en las mismas zonas.
+:::

@@ -31,6 +31,8 @@ website:
         file: 04-asuncion-metropolitana/index.qmd
       - text: "Mapa de riesgo"
         file: 05-mapa-riesgo/index.qmd
+      - text: "Exposición"
+        file: 06-exposicion/index.qmd
       - text: "Fuentes"
         file: fuentes/index.qmd
   sidebar:
@@ -53,6 +55,9 @@ website:
       - section: "5. Mapa de riesgo"
         contents:
           - 05-mapa-riesgo/index.qmd
+      - section: "6. Exposición y población en riesgo"
+        contents:
+          - 06-exposicion/index.qmd
       - section: "Anexos"
         contents:
           - fuentes/index.qmd

@@ -9,3 +9,8 @@ __pycache__/
 
 **/*.quarto_ipynb
 _quarto_internal_scss_error.scss
+
+# Datos crudos descargados (grandes); se regeneran con los scripts
+datos/geo/education_facilities.geojson
+datos/geo/health_raw.geojson
+datos/geo/*.zip
