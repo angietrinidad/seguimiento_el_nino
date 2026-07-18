@@ -68,12 +68,18 @@ deps = json.load(open("datos/geo/departamentos-exposicion.geojson", encoding="ut
 
 m = folium.Map(location=[-23.8, -58.0], zoom_start=6, tiles="cartodbpositron", control_scale=True)
 
-# Popup con los datos disponibles del establecimiento (OSM no trae capacidad)
-CAMPOS_POP = [("ciudad", "Ciudad"), ("operador", "Operador"),
-              ("especialidad", "Especialidad"), ("emergencia", "Emergencia")]
+# Popup con los datos oficiales del establecimiento
+# (salud MSPBS: categoría/subtipo/distrito · educación MEC: matrícula/distrito)
+CAMPOS_POP = [("matricula", "Matrícula"), ("categoria", "Categoría"),
+              ("subtipo", "Subtipo"), ("distrito", "Distrito"), ("barrio", "Barrio"),
+              ("instituciones", "Instituciones")]
 def popup_html(p, prefijo=""):
-    filas = "".join(f"<br><small>{lab}: {p[k]}</small>" for k, lab in CAMPOS_POP if p.get(k))
-    return f"<b>{prefijo}{p['nombre']}</b><br><i>{p['tipo']}</i>{filas}"
+    filas = []
+    for k, lab in CAMPOS_POP:
+        if p.get(k) not in (None, ""):
+            v = f"{p['matricula']} alumnos ({p.get('matricula_anio', 's/f')})" if k == "matricula" else p[k]
+            filas.append(f"<br><small>{lab}: {v}</small>")
+    return f"<b>{prefijo}{p.get('nombre','')}</b><br><i>{p.get('tipo','')}</i>{''.join(filas)}"
 
 # Coropleta de población por departamento
 def color_pop(v):
@@ -159,10 +165,12 @@ m.get_root().html.add_child(folium.Element(leyenda))
 m
 ```
 
-*Las 5.202 escuelas se muestran agregadas por departamento (conteo en el tooltip);
-solo se dibujan individualmente las expuestas en la zona de riesgo, para no
-sobrecargar el mapa. Acercá el mapa a Asunción para ver la zona de riesgo y los
-establecimientos expuestos.*
+*Los **8.030 centros educativos** (MEC) se agregan por departamento (conteo en el
+tooltip); los **1.056 servicios de salud** (MSPBS) se muestran agrupados. Solo se
+dibujan individualmente los **expuestos** en la zona de riesgo. Nota: varias USF y
+escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos.
+Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos
+expuestos.*
 
 ## Cómo se define la exposición
 
