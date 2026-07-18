@@ -86,36 +86,55 @@ for f in deps["features"]:
     pr["n_escuelas"] = cnt_esc.get(n, 0)
     pr["prioritario"] = n in PRIORITARIOS
 
-# --- Huellas de inundación de Asunción (unión) ---
-huellas = []
-for fn in ["inundacion-2015-16-s1.geojson", "inundacion-2018-19-s1.geojson", "inundacion-2023-24-s1.geojson"]:
-    for f in json.load(open(os.path.join(GEO, fn), encoding="utf-8"))["features"]:
-        huellas.append(shape(f["geometry"]))
-# Zona de riesgo = huellas de inundación + buffer de ~550 m (barrios afectados,
-# no solo la lámina de agua). 0.005° ~ 550 m en esta latitud.
+# --- Zonas de riesgo de inundación (multi-zona) ---
+# Cada zona = unión de huellas Sentinel-1 + buffer ~550 m (barrios adyacentes).
 BUFFER_DEG = 0.005
-zona_riesgo = unary_union(huellas).buffer(BUFFER_DEG)
-prep_union = prep(zona_riesgo)
+ZONAS = [
+    {"id": "asuncion", "nombre": "Asunción y área metropolitana",
+     "huellas": ["inundacion-2015-16-s1.geojson", "inundacion-2018-19-s1.geojson",
+                 "inundacion-2023-24-s1.geojson"]},
+    {"id": "neembucu", "nombre": "Pilar / Ñeembucú",
+     "huellas": ["zona-anegamiento-neembucu-s1.geojson"]},
+]
 
-def dentro(lon, lat):
-    return prep_union.contains(Point(lon, lat))
-
-exp_feats, n_salud_exp, n_esc_exp = [], 0, 0
-for lon, lat, nom, tipo in salud:
-    if dentro(lon, lat):
-        n_salud_exp += 1
-        exp_feats.append({"type": "Feature", "properties": {"clase": "salud", "tipo": tipo, "nombre": nom},
-                          "geometry": {"type": "Point", "coordinates": [lon, lat]}})
-for lon, lat, nom, tipo in escuelas:
-    if dentro(lon, lat):
-        n_esc_exp += 1
-        exp_feats.append({"type": "Feature", "properties": {"clase": "educacion", "tipo": tipo, "nombre": nom},
-                          "geometry": {"type": "Point", "coordinates": [lon, lat]}})
-
-# --- Guardar capas ---
 def guardar(obj, path):
     json.dump(obj, open(path, "w", encoding="utf-8"), separators=(",", ":"))
 
+exp_feats, zona_feats, resumen_zonas = [], [], {}
+for z in ZONAS:
+    geoms = []
+    for fn in z["huellas"]:
+        ruta = os.path.join(GEO, fn)
+        if not os.path.exists(ruta):
+            continue
+        for f in json.load(open(ruta, encoding="utf-8"))["features"]:
+            g = shape(f["geometry"])
+            if not g.is_valid:
+                g = g.buffer(0)
+            geoms.append(g)
+    if not geoms:
+        continue
+    zona = unary_union(geoms).buffer(BUFFER_DEG)
+    pz = prep(zona)
+    ns = ne = 0
+    for lon, lat, nom, tipo in salud:
+        if pz.contains(Point(lon, lat)):
+            ns += 1
+            exp_feats.append({"type": "Feature",
+                              "properties": {"clase": "salud", "tipo": tipo, "nombre": nom, "zona": z["nombre"]},
+                              "geometry": {"type": "Point", "coordinates": [lon, lat]}})
+    for lon, lat, nom, tipo in escuelas:
+        if pz.contains(Point(lon, lat)):
+            ne += 1
+            exp_feats.append({"type": "Feature",
+                              "properties": {"clase": "educacion", "tipo": tipo, "nombre": nom, "zona": z["nombre"]},
+                              "geometry": {"type": "Point", "coordinates": [lon, lat]}})
+    resumen_zonas[z["id"]] = {"nombre": z["nombre"], "salud_expuestos": ns, "escuelas_expuestos": ne}
+    zona_feats.append({"type": "Feature", "properties": {"zona": z["nombre"]},
+                       "geometry": mapping(zona.simplify(0.0003))})
+    print(f"{z['nombre']}: salud {ns} | escuelas {ne}")
+
+# --- Guardar capas ---
 guardar(deps, os.path.join(GEO, "departamentos-exposicion.geojson"))
 guardar({"type": "FeatureCollection",
          "features": [{"type": "Feature", "properties": {"nombre": n, "tipo": t},
@@ -127,11 +146,7 @@ guardar({"type": "FeatureCollection",
         os.path.join(GEO, "escuelas-puntos.geojson"))
 guardar({"type": "FeatureCollection", "features": exp_feats},
         os.path.join(GEO, "expuestos-inundacion.geojson"))
-guardar({"type": "FeatureCollection",
-         "metadata": {"desc": "Zona de riesgo = huellas de inundación Sentinel-1 + buffer 550 m"},
-         "features": [{"type": "Feature", "properties": {},
-                       "geometry": mapping(g.simplify(0.0003))}
-                      for g in getattr(zona_riesgo, "geoms", [zona_riesgo])]},
+guardar({"type": "FeatureCollection", "features": zona_feats},
         os.path.join(GEO, "zona-riesgo-inundacion.geojson"))
 
 # --- Tablero ---
@@ -145,10 +160,7 @@ resumen = {
         "mayores": sum(pop.get(n, {}).get("mayores", 0) for n in prio),
         "salud": sum(cnt_salud.get(n, 0) for n in prio),
         "escuelas": sum(cnt_esc.get(n, 0) for n in prio)},
-    "zona_riesgo_asuncion": {
-        "definicion": "huellas de inundación Sentinel-1 (2016/2019/2024) + buffer 550 m",
-        "salud_expuestos": n_salud_exp, "escuelas_expuestos": n_esc_exp},
+    "zonas_riesgo": resumen_zonas,
 }
 guardar(resumen, os.path.join(EXP, "resumen.json"))
-print(json.dumps(resumen, indent=2, ensure_ascii=False))
-print("salud expuestos:", n_salud_exp, "| escuelas expuestas:", n_esc_exp)
+print(json.dumps(resumen["zonas_riesgo"], indent=2, ensure_ascii=False))

@@ -22,13 +22,18 @@ satelital de 2016/2019/2024) con quién y qué hay allí. No predice el episodio
 import json
 from IPython.display import HTML
 r = json.load(open("datos/exposicion/resumen.json", encoding="utf-8"))
-n, p, z = r["nacional"], r["departamentos_prioritarios"], r["zona_riesgo_asuncion"]
+n, p, zonas = r["nacional"], r["departamentos_prioritarios"], r["zonas_riesgo"]
 
 def card(titulo, filas, color):
     lis = "".join(f"<div style='display:flex;justify-content:space-between;gap:1em'>"
                   f"<span>{k}</span><b>{v}</b></div>" for k, v in filas)
     return (f"<div style='flex:1;min-width:230px;border-top:4px solid {color};background:#f7f9fa;"
             f"padding:.8em 1em;border-radius:6px'><div style='font-weight:700;margin-bottom:.4em'>{titulo}</div>{lis}</div>")
+
+zona_cards = "".join(card(
+    f"Expuestos · {zv['nombre']}",
+    [("Servicios de salud", f"{zv['salud_expuestos']}"),
+     ("Centros educativos", f"{zv['escuelas_expuestos']}")], "#8a1c1c") for zv in zonas.values())
 
 html = "<div style='display:flex;gap:1em;flex-wrap:wrap'>" + card(
     "Paraguay (total)",
@@ -37,10 +42,7 @@ html = "<div style='display:flex;gap:1em;flex-wrap:wrap'>" + card(
     "Departamentos ribereños prioritarios",
     [("Población", f"{p['poblacion']:,}"), ("Niñez (0-14)", f"{p['ninez']:,}"),
      ("Adultos mayores (65+)", f"{p['mayores']:,}"), ("Servicios de salud", f"{p['salud']:,}"),
-     ("Centros educativos", f"{p['escuelas']:,}")], "#b26a00") + card(
-    "Zona de riesgo de inundación · Asunción",
-    [("Servicios de salud expuestos", f"{z['salud_expuestos']}"),
-     ("Centros educativos expuestos", f"{z['escuelas_expuestos']}")], "#8a1c1c") + "</div>"
+     ("Centros educativos", f"{p['escuelas']:,}")], "#b26a00") + zona_cards + "</div>"
 HTML(html)
 ```
 

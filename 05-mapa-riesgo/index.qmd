@@ -76,6 +76,21 @@ for etiqueta, fn, color in episodios_huella:
                                                  "weight": 0, "fillOpacity": 0.6})(color),
         ).add_to(m)
 
+# --- Pilar / Ñeembucú (detección por anomalía temporal) ---
+capas_ne = [
+    ("Anegamiento recurrente · Ñeembucú", "zona-anegamiento-neembucu-s1.geojson", "#e8871e"),
+    ("Anomalía 2024 · Ñeembucú", "anomalia-neembucu-2024-s1.geojson", "#7b2cbf"),
+]
+for etiqueta, fn, color in capas_ne:
+    ruta = f"datos/geo/{fn}"
+    if os.path.exists(ruta):
+        folium.GeoJson(
+            json.load(open(ruta, encoding="utf-8")),
+            name=etiqueta,
+            style_function=(lambda c: lambda f: {"fillColor": c, "color": c,
+                                                 "weight": 0, "fillOpacity": 0.65})(color),
+        ).add_to(m)
+
 # --- Zonas de riesgo documentadas ---
 color_conf = {"oficial": "#1b5e7a", "prensa": "#b26a00",
               "estimacion": "#8a1c1c", "academico": "#4a7c59"}
