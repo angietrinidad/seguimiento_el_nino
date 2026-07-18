@@ -615,11 +615,23 @@
     ]
   },
   {
+    "objectID": "06-exposicion/index.html#efecto-de-la-costanera-análisis-de-elevación-dem",
+    "href": "06-exposicion/index.html#efecto-de-la-costanera-análisis-de-elevación-dem",
+    "title": "Exposición y población en riesgo",
+    "section": "Efecto de la Costanera (análisis de elevación / DEM)",
+    "text": "Efecto de la Costanera (análisis de elevación / DEM)\nPara empezar a considerar las obras de defensa, se incorporó el modelo de elevación Copernicus DEM (30 m). Hallazgos (sobre los bañados de Asunción):\n\n\n\n\n\n\n\nTerreno\nElevación (m s/mar)\n\n\n\n\nBañados inundados (huella observada)\nmediana 56,8 · p90 58,5\n\n\nCiudad (tierra firme circundante)\n~60-65\n\n\nCostanera (terraplén de defensa)\nmediana 58,8 → +2 m sobre el bañado\n\n\n\nEs decir: los bañados son la tierra más baja (por eso se inundan) y la Costanera es un terraplén elevado por encima del nivel que alcanzó la inundación observada — coherente con su función de defensa. En el mapa, la capa “Franja baja protegida (DEM)” marca 7,9 km² de terreno bajo (≤ 58,5 m) junto a la Costanera que no figuran en la huella observada: candidatos a estar protegidos por el terraplén.\n\nAnálisis exploratorio, no un modelo hidráulico. (1) El DEM de 30 m no capta la microtopografía ni los edificios de los bañados. (2) El umbral de inundación se calibra con lo observado por satélite, no con una cota absoluta. (3) La “franja protegida” puede deberse a la Costanera o a otras causas (desconexión hidráulica, otras defensas). (4) Falta la cota de coronamiento de la Costanera (MOPC/Municipalidad) y la conversión al cero hidrométrico del río para cuantificar el nivel de protección. Sirve para señalar dónde mirar, no para afirmar cuánto protege.",
+    "crumbs": [
+      "Inicio",
+      "Situación actual (2026-27)",
+      "Exposición y población en riesgo"
+    ]
+  },
+  {
     "objectID": "06-exposicion/index.html#fuentes",
     "href": "06-exposicion/index.html#fuentes",
     "title": "Exposición y población en riesgo",
     "section": "Fuentes",
-    "text": "Fuentes\n\nPoblación (total por departamento): COD-PS 2023 (UNFPA/DGEEC), CC BY-IGO (UNFPA / DGEEC Paraguay, 2023).\nPoblación en riesgo (dentro de la zona de inundación): Kontur Population 2023 (hexágonos H3 ~400 m), CC BY (Kontur, 2023). Se cuenta la población de los hexágonos cuyo centroide cae en la zona de riesgo.\nServicios de salud: registro oficial del MSPBS/DIGIES (establecimientos georreferenciados, 1.056 con categoría oficial) (Ministerio de Salud Pública y Bienestar Social (MSPBS) — DIGIES, 2025).\nCentros educativos: registro oficial del MEC (datos.mec.gov.py, período 2014), georreferenciado y con matrícula por establecimiento (Ministerio de Educación y Ciencias (MEC), Paraguay, 2014).\nDepartamentos: geoBoundaries (geoBoundaries (William & Mary geoLab), 2023).\nZonas inundables: derivadas de Sentinel-1 en este repositorio.",
+    "text": "Fuentes\n\nPoblación (total por departamento): COD-PS 2023 (UNFPA/DGEEC), CC BY-IGO (UNFPA / DGEEC Paraguay, 2023).\nPoblación en riesgo (dentro de la zona de inundación): Kontur Population 2023 (hexágonos H3 ~400 m), CC BY (Kontur, 2023). Se cuenta la población de los hexágonos cuyo centroide cae en la zona de riesgo.\nServicios de salud: registro oficial del MSPBS/DIGIES (establecimientos georreferenciados, 1.056 con categoría oficial) (Ministerio de Salud Pública y Bienestar Social (MSPBS) — DIGIES, 2025).\nCentros educativos: registro oficial del MEC (datos.mec.gov.py, período 2014), georreferenciado y con matrícula por establecimiento (Ministerio de Educación y Ciencias (MEC), Paraguay, 2014).\nDepartamentos: geoBoundaries (geoBoundaries (William & Mary geoLab), 2023).\nZonas inundables: derivadas de Sentinel-1 en este repositorio.\nCostanera y vialidad: OpenStreetMap (Overpass) (OpenStreetMap contributors, 2026).\nElevación del terreno: Copernicus DEM GLO-30 (30 m) (Copernicus / ESA, 2021).",
     "crumbs": [
       "Inicio",
       "Situación actual (2026-27)",
