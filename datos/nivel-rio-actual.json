@@ -1,0 +1,49 @@
+{
+  "fuente": "DINAC (meteorologia.gov.py/nivel-rio)",
+  "fecha": "18-07-2026",
+  "critica_asuncion_m": 5.5,
+  "estaciones": [
+    {
+      "nombre": "Concepción",
+      "fecha": "18-07-2026",
+      "nivel_m": 2.35,
+      "cambio_cm": 0
+    },
+    {
+      "nombre": "Fuerte Olimpo",
+      "fecha": "18-07-2026",
+      "nivel_m": 4.18,
+      "cambio_cm": -2
+    },
+    {
+      "nombre": "Isla Margarita",
+      "fecha": "18-07-2026",
+      "nivel_m": 3.28,
+      "cambio_cm": -3
+    },
+    {
+      "nombre": "Asunción",
+      "fecha": "18-07-2026",
+      "nivel_m": 1.94,
+      "cambio_cm": -6
+    },
+    {
+      "nombre": "Villeta",
+      "fecha": "18-07-2026",
+      "nivel_m": 2.46,
+      "cambio_cm": -6
+    },
+    {
+      "nombre": "Alberdi",
+      "fecha": "18-07-2026",
+      "nivel_m": 4.3,
+      "cambio_cm": -13
+    },
+    {
+      "nombre": "Pilar",
+      "fecha": "18-07-2026",
+      "nivel_m": 4.33,
+      "cambio_cm": -3
+    }
+  ]
+}

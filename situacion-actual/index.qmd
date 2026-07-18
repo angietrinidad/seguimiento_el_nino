@@ -17,6 +17,61 @@ probabilidad de persistir hasta inicios de 2027 y **81 %** de alcanzar categorí
 *muy fuerte* en octubre-diciembre de 2026 [@noaa_enso_disc_2026].
 :::
 
+## Cota actual del río Paraguay
+
+```{python}
+#| echo: false
+import json
+from IPython.display import HTML
+d = json.load(open("datos/nivel-rio-actual.json", encoding="utf-8"))
+crit, pico, esc = d["critica_asuncion_m"], 7.84, 8.0
+asu = next((e for e in d["estaciones"] if e["nombre"] == "Asunción"), None)
+
+def flecha(c):
+    if c is None: return ""
+    if c > 0: return f"<span style='color:#8a1c1c'>▲ +{c} cm</span>"
+    if c < 0: return f"<span style='color:#1b5e7a'>▼ {c} cm</span>"
+    return "= 0 cm"
+
+def pos(v): return min(v / esc, 1) * 100
+
+barra = ""
+if asu:
+    nivel = asu["nivel_m"]; margen = round(crit - nivel, 2)
+    barra = f"""
+<div style="max-width:560px">
+  <div style="font-size:15px;margin-bottom:.2em">Asunción: <b style="font-size:22px">{nivel} m</b>
+    &nbsp;{flecha(asu['cambio_cm'])}
+    &nbsp;<span style="color:#555">— a {margen} m del nivel crítico</span></div>
+  <div style="position:relative;height:30px;background:#e8eef2;border-radius:6px;margin:1.6em 0 .4em">
+    <div style="position:absolute;left:0;top:0;height:100%;width:{pos(nivel):.1f}%;background:#2b6cb0;border-radius:6px 0 0 6px"></div>
+    <div style="position:absolute;left:{pos(crit):.1f}%;top:-6px;height:42px;border-left:2px dashed #b26a00"></div>
+    <div style="position:absolute;left:{pos(crit):.1f}%;top:-22px;font-size:11px;color:#b26a00;transform:translateX(-50%)">crítico 5,5 m</div>
+    <div style="position:absolute;left:{pos(pico):.1f}%;top:-6px;height:42px;border-left:2px dashed #8a1c1c"></div>
+    <div style="position:absolute;left:{pos(pico):.1f}%;top:-22px;font-size:11px;color:#8a1c1c;transform:translateX(-50%)">pico 2016: 7,84 m</div>
+  </div>
+  <div style="font-size:11px;color:#888">0 m &nbsp;&nbsp;&nbsp; escala hasta 8 m</div>
+</div>"""
+
+filas = "".join(
+    f"<tr><td style='padding:3px 10px 3px 0'>{e['nombre']}</td>"
+    f"<td style='padding:3px 10px;text-align:right'><b>{e['nivel_m']} m</b></td>"
+    f"<td style='padding:3px 0;text-align:right'>{flecha(e['cambio_cm'])}</td></tr>"
+    for e in d["estaciones"])
+tabla = (f"<table style='font-size:14px;border-collapse:collapse;margin-top:1em'>"
+         f"<tr style='color:#555;border-bottom:1px solid #ddd'><th style='text-align:left'>Estación (norte→sur)</th>"
+         f"<th style='text-align:right'>Nivel</th><th style='text-align:right'>Variación</th></tr>{filas}</table>")
+pie = (f"<div style='font-size:12px;color:#888;margin-top:.8em'>Cota del <b>{d['fecha']}</b> · "
+       f"fuente: DINAC (meteorologia.gov.py), actualizada a diario.</div>")
+HTML(barra + tabla + pie)
+```
+
+::: {.callout-note appearance="minimal"}
+Al día de hoy el río está **muy por debajo del nivel crítico** (invierno seco); el
+pronóstico de El Niño anticipa el ascenso hacia la primavera. Para refrescar la
+cota: correr `scripts/actualizar_nivel_rio.py` y re-renderizar.
+:::
+
 ## 1. El fenómeno hoy
 
 | Autoridad | Diagnóstico (mediados de 2026) |
@@ -47,15 +102,16 @@ población, salud y educación):
 import json
 from IPython.display import Markdown
 r = json.load(open("datos/exposicion/resumen.json", encoding="utf-8"))
-p = r["departamentos_prioritarios"]; z = r["zona_riesgo_asuncion"]
+p = r["departamentos_prioritarios"]; g = r["en_riesgo"]
 Markdown(
 f"""| Indicador | Valor |
 |---|---:|
 | Población en departamentos ribereños prioritarios | **{p['poblacion']:,}** |
 | — de ella, niñez (0-14) | {p['ninez']:,} |
 | — de ella, adultos mayores (65+) | {p['mayores']:,} |
-| Servicios de salud expuestos (zona de riesgo Asunción) | **{z['salud_expuestos']}** |
-| Centros educativos expuestos (zona de riesgo Asunción) | **{z['escuelas_expuestos']}** |
+| **Población dentro de la zona de inundación** | **{g['poblacion']:,}** |
+| Servicios de salud expuestos | **{g['salud']}** |
+| Centros educativos expuestos | **{g['escuelas']}** (matrícula {g['matricula']:,}) |
 """)
 ```
 
