@@ -35,10 +35,15 @@ zona_cards = "".join(card(
     [("Servicios de salud", f"{zv['salud_expuestos']}"),
      ("Centros educativos", f"{zv['escuelas_expuestos']}")], "#8a1c1c") for zv in zonas.values())
 
+rg = r["en_riesgo"]
 html = "<div style='display:flex;gap:1em;flex-wrap:wrap'>" + card(
     "Paraguay (total)",
     [("Población", f"{n['poblacion']:,}"), ("Servicios de salud", f"{n['salud']:,}"),
      ("Centros educativos", f"{n['escuelas']:,}")], "#1b5e7a") + card(
+    "⚠ Dentro de la zona de inundación",
+    [("Población en riesgo", f"{rg['poblacion']:,}"), ("Servicios de salud", f"{rg['salud']:,}"),
+     ("Centros educativos", f"{rg['escuelas']:,}"), ("Alumnos (matrícula)", f"{rg['matricula']:,}")],
+    "#8a1c1c") + card(
     "Departamentos ribereños prioritarios",
     [("Población", f"{p['poblacion']:,}"), ("Niñez (0-14)", f"{p['ninez']:,}"),
      ("Adultos mayores (65+)", f"{p['mayores']:,}"), ("Servicios de salud", f"{p['salud']:,}"),
@@ -86,9 +91,11 @@ folium.GeoJson(
     deps, name="Población por departamento",
     style_function=estilo,
     tooltip=folium.GeoJsonTooltip(
-        fields=["shapeName", "pop_total", "pop_ninez", "pop_mayores", "n_salud", "n_escuelas"],
-        aliases=["Departamento:", "Población:", "Niñez (0-14):", "Mayores (65+):",
-                 "Serv. de salud:", "Centros educativos:"], localize=True),
+        fields=["shapeName", "pop_total", "n_salud", "n_escuelas",
+                "pop_riesgo", "salud_riesgo", "escuelas_riesgo", "matricula_riesgo"],
+        aliases=["Departamento:", "Población (total):", "Salud (total):", "Escuelas (total):",
+                 "▸ Población EN RIESGO:", "▸ Salud en riesgo:", "▸ Escuelas en riesgo:",
+                 "▸ Alumnos en riesgo:"], localize=True),
 ).add_to(m)
 
 # Servicios de salud (cluster)
@@ -171,8 +178,11 @@ establecimientos expuestos.*
 
 ## Fuentes
 
-- Población: **COD-PS 2023** (UNFPA a partir de proyecciones DGEEC), CC BY-IGO
+- Población (total por departamento): **COD-PS 2023** (UNFPA/DGEEC), CC BY-IGO
   [@codps_pry].
+- Población **en riesgo** (dentro de la zona de inundación): **Kontur Population
+  2023** (hexágonos H3 ~400 m), CC BY [@kontur_pop]. Se cuenta la población de los
+  hexágonos cuyo centroide cae en la zona de riesgo.
 - Servicios de salud: **registro oficial del MSPBS/DIGIES** (establecimientos
   georreferenciados, 1.056 con categoría oficial) [@mspbs_datos].
 - Centros educativos: **registro oficial del MEC** (datos.mec.gov.py, período 2014),

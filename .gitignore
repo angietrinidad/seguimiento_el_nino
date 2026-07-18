@@ -29,3 +29,5 @@ datos/oficial/mec_establecimientos_2014.geojson
 datos/oficial/mec_escuelas_2014.geojson
 datos/oficial/mspbs_salud.geojson
 datos/oficial/*.kml
+datos/oficial/kontur_py.gpkg
+datos/oficial/*.gpkg.gz

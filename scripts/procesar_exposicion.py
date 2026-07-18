@@ -199,6 +199,42 @@ for z in ZONAS:
                        "geometry": mapping(zona.simplify(0.0003))})
     print(f"{z['nombre']}: salud {ns} | escuelas {ne}")
 
+# --- EN RIESGO por departamento (población Kontur + establecimientos) ---
+from collections import Counter
+zona_union = unary_union([shape(zf["geometry"]) for zf in zona_feats])
+pop_riesgo = {}
+try:
+    import geopandas as gpd
+    k = gpd.read_file(os.path.join(OFI, "kontur_py.gpkg"))          # H3 ~400 m, EPSG:3857
+    cent = gpd.GeoDataFrame({"population": k["population"].values},
+                            geometry=k.geometry.centroid.to_crs(4326).values, crs=4326)
+    risk = gpd.GeoDataFrame(geometry=[zona_union], crs=4326)
+    deps_g = gpd.read_file(os.path.join(GEO, "departamentos-py.geojson"))[["shapeName", "geometry"]]
+    inr = gpd.sjoin(cent, risk, predicate="within").drop(columns="index_right")
+    inr = gpd.sjoin(inr, deps_g, predicate="within")
+    for nm, val in inr.groupby("shapeName")["population"].sum().items():
+        pop_riesgo[norm(nm)] = int(round(val))
+    print("población en riesgo total:", sum(pop_riesgo.values()))
+except Exception as e:
+    print("pop_riesgo no disponible:", e)
+
+sr, er, mr = Counter(), Counter(), Counter()
+for f in exp_feats:
+    lon, lat = f["geometry"]["coordinates"]; dd = depto_de(lon, lat)
+    if not dd:
+        continue
+    if f["properties"]["clase"] == "salud":
+        sr[dd] += 1
+    else:
+        er[dd] += 1; mr[dd] += f["properties"].get("matricula") or 0
+
+for f in deps["features"]:
+    n = norm(f["properties"]["shapeName"])
+    f["properties"]["pop_riesgo"] = pop_riesgo.get(n, 0)
+    f["properties"]["salud_riesgo"] = sr.get(n, 0)
+    f["properties"]["escuelas_riesgo"] = er.get(n, 0)
+    f["properties"]["matricula_riesgo"] = mr.get(n, 0)
+
 # --- Guardar capas ---
 def pts_fc(lista):
     return {"type": "FeatureCollection",
@@ -225,6 +261,10 @@ resumen = {
         "mayores": sum(pop.get(n, {}).get("mayores", 0) for n in prio),
         "salud": sum(cnt_salud.get(n, 0) for n in prio),
         "escuelas": sum(cnt_esc.get(n, 0) for n in prio)},
+    "en_riesgo": {
+        "poblacion": sum(pop_riesgo.values()),
+        "salud": sum(sr.values()), "escuelas": sum(er.values()),
+        "matricula": sum(mr.values())},
     "zonas_riesgo": resumen_zonas,
 }
 guardar(resumen, os.path.join(EXP, "resumen.json"))
