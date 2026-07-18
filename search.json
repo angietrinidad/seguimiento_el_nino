@@ -583,7 +583,7 @@
     "href": "06-exposicion/index.html#mapa",
     "title": "Exposición y población en riesgo",
     "section": "Mapa",
-    "text": "Mapa\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nLas 5.202 escuelas se muestran agregadas por departamento (conteo en el tooltip); solo se dibujan individualmente las expuestas en la zona de riesgo, para no sobrecargar el mapa. Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.",
+    "text": "Mapa\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nLos 8.030 centros educativos (MEC) se agregan por departamento (conteo en el tooltip); los 1.056 servicios de salud (MSPBS) se muestran agrupados. Solo se dibujan individualmente los expuestos en la zona de riesgo. Nota: varias USF y escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos. Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.",
     "crumbs": [
       "Inicio",
       "Situación actual (2026-27)",
