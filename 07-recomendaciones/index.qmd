@@ -9,9 +9,10 @@ organizaciones sepan **qué hacer en cada movimiento del río**, *antes* de que 
 inundación ocurra.
 
 El enfoque es la **acción anticipatoria** (actuar sobre la base de pronósticos y
-umbrales, no solo tras el desastre) y el marco de referencia son las **normas de
-la Humanitarian Standards Partnership (HSP)** [@hsp], aplicadas al contexto
-ribereño paraguayo.
+umbrales, no solo tras el desastre). El marco de referencia combina el **Plan de
+Contingencia oficial de la SEN** (Resolución 106/2024) [@sen_plan_inund] con las
+**normas de la Humanitarian Standards Partnership (HSP)** [@hsp], aplicados al
+contexto ribereño paraguayo.
 
 ::: {.callout-note}
 ## Base de evidencia
@@ -28,29 +29,47 @@ que **no genere daño**, con **mecanismos de queja** accesibles y **rendición d
 cuentas**. El saber local de los bañados —quién vive dónde, cómo sube el agua— es
 parte del sistema de alerta, no un dato secundario.
 
-## El marco oficial paraguayo: la SEN
+## El marco oficial: el Plan de Contingencia de la SEN
 
-Estas recomendaciones se inscriben en el marco institucional nacional. La
-**Secretaría de Emergencia Nacional (SEN)**, creada por la **Ley N.º 2615/2005**
-bajo la Presidencia de la República, coordina el ciclo de gestión del riesgo
-—prevención, mitigación, respuesta, rehabilitación y reconstrucción—
-[@sen_ley2615], en línea con el **Marco de Sendai** (PNIMS) [@sendai_pnims]. La
-coordinación interinstitucional recae en el **Consejo Nacional de Emergencia**
-(~20 instituciones del Estado) [@sen_ley2615].
+Estas recomendaciones **no son una propuesta externa**: se alinean con el
+instrumento oficial vigente. La **Secretaría de Emergencia Nacional (SEN)** —creada
+por la **Ley N.º 2615/2005** bajo la Presidencia de la República [@sen_ley2615]—
+aprobó, por **Resolución SEN N.º 106/2024** (26 de enero de 2024, firmada por el
+Secretario Ejecutivo Cnel. (R) Arsenio Ramón Zárate), el **Plan de Contingencia
+para Inundaciones y Tormentas Severas 2023-2028** [@sen_resol106; @sen_plan_inund].
+Un plan complementario, el **Operativo Jaho'i**, cubre las bajas temperaturas
+[@sen_plan_jahoi].
 
-El **plan de la SEN ante El Niño 2026** (ministro Arsenio Zárate) prioriza
-—coincidiendo con la Fase 0 de esta guía— que *"la prevención es más ventajosa
-que dar una respuesta después"*: **limpieza de cauces**, **preparación de
-albergues** (ex predio de Copaco en Zeballos Cué, canchas), y **coordinación con
-las intendencias** (Central, luego Concepción y Alto Paraguay) [@sen_plan2026].
+**Coordinación (Consejo Ejecutivo).** El plan convoca a un amplio arco estatal:
+Ministerio del Interior y Policía Nacional, Fuerzas Militares, MSPBS, Ministerio
+de la Niñez y la Adolescencia, MEC, MOPC, MAG, MADES, ESSAP, ANDE, SENASA, Cruz
+Roja Paraguaya, Junta y Cuerpo de Bomberos, municipios y gobernaciones
+[@sen_plan_inund].
 
-La SEN maneja además **umbrales de impacto** propios para la crecida del río
-Paraguay, que se integran a las fases de abajo [@sen_plan2026]:
+**Las tres fases oficiales.** El plan organiza la actuación en tres fases, a las
+que se mapean las fases por nivel del río de esta guía:
 
-| Crecida | Viviendas afectadas (estimación SEN) |
+| Fase oficial (SEN) | Fases por nivel del río (esta guía) |
 |---|---|
-| **5 m** | ~2.000 |
-| **7,5 m** (nivel 2019) | ~14.000 |
+| **1 · Preparación y Prevención** | 0 · Preparación · 1 · Amarilla · 2 · Naranja |
+| **2 · Respuesta** | 3 · Roja / crítico |
+| **3 · Rehabilitación y Retorno** | 4 · Recuperación |
+
+Acciones que el propio plan asigna a la SEN [@sen_plan_inund]: en **preparación**,
+recabar información hidrometeorológica, adoptar **alerta temprana** y aprestamiento,
+solicitar a los municipios los **censos actualizados** de las zonas inundables,
+identificar sitios de albergue e insumos (colchones, frazadas, chapas), y
+coordinar servicios básicos (ANDE, ESSAP, SENASA) y asistencia **psicosocial**; en
+**respuesta**, evacuación y reubicación, kits de alimentos, y seguridad policial de
+los albergues; en **rehabilitación y retorno**, restablecer servicios, desarmar
+viviendas temporales, trasladar a las familias y **rendir cuentas** de la asistencia.
+
+**Umbrales de impacto (SEN)** para la crecida del río Paraguay [@sen_plan2026]:
+**5 m ≈ 2.000 viviendas** afectadas · **7,5 m ≈ 14.000** (nivel 2019). El propio
+plan documenta las mayores crecidas históricas en Asunción (récord **1983: 9,05 m**;
+2015-16: **7,88 m**; fuente MADES/Grassi) [@sen_plan_inund] y los departamentos más
+asistidos por inundaciones 2018-2023 (Central, Presidente Hayes, Concepción,
+Misiones) —consistentes con los priorizados en la [exposición](../06-exposicion/index.qmd).
 
 ## Umbrales del río y fases de acción
 
@@ -84,7 +103,7 @@ cuando se construye la capacidad.*
   repositorio es un insumo); verificar el **registro de familias en zonas de
   riesgo** desagregado por grupo vulnerable; pre-acordar los **albergues** y su
   capacidad; establecer los **umbrales y responsables** de cada fase por
-  adelantado [@esfera; @dgrrd_prevencion].
+  adelantado [@esfera; @dgrrd_prevencion; @sen_plan_inund].
 - **Comunidades (comités locales, familias):** conformar/actualizar **comités
   comunitarios de gestión de riesgo**; acordar **rutas de evacuación y puntos de
   encuentro**; preparar el **bolso de emergencia** y documentos; identificar
@@ -115,7 +134,7 @@ cuando se construye la capacidad.*
   **habilitar albergues** que cumplan estándares mínimos (espacio, agua,
   saneamiento, privacidad); asegurar la **continuidad de servicios de salud y
   educación** en zona de riesgo (ver los establecimientos expuestos en la
-  [exposición](../06-exposicion/index.qmd)) [@esfera; @muni_2019].
+  [exposición](../06-exposicion/index.qmd)) [@esfera; @muni_2019; @sen_plan_inund].
 - **Comunidades:** ejecutar la evacuación acordada; trasladar primero a **personas
   mayores, con discapacidad, embarazadas, niñez**; llevar personas *y* medios de
   vida (animales, herramientas) cuando sea seguro.
@@ -189,12 +208,12 @@ La [exposición](../06-exposicion/index.qmd) responde *a quién priorizar*: la
 ## Fuentes y límites
 
 ::: {.vacio}
-- Estas recomendaciones son una **síntesis** de las normas HSP [@hsp] con el
-  **marco oficial paraguayo** (Ley 2615 [@sen_ley2615] y plan SEN 2026
-  [@sen_plan2026]) y la evidencia del repositorio. Se apoyan en el marco de la SEN,
-  pero **no reemplazan** sus **procedimientos operativos detallados** (protocolo
-  del COE, cadena de mando y de evacuación), que la SEN no publica en forma
-  abierta y conviene solicitar para el detalle paso a paso.
+- Estas recomendaciones integran el **Plan de Contingencia oficial de la SEN**
+  (Resolución 106/2024) [@sen_plan_inund] con las normas HSP [@hsp] y la evidencia
+  del repositorio. Traducen las **tres fases** del plan a **umbrales por nivel del
+  río** (el disparador que el plan no fija numéricamente) para hacerlo accionable;
+  la activación formal y la cadena de mando operativa siguen siendo competencia de
+  la SEN y su Comité Operativo Nacional.
 - Los umbrales (3,5 m naranja, 5 m roja) son los **municipales de Asunción**
   [@alertas_rio_py]; otras ciudades ribereñas (Pilar, Alberdi, Concepción) tienen
   cotas de referencia propias que convendría documentar.

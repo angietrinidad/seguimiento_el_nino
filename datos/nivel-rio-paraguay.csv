@@ -1,5 +1,7 @@
 episodio,fecha,nivel_m,estacion,fuente,confiabilidad,nota
-2015-16,2016-01-07,7.84,Asuncion,FloodList_DMH,prensa,Pico de la crecida; FloodList citando a la DMH. Etapa crítica: 5.5 m
+1982-83,1983,9.05,Asuncion,SEN_MADES,oficial,Récord histórico (905 cm); El Niño fuerte. Plan de Contingencia SEN / Grassi 2020 MADES
+2015-16,2016,7.88,Asuncion,SEN_MADES,oficial,Pico oficial (788 cm); El Niño fuerte. Plan de Contingencia SEN / Grassi 2020 MADES
+2015-16,2016-01-07,7.84,Asuncion,FloodList_DMH,prensa,Pico según prensa (FloodList citando a la DMH). Etapa crítica: 5.5 m
 2015-16,2016-01-12,7.61,Asuncion,FloodList_DMH,prensa,Descenso posterior al pico
 2015-16,2016-01-18,7.25,Asuncion,FloodList_DMH,prensa,Descenso posterior al pico
 2018-19,2019-05-30,7.57,Asuncion,DGRRD,oficial,El Niño débil 2018-19; 14.823 familias desplazadas
