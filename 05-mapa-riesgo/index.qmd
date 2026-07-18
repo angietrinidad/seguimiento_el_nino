@@ -82,6 +82,8 @@ capas_ne = [
     ("Anomalía 2024 · Ñeembucú", "anomalia-neembucu-2024-s1.geojson", "#7b2cbf"),
     ("Anegamiento recurrente · Alberdi", "anegamiento-alberdi-s1.geojson", "#e8871e"),
     ("Anegamiento recurrente · Villa Hayes", "anegamiento-villahayes-s1.geojson", "#e8871e"),
+    ("Anegamiento recurrente · Fuerte Olimpo", "anegamiento-fuerteolimpo-s1.geojson", "#e8871e"),
+    ("Anegamiento recurrente · Villa Hayes", "anegamiento-villahayes-s1.geojson", "#e8871e"),
 ]
 for etiqueta, fn, color in capas_ne:
     ruta = f"datos/geo/{fn}"

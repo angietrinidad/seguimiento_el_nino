@@ -23,9 +23,7 @@ from pystac_client import Client
 import planetary_computer as pc
 
 ZONAS = [
-    {"id": "concepcion", "nombre": "Concepción", "aoi": [-57.55, -23.55, -57.20, -23.25]},
-    {"id": "alberdi", "nombre": "Alberdi / bajo Ñeembucú", "aoi": [-58.35, -26.50, -57.90, -26.00]},
-    {"id": "villahayes", "nombre": "Villa Hayes", "aoi": [-57.72, -25.25, -57.38, -24.92]},
+    {"id": "fuerteolimpo", "nombre": "Fuerte Olimpo", "aoi": [-58.02, -21.15, -57.72, -20.92]},
 ]
 YEARS = [2019, 2020, 2021, 2022, 2023, 2024]
 OVERVIEW = 1

@@ -118,6 +118,20 @@ for f in exp["features"]:
                         popup=folium.Popup(popup_html(pr, prefijo=f"[{pr['clase']}] "), max_width=260),
                         tooltip=pr["nombre"]).add_to(capa_exp)
 
+# Infraestructura (contexto): Costanera (defensa) + rutas/puentes principales
+ruta_infra = "datos/geo/infraestructura-asuncion.geojson"
+if os.path.exists(ruta_infra):
+    infra = json.load(open(ruta_infra, encoding="utf-8"))
+    col_i = {"Defensa costera (Costanera)": "#7b2cbf", "Puente": "#333333", "Ruta principal": "#888888"}
+    cap_def = folium.FeatureGroup(name="Defensa costera (Costanera)").add_to(m)
+    cap_via = folium.FeatureGroup(name="Rutas y puentes principales", show=False).add_to(m)
+    for f in infra["features"]:
+        cat = f["properties"]["categoria"]
+        destino = cap_def if cat.startswith("Defensa") else cap_via
+        peso = 4 if cat.startswith("Defensa") else 2
+        folium.GeoJson(f, style_function=(lambda c, w: lambda x: {"color": c, "weight": w})(col_i.get(cat, "#888"), peso),
+                       tooltip=f["properties"].get("nombre")).add_to(destino)
+
 folium.LayerControl(collapsed=False).add_to(m)
 
 leyenda = """
@@ -129,8 +143,9 @@ leyenda = """
   <span style="color:#6baed6">■</span> 150-300k &nbsp;
   <span style="color:#eff3ff;text-shadow:0 0 1px #999">■</span> &lt;50k<br>
   <span style="color:#c0392b">▮</span> Departamento ribereño prioritario<br>
-  <span style="color:#d1495b">▮</span> Zona de riesgo de inundación (Asunción)<br>
-  <span style="color:#1b5e7a">●</span> Salud &nbsp;
+  <span style="color:#d1495b">▮</span> Zona de riesgo de inundación<br>
+  <span style="color:#7b2cbf">▬</span> Costanera (defensa) ·
+  <span style="color:#1b5e7a">●</span> Salud ·
   <span style="color:#b26a00">●</span> Educación (expuestos)
 </div>"""
 m.get_root().html.add_child(folium.Element(leyenda))
@@ -179,6 +194,13 @@ apenas fuera del buffer. Es una cota inferior, no la exposición real.
   aunque desactualizada.
 - **Salud** usa el registro **oficial del MSPBS/DIGIES** (georreferenciado, con
   categoría oficial). No incluye camas ni dotación de personal por establecimiento.
+- **Obras de defensa no ajustadas:** el mapa se basa en huellas históricas de
+  inundación y **no descuenta la protección** de obras como la **Costanera**
+  (Norte/Sur) o el drenaje reciente. Donde hay defensa nueva, la exposición puede
+  estar **sobreestimada**. La Costanera se muestra como capa de contexto, no como
+  reductor cuantificado (haría falta la cota de protección del MOPC/Municipalidad).
+  La huella de 2019 ya es posterior a la Costanera Norte (~2013); la Costanera Sur
+  y obras 2020s no están reflejadas.
 - **Concepción** quedó pendiente: no hay cobertura de Sentinel-1 RTC reciente
   (2022-2024) sobre el norte para derivar su zona de anegamiento con este método.
 - La exposición **no** incorpora aún **vulnerabilidad social** (asentamientos

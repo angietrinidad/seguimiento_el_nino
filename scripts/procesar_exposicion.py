@@ -89,7 +89,7 @@ def cargar_escuelas_oficiales(path):
                     "detalle": detalle})
     return out
 escuelas = cargar_escuelas_oficiales(os.path.join(OFI, "mec_escuelas_oficiales.geojson"))
-print(f"salud (OSM): {len(salud)} | escuelas (MEC oficial): {len(escuelas)}")
+print(f"salud (MSPBS oficial): {len(salud)} | escuelas (MEC oficial): {len(escuelas)}")
 
 # Matrícula oficial (tc=13) — solo para establecimientos expuestos; con caché.
 import urllib.request
@@ -158,6 +158,7 @@ ZONAS = [
      "huellas": ["zona-anegamiento-neembucu-s1.geojson"]},
     {"id": "alberdi", "nombre": "Alberdi / bajo Ñeembucú", "huellas": ["anegamiento-alberdi-s1.geojson"]},
     {"id": "villahayes", "nombre": "Villa Hayes", "huellas": ["anegamiento-villahayes-s1.geojson"]},
+    {"id": "fuerteolimpo", "nombre": "Fuerte Olimpo", "huellas": ["anegamiento-fuerteolimpo-s1.geojson"]},
 ]
 
 def guardar(obj, path):
