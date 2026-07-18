@@ -26,3 +26,4 @@ datos/geo/escuelas-puntos.geojson
 datos/oficial/mec_escuelas_oficiales.geojson
 datos/oficial/*.topojson
 datos/oficial/mec_establecimientos_2014.geojson
+datos/oficial/mec_escuelas_2014.geojson
