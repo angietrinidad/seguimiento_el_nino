@@ -131,19 +131,19 @@ for f in exp["features"]:
                         popup=folium.Popup(popup_html(pr, prefijo=f"[{pr['clase']}] "), max_width=260),
                         tooltip=pr["nombre"]).add_to(capa_exp)
 
-# Infraestructura (contexto): Costanera (defensa) + rutas/puentes principales
-ruta_infra = "datos/geo/infraestructura-asuncion.geojson"
-if os.path.exists(ruta_infra):
-    infra = json.load(open(ruta_infra, encoding="utf-8"))
-    col_i = {"Defensa costera (Costanera)": "#7b2cbf", "Puente": "#333333", "Ruta principal": "#888888"}
-    cap_def = folium.FeatureGroup(name="Defensa costera (Costanera)").add_to(m)
-    cap_via = folium.FeatureGroup(name="Rutas y puentes principales", show=False).add_to(m)
-    for f in infra["features"]:
-        cat = f["properties"]["categoria"]
-        destino = cap_def if cat.startswith("Defensa") else cap_via
-        peso = 4 if cat.startswith("Defensa") else 2
-        folium.GeoJson(f, style_function=(lambda c, w: lambda x: {"color": c, "weight": w})(col_i.get(cat, "#888"), peso),
-                       tooltip=f["properties"].get("nombre")).add_to(destino)
+# Costanera (defensa costera) — obra que modula el riesgo
+if os.path.exists("datos/geo/costanera-asuncion.geojson"):
+    cost = json.load(open("datos/geo/costanera-asuncion.geojson", encoding="utf-8"))
+    folium.GeoJson(cost, name="Costanera (defensa costera)",
+        style_function=lambda f: {"color": "#7b2cbf", "weight": 4},
+        tooltip=folium.GeoJsonTooltip(fields=["nombre"], aliases=["Obra:"])).add_to(m)
+
+# Franja baja NO inundada junto a la Costanera (análisis DEM, exploratorio)
+if os.path.exists("datos/geo/protegido-costanera.geojson"):
+    prot = json.load(open("datos/geo/protegido-costanera.geojson", encoding="utf-8"))
+    folium.GeoJson(prot, name="Franja baja protegida (DEM · exploratorio)",
+        style_function=lambda f: {"fillColor": "#1a9850", "color": "#1a9850",
+                                  "weight": 0, "fillOpacity": 0.55}, show=False).add_to(m)
 
 folium.LayerControl(collapsed=False).add_to(m)
 
@@ -158,6 +158,7 @@ leyenda = """
   <span style="color:#c0392b">▮</span> Departamento ribereño prioritario<br>
   <span style="color:#d1495b">▮</span> Zona de riesgo de inundación<br>
   <span style="color:#7b2cbf">▬</span> Costanera (defensa) ·
+  <span style="color:#1a9850">▮</span> Franja baja protegida (DEM)<br>
   <span style="color:#1b5e7a">●</span> Salud ·
   <span style="color:#b26a00">●</span> Educación (expuestos)
 </div>"""
@@ -184,6 +185,35 @@ expuestos.*
   (Central, Concepción, San Pedro, Pdte. Hayes, Ñeembucú, Misiones, Itapúa, Alto
   Paraná), usados como aproximación de exposición a escala nacional.
 
+## Efecto de la Costanera (análisis de elevación / DEM)
+
+Para empezar a considerar las **obras de defensa**, se incorporó el **modelo de
+elevación Copernicus DEM (30 m)**. Hallazgos (sobre los bañados de Asunción):
+
+| Terreno | Elevación (m s/mar) |
+|---|---|
+| Bañados inundados (huella observada) | mediana **56,8** · p90 **58,5** |
+| Ciudad (tierra firme circundante) | ~60-65 |
+| **Costanera** (terraplén de defensa) | mediana **58,8** → **+2 m** sobre el bañado |
+
+Es decir: **los bañados son la tierra más baja** (por eso se inundan) y la
+**Costanera es un terraplén elevado** por encima del nivel que alcanzó la
+inundación observada — coherente con su función de defensa. En el mapa, la capa
+*"Franja baja protegida (DEM)"* marca **7,9 km²** de terreno bajo (≤ 58,5 m) junto
+a la Costanera que **no** figuran en la huella observada: candidatos a estar
+protegidos por el terraplén.
+
+::: {.vacio}
+**Análisis exploratorio, no un modelo hidráulico.** (1) El DEM de 30 m no capta la
+microtopografía ni los edificios de los bañados. (2) El umbral de inundación se
+calibra con lo *observado* por satélite, no con una cota absoluta. (3) La "franja
+protegida" puede deberse a la Costanera **o a otras causas** (desconexión
+hidráulica, otras defensas). (4) Falta la **cota de coronamiento** de la Costanera
+(MOPC/Municipalidad) y la conversión al **cero hidrométrico** del río para
+cuantificar el nivel de protección. Sirve para *señalar* dónde mirar, no para
+afirmar cuánto protege.
+:::
+
 ## Fuentes
 
 - Población (total por departamento): **COD-PS 2023** (UNFPA/DGEEC), CC BY-IGO
@@ -197,6 +227,8 @@ expuestos.*
   georreferenciado y con **matrícula** por establecimiento [@mec_datos].
 - Departamentos: **geoBoundaries** [@geoboundaries_py].
 - Zonas inundables: derivadas de **Sentinel-1** en este repositorio.
+- **Costanera** y vialidad: **OpenStreetMap** (Overpass) [@osm].
+- **Elevación del terreno:** **Copernicus DEM GLO-30** (30 m) [@copernicus_dem].
 
 ## Vacíos y límites
 

@@ -39,3 +39,4 @@ datos/oficial/*.gpkg.gz
 /sitemap.xml
 /robots.txt
 /.nojekyll
+datos/geo/infraestructura-asuncion.geojson
