@@ -12,6 +12,18 @@
     ]
   },
   {
+    "objectID": "situacion-actual/index.html#cota-actual-del-río-paraguay",
+    "href": "situacion-actual/index.html#cota-actual-del-río-paraguay",
+    "title": "Situación actual: episodio 2026-2027",
+    "section": "Cota actual del río Paraguay",
+    "text": "Cota actual del río Paraguay\n\n\n\n  Asunción: 1.94 m\n     ▼ -6 cm\n     — a 3.56 m del nivel crítico\n  \n    \n    \n    crítico 5,5 m\n    \n    pico 2016: 7,84 m\n  \n  0 m     escala hasta 8 m\n\n\n\n\nEstación (norte→sur)\nNivel\nVariación\n\n\nConcepción\n2.35 m\n= 0 cm\n\n\nFuerte Olimpo\n4.18 m\n▼ -2 cm\n\n\nIsla Margarita\n3.28 m\n▼ -3 cm\n\n\nAsunción\n1.94 m\n▼ -6 cm\n\n\nVilleta\n2.46 m\n▼ -6 cm\n\n\nAlberdi\n4.3 m\n▼ -13 cm\n\n\nPilar\n4.33 m\n▼ -3 cm\n\n\n\nCota del 18-07-2026 · fuente: DINAC (meteorologia.gov.py), actualizada a diario.\n\n\n\n\n\n\n\n\nAl día de hoy el río está muy por debajo del nivel crítico (invierno seco); el pronóstico de El Niño anticipa el ascenso hacia la primavera. Para refrescar la cota: correr scripts/actualizar_nivel_rio.py y re-renderizar.",
+    "crumbs": [
+      "Inicio",
+      "Situación actual (2026-27)",
+      "Estado del episodio en curso"
+    ]
+  },
+  {
     "objectID": "situacion-actual/index.html#el-fenómeno-hoy",
     "href": "situacion-actual/index.html#el-fenómeno-hoy",
     "title": "Situación actual: episodio 2026-2027",
@@ -40,7 +52,7 @@
     "href": "situacion-actual/index.html#quién-está-expuesto",
     "title": "Situación actual: episodio 2026-2027",
     "section": "3. Quién está expuesto",
-    "text": "3. Quién está expuesto\nLa exposición estructural que este episodio pondría a prueba (evidencia empírica + población, salud y educación):\n\n\n\n\n\nIndicador\nValor\n\n\n\n\nPoblación en departamentos ribereños prioritarios\n4,685,270\n\n\n— de ella, niñez (0-14)\n1,315,238\n\n\n— de ella, adultos mayores (65+)\n310,321\n\n\nServicios de salud expuestos (zona de riesgo Asunción)\n4\n\n\nCentros educativos expuestos (zona de riesgo Asunción)\n27\n\n\n\n\n\nMapa completo e interactivo en Exposición y población en riesgo.",
+    "text": "3. Quién está expuesto\nLa exposición estructural que este episodio pondría a prueba (evidencia empírica + población, salud y educación):\n\n\n\n\n\nIndicador\nValor\n\n\n\n\nPoblación en departamentos ribereños prioritarios\n4,685,270\n\n\n— de ella, niñez (0-14)\n1,315,238\n\n\n— de ella, adultos mayores (65+)\n310,321\n\n\nPoblación dentro de la zona de inundación\n59,695\n\n\nServicios de salud expuestos\n8\n\n\nCentros educativos expuestos\n27 (matrícula 5,701)\n\n\n\n\n\nMapa completo e interactivo en Exposición y población en riesgo.",
     "crumbs": [
       "Inicio",
       "Situación actual (2026-27)",
