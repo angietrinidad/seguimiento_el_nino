@@ -28,19 +28,44 @@ que **no genere daño**, con **mecanismos de queja** accesibles y **rendición d
 cuentas**. El saber local de los bañados —quién vive dónde, cómo sube el agua— es
 parte del sistema de alerta, no un dato secundario.
 
+## El marco oficial paraguayo: la SEN
+
+Estas recomendaciones se inscriben en el marco institucional nacional. La
+**Secretaría de Emergencia Nacional (SEN)**, creada por la **Ley N.º 2615/2005**
+bajo la Presidencia de la República, coordina el ciclo de gestión del riesgo
+—prevención, mitigación, respuesta, rehabilitación y reconstrucción—
+[@sen_ley2615], en línea con el **Marco de Sendai** (PNIMS) [@sendai_pnims]. La
+coordinación interinstitucional recae en el **Consejo Nacional de Emergencia**
+(~20 instituciones del Estado) [@sen_ley2615].
+
+El **plan de la SEN ante El Niño 2026** (ministro Arsenio Zárate) prioriza
+—coincidiendo con la Fase 0 de esta guía— que *"la prevención es más ventajosa
+que dar una respuesta después"*: **limpieza de cauces**, **preparación de
+albergues** (ex predio de Copaco en Zeballos Cué, canchas), y **coordinación con
+las intendencias** (Central, luego Concepción y Alto Paraguay) [@sen_plan2026].
+
+La SEN maneja además **umbrales de impacto** propios para la crecida del río
+Paraguay, que se integran a las fases de abajo [@sen_plan2026]:
+
+| Crecida | Viviendas afectadas (estimación SEN) |
+|---|---|
+| **5 m** | ~2.000 |
+| **7,5 m** (nivel 2019) | ~14.000 |
+
 ## Umbrales del río y fases de acción
 
 Niveles de alerta oficiales en la estación de **Asunción** [@alertas_rio_py], con
 la etapa crítica (5,5 m) y el pico de 2015-16 (7,84 m) como referencia
 [@floodlist_2016]:
 
-| Nivel en Asunción | Fase | Situación |
+| Nivel en Asunción | Fase | Situación (e impacto SEN) |
 |---|---|---|
 | Bajo / estable (hoy ~2 m) | **0 · Preparación** | Sin crecida; ventana para prepararse |
 | Ascenso sostenido | **1 · Alerta amarilla** | Vigilancia; pronóstico de crecida |
 | **3,5 m** | **2 · Alerta naranja** | Acción anticipatoria; evacuación preventiva |
-| **5,0 m** | **3 · Alerta roja** | Emergencia; respuesta plena |
+| **5,0 m** | **3 · Alerta roja** | Emergencia; **~2.000 viviendas** afectadas (SEN) |
 | **> 5,5 m** (crítico) | **3 · Emergencia mayor** | Desborde en bañados |
+| **7,5 m** (nivel 2019) | **3 · Emergencia mayor** | **~14.000 viviendas** afectadas (SEN) |
 | Descenso | **4 · Recuperación** | Retorno y reconstrucción |
 
 ::: {.callout-tip}
@@ -164,11 +189,12 @@ La [exposición](../06-exposicion/index.qmd) responde *a quién priorizar*: la
 ## Fuentes y límites
 
 ::: {.vacio}
-- Estas recomendaciones son una **síntesis** de las normas HSP [@hsp] con la
-  evidencia de Paraguay; **no reemplazan** los protocolos oficiales
-  de la **SEN** y la **DGRRD**, que deben consultarse para los procedimientos
-  vigentes. Sería deseable **contrastarlas con el protocolo formal de la SEN**
-  (pendiente de incorporar como fuente primaria).
+- Estas recomendaciones son una **síntesis** de las normas HSP [@hsp] con el
+  **marco oficial paraguayo** (Ley 2615 [@sen_ley2615] y plan SEN 2026
+  [@sen_plan2026]) y la evidencia del repositorio. Se apoyan en el marco de la SEN,
+  pero **no reemplazan** sus **procedimientos operativos detallados** (protocolo
+  del COE, cadena de mando y de evacuación), que la SEN no publica en forma
+  abierta y conviene solicitar para el detalle paso a paso.
 - Los umbrales (3,5 m naranja, 5 m roja) son los **municipales de Asunción**
   [@alertas_rio_py]; otras ciudades ribereñas (Pilar, Alberdi, Concepción) tienen
   cotas de referencia propias que convendría documentar.
