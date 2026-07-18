@@ -41,6 +41,8 @@ website:
             file: situacion-actual/index.qmd
           - text: "Exposición y población en riesgo"
             file: 06-exposicion/index.qmd
+          - text: "Recomendaciones por nivel del río"
+            file: 07-recomendaciones/index.qmd
       - text: "Fuentes"
         file: fuentes/index.qmd
   sidebar:
@@ -69,6 +71,8 @@ website:
             file: situacion-actual/index.qmd
           - text: "Exposición y población en riesgo"
             file: 06-exposicion/index.qmd
+          - text: "Recomendaciones por nivel del río"
+            file: 07-recomendaciones/index.qmd
       - section: "Anexos"
         contents:
           - metodologia.qmd

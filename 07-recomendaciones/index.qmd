@@ -1,0 +1,178 @@
+---
+title: "Recomendaciones por nivel del río (acción anticipatoria)"
+---
+
+De la **amenaza** a la **acción**. Esta sección traduce la evidencia del
+repositorio —dónde se inunda, quién está expuesto— en **recomendaciones
+escalonadas según el nivel del río**, para que instituciones, comunidades y
+organizaciones sepan **qué hacer en cada movimiento del río**, *antes* de que la
+inundación ocurra.
+
+El enfoque es la **acción anticipatoria** (actuar sobre la base de pronósticos y
+umbrales, no solo tras el desastre) y el marco de referencia son las **normas de
+la Humanitarian Standards Partnership (HSP)** [@hsp], aplicadas al contexto
+ribereño paraguayo.
+
+::: {.callout-note}
+## Base de evidencia
+Tres pilares: (1) los **umbrales de alerta oficiales** del río Paraguay en Asunción y los actores del sistema nacional (DINAC, SEN, DGRRD, Cruz Roja); (2) las **normas mínimas humanitarias** de la HSP (Esfera, CHS y las normas por sector); y (3) la **exposición y los grupos vulnerables** documentados en este repositorio (ver [exposición](../06-exposicion/index.qmd)). Cada fuente se cita en la sección donde se aplica.
+:::
+
+## Principio transversal: la Norma Humanitaria Esencial (CHS)
+
+Antes que cualquier acción específica, la **Norma Humanitaria Esencial (CHS)**
+[@chs] atraviesa **todas** las fases: la respuesta debe ser **pertinente y
+oportuna**, **participativa** (las comunidades ribereñas deciden, no solo
+reciben), **basada en información** que llega a la gente en forma comprensible,
+que **no genere daño**, con **mecanismos de queja** accesibles y **rendición de
+cuentas**. El saber local de los bañados —quién vive dónde, cómo sube el agua— es
+parte del sistema de alerta, no un dato secundario.
+
+## Umbrales del río y fases de acción
+
+Niveles de alerta oficiales en la estación de **Asunción** [@alertas_rio_py], con
+la etapa crítica (5,5 m) y el pico de 2015-16 (7,84 m) como referencia
+[@floodlist_2016]:
+
+| Nivel en Asunción | Fase | Situación |
+|---|---|---|
+| Bajo / estable (hoy ~2 m) | **0 · Preparación** | Sin crecida; ventana para prepararse |
+| Ascenso sostenido | **1 · Alerta amarilla** | Vigilancia; pronóstico de crecida |
+| **3,5 m** | **2 · Alerta naranja** | Acción anticipatoria; evacuación preventiva |
+| **5,0 m** | **3 · Alerta roja** | Emergencia; respuesta plena |
+| **> 5,5 m** (crítico) | **3 · Emergencia mayor** | Desborde en bañados |
+| Descenso | **4 · Recuperación** | Retorno y reconstrucción |
+
+::: {.callout-tip}
+Seguí el **nivel actual del río** en [Situación actual](../situacion-actual/index.qmd).
+Al día de hoy el río está en fase **0 (preparación)** — la mejor ventana para
+actuar sin la presión de la emergencia.
+:::
+
+## Fase 0 · Preparación (río bajo o estable)
+
+*La ventana más valiosa y la más desaprovechada. Cuando el río está bajo es
+cuando se construye la capacidad.*
+
+- **Instituciones (SEN, DGRRD, DINAC, MSPBS, MEC, MAG):** actualizar los **planes
+  de contingencia** y el **mapeo de riesgo y de población expuesta** (este
+  repositorio es un insumo); verificar el **registro de familias en zonas de
+  riesgo** desagregado por grupo vulnerable; pre-acordar los **albergues** y su
+  capacidad; establecer los **umbrales y responsables** de cada fase por
+  adelantado [@esfera; @dgrrd_prevencion].
+- **Comunidades (comités locales, familias):** conformar/actualizar **comités
+  comunitarios de gestión de riesgo**; acordar **rutas de evacuación y puntos de
+  encuentro**; preparar el **bolso de emergencia** y documentos; identificar
+  vecinos que necesitan apoyo (personas mayores, con discapacidad, embarazadas).
+  El conocimiento local del comportamiento del agua es central [@chs].
+- **Organizaciones (Cruz Roja, ONG, cooperación):** **preposicionar** stock e
+  insumos; firmar/actualizar **protocolos de acción temprana** y activar el
+  financiamiento anticipatorio (DREF/EAP) con **disparadores** claros;
+  **capacitar** a los comités comunitarios [@cruzroja_py_aa].
+
+## Fase 1 · Alerta amarilla (río en ascenso)
+
+- **Instituciones:** intensificar el **monitoreo** de la DINAC y **comunicar** el
+  pronóstico en lenguaje claro y accesible; convocar al **Comité de Emergencia**;
+  verificar la disponibilidad de albergues y suministros [@chs; @dgrrd_prevencion].
+- **Comunidades:** activar los comités; **difundir la alerta** puerta a puerta,
+  llegando a quienes no usan medios digitales; empezar a **proteger bienes** y
+  documentar la situación de los más vulnerables.
+- **Organizaciones:** desplegar equipos de **evaluación rápida**; confirmar los
+  **disparadores** de acción anticipatoria; alistar la distribución.
+
+## Fase 2 · Alerta naranja — 3,5 m (acción anticipatoria)
+
+*La fase decisiva: actuar **antes** del desborde reduce el daño y el costo.*
+
+- **Instituciones:** ordenar la **evacuación preventiva** de las familias más
+  expuestas (bañados Norte y Sur, La Chacarita) priorizando grupos vulnerables;
+  **habilitar albergues** que cumplan estándares mínimos (espacio, agua,
+  saneamiento, privacidad); asegurar la **continuidad de servicios de salud y
+  educación** en zona de riesgo (ver los establecimientos expuestos en la
+  [exposición](../06-exposicion/index.qmd)) [@esfera; @muni_2019].
+- **Comunidades:** ejecutar la evacuación acordada; trasladar primero a **personas
+  mayores, con discapacidad, embarazadas, niñez**; llevar personas *y* medios de
+  vida (animales, herramientas) cuando sea seguro.
+- **Organizaciones:** activar formalmente la **acción anticipatoria/DREF**;
+  distribuir kits; apoyar la gestión de albergues con estándares Esfera
+  [@cruzroja_py_aa; @esfera].
+
+## Fase 3 · Alerta roja — 5 m / crítico 5,5 m (respuesta plena)
+
+Con desborde en los bañados, la respuesta debe cumplir las **normas mínimas de
+Esfera** [@esfera] y proteger a los grupos en mayor riesgo:
+
+- **Agua, saneamiento e higiene (WASH):** agua segura suficiente, letrinas y
+  gestión de residuos en los albergues (Esfera WASH).
+- **Alojamiento y artículos no alimentarios:** espacio cubierto digno, colchones,
+  frazadas, chapas —insumos que la DGRRD prevé— con **privacidad** y seguridad
+  [@esfera; @dgrrd_prevencion].
+- **Salud:** continuidad de atención, control de enfermedades transmisibles
+  (dengue, diarreas), salud materna; apoyo psicosocial (MHPSS).
+- **Seguridad alimentaria y nutrición:** asistencia alimentaria adecuada.
+- **Coordinación:** SEN a nivel nacional, DGRRD a nivel local, con las
+  organizaciones humanitarias bajo la CHS [@chs].
+
+## El lente de la vulnerabilidad: no todos se inundan igual
+
+*El riesgo no es solo el agua: es quién está expuesto y con qué capacidad de
+respuesta.* Las normas HSP exigen atención específica a los grupos que la propia
+evidencia de Paraguay muestra sobrerrepresentados en los albergues —en 2019,
+**13.500 menores, 778 embarazadas y ~1.000 adultos mayores** [@muni_2019]:
+
+- **Niñez y adolescencia:** espacios seguros, prevención de separación familiar,
+  continuidad educativa —Normas mínimas de protección de la niñez (CPMS) e INEE
+  [@hsp].
+- **Personas mayores y con discapacidad:** accesibilidad de albergues y de la
+  información, apoyo para la evacuación —Normas de Inclusión Humanitaria (HIS)
+  [@hsp].
+- **Mujeres y embarazadas:** privacidad, salud materna, prevención de la violencia
+  de género en albergues [@esfera; @chs].
+- **Asentamientos informales:** los bañados concentran el riesgo por su ubicación
+  *y* por la precariedad —la vulnerabilidad es social, no solo geográfica.
+
+## Medios de vida rurales (Ñeembucú, Chaco)
+
+En las zonas ribereñas rurales, la crecida amenaza cultivos y ganado. Las normas
+HSP específicas orientan la protección de los medios de subsistencia:
+
+- **Ganado:** evacuación, refugio y alimentación del ganado, o descarga anticipada
+  —Normas LEGS [@hsp].
+- **Cultivos:** protección de semillas y cosechas —Normas SEADS [@hsp].
+- **Recuperación económica** posterior: Normas mínimas MERS [@hsp]; coordinación
+  con el MAG y su Dirección de Gestión de Riesgos.
+
+## Fase 4 · Recuperación (descenso del río)
+
+- **Instituciones:** **retorno seguro** solo tras verificar condiciones;
+  evaluación de daños; rehabilitación de agua, salud y escuelas; **revisión de
+  aprendizajes** para el próximo ciclo [@esfera].
+- **Comunidades:** limpieza y rehabilitación con apoyo; documentar lo vivido para
+  mejorar el plan.
+- **Organizaciones:** apoyo a la recuperación de medios de vida (MERS); cierre con
+  **rendición de cuentas** a la población asistida (CHS) [@chs].
+
+## Cómo usar este repositorio para priorizar
+
+La [exposición](../06-exposicion/index.qmd) responde *a quién priorizar*: la
+**población en riesgo** por departamento, los **servicios de salud** (USF) y
+**escuelas** dentro de la zona de inundación —cada uno individualizado en el
+[panel administrativo](../admin/index.qmd)— y los **grupos vulnerables**. La
+[cota actual del río](../situacion-actual/index.qmd) indica *en qué fase estamos*.
+
+## Fuentes y límites
+
+::: {.vacio}
+- Estas recomendaciones son una **síntesis** de las normas HSP [@hsp] con la
+  evidencia de Paraguay; **no reemplazan** los protocolos oficiales
+  de la **SEN** y la **DGRRD**, que deben consultarse para los procedimientos
+  vigentes. Sería deseable **contrastarlas con el protocolo formal de la SEN**
+  (pendiente de incorporar como fuente primaria).
+- Los umbrales (3,5 m naranja, 5 m roja) son los **municipales de Asunción**
+  [@alertas_rio_py]; otras ciudades ribereñas (Pilar, Alberdi, Concepción) tienen
+  cotas de referencia propias que convendría documentar.
+- La acción anticipatoria requiere **disparadores acordados institucionalmente**;
+  aquí se ofrece el marco, no los umbrales financieros o de activación de cada
+  organización.
+:::

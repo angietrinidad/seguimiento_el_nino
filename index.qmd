@@ -43,6 +43,7 @@ El episodio en curso y quién está expuesto.
 
 - [Estado del episodio 2026-27](situacion-actual/index.qmd)
 - [Exposición y población en riesgo](06-exposicion/index.qmd)
+- [Recomendaciones por nivel del río](07-recomendaciones/index.qmd)
 :::
 
 :::
