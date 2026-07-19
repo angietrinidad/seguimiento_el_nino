@@ -86,56 +86,56 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Seguimiento El Niño (ENOS)",
+    "title": "Desastres Construidos",
     "section": "",
-    "text": "Base empírica y documental sobre el fenómeno El Niño-Oscilación del Sur (ENOS) para investigación en sociología y gestión del riesgo de desastres. Prioriza fuentes oficiales y datos primarios, señala de forma explícita los vacíos de información y no incorpora cifras sin fuente verificable (ver metodología).",
+    "text": "Base empírica y documental sobre el riesgo de desastres en Paraguay, desde la premisa de que el desastre no es natural: se construye socialmente —la amenaza se vuelve desastre allí donde hay vulnerabilidad—. Prioriza fuentes oficiales y datos primarios, señala de forma explícita los vacíos de información y no incorpora cifras sin fuente verificable (ver metodología).\nEl repositorio arranca con la amenaza más desarrollada —la inundación (fluvial y pluvial) asociada al ciclo El Niño-Oscilación del Sur (ENOS)— y está diseñado para escalar a otras amenazas (sequía, olas de frío, enfermedades climáticas).",
     "crumbs": [
       "Inicio",
-      "Seguimiento El Niño (ENOS)"
+      "Desastres Construidos"
     ]
   },
   {
     "objectID": "index.html#cómo-está-organizado",
     "href": "index.html#cómo-está-organizado",
-    "title": "Seguimiento El Niño (ENOS)",
+    "title": "Desastres Construidos",
     "section": "Cómo está organizado",
     "text": "Cómo está organizado\nEl repositorio se recorre en dos ejes: qué ya ocurrió y qué está pasando ahora.\n\n\n🧭 Marco conceptual\nQué es el ENOS, sus fases y por qué importa para Paraguay.\n\nQué es el ENOS\n\n\n\n📚 Antecedentes históricos\nEl registro de episodios pasados (1997-98, 2015-16, 2018-19, 2023-24) por nivel geográfico.\n\nAmérica Latina — panorama regional\nParaguay — nivel nacional\nImpacto por departamento\nAsunción y área metropolitana\nMapa histórico de inundaciones\n\n\n\n🔴 Situación actual (2026-27)\nEl episodio en curso y quién está expuesto.\n\nEstado del episodio 2026-27\nExposición y población en riesgo\nRecomendaciones por nivel del río\n\n\n\n\n\n\n\n\n\nImportanteEpisodio en curso\n\n\n\nEl Niño 2026-2027 en desarrollo (Aviso de El Niño de NOAA/CPC, jul-2026). El seguimiento del estado actual y de la población expuesta está en Situación actual.",
     "crumbs": [
       "Inicio",
-      "Seguimiento El Niño (ENOS)"
+      "Desastres Construidos"
     ]
   },
   {
     "objectID": "index.html#tabla-resumen-comparativa-por-episodio",
     "href": "index.html#tabla-resumen-comparativa-por-episodio",
-    "title": "Seguimiento El Niño (ENOS)",
+    "title": "Desastres Construidos",
     "section": "Tabla resumen comparativa por episodio",
     "text": "Tabla resumen comparativa por episodio\nClasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA.\n\n\n\n\nTabla 1\n\n\n\n\n\n\nEpisodio\nIntensidad (ONI)\nPico ONI (°C)\nFuente\n\n\n\n\n1997-98\nmuy fuerte\n2.4\nNOAA_ONI\n\n\n2015-16\nmuy fuerte\n2.6\nNOAA_ONI\n\n\n2023-24\nmuy fuerte\n2.0\nNOAA_ONI\n\n\n2026-27\nen desarrollo\n—\nNOAA_CPC_pronostico\n\n\n\n\n\n\n\n\n: Episodios El Niño considerados en el repositorio. {#tbl-episodios}",
     "crumbs": [
       "Inicio",
-      "Seguimiento El Niño (ENOS)"
+      "Desastres Construidos"
     ]
   },
   {
     "objectID": "index.html#convención-de-confiabilidad",
     "href": "index.html#convención-de-confiabilidad",
-    "title": "Seguimiento El Niño (ENOS)",
+    "title": "Desastres Construidos",
     "section": "Convención de confiabilidad",
     "text": "Convención de confiabilidad\nCada hallazgo se etiqueta según su fuente: oficial organismo estatal o intergubernamental · académico revista/institución científica · prensa medios · estimación dato no confirmado.",
     "crumbs": [
       "Inicio",
-      "Seguimiento El Niño (ENOS)"
+      "Desastres Construidos"
     ]
   },
   {
     "objectID": "index.html#estado-de-avance",
     "href": "index.html#estado-de-avance",
-    "title": "Seguimiento El Niño (ENOS)",
+    "title": "Desastres Construidos",
     "section": "Estado de avance",
     "text": "Estado de avance\n\n\n\n\n\n\n\n\nBloque\nSección\nEstado\n\n\n\n\nMarco\nQué es el ENOS\n🟢 Redactado y citado\n\n\nHistórico\nAmérica Latina\n🟢 Redactado y citado (OMM, OPS, IRI, OCHA)\n\n\nHistórico\nParaguay (nacional)\n🟢 Redactado y citado (DINAC, DGRRD, prensa)\n\n\nHistórico\nDepartamentos\n🟡 Ñeembucú/Central/Alto Paraguay; resto pendiente\n\n\nHistórico\nAsunción metropolitana\n🟢 Redactado y citado (DGRRD, prensa)\n\n\nHistórico\nMapa de inundaciones\n🟢 Huellas Sentinel-1 2016/2019/2024 (comparables)\n\n\nActual\nEstado del episodio 2026-27\n🟢 NOAA/IRI/OMM + DINAC\n\n\nActual\nExposición y población en riesgo\n🟢 Nacional: población, salud y educación\n\n\nDatos\nSeries numéricas\n🟡 ONI, población afectada, niveles del río; sectores pendientes\n\n\nActual\nInundación en Pilar/Ñeembucú\n🔴 Detección satelital pendiente de ajuste",
     "crumbs": [
       "Inicio",
-      "Seguimiento El Niño (ENOS)"
+      "Desastres Construidos"
     ]
   },
   {
@@ -787,7 +787,7 @@
     "href": "06-exposicion/index.html#mapa",
     "title": "Exposición y población en riesgo",
     "section": "Mapa",
-    "text": "Mapa\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nLos 8.030 centros educativos (MEC) se agregan por departamento (conteo en el tooltip); los 1.056 servicios de salud (MSPBS) se muestran agrupados. Solo se dibujan individualmente los expuestos en la zona de riesgo. Nota: varias USF y escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos. Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.\n\n\n\n\n\n\nTipDescarga: escuelas en riesgo (Excel)\n\n\n\nLas 24 escuelas dentro de la zona de riesgo, con ubicación, matrícula (MEC, último año disponible), tipo de gestión y el nivel del río al que se inundan, están disponibles en una planilla: ⬇ Descargar escuelas_riesgo.xlsx. Cada escuela se cuenta en una sola zona (sin doble conteo en el solapamiento Asunción–Villa Hayes).",
+    "text": "Mapa\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nLos 8.030 centros educativos (MEC) se agregan por departamento (conteo en el tooltip); los 1.056 servicios de salud (MSPBS) se muestran agrupados. Solo se dibujan individualmente los expuestos en la zona de riesgo. Nota: varias USF y escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos. Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.\n\n\n\n\n\n\nTipDescargas: establecimientos en riesgo (Excel)\n\n\n\nLos establecimientos dentro de la zona de inundación, con ubicación, atributos y el nivel del río al que se inundan (cada uno contado en una sola zona, sin doble conteo):\n\n⬇ escuelas_riesgo.xlsx — 24 escuelas (MEC): matrícula, tipo de gestión, zona y nivel del río.\n⬇ salud_riesgo.xlsx — 7 servicios de salud (MSPBS): categoría (6 USF + 1 hospital distrital), distrito, zona y nivel del río.",
     "crumbs": [
       "Inicio",
       "Situación actual (2026-27)",
