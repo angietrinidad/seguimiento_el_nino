@@ -86,9 +86,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Desastres Construidos",
+    "title": "Desastres Anunciados",
     "section": "",
-    "text": "Base empírica y documental sobre el riesgo de desastres en Paraguay, desde la premisa de que el desastre no es natural: se construye socialmente —la amenaza se vuelve desastre allí donde hay vulnerabilidad—. Prioriza fuentes oficiales y datos primarios, señala de forma explícita los vacíos de información y no incorpora cifras sin fuente verificable (ver metodología).\nEl repositorio arranca con la amenaza más desarrollada —la inundación (fluvial y pluvial) asociada al ciclo El Niño-Oscilación del Sur (ENOS)— y está diseñado para escalar a otras amenazas (sequía, olas de frío, enfermedades climáticas).",
+    "text": "Base empírica y documental sobre el riesgo de desastres en Paraguay, desde una doble premisa: el desastre no es natural —se construye socialmente— y casi nunca es sorpresa —está anunciado—. La amenaza se vuelve desastre allí donde hay vulnerabilidad; y como el clima se pronostica y la vulnerabilidad se conoce, el golpe suele llegar avisado. Este repositorio prioriza fuentes oficiales y datos primarios, señala de forma explícita los vacíos de información y no incorpora cifras sin fuente verificable (ver metodología).\nCubre varias amenazas —inundación fluvial y pluvial, sequía, olas de frío, dengue e incendios— y su exposición, con el eje del ciclo El Niño-Oscilación del Sur (ENOS) como motor climático central.",
     "crumbs": [
       "Inicio",
       "🏠 Panel de control"
@@ -97,7 +97,7 @@
   {
     "objectID": "index.html#panel-de-control",
     "href": "index.html#panel-de-control",
-    "title": "Desastres Construidos",
+    "title": "Desastres Anunciados",
     "section": "Panel de control",
     "text": "Panel de control\n\n\n🌀 ENOSEl NiñoNiño 3.4 +1,2 °C · aviso NOAA🌊 Río en Asunción1.94 mfase 0 · preparación · a 3.56 m del crítico🌧️ Lluvia hoy0 mmmáx. país · 25 estaciones activas👥 Población en riesgo59.695en zona de inundación🏫 Establecimientos expuestos24 esc · 7 salud73 comercios · matrícula 4.172Amenazas🌊 Inundación fluvialríoMonitoreo · río bajo🌧️ Inundación pluviallluviaEstación seca (0 mm)🏜️ Sequía / bajanteLa NiñaDocumentado · récord −1,61 m❄️ Olas de fríoJaho'iDocumentado · Plan Jaho'i🦟 Denguesalud climáticaDocumentado · epidemia 2023-24🔥 Incendiosquemas y sequíaEn desarrollo\n\n\nIndicadores en vivo: exposición (COD-PS/Kontur, MSPBS, MEC), cota del río (DINAC) y lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas en desarrollo tienen la estructura montada y se poblarán con fuentes primarias.",
     "crumbs": [
@@ -108,7 +108,7 @@
   {
     "objectID": "index.html#cómo-está-organizado",
     "href": "index.html#cómo-está-organizado",
-    "title": "Desastres Construidos",
+    "title": "Desastres Anunciados",
     "section": "Cómo está organizado",
     "text": "Cómo está organizado\n\nMarco: desastres construidos — la tesis y el ENOS como motor.\nAmenazas — inundación fluvial, pluvial, sequía, frío, dengue, incendios.\nExposición y vulnerabilidad · Agricultura y ganadería · Situación actual · Recomendaciones.\nContexto histórico (ENOS): América Latina · Paraguay · por departamento · Asunción.",
     "crumbs": [
@@ -119,7 +119,7 @@
   {
     "objectID": "index.html#tabla-resumen-comparativa-por-episodio",
     "href": "index.html#tabla-resumen-comparativa-por-episodio",
-    "title": "Desastres Construidos",
+    "title": "Desastres Anunciados",
     "section": "Tabla resumen comparativa por episodio",
     "text": "Tabla resumen comparativa por episodio\nClasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA.\n\n\n\n\nTabla 1\n\n\n\n\n\n\nEpisodio\nIntensidad (ONI)\nPico ONI (°C)\nFuente\n\n\n\n\n1997-98\nmuy fuerte\n2.4\nNOAA_ONI\n\n\n2015-16\nmuy fuerte\n2.6\nNOAA_ONI\n\n\n2023-24\nmuy fuerte\n2.0\nNOAA_ONI\n\n\n2026-27\nen desarrollo\n—\nNOAA_CPC_pronostico\n\n\n\n\n\n\n\n\n: Episodios El Niño considerados en el repositorio. {#tbl-episodios}",
     "crumbs": [
@@ -130,7 +130,7 @@
   {
     "objectID": "index.html#convención-de-confiabilidad",
     "href": "index.html#convención-de-confiabilidad",
-    "title": "Desastres Construidos",
+    "title": "Desastres Anunciados",
     "section": "Convención de confiabilidad",
     "text": "Convención de confiabilidad\nCada hallazgo se etiqueta según su fuente: oficial organismo estatal o intergubernamental · académico revista/institución científica · prensa medios · estimación dato no confirmado.",
     "crumbs": [
@@ -141,7 +141,7 @@
   {
     "objectID": "index.html#estado-de-avance",
     "href": "index.html#estado-de-avance",
-    "title": "Desastres Construidos",
+    "title": "Desastres Anunciados",
     "section": "Estado de avance",
     "text": "Estado de avance\n\n\n\n\n\n\n\n\nBloque\nSección\nEstado\n\n\n\n\nMarco\nQué es el ENOS\n🟢 Redactado y citado\n\n\nHistórico\nAmérica Latina\n🟢 Redactado y citado (OMM, OPS, IRI, OCHA)\n\n\nHistórico\nParaguay (nacional)\n🟢 Redactado y citado (DINAC, DGRRD, prensa)\n\n\nHistórico\nDepartamentos\n🟡 Ñeembucú/Central/Alto Paraguay; resto pendiente\n\n\nHistórico\nAsunción metropolitana\n🟢 Redactado y citado (DGRRD, prensa)\n\n\nHistórico\nMapa de inundaciones\n🟢 Huellas Sentinel-1 2016/2019/2024 (comparables)\n\n\nActual\nEstado del episodio 2026-27\n🟢 NOAA/IRI/OMM + DINAC\n\n\nActual\nExposición y población en riesgo\n🟢 Nacional: población, salud y educación\n\n\nDatos\nSeries numéricas\n🟡 ONI, población afectada, niveles del río; sectores pendientes\n\n\nActual\nInundación en Pilar/Ñeembucú\n🔴 Detección satelital pendiente de ajuste",
     "crumbs": [
@@ -746,7 +746,7 @@
     "href": "01-marco-conceptual/index.html",
     "title": "Marco: el desastre como construcción social",
     "section": "",
-    "text": "Este repositorio parte de una premisa: el desastre no es natural. Una crecida, una sequía o una helada son amenazas —fenómenos físicos—; se vuelven desastre solo cuando encuentran a una población vulnerable. El riesgo es el producto de una amenaza por una vulnerabilidad socialmente construida:\nEsta mirada —de la geografía crítica de los desastres y la antropología del riesgo (García Acosta, 2005; Wisner et al., 2004)— desplaza el foco: de “la furia de la naturaleza” a las decisiones sociales, económicas y políticas que determinan quién vive en el bañado, quién no tiene agua por red, quién carece de seguro agrícola. Por eso el sitio se llama Desastres Construidos: analiza cómo se produce la vulnerabilidad —con una lente atenta al género, la clase y la desigualdad territorial— y no solo el peligro que la detona.",
+    "text": "Este repositorio parte de una premisa: el desastre no es natural. Una crecida, una sequía o una helada son amenazas —fenómenos físicos—; se vuelven desastre solo cuando encuentran a una población vulnerable. El riesgo es el producto de una amenaza por una vulnerabilidad socialmente construida:\nEsta mirada —de la geografía crítica de los desastres y la antropología del riesgo (García Acosta, 2005; Wisner et al., 2004)— desplaza el foco: de “la furia de la naturaleza” a las decisiones sociales, económicas y políticas que determinan quién vive en el bañado, quién no tiene agua por red, quién carece de seguro agrícola.\nY hay un segundo desplazamiento: estos desastres están anunciados. El clima se pronostica (el ENOS se vigila con meses de anticipación), la estacionalidad se repite y la vulnerabilidad se conoce de antemano. Cuando el golpe llega, rara vez es sorpresa: es un riesgo previsible sobre el que se decidió —o se omitió— actuar. Por eso el sitio se llama Desastres Anunciados: analiza cómo se produce la vulnerabilidad —con una lente atenta al género, la clase y la desigualdad territorial— y por qué, sabiéndolo, el desastre igual ocurre. Es también el sentido de la acción anticipatoria: actuar antes, sobre lo anunciado.",
     "crumbs": [
       "Inicio",
       "🧭 Marco: desastres construidos"
@@ -1001,9 +1001,9 @@
   {
     "objectID": "07-recomendaciones/index.html",
     "href": "07-recomendaciones/index.html",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "",
-    "text": "De la amenaza a la acción. Esta sección traduce la evidencia del repositorio —dónde se inunda, quién está expuesto— en recomendaciones escalonadas según el nivel del río, para que instituciones, comunidades y organizaciones sepan qué hacer en cada movimiento del río, antes de que la inundación ocurra.\nEl enfoque es la acción anticipatoria (actuar sobre la base de pronósticos y umbrales, no solo tras el desastre). El marco de referencia combina el Plan de Contingencia oficial de la SEN (Resolución 106/2024) (Secretaría de Emergencia Nacional (SEN), 2024b) con las normas de la Humanitarian Standards Partnership (HSP) (Humanitarian Standards Partnership, 2024), aplicados al contexto ribereño paraguayo.",
+    "text": "De la amenaza a la acción. Si los desastres están anunciados —el clima se pronostica, la vulnerabilidad se conoce—, la respuesta correcta es actuar antes. Esta sección traduce la evidencia del repositorio en acción anticipatoria: qué hacer antes de que el golpe llegue, para cada amenaza.\nEl grueso del capítulo desarrolla la inundación por nivel del río (la amenaza más documentada); al final, una sección aplica la misma lógica anticipatoria a las otras amenazas —sequía, frío, dengue e incendios—. El marco de referencia combina el Plan de Contingencia oficial de la SEN (Resolución 106/2024) (Secretaría de Emergencia Nacional (SEN), 2024b) con las normas de la Humanitarian Standards Partnership (HSP) (Humanitarian Standards Partnership, 2024), aplicados al contexto paraguayo.",
     "crumbs": [
       "Inicio",
       "👥 Exposición y situación",
@@ -1013,7 +1013,7 @@
   {
     "objectID": "07-recomendaciones/index.html#principio-transversal-la-norma-humanitaria-esencial-chs",
     "href": "07-recomendaciones/index.html#principio-transversal-la-norma-humanitaria-esencial-chs",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Principio transversal: la Norma Humanitaria Esencial (CHS)",
     "text": "Principio transversal: la Norma Humanitaria Esencial (CHS)\nAntes que cualquier acción específica, la Norma Humanitaria Esencial (CHS) (CHS Alliance, Grupo URD y Proyecto Esfera, 2024) atraviesa todas las fases: la respuesta debe ser pertinente y oportuna, participativa (las comunidades ribereñas deciden, no solo reciben), basada en información que llega a la gente en forma comprensible, que no genere daño, con mecanismos de queja accesibles y rendición de cuentas. El saber local de los bañados —quién vive dónde, cómo sube el agua— es parte del sistema de alerta, no un dato secundario.",
     "crumbs": [
@@ -1025,7 +1025,7 @@
   {
     "objectID": "07-recomendaciones/index.html#el-marco-oficial-el-plan-de-contingencia-de-la-sen",
     "href": "07-recomendaciones/index.html#el-marco-oficial-el-plan-de-contingencia-de-la-sen",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "El marco oficial: el Plan de Contingencia de la SEN",
     "text": "El marco oficial: el Plan de Contingencia de la SEN\nEstas recomendaciones no son una propuesta externa: se alinean con el instrumento oficial vigente. La Secretaría de Emergencia Nacional (SEN) —creada por la Ley N.º 2615/2005 bajo la Presidencia de la República (Congreso de la Nación Paraguaya, 2005)— aprobó, por Resolución SEN N.º 106/2024 (26 de enero de 2024, firmada por el Secretario Ejecutivo Cnel. (R) Arsenio Ramón Zárate), el Plan de Contingencia para Inundaciones y Tormentas Severas 2023-2028 (Secretaría de Emergencia Nacional (SEN), 2024b, 2024c). Un plan complementario, el Operativo Jaho’i, cubre las bajas temperaturas (Secretaría de Emergencia Nacional (SEN), 2024a).\nCoordinación (Consejo Ejecutivo). El plan convoca a un amplio arco estatal: Ministerio del Interior y Policía Nacional, Fuerzas Militares, MSPBS, Ministerio de la Niñez y la Adolescencia, MEC, MOPC, MAG, MADES, ESSAP, ANDE, SENASA, Cruz Roja Paraguaya, Junta y Cuerpo de Bomberos, municipios y gobernaciones (Secretaría de Emergencia Nacional (SEN), 2024b).\nLas tres fases oficiales. El plan organiza la actuación en tres fases, a las que se mapean las fases por nivel del río de esta guía:\n\n\n\n\n\n\n\nFase oficial (SEN)\nFases por nivel del río (esta guía)\n\n\n\n\n1 · Preparación y Prevención\n0 · Preparación · 1 · Amarilla · 2 · Naranja\n\n\n2 · Respuesta\n3 · Roja / crítico\n\n\n3 · Rehabilitación y Retorno\n4 · Recuperación\n\n\n\nAcciones que el propio plan asigna a la SEN (Secretaría de Emergencia Nacional (SEN), 2024b): en preparación, recabar información hidrometeorológica, adoptar alerta temprana y aprestamiento, solicitar a los municipios los censos actualizados de las zonas inundables, identificar sitios de albergue e insumos (colchones, frazadas, chapas), y coordinar servicios básicos (ANDE, ESSAP, SENASA) y asistencia psicosocial; en respuesta, evacuación y reubicación, kits de alimentos, y seguridad policial de los albergues; en rehabilitación y retorno, restablecer servicios, desarmar viviendas temporales, trasladar a las familias y rendir cuentas de la asistencia.\nUmbrales de impacto (SEN) para la crecida del río Paraguay (Secretaría de Emergencia Nacional (SEN) / ABC Color, 2026): 5 m ≈ 2.000 viviendas afectadas · 7,5 m ≈ 14.000 (nivel 2019). El propio plan documenta las mayores crecidas históricas en Asunción (récord 1983: 9,05 m; 2015-16: 7,88 m; fuente MADES/Grassi) (Secretaría de Emergencia Nacional (SEN), 2024b) y los departamentos más asistidos por inundaciones 2018-2023 (Central, Presidente Hayes, Concepción, Misiones) —consistentes con los priorizados en la exposición.",
     "crumbs": [
@@ -1037,7 +1037,7 @@
   {
     "objectID": "07-recomendaciones/index.html#umbrales-del-río-y-fases-de-acción",
     "href": "07-recomendaciones/index.html#umbrales-del-río-y-fases-de-acción",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Umbrales del río y fases de acción",
     "text": "Umbrales del río y fases de acción\nNiveles de alerta oficiales en la estación de Asunción (La Nación / DGRRD Asunción, 2026), con la etapa crítica (5,5 m) y el pico de 2015-16 (7,84 m) como referencia (FloodList, 2016):\n\n\n\n\n\n\n\n\nNivel en Asunción\nFase\nSituación (e impacto SEN)\n\n\n\n\nBajo / estable (hoy ~2 m)\n0 · Preparación\nSin crecida; ventana para prepararse\n\n\nAscenso sostenido\n1 · Alerta amarilla\nVigilancia; pronóstico de crecida\n\n\n3,5 m\n2 · Alerta naranja\nAcción anticipatoria; evacuación preventiva\n\n\n5,0 m\n3 · Alerta roja\nEmergencia; ~2.000 viviendas afectadas (SEN)\n\n\n&gt; 5,5 m (crítico)\n3 · Emergencia mayor\nDesborde en bañados\n\n\n7,5 m (nivel 2019)\n3 · Emergencia mayor\n~14.000 viviendas afectadas (SEN)\n\n\nDescenso\n4 · Recuperación\nRetorno y reconstrucción\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nSeguí el nivel actual del río en Situación actual. Al día de hoy el río está en fase 0 (preparación) — la mejor ventana para actuar sin la presión de la emergencia.\n\n\n\n\n\n\n\n\nAdvertenciaDos amenazas, dos disparadores\n\n\n\nEl nivel del río gobierna la inundación fluvial, pero la inundación pluvial (raudales por lluvia intensa) tiene un disparador distinto: el pronóstico meteorológico de lluvia, no la cota del río. Puede golpear con el río bajo y afecta a toda la ciudad, no solo a los bañados (ver inundaciones pluviales). La acción anticipatoria pluvial se activa con los avisos de tormenta severa de la DINAC: difundir la alerta, despejar desagües y arroyos antes del evento —como la limpieza del arroyo Ferreira que la Municipalidad hizo dentro de su Plan de Contingencia por El Niño (Municipalidad de Asunción, 2023)—, señalizar los puntos críticos de raudales y evitar circular por ellos. Recordar que 10-40 cm de agua a 1-3 m/s ya arrastran personas y vehículos (Ruiz Díaz Cardozo et al., 2018). Ver la escala de cuánta lluvia colapsa la ciudad.",
     "crumbs": [
@@ -1049,7 +1049,7 @@
   {
     "objectID": "07-recomendaciones/index.html#fase-0-preparación-río-bajo-o-estable",
     "href": "07-recomendaciones/index.html#fase-0-preparación-río-bajo-o-estable",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Fase 0 · Preparación (río bajo o estable)",
     "text": "Fase 0 · Preparación (río bajo o estable)\nLa ventana más valiosa y la más desaprovechada. Cuando el río está bajo es cuando se construye la capacidad.\n\nInstituciones (SEN, DGRRD, DINAC, MSPBS, MEC, MAG): actualizar los planes de contingencia y el mapeo de riesgo y de población expuesta (este repositorio es un insumo); verificar el registro de familias en zonas de riesgo desagregado por grupo vulnerable; pre-acordar los albergues y su capacidad; establecer los umbrales y responsables de cada fase por adelantado (Municipalidad de Asunción — DGRRD, 2026; Proyecto Esfera, 2018; Secretaría de Emergencia Nacional (SEN), 2024b).\nComunidades (comités locales, familias): conformar/actualizar comités comunitarios de gestión de riesgo; acordar rutas de evacuación y puntos de encuentro; preparar el bolso de emergencia y documentos; identificar vecinos que necesitan apoyo (personas mayores, con discapacidad, embarazadas). El conocimiento local del comportamiento del agua es central (CHS Alliance, Grupo URD y Proyecto Esfera, 2024).\nOrganizaciones (Cruz Roja, ONG, cooperación): preposicionar stock e insumos; firmar/actualizar protocolos de acción temprana y activar el financiamiento anticipatorio (DREF/EAP) con disparadores claros; capacitar a los comités comunitarios (Cruz Roja Paraguaya / IFRC, 2024).",
     "crumbs": [
@@ -1061,7 +1061,7 @@
   {
     "objectID": "07-recomendaciones/index.html#fase-1-alerta-amarilla-río-en-ascenso",
     "href": "07-recomendaciones/index.html#fase-1-alerta-amarilla-río-en-ascenso",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Fase 1 · Alerta amarilla (río en ascenso)",
     "text": "Fase 1 · Alerta amarilla (río en ascenso)\n\nInstituciones: intensificar el monitoreo de la DINAC y comunicar el pronóstico en lenguaje claro y accesible; convocar al Comité de Emergencia; verificar la disponibilidad de albergues y suministros (CHS Alliance, Grupo URD y Proyecto Esfera, 2024; Municipalidad de Asunción — DGRRD, 2026).\nComunidades: activar los comités; difundir la alerta puerta a puerta, llegando a quienes no usan medios digitales; empezar a proteger bienes y documentar la situación de los más vulnerables.\nOrganizaciones: desplegar equipos de evaluación rápida; confirmar los disparadores de acción anticipatoria; alistar la distribución.",
     "crumbs": [
@@ -1073,7 +1073,7 @@
   {
     "objectID": "07-recomendaciones/index.html#fase-2-alerta-naranja-35-m-acción-anticipatoria",
     "href": "07-recomendaciones/index.html#fase-2-alerta-naranja-35-m-acción-anticipatoria",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Fase 2 · Alerta naranja — 3,5 m (acción anticipatoria)",
     "text": "Fase 2 · Alerta naranja — 3,5 m (acción anticipatoria)\nLa fase decisiva: actuar antes del desborde reduce el daño y el costo.\n\nInstituciones: ordenar la evacuación preventiva de las familias más expuestas (bañados Norte y Sur, La Chacarita) priorizando grupos vulnerables; habilitar albergues que cumplan estándares mínimos (espacio, agua, saneamiento, privacidad); asegurar la continuidad de servicios de salud y educación en zona de riesgo (ver los establecimientos expuestos en la exposición) (Municipalidad de Asunción — DGRRD, 2019; Proyecto Esfera, 2018; Secretaría de Emergencia Nacional (SEN), 2024b).\nComunidades: ejecutar la evacuación acordada; trasladar primero a personas mayores, con discapacidad, embarazadas, niñez; llevar personas y medios de vida (animales, herramientas) cuando sea seguro.\nOrganizaciones: activar formalmente la acción anticipatoria/DREF; distribuir kits; apoyar la gestión de albergues con estándares Esfera (Cruz Roja Paraguaya / IFRC, 2024; Proyecto Esfera, 2018).",
     "crumbs": [
@@ -1085,7 +1085,7 @@
   {
     "objectID": "07-recomendaciones/index.html#fase-3-alerta-roja-5-m-crítico-55-m-respuesta-plena",
     "href": "07-recomendaciones/index.html#fase-3-alerta-roja-5-m-crítico-55-m-respuesta-plena",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Fase 3 · Alerta roja — 5 m / crítico 5,5 m (respuesta plena)",
     "text": "Fase 3 · Alerta roja — 5 m / crítico 5,5 m (respuesta plena)\nCon desborde en los bañados, la respuesta debe cumplir las normas mínimas de Esfera (Proyecto Esfera, 2018) y proteger a los grupos en mayor riesgo:\n\nAgua, saneamiento e higiene (WASH): agua segura suficiente, letrinas y gestión de residuos en los albergues (Esfera WASH).\nAlojamiento y artículos no alimentarios: espacio cubierto digno, colchones, frazadas, chapas —insumos que la DGRRD prevé— con privacidad y seguridad (Municipalidad de Asunción — DGRRD, 2026; Proyecto Esfera, 2018).\nSalud: continuidad de atención, control de enfermedades transmisibles (dengue, diarreas), salud materna; apoyo psicosocial (MHPSS).\nSeguridad alimentaria y nutrición: asistencia alimentaria adecuada.\nCoordinación: SEN a nivel nacional, DGRRD a nivel local, con las organizaciones humanitarias bajo la CHS (CHS Alliance, Grupo URD y Proyecto Esfera, 2024).",
     "crumbs": [
@@ -1097,7 +1097,7 @@
   {
     "objectID": "07-recomendaciones/index.html#el-lente-de-la-vulnerabilidad-no-todos-se-inundan-igual",
     "href": "07-recomendaciones/index.html#el-lente-de-la-vulnerabilidad-no-todos-se-inundan-igual",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "El lente de la vulnerabilidad: no todos se inundan igual",
     "text": "El lente de la vulnerabilidad: no todos se inundan igual\nEl riesgo no es solo el agua: es quién está expuesto y con qué capacidad de respuesta. Las normas HSP exigen atención específica a los grupos que la propia evidencia de Paraguay muestra sobrerrepresentados en los albergues —en 2019, 13.500 menores, 778 embarazadas y ~1.000 adultos mayores (Municipalidad de Asunción — DGRRD, 2019):\n\nNiñez y adolescencia: espacios seguros, prevención de separación familiar, continuidad educativa —Normas mínimas de protección de la niñez (CPMS) e INEE (Humanitarian Standards Partnership, 2024).\nPersonas mayores y con discapacidad: accesibilidad de albergues y de la información, apoyo para la evacuación —Normas de Inclusión Humanitaria (HIS) (Humanitarian Standards Partnership, 2024).\nMujeres y embarazadas: privacidad, salud materna, prevención de la violencia de género en albergues (CHS Alliance, Grupo URD y Proyecto Esfera, 2024; Proyecto Esfera, 2018).\nAsentamientos informales: los bañados concentran el riesgo por su ubicación y por la precariedad —la vulnerabilidad es social, no solo geográfica.",
     "crumbs": [
@@ -1109,7 +1109,7 @@
   {
     "objectID": "07-recomendaciones/index.html#recomendaciones-según-el-ciclo-de-vida",
     "href": "07-recomendaciones/index.html#recomendaciones-según-el-ciclo-de-vida",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Recomendaciones según el ciclo de vida",
     "text": "Recomendaciones según el ciclo de vida\nLa misma inundación golpea distinto a una bebé, a una adolescente, a una persona adulta o a una persona mayor. La edad determina tanto la exposición al peligro (quién se ahoga, quién enferma) como la capacidad de responder y de recuperarse. El Plan de Contingencia de la SEN convoca explícitamente al Ministerio de la Niñez y la Adolescencia al Consejo Ejecutivo (Secretaría de Emergencia Nacional (SEN), 2024b), y las normas HSP —Normas mínimas para la protección de la niñez (CPMS), INEE (educación en emergencias) y Normas de Inclusión Humanitaria (HIS)— aportan el detalle (Humanitarian Standards Partnership, 2024). La evidencia paraguaya lo confirma: en 2019 los albergues de Asunción registraron 13.500 menores de edad y ~1.000 adultos mayores (Municipalidad de Asunción — DGRRD, 2019).\n\nPrimera infancia (0–5 años). El grupo de mayor riesgo de muerte por ahogamiento, diarrea y desnutrición aguda. Priorizar en la evacuación; garantizar agua segura, lactancia y alimentación adecuada para la edad; vigilancia nutricional y de enfermedades transmisibles; espacios protegidos para la primera infancia en los albergues (Humanitarian Standards Partnership, 2024; Proyecto Esfera, 2018).\nNiñez (6–12 años). Prevenir la separación familiar (registro e identificación desde la evacuación), habilitar espacios amigables y sostener la continuidad educativa —la escuela como factor de protección y de normalidad; apoyo psicosocial ante el trauma, como el que UNICEF brindó en inundaciones previas (Humanitarian Standards Partnership, 2024; UNICEF, 2024).\nAdolescencia (13–17 años). Riesgos específicos de deserción escolar, trabajo infantil y violencia; las adolescentes enfrentan mayor riesgo de violencia sexual y embarazo. Mantener el vínculo educativo, ofrecer espacios seguros diferenciados y canales de denuncia accesibles; involucrar a adolescentes en los comités como agentes, no solo como víctimas (CHS Alliance, Grupo URD y Proyecto Esfera, 2024; Humanitarian Standards Partnership, 2024).\nJuventud y personas adultas. Suelen sostener la respuesta familiar y comunitaria: integrarlas a los comités de gestión de riesgo y a la evacuación de terceros; atender la pérdida de medios de vida e ingresos (ver recuperación económica) y la carga psicosocial de ser cuidadores (CHS Alliance, Grupo URD y Proyecto Esfera, 2024).\nPersonas mayores. Movilidad reducida, enfermedades crónicas y dependencia de medicación las dejan atrás en evacuaciones apresuradas. Garantizar apoyo físico para evacuar, continuidad de tratamientos crónicos, albergues accesibles e información en formatos que lleguen a quienes no usan medios digitales —Normas de Inclusión Humanitaria (HIS) (Humanitarian Standards Partnership, 2024; Proyecto Esfera, 2018).\n\n\n\n\n\n\n\nNotaTransversal: discapacidad\n\n\n\nLa discapacidad atraviesa todo el ciclo de vida y multiplica el riesgo en cada etapa. Las Normas de Inclusión Humanitaria exigen accesibilidad física de albergues y letrinas, información accesible (visual, auditiva, lenguaje sencillo) y apoyos personalizados para la evacuación (Humanitarian Standards Partnership, 2024).",
     "crumbs": [
@@ -1121,7 +1121,7 @@
   {
     "objectID": "07-recomendaciones/index.html#recomendaciones-por-género",
     "href": "07-recomendaciones/index.html#recomendaciones-por-género",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Recomendaciones por género",
     "text": "Recomendaciones por género\nEl género no es una casilla más: estructura quién decide, quién cuida, quién está en riesgo y quién queda fuera de la información. En emergencias, las mujeres y las niñas asumen la carga desproporcionada del cuidado, enfrentan mayor riesgo de violencia basada en género (VBG) y ven interrumpida su salud sexual y reproductiva. La evidencia paraguaya es contundente: en 2019 los albergues de Asunción alojaban 778 embarazadas (Municipalidad de Asunción — DGRRD, 2019), una necesidad de salud materna que no admite pausa durante la crecida.\n\nMujeres y niñas. Diseñar albergues con privacidad y separación por sexo en dormitorios y sanitarios, iluminación y rutas seguras para prevenir la VBG; asegurar insumos de higiene menstrual; garantizar la participación de las mujeres en las decisiones sobre el albergue y la distribución, no solo como receptoras (CHS Alliance, Grupo URD y Proyecto Esfera, 2024; Proyecto Esfera, 2018).\nPersonas gestantes y lactantes. Continuidad de controles prenatales y atención del parto (identificar el establecimiento de salud de referencia operativo —ver exposición); espacios y apoyo para la lactancia; prioridad en evacuación y en el reparto de agua y alimentos (Proyecto Esfera, 2018; Secretaría de Emergencia Nacional (SEN), 2024b).\nPrevención y respuesta a la VBG. Rutas de derivación conocidas y accesibles, mecanismos de denuncia seguros y confidenciales (parte de la rendición de cuentas de la CHS), y coordinación con el sistema de protección; el riesgo de violencia y de explotación aumenta con el hacinamiento y la pérdida de redes (CHS Alliance, Grupo URD y Proyecto Esfera, 2024; Proyecto Esfera, 2018).\nDiversidad sexual (LGBTIQ+). Los albergues binarios pueden excluir o exponer a personas trans y no binarias; aplicar el principio de no discriminación y no generar daño de la CHS, ofreciendo alojamiento y sanitarios que respeten su identidad y seguridad (CHS Alliance, Grupo URD y Proyecto Esfera, 2024).\nMasculinidades y cuidado. Involucrar a los hombres en las tareas de cuidado y en la prevención de la violencia; el enfoque de género no es “temas de mujeres” sino una condición de eficacia de toda la respuesta (CHS Alliance, Grupo URD y Proyecto Esfera, 2024).\n\n\n\n\n\n\n\nTip\n\n\n\nEl cruce ciclo de vida × género es donde se concentra el riesgo: una adolescente embarazada, una niña con discapacidad, una adulta mayor que cuida nietos enfrentan riesgos acumulados que ninguna categoría por separado captura. La planificación debe partir de estos perfiles interseccionales, no de un “damnificado” promedio.",
     "crumbs": [
@@ -1133,7 +1133,7 @@
   {
     "objectID": "07-recomendaciones/index.html#medios-de-vida-rurales-ñeembucú-chaco",
     "href": "07-recomendaciones/index.html#medios-de-vida-rurales-ñeembucú-chaco",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Medios de vida rurales (Ñeembucú, Chaco)",
     "text": "Medios de vida rurales (Ñeembucú, Chaco)\nEn las zonas ribereñas rurales, la crecida amenaza cultivos y ganado. Las normas HSP específicas orientan la protección de los medios de subsistencia:\n\nGanado: evacuación, refugio y alimentación del ganado, o descarga anticipada —Normas LEGS (Humanitarian Standards Partnership, 2024).\nCultivos: protección de semillas y cosechas —Normas SEADS (Humanitarian Standards Partnership, 2024).\nRecuperación económica posterior: Normas mínimas MERS (Humanitarian Standards Partnership, 2024); coordinación con el MAG y su Dirección de Gestión de Riesgos.",
     "crumbs": [
@@ -1145,7 +1145,7 @@
   {
     "objectID": "07-recomendaciones/index.html#fase-4-recuperación-descenso-del-río",
     "href": "07-recomendaciones/index.html#fase-4-recuperación-descenso-del-río",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Fase 4 · Recuperación (descenso del río)",
     "text": "Fase 4 · Recuperación (descenso del río)\n\nInstituciones: retorno seguro solo tras verificar condiciones; evaluación de daños; rehabilitación de agua, salud y escuelas; revisión de aprendizajes para el próximo ciclo (Proyecto Esfera, 2018).\nComunidades: limpieza y rehabilitación con apoyo; documentar lo vivido para mejorar el plan.\nOrganizaciones: apoyo a la recuperación de medios de vida (MERS); cierre con rendición de cuentas a la población asistida (CHS) (CHS Alliance, Grupo URD y Proyecto Esfera, 2024).",
     "crumbs": [
@@ -1155,9 +1155,21 @@
     ]
   },
   {
+    "objectID": "07-recomendaciones/index.html#acción-anticipatoria-en-las-otras-amenazas",
+    "href": "07-recomendaciones/index.html#acción-anticipatoria-en-las-otras-amenazas",
+    "title": "Recomendaciones: acción anticipatoria",
+    "section": "Acción anticipatoria en las otras amenazas",
+    "text": "Acción anticipatoria en las otras amenazas\nLa inundación tiene un disparador claro (el nivel del río). Las demás amenazas también se anuncian —cada una con su señal— y admiten la misma lógica: vigilar el disparador → actuar en la ventana previa → responder. La matriz resume qué vigilar:\n\n\n\n\n\n\n\n\n\nAmenaza\nDisparador (qué vigilar)\nQuién alerta\nVentana previa\n\n\n\n\nSequía / bajante\npronóstico de La Niña; descenso sostenido del río\nDINAC, SISSA/CRC-SAS\nmeses\n\n\nOlas de frío\npronóstico de temperatura ≤ 10 °C\nDINAC\ndías\n\n\nDengue\nfin de primavera; calor de años El Niño; índices larvarios\nMSPBS / DGVS\nsemanas–meses\n\n\nIncendios\nsequía + estación seca; focos de calor\nINFONA, NASA FIRMS\nsemanas\n\n\n\n\n🏜️ Sequía y bajante del río\n\nAnticipación (meses): ante pronóstico de La Niña, reservar y gestionar el agua —la ESSAP activa pozos y plan de contingencia para las ciudades que toman del río— (ESSAP, 2024); en el agro y la ganadería, reservar forraje, ajustar la carga animal y programar la descarga anticipada de hacienda (normas LEGS de la HSP (Humanitarian Standards Partnership, 2024)); asegurar semillas y prever el crédito/seguro de la agricultura familiar.\nRespuesta: distribución de agua a comunidades sin red (como los 425.000 L entregados al Chaco) (Ministerio de Salud Pública y Bienestar Social (MSPBS), 2024); alerta a la navegación por calado; apoyo a pescadores (subsidio de veda) y a los pequeños ganaderos, que son quienes no pueden trasladar la hacienda (LaPolíticaOnline, 2024).\nVer Sequía y bajante.\n\n\n\n❄️ Olas de frío\n\nAnticipación (días): al pronosticarse el frente frío, activar los albergues del Plan Jaho’i antes de que baje la temperatura (umbral ≤ 10 °C), acopiar abrigo y frazadas e identificar a las personas en situación de calle (Secretaría de Emergencia Nacional (SEN), 2024a; Secretaría de Emergencia Nacional (SEN) / Agencia de Información Paraguaya, 2026); reforzar la capacidad de salud respiratoria (el invierno satura los servicios) (Dirección General de Vigilancia de la Salud (DGVS), MSPBS, 2026).\nRespuesta: albergue con estándares mínimos (Esfera: alojamiento y no alimentarios (Proyecto Esfera, 2018)), abrigo en calle a quien rechaza el albergue, y atención prioritaria a niñez, personas mayores y en situación de calle.\nVer Olas de frío.\n\n\n\n🦟 Dengue\n\nAnticipación (pre-verano): eliminar criaderos antes de la temporada (mingas ambientales y, sobre todo, recolección de residuos de gran tamaño —que en Asunción redujo los criaderos un 52 %—) (Revista de Salud Pública del Paraguay / IICS-UNA, 2024); vacunar (Qdenga, ampliada a 6-39 años) (MSPBS — Programa Ampliado de Inmunizaciones (PAI), 2025); reforzar la vigilancia entomológica, con atención a la reaparición del DENV-3 (Dirección General de Vigilancia de la Salud (DGVS-MSPBS), 2025).\nRespuesta: control focal, atención oportuna de los signos de alarma, y —clave— la recuperación posinundación debe incluir el control vectorial (el agua estancada que deja la crecida es criadero) (Organización Panamericana de la Salud (OPS/PAHO), 2024).\nVer Dengue.\n\n\n\n🔥 Incendios\n\nAnticipación (semanas): en años de sequía y estación seca, regular o prohibir las quemas, abrir cortafuegos, montar alerta temprana por focos de calor (NASA FIRMS) y preparar a bomberos e INFONA; sensibilizar sobre el uso del fuego.\nRespuesta: combate coordinado (bomberos voluntarios, INFONA, SEN), evacuación de personas y hacienda, y atención sanitaria por humo (calidad del aire). El récord de 3,49 M ha en 2020 mostró el costo de no anticipar (Instituto Forestal Nacional (INFONA), 2023).\nVer Incendios.\n\n\n\n\n\n\n\nUn hilo común: la vulnerabilidad diferencial. En las cuatro amenazas, quien tiene capital, seguro o infraestructura absorbe el golpe; la agricultura familiar, la ganadería de subsistencia, los asentamientos precarios y las personas en situación de calle quedan más expuestos. La acción anticipatoria debe priorizarlos.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Recomendaciones"
+    ]
+  },
+  {
     "objectID": "07-recomendaciones/index.html#cómo-usar-este-repositorio-para-priorizar",
     "href": "07-recomendaciones/index.html#cómo-usar-este-repositorio-para-priorizar",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Cómo usar este repositorio para priorizar",
     "text": "Cómo usar este repositorio para priorizar\nLa exposición responde a quién priorizar: la población en riesgo por departamento, los servicios de salud (USF) y escuelas dentro de la zona de inundación —cada uno individualizado en el panel administrativo— y los grupos vulnerables. La cota actual del río indica en qué fase estamos.",
     "crumbs": [
@@ -1169,7 +1181,7 @@
   {
     "objectID": "07-recomendaciones/index.html#fuentes-y-límites",
     "href": "07-recomendaciones/index.html#fuentes-y-límites",
-    "title": "Recomendaciones por nivel del río (acción anticipatoria)",
+    "title": "Recomendaciones: acción anticipatoria",
     "section": "Fuentes y límites",
     "text": "Fuentes y límites\n\n\nEstas recomendaciones integran el Plan de Contingencia oficial de la SEN (Resolución 106/2024) (Secretaría de Emergencia Nacional (SEN), 2024b) con las normas HSP (Humanitarian Standards Partnership, 2024) y la evidencia del repositorio. Traducen las tres fases del plan a umbrales por nivel del río (el disparador que el plan no fija numéricamente) para hacerlo accionable; la activación formal y la cadena de mando operativa siguen siendo competencia de la SEN y su Comité Operativo Nacional.\nLos umbrales (3,5 m naranja, 5 m roja) son los municipales de Asunción (La Nación / DGRRD Asunción, 2026); otras ciudades ribereñas (Pilar, Alberdi, Concepción) tienen cotas de referencia propias que convendría documentar.\nLa acción anticipatoria requiere disparadores acordados institucionalmente; aquí se ofrece el marco, no los umbrales financieros o de activación de cada organización.",
     "crumbs": [
