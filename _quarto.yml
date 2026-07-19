@@ -7,6 +7,7 @@ project:
   resources:
     - datos/exposicion/escuelas_riesgo.xlsx
     - datos/exposicion/salud_riesgo.xlsx
+    - datos/exposicion/comercio_riesgo.xlsx
 
 website:
   title: "Desastres Construidos"

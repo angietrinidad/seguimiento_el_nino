@@ -30,6 +30,7 @@ def g(path, default=None):
 r = g("datos/exposicion/resumen.json", {})
 rio = g("datos/nivel-rio-actual.json", {})
 emas = g("datos/estaciones-dmh-metro.json", {})
+com = g("datos/exposicion/comercio_resumen.json", {})
 
 # --- indicadores ---
 er = r.get("en_riesgo", {})
@@ -59,7 +60,7 @@ kpis = "<div style='display:flex;gap:.8em;flex-wrap:wrap;margin:.6em 0 1.2em'>" 
     kpi("🌧️", "Lluvia hoy", lluvia_val, lluvia_sub, "#2b8cbe"),
     kpi("👥", "Población en riesgo", f"{er.get('poblacion',0):,}".replace(",", "."), "en zona de inundación", "#b26a00"),
     kpi("🏫", "Establecimientos expuestos", f"{er.get('escuelas',0)} esc · {er.get('salud',0)} salud",
-        f"matrícula {er.get('matricula',0):,}".replace(",", "."), "#8a1c1c"),
+        f"{com.get('expuestos','—')} comercios · matrícula {er.get('matricula',0):,}".replace(",", "."), "#8a1c1c"),
 ]) + "</div>"
 
 # --- grilla de amenazas ---

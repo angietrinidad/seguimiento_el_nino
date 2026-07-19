@@ -62,7 +62,7 @@ Sentinel-1 + buffer de 550 m.*
 #| echo: false
 import json, os
 import folium
-from folium.plugins import MarkerCluster
+from folium.plugins import MarkerCluster, FastMarkerCluster
 
 deps = json.load(open("datos/geo/departamentos-exposicion.geojson", encoding="utf-8"))
 
@@ -131,6 +131,24 @@ for f in exp["features"]:
                         popup=folium.Popup(popup_html(pr, prefijo=f"[{pr['clase']}] "), max_width=260),
                         tooltip=pr["nombre"]).add_to(capa_exp)
 
+# Actividad comercial (OSM): capa completa liviana (cluster), desactivada por defecto
+if os.path.exists("datos/geo/comercio-puntos.geojson"):
+    com = json.load(open("datos/geo/comercio-puntos.geojson", encoding="utf-8"))
+    coords = [[f["geometry"]["coordinates"][1], f["geometry"]["coordinates"][0]] for f in com["features"]]
+    FastMarkerCluster(coords, name=f"Actividad comercial · OSM ({len(coords)})").add_to(m)
+
+# Comercio EXPUESTO dentro de la zona de riesgo (individualizado)
+if os.path.exists("datos/geo/comercio-expuesto.geojson"):
+    cexp = json.load(open("datos/geo/comercio-expuesto.geojson", encoding="utf-8"))
+    capa_com = folium.FeatureGroup(name=f"Comercio expuesto ({len(cexp['features'])})").add_to(m)
+    for f in cexp["features"]:
+        lon, lat = f["geometry"]["coordinates"]; p = f["properties"]
+        nom = p.get("nombre") or p.get("tipo")
+        folium.CircleMarker([lat, lon], radius=5, color="#00695c", fill=True, fill_color="#009688",
+            fill_opacity=0.9, weight=1, tooltip=nom,
+            popup=folium.Popup(f"<b>[comercio] {p.get('nombre','')}</b><br><small>{p.get('tipo')}</small>",
+                               max_width=220)).add_to(capa_com)
+
 # Costanera (defensa costera) — obra que modula el riesgo
 if os.path.exists("datos/geo/costanera-asuncion.geojson"):
     cost = json.load(open("datos/geo/costanera-asuncion.geojson", encoding="utf-8"))
@@ -174,18 +192,19 @@ leyenda = """
   <span style="color:#7b2cbf">▬</span> Costanera (defensa) ·
   <span style="color:#1a9850">▮</span> Franja baja protegida (DEM)<br>
   <span style="color:#1b5e7a">●</span> Salud ·
-  <span style="color:#b26a00">●</span> Educación (expuestos)
+  <span style="color:#b26a00">●</span> Educación ·
+  <span style="color:#009688">●</span> Comercio (expuestos)
 </div>"""
 m.get_root().html.add_child(folium.Element(leyenda))
 m
 ```
 
 *Los **8.030 centros educativos** (MEC) se agregan por departamento (conteo en el
-tooltip); los **1.056 servicios de salud** (MSPBS) se muestran agrupados. Solo se
-dibujan individualmente los **expuestos** en la zona de riesgo. Nota: varias USF y
+tooltip); los **1.056 servicios de salud** (MSPBS) y los **6.287 comercios** (OSM, capa
+activable) se muestran agrupados. Solo se dibujan individualmente los **expuestos** en
+la zona de riesgo (24 escuelas, 7 servicios de salud, 34 comercios). Nota: varias USF y
 escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos.
-Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos
-expuestos.*
+Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.*
 
 ::: {.callout-tip}
 ## Descargas: establecimientos en riesgo (Excel)
@@ -196,6 +215,8 @@ nivel del río al que se inundan** (cada uno contado en una sola zona, sin doble
   (MEC): matrícula, tipo de gestión, zona y nivel del río.
 - **[⬇ salud_riesgo.xlsx](../datos/exposicion/salud_riesgo.xlsx)** — **7 servicios de
   salud** (MSPBS): categoría (6 USF + 1 hospital distrital), distrito, zona y nivel del río.
+- **[⬇ comercio_riesgo.xlsx](../datos/exposicion/comercio_riesgo.xlsx)** — **34 comercios**
+  (OpenStreetMap): tipo, rubro y ubicación. Cota inferior (OSM subrepresenta el comercio informal).
 :::
 
 ## Cómo se define la exposición
@@ -291,6 +312,8 @@ fluvial, **ambas amenazas se combinan**.
 - Departamentos: **geoBoundaries** [@geoboundaries_py].
 - Zonas inundables: derivadas de **Sentinel-1** en este repositorio.
 - **Costanera** y vialidad: **OpenStreetMap** (Overpass) [@osm].
+- **Actividad comercial:** **OpenStreetMap** (`shop=*` + mercados, vía Overpass) [@osm].
+  Cota inferior: OSM subrepresenta el comercio informal y los barrios sin mapear.
 - **Elevación del terreno:** **Copernicus DEM GLO-30** (30 m) [@copernicus_dem].
 - **Susceptibilidad pluvial:** modelo topográfico propio sobre el Copernicus DEM
   (relleno de depresiones + acumulación de flujo + índice de humedad topográfica)
