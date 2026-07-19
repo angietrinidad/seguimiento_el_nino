@@ -5,48 +5,97 @@ subtitle: "La otra cara del ENOS (fase fría, La Niña)"
 
 Si El Niño trae **exceso** de agua, su fase opuesta —**La Niña**— trae **déficit**:
 sequía, menor caudal y **bajante extrema** de los ríos. Es una amenaza distinta de la
-inundación, con víctimas y pérdidas propias, y con una construcción social del riesgo
-también propia (quién depende del río para el agua, el transporte y el sustento).
+inundación, con pérdidas y víctimas propias, y con una construcción social del riesgo
+también propia: quién depende del río para el **agua**, el **transporte**, la
+**energía** y el **sustento** es quien más sufre cuando el río se retira.
+
+## La bajante: cuánto baja el río
+
+El nivel del río Paraguay en Asunción se mide sobre una **cota cero** del hidrómetro
+(≈ 54,04 m s.n.m.); las lecturas **negativas** son metros por debajo de ese cero, no
+bajo el nivel del mar [oficial]{.badge-oficial} [@cemit_cotacero2023].
+
+- **Récord histórico absoluto: −1,61 m el 2 de noviembre de 2024** —el nivel más bajo
+  documentado en la serie de Asunción [prensa]{.badge-prensa} [@abc_bajante2024]—.
+- **Bajante 2020-2021** (atribuida a La Niña, la peor en ~50 años hasta entonces):
+  −0,54 m en 2020 y −0,55 m en septiembre de 2021, con un mínimo de ciclo de −0,75 m
+  [prensa]{.badge-prensa} [@lanacion_bajante2021].
+- **Antecedente 1969:** −0,40 m, el mínimo de referencia durante décadas
+  [prensa]{.badge-prensa} [@paraguayfluvial_2024].
+
+En el tramo compartido, la bajante del **Paraná 2021 fue la peor desde 1944**.
 
 ::: {.callout-note appearance="minimal"}
-**Módulo en desarrollo.** Se presenta con la evidencia ya verificada; las series y la
-caracterización sectorial se completarán con fuentes primarias.
+El contraste con la inundación es directo: la misma estación que en El Niño 2015-16
+marcó **7,88 m** tocó **−1,61 m** en la bajante de 2024 —un rango de casi **9,5 m**
+entre las dos caras del ciclo—.
 :::
 
-## Vínculo con el ENOS
+## Vínculo con La Niña (ENOS)
 
-La **fase fría del ENOS (La Niña)** se asocia en el sudeste de Sudamérica con
-**anomalías negativas de precipitación** —el reverso del patrón de El Niño
-[@grimm2000; @cai2015]—. En la cuenca del Plata, esto se traduce en **menor caudal**
-de los ríos Paraguay y Paraná.
+La **fase fría del ENOS (La Niña)** se asocia con **anomalías negativas de
+precipitación** en el sudeste de Sudamérica —el reverso del patrón de El Niño— y el
+ENOS es el **modo dominante** de la variabilidad de lluvia en la cuenca del Plata
+[@boulanger2005; @petry2025]. La **bajante 2019-2022** fue una sequía hidrológica
+originada por un episodio **inusual de La Niña multianual**, inédita en ~50 años por
+severidad y duración (>25 meses) [@rivera2024laplata; @naumann2021]. Bajo cambio
+climático se proyecta un **aumento de las sequías** en el Alto Paraguay y el Alto
+Paraná [@sordoward2017].
 
-## Evidencia
+## Impactos
 
-- **Bajante extrema 2024:** el río Paraguay en Asunción tocó **−1,61 m el 2 de
-  noviembre de 2024**, un mínimo asociado a la sequía/bajante [prensa]{.badge-prensa}
-  [@paraguayfluvial_2024] —contraste directo con el pico de El Niño 2015-16 (7,88 m)—.
+**Navegación (hidrovía Paraguay-Paraná).** La hidrovía canaliza cerca del **80 % del
+comercio exterior** paraguayo. La bajante 2019-2020 costó al transporte fluvial
+**~USD 250 millones** [académico]{.badge-academico} [@francomedina2022]; la de 2024,
+**~USD 200 millones** (volumen −30 %), con barcazas limitadas al **60 %** de su
+capacidad por el calado reducido [prensa]{.badge-prensa} [@abc_cafym2024].
+
+**Energía.** Las represas dependen del caudal: en 2021 **Itaipú** tuvo su menor
+producción desde 2007 (66.369 GWh, −13 %) [prensa]{.badge-prensa} [@abc_itaipu2022]; en
+2024, Itaipú cayó **−20 %** y Yacyretá **−30 %** frente a 2023
+[prensa]{.badge-prensa} [@infobae_energia2024].
+
+**Agua potable.** La ESSAP activó un **plan de contingencia** en 2024 por las ciudades
+que toman agua del río (Asunción y metro, Concepción, Villa Hayes, Alberdi, Pilar),
+con 38 pozos [oficial]{.badge-oficial} [@essap_contingencia2024]; se entregaron
+**425.000 litros** de agua a comunidades indígenas del Chaco
+[oficial]{.badge-oficial} [@mspbs_agua2024].
+
+**Agro.** La **zafra 2021/22** fue la peor de la historia, con pérdidas estimadas en
+**~USD 3.000 millones** [prensa]{.badge-prensa} [@lanacion_agro2022].
+
+**Incendios.** La sequía dispara el fuego: **2020 fue récord de superficie afectada
+(3,49 millones de ha)** [oficial]{.badge-oficial} [@infona_incendios2023], con grandes
+incendios en el Pantanal [prensa]{.badge-prensa} [@mongabay_pantanal2020]
+(ver [incendios](../incendios/index.qmd)).
+
+## Exposición y vulnerabilidad social
+
+La bajante golpea a quienes **dependen del río**:
+
+- **Pesca artesanal:** ~**7.500 pescadores** comerciales inscritos (MADES); 2024 fue el
+  peor año de capturas desde 2018, con veda que agravó la crisis
+  [prensa]{.badge-prensa} [@infobae_pesca2024]. Las sequías extremas **reestructuran las
+  comunidades de peces**, afectando a las especies migratorias que sostienen la pesca
+  local [académico]{.badge-academico} [@espinola2025].
+- **Pueblos indígenas ribereños:** la bajante y la sequía profundizan la **injusticia
+  hídrica** sobre comunidades del Chaco (Enxet, Sanapaná, Yshir), un caso documentado de
+  **racismo ambiental** [académico]{.badge-academico} [@correia2022].
+- **Comunidades aisladas:** el río es la principal vía de conexión del Alto Paraguay;
+  puertos como Antequera declararon crisis [prensa]{.badge-prensa} [@abc_antequera2024] y
+  la salud llega por transporte fluvial [oficial]{.badge-oficial} [@paho_mburukuja2025].
 
 ::: {.vacio}
-Pendiente: serie de bajantes históricas (1969, 2020-2021, 2024) con fuente de la
-DINAC; impactos cuantificados en **navegación de la hidrovía**, **provisión de agua
-(ESSAP/juntas de saneamiento)** y **agro/ganadería**; población dependiente del río.
-:::
-
-## Exposición y vulnerabilidad
-
-La bajante golpea a quienes **dependen del río**: pesca artesanal, transporte
-fluvial (hidrovía Paraguay-Paraná), abastecimiento de agua de comunidades ribereñas,
-y agricultura de secano. La sequía también **agrava incendios** (ver
-[incendios](../incendios/index.qmd)).
-
-::: {.vacio}
-Falta mapear la exposición específica de la bajante (comunidades ribereñas sin agua
-por red, puertos y pasos, superficie agrícola afectada).
+Pendiente de fuente: conteo total de familias que dependen de la pesca (solo hay ~7.500
+licencias comerciales); población indígena ribereña afectada por la bajante 2024 (el
+INDI no publica el desagregado); niveles del Paraná por estación; cifras cuantitativas
+de mortandad de ganado.
 :::
 
 ## Recomendaciones
 
-La acción anticipatoria ante sequía/bajante (gestión del agua, alerta a la
-navegación, apoyo al agro) se integrará al marco de
-[recomendaciones](../../07-recomendaciones/index.qmd), alineado con la SEN y las
-normas humanitarias (LEGS para ganadería, WASH para agua).
+La acción anticipatoria ante sequía/bajante —**gestión y reserva de agua**, alerta a la
+**navegación** por calado, apoyo al **agro y la pesca** (LEGS para ganadería, WASH para
+agua), y previsión **energética**— se integra al marco de
+[recomendaciones](../../07-recomendaciones/index.qmd), alineado con la SEN y las normas
+humanitarias.

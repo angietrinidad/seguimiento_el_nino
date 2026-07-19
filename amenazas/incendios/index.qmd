@@ -23,10 +23,24 @@ extiende la temporada de fuego; los años secos regionales han estado asociados 
 
 ## Evidencia
 
+La superficie afectada por incendios en Paraguay tuvo su **récord en 2020** —el año de
+la gran sequía—, según el INFONA [oficial]{.badge-oficial} [@infona_incendios2023]:
+
+| Año | Superficie afectada (ha) |
+|---|---|
+| 2019 | 2.450.749 |
+| **2020** | **3.494.109** (récord) |
+| 2021 | 2.640.389 |
+| 2022 | 1.622.509 |
+
+En 2020 los incendios arrasaron además el **Pantanal** (Paraguay, Brasil y Bolivia),
+con ~767.000 ha de humedal afectadas a escala regional
+[prensa]{.badge-prensa} [@mongabay_pantanal2020].
+
 ::: {.vacio}
-Pendiente: focos de calor y superficie quemada por temporada (p. ej. **NASA FIRMS**,
-**INFONA**), eventos mayores (Chaco, Cerrado, Ñeembucú) y su relación con la sequía y
-el ENOS. Datos abiertos disponibles pero no procesados aún.
+Pendiente: **focos de calor** por temporada (NASA FIRMS), superficie quemada 2023-2026,
+y el detalle de eventos mayores (Chaco, Cerrado, Ñeembucú). Datos abiertos disponibles,
+aún no procesados.
 :::
 
 ## Exposición y vulnerabilidad

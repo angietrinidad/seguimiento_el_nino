@@ -1,46 +1,94 @@
 ---
 title: "Olas de frío"
-subtitle: "Bajas temperaturas y el Plan Jaho'i de la SEN"
+subtitle: "Bajas temperaturas, heladas y el Plan Jaho'i de la SEN"
 ---
 
-Las **olas de frío** son una amenaza estacional que en Paraguay ya cuenta con un
-instrumento oficial de respuesta. A diferencia de la inundación, el riesgo aquí se
-construye sobre otra vulnerabilidad: **personas en situación de calle, niñez,
-personas mayores y viviendas precarias sin abrigo**.
+Las **olas de frío** son una amenaza estacional (invierno austral, jun-ago) que en
+Paraguay ya cuenta con un instrumento oficial de respuesta. A diferencia de la
+inundación, el riesgo aquí se construye sobre otra vulnerabilidad: **personas en
+situación de calle, niñez, personas mayores y viviendas precarias sin abrigo** —en
+buena medida las mismas familias de los bañados expuestas a la crecida—.
 
-::: {.callout-note appearance="minimal"}
-**Módulo en desarrollo.** El marco oficial ya está incorporado; la caracterización
-del peligro (umbrales, eventos) y la exposición se completarán con fuentes primarias.
-:::
+## El peligro: cuánto frío hace
 
-## El marco oficial: Plan Jaho'i
+Paraguay tiene clima subtropical, pero las **irrupciones de aire polar** producen
+heladas y récords bajo cero, sobre todo en el Chaco y el sur:
 
-La **Secretaría de Emergencia Nacional (SEN)** aprobó, por la misma **Resolución
-106/2024**, el **Plan de Contingencia Operativo Jaho'i 2024-2028**, para el resguardo
-de personas ante **temperaturas ≤ 10 °C** [oficial]{.badge-oficial}
-[@sen_plan_jahoi; @sen_resol106]. Es el complemento del Plan de Contingencia para
-Inundaciones dentro del mismo paquete de planes de emergencia.
+- **Récord nacional absoluto de mínima: −7,5 °C** en Pratts Gill (Chaco), el 13 de
+  julio de 2000 [oficial]{.badge-oficial} [@dinac_extremas].
+- **Récord de mínima en Asunción: −1,2 °C** (Aeropuerto Silvio Pettirossi,
+  27 de junio de 2011) [oficial]{.badge-oficial} [@dinac_extremas].
+- **Invierno 2025:** el 24 de junio fue el día más frío del año, con **−3,3 °C en
+  Presidente Hayes** y récord diario en diez localidades
+  [prensa]{.badge-prensa} [@abc_frio2025].
+- **Invierno 2026:** el 24 de junio, **−1,4 °C en Boquerón** y heladas en varios
+  departamentos [prensa]{.badge-prensa} [@abc_frio2026].
 
-## Evidencia
+El sur de Sudamérica —Paraguay incluido— fue alcanzado por una **ola de frío
+excepcional** documentada por la OMM [oficial]{.badge-oficial} [@wmo_coldspell]. La
+DINAC publica las **mínimas en vivo** de sus estaciones automáticas.
+
+## Impactos
+
+**Salud.** El invierno dispara las enfermedades respiratorias. En la semana
+epidemiológica 18 de 2026, las consultas por enfermedad tipo influenza subieron
+**+10 %** y las hospitalizaciones por infección respiratoria aguda grave **+11 %**
+(324 pacientes); el MSPBS reportó **72 fallecidos por virus respiratorios** en lo que
+iba del año, con la mayor carga en **personas de 60 años o más** y **menores de 2
+años** [oficial]{.badge-oficial} [@dgvs_respiratorias2026]. Es morbilidad invernal
+multicausal (virus + frío), no atribuible solo a la ola de frío.
+
+**Agro.** Las **heladas** de junio de 2026 dañaron cultivos en Itapúa, Alto Paraná,
+Misiones y Ñeembucú —el sur es la zona más vulnerable— [gremial]{.badge-prensa}
+[@ugp_heladas2026].
 
 ::: {.vacio}
-Pendiente: registro de olas de frío recientes (fechas, mínimas, víctimas por
-hipotermia) con fuente de la DINAC/prensa; cantidad de personas asistidas por la SEN
-bajo el Plan Jaho'i por temporada.
+Sin fuente verificable: **muertes por hipotermia** ocurridas en Paraguay (los casos
+regionales documentados son de países vecinos) y **cifras cuantitativas de pérdidas
+agrícolas** (ha, guaraníes). La lógica del Plan Jaho'i —"prevenir pérdida de vidas
+por frío"— indica que la ausencia de dato no equivale a ausencia de riesgo.
+:::
+
+## El marco oficial: Plan / Operativo Jaho'i
+
+*Jaho'i* significa **"resguardar"** en guaraní. La **Secretaría de Emergencia
+Nacional (SEN)** aprobó, por la **Resolución 106/2024**, el **Plan de Contingencia
+Operativo Jaho'i 2024-2028** [oficial]{.badge-oficial} [@sen_plan_jahoi; @sen_resol106],
+que opera desde hace cerca de una década [prensa]{.badge-prensa} [@lanacion_jahoi2025].
+
+- **Umbral de activación:** temperatura **≤ 10 °C** [@lanacion_jahoi2025].
+- **Albergues (temporada 2025-2026):** Costanera Norte de Asunción (principal),
+  Limpio, San Lorenzo y Bañado Sur [oficial]{.badge-oficial} [@ip_jahoi2026].
+- **Personas asistidas:** capacidad declarada de ~50 por día; el 23 de junio de 2026
+  hubo **36 personas albergadas** más ~10 asistidas en calle (promedio previo ~18/día)
+  [oficial]{.badge-oficial} [@ip_jahoi2026].
+- **Servicios:** cena y desayuno calientes, duchas con agua caliente, kits de higiene,
+  camas y frazadas, y puesto médico con derivación hospitalaria; a quienes rechazan el
+  albergue se les entregan frazadas y colchones en la calle [@ip_jahoi2026].
+- **Coordinación:** SEN con Defensa, MSPBS, Niñez y Adolescencia (MINNA), Policía
+  Nacional, DIBEN, ESSAP y ANDE; reportes por la línea **0986-111001** y el **911**
+  [@ip_jahoi2026].
+
+::: {.vacio}
+Pendiente de fuente oficial consolidada: el **balance de cierre de temporada** del
+Jaho'i (total de personas asistidas y de kits/frazadas entregados).
 :::
 
 ## Exposición y vulnerabilidad
 
 Los grupos en mayor riesgo ante el frío extremo son las **personas en situación de
 calle**, la **niñez**, las **personas mayores** y quienes viven en **viviendas
-precarias** sin calefacción —muchas de ellas las mismas familias de los bañados
-expuestas a la inundación—. La respuesta central son los **albergues temporales** y la
-entrega de abrigo, que el Plan Jaho'i organiza.
+precarias** sin calefacción. El dato más reciente con fuente sobre población de calle
+en Asunción es el **II Censo (2017): 174 personas**, el **37 % menores de 18 años**
+[oficial]{.badge-oficial} [@muni_calle2017]; no hay censo posterior verificable, por
+lo que la cifra actual probablemente sea mayor. La carga sanitaria invernal, que recae
+sobre mayores y bebés, confirma el perfil de vulnerabilidad
+[oficial]{.badge-oficial} [@dgvs_respiratorias2026].
 
 ## Recomendaciones
 
-Las acciones por ola de frío (activación de albergues, abrigo, atención a grupos
-vulnerables) se integran al marco de
-[recomendaciones](../../07-recomendaciones/index.qmd), con el enfoque por
+Las acciones por ola de frío (activación temprana de albergues al cruzar el umbral,
+abrigo, atención a grupos vulnerables, refuerzo respiratorio en salud) se integran al
+marco de [recomendaciones](../../07-recomendaciones/index.qmd), con el enfoque por
 **ciclo de vida y género** ya desarrollado y las normas humanitarias (Esfera:
-alojamiento y no alimentarios).
+alojamiento y artículos no alimentarios; salud).
