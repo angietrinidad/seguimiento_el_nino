@@ -744,9 +744,20 @@
   {
     "objectID": "01-marco-conceptual/index.html",
     "href": "01-marco-conceptual/index.html",
-    "title": "Marco conceptual: qué es el ENOS",
+    "title": "Marco: el desastre como construcción social",
     "section": "",
-    "text": "El El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
+    "text": "Este repositorio parte de una premisa: el desastre no es natural. Una crecida, una sequía o una helada son amenazas —fenómenos físicos—; se vuelven desastre solo cuando encuentran a una población vulnerable. El riesgo es el producto de una amenaza por una vulnerabilidad socialmente construida:\nEsta mirada —de la geografía crítica de los desastres y la antropología del riesgo (García Acosta, 2005; Wisner et al., 2004)— desplaza el foco: de “la furia de la naturaleza” a las decisiones sociales, económicas y políticas que determinan quién vive en el bañado, quién no tiene agua por red, quién carece de seguro agrícola. Por eso el sitio se llama Desastres Construidos: analiza cómo se produce la vulnerabilidad —con una lente atenta al género, la clase y la desigualdad territorial— y no solo el peligro que la detona.",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html#amenazas-y-motores-dónde-entra-el-enos",
+    "href": "01-marco-conceptual/index.html#amenazas-y-motores-dónde-entra-el-enos",
+    "title": "Marco: el desastre como construcción social",
+    "section": "Amenazas y motores: dónde entra el ENOS",
+    "text": "Amenazas y motores: dónde entra el ENOS\nLas amenazas del sitio —inundación fluvial y pluvial, sequía, olas de frío, dengue, incendios— tienen distintos motores. Uno central para Paraguay es el El Niño-Oscilación del Sur (ENOS): el ciclo climático que inclina la balanza hacia el exceso de lluvia (El Niño) o el déficit (La Niña), y que por eso está detrás de buena parte de las inundaciones y de las sequías. El resto de esta página explica cómo funciona.",
     "crumbs": [
       "Inicio",
       "🧭 Marco: desastres construidos"
@@ -755,9 +766,9 @@
   {
     "objectID": "01-marco-conceptual/index.html#qué-es-el-niño-oscilación-del-sur-enos",
     "href": "01-marco-conceptual/index.html#qué-es-el-niño-oscilación-del-sur-enos",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "",
-    "text": "El El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
+    "title": "Marco: el desastre como construcción social",
+    "section": "¿Qué es El Niño-Oscilación del Sur (ENOS)?",
+    "text": "¿Qué es El Niño-Oscilación del Sur (ENOS)?\nEl El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
     "crumbs": [
       "Inicio",
       "🧭 Marco: desastres construidos"
@@ -766,7 +777,7 @@
   {
     "objectID": "01-marco-conceptual/index.html#fases-el-niño-la-niña-y-fase-neutral",
     "href": "01-marco-conceptual/index.html#fases-el-niño-la-niña-y-fase-neutral",
-    "title": "Marco conceptual: qué es el ENOS",
+    "title": "Marco: el desastre como construcción social",
     "section": "Fases: El Niño, La Niña y fase neutral",
     "text": "Fases: El Niño, La Niña y fase neutral\n\n\n\nFase\nEstado del Pacífico ecuatorial\nAlisios\n\n\n\n\nEl Niño\nTSM anómalamente cálida (centro-este)\nDebilitados\n\n\nLa Niña\nTSM anómalamente fría\nReforzados\n\n\nNeutral\nCercana al promedio\nNormales\n\n\n\nEl ciclo es irregular, con recurrencia típica de 2 a 7 años y una duración de cada episodio de entre 9 y 12 meses, ocasionalmente más (Organización Meteorológica Mundial, 2026). Las fases suelen consolidarse hacia el final del año calendario del hemisferio norte.",
     "crumbs": [
@@ -777,7 +788,7 @@
   {
     "objectID": "01-marco-conceptual/index.html#umbrales-de-clasificación-oni",
     "href": "01-marco-conceptual/index.html#umbrales-de-clasificación-oni",
-    "title": "Marco conceptual: qué es el ENOS",
+    "title": "Marco: el desastre como construcción social",
     "section": "Umbrales de clasificación (ONI)",
     "text": "Umbrales de clasificación (ONI)\nNOAA clasifica los episodios mediante el Oceanic Niño Index (ONI), la media móvil trimestral de la anomalía de TSM en Niño 3.4. Un episodio se declara cuando el ONI alcanza o supera ±0,5 °C durante cinco trimestres consecutivos (NOAA Climate Prediction Center, 2026a).\n\n\n\nCategoría\nUmbral ONI (°C)\n\n\n\n\nDébil\n0,5 – 0,9\n\n\nModerado\n1,0 – 1,4\n\n\nFuerte\n1,5 – 1,9\n\n\nMuy fuerte\n≥ 2,0\n\n\n\nLos episodios de referencia de este repositorio y su pico ONI:\n\n\n\n\nTabla 1\n\n\n\n\n\n\nEpisodio\nIntensidad\nPico ONI (°C)\n\n\n\n\n1997-98\nmuy fuerte\n2.4\n\n\n2015-16\nmuy fuerte\n2.6\n\n\n2023-24\nmuy fuerte\n2.0\n\n\n2026-27\nen desarrollo\n—\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos episodios 1997-98 (2,4 °C) y 2015-16 (2,6 °C) figuran entre los más intensos del registro instrumental desde 1950; 2023-24 alcanzó categoría muy fuerte (≈2,0 °C) (NOAA Climate Prediction Center, 2026a). En febrero de 2026, NOAA adoptó el Relative Oceanic Niño Index (RONI) como índice de referencia operativo, para corregir el calentamiento de fondo del océano (NOAA Climate Prediction Center, 2026b).",
     "crumbs": [
@@ -788,7 +799,7 @@
   {
     "objectID": "01-marco-conceptual/index.html#mecanismos-físicos-de-impacto-en-sudamérica",
     "href": "01-marco-conceptual/index.html#mecanismos-físicos-de-impacto-en-sudamérica",
-    "title": "Marco conceptual: qué es el ENOS",
+    "title": "Marco: el desastre como construcción social",
     "section": "Mecanismos físicos de impacto en Sudamérica",
     "text": "Mecanismos físicos de impacto en Sudamérica\nDurante El Niño, el desplazamiento hacia el este de la convección tropical altera la circulación atmosférica por teleconexión, con efectos característicos en Sudamérica (Organización Meteorológica Mundial, 2026):\n\nNorte de los Andes / Amazonía y Nordeste de Brasil: tendencia a déficit de lluvias y sequía.\nCosta de Perú y Ecuador: lluvias intensas e inundaciones.\nSudeste de Sudamérica (Cono Sur): en la cuenca del Plata —sur de Brasil, Uruguay, noreste de Argentina y Paraguay— El Niño se asocia a precipitaciones por encima de lo normal, especialmente en primavera y comienzos del verano austral, por un reforzamiento del chorro subtropical y mayor ingreso de humedad.\n\nLa señal es probabilística, no determinista: El Niño inclina la balanza hacia ciertos regímenes de lluvia/temperatura, pero no garantiza un resultado en un punto y momento dados.",
     "crumbs": [
@@ -799,9 +810,9 @@
   {
     "objectID": "01-marco-conceptual/index.html#por-qué-importa-para-la-cuenca-del-plata-y-paraguay",
     "href": "01-marco-conceptual/index.html#por-qué-importa-para-la-cuenca-del-plata-y-paraguay",
-    "title": "Marco conceptual: qué es el ENOS",
+    "title": "Marco: el desastre como construcción social",
     "section": "Por qué importa para la cuenca del Plata y Paraguay",
-    "text": "Por qué importa para la cuenca del Plata y Paraguay\nPara Paraguay, la relevancia de El Niño es directa: la fase cálida tiende a aumentar las precipitaciones sobre la cuenca del Paraná-Paraguay, lo que se traduce en crecidas de los ríos Paraguay y Paraná y en inundaciones —tanto ribereñas como pluviales urbanas— con impacto sobre población en zonas de riesgo, agricultura y ganadería. Este encadenamiento —anomalía oceánica → lluvia → crecida → afectación social— es el eje que estructura las secciones Paraguay y Asunción.\n\n\n\n\n\n\nImportanteEpisodio en curso\n\n\n\nHay un episodio de El Niño 2026-2027 en desarrollo. Su estado detallado, pronóstico y la población expuesta se siguen en Situación actual.",
+    "text": "Por qué importa para la cuenca del Plata y Paraguay\nPara Paraguay, la relevancia del ENOS es directa y de doble filo: la fase cálida (El Niño) tiende a aumentar las precipitaciones sobre la cuenca del Paraná-Paraguay —crecidas e inundación—, mientras la fase fría (La Niña) trae déficit —sequía y bajante—. Pero el encadenamiento no termina en el clima: la anomalía oceánica → lluvia o sequía → crecida o bajante → afectación social desigual, según quién esté expuesto y con qué capacidad de respuesta. Ese último eslabón —el de la vulnerabilidad— es el que estructura las secciones de exposición, medios de vida y cada amenaza.\n\n\n\n\n\n\nImportanteEpisodio en curso\n\n\n\nHay un episodio de El Niño 2026-2027 en desarrollo. Su estado detallado, pronóstico y la población expuesta se siguen en Situación actual.",
     "crumbs": [
       "Inicio",
       "🧭 Marco: desastres construidos"
