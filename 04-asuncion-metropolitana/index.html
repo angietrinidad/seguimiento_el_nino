@@ -369,6 +369,7 @@ div.csl-indent {
   <li><a href="#por-qué-el-niño-agrava-el-riesgo-pluvial" id="toc-por-qué-el-niño-agrava-el-riesgo-pluvial" class="nav-link" data-scroll-target="#por-qué-el-niño-agrava-el-riesgo-pluvial">Por qué El Niño agrava el riesgo pluvial</a></li>
   <li><a href="#temporales-documentados-lluvia-no-río" id="toc-temporales-documentados-lluvia-no-río" class="nav-link" data-scroll-target="#temporales-documentados-lluvia-no-río">Temporales documentados (lluvia, no río)</a></li>
   <li><a href="#una-escala-empírica-cuánta-lluvia-colapsa-asunción" id="toc-una-escala-empírica-cuánta-lluvia-colapsa-asunción" class="nav-link" data-scroll-target="#una-escala-empírica-cuánta-lluvia-colapsa-asunción">Una escala empírica: cuánta lluvia colapsa Asunción</a></li>
+  <li><a href="#el-eje-de-duración-una-idf-simplificada" id="toc-el-eje-de-duración-una-idf-simplificada" class="nav-link" data-scroll-target="#el-eje-de-duración-una-idf-simplificada">El eje de duración: una IDF simplificada</a></li>
   <li><a href="#arroyos-urbanos-y-puntos-críticos" id="toc-arroyos-urbanos-y-puntos-críticos" class="nav-link" data-scroll-target="#arroyos-urbanos-y-puntos-críticos">Arroyos urbanos y puntos críticos</a></li>
   <li><a href="#dónde-se-acumula-el-agua-modelo-topográfico-dem" id="toc-dónde-se-acumula-el-agua-modelo-topográfico-dem" class="nav-link" data-scroll-target="#dónde-se-acumula-el-agua-modelo-topográfico-dem">Dónde se acumula el agua: modelo topográfico (DEM)</a></li>
   </ul></li>
@@ -401,7 +402,7 @@ div.csl-indent {
 <p>Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —los <strong>bañados Norte y Sur</strong> y <strong>La Chacarita</strong>—, donde reside población en situación de vulnerabilidad social. El riesgo es doble: <strong>fluvial</strong> (crecida del río Paraguay) y <strong>pluvial</strong> (lluvias intensas sobre drenaje insuficiente).</p>
 <section id="hidrología-del-río-paraguay" class="level2">
 <h2 class="anchored" data-anchor-id="hidrología-del-río-paraguay">Hidrología del río Paraguay</h2>
-<div id="4b1ccc40" class="cell" data-execution_count="1">
+<div id="3d739b16" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="1">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -689,6 +690,85 @@ Importante
 </div>
 </div>
 </section>
+<section id="el-eje-de-duración-una-idf-simplificada" class="level3">
+<h3 class="anchored" data-anchor-id="el-eje-de-duración-una-idf-simplificada">El eje de duración: una IDF simplificada</h3>
+<p>La escala anterior mezcla dos cosas —intensidad (mm/h) y acumulado del día—. El concepto que las une es la <strong>curva IDF (intensidad-duración-frecuencia)</strong>, la herramienta estándar del diseño de drenaje: relaciona la <strong>intensidad</strong> de la lluvia con su <strong>duración</strong> y su <strong>frecuencia</strong> (período de retorno). Aquí se construye solo el eje <strong>intensidad-duración</strong>; el eje de <strong>frecuencia</strong> requiere el ajuste estadístico de los registros pluviográficos locales —trabajo que en Paraguay inició Monte Domecq (curvas IDF regionales, 1995) y que estudios del Gran Asunción retomaron <span class="citation" data-cites="montedomecq1995 montedomecq_baez1999">(<a href="#ref-montedomecq1995" role="doc-biblioref">Monte Domecq, 1995</a>; <a href="#ref-montedomecq_baez1999" role="doc-biblioref">Monte Domecq &amp; Báez, 1999</a>)</span>—. Obtener esos coeficientes (o la serie de la DINAC) es lo que falta para cerrar la curva.</p>
+<p>La idea clave del eje de duración: <strong>la misma cantidad de lluvia es inofensiva o catastrófica según en cuánto tiempo cae.</strong> Como intensidad = lámina ÷ duración, un aguacero corto alcanza intensidades de raudal con pocos milímetros:</p>
+<table class="caption-top table">
+<caption>Lámina de lluvia (mm) que alcanza cada intensidad según la duración —aritmética simple (mm = intensidad × duración), clases AEMET/OMM <span class="citation" data-cites="aemet_intensidad">(<a href="#ref-aemet_intensidad" role="doc-biblioref">Agencia Estatal de Meteorología (AEMET), 2024</a>)</span>. El único punto <strong>observado</strong> es el raudal de Ñemby: <strong>47 mm en ~50 min</strong> ≈ 56 mm/h (muy fuerte), que ya arrastró vehículos <span class="citation" data-cites="ruizdiaz2018">(<a href="#ref-ruizdiaz2018" role="doc-biblioref">Ruiz Díaz Cardozo et&nbsp;al., 2018</a>)</span>.</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Duración del aguacero</th>
+<th>“Fuerte” 15-30 mm/h → encharca</th>
+<th>“Muy fuerte” 30-60 → raudales</th>
+<th>“Torrencial” &gt;60 → anega</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>10 min</strong></td>
+<td>2,5-5 mm</td>
+<td>5-10 mm</td>
+<td>&gt; 10 mm</td>
+</tr>
+<tr class="even">
+<td><strong>20 min</strong></td>
+<td>5-10 mm</td>
+<td>10-20 mm</td>
+<td>&gt; 20 mm</td>
+</tr>
+<tr class="odd">
+<td><strong>30 min</strong></td>
+<td>7,5-15 mm</td>
+<td>15-30 mm</td>
+<td>&gt; 30 mm</td>
+</tr>
+<tr class="even">
+<td><strong>1 hora</strong></td>
+<td>15-30 mm</td>
+<td>30-60 mm</td>
+<td>&gt; 60 mm</td>
+</tr>
+<tr class="odd">
+<td><strong>2 horas</strong></td>
+<td>30-60 mm</td>
+<td>60-120 mm</td>
+<td>&gt; 120 mm</td>
+</tr>
+</tbody>
+</table>
+<p>Para <strong>aguaceros cortos (≤ 1-2 h) manda la intensidad</strong> (la tabla de arriba); para <strong>eventos sostenidos de varias horas o todo el día manda el acumulado</strong> y la saturación del suelo —ahí valen las bandas de 80-110 mm (anegamiento) y &gt;150-200 mm (colapso) de la escala—. Por eso la curva de “cuánto colapsa” <strong>desciende</strong> con la duración: se necesita mucha intensidad en 30 min, pero basta una intensidad media sostenida en 24 h.</p>
+<svg viewbox="0 0 640 360" width="100%" style="max-width:640px;font-family:sans-serif;font-size:11px">
+  <rect x="70" y="30" width="530" height="290" fill="#fafbfc" stroke="#ccc"></rect>
+  <!-- y grid + labels (mm/h) -->
+  <g stroke="#eee"><line x1="70" y1="252" x2="600" y2="252"></line><line x1="70" y1="201" x2="600" y2="201"></line><line x1="70" y1="149" x2="600" y2="149"></line><line x1="70" y1="81" x2="600" y2="81"></line></g>
+  <g fill="#666" text-anchor="end"><text x="64" y="323">2</text><text x="64" y="255">5</text><text x="64" y="204">10</text><text x="64" y="152">20</text><text x="64" y="84">50</text><text x="64" y="34">100</text></g>
+  <text x="20" y="180" fill="#444" transform="rotate(-90 20,180)" text-anchor="middle">Intensidad (mm/h, escala log)</text>
+  <!-- x labels (duración) -->
+  <g fill="#666" text-anchor="middle"><text x="70" y="335">10 min</text><text x="187" y="335">30 min</text><text x="261" y="335">1 h</text><text x="378" y="335">3 h</text><text x="452" y="335">6 h</text><text x="600" y="335">24 h</text></g>
+  <text x="335" y="353" fill="#444" text-anchor="middle">Duración del aguacero (escala log)</text>
+  <!-- umbral conceptual de colapso -->
+  <path d="M 95,48 Q 320,165 600,235" fill="none" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7,4"></path>
+  <text x="150" y="70" fill="#d1495b">umbral aproximado de colapso</text>
+  <text x="330" y="150" fill="#d1495b" transform="rotate(20 330,150)">(desciende con la duración)</text>
+  <!-- zonas -->
+  <text x="120" y="120" fill="#b06a2c" opacity="0.8">↑ raudales / anegamiento</text>
+  <text x="430" y="290" fill="#4a8f4a" opacity="0.8">↓ el drenaje absorbe</text>
+  <!-- puntos observados -->
+  <circle cx="242" cy="73" r="6" fill="#e8842c" stroke="#7a3d10"></circle>
+  <text x="252" y="70" fill="#7a3d10">Ñemby 2018: 47 mm / 50 min (≈56 mm/h)</text>
+  <circle cx="600" cy="206" r="6" fill="#7a1f2b" stroke="#3a0f16"></circle>
+  <text x="592" y="199" fill="#3a0f16" text-anchor="end">Feb 2014: 222 mm / 24 h (≈9 mm/h)</text>
+</svg>
+<p><em>Esquema <strong>conceptual</strong>, no una IDF estadística: solo los dos puntos marcados son datos observados; la curva de umbral es una interpolación cualitativa entre ellos. Una IDF real (con períodos de retorno) exige los registros de la DINAC y el método de ajuste de <span class="citation" data-cites="montedomecq1995">(<a href="#ref-montedomecq1995" role="doc-biblioref">Monte Domecq, 1995</a>)</span>.</em></p>
+<p>Una lectura de <strong>frecuencia empírica</strong> (no estadística) sale del propio catálogo de eventos: temporales de nivel 3 o mayor se registraron en 2014, 2018, 2019, 2023 y 2024 —es decir, <strong>casi todos los años de la última década</strong>—, señal de que el umbral de colapso se cruza con una regularidad preocupante para la infraestructura de drenaje actual.</p>
+</section>
 <section id="arroyos-urbanos-y-puntos-críticos" class="level3">
 <h3 class="anchored" data-anchor-id="arroyos-urbanos-y-puntos-críticos">Arroyos urbanos y puntos críticos</h3>
 <p>Buena parte del anegamiento pluvial se organiza en torno a los <strong>arroyos urbanos</strong>, cuyos cauces —angostos, contaminados, parcialmente entubados— se desbordan con lluvia intensa:</p>
@@ -772,6 +852,12 @@ La Nación (Paraguay). (2025). <em>Estos son los puntos críticos en Asunción y
 </div>
 <div id="ref-mspbs_lluvias2024" class="csl-entry" role="listitem">
 Ministerio de Salud Pública y Bienestar Social (MSPBS). (2024). <em>Lluvias causan inundaciones en tres departamentos</em>. <a href="https://www.mspbs.gov.py/portal/29846/lluvias-causan-inundaciones-en-tres-departamentos.html" class="uri">https://www.mspbs.gov.py/portal/29846/lluvias-causan-inundaciones-en-tres-departamentos.html</a>.
+</div>
+<div id="ref-montedomecq1995" class="csl-entry" role="listitem">
+Monte Domecq, R. A. (1995). <em>Elaboración de curvas IDF (intensidad-duración-frecuencia) a nivel regional</em>. Universidad Nacional de Asunción (FIUNA). Referenciado en el CV CONACYT del autor: <a href="https://cv.conacyt.gov.py/publicar/cv?id=0479bd2d80e671764b52d4468a84cd3b" class="uri">https://cv.conacyt.gov.py/publicar/cv?id=0479bd2d80e671764b52d4468a84cd3b</a>.
+</div>
+<div id="ref-montedomecq_baez1999" class="csl-entry" role="listitem">
+Monte Domecq, R. A., &amp; Báez, J. (1999). <em>Análisis de las tormentas severas y su efecto en municipios del Gran Asunción</em>. Proyecto de investigación, Universidad Nacional de Asunción. Referenciado en el CV CONACYT del autor.
 </div>
 <div id="ref-mun_ferreira2023" class="csl-entry" role="listitem">
 Municipalidad de Asunción. (2023). <em>Acción ambiental para mitigar inundaciones previstas por el fenómeno El Niño: limpieza del arroyo Ferreira</em>. <a href="https://www.asuncion.gov.py/gestion-ambiental/accion-ambiental-para-mitigar-inundaciones-previstas-por-fenomeno-del-nino-se-realizo-en-arroyo-ferreira" class="uri">https://www.asuncion.gov.py/gestion-ambiental/accion-ambiental-para-mitigar-inundaciones-previstas-por-fenomeno-del-nino-se-realizo-en-arroyo-ferreira</a>.
@@ -1468,58 +1554,127 @@ UNICEF. (2024). <em>UNICEF brinda asistencia psicosocial a niños y niñas afect
 <span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>umbrales con precisión. Tómese como guía de magnitud, no como norma.</span>
 <span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="fu">### Arroyos urbanos y puntos críticos</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="fu">### El eje de duración: una IDF simplificada</span></span>
 <span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>Buena parte del anegamiento pluvial se organiza en torno a los **arroyos urbanos**,</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>cuyos cauces —angostos, contaminados, parcialmente entubados— se desbordan con</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>lluvia intensa:</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyo Mburicaó:** ~16 km, cruza siete barrios hasta la bahía; drenaje</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>  insuficiente y desbordes recurrentes <span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@lanacion_puntos2025</span><span class="co">]</span>.</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyo Ferreira:** barrios Republicano y Roberto L. Petit; en abril de 2024 sus</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>  crecidas hicieron **colapsar viviendas** en su margen. La Municipalidad retiró</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>  ~40.000 kg de residuos de un brazo (Cantaluppi) dentro del **Plan de Contingencia</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>  por El Niño** de 2023 <span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} <span class="co">[</span><span class="ot">@mun_ferreira2023</span><span class="co">]</span>.</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyo Itay:** ~35 km, límite natural del Gran Asunción; desborde recurrente en</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>  Limpio y Luque; canalización parcial iniciada por la Municipalidad y el MOPC</span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} <span class="co">[</span><span class="ot">@asuncion_itay</span><span class="co">]</span>.</span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyos entubados del centro** (p. ej. Ycuá Satí, bajo la calle Antequera): al</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>  correr bajo el pavimento pierden capacidad y **ocultan el riesgo**, alimentando</span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>  los raudales de superficie <span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@abc_zonas2023</span><span class="co">]</span>.</span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>La propia Municipalidad reconoce **intersecciones críticas** donde se forman</span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>raudales peligrosos (Artigas y Mburicaó; Gral. Santos y San Antonio; Eusebio Ayala</span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>y Boggiani; Fernando de la Mora y Bartolomé de las Casas, entre otras), y estudios</span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>académicos han mapeado decenas de **puntos críticos** de anegamiento en la capital</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@lanacion_puntos2025</span><span class="co">]</span>.</span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dónde se acumula el agua: modelo topográfico (DEM)</span></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>Para pasar de los eventos puntuales a una **capa de susceptibilidad**, se derivó del</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>**Copernicus DEM (30 m)** dónde el relieve favorece el encharcamiento y la</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>concentración del escurrimiento (relleno de depresiones + acumulación de flujo +</span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>índice topográfico de humedad). El resultado —la red de **fondos de valle y</span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>depresiones** donde el agua de lluvia tiende a juntarse— es un **modelo de</span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>susceptibilidad**, no un evento observado, y se muestra como capa activable en el</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">mapa de exposición</span><span class="co">](../06-exposicion/index.qmd)</span>.</span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>**Límites.** El DEM de 30 m no capta la red de desagües pluviales, el</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>alcantarillado ni el anegamiento a escala de calle; identifica lows topográficos a</span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>escala de barrio. Falta el **estudio hidráulico urbano** oficial (capacidad de</span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>desagües, caudales de diseño, población expuesta por evento) del MOPC/ESSAP y la</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>**serie de lluvia por estación** de la DINAC para fechar y dimensionar cada temporal.</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="fu">## Población en situación de vulnerabilidad</span></span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>Los bañados y La Chacarita concentran **asentamientos informales** con viviendas</span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>precárias en la ribera. El reporte municipal de 2019 registró en los albergues</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>**13.500 menores de edad**, **778 embarazadas** y **~1.000 adultos mayores**,</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>indicativo del perfil de vulnerabilidad de la población desplazada</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} (DGRRD, 2019-05-30) <span class="co">[</span><span class="ot">@muni_2019</span><span class="co">]</span>. UNICEF brindó</span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>asistencia psicosocial a niñez afectada por inundaciones</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} <span class="co">[</span><span class="ot">@unicef_py_inund</span><span class="co">]</span>.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>La escala anterior mezcla dos cosas —intensidad (mm/h) y acumulado del día—. El</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>concepto que las une es la **curva IDF (intensidad-duración-frecuencia)**, la</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>herramienta estándar del diseño de drenaje: relaciona la **intensidad** de la</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>lluvia con su **duración** y su **frecuencia** (período de retorno). Aquí se</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>construye solo el eje **intensidad-duración**; el eje de **frecuencia** requiere el</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>ajuste estadístico de los registros pluviográficos locales —trabajo que en Paraguay</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>inició Monte Domecq (curvas IDF regionales, 1995) y que estudios del Gran Asunción</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>retomaron <span class="co">[</span><span class="ot">@montedomecq1995; @montedomecq_baez1999</span><span class="co">]</span>—. Obtener esos coeficientes (o</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>la serie de la DINAC) es lo que falta para cerrar la curva.</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>La idea clave del eje de duración: **la misma cantidad de lluvia es inofensiva o</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>catastrófica según en cuánto tiempo cae.** Como intensidad = lámina ÷ duración,</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>un aguacero corto alcanza intensidades de raudal con pocos milímetros:</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Duración del aguacero <span class="pp">|</span> "Fuerte" 15-30 mm/h → encharca <span class="pp">|</span> "Muy fuerte" 30-60 → raudales <span class="pp">|</span> "Torrencial" &gt;60 → anega <span class="pp">|</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **10 min** <span class="pp">|</span> 2,5-5 mm <span class="pp">|</span> 5-10 mm <span class="pp">|</span> &gt; 10 mm <span class="pp">|</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **20 min** <span class="pp">|</span> 5-10 mm <span class="pp">|</span> 10-20 mm <span class="pp">|</span> &gt; 20 mm <span class="pp">|</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **30 min** <span class="pp">|</span> 7,5-15 mm <span class="pp">|</span> 15-30 mm <span class="pp">|</span> &gt; 30 mm <span class="pp">|</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 hora** <span class="pp">|</span> 15-30 mm <span class="pp">|</span> 30-60 mm <span class="pp">|</span> &gt; 60 mm <span class="pp">|</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 horas** <span class="pp">|</span> 30-60 mm <span class="pp">|</span> 60-120 mm <span class="pp">|</span> &gt; 120 mm <span class="pp">|</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>: Lámina de lluvia (mm) que alcanza cada intensidad según la duración —aritmética simple (mm = intensidad × duración), clases AEMET/OMM <span class="co">[</span><span class="ot">@aemet_intensidad</span><span class="co">]</span>. El único punto **observado** es el raudal de Ñemby: **47 mm en ~50 min** ≈ 56 mm/h (muy fuerte), que ya arrastró vehículos <span class="co">[</span><span class="ot">@ruizdiaz2018</span><span class="co">]</span>.</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>Para **aguaceros cortos (≤ 1-2 h) manda la intensidad** (la tabla de arriba); para</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>**eventos sostenidos de varias horas o todo el día manda el acumulado** y la</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>saturación del suelo —ahí valen las bandas de 80-110 mm (anegamiento) y &gt;150-200 mm</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>(colapso) de la escala—. Por eso la curva de "cuánto colapsa" **desciende** con la</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>duración: se necesita mucha intensidad en 30 min, pero basta una intensidad media</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>sostenida en 24 h.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg viewBox="0 0 640 360" width="100%" style="max-width:640px;font-family:sans-serif;font-size:11px"&gt;</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;rect x="70" y="30" width="530" height="290" fill="#fafbfc" stroke="#ccc"/&gt;</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;!-- y grid + labels (mm/h) --&gt;</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;g stroke="#eee"&gt;&lt;line x1="70" y1="252" x2="600" y2="252"/&gt;&lt;line x1="70" y1="201" x2="600" y2="201"/&gt;&lt;line x1="70" y1="149" x2="600" y2="149"/&gt;&lt;line x1="70" y1="81" x2="600" y2="81"/&gt;&lt;/g&gt;</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;g fill="#666" text-anchor="end"&gt;&lt;text x="64" y="323"&gt;2&lt;/text&gt;&lt;text x="64" y="255"&gt;5&lt;/text&gt;&lt;text x="64" y="204"&gt;10&lt;/text&gt;&lt;text x="64" y="152"&gt;20&lt;/text&gt;&lt;text x="64" y="84"&gt;50&lt;/text&gt;&lt;text x="64" y="34"&gt;100&lt;/text&gt;&lt;/g&gt;</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="20" y="180" fill="#444" transform="rotate(-90 20,180)" text-anchor="middle"&gt;Intensidad (mm/h, escala log)&lt;/text&gt;</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;!-- x labels (duración) --&gt;</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;g fill="#666" text-anchor="middle"&gt;&lt;text x="70" y="335"&gt;10 min&lt;/text&gt;&lt;text x="187" y="335"&gt;30 min&lt;/text&gt;&lt;text x="261" y="335"&gt;1 h&lt;/text&gt;&lt;text x="378" y="335"&gt;3 h&lt;/text&gt;&lt;text x="452" y="335"&gt;6 h&lt;/text&gt;&lt;text x="600" y="335"&gt;24 h&lt;/text&gt;&lt;/g&gt;</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="335" y="353" fill="#444" text-anchor="middle"&gt;Duración del aguacero (escala log)&lt;/text&gt;</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;!-- umbral conceptual de colapso --&gt;</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 95,48 Q 320,165 600,235" fill="none" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7,4"/&gt;</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="150" y="70" fill="#d1495b"&gt;umbral aproximado de colapso&lt;/text&gt;</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="330" y="150" fill="#d1495b" transform="rotate(20 330,150)"&gt;(desciende con la duración)&lt;/text&gt;</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;!-- zonas --&gt;</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="120" y="120" fill="#b06a2c" opacity="0.8"&gt;↑ raudales / anegamiento&lt;/text&gt;</span></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="430" y="290" fill="#4a8f4a" opacity="0.8"&gt;↓ el drenaje absorbe&lt;/text&gt;</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;!-- puntos observados --&gt;</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;circle cx="242" cy="73" r="6" fill="#e8842c" stroke="#7a3d10"/&gt;</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="252" y="70" fill="#7a3d10"&gt;Ñemby 2018: 47 mm / 50 min (≈56 mm/h)&lt;/text&gt;</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;circle cx="600" cy="206" r="6" fill="#7a1f2b" stroke="#3a0f16"/&gt;</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="592" y="199" fill="#3a0f16" text-anchor="end"&gt;Feb 2014: 222 mm / 24 h (≈9 mm/h)&lt;/text&gt;</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>*Esquema **conceptual**, no una IDF estadística: solo los dos puntos marcados son</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>datos observados; la curva de umbral es una interpolación cualitativa entre ellos.</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>Una IDF real (con períodos de retorno) exige los registros de la DINAC y el método</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>de ajuste de <span class="co">[</span><span class="ot">@montedomecq1995</span><span class="co">]</span>.*</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>Una lectura de **frecuencia empírica** (no estadística) sale del propio catálogo de</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>eventos: temporales de nivel 3 o mayor se registraron en 2014, 2018, 2019, 2023 y</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>2024 —es decir, **casi todos los años de la última década**—, señal de que el</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>umbral de colapso se cruza con una regularidad preocupante para la infraestructura</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>de drenaje actual.</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="fu">### Arroyos urbanos y puntos críticos</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>Buena parte del anegamiento pluvial se organiza en torno a los **arroyos urbanos**,</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>cuyos cauces —angostos, contaminados, parcialmente entubados— se desbordan con</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>lluvia intensa:</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyo Mburicaó:** ~16 km, cruza siete barrios hasta la bahía; drenaje</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>  insuficiente y desbordes recurrentes <span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@lanacion_puntos2025</span><span class="co">]</span>.</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyo Ferreira:** barrios Republicano y Roberto L. Petit; en abril de 2024 sus</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>  crecidas hicieron **colapsar viviendas** en su margen. La Municipalidad retiró</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>  ~40.000 kg de residuos de un brazo (Cantaluppi) dentro del **Plan de Contingencia</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>  por El Niño** de 2023 <span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} <span class="co">[</span><span class="ot">@mun_ferreira2023</span><span class="co">]</span>.</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyo Itay:** ~35 km, límite natural del Gran Asunción; desborde recurrente en</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>  Limpio y Luque; canalización parcial iniciada por la Municipalidad y el MOPC</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} <span class="co">[</span><span class="ot">@asuncion_itay</span><span class="co">]</span>.</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Arroyos entubados del centro** (p. ej. Ycuá Satí, bajo la calle Antequera): al</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>  correr bajo el pavimento pierden capacidad y **ocultan el riesgo**, alimentando</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>  los raudales de superficie <span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@abc_zonas2023</span><span class="co">]</span>.</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>La propia Municipalidad reconoce **intersecciones críticas** donde se forman</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>raudales peligrosos (Artigas y Mburicaó; Gral. Santos y San Antonio; Eusebio Ayala</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>y Boggiani; Fernando de la Mora y Bartolomé de las Casas, entre otras), y estudios</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>académicos han mapeado decenas de **puntos críticos** de anegamiento en la capital</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@lanacion_puntos2025</span><span class="co">]</span>.</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dónde se acumula el agua: modelo topográfico (DEM)</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>Para pasar de los eventos puntuales a una **capa de susceptibilidad**, se derivó del</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>**Copernicus DEM (30 m)** dónde el relieve favorece el encharcamiento y la</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>concentración del escurrimiento (relleno de depresiones + acumulación de flujo +</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>índice topográfico de humedad). El resultado —la red de **fondos de valle y</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>depresiones** donde el agua de lluvia tiende a juntarse— es un **modelo de</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>susceptibilidad**, no un evento observado, y se muestra como capa activable en el</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">mapa de exposición</span><span class="co">](../06-exposicion/index.qmd)</span>.</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>**Límites.** El DEM de 30 m no capta la red de desagües pluviales, el</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>alcantarillado ni el anegamiento a escala de calle; identifica lows topográficos a</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>escala de barrio. Falta el **estudio hidráulico urbano** oficial (capacidad de</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>desagües, caudales de diseño, población expuesta por evento) del MOPC/ESSAP y la</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>**serie de lluvia por estación** de la DINAC para fechar y dimensionar cada temporal.</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="fu">## Población en situación de vulnerabilidad</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>Los bañados y La Chacarita concentran **asentamientos informales** con viviendas</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>precárias en la ribera. El reporte municipal de 2019 registró en los albergues</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>**13.500 menores de edad**, **778 embarazadas** y **~1.000 adultos mayores**,</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>indicativo del perfil de vulnerabilidad de la población desplazada</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} (DGRRD, 2019-05-30) <span class="co">[</span><span class="ot">@muni_2019</span><span class="co">]</span>. UNICEF brindó</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>asistencia psicosocial a niñez afectada por inundaciones</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">oficial</span><span class="co">]</span>{.badge-oficial} <span class="co">[</span><span class="ot">@unicef_py_inund</span><span class="co">]</span>.</span>
 </code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
