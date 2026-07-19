@@ -199,13 +199,17 @@ m.get_root().html.add_child(folium.Element(leyenda))
 m
 ```
 
+Ya están procesadas **cinco ciudades ribereñas** —Asunción, Ciudad del Este,
+Encarnación, Concepción y Pilar— con la susceptibilidad **alta** (km²): Pilar 8,9 ·
+Encarnación 7,0 · Asunción 6,6 · Concepción 6,4 · Ciudad del Este 5,5. Pilar y
+Encarnación, en llanura, son las de mayor susceptibilidad relativa.
+
 ::: {.vacio}
 **Modelo, no evento.** El DEM de 30 m identifica *lows* a escala de barrio; no capta
-la red de desagües ni el anegamiento a escala de calle. Falta el **estudio hidráulico
-urbano** oficial (MOPC/ESSAP) y la **serie de lluvia por estación** de la DINAC.
-La susceptibilidad de Ciudad del Este, Encarnación, Concepción y Pilar queda
-**pendiente** (se regenera con `scripts/analisis_pluvial_dem.py` cuando el servicio
-de datos DEM esté disponible).
+la red de desagües ni el anegamiento a escala de calle. En las ciudades de llanura
+(Pilar, Encarnación) la susceptibilidad pluvial se **solapa** fuertemente con la
+planicie fluvial (amenaza combinada). Falta el **estudio hidráulico urbano** oficial
+(MOPC/ESSAP) y la **serie de lluvia por estación** de la DINAC.
 :::
 
 ## Temporales documentados por ciudad

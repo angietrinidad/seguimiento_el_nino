@@ -81,6 +81,35 @@ autoconsumo) [prensa]{.badge-prensa} [@uh_ganaderia2024]. La **exportación de c
 alcanzó **355.744 t y ~USD 2.130 millones en 2025** [prensa]{.badge-prensa}
 [@forbes_carne2025] —un récord que convive con la crisis de los pequeños criadores—.
 
+## La huella espacial del agro: uso del suelo
+
+El uso del suelo hace **visible la geografía de las escalas**. Este mapa (ESA
+WorldCover 2021, analizado a ~320 m) muestra dónde está cada cosa:
+
+![Uso del suelo de Paraguay (ESA WorldCover 2021). Se distingue el cinturón agrícola del este, la pastura que avanza sobre el bosque del Chaco y el humedal del Pantanal al norte.](../datos/geo/uso-suelo-py.png)
+
+```{python}
+#| echo: false
+import json
+from IPython.display import Markdown
+d = json.load(open("datos/exposicion/uso_suelo_resumen.json", encoding="utf-8"))
+p = d["pct_nacional"]
+Markdown("| Cobertura | % del país |\n|---|---:|\n" +
+         "\n".join(f"| {k} | {v} % |" for k, v in p.items()))
+```
+
+- **El este agrícola:** la franja naranja del oriente es el **cinturón sojero**
+  (Alto Paraná, Itapúa, Canindeyú) —el agronegocio de exportación—.
+- **El Chaco de pastura:** los bloques amarillos tallados en el verde del bosque son la
+  **ganadería** avanzando sobre el Chaco (ver deforestación más abajo).
+- **Bosque y humedal:** el bosque aún cubre cerca de la mitad del país —coherente con el
+  **44,4 %** que reporta el INFONA [@infona_forestal2024]— y el Pantanal aporta el
+  humedal del norte.
+
+Agricultura y pastura suman en torno al **39 %** del territorio. El mapa muestra que las
+dos escalas del agro no solo difieren en tamaño, sino en **geografía**: soja al este,
+ganadería al oeste [@esa_worldcover].
+
 ## Exposición diferencial a las amenazas
 
 *La misma amenaza golpea distinto según la escala.* Este es el nexo con los módulos de

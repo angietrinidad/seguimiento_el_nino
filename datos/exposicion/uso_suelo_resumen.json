@@ -1,0 +1,14 @@
+{
+  "fuente": "ESA WorldCover 2021 (10 m) vía Microsoft Planetary Computer",
+  "resolucion_analisis_m": 320,
+  "pct_nacional": {
+    "Bosque": 47.9,
+    "Pastizal/pastura": 25.7,
+    "Agricultura": 13.5,
+    "Arbustos/sabana": 7.5,
+    "Humedal": 4.5,
+    "Agua": 0.8,
+    "Urbano": 0.2,
+    "Suelo desnudo": 0.0
+  }
+}
