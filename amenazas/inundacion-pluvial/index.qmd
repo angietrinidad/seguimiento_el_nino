@@ -1,5 +1,7 @@
 ---
 title: "Inundaciones pluviales urbanas en Paraguay"
+aliases:
+  - "/08-pluvial/"
 ---
 
 La inundación **pluvial** —anegamientos y **raudales** que la lluvia intensa genera

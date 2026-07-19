@@ -1,5 +1,7 @@
 ---
 title: "Impacto por departamento"
+aliases:
+  - "/03-paraguay/departamentos/"
 ---
 
 Departamentos priorizados por su exposición a crecidas de la cuenca del

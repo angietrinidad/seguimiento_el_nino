@@ -1,5 +1,7 @@
 ---
 title: "Asunción y área metropolitana"
+aliases:
+  - "/04-asuncion-metropolitana/"
 ---
 
 Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —los

@@ -1,5 +1,7 @@
 ---
 title: "Marco: el desastre como construcción social"
+aliases:
+  - "/01-marco-conceptual/"
 ---
 
 Este repositorio parte de una premisa: **el desastre no es natural**. Una crecida, una

@@ -1,5 +1,7 @@
 ---
 title: "Recomendaciones: acción anticipatoria"
+aliases:
+  - "/07-recomendaciones/"
 ---
 
 De la **amenaza** a la **acción**. Si los desastres están **anunciados** —el clima se

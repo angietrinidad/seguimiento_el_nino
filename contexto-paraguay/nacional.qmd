@@ -1,5 +1,7 @@
 ---
 title: "Paraguay: nivel nacional"
+aliases:
+  - "/03-paraguay/nacional.html"
 ---
 
 En Paraguay, la fase cálida del ENOS (El Niño) se asocia a **precipitaciones por

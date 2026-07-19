@@ -1,5 +1,7 @@
 ---
 title: "Exposición y población en riesgo"
+aliases:
+  - "/06-exposicion/"
 ---
 
 Mapa de la **situación actual de exposición** ante el episodio de El Niño

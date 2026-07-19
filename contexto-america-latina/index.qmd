@@ -1,5 +1,7 @@
 ---
 title: "América Latina: panorama regional"
+aliases:
+  - "/02-america-latina/"
 ---
 
 Panorama regional del ENOS: impactos del episodio **2023-24** por subregión y
