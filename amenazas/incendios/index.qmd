@@ -54,5 +54,5 @@ territorio.
 
 La prevención (regulación de quemas, alerta temprana por focos de calor, preparación
 de bomberos) y la respuesta se integrarán al marco de
-[recomendaciones](../../07-recomendaciones/index.qmd), en coordinación con INFONA y la
+[recomendaciones](../../recomendaciones/index.qmd), en coordinación con INFONA y la
 SEN.

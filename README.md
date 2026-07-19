@@ -12,16 +12,16 @@ investigación en sociología y gestión del riesgo de desastres.
 
 ```
 ├── index.qmd                  Panel de control (KPIs en vivo + grilla de amenazas)
-├── 01-marco-conceptual/       Marco: el desastre como construcción social + ENOS
-├── amenazas/                  Módulos por amenaza (plantilla común)
+├── marco/                     El desastre como construcción social + ENOS
+├── amenazas/                  Un módulo por amenaza (plantilla común)
+│   ├── inundacion-fluvial/    Desborde del río (huellas Sentinel-1)
+│   ├── inundacion-pluvial/    Lluvia (escala, IDF, DEM multiciudad, eventos)
 │   ├── sequia/  frio/  dengue/  incendios/
-├── 05-mapa-riesgo/            Inundación fluvial (huellas Sentinel-1)
-├── 08-pluvial/                Inundación pluvial (escala, IDF, DEM, eventos)
-├── 06-exposicion/             Exposición: población, salud, educación, comercio (mapa)
-├── agro-ganaderia/            Agricultura y ganadería como medios de vida
+├── exposicion/                Población, salud, educación y comercio (mapa)
+├── agro-ganaderia/            Agricultura y ganadería como medios de vida (uso del suelo)
 ├── situacion-actual/          Monitoreo en vivo (río + lluvia DMH) del episodio ENOS
-├── 07-recomendaciones/        Acción anticipatoria (SEN + normas HSP)
-├── 02-america-latina/ 03-paraguay/ 04-asuncion-metropolitana/   Contexto histórico ENOS
+├── recomendaciones/           Acción anticipatoria por amenaza (SEN + normas HSP)
+├── contexto-america-latina/ contexto-paraguay/ contexto-asuncion/   Contexto histórico ENOS
 ├── scripts/                   Procesamiento (Sentinel-1, DEM, OSM, Overpass, DMH)
 ├── datos/                     Series CSV, GeoJSON derivados, Excels de exposición
 ├── referencias.bib            Bibliografía (APA 7) — ~150 fuentes verificadas

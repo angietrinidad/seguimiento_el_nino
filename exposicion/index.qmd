@@ -225,7 +225,7 @@ nivel del río al que se inundan** (cada uno contado en una sola zona, sin doble
 
 - **Zona de riesgo de inundación:** unión de las huellas de inundación derivadas
   de Sentinel-1 para 2015-16, 2018-19 y 2023-24 (ver
-  [mapa histórico](../05-mapa-riesgo/index.qmd)), más un **buffer de 550 m** para
+  [mapa histórico](../amenazas/inundacion-fluvial/index.qmd)), más un **buffer de 550 m** para
   incluir los barrios afectados adyacentes, no solo la lámina de agua.
 - **Expuestos:** servicios de salud y centros educativos cuya ubicación cae
   dentro de esa zona de riesgo.
@@ -270,7 +270,7 @@ o concentre, con independencia del río—. Se deriva del **Copernicus DEM (30 m
 combinando el relleno de depresiones (encharcamiento), la acumulación de flujo y el
 índice topográfico de humedad. El detalle de la evidencia (temporales documentados,
 arroyos urbanos, vínculo con El Niño) está en
-[Inundaciones pluviales](../08-pluvial/index.qmd).
+[Inundaciones pluviales](../amenazas/inundacion-pluvial/index.qmd).
 
 ```{python}
 #| label: pluvial-exp
@@ -320,7 +320,7 @@ fluvial, **ambas amenazas se combinan**.
 - **Susceptibilidad pluvial:** modelo topográfico propio sobre el Copernicus DEM
   (relleno de depresiones + acumulación de flujo + índice de humedad topográfica)
   [@copernicus_dem]. Evidencia de eventos y teleconexión ENOS-lluvia en
-  [Inundaciones pluviales](../08-pluvial/index.qmd).
+  [Inundaciones pluviales](../amenazas/inundacion-pluvial/index.qmd).
 
 ## Vacíos y límites
 

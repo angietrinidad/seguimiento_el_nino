@@ -89,6 +89,6 @@ sobre mayores y bebés, confirma el perfil de vulnerabilidad
 
 Las acciones por ola de frío (activación temprana de albergues al cruzar el umbral,
 abrigo, atención a grupos vulnerables, refuerzo respiratorio en salud) se integran al
-marco de [recomendaciones](../../07-recomendaciones/index.qmd), con el enfoque por
+marco de [recomendaciones](../../recomendaciones/index.qmd), con el enfoque por
 **ciclo de vida y género** ya desarrollado y las normas humanitarias (Esfera:
 alojamiento y artículos no alimentarios; salud).

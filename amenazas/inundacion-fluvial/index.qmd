@@ -142,8 +142,8 @@ m
 
 *Coordenadas de las zonas: aproximadas al centro del área (dato geográfico
 público). La afectación proviene de los CSV del repositorio; ver
-[Asunción](../04-asuncion-metropolitana/index.qmd) y
-[Paraguay](../03-paraguay/nacional.qmd) para el detalle y las citas.*
+[Asunción](../../contexto-asuncion/index.qmd) y
+[Paraguay](../../contexto-paraguay/nacional.qmd) para el detalle y las citas.*
 
 ## Capas del mapa
 

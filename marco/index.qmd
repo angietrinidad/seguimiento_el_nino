@@ -21,13 +21,13 @@ sorpresa: es un riesgo **previsible** sobre el que se decidió —o se omitió�
 eso el sitio se llama **Desastres Anunciados**: analiza cómo se **produce la
 vulnerabilidad** —con una lente atenta al **género**, la **clase** y la **desigualdad
 territorial**— y por qué, sabiéndolo, el desastre igual ocurre. Es también el sentido de
-la **[acción anticipatoria](../07-recomendaciones/index.qmd)**: actuar antes, sobre lo
+la **[acción anticipatoria](../recomendaciones/index.qmd)**: actuar antes, sobre lo
 anunciado.
 
 ## Amenazas y motores: dónde entra el ENOS
 
-Las **amenazas** del sitio —inundación [fluvial](../05-mapa-riesgo/index.qmd) y
-[pluvial](../08-pluvial/index.qmd), [sequía](../amenazas/sequia/index.qmd),
+Las **amenazas** del sitio —inundación [fluvial](../amenazas/inundacion-fluvial/index.qmd) y
+[pluvial](../amenazas/inundacion-pluvial/index.qmd), [sequía](../amenazas/sequia/index.qmd),
 [olas de frío](../amenazas/frio/index.qmd), [dengue](../amenazas/dengue/index.qmd),
 [incendios](../amenazas/incendios/index.qmd)— tienen distintos **motores**. Uno central
 para Paraguay es el **El Niño-Oscilación del Sur (ENOS)**: el ciclo climático que inclina
@@ -123,14 +123,14 @@ un punto y momento dados.
 
 Para Paraguay, la relevancia del ENOS es directa y de **doble filo**: la fase cálida
 (**El Niño**) tiende a **aumentar las precipitaciones** sobre la cuenca del
-Paraná-Paraguay —crecidas e [inundación](../05-mapa-riesgo/index.qmd)—, mientras la fase
+Paraná-Paraguay —crecidas e [inundación](../amenazas/inundacion-fluvial/index.qmd)—, mientras la fase
 fría (**La Niña**) trae **déficit** —[sequía y bajante](../amenazas/sequia/index.qmd)—.
 Pero el encadenamiento no termina en el clima: la anomalía oceánica → lluvia o sequía →
 crecida o bajante → **afectación social desigual**, según quién esté expuesto y con qué
 capacidad de respuesta. Ese último eslabón —el de la vulnerabilidad— es el que estructura
-las secciones de [exposición](../06-exposicion/index.qmd),
+las secciones de [exposición](../exposicion/index.qmd),
 [medios de vida](../agro-ganaderia/index.qmd) y cada
-[amenaza](../08-pluvial/index.qmd).
+[amenaza](../amenazas/inundacion-pluvial/index.qmd).
 
 ::: {.callout-important}
 ## Episodio en curso

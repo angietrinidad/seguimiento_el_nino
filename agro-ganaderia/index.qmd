@@ -115,7 +115,7 @@ ganadería al oeste [@esa_worldcover].
 *La misma amenaza golpea distinto según la escala.* Este es el nexo con los módulos de
 amenaza del sitio:
 
-- **[Inundación](../05-mapa-riesgo/index.qmd):** las crecidas anegan cultivos y ganado
+- **[Inundación](../amenazas/inundacion-fluvial/index.qmd):** las crecidas anegan cultivos y ganado
   en Ñeembucú, Central y el Chaco (abril de 2026, miles de vacunos en el agua). Un caso
   de **riesgo construido**: productores atribuyen la "**inundación artificial**" a los
   **terraplenes y el represamiento de cauces por grandes arroceras** —el pequeño

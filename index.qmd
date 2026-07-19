@@ -13,8 +13,8 @@ golpe suele llegar avisado. Este repositorio prioriza **fuentes oficiales y dato
 primarios**, señala de forma explícita los **vacíos de información** y **no incorpora
 cifras sin fuente verificable** (ver [metodología](metodologia.qmd)).
 
-Cubre varias **amenazas** —[inundación fluvial](05-mapa-riesgo/index.qmd) y
-[pluvial](08-pluvial/index.qmd), [sequía](amenazas/sequia/index.qmd),
+Cubre varias **amenazas** —[inundación fluvial](amenazas/inundacion-fluvial/index.qmd) y
+[pluvial](amenazas/inundacion-pluvial/index.qmd), [sequía](amenazas/sequia/index.qmd),
 [olas de frío](amenazas/frio/index.qmd), [dengue](amenazas/dengue/index.qmd) e
 [incendios](amenazas/incendios/index.qmd)— y su exposición, con el eje del ciclo
 **El Niño-Oscilación del Sur (ENOS)** como motor climático central.
@@ -68,8 +68,8 @@ kpis = "<div style='display:flex;gap:.8em;flex-wrap:wrap;margin:.6em 0 1.2em'>" 
 
 # --- grilla de amenazas ---
 amenazas = [
-    ("🌊", "Inundación fluvial", "río", "Monitoreo · río bajo", "#1b5e7a", "05-mapa-riesgo/index.html"),
-    ("🌧️", "Inundación pluvial", "lluvia", "Estación seca (0 mm)", "#2b8cbe", "08-pluvial/index.html"),
+    ("🌊", "Inundación fluvial", "río", "Monitoreo · río bajo", "#1b5e7a", "amenazas/inundacion-fluvial/index.html"),
+    ("🌧️", "Inundación pluvial", "lluvia", "Estación seca (0 mm)", "#2b8cbe", "amenazas/inundacion-pluvial/index.html"),
     ("🏜️", "Sequía / bajante", "La Niña", "Documentado · récord −1,61 m", "#b58900", "amenazas/sequia/index.html"),
     ("❄️", "Olas de frío", "Jaho'i", "Documentado · Plan Jaho'i", "#5b8db8", "amenazas/frio/index.html"),
     ("🦟", "Dengue", "salud climática", "Documentado · epidemia 2023-24", "#2a9d3f", "amenazas/dengue/index.html"),
@@ -101,14 +101,14 @@ lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas
 
 ## Cómo está organizado
 
-- **[Marco: desastres construidos](01-marco-conceptual/index.qmd)** — la tesis y el ENOS como motor.
-- **Amenazas** — [inundación fluvial](05-mapa-riesgo/index.qmd), [pluvial](08-pluvial/index.qmd),
+- **[Marco: desastres construidos](marco/index.qmd)** — la tesis y el ENOS como motor.
+- **Amenazas** — [inundación fluvial](amenazas/inundacion-fluvial/index.qmd), [pluvial](amenazas/inundacion-pluvial/index.qmd),
   [sequía](amenazas/sequia/index.qmd), [frío](amenazas/frio/index.qmd),
   [dengue](amenazas/dengue/index.qmd), [incendios](amenazas/incendios/index.qmd).
-- **[Exposición y vulnerabilidad](06-exposicion/index.qmd)** · **[Agricultura y ganadería](agro-ganaderia/index.qmd)** · **[Situación actual](situacion-actual/index.qmd)** · **[Recomendaciones](07-recomendaciones/index.qmd)**.
-- **Contexto histórico (ENOS):** [América Latina](02-america-latina/index.qmd) ·
-  [Paraguay](03-paraguay/nacional.qmd) · [por departamento](03-paraguay/departamentos/index.qmd) ·
-  [Asunción](04-asuncion-metropolitana/index.qmd).
+- **[Exposición y vulnerabilidad](exposicion/index.qmd)** · **[Agricultura y ganadería](agro-ganaderia/index.qmd)** · **[Situación actual](situacion-actual/index.qmd)** · **[Recomendaciones](recomendaciones/index.qmd)**.
+- **Contexto histórico (ENOS):** [América Latina](contexto-america-latina/index.qmd) ·
+  [Paraguay](contexto-paraguay/nacional.qmd) · [por departamento](contexto-paraguay/departamentos/index.qmd) ·
+  [Asunción](contexto-asuncion/index.qmd).
 
 ## Tabla resumen comparativa por episodio
 

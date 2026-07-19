@@ -80,7 +80,7 @@ el récord histórico ronda los **222 mm en 24 h** (feb 2014) [@abc_temporal2014
 La amenaza pluvial se trata en detalle —con su **escala de colapso**, la relación
 **intensidad-duración (IDF)**, el **modelo de susceptibilidad** topográfica y los
 temporales documentados en Asunción y otras ciudades del país— en
-**[Inundaciones pluviales urbanas en Paraguay](../08-pluvial/index.qmd)**.
+**[Inundaciones pluviales urbanas en Paraguay](../amenazas/inundacion-pluvial/index.qmd)**.
 :::
 
 ## Población en situación de vulnerabilidad

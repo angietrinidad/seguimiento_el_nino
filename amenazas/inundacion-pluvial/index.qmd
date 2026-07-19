@@ -19,9 +19,9 @@ explícitamente de la amenaza **fluvial** tratada en el resto del repositorio.
     <b>Disparador:</b> el <b>nivel del río</b> (cota hidrométrica).<br>
     <b>Dónde:</b> los bañados y barrios ribereños bajos.<br>
     <b>Ritmo:</b> lento (días–semanas); previsible.<br>
-    <b>En el sitio:</b> <a href="../05-mapa-riesgo/index.html">mapa histórico</a>,
-    <a href="../06-exposicion/index.html">exposición</a>,
-    <a href="../situacion-actual/index.html">cota actual</a>.</div>
+    <b>En el sitio:</b> <a href="../inundacion-fluvial/index.html">mapa histórico</a>,
+    <a href="../../exposicion/index.html">exposición</a>,
+    <a href="../../situacion-actual/index.html">cota actual</a>.</div>
   </div>
   <div style="flex:1;min-width:260px;border-top:4px solid #2b8cbe;background:#f2f7fb;padding:.8em 1em;border-radius:6px">
     <div style="font-weight:700;color:#2b6cb0;margin-bottom:.4em">🌧️ Pluvial (lluvia y drenaje)</div>
@@ -30,7 +30,7 @@ explícitamente de la amenaza **fluvial** tratada en el resto del repositorio.
     <b>Disparador:</b> el <b>pronóstico de lluvia</b> (mm/h), no el río.<br>
     <b>Dónde:</b> toda la ciudad; arroyos urbanos y puntos bajos.<br>
     <b>Ritmo:</b> súbito (minutos–horas); raudales letales.<br>
-    <b>En el sitio:</b> esta página + <a href="../situacion-actual/index.html#lluvia-actual-estaciones-automáticas-de-la-dmh">lluvia en vivo</a>.</div>
+    <b>En el sitio:</b> esta página + <a href="../../situacion-actual/index.html#lluvia-actual-estaciones-automáticas-de-la-dmh">lluvia en vivo</a>.</div>
   </div>
 </div>
 ```
@@ -294,7 +294,7 @@ La DMH/DINAC opera **Estaciones Meteorológicas Automáticas (EMAs)** en todo el
 [@dmh_emas]; la de **referencia climatológica** de Asunción/Central es el
 **Aeropuerto Silvio Pettirossi** (Luque). El **estado de lluvia en vivo** (acumulado
 del día, red nacional) está en
-[Situación actual](../situacion-actual/index.qmd#lluvia-actual-estaciones-automáticas-de-la-dmh).
+[Situación actual](../../situacion-actual/index.qmd#lluvia-actual-estaciones-automáticas-de-la-dmh).
 Para convertir la escala empírica en una **IDF con períodos de retorno**, el paso
 concreto es solicitar a la DMH la **serie pluviográfica histórica** de estas
 estaciones (o los coeficientes de [@montedomecq1995]).

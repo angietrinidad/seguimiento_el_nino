@@ -7,7 +7,7 @@ date-format: "D [de] MMMM [de] YYYY"
 Página de **seguimiento del episodio de El Niño en curso (2026-2027)**. Reúne en
 un solo lugar el estado del fenómeno, el pronóstico para Paraguay y la exposición
 de la población. Para el registro de episodios pasados, ver
-[Antecedentes históricos](../05-mapa-riesgo/index.qmd).
+[Antecedentes históricos](../amenazas/inundacion-fluvial/index.qmd).
 
 ::: {.callout-important}
 ## Estado al día
@@ -77,7 +77,7 @@ cota: correr `scripts/actualizar_nivel_rio.py` y re-renderizar.
 La amenaza **pluvial** (raudales por lluvia) no depende del río sino de la
 intensidad de la lluvia. Este panel lee la red **nacional** de Estaciones
 Meteorológicas Automáticas (EMAs) de la DMH [@dmh_emas], con el acumulado del día, y
-lo ubica en la [escala de colapso pluvial](../08-pluvial/index.qmd#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf).
+lo ubica en la [escala de colapso pluvial](../amenazas/inundacion-pluvial/index.qmd#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf).
 
 ```{python}
 #| echo: false
@@ -128,7 +128,7 @@ HTML(salida)
 ::: {.callout-note appearance="minimal"}
 Acumulado **del día en hora local** (orientativo). Subestima el riesgo de **raudal**,
 que depende de la intensidad en minutos: ver la
-[escala intensidad-duración](../08-pluvial/index.qmd#el-eje-de-duración-idf-simplificada).
+[escala intensidad-duración](../amenazas/inundacion-pluvial/index.qmd#el-eje-de-duración-idf-simplificada).
 :::
 
 ## 1. El fenómeno hoy
@@ -140,7 +140,7 @@ que depende de la intensidad en minutos: ver la
 | **OMM** | 80 % para jun-ago 2026, ≥90 % en los trimestres siguientes [@wmo_update_2026] |
 
 Impactos regionales de episodios pasados en
-[América Latina](../02-america-latina/index.qmd).
+[América Latina](../contexto-america-latina/index.qmd).
 
 ## 2. Qué se espera en Paraguay
 
@@ -149,7 +149,7 @@ El Niño domine entre julio y agosto de 2026, y anticipa una **primavera lluvios
 con riesgo de **lluvias intensas e inundaciones hacia finales de 2026**, tendencia
 que podría intensificarse en el primer trimestre de 2027 [@abc_dmh_2026].
 
-Detalle y episodios previos en [Paraguay](../03-paraguay/nacional.qmd).
+Detalle y episodios previos en [Paraguay](../contexto-paraguay/nacional.qmd).
 
 ## 3. Quién está expuesto
 
@@ -175,7 +175,7 @@ f"""| Indicador | Valor |
 ```
 
 Mapa completo e interactivo en
-[Exposición y población en riesgo](../06-exposicion/index.qmd).
+[Exposición y población en riesgo](../exposicion/index.qmd).
 
 ## 4. Cómo se compara con episodios pasados
 
@@ -183,7 +183,7 @@ El episodio en curso se lee sobre el registro de 1997-98, 2015-16, 2018-19 y
 2023-24. La comparación de intensidad (ONI) está en la
 [portada](../index.qmd#tabla-resumen-comparativa-por-episodio); las huellas de
 inundación derivadas de satélite, en el
-[mapa histórico de inundaciones](../05-mapa-riesgo/index.qmd).
+[mapa histórico de inundaciones](../amenazas/inundacion-fluvial/index.qmd).
 
 ::: {.callout-note}
 Página viva: se actualiza con cada nuevo boletín de la DINAC y de NOAA/OMM. La

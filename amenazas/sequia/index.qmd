@@ -97,5 +97,5 @@ de mortandad de ganado.
 La acción anticipatoria ante sequía/bajante —**gestión y reserva de agua**, alerta a la
 **navegación** por calado, apoyo al **agro y la pesca** (LEGS para ganadería, WASH para
 agua), y previsión **energética**— se integra al marco de
-[recomendaciones](../../07-recomendaciones/index.qmd), alineado con la SEN y las normas
+[recomendaciones](../../recomendaciones/index.qmd), alineado con la SEN y las normas
 humanitarias.

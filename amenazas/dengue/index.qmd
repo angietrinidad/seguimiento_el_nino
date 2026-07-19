@@ -88,4 +88,4 @@ afectada (43 % de los hospitalizados en 2023-2024 eran pediátricos)
 Las medidas (eliminación de criaderos antes del verano, vacunación, vigilancia y
 atención oportuna) se articulan con la respuesta a inundaciones —**la recuperación
 posinundación debe incluir el control vectorial**— dentro del marco de
-[recomendaciones](../../07-recomendaciones/index.qmd).
+[recomendaciones](../../recomendaciones/index.qmd).

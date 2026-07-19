@@ -1,0 +1,42 @@
+---
+title: "Amenazas"
+subtitle: "Las amenazas que estudia el sitio, con una plantilla común"
+---
+
+Una **amenaza** es un fenómeno físico con potencial de daño; se vuelve **desastre**
+solo donde encuentra vulnerabilidad (ver [marco](../marco/index.qmd)). Cada amenaza se
+trata con la **misma plantilla** —caracterización → vínculo climático → evidencia →
+exposición → recomendaciones— para poder compararlas y sumar nuevas sin rehacer el sitio.
+
+```{=html}
+<div style="display:flex;gap:.7em;flex-wrap:wrap;margin:1em 0">
+  <a href="inundacion-fluvial/index.html" style="flex:1;min-width:220px;text-decoration:none;color:inherit">
+    <div style="border:1px solid #e2e6ea;border-left:5px solid #1b5e7a;border-radius:8px;padding:.7em .9em;height:100%">
+      <div style="font-size:15px;font-weight:700">🌊 Inundación fluvial</div>
+      <div style="font-size:13px;color:#666;margin:.2em 0">Desborde del río Paraguay/Paraná. Disparador: el nivel del río.</div></div></a>
+  <a href="inundacion-pluvial/index.html" style="flex:1;min-width:220px;text-decoration:none;color:inherit">
+    <div style="border:1px solid #e2e6ea;border-left:5px solid #2b8cbe;border-radius:8px;padding:.7em .9em;height:100%">
+      <div style="font-size:15px;font-weight:700">🌧️ Inundación pluvial</div>
+      <div style="font-size:13px;color:#666;margin:.2em 0">Raudales por lluvia y drenaje insuficiente. Disparador: la intensidad de la lluvia.</div></div></a>
+  <a href="sequia/index.html" style="flex:1;min-width:220px;text-decoration:none;color:inherit">
+    <div style="border:1px solid #e2e6ea;border-left:5px solid #b58900;border-radius:8px;padding:.7em .9em;height:100%">
+      <div style="font-size:15px;font-weight:700">🏜️ Sequía y bajante</div>
+      <div style="font-size:13px;color:#666;margin:.2em 0">La otra cara del ENOS (La Niña). Récord: −1,61 m (2024).</div></div></a>
+  <a href="frio/index.html" style="flex:1;min-width:220px;text-decoration:none;color:inherit">
+    <div style="border:1px solid #e2e6ea;border-left:5px solid #5b8db8;border-radius:8px;padding:.7em .9em;height:100%">
+      <div style="font-size:15px;font-weight:700">❄️ Olas de frío</div>
+      <div style="font-size:13px;color:#666;margin:.2em 0">Bajas temperaturas y heladas. Marco oficial: Plan Jaho'i (SEN).</div></div></a>
+  <a href="dengue/index.html" style="flex:1;min-width:220px;text-decoration:none;color:inherit">
+    <div style="border:1px solid #e2e6ea;border-left:5px solid #2a9d3f;border-radius:8px;padding:.7em .9em;height:100%">
+      <div style="font-size:15px;font-weight:700">🦟 Dengue</div>
+      <div style="font-size:13px;color:#666;margin:.2em 0">Arbovirosis sensible al clima y al agua estancada. Epidemia 2023-24.</div></div></a>
+  <a href="incendios/index.html" style="flex:1;min-width:220px;text-decoration:none;color:inherit">
+    <div style="border:1px solid #e2e6ea;border-left:5px solid #c0392b;border-radius:8px;padding:.7em .9em;height:100%">
+      <div style="font-size:15px;font-weight:700">🔥 Incendios</div>
+      <div style="font-size:13px;color:#666;margin:.2em 0">Fuego ligado a la sequía y al uso del suelo. Récord: 3,49 M ha (2020).</div></div></a>
+</div>
+```
+
+Todas comparten el mismo motor climático de fondo —el **ENOS**— y la misma lógica de
+respuesta —la **[acción anticipatoria](../recomendaciones/index.qmd)**—: como están
+*anunciadas*, se puede actuar antes.
