@@ -259,6 +259,20 @@ eventos: temporales de nivel 3 o mayor se registraron en 2014, 2018, 2019, 2023 
 umbral de colapso se cruza con una regularidad preocupante para la infraestructura
 de drenaje actual.
 
+::: {.callout-note}
+## Las estaciones que miden esta lluvia (y cómo cerrar la IDF)
+La **DMH/DINAC** opera **Estaciones Meteorológicas Automáticas (EMAs)** en el área
+metropolitana [@dmh_emas]: el **Aeropuerto Internacional Silvio Pettirossi** (Luque,
+25°14′S 57°31′O) —la de **referencia climatológica** de Asunción/Central—, el
+**Centro Meteorológico Nacional** (Asunción), y las de la **UCA** (Santa Librada),
+la **UNA** (San Lorenzo), **Fecoprod** y **Villeta**. Miden precipitación cada 10
+minutos. Para pasar de esta escala empírica a una **IDF con períodos de retorno**,
+el camino concreto es solicitar a la DMH la **serie pluviográfica histórica** de
+estas estaciones (o los coeficientes de [@montedomecq1995]); el feed público solo
+expone el acumulado del día en tiempo real. El estado de lluvia **en vivo** de estas
+estaciones está en [Situación actual](../situacion-actual/index.qmd#lluvia-actual-estaciones-automáticas-de-la-dmh).
+:::
+
 ### Arroyos urbanos y puntos críticos
 
 Buena parte del anegamiento pluvial se organiza en torno a los **arroyos urbanos**,

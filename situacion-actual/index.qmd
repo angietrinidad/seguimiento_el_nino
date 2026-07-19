@@ -72,6 +72,65 @@ pronóstico de El Niño anticipa el ascenso hacia la primavera. Para refrescar l
 cota: correr `scripts/actualizar_nivel_rio.py` y re-renderizar.
 :::
 
+## Lluvia actual (estaciones automáticas de la DMH)
+
+La amenaza **pluvial** (raudales por lluvia) no depende del río sino de la
+intensidad de la lluvia. Este panel lee las **Estaciones Meteorológicas Automáticas
+(EMAs)** de la DMH en el área metropolitana [@dmh_emas], con el acumulado del día,
+y lo ubica en la [escala de colapso pluvial](../04-asuncion-metropolitana/index.qmd#una-escala-empírica-cuánta-lluvia-colapsa-asunción).
+
+```{python}
+#| echo: false
+import json, os
+from IPython.display import HTML
+p = "datos/estaciones-dmh-metro.json"
+if not os.path.exists(p):
+    salida = "<div class='vacio'>Datos de estaciones DMH pendientes de generar.</div>"
+else:
+    d = json.load(open(p, encoding="utf-8"))
+    activas = [e for e in d["estaciones"] if e["activa"] and e["precip_dia_mm"] is not None]
+    inactivas = [e for e in d["estaciones"] if not e["activa"]]
+    # nivel de la escala según el acumulado del día (bandas coherentes con 04)
+    def banda(mm):
+        if mm >= 150: return ("4 · Colapso / catástrofe", "#7a1f2b")
+        if mm >= 80:  return ("3 · Anegamiento urbano extendido", "#d1495b")
+        if mm >= 40:  return ("1-2 · Encharcamientos y raudales localizados", "#e8842c")
+        if mm > 0:    return ("bajo el umbral de afectación", "#2a9d3f")
+        return ("sin lluvia significativa (0 mm)", "#2a9d3f")
+    maxmm = max((e["precip_dia_mm"] for e in activas), default=None)
+    if maxmm is None:
+        estado = "<i>sin estaciones activas con dato de lluvia ahora mismo.</i>"
+    else:
+        etq, col = banda(maxmm)
+        estado = (f"Máximo acumulado hoy entre las estaciones activas: "
+                  f"<b style='font-size:20px'>{maxmm} mm</b> → "
+                  f"<b style='color:{col}'>{etq}</b>")
+    filas = "".join(
+        f"<tr><td style='padding:3px 12px 3px 0'>{e['ciudad']} — {e['nombre']}</td>"
+        f"<td style='padding:3px 0;text-align:right'><b>{e['precip_dia_mm']} mm</b></td></tr>"
+        for e in activas)
+    tabla = (f"<table style='font-size:14px;border-collapse:collapse;margin:.6em 0'>"
+             f"<tr style='color:#555;border-bottom:1px solid #ddd'>"
+             f"<th style='text-align:left'>Estación activa</th>"
+             f"<th style='text-align:right'>Acum. del día</th></tr>{filas}</table>")
+    upd = (d.get("actualizado") or {}).get("local", "s/f")
+    pie = (f"<div style='font-size:12px;color:#888;margin-top:.4em'>Última actualización del feed: "
+           f"<b>{upd}</b> · fuente: DMH/DINAC (EMAs), orientativa, no oficial · "
+           f"{len(inactivas)} estación(es) del metro sin transmitir al día. "
+           f"Para refrescar: correr <code>scripts/estaciones_dmh.py</code>.</div>")
+    salida = f"<div style='max-width:600px'><div style='margin-bottom:.4em'>{estado}</div>{tabla}{pie}</div>"
+# HTML() debe ir a nivel superior (dentro de if/else no se auto-muestra)
+HTML(salida)
+```
+
+::: {.callout-note appearance="minimal"}
+La DMH publica la precipitación como **acumulado del día en hora local** (medición
+cada 10 min); es orientativa. El acumulado diario **subestima el riesgo de raudal**,
+que depende de la intensidad en minutos (ver la
+[IDF simplificada](../04-asuncion-metropolitana/index.qmd#el-eje-de-duración-una-idf-simplificada)):
+un valor moderado caído en una hora puede ya generar raudales.
+:::
+
 ## 1. El fenómeno hoy
 
 | Autoridad | Diagnóstico (mediados de 2026) |
