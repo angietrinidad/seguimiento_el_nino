@@ -68,7 +68,7 @@ amenazas = [
     ("🌧️", "Inundación pluvial", "lluvia", "Estación seca (0 mm)", "#2b8cbe", "08-pluvial/index.html"),
     ("🏜️", "Sequía / bajante", "La Niña", "Documentado · récord −1,61 m", "#b58900", "amenazas/sequia/index.html"),
     ("❄️", "Olas de frío", "Jaho'i", "Documentado · Plan Jaho'i", "#5b8db8", "amenazas/frio/index.html"),
-    ("🦟", "Dengue", "salud climática", "En desarrollo", "#2a9d3f", "amenazas/dengue/index.html"),
+    ("🦟", "Dengue", "salud climática", "Documentado · epidemia 2023-24", "#2a9d3f", "amenazas/dengue/index.html"),
     ("🔥", "Incendios", "quemas y sequía", "En desarrollo", "#c0392b", "amenazas/incendios/index.html"),
 ]
 def carta(icono, titulo, tag, estado, color, href):

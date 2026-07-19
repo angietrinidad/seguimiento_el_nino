@@ -3,43 +3,89 @@ title: "Dengue y enfermedades climáticas"
 subtitle: "El riesgo sanitario ligado al clima y al agua"
 ---
 
-El **dengue** (y otras arbovirosis como chikungunya y zika) es una amenaza
-**sensible al clima** y estrechamente ligada a las otras: el **agua estancada** tras
-las inundaciones y las lluvias, sumada al calor, multiplica los criaderos del
-mosquito *Aedes aegypti*. El riesgo se construye sobre la precariedad del hábitat y
-del acceso a servicios.
+El **dengue** (y otras arbovirosis como chikungunya y zika) es una amenaza **sensible
+al clima** y estrechamente ligada a las otras: el **calor** de los años El Niño y el
+**agua estancada** que dejan las lluvias y las inundaciones multiplican los criaderos
+del mosquito *Aedes aegypti*. Es un **desastre recurrente y socialmente construido**:
+golpea cada verano y con más fuerza donde falta saneamiento.
+
+## Epidemiología en Paraguay
+
+**La epidemia 2023-2024 fue la mayor reciente:** cerró con **más de 101.602 casos** y
+**132 fallecidos** en 44 semanas, con **43 % de hospitalizados pediátricos** y
+predominio del serotipo **DENV-2** [oficial]{.badge-oficial} [@mspbs_dengue_cierre2024].
+La magnitud se ve en las notificaciones anuales de la DGVS: **74.054 en 2023** y un pico
+de **297.059 en 2024**, frente a 31.647 en 2025 y 6.135 hasta la SE 13 de 2026
+[oficial]{.badge-oficial} [@dgvs_arbovirosis2026].
+
+- **Estacionalidad:** los picos van de fin de un año a las primeras semanas del
+  siguiente (verano).
+- **Geografía:** el riesgo se concentra en el **eje metropolitano —Central y
+  Asunción—** (San Lorenzo, Limpio, Luque; barrios asuncenos como Trinidad, Tacumbú,
+  Mburicaó) [oficial]{.badge-oficial} [@dgvs_arbovirosis2026].
+- **Serotipos y riesgo futuro:** en 2025 **reapareció el DENV-3 tras ~9 años** de
+  ausencia; como buena parte de la población no tiene inmunidad frente a él, es un
+  factor de riesgo de brote [oficial]{.badge-oficial} [@dgvs_serotipos2025].
+- **No solo dengue:** en 2022-2023 Paraguay sufrió la **mayor epidemia de chikungunya**
+  de su historia (**81.037 casos, 52 muertes**), también concentrada en Central y
+  Asunción [académico]{.badge-academico} [@torales_chik2023].
 
 ::: {.callout-note appearance="minimal"}
-**Módulo en desarrollo.** Se presenta el vínculo y la fuente regional ya verificada;
-las series epidemiológicas nacionales se incorporarán desde el MSPBS/OPS.
+La temporada **2025-2026** ha sido leve hasta la SE 13 (126 casos clasificados, sin
+muertes confirmadas), pero la reaparición del DENV-3 y el pronóstico de El Niño
+mantienen el riesgo latente [@dgvs_arbovirosis2026].
 :::
 
-## Vínculo con el clima y las otras amenazas
+## Vínculo con el clima, la inundación y el ENOS
 
-El calor y la humedad de los años **El Niño**, y el **agua estancada** que dejan las
-inundaciones (fluviales y pluviales), favorecen la proliferación del vector. La OPS
-documentó un **aumento de casos de dengue** en las Américas en 2024
-[oficial]{.badge-oficial} [@paho_dengue_2024]. Es el eslabón sanitario que conecta la
-amenaza hidrometeorológica con la salud pública.
+El calor y la humedad favorecen al vector. Un estudio de Asunción halló que la
+**temperatura** es un factor determinante de los casos, con un punto de quiebre en
+torno a los **21,3 °C** de mínima [académico]{.badge-academico}
+[@gomez_clima_asuncion2022]. A escala regional, la fase **El Niño** se asocia a **mayor
+infestación de *Aedes aegypti*** [@saopaulo_enso_dengue2024], y el **riesgo global de
+dengue crece con la amplitud del ENOS** [@natcomms_enso_dengue2025]. La propia **OPS**
+atribuyó el récord de dengue en las Américas de 2024 —en el que Paraguay fue el
+**segundo país más afectado**— a "*el aumento de las temperaturas, los eventos
+climáticos extremos y el fenómeno de El Niño*" [oficial]{.badge-oficial}
+[@paho_dengue_action2024].
 
-## Evidencia
+El eslabón con la **inundación** es el **agua estancada**: los recipientes y charcos que
+dejan las lluvias y las crecidas se vuelven criaderos. Es el nexo que conecta la
+amenaza hidrometeorológica con la salud pública —por eso la **fase de recuperación**
+tras una inundación debe incluir el **control vectorial**—.
 
 ::: {.vacio}
-Pendiente: serie de casos y brotes de dengue en Paraguay por temporada (boletines
-epidemiológicos del **MSPBS**), y su correlación con episodios de inundación/lluvia y
-con fases del ENOS.
+Sin fuente que lo cuantifique directamente en Paraguay: la relación causal "inundación
+fluvial del río → brote de dengue" con números; y el desglose de mortalidad por grupo
+de edad de la epidemia 2023-2024.
 :::
 
-## Exposición y vulnerabilidad
+## Respuesta y control
 
-La carga del dengue recae desproporcionadamente sobre los **asentamientos precarios**
-sin recolección de residuos ni provisión de agua por red —donde se acumulan
-recipientes y agua estancada—, es decir, sobre las mismas comunidades expuestas a la
-inundación. La vulnerabilidad es, otra vez, social antes que biológica.
+- **Vacuna:** Paraguay introdujo la **vacuna Qdenga (TAK-003, Takeda)** en **noviembre
+  de 2025** (primera fase con 72.200 dosis en niñez de 6 a 8 años), **ampliada en 2026
+  a personas de 6 a 39 años** [oficial]{.badge-oficial} [@pai_vacuna_dengue2025; @abc_vacuna_dengue2026].
+- **Marco de emergencia:** existe antecedente legal —la **Ley N.º 6502/2020** declaró
+  emergencia sanitaria nacional por 90 días ante la epidemia 2019-2020
+  [oficial]{.badge-oficial} [@ley6502_2020]—.
+- **Vigilancia y control:** eliminación de criaderos (mingas ambientales), fumigación
+  focal y vigilancia de hospitalizados y mortalidad, con coordinación intersectorial
+  (MSPBS, SEN, SENASA) y apoyo de OPS y UNICEF.
+
+## Exposición y vulnerabilidad social
+
+La carga del dengue recae sobre los **asentamientos precarios** sin recolección de
+residuos ni agua por red —donde se acumulan recipientes y agua estancada—, es decir,
+sobre las mismas comunidades periurbanas y de los bañados expuestas a la inundación. La
+vulnerabilidad es social antes que biológica: una intervención de **recolección de
+residuos** de gran tamaño en Asunción (2017-2019) redujo los criaderos en **52 %**
+[académico]{.badge-academico} [@residuos_criaderos2024]. La niñez es especialmente
+afectada (43 % de los hospitalizados en 2023-2024 eran pediátricos)
+[oficial]{.badge-oficial} [@mspbs_dengue_cierre2024].
 
 ## Recomendaciones
 
-Las medidas (eliminación de criaderos, vigilancia, atención oportuna) se articulan
-con la respuesta a inundaciones —**la fase de recuperación debe incluir el control
-vectorial**— dentro del marco de
+Las medidas (eliminación de criaderos antes del verano, vacunación, vigilancia y
+atención oportuna) se articulan con la respuesta a inundaciones —**la recuperación
+posinundación debe incluir el control vectorial**— dentro del marco de
 [recomendaciones](../../07-recomendaciones/index.qmd).
