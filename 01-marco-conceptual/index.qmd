@@ -1,6 +1,32 @@
 ---
-title: "Marco conceptual: qué es el ENOS"
+title: "Marco: el desastre como construcción social"
 ---
+
+Este repositorio parte de una premisa: **el desastre no es natural**. Una crecida, una
+sequía o una helada son **amenazas** —fenómenos físicos—; se vuelven **desastre** solo
+cuando encuentran a una **población vulnerable**. El riesgo es el producto de una
+amenaza por una **vulnerabilidad socialmente construida**:
+
+> **Riesgo = Amenaza × Vulnerabilidad**
+
+Esta mirada —de la geografía crítica de los desastres y la antropología del riesgo
+[@wisner2004atrisk; @garciaacosta2005]— desplaza el foco: de "la furia de la naturaleza"
+a las **decisiones sociales, económicas y políticas** que determinan quién vive en el
+bañado, quién no tiene agua por red, quién carece de seguro agrícola. Por eso el sitio se
+llama **Desastres Construidos**: analiza cómo se **produce la vulnerabilidad** —con una
+lente atenta al **género**, la **clase** y la **desigualdad territorial**— y no solo el
+peligro que la detona.
+
+## Amenazas y motores: dónde entra el ENOS
+
+Las **amenazas** del sitio —inundación [fluvial](../05-mapa-riesgo/index.qmd) y
+[pluvial](../08-pluvial/index.qmd), [sequía](../amenazas/sequia/index.qmd),
+[olas de frío](../amenazas/frio/index.qmd), [dengue](../amenazas/dengue/index.qmd),
+[incendios](../amenazas/incendios/index.qmd)— tienen distintos **motores**. Uno central
+para Paraguay es el **El Niño-Oscilación del Sur (ENOS)**: el ciclo climático que inclina
+la balanza hacia el **exceso** de lluvia (El Niño) o el **déficit** (La Niña), y que por
+eso está detrás de buena parte de las inundaciones y de las sequías. El resto de esta
+página explica cómo funciona.
 
 ## ¿Qué es El Niño-Oscilación del Sur (ENOS)?
 
@@ -88,14 +114,16 @@ un punto y momento dados.
 
 ## Por qué importa para la cuenca del Plata y Paraguay
 
-Para Paraguay, la relevancia de El Niño es directa: la fase cálida tiende a
-**aumentar las precipitaciones** sobre la cuenca del Paraná-Paraguay, lo que se
-traduce en **crecidas de los ríos Paraguay y Paraná** y en inundaciones —tanto
-**ribereñas** como **pluviales urbanas**— con impacto sobre población en zonas
-de riesgo, agricultura y ganadería. Este encadenamiento —anomalía oceánica →
-lluvia → crecida → afectación social— es el eje que estructura las secciones
-[Paraguay](../03-paraguay/nacional.qmd) y
-[Asunción](../04-asuncion-metropolitana/index.qmd).
+Para Paraguay, la relevancia del ENOS es directa y de **doble filo**: la fase cálida
+(**El Niño**) tiende a **aumentar las precipitaciones** sobre la cuenca del
+Paraná-Paraguay —crecidas e [inundación](../05-mapa-riesgo/index.qmd)—, mientras la fase
+fría (**La Niña**) trae **déficit** —[sequía y bajante](../amenazas/sequia/index.qmd)—.
+Pero el encadenamiento no termina en el clima: la anomalía oceánica → lluvia o sequía →
+crecida o bajante → **afectación social desigual**, según quién esté expuesto y con qué
+capacidad de respuesta. Ese último eslabón —el de la vulnerabilidad— es el que estructura
+las secciones de [exposición](../06-exposicion/index.qmd),
+[medios de vida](../agro-ganaderia/index.qmd) y cada
+[amenaza](../08-pluvial/index.qmd).
 
 ::: {.callout-important}
 ## Episodio en curso

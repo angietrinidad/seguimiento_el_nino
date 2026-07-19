@@ -1,24 +1,30 @@
-# Seguimiento El Niño (ENOS)
+# Desastres Construidos
 
-Repositorio documental sobre el fenómeno **El Niño-Oscilación del Sur (ENOS)**
-con tres niveles de resolución geográfica —**América Latina**, **Paraguay**
-(nacional y departamental) y **Asunción y área metropolitana**— como base
-empírica para investigación en sociología y gestión del riesgo de desastres.
+Base empírica y documental sobre el **riesgo de desastres en Paraguay** desde una
+mirada crítica: **el desastre no es natural, se construye socialmente** (riesgo =
+amenaza × vulnerabilidad). Cubre varias **amenazas** —inundación fluvial y pluvial,
+sequía y bajante, olas de frío, dengue e incendios— y su **exposición** (población,
+salud, educación, actividad comercial, agricultura y ganadería). Base para
+investigación en sociología y gestión del riesgo de desastres.
 
 ## Estructura
 
 ```
-├── index.qmd                     Portada + tabla resumen comparativa
-├── 01-marco-conceptual/          ENOS: definición y mecanismos físicos
-├── 02-america-latina/            Panorama regional e institucional
-├── 03-paraguay/
-│   ├── nacional.qmd
-│   └── departamentos/
-├── 04-asuncion-metropolitana/    Hidrología, DGRRD, vulnerabilidad urbana
-├── datos/                        Series de tiempo en CSV + diccionario
-├── fuentes/                      Registro y priorización de fuentes
-├── referencias.bib               Bibliografía (APA 7)
-└── metodologia.qmd               Convenciones y reglas del repositorio
+├── index.qmd                  Panel de control (KPIs en vivo + grilla de amenazas)
+├── 01-marco-conceptual/       Marco: el desastre como construcción social + ENOS
+├── amenazas/                  Módulos por amenaza (plantilla común)
+│   ├── sequia/  frio/  dengue/  incendios/
+├── 05-mapa-riesgo/            Inundación fluvial (huellas Sentinel-1)
+├── 08-pluvial/                Inundación pluvial (escala, IDF, DEM, eventos)
+├── 06-exposicion/             Exposición: población, salud, educación, comercio (mapa)
+├── agro-ganaderia/            Agricultura y ganadería como medios de vida
+├── situacion-actual/          Monitoreo en vivo (río + lluvia DMH) del episodio ENOS
+├── 07-recomendaciones/        Acción anticipatoria (SEN + normas HSP)
+├── 02-america-latina/ 03-paraguay/ 04-asuncion-metropolitana/   Contexto histórico ENOS
+├── scripts/                   Procesamiento (Sentinel-1, DEM, OSM, Overpass, DMH)
+├── datos/                     Series CSV, GeoJSON derivados, Excels de exposición
+├── referencias.bib            Bibliografía (APA 7) — ~150 fuentes verificadas
+└── metodologia.qmd            Convenciones y reglas del repositorio
 ```
 
 ## Principios
@@ -26,9 +32,8 @@ empírica para investigación en sociología y gestión del riesgo de desastres.
 - Prioridad a **fuentes oficiales y datos primarios**.
 - **No se fabrican cifras**: todo número tiene fuente verificable; las
   estimaciones no confirmadas se marcan como tales.
-- Los **vacíos de información** se señalan de forma explícita.
-- Foco en el episodio **2026-2027** en curso, con valor comparativo de
-  1997-98, 2015-16 y 2023-24.
+- Los **vacíos de información** se señalan de forma explícita (clase `.vacio`).
+- Lente crítico atento al **género, la clase y la desigualdad territorial**.
 
 ## Cómo construir el sitio
 
