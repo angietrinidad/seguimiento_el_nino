@@ -9,15 +9,8 @@ Base empírica y documental sobre el **riesgo de desastres en Paraguay**, desde 
 doble premisa: **el desastre no es natural —se construye socialmente— y casi nunca es
 sorpresa —está anunciado—**. La amenaza se vuelve desastre allí donde hay
 vulnerabilidad; y como el clima **se pronostica** y la vulnerabilidad **se conoce**, el
-golpe suele llegar avisado. Este repositorio prioriza **fuentes oficiales y datos
-primarios**, señala de forma explícita los **vacíos de información** y **no incorpora
-cifras sin fuente verificable** (ver [metodología](metodologia.qmd)).
-
-Cubre varias **amenazas** —[inundación fluvial](amenazas/inundacion-fluvial/index.qmd) y
-[pluvial](amenazas/inundacion-pluvial/index.qmd), [sequía](amenazas/sequia/index.qmd),
-[olas de frío](amenazas/frio/index.qmd), [dengue](amenazas/dengue/index.qmd) e
-[incendios](amenazas/incendios/index.qmd)— y su exposición, con el eje del ciclo
-**El Niño-Oscilación del Sur (ENOS)** como motor climático central.
+golpe suele llegar avisado. Prioriza **fuentes oficiales y datos primarios** y **no
+incorpora cifras sin fuente verificable** (ver [metodología](metodologia.qmd)).
 
 ## Panel de control
 
@@ -57,13 +50,14 @@ def kpi(icono, label, valor, sub, color):
             f"<div style='font-size:26px;font-weight:700;color:#222;margin:.1em 0'>{valor}</div>"
             f"<div style='font-size:12px;color:#777'>{sub}</div></div>")
 
+ACC = "#d8dee2"  # acento neutro uniforme (el color con significado va en las amenazas)
 kpis = "<div style='display:flex;gap:.8em;flex-wrap:wrap;margin:.6em 0 1.2em'>" + "".join([
-    kpi("🌀", "ENOS", "El Niño", "Niño 3.4 +1,2 °C · aviso NOAA", "#7b2cbf"),
-    kpi("🌊", "Río en Asunción", rio_val, rio_sub, "#2b6cb0"),
-    kpi("🌧️", "Lluvia hoy", lluvia_val, lluvia_sub, "#2b8cbe"),
-    kpi("👥", "Población en riesgo", f"{er.get('poblacion',0):,}".replace(",", "."), "en zona de inundación", "#b26a00"),
+    kpi("🌀", "ENOS", "El Niño", "Niño 3.4 +1,2 °C · aviso NOAA", ACC),
+    kpi("🌊", "Río en Asunción", rio_val, rio_sub, ACC),
+    kpi("🌧️", "Lluvia hoy", lluvia_val, lluvia_sub, ACC),
+    kpi("👥", "Población en riesgo", f"{er.get('poblacion',0):,}".replace(",", "."), "en zona de inundación", ACC),
     kpi("🏫", "Establecimientos expuestos", f"{er.get('escuelas',0)} esc · {er.get('salud',0)} salud",
-        f"{com.get('expuestos','—')} comercios · matrícula {er.get('matricula',0):,}".replace(",", "."), "#8a1c1c"),
+        f"{com.get('expuestos','—')} comercios · matrícula {er.get('matricula',0):,}".replace(",", "."), ACC),
 ]) + "</div>"
 
 # --- grilla de amenazas ---
@@ -99,57 +93,7 @@ HTML(kpis + grid)
 lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas
 **en desarrollo** tienen la estructura montada y se poblarán con fuentes primarias.*
 
-## Cómo está organizado
+## Explorá el sitio
 
-- **[Marco: el desastre construido y anunciado](marco/index.qmd)** — la tesis y el ENOS como motor.
-- **Amenazas** — [inundación fluvial](amenazas/inundacion-fluvial/index.qmd), [pluvial](amenazas/inundacion-pluvial/index.qmd),
-  [sequía](amenazas/sequia/index.qmd), [frío](amenazas/frio/index.qmd),
-  [dengue](amenazas/dengue/index.qmd), [incendios](amenazas/incendios/index.qmd).
-- **[Exposición y vulnerabilidad](exposicion/index.qmd)** · **[Agricultura y ganadería](agro-ganaderia/index.qmd)** · **[Situación actual](situacion-actual/index.qmd)** · **[Recomendaciones](recomendaciones/index.qmd)**.
-- **Contexto histórico (ENOS):** [América Latina](contexto-america-latina/index.qmd) ·
-  [Paraguay](contexto-paraguay/nacional.qmd) · [por departamento](contexto-paraguay/departamentos/index.qmd) ·
-  [Asunción](contexto-asuncion/index.qmd).
-
-## Tabla resumen comparativa por episodio
-
-Clasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA.
-
-```{python}
-#| label: tbl-episodios
-#| echo: false
-import csv
-from IPython.display import Markdown
-
-rows = list(csv.DictReader(open("datos/episodios.csv", encoding="utf-8")))
-cols = ["episodio", "intensidad_oni", "oni_pico", "fuente_clasificacion"]
-head = "| Episodio | Intensidad (ONI) | Pico ONI (°C) | Fuente |\n|---|---|---|---|"
-body = "\n".join(
-    "| " + " | ".join((r[c] or "—") for c in cols) + " |" for r in rows
-)
-Markdown(head + "\n" + body)
-```
-
-: Episodios El Niño considerados en el repositorio. {#tbl-episodios}
-
-## Convención de confiabilidad
-
-Cada hallazgo se etiqueta según su fuente:
-[oficial]{.badge-oficial} organismo estatal o intergubernamental ·
-[académico]{.badge-academico} revista/institución científica ·
-[prensa]{.badge-prensa} medios ·
-[estimación]{.badge-estimacion} dato no confirmado.
-
-## Estado de avance
-
-| Bloque | Sección | Estado |
-|---|---|---|
-| Marco | Qué es el ENOS | 🟢 Redactado y citado |
-| Histórico | América Latina | 🟢 Redactado y citado (OMM, OPS, IRI, OCHA) |
-| Histórico | Paraguay (nacional) | 🟢 Redactado y citado (DINAC, DGRRD, prensa) |
-| Histórico | Departamentos | 🟡 Ñeembucú/Central/Alto Paraguay; resto pendiente |
-| Histórico | Asunción metropolitana | 🟢 Redactado y citado (DGRRD, prensa) |
-| Histórico | Mapa de inundaciones | 🟢 Huellas Sentinel-1 2016/2019/2024 (comparables) |
-| Actual | Estado del episodio 2026-27 | 🟢 NOAA/IRI/OMM + DINAC |
-| Actual | Exposición y población en riesgo | 🟢 Nacional: población, salud y educación |
-| Datos | Series numéricas | 🟡 ONI, población afectada, niveles del río; sectores pendientes |
-| Actual | Inundación en Pilar/Ñeembucú | 🔴 Detección satelital pendiente de ajuste |
+**Amenazas:** [fluvial](amenazas/inundacion-fluvial/index.qmd) · [pluvial](amenazas/inundacion-pluvial/index.qmd) · [sequía](amenazas/sequia/index.qmd) · [frío](amenazas/frio/index.qmd) · [dengue](amenazas/dengue/index.qmd) · [incendios](amenazas/incendios/index.qmd)  
+**Transversal:** [Marco](marco/index.qmd) · [Exposición](exposicion/index.qmd) · [Agricultura y ganadería](agro-ganaderia/index.qmd) · [Situación actual](situacion-actual/index.qmd) · [Recomendaciones](recomendaciones/index.qmd) · [Fuentes](fuentes/index.qmd)

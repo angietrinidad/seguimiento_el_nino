@@ -180,8 +180,8 @@ Mapa completo e interactivo en
 ## 4. Cómo se compara con episodios pasados
 
 El episodio en curso se lee sobre el registro de 1997-98, 2015-16, 2018-19 y
-2023-24. La comparación de intensidad (ONI) está en la
-[portada](../index.qmd#tabla-resumen-comparativa-por-episodio); las huellas de
+2023-24. La comparación de intensidad (ONI) está en el
+[marco](../marco/index.qmd#umbrales-de-clasificación-oni); las huellas de
 inundación derivadas de satélite, en el
 [mapa histórico de inundaciones](../amenazas/inundacion-fluvial/index.qmd).
 
