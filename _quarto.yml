@@ -43,7 +43,11 @@ website:
           - text: "🔥 Incendios y quemas"
             file: amenazas/incendios/index.qmd
       - text: "Exposición"
-        file: 06-exposicion/index.qmd
+        menu:
+          - text: "Población, salud, educación y comercio"
+            file: 06-exposicion/index.qmd
+          - text: "Agricultura y ganadería (medios de vida)"
+            file: agro-ganaderia/index.qmd
       - text: "Situación actual"
         file: situacion-actual/index.qmd
       - text: "Recomendaciones"
@@ -85,6 +89,8 @@ website:
         contents:
           - text: "Exposición y vulnerabilidad"
             file: 06-exposicion/index.qmd
+          - text: "Agricultura y ganadería (medios de vida)"
+            file: agro-ganaderia/index.qmd
           - text: "Situación actual (2026-27)"
             file: situacion-actual/index.qmd
           - text: "Recomendaciones"

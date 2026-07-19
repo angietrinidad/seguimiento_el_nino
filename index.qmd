@@ -102,7 +102,7 @@ lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas
 - **Amenazas** — [inundación fluvial](05-mapa-riesgo/index.qmd), [pluvial](08-pluvial/index.qmd),
   [sequía](amenazas/sequia/index.qmd), [frío](amenazas/frio/index.qmd),
   [dengue](amenazas/dengue/index.qmd), [incendios](amenazas/incendios/index.qmd).
-- **[Exposición y vulnerabilidad](06-exposicion/index.qmd)** · **[Situación actual](situacion-actual/index.qmd)** · **[Recomendaciones](07-recomendaciones/index.qmd)**.
+- **[Exposición y vulnerabilidad](06-exposicion/index.qmd)** · **[Agricultura y ganadería](agro-ganaderia/index.qmd)** · **[Situación actual](situacion-actual/index.qmd)** · **[Recomendaciones](07-recomendaciones/index.qmd)**.
 - **Contexto histórico (ENOS):** [América Latina](02-america-latina/index.qmd) ·
   [Paraguay](03-paraguay/nacional.qmd) · [por departamento](03-paraguay/departamentos/index.qmd) ·
   [Asunción](04-asuncion-metropolitana/index.qmd).
