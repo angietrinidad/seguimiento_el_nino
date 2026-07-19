@@ -99,7 +99,7 @@
     "href": "index.html#panel-de-control",
     "title": "Desastres Construidos",
     "section": "Panel de control",
-    "text": "Panel de control\n\n\n🌀 ENOSEl NiñoNiño 3.4 +1,2 °C · aviso NOAA🌊 Río en Asunción1.94 mfase 0 · preparación · a 3.56 m del crítico🌧️ Lluvia hoy0 mmmáx. país · 25 estaciones activas👥 Población en riesgo59.695en zona de inundación🏫 Establecimientos expuestos24 esc · 7 saludmatrícula 4.172Amenazas🌊 Inundación fluvialríoMonitoreo · río bajo🌧️ Inundación pluviallluviaEstación seca (0 mm)🏜️ Sequía / bajanteLa NiñaEn desarrollo❄️ Olas de fríoJaho'iEn desarrollo🦟 Denguesalud climáticaEn desarrollo🔥 Incendiosquemas y sequíaEn desarrollo\n\n\nIndicadores en vivo: exposición (COD-PS/Kontur, MSPBS, MEC), cota del río (DINAC) y lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas en desarrollo tienen la estructura montada y se poblarán con fuentes primarias.",
+    "text": "Panel de control\n\n\n🌀 ENOSEl NiñoNiño 3.4 +1,2 °C · aviso NOAA🌊 Río en Asunción1.94 mfase 0 · preparación · a 3.56 m del crítico🌧️ Lluvia hoy0 mmmáx. país · 25 estaciones activas👥 Población en riesgo59.695en zona de inundación🏫 Establecimientos expuestos24 esc · 7 saludmatrícula 4.172Amenazas🌊 Inundación fluvialríoMonitoreo · río bajo🌧️ Inundación pluviallluviaEstación seca (0 mm)🏜️ Sequía / bajanteLa NiñaDocumentado · récord −1,61 m❄️ Olas de fríoJaho'iDocumentado · Plan Jaho'i🦟 Denguesalud climáticaEn desarrollo🔥 Incendiosquemas y sequíaEn desarrollo\n\n\nIndicadores en vivo: exposición (COD-PS/Kontur, MSPBS, MEC), cota del río (DINAC) y lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas en desarrollo tienen la estructura montada y se poblarán con fuentes primarias.",
     "crumbs": [
       "Inicio",
       "🏠 Panel de control"
@@ -182,7 +182,7 @@
     "href": "amenazas/sequia/index.html",
     "title": "Sequía y bajante del río",
     "section": "",
-    "text": "Si El Niño trae exceso de agua, su fase opuesta —La Niña— trae déficit: sequía, menor caudal y bajante extrema de los ríos. Es una amenaza distinta de la inundación, con víctimas y pérdidas propias, y con una construcción social del riesgo también propia (quién depende del río para el agua, el transporte y el sustento).",
+    "text": "Si El Niño trae exceso de agua, su fase opuesta —La Niña— trae déficit: sequía, menor caudal y bajante extrema de los ríos. Es una amenaza distinta de la inundación, con pérdidas y víctimas propias, y con una construcción social del riesgo también propia: quién depende del río para el agua, el transporte, la energía y el sustento es quien más sufre cuando el río se retira.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -190,11 +190,11 @@
     ]
   },
   {
-    "objectID": "amenazas/sequia/index.html#vínculo-con-el-enos",
-    "href": "amenazas/sequia/index.html#vínculo-con-el-enos",
+    "objectID": "amenazas/sequia/index.html#la-bajante-cuánto-baja-el-río",
+    "href": "amenazas/sequia/index.html#la-bajante-cuánto-baja-el-río",
     "title": "Sequía y bajante del río",
-    "section": "Vínculo con el ENOS",
-    "text": "Vínculo con el ENOS\nLa fase fría del ENOS (La Niña) se asocia en el sudeste de Sudamérica con anomalías negativas de precipitación —el reverso del patrón de El Niño (Cai et al., 2015; Grimm et al., 2000)—. En la cuenca del Plata, esto se traduce en menor caudal de los ríos Paraguay y Paraná.",
+    "section": "La bajante: cuánto baja el río",
+    "text": "La bajante: cuánto baja el río\nEl nivel del río Paraguay en Asunción se mide sobre una cota cero del hidrómetro (≈ 54,04 m s.n.m.); las lecturas negativas son metros por debajo de ese cero, no bajo el nivel del mar oficial (CEMIT — Universidad Nacional de Asunción, 2023).\n\nRécord histórico absoluto: −1,61 m el 2 de noviembre de 2024 —el nivel más bajo documentado en la serie de Asunción prensa (ABC Color, 2024c)—.\nBajante 2020-2021 (atribuida a La Niña, la peor en ~50 años hasta entonces): −0,54 m en 2020 y −0,55 m en septiembre de 2021, con un mínimo de ciclo de −0,75 m prensa (La Nación (Paraguay), 2021).\nAntecedente 1969: −0,40 m, el mínimo de referencia durante décadas prensa (Paraguay Fluvial, 2024).\n\nEn el tramo compartido, la bajante del Paraná 2021 fue la peor desde 1944.\n\n\n\n\n\n\nEl contraste con la inundación es directo: la misma estación que en El Niño 2015-16 marcó 7,88 m tocó −1,61 m en la bajante de 2024 —un rango de casi 9,5 m entre las dos caras del ciclo—.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -202,11 +202,11 @@
     ]
   },
   {
-    "objectID": "amenazas/sequia/index.html#evidencia",
-    "href": "amenazas/sequia/index.html#evidencia",
+    "objectID": "amenazas/sequia/index.html#vínculo-con-la-niña-enos",
+    "href": "amenazas/sequia/index.html#vínculo-con-la-niña-enos",
     "title": "Sequía y bajante del río",
-    "section": "Evidencia",
-    "text": "Evidencia\n\nBajante extrema 2024: el río Paraguay en Asunción tocó −1,61 m el 2 de noviembre de 2024, un mínimo asociado a la sequía/bajante prensa (Paraguay Fluvial, 2024) —contraste directo con el pico de El Niño 2015-16 (7,88 m)—.\n\n\nPendiente: serie de bajantes históricas (1969, 2020-2021, 2024) con fuente de la DINAC; impactos cuantificados en navegación de la hidrovía, provisión de agua (ESSAP/juntas de saneamiento) y agro/ganadería; población dependiente del río.",
+    "section": "Vínculo con La Niña (ENOS)",
+    "text": "Vínculo con La Niña (ENOS)\nLa fase fría del ENOS (La Niña) se asocia con anomalías negativas de precipitación en el sudeste de Sudamérica —el reverso del patrón de El Niño— y el ENOS es el modo dominante de la variabilidad de lluvia en la cuenca del Plata (Boulanger et al., 2005; Petry et al., 2025). La bajante 2019-2022 fue una sequía hidrológica originada por un episodio inusual de La Niña multianual, inédita en ~50 años por severidad y duración (&gt;25 meses) (Naumann et al., 2021; Rivera, 2024). Bajo cambio climático se proyecta un aumento de las sequías en el Alto Paraguay y el Alto Paraná (Sordo-Ward et al., 2017).",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -214,11 +214,23 @@
     ]
   },
   {
-    "objectID": "amenazas/sequia/index.html#exposición-y-vulnerabilidad",
-    "href": "amenazas/sequia/index.html#exposición-y-vulnerabilidad",
+    "objectID": "amenazas/sequia/index.html#impactos",
+    "href": "amenazas/sequia/index.html#impactos",
     "title": "Sequía y bajante del río",
-    "section": "Exposición y vulnerabilidad",
-    "text": "Exposición y vulnerabilidad\nLa bajante golpea a quienes dependen del río: pesca artesanal, transporte fluvial (hidrovía Paraguay-Paraná), abastecimiento de agua de comunidades ribereñas, y agricultura de secano. La sequía también agrava incendios (ver incendios).\n\nFalta mapear la exposición específica de la bajante (comunidades ribereñas sin agua por red, puertos y pasos, superficie agrícola afectada).",
+    "section": "Impactos",
+    "text": "Impactos\nNavegación (hidrovía Paraguay-Paraná). La hidrovía canaliza cerca del 80 % del comercio exterior paraguayo. La bajante 2019-2020 costó al transporte fluvial ~USD 250 millones académico (Franco-Medina et al., 2022); la de 2024, ~USD 200 millones (volumen −30 %), con barcazas limitadas al 60 % de su capacidad por el calado reducido prensa (ABC Color, 2024b).\nEnergía. Las represas dependen del caudal: en 2021 Itaipú tuvo su menor producción desde 2007 (66.369 GWh, −13 %) prensa (ABC Color, 2022); en 2024, Itaipú cayó −20 % y Yacyretá −30 % frente a 2023 prensa (Agencia EFE / Infobae, 2024a).\nAgua potable. La ESSAP activó un plan de contingencia en 2024 por las ciudades que toman agua del río (Asunción y metro, Concepción, Villa Hayes, Alberdi, Pilar), con 38 pozos oficial (ESSAP, 2024); se entregaron 425.000 litros de agua a comunidades indígenas del Chaco oficial (Ministerio de Salud Pública y Bienestar Social (MSPBS), 2024).\nAgro. La zafra 2021/22 fue la peor de la historia, con pérdidas estimadas en ~USD 3.000 millones prensa (La Nación (Paraguay), 2022).\nIncendios. La sequía dispara el fuego: 2020 fue récord de superficie afectada (3,49 millones de ha) oficial (Instituto Forestal Nacional (INFONA), 2023), con grandes incendios en el Pantanal prensa (Mongabay Latam, 2020) (ver incendios).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Sequía y bajante del río"
+    ]
+  },
+  {
+    "objectID": "amenazas/sequia/index.html#exposición-y-vulnerabilidad-social",
+    "href": "amenazas/sequia/index.html#exposición-y-vulnerabilidad-social",
+    "title": "Sequía y bajante del río",
+    "section": "Exposición y vulnerabilidad social",
+    "text": "Exposición y vulnerabilidad social\nLa bajante golpea a quienes dependen del río:\n\nPesca artesanal: ~7.500 pescadores comerciales inscritos (MADES); 2024 fue el peor año de capturas desde 2018, con veda que agravó la crisis prensa (Agencia EFE / Infobae, 2024b). Las sequías extremas reestructuran las comunidades de peces, afectando a las especies migratorias que sostienen la pesca local académico (Espínola et al., 2025).\nPueblos indígenas ribereños: la bajante y la sequía profundizan la injusticia hídrica sobre comunidades del Chaco (Enxet, Sanapaná, Yshir), un caso documentado de racismo ambiental académico (Correia, 2022).\nComunidades aisladas: el río es la principal vía de conexión del Alto Paraguay; puertos como Antequera declararon crisis prensa (ABC Color, 2024a) y la salud llega por transporte fluvial oficial (Organización Panamericana de la Salud (OPS/OMS), 2025).\n\n\nPendiente de fuente: conteo total de familias que dependen de la pesca (solo hay ~7.500 licencias comerciales); población indígena ribereña afectada por la bajante 2024 (el INDI no publica el desagregado); niveles del Paraná por estación; cifras cuantitativas de mortandad de ganado.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -230,7 +242,7 @@
     "href": "amenazas/sequia/index.html#recomendaciones",
     "title": "Sequía y bajante del río",
     "section": "Recomendaciones",
-    "text": "Recomendaciones\nLa acción anticipatoria ante sequía/bajante (gestión del agua, alerta a la navegación, apoyo al agro) se integrará al marco de recomendaciones, alineado con la SEN y las normas humanitarias (LEGS para ganadería, WASH para agua).",
+    "text": "Recomendaciones\nLa acción anticipatoria ante sequía/bajante —gestión y reserva de agua, alerta a la navegación por calado, apoyo al agro y la pesca (LEGS para ganadería, WASH para agua), y previsión energética— se integra al marco de recomendaciones, alineado con la SEN y las normas humanitarias.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -242,7 +254,7 @@
     "href": "amenazas/frio/index.html",
     "title": "Olas de frío",
     "section": "",
-    "text": "Las olas de frío son una amenaza estacional que en Paraguay ya cuenta con un instrumento oficial de respuesta. A diferencia de la inundación, el riesgo aquí se construye sobre otra vulnerabilidad: personas en situación de calle, niñez, personas mayores y viviendas precarias sin abrigo.",
+    "text": "Las olas de frío son una amenaza estacional (invierno austral, jun-ago) que en Paraguay ya cuenta con un instrumento oficial de respuesta. A diferencia de la inundación, el riesgo aquí se construye sobre otra vulnerabilidad: personas en situación de calle, niñez, personas mayores y viviendas precarias sin abrigo —en buena medida las mismas familias de los bañados expuestas a la crecida—.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -250,11 +262,11 @@
     ]
   },
   {
-    "objectID": "amenazas/frio/index.html#el-marco-oficial-plan-jahoi",
-    "href": "amenazas/frio/index.html#el-marco-oficial-plan-jahoi",
+    "objectID": "amenazas/frio/index.html#el-peligro-cuánto-frío-hace",
+    "href": "amenazas/frio/index.html#el-peligro-cuánto-frío-hace",
     "title": "Olas de frío",
-    "section": "El marco oficial: Plan Jaho’i",
-    "text": "El marco oficial: Plan Jaho’i\nLa Secretaría de Emergencia Nacional (SEN) aprobó, por la misma Resolución 106/2024, el Plan de Contingencia Operativo Jaho’i 2024-2028, para el resguardo de personas ante temperaturas ≤ 10 °C oficial (Secretaría de Emergencia Nacional (SEN), 2024a, 2024b). Es el complemento del Plan de Contingencia para Inundaciones dentro del mismo paquete de planes de emergencia.",
+    "section": "El peligro: cuánto frío hace",
+    "text": "El peligro: cuánto frío hace\nParaguay tiene clima subtropical, pero las irrupciones de aire polar producen heladas y récords bajo cero, sobre todo en el Chaco y el sur:\n\nRécord nacional absoluto de mínima: −7,5 °C en Pratts Gill (Chaco), el 13 de julio de 2000 oficial (Dirección de Meteorología e Hidrología (DMH/DINAC), 2026).\nRécord de mínima en Asunción: −1,2 °C (Aeropuerto Silvio Pettirossi, 27 de junio de 2011) oficial (Dirección de Meteorología e Hidrología (DMH/DINAC), 2026).\nInvierno 2025: el 24 de junio fue el día más frío del año, con −3,3 °C en Presidente Hayes y récord diario en diez localidades prensa (ABC Color, 2025).\nInvierno 2026: el 24 de junio, −1,4 °C en Boquerón y heladas en varios departamentos prensa (ABC Color, 2026).\n\nEl sur de Sudamérica —Paraguay incluido— fue alcanzado por una ola de frío excepcional documentada por la OMM oficial (Organización Meteorológica Mundial (OMM/WMO), 2025). La DINAC publica las mínimas en vivo de sus estaciones automáticas.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -262,11 +274,23 @@
     ]
   },
   {
-    "objectID": "amenazas/frio/index.html#evidencia",
-    "href": "amenazas/frio/index.html#evidencia",
+    "objectID": "amenazas/frio/index.html#impactos",
+    "href": "amenazas/frio/index.html#impactos",
     "title": "Olas de frío",
-    "section": "Evidencia",
-    "text": "Evidencia\n\nPendiente: registro de olas de frío recientes (fechas, mínimas, víctimas por hipotermia) con fuente de la DINAC/prensa; cantidad de personas asistidas por la SEN bajo el Plan Jaho’i por temporada.",
+    "section": "Impactos",
+    "text": "Impactos\nSalud. El invierno dispara las enfermedades respiratorias. En la semana epidemiológica 18 de 2026, las consultas por enfermedad tipo influenza subieron +10 % y las hospitalizaciones por infección respiratoria aguda grave +11 % (324 pacientes); el MSPBS reportó 72 fallecidos por virus respiratorios en lo que iba del año, con la mayor carga en personas de 60 años o más y menores de 2 años oficial (Dirección General de Vigilancia de la Salud (DGVS), MSPBS, 2026). Es morbilidad invernal multicausal (virus + frío), no atribuible solo a la ola de frío.\nAgro. Las heladas de junio de 2026 dañaron cultivos en Itapúa, Alto Paraná, Misiones y Ñeembucú —el sur es la zona más vulnerable— gremial (Unión de Gremios de la Producción (UGP), 2026).\n\nSin fuente verificable: muertes por hipotermia ocurridas en Paraguay (los casos regionales documentados son de países vecinos) y cifras cuantitativas de pérdidas agrícolas (ha, guaraníes). La lógica del Plan Jaho’i —“prevenir pérdida de vidas por frío”— indica que la ausencia de dato no equivale a ausencia de riesgo.",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Olas de frío (Jaho'i)"
+    ]
+  },
+  {
+    "objectID": "amenazas/frio/index.html#el-marco-oficial-plan-operativo-jahoi",
+    "href": "amenazas/frio/index.html#el-marco-oficial-plan-operativo-jahoi",
+    "title": "Olas de frío",
+    "section": "El marco oficial: Plan / Operativo Jaho’i",
+    "text": "El marco oficial: Plan / Operativo Jaho’i\nJaho’i significa “resguardar” en guaraní. La Secretaría de Emergencia Nacional (SEN) aprobó, por la Resolución 106/2024, el Plan de Contingencia Operativo Jaho’i 2024-2028 oficial (Secretaría de Emergencia Nacional (SEN), 2024a, 2024b), que opera desde hace cerca de una década prensa (La Nación (Paraguay), 2025).\n\nUmbral de activación: temperatura ≤ 10 °C (La Nación (Paraguay), 2025).\nAlbergues (temporada 2025-2026): Costanera Norte de Asunción (principal), Limpio, San Lorenzo y Bañado Sur oficial (Secretaría de Emergencia Nacional (SEN) / Agencia de Información Paraguaya, 2026).\nPersonas asistidas: capacidad declarada de ~50 por día; el 23 de junio de 2026 hubo 36 personas albergadas más ~10 asistidas en calle (promedio previo ~18/día) oficial (Secretaría de Emergencia Nacional (SEN) / Agencia de Información Paraguaya, 2026).\nServicios: cena y desayuno calientes, duchas con agua caliente, kits de higiene, camas y frazadas, y puesto médico con derivación hospitalaria; a quienes rechazan el albergue se les entregan frazadas y colchones en la calle (Secretaría de Emergencia Nacional (SEN) / Agencia de Información Paraguaya, 2026).\nCoordinación: SEN con Defensa, MSPBS, Niñez y Adolescencia (MINNA), Policía Nacional, DIBEN, ESSAP y ANDE; reportes por la línea 0986-111001 y el 911 (Secretaría de Emergencia Nacional (SEN) / Agencia de Información Paraguaya, 2026).\n\n\nPendiente de fuente oficial consolidada: el balance de cierre de temporada del Jaho’i (total de personas asistidas y de kits/frazadas entregados).",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -278,7 +302,7 @@
     "href": "amenazas/frio/index.html#exposición-y-vulnerabilidad",
     "title": "Olas de frío",
     "section": "Exposición y vulnerabilidad",
-    "text": "Exposición y vulnerabilidad\nLos grupos en mayor riesgo ante el frío extremo son las personas en situación de calle, la niñez, las personas mayores y quienes viven en viviendas precarias sin calefacción —muchas de ellas las mismas familias de los bañados expuestas a la inundación—. La respuesta central son los albergues temporales y la entrega de abrigo, que el Plan Jaho’i organiza.",
+    "text": "Exposición y vulnerabilidad\nLos grupos en mayor riesgo ante el frío extremo son las personas en situación de calle, la niñez, las personas mayores y quienes viven en viviendas precarias sin calefacción. El dato más reciente con fuente sobre población de calle en Asunción es el II Censo (2017): 174 personas, el 37 % menores de 18 años oficial (Municipalidad de Asunción, Dirección General del Área Social, 2017); no hay censo posterior verificable, por lo que la cifra actual probablemente sea mayor. La carga sanitaria invernal, que recae sobre mayores y bebés, confirma el perfil de vulnerabilidad oficial (Dirección General de Vigilancia de la Salud (DGVS), MSPBS, 2026).",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -290,7 +314,7 @@
     "href": "amenazas/frio/index.html#recomendaciones",
     "title": "Olas de frío",
     "section": "Recomendaciones",
-    "text": "Recomendaciones\nLas acciones por ola de frío (activación de albergues, abrigo, atención a grupos vulnerables) se integran al marco de recomendaciones, con el enfoque por ciclo de vida y género ya desarrollado y las normas humanitarias (Esfera: alojamiento y no alimentarios).",
+    "text": "Recomendaciones\nLas acciones por ola de frío (activación temprana de albergues al cruzar el umbral, abrigo, atención a grupos vulnerables, refuerzo respiratorio en salud) se integran al marco de recomendaciones, con el enfoque por ciclo de vida y género ya desarrollado y las normas humanitarias (Esfera: alojamiento y artículos no alimentarios; salud).",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
@@ -1176,7 +1200,7 @@
     "href": "amenazas/incendios/index.html#evidencia",
     "title": "Incendios y quemas",
     "section": "Evidencia",
-    "text": "Evidencia\n\nPendiente: focos de calor y superficie quemada por temporada (p. ej. NASA FIRMS, INFONA), eventos mayores (Chaco, Cerrado, Ñeembucú) y su relación con la sequía y el ENOS. Datos abiertos disponibles pero no procesados aún.",
+    "text": "Evidencia\nLa superficie afectada por incendios en Paraguay tuvo su récord en 2020 —el año de la gran sequía—, según el INFONA oficial (Instituto Forestal Nacional (INFONA), 2023):\n\n\n\nAño\nSuperficie afectada (ha)\n\n\n\n\n2019\n2.450.749\n\n\n2020\n3.494.109 (récord)\n\n\n2021\n2.640.389\n\n\n2022\n1.622.509\n\n\n\nEn 2020 los incendios arrasaron además el Pantanal (Paraguay, Brasil y Bolivia), con ~767.000 ha de humedal afectadas a escala regional prensa (Mongabay Latam, 2020).\n\nPendiente: focos de calor por temporada (NASA FIRMS), superficie quemada 2023-2026, y el detalle de eventos mayores (Chaco, Cerrado, Ñeembucú). Datos abiertos disponibles, aún no procesados.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
