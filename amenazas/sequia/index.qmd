@@ -1,0 +1,52 @@
+---
+title: "Sequía y bajante del río"
+subtitle: "La otra cara del ENOS (fase fría, La Niña)"
+---
+
+Si El Niño trae **exceso** de agua, su fase opuesta —**La Niña**— trae **déficit**:
+sequía, menor caudal y **bajante extrema** de los ríos. Es una amenaza distinta de la
+inundación, con víctimas y pérdidas propias, y con una construcción social del riesgo
+también propia (quién depende del río para el agua, el transporte y el sustento).
+
+::: {.callout-note appearance="minimal"}
+**Módulo en desarrollo.** Se presenta con la evidencia ya verificada; las series y la
+caracterización sectorial se completarán con fuentes primarias.
+:::
+
+## Vínculo con el ENOS
+
+La **fase fría del ENOS (La Niña)** se asocia en el sudeste de Sudamérica con
+**anomalías negativas de precipitación** —el reverso del patrón de El Niño
+[@grimm2000; @cai2015]—. En la cuenca del Plata, esto se traduce en **menor caudal**
+de los ríos Paraguay y Paraná.
+
+## Evidencia
+
+- **Bajante extrema 2024:** el río Paraguay en Asunción tocó **−1,61 m el 2 de
+  noviembre de 2024**, un mínimo asociado a la sequía/bajante [prensa]{.badge-prensa}
+  [@paraguayfluvial_2024] —contraste directo con el pico de El Niño 2015-16 (7,88 m)—.
+
+::: {.vacio}
+Pendiente: serie de bajantes históricas (1969, 2020-2021, 2024) con fuente de la
+DINAC; impactos cuantificados en **navegación de la hidrovía**, **provisión de agua
+(ESSAP/juntas de saneamiento)** y **agro/ganadería**; población dependiente del río.
+:::
+
+## Exposición y vulnerabilidad
+
+La bajante golpea a quienes **dependen del río**: pesca artesanal, transporte
+fluvial (hidrovía Paraguay-Paraná), abastecimiento de agua de comunidades ribereñas,
+y agricultura de secano. La sequía también **agrava incendios** (ver
+[incendios](../incendios/index.qmd)).
+
+::: {.vacio}
+Falta mapear la exposición específica de la bajante (comunidades ribereñas sin agua
+por red, puertos y pasos, superficie agrícola afectada).
+:::
+
+## Recomendaciones
+
+La acción anticipatoria ante sequía/bajante (gestión del agua, alerta a la
+navegación, apoyo al agro) se integrará al marco de
+[recomendaciones](../../07-recomendaciones/index.qmd), alineado con la SEN y las
+normas humanitarias (LEGS para ganadería, WASH para agua).

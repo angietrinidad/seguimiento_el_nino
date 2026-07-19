@@ -1,0 +1,46 @@
+---
+title: "Olas de frío"
+subtitle: "Bajas temperaturas y el Plan Jaho'i de la SEN"
+---
+
+Las **olas de frío** son una amenaza estacional que en Paraguay ya cuenta con un
+instrumento oficial de respuesta. A diferencia de la inundación, el riesgo aquí se
+construye sobre otra vulnerabilidad: **personas en situación de calle, niñez,
+personas mayores y viviendas precarias sin abrigo**.
+
+::: {.callout-note appearance="minimal"}
+**Módulo en desarrollo.** El marco oficial ya está incorporado; la caracterización
+del peligro (umbrales, eventos) y la exposición se completarán con fuentes primarias.
+:::
+
+## El marco oficial: Plan Jaho'i
+
+La **Secretaría de Emergencia Nacional (SEN)** aprobó, por la misma **Resolución
+106/2024**, el **Plan de Contingencia Operativo Jaho'i 2024-2028**, para el resguardo
+de personas ante **temperaturas ≤ 10 °C** [oficial]{.badge-oficial}
+[@sen_plan_jahoi; @sen_resol106]. Es el complemento del Plan de Contingencia para
+Inundaciones dentro del mismo paquete de planes de emergencia.
+
+## Evidencia
+
+::: {.vacio}
+Pendiente: registro de olas de frío recientes (fechas, mínimas, víctimas por
+hipotermia) con fuente de la DINAC/prensa; cantidad de personas asistidas por la SEN
+bajo el Plan Jaho'i por temporada.
+:::
+
+## Exposición y vulnerabilidad
+
+Los grupos en mayor riesgo ante el frío extremo son las **personas en situación de
+calle**, la **niñez**, las **personas mayores** y quienes viven en **viviendas
+precarias** sin calefacción —muchas de ellas las mismas familias de los bañados
+expuestas a la inundación—. La respuesta central son los **albergues temporales** y la
+entrega de abrigo, que el Plan Jaho'i organiza.
+
+## Recomendaciones
+
+Las acciones por ola de frío (activación de albergues, abrigo, atención a grupos
+vulnerables) se integran al marco de
+[recomendaciones](../../07-recomendaciones/index.qmd), con el enfoque por
+**ciclo de vida y género** ya desarrollado y las normas humanitarias (Esfera:
+alojamiento y no alimentarios).

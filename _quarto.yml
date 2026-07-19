@@ -25,9 +25,29 @@ website:
     left:
       - text: "Inicio"
         file: index.qmd
-      - text: "Marco conceptual"
+      - text: "Marco"
         file: 01-marco-conceptual/index.qmd
-      - text: "Antecedentes históricos"
+      - text: "Amenazas"
+        menu:
+          - text: "🌊 Inundación fluvial (río)"
+            file: 05-mapa-riesgo/index.qmd
+          - text: "🌧️ Inundación pluvial (lluvia)"
+            file: 08-pluvial/index.qmd
+          - text: "🏜️ Sequía y bajante del río"
+            file: amenazas/sequia/index.qmd
+          - text: "❄️ Olas de frío (Jaho'i)"
+            file: amenazas/frio/index.qmd
+          - text: "🦟 Dengue y salud climática"
+            file: amenazas/dengue/index.qmd
+          - text: "🔥 Incendios y quemas"
+            file: amenazas/incendios/index.qmd
+      - text: "Exposición"
+        file: 06-exposicion/index.qmd
+      - text: "Situación actual"
+        file: situacion-actual/index.qmd
+      - text: "Recomendaciones"
+        file: 07-recomendaciones/index.qmd
+      - text: "Contexto ENOS"
         menu:
           - text: "América Latina (panorama regional)"
             file: 02-america-latina/index.qmd
@@ -37,29 +57,38 @@ website:
             file: 03-paraguay/departamentos/index.qmd
           - text: "Asunción y área metropolitana"
             file: 04-asuncion-metropolitana/index.qmd
-          - text: "Mapa histórico de inundaciones (fluvial)"
-            file: 05-mapa-riesgo/index.qmd
-          - text: "Inundaciones pluviales (lluvia)"
-            file: 08-pluvial/index.qmd
-      - text: "Situación actual (2026-27)"
-        menu:
-          - text: "Estado del episodio 2026-27"
-            file: situacion-actual/index.qmd
-          - text: "Exposición y población en riesgo"
-            file: 06-exposicion/index.qmd
-          - text: "Recomendaciones por nivel del río"
-            file: 07-recomendaciones/index.qmd
       - text: "Fuentes"
         file: fuentes/index.qmd
   sidebar:
     style: docked
     contents:
-      - index.qmd
-      - section: "Marco conceptual"
+      - text: "🏠 Panel de control"
+        file: index.qmd
+      - text: "🧭 Marco: desastres construidos"
+        file: 01-marco-conceptual/index.qmd
+      - section: "⚠️ Amenazas"
         contents:
-          - text: "Qué es el ENOS"
-            file: 01-marco-conceptual/index.qmd
-      - section: "Antecedentes históricos"
+          - text: "Inundación fluvial (río)"
+            file: 05-mapa-riesgo/index.qmd
+          - text: "Inundación pluvial (lluvia)"
+            file: 08-pluvial/index.qmd
+          - text: "Sequía y bajante del río"
+            file: amenazas/sequia/index.qmd
+          - text: "Olas de frío (Jaho'i)"
+            file: amenazas/frio/index.qmd
+          - text: "Dengue y salud climática"
+            file: amenazas/dengue/index.qmd
+          - text: "Incendios y quemas"
+            file: amenazas/incendios/index.qmd
+      - section: "👥 Exposición y situación"
+        contents:
+          - text: "Exposición y vulnerabilidad"
+            file: 06-exposicion/index.qmd
+          - text: "Situación actual (2026-27)"
+            file: situacion-actual/index.qmd
+          - text: "Recomendaciones"
+            file: 07-recomendaciones/index.qmd
+      - section: "📚 Contexto histórico (ENOS)"
         contents:
           - text: "América Latina (panorama regional)"
             file: 02-america-latina/index.qmd
@@ -69,18 +98,6 @@ website:
             file: 03-paraguay/departamentos/index.qmd
           - text: "Asunción y área metropolitana"
             file: 04-asuncion-metropolitana/index.qmd
-          - text: "Mapa histórico de inundaciones (fluvial)"
-            file: 05-mapa-riesgo/index.qmd
-          - text: "Inundaciones pluviales (lluvia)"
-            file: 08-pluvial/index.qmd
-      - section: "Situación actual (2026-27)"
-        contents:
-          - text: "Estado del episodio en curso"
-            file: situacion-actual/index.qmd
-          - text: "Exposición y población en riesgo"
-            file: 06-exposicion/index.qmd
-          - text: "Recomendaciones por nivel del río"
-            file: 07-recomendaciones/index.qmd
       - section: "Anexos"
         contents:
           - metodologia.qmd

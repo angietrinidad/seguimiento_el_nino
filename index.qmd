@@ -16,49 +16,95 @@ El repositorio arranca con la amenaza **más desarrollada** —la **inundación*
 diseñado para **escalar a otras amenazas** (sequía, olas de frío, enfermedades
 climáticas).
 
+## Panel de control
+
+```{python}
+#| label: panel-control
+#| echo: false
+import json, os
+from IPython.display import HTML
+
+def g(path, default=None):
+    return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else default
+
+r = g("datos/exposicion/resumen.json", {})
+rio = g("datos/nivel-rio-actual.json", {})
+emas = g("datos/estaciones-dmh-metro.json", {})
+
+# --- indicadores ---
+er = r.get("en_riesgo", {})
+asu = next((e for e in rio.get("estaciones", []) if e.get("nombre") == "Asunción"), None)
+crit = rio.get("critica_asuncion_m", 5.5)
+if asu:
+    nivel = asu["nivel_m"]; margen = round(crit - nivel, 2)
+    fase = "0 · preparación" if nivel < 3.5 else ("2 · naranja" if nivel < 5 else "3 · roja")
+    rio_val, rio_sub = f"{nivel} m", f"fase {fase} · a {margen} m del crítico"
+else:
+    rio_val, rio_sub = "s/d", "cota no disponible"
+act = [e for e in emas.get("estaciones", []) if e.get("activa") and e.get("precip_dia_mm") is not None]
+maxmm = max((e["precip_dia_mm"] for e in act), default=None)
+lluvia_val = f"{maxmm} mm" if maxmm is not None else "s/d"
+lluvia_sub = f"máx. país · {emas.get('resumen',{}).get('activas','?')} estaciones activas"
+
+def kpi(icono, label, valor, sub, color):
+    return (f"<div style='flex:1;min-width:170px;background:#f7f9fa;border-top:4px solid {color};"
+            f"border-radius:8px;padding:.7em .9em'>"
+            f"<div style='font-size:12px;color:#666;text-transform:uppercase;letter-spacing:.03em'>{icono} {label}</div>"
+            f"<div style='font-size:26px;font-weight:700;color:#222;margin:.1em 0'>{valor}</div>"
+            f"<div style='font-size:12px;color:#777'>{sub}</div></div>")
+
+kpis = "<div style='display:flex;gap:.8em;flex-wrap:wrap;margin:.6em 0 1.2em'>" + "".join([
+    kpi("🌀", "ENOS", "El Niño", "Niño 3.4 +1,2 °C · aviso NOAA", "#7b2cbf"),
+    kpi("🌊", "Río en Asunción", rio_val, rio_sub, "#2b6cb0"),
+    kpi("🌧️", "Lluvia hoy", lluvia_val, lluvia_sub, "#2b8cbe"),
+    kpi("👥", "Población en riesgo", f"{er.get('poblacion',0):,}".replace(",", "."), "en zona de inundación", "#b26a00"),
+    kpi("🏫", "Establecimientos expuestos", f"{er.get('escuelas',0)} esc · {er.get('salud',0)} salud",
+        f"matrícula {er.get('matricula',0):,}".replace(",", "."), "#8a1c1c"),
+]) + "</div>"
+
+# --- grilla de amenazas ---
+amenazas = [
+    ("🌊", "Inundación fluvial", "río", "Monitoreo · río bajo", "#1b5e7a", "05-mapa-riesgo/index.html"),
+    ("🌧️", "Inundación pluvial", "lluvia", "Estación seca (0 mm)", "#2b8cbe", "08-pluvial/index.html"),
+    ("🏜️", "Sequía / bajante", "La Niña", "En desarrollo", "#b58900", "amenazas/sequia/index.html"),
+    ("❄️", "Olas de frío", "Jaho'i", "En desarrollo", "#5b8db8", "amenazas/frio/index.html"),
+    ("🦟", "Dengue", "salud climática", "En desarrollo", "#2a9d3f", "amenazas/dengue/index.html"),
+    ("🔥", "Incendios", "quemas y sequía", "En desarrollo", "#c0392b", "amenazas/incendios/index.html"),
+]
+def carta(icono, titulo, tag, estado, color, href):
+    dev = "En desarrollo" in estado
+    chip_bg = "#eee" if dev else "#e6f4ea"
+    chip_c = "#888" if dev else "#1a7a3a"
+    return (f"<a href='{href}' style='flex:1;min-width:210px;text-decoration:none;color:inherit'>"
+            f"<div style='border:1px solid #e2e6ea;border-left:5px solid {color};border-radius:8px;"
+            f"padding:.7em .9em;height:100%;transition:box-shadow .15s' "
+            f"onmouseover=\"this.style.boxShadow='0 2px 8px rgba(0,0,0,.12)'\" "
+            f"onmouseout=\"this.style.boxShadow='none'\">"
+            f"<div style='font-size:15px;font-weight:700'>{icono} {titulo}</div>"
+            f"<div style='font-size:12px;color:#888;margin:.15em 0 .5em'>{tag}</div>"
+            f"<span style='font-size:11px;background:{chip_bg};color:{chip_c};padding:.15em .5em;border-radius:10px'>{estado}</span>"
+            f"</div></a>")
+grid = ("<div style='font-weight:700;margin:.4em 0'>Amenazas</div>"
+        "<div style='display:flex;gap:.7em;flex-wrap:wrap'>"
+        + "".join(carta(*a) for a in amenazas) + "</div>")
+
+HTML(kpis + grid)
+```
+
+*Indicadores en vivo: exposición (COD-PS/Kontur, MSPBS, MEC), cota del río (DINAC) y
+lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas
+**en desarrollo** tienen la estructura montada y se poblarán con fuentes primarias.*
+
 ## Cómo está organizado
 
-El repositorio se recorre en dos ejes: **qué ya ocurrió** y **qué está pasando
-ahora**.
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-4}
-### 🧭 Marco conceptual
-Qué es el ENOS, sus fases y por qué importa para Paraguay.
-
-- [Qué es el ENOS](01-marco-conceptual/index.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### 📚 Antecedentes históricos
-El registro de episodios pasados (1997-98, 2015-16, 2018-19, 2023-24) por nivel
-geográfico.
-
-- [América Latina — panorama regional](02-america-latina/index.qmd)
-- [Paraguay — nivel nacional](03-paraguay/nacional.qmd)
-- [Impacto por departamento](03-paraguay/departamentos/index.qmd)
-- [Asunción y área metropolitana](04-asuncion-metropolitana/index.qmd)
-- [Mapa histórico de inundaciones](05-mapa-riesgo/index.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### 🔴 Situación actual (2026-27)
-El episodio en curso y quién está expuesto.
-
-- [Estado del episodio 2026-27](situacion-actual/index.qmd)
-- [Exposición y población en riesgo](06-exposicion/index.qmd)
-- [Recomendaciones por nivel del río](07-recomendaciones/index.qmd)
-:::
-
-:::
-
-::: {.callout-important}
-## Episodio en curso
-**El Niño 2026-2027** en desarrollo (Aviso de El Niño de NOAA/CPC, jul-2026). El
-seguimiento del estado actual y de la población expuesta está en
-[Situación actual](situacion-actual/index.qmd).
-:::
+- **[Marco: desastres construidos](01-marco-conceptual/index.qmd)** — la tesis y el ENOS como motor.
+- **Amenazas** — [inundación fluvial](05-mapa-riesgo/index.qmd), [pluvial](08-pluvial/index.qmd),
+  [sequía](amenazas/sequia/index.qmd), [frío](amenazas/frio/index.qmd),
+  [dengue](amenazas/dengue/index.qmd), [incendios](amenazas/incendios/index.qmd).
+- **[Exposición y vulnerabilidad](06-exposicion/index.qmd)** · **[Situación actual](situacion-actual/index.qmd)** · **[Recomendaciones](07-recomendaciones/index.qmd)**.
+- **Contexto histórico (ENOS):** [América Latina](02-america-latina/index.qmd) ·
+  [Paraguay](03-paraguay/nacional.qmd) · [por departamento](03-paraguay/departamentos/index.qmd) ·
+  [Asunción](04-asuncion-metropolitana/index.qmd).
 
 ## Tabla resumen comparativa por episodio
 

@@ -1,0 +1,44 @@
+---
+title: "Incendios y quemas"
+subtitle: "Fuego, sequía y uso del suelo"
+---
+
+Los **incendios rurales y de vegetación** son una amenaza estacional en Paraguay,
+concentrada en la estación seca y agravada por la **sequía** (fase La Niña del ENOS) y
+por las **quemas** vinculadas al uso del suelo (habilitación de tierras, ganadería).
+El riesgo se construye en la intersección del clima, la política de tierras y la
+capacidad de respuesta.
+
+::: {.callout-note appearance="minimal"}
+**Módulo en desarrollo.** Se presenta el encuadre; los focos de calor, la superficie
+quemada y los eventos se incorporarán desde fuentes primarias (INFONA, SEN, NASA FIRMS).
+:::
+
+## Vínculo con el clima y las otras amenazas
+
+La **sequía** (ver [sequía y bajante](../sequia/index.qmd)) reseca la vegetación y
+extiende la temporada de fuego; los años secos regionales han estado asociados a
+**temporadas de incendios severas** en el continente [oficial]{.badge-oficial}
+[@wmo_alc_2023]. El humo agrega, además, una amenaza **sanitaria** (calidad del aire).
+
+## Evidencia
+
+::: {.vacio}
+Pendiente: focos de calor y superficie quemada por temporada (p. ej. **NASA FIRMS**,
+**INFONA**), eventos mayores (Chaco, Cerrado, Ñeembucú) y su relación con la sequía y
+el ENOS. Datos abiertos disponibles pero no procesados aún.
+:::
+
+## Exposición y vulnerabilidad
+
+El fuego amenaza comunidades rurales e **indígenas**, la producción agropecuaria, los
+**humedales** (Pantanal, Ñeembucú) y la biodiversidad, y expone a la población urbana
+al **humo**. La capacidad de combate (bomberos voluntarios, INFONA) es desigual en el
+territorio.
+
+## Recomendaciones
+
+La prevención (regulación de quemas, alerta temprana por focos de calor, preparación
+de bomberos) y la respuesta se integrarán al marco de
+[recomendaciones](../../07-recomendaciones/index.qmd), en coordinación con INFONA y la
+SEN.

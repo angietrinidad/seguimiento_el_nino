@@ -1,0 +1,45 @@
+---
+title: "Dengue y enfermedades climáticas"
+subtitle: "El riesgo sanitario ligado al clima y al agua"
+---
+
+El **dengue** (y otras arbovirosis como chikungunya y zika) es una amenaza
+**sensible al clima** y estrechamente ligada a las otras: el **agua estancada** tras
+las inundaciones y las lluvias, sumada al calor, multiplica los criaderos del
+mosquito *Aedes aegypti*. El riesgo se construye sobre la precariedad del hábitat y
+del acceso a servicios.
+
+::: {.callout-note appearance="minimal"}
+**Módulo en desarrollo.** Se presenta el vínculo y la fuente regional ya verificada;
+las series epidemiológicas nacionales se incorporarán desde el MSPBS/OPS.
+:::
+
+## Vínculo con el clima y las otras amenazas
+
+El calor y la humedad de los años **El Niño**, y el **agua estancada** que dejan las
+inundaciones (fluviales y pluviales), favorecen la proliferación del vector. La OPS
+documentó un **aumento de casos de dengue** en las Américas en 2024
+[oficial]{.badge-oficial} [@paho_dengue_2024]. Es el eslabón sanitario que conecta la
+amenaza hidrometeorológica con la salud pública.
+
+## Evidencia
+
+::: {.vacio}
+Pendiente: serie de casos y brotes de dengue en Paraguay por temporada (boletines
+epidemiológicos del **MSPBS**), y su correlación con episodios de inundación/lluvia y
+con fases del ENOS.
+:::
+
+## Exposición y vulnerabilidad
+
+La carga del dengue recae desproporcionadamente sobre los **asentamientos precarios**
+sin recolección de residuos ni provisión de agua por red —donde se acumulan
+recipientes y agua estancada—, es decir, sobre las mismas comunidades expuestas a la
+inundación. La vulnerabilidad es, otra vez, social antes que biológica.
+
+## Recomendaciones
+
+Las medidas (eliminación de criaderos, vigilancia, atención oportuna) se articulan
+con la respuesta a inundaciones —**la fase de recuperación debe incluir el control
+vectorial**— dentro del marco de
+[recomendaciones](../../07-recomendaciones/index.qmd).
