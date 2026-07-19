@@ -190,6 +190,75 @@ eventos provienen de prensa (2014) o de reportes oficiales sin estación/día ex
 umbrales con precisión. Tómese como guía de magnitud, no como norma.
 :::
 
+### El eje de duración: una IDF simplificada
+
+La escala anterior mezcla dos cosas —intensidad (mm/h) y acumulado del día—. El
+concepto que las une es la **curva IDF (intensidad-duración-frecuencia)**, la
+herramienta estándar del diseño de drenaje: relaciona la **intensidad** de la
+lluvia con su **duración** y su **frecuencia** (período de retorno). Aquí se
+construye solo el eje **intensidad-duración**; el eje de **frecuencia** requiere el
+ajuste estadístico de los registros pluviográficos locales —trabajo que en Paraguay
+inició Monte Domecq (curvas IDF regionales, 1995) y que estudios del Gran Asunción
+retomaron [@montedomecq1995; @montedomecq_baez1999]—. Obtener esos coeficientes (o
+la serie de la DINAC) es lo que falta para cerrar la curva.
+
+La idea clave del eje de duración: **la misma cantidad de lluvia es inofensiva o
+catastrófica según en cuánto tiempo cae.** Como intensidad = lámina ÷ duración,
+un aguacero corto alcanza intensidades de raudal con pocos milímetros:
+
+| Duración del aguacero | "Fuerte" 15-30 mm/h → encharca | "Muy fuerte" 30-60 → raudales | "Torrencial" >60 → anega |
+|---|---|---|---|
+| **10 min** | 2,5-5 mm | 5-10 mm | > 10 mm |
+| **20 min** | 5-10 mm | 10-20 mm | > 20 mm |
+| **30 min** | 7,5-15 mm | 15-30 mm | > 30 mm |
+| **1 hora** | 15-30 mm | 30-60 mm | > 60 mm |
+| **2 horas** | 30-60 mm | 60-120 mm | > 120 mm |
+
+: Lámina de lluvia (mm) que alcanza cada intensidad según la duración —aritmética simple (mm = intensidad × duración), clases AEMET/OMM [@aemet_intensidad]. El único punto **observado** es el raudal de Ñemby: **47 mm en ~50 min** ≈ 56 mm/h (muy fuerte), que ya arrastró vehículos [@ruizdiaz2018].
+
+Para **aguaceros cortos (≤ 1-2 h) manda la intensidad** (la tabla de arriba); para
+**eventos sostenidos de varias horas o todo el día manda el acumulado** y la
+saturación del suelo —ahí valen las bandas de 80-110 mm (anegamiento) y >150-200 mm
+(colapso) de la escala—. Por eso la curva de "cuánto colapsa" **desciende** con la
+duración: se necesita mucha intensidad en 30 min, pero basta una intensidad media
+sostenida en 24 h.
+
+```{=html}
+<svg viewBox="0 0 640 360" width="100%" style="max-width:640px;font-family:sans-serif;font-size:11px">
+  <rect x="70" y="30" width="530" height="290" fill="#fafbfc" stroke="#ccc"/>
+  <!-- y grid + labels (mm/h) -->
+  <g stroke="#eee"><line x1="70" y1="252" x2="600" y2="252"/><line x1="70" y1="201" x2="600" y2="201"/><line x1="70" y1="149" x2="600" y2="149"/><line x1="70" y1="81" x2="600" y2="81"/></g>
+  <g fill="#666" text-anchor="end"><text x="64" y="323">2</text><text x="64" y="255">5</text><text x="64" y="204">10</text><text x="64" y="152">20</text><text x="64" y="84">50</text><text x="64" y="34">100</text></g>
+  <text x="20" y="180" fill="#444" transform="rotate(-90 20,180)" text-anchor="middle">Intensidad (mm/h, escala log)</text>
+  <!-- x labels (duración) -->
+  <g fill="#666" text-anchor="middle"><text x="70" y="335">10 min</text><text x="187" y="335">30 min</text><text x="261" y="335">1 h</text><text x="378" y="335">3 h</text><text x="452" y="335">6 h</text><text x="600" y="335">24 h</text></g>
+  <text x="335" y="353" fill="#444" text-anchor="middle">Duración del aguacero (escala log)</text>
+  <!-- umbral conceptual de colapso -->
+  <path d="M 95,48 Q 320,165 600,235" fill="none" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7,4"/>
+  <text x="150" y="70" fill="#d1495b">umbral aproximado de colapso</text>
+  <text x="330" y="150" fill="#d1495b" transform="rotate(20 330,150)">(desciende con la duración)</text>
+  <!-- zonas -->
+  <text x="120" y="120" fill="#b06a2c" opacity="0.8">↑ raudales / anegamiento</text>
+  <text x="430" y="290" fill="#4a8f4a" opacity="0.8">↓ el drenaje absorbe</text>
+  <!-- puntos observados -->
+  <circle cx="242" cy="73" r="6" fill="#e8842c" stroke="#7a3d10"/>
+  <text x="252" y="70" fill="#7a3d10">Ñemby 2018: 47 mm / 50 min (≈56 mm/h)</text>
+  <circle cx="600" cy="206" r="6" fill="#7a1f2b" stroke="#3a0f16"/>
+  <text x="592" y="199" fill="#3a0f16" text-anchor="end">Feb 2014: 222 mm / 24 h (≈9 mm/h)</text>
+</svg>
+```
+
+*Esquema **conceptual**, no una IDF estadística: solo los dos puntos marcados son
+datos observados; la curva de umbral es una interpolación cualitativa entre ellos.
+Una IDF real (con períodos de retorno) exige los registros de la DINAC y el método
+de ajuste de [@montedomecq1995].*
+
+Una lectura de **frecuencia empírica** (no estadística) sale del propio catálogo de
+eventos: temporales de nivel 3 o mayor se registraron en 2014, 2018, 2019, 2023 y
+2024 —es decir, **casi todos los años de la última década**—, señal de que el
+umbral de colapso se cruza con una regularidad preocupante para la infraestructura
+de drenaje actual.
+
 ### Arroyos urbanos y puntos críticos
 
 Buena parte del anegamiento pluvial se organiza en torno a los **arroyos urbanos**,
