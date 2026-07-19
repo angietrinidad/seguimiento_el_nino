@@ -188,13 +188,14 @@ Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos
 expuestos.*
 
 ::: {.callout-tip}
-## Descarga: escuelas en riesgo (Excel)
-Las **24 escuelas** dentro de la zona de riesgo, con ubicación, **matrícula** (MEC,
-último año disponible), **tipo de gestión** y **el nivel del río al que se inundan**,
-están disponibles en una planilla:
-**[⬇ Descargar escuelas_riesgo.xlsx](../datos/exposicion/escuelas_riesgo.xlsx)**.
-Cada escuela se cuenta en una sola zona (sin doble conteo en el solapamiento
-Asunción–Villa Hayes).
+## Descargas: establecimientos en riesgo (Excel)
+Los establecimientos dentro de la zona de inundación, con ubicación, atributos y **el
+nivel del río al que se inundan** (cada uno contado en una sola zona, sin doble conteo):
+
+- **[⬇ escuelas_riesgo.xlsx](../datos/exposicion/escuelas_riesgo.xlsx)** — **24 escuelas**
+  (MEC): matrícula, tipo de gestión, zona y nivel del río.
+- **[⬇ salud_riesgo.xlsx](../datos/exposicion/salud_riesgo.xlsx)** — **7 servicios de
+  salud** (MSPBS): categoría (6 USF + 1 hospital distrital), distrito, zona y nivel del río.
 :::
 
 ## Cómo se define la exposición

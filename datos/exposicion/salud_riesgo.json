@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "H.D.-FALCON",
+    "categoria": "Hospitales Distritales",
+    "subtipo": "HD",
+    "distrito": "06 JOSE FALCON",
+    "lat": -25.26108,
+    "lon": -57.71084,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,88 m (se inundó en 2015-16)"
+  },
+  {
+    "nombre": "USF- 3 DE FEBRERO I - SAN MIGUEL",
+    "categoria": "Unidades De Salud De La Familia",
+    "subtipo": "ESTANDAR",
+    "distrito": "30 ASUNCION",
+    "lat": -25.28061,
+    "lon": -57.62975,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,88 m (se inundó en 2015-16)"
+  },
+  {
+    "nombre": "USF- 6 DE MAYO",
+    "categoria": "Unidades De Salud De La Familia",
+    "subtipo": "ESTANDAR",
+    "distrito": "10 MARIANO ROQUE ALONSO",
+    "lat": -25.1825,
+    "lon": -57.53367,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,57 m (se inundó en 2018-19)"
+  },
+  {
+    "nombre": "USF- CAMSAT - SAN FELIPE Y SANTIAGO",
+    "categoria": "Unidades De Salud De La Familia",
+    "subtipo": "ESTANDAR",
+    "distrito": "30 ASUNCION",
+    "lat": -25.31257,
+    "lon": -57.6677,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,57 m (se inundó en 2018-19)"
+  },
+  {
+    "nombre": "USF- CHACO-Í",
+    "categoria": "Unidades De Salud De La Familia",
+    "subtipo": "ESTANDAR",
+    "distrito": "04 VILLA HAYES",
+    "lat": -25.25094,
+    "lon": -57.63964,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,57 m (se inundó en 2018-19)"
+  },
+  {
+    "nombre": "USF- SAN BLAS - CATEURA",
+    "categoria": "Unidades De Salud De La Familia",
+    "subtipo": "ESTANDAR",
+    "distrito": "30 ASUNCION",
+    "lat": -25.3238,
+    "lon": -57.64764,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,88 m (se inundó en 2015-16)"
+  },
+  {
+    "nombre": "USF- SAN FELIPE",
+    "categoria": "Unidades De Salud De La Familia",
+    "subtipo": "ESTANDAR",
+    "distrito": "30 ASUNCION",
+    "lat": -25.27944,
+    "lon": -57.61703,
+    "zona": "Asunción y área metropolitana",
+    "nivel_rio": "≈ 7,57 m (se inundó en 2018-19)"
+  }
+]

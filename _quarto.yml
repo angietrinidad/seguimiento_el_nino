@@ -6,12 +6,14 @@ project:
   execute-dir: project
   resources:
     - datos/exposicion/escuelas_riesgo.xlsx
+    - datos/exposicion/salud_riesgo.xlsx
 
 website:
-  title: "Seguimiento El Niño (ENOS)"
+  title: "Desastres Construidos"
   description: >-
-    Repositorio documental sobre el fenómeno El Niño-Oscilación del Sur (ENOS)
-    con foco en América Latina, Paraguay y el área metropolitana de Asunción.
+    Riesgo de desastres en Paraguay desde una mirada crítica: el desastre como
+    construcción social. Base empírica sobre amenazas (inundación fluvial y pluvial,
+    y otras), exposición y vulnerabilidad, con fuentes oficiales y datos primarios.
   site-url: "https://angietrinidad.github.io/seguimiento_el_nino/"
   repo-url: "https://github.com/angietrinidad/seguimiento_el_nino"
   repo-actions: [edit, source, issue]

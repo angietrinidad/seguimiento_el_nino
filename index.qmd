@@ -1,15 +1,20 @@
 ---
-title: "Seguimiento El Niño (ENOS)"
-subtitle: "Repositorio documental — América Latina · Paraguay · Asunción"
+title: "Desastres Construidos"
+subtitle: "Riesgo de desastres en Paraguay desde una mirada crítica — el desastre como construcción social"
 date: last-modified
 date-format: "D [de] MMMM [de] YYYY"
 ---
 
-Base empírica y documental sobre el fenómeno **El Niño-Oscilación del Sur
-(ENOS)** para investigación en sociología y gestión del riesgo de desastres.
-Prioriza **fuentes oficiales y datos primarios**, señala de forma explícita los
-**vacíos de información** y **no incorpora cifras sin fuente verificable**
-(ver [metodología](metodologia.qmd)).
+Base empírica y documental sobre el **riesgo de desastres en Paraguay**, desde la
+premisa de que **el desastre no es natural: se construye socialmente** —la amenaza
+se vuelve desastre allí donde hay vulnerabilidad—. Prioriza **fuentes oficiales y
+datos primarios**, señala de forma explícita los **vacíos de información** y **no
+incorpora cifras sin fuente verificable** (ver [metodología](metodologia.qmd)).
+
+El repositorio arranca con la amenaza **más desarrollada** —la **inundación**
+(fluvial y pluvial) asociada al ciclo **El Niño-Oscilación del Sur (ENOS)**— y está
+diseñado para **escalar a otras amenazas** (sequía, olas de frío, enfermedades
+climáticas).
 
 ## Cómo está organizado
 
