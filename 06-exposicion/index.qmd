@@ -193,16 +193,17 @@ leyenda = """
   <span style="color:#1a9850">▮</span> Franja baja protegida (DEM)<br>
   <span style="color:#1b5e7a">●</span> Salud ·
   <span style="color:#b26a00">●</span> Educación ·
-  <span style="color:#009688">●</span> Comercio (expuestos)
+  <span style="color:#009688">●</span> Actividad comercial (expuestos)
 </div>"""
 m.get_root().html.add_child(folium.Element(leyenda))
 m
 ```
 
 *Los **8.030 centros educativos** (MEC) se agregan por departamento (conteo en el
-tooltip); los **1.056 servicios de salud** (MSPBS) y los **6.287 comercios** (OSM, capa
-activable) se muestran agrupados. Solo se dibujan individualmente los **expuestos** en
-la zona de riesgo (24 escuelas, 7 servicios de salud, 34 comercios). Nota: varias USF y
+tooltip); los **1.056 servicios de salud** (MSPBS) y los **10.342 puntos de actividad
+comercial** (OSM, capa activable) se muestran agrupados. Solo se dibujan individualmente
+los **expuestos** en la zona de riesgo (24 escuelas, 7 servicios de salud, 73 comercios y
+servicios). Nota: varias USF y
 escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos.
 Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.*
 
@@ -215,8 +216,9 @@ nivel del río al que se inundan** (cada uno contado en una sola zona, sin doble
   (MEC): matrícula, tipo de gestión, zona y nivel del río.
 - **[⬇ salud_riesgo.xlsx](../datos/exposicion/salud_riesgo.xlsx)** — **7 servicios de
   salud** (MSPBS): categoría (6 USF + 1 hospital distrital), distrito, zona y nivel del río.
-- **[⬇ comercio_riesgo.xlsx](../datos/exposicion/comercio_riesgo.xlsx)** — **34 comercios**
-  (OpenStreetMap): tipo, rubro y ubicación. Cota inferior (OSM subrepresenta el comercio informal).
+- **[⬇ comercio_riesgo.xlsx](../datos/exposicion/comercio_riesgo.xlsx)** — **73 comercios y
+  servicios** (OpenStreetMap): tipo, rubro y ubicación. Cota inferior (OSM subrepresenta el
+  comercio informal).
 :::
 
 ## Cómo se define la exposición

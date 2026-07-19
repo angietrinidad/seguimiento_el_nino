@@ -2,9 +2,10 @@
 Descarga la ACTIVIDAD COMERCIAL del área metropolitana de Asunción desde
 OpenStreetMap (Overpass API) y calcula la expuesta a la zona de inundación.
 
-Comercio = shop=* (todo tipo de comercio) + amenity=marketplace (mercados).
-Es una cota INFERIOR: OSM no releva todos los comercios (subrepresenta la economía
-informal y los barrios sin mapear). Fuente abierta, colaborativa.
+Actividad comercial = comercios (shop=*) + servicios comerciales (gastronomía,
+bancos/finanzas, farmacias, combustible, oficinas, talleres/oficios) + mercados.
+Es una cota INFERIOR: OSM no releva todo (subrepresenta la economía informal y los
+barrios sin mapear). Fuente abierta, colaborativa.
 
 Salidas:
 - datos/geo/comercio-puntos.geojson   (todos; capa de contexto en el mapa)
@@ -19,13 +20,16 @@ from shapely.prepared import prep
 GEO = os.path.join(os.path.dirname(__file__), "..", "datos", "geo")
 EXP = os.path.join(os.path.dirname(__file__), "..", "datos", "exposicion")
 BBOX = "-25.50,-57.80,-25.00,-57.28"  # (sur, oeste, norte, este): Asunción metro + Villa Hayes
+AMEN = ("marketplace|bank|bureau_de_change|money_transfer|pharmacy|fuel|restaurant|"
+        "cafe|fast_food|bar|pub|food_court|ice_cream|car_rental|car_wash|cinema|nightclub")
 Q = f"""
-[out:json][timeout:180];
+[out:json][timeout:240];
 (
-  node["shop"]({BBOX});
-  way["shop"]({BBOX});
-  node["amenity"="marketplace"]({BBOX});
-  way["amenity"="marketplace"]({BBOX});
+  node["shop"]({BBOX});   way["shop"]({BBOX});
+  node["office"]({BBOX}); way["office"]({BBOX});
+  node["craft"]({BBOX});  way["craft"]({BBOX});
+  node["amenity"~"^({AMEN})$"]({BBOX});
+  way["amenity"~"^({AMEN})$"]({BBOX});
 );
 out center;
 """
@@ -49,10 +53,26 @@ def overpass(q):
     raise SystemExit("Overpass no disponible")
 
 # categorías amplias para el tooltip/leyenda
+GASTRO = {"restaurant", "cafe", "fast_food", "bar", "pub", "food_court", "ice_cream", "nightclub"}
 def categoria(tags):
     s = (tags.get("shop") or "").lower()
-    if tags.get("amenity") == "marketplace":
+    a = (tags.get("amenity") or "").lower()
+    if a == "marketplace":
         return "Mercado"
+    if a in ("bank", "bureau_de_change", "money_transfer"):
+        return "Servicios financieros"
+    if a == "pharmacy" or s in ("pharmacy", "chemist"):
+        return "Farmacia"
+    if a == "fuel":
+        return "Combustible"
+    if a in GASTRO:
+        return "Gastronomía"
+    if a in ("car_rental", "car_wash", "cinema"):
+        return "Servicios comerciales"
+    if tags.get("office"):
+        return "Oficina / servicios"
+    if tags.get("craft"):
+        return "Taller / oficio"
     if s in ("supermarket", "mall", "department_store", "wholesale"):
         return "Gran superficie"
     if s in ("convenience", "kiosk", "grocery", "greengrocer", "butcher", "bakery"):
@@ -76,9 +96,10 @@ for el in res.get("elements", []):
     if clave in vistos:
         continue
     vistos.add(clave)
+    rubro = t.get("shop") or t.get("amenity") or t.get("office") or t.get("craft") or ""
     puntos.append({"type": "Feature",
                    "properties": {"nombre": t.get("name", ""), "tipo": categoria(t),
-                                  "shop": t.get("shop", "")},
+                                  "shop": rubro},
                    "geometry": {"type": "Point", "coordinates": [lon, lat]}})
 
 json.dump({"type": "FeatureCollection", "features": puntos},
