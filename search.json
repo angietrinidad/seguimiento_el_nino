@@ -370,6 +370,18 @@
     ]
   },
   {
+    "objectID": "agro-ganaderia/index.html#la-huella-espacial-del-agro-uso-del-suelo",
+    "href": "agro-ganaderia/index.html#la-huella-espacial-del-agro-uso-del-suelo",
+    "title": "Agricultura y ganadería",
+    "section": "La huella espacial del agro: uso del suelo",
+    "text": "La huella espacial del agro: uso del suelo\nEl uso del suelo hace visible la geografía de las escalas. Este mapa (ESA WorldCover 2021, analizado a ~320 m) muestra dónde está cada cosa:\n\n\n\nUso del suelo de Paraguay (ESA WorldCover 2021). Se distingue el cinturón agrícola del este, la pastura que avanza sobre el bosque del Chaco y el humedal del Pantanal al norte.\n\n\n\n\n\n\n\nCobertura\n% del país\n\n\n\n\nBosque\n47.9 %\n\n\nPastizal/pastura\n25.7 %\n\n\nAgricultura\n13.5 %\n\n\nArbustos/sabana\n7.5 %\n\n\nHumedal\n4.5 %\n\n\nAgua\n0.8 %\n\n\nUrbano\n0.2 %\n\n\nSuelo desnudo\n0.0 %\n\n\n\n\n\n\nEl este agrícola: la franja naranja del oriente es el cinturón sojero (Alto Paraná, Itapúa, Canindeyú) —el agronegocio de exportación—.\nEl Chaco de pastura: los bloques amarillos tallados en el verde del bosque son la ganadería avanzando sobre el Chaco (ver deforestación más abajo).\nBosque y humedal: el bosque aún cubre cerca de la mitad del país —coherente con el 44,4 % que reporta el INFONA (Instituto Forestal Nacional (INFONA), 2026)— y el Pantanal aporta el humedal del norte.\n\nAgricultura y pastura suman en torno al 39 % del territorio. El mapa muestra que las dos escalas del agro no solo difieren en tamaño, sino en geografía: soja al este, ganadería al oeste (Agencia Espacial Europea (ESA) — Zanaga et al., 2022).",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
+  },
+  {
     "objectID": "agro-ganaderia/index.html#exposición-diferencial-a-las-amenazas",
     "href": "agro-ganaderia/index.html#exposición-diferencial-a-las-amenazas",
     "title": "Agricultura y ganadería",
@@ -458,7 +470,7 @@
     "href": "08-pluvial/index.html#dónde-se-acumula-el-agua-modelo-topográfico-dem",
     "title": "Inundaciones pluviales urbanas en Paraguay",
     "section": "Dónde se acumula el agua: modelo topográfico (DEM)",
-    "text": "Dónde se acumula el agua: modelo topográfico (DEM)\nPara pasar de eventos puntuales a una capa de susceptibilidad, se derivó del Copernicus DEM (30 m) dónde el relieve favorece el encharcamiento y la concentración del escurrimiento (relleno de depresiones + acumulación de flujo + índice topográfico de humedad). Es un modelo de susceptibilidad, no un evento observado. El método es reproducible por ciudad (scripts/analisis_pluvial_dem.py); el mapa muestra las ciudades ya procesadas:\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\nModelo, no evento. El DEM de 30 m identifica lows a escala de barrio; no capta la red de desagües ni el anegamiento a escala de calle. Falta el estudio hidráulico urbano oficial (MOPC/ESSAP) y la serie de lluvia por estación de la DINAC. La susceptibilidad de Ciudad del Este, Encarnación, Concepción y Pilar queda pendiente (se regenera con scripts/analisis_pluvial_dem.py cuando el servicio de datos DEM esté disponible).",
+    "text": "Dónde se acumula el agua: modelo topográfico (DEM)\nPara pasar de eventos puntuales a una capa de susceptibilidad, se derivó del Copernicus DEM (30 m) dónde el relieve favorece el encharcamiento y la concentración del escurrimiento (relleno de depresiones + acumulación de flujo + índice topográfico de humedad). Es un modelo de susceptibilidad, no un evento observado. El método es reproducible por ciudad (scripts/analisis_pluvial_dem.py); el mapa muestra las ciudades ya procesadas:\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nYa están procesadas cinco ciudades ribereñas —Asunción, Ciudad del Este, Encarnación, Concepción y Pilar— con la susceptibilidad alta (km²): Pilar 8,9 · Encarnación 7,0 · Asunción 6,6 · Concepción 6,4 · Ciudad del Este 5,5. Pilar y Encarnación, en llanura, son las de mayor susceptibilidad relativa.\n\nModelo, no evento. El DEM de 30 m identifica lows a escala de barrio; no capta la red de desagües ni el anegamiento a escala de calle. En las ciudades de llanura (Pilar, Encarnación) la susceptibilidad pluvial se solapa fuertemente con la planicie fluvial (amenaza combinada). Falta el estudio hidráulico urbano oficial (MOPC/ESSAP) y la serie de lluvia por estación de la DINAC.",
     "crumbs": [
       "Inicio",
       "⚠️ Amenazas",
