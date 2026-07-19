@@ -194,7 +194,7 @@
     "href": "index.html#cómo-está-organizado",
     "title": "Desastres Anunciados",
     "section": "Cómo está organizado",
-    "text": "Cómo está organizado\n\nMarco: desastres construidos — la tesis y el ENOS como motor.\nAmenazas — inundación fluvial, pluvial, sequía, frío, dengue, incendios.\nExposición y vulnerabilidad · Agricultura y ganadería · Situación actual · Recomendaciones.\nContexto histórico (ENOS): América Latina · Paraguay · por departamento · Asunción.",
+    "text": "Cómo está organizado\n\nMarco: el desastre construido y anunciado — la tesis y el ENOS como motor.\nAmenazas — inundación fluvial, pluvial, sequía, frío, dengue, incendios.\nExposición y vulnerabilidad · Agricultura y ganadería · Situación actual · Recomendaciones.\nContexto histórico (ENOS): América Latina · Paraguay · por departamento · Asunción.",
     "crumbs": [
       "Inicio",
       "🏠 Panel de control"
@@ -328,13 +328,6 @@
       "👥 Exposición y situación",
       "Exposición y vulnerabilidad"
     ]
-  },
-  {
-    "objectID": "CONTEXTO.html",
-    "href": "CONTEXTO.html",
-    "title": "",
-    "section": "",
-    "text": "Código\n\n\n\n\nCONTEXTO Soy investigadora en sociología y gestión del riesgo de desastres en la Universidad Nacional de Asunción (Paraguay). Necesito construir un repositorio documental exhaustivo sobre el fenómeno climático El Niño-Oscilación del Sur (ENOS), con tres niveles de resolución geográfica: (1) América Latina en general, (2) Paraguay a nivel nacional y por departamentos, y (3) Asunción y su área metropolitana en particular. El repositorio servirá como base empírica para investigación académica sobre vulnerabilidad social, adaptación climática y gestión de riesgo, así como para el diseño de instrumentos de recolección de datos (encuestas, entrevistas).\nOBJETIVO Genera un repositorio estructurado y citado con la siguiente información:\n\nMARCO CONCEPTUAL\n\nDefinición técnica de El Niño-Oscilación del Sur (ENOS), diferencias con La Niña, ciclo de recurrencia, umbrales de temperatura oceánica para clasificación (débil/moderado/fuerte/muy fuerte).\nMecanismos físicos de impacto sobre precipitación, temperatura y eventos extremos en Sudamérica (patrón de teleconexión).\n\nAMÉRICA LATINA (panorama regional)\n\nMapa de impactos diferenciados por subregión (Centroamérica, Caribe, región andina, Cono Sur, Amazonía) para el episodio 2023-2024 y el episodio en curso de 2026.\nImpactos sectoriales: agricultura, salud (enfermedades vectoriales, malnutrición), seguridad hídrica, migración y desplazamiento.\nMarco institucional regional: OMM, CIIFEN, Cruz Roja, CEPAL, ReliefWeb, y su rol en alerta temprana y acción anticipatoria.\n\nPARAGUAY (nivel nacional y departamental)\n\nHistorial de episodios El Niño en Paraguay desde 1997-98, con foco en los eventos de 2015-16, 2023-24 y el pronóstico 2026-27.\nDatos meteorológicos oficiales: Dirección de Meteorología e Hidrología (DINAC), boletines climáticos trimestrales, anomalías de temperatura superficial del mar asociadas a cada pronóstico.\nImpacto diferenciado por departamento, priorizando: Central, Concepción, San Pedro, Presidente Hayes (bajo Chaco), Ñeembucú, Misiones, Itapúa y Alto Paraná (cuenca del Paraná/Pantanal).\nSectores afectados: agricultura y ganadería (MAG, Dirección de Riesgos Agrícolas), crecidas del río Paraguay y Paraná, salud pública, infraestructura vial.\nMarco institucional: Secretaría de Emergencia Nacional (SEN), MAG, DINAC, municipalidades, cooperación internacional (Cruz Roja Paraguaya, PNUD, UNICEF).\n\nASUNCIÓN Y ÁREA METROPOLITANA\n\nDatos hidrológicos específicos: nivel del río Paraguay, zonas ribereñas de riesgo (bañados norte y sur), estimaciones de familias/población desplazada en episodios recientes y proyectadas para 2026-27.\nActuación de la Dirección General de Gestión y Reducción de Riesgos de Desastres (DGRRD) de la Municipalidad de Asunción: protocolos, refugios, alertas tempranas.\nAntecedentes de inundaciones pluviales urbanas (no solo fluviales) y su relación con infraestructura de drenaje.\nPoblación en situación de vulnerabilidad social en zonas de riesgo (asentamientos informales, niñez, adultos mayores).\n\nFUENTES PRIORITARIAS A CONSULTAR\n\nOrganismos oficiales: DINAC, SEN, MAG, Municipalidad de Asunción (DGRRD), Banco Central del Paraguay (impacto económico).\nOrganismos internacionales: OMM (WMO), NOAA/ENSO, CIIFEN, CEPAL, OCHA/ReliefWeb, UNICEF Paraguay, Cruz Roja/IFRC.\nMedios especializados y académicos: ABC Color, La Nación, Última Hora, La Tribuna (sección clima/economía), CRC-SAS (Centro Regional del Clima para el Sur de Sudamérica), revistas científicas paraguayas (Cuadernos de Sociología, FACSO-UNA).\n\nFORMATO DE SALIDA ESPERADO\n\nOrganizar la información en carpetas/secciones por nivel geográfico (LATAM &gt; Paraguay &gt; Departamentos &gt; Asunción).\nCada hallazgo debe incluir: fuente, fecha de publicación, nivel de confiabilidad (oficial/prensa/académico), y variable medida (precipitación, temperatura, población afectada, sector económico).\nIncluir series de tiempo cuando existan datos numéricos comparables entre episodios históricos (1997-98, 2015-16, 2023-24, 2026-27).\nGenerar una tabla resumen comparativa de intensidad y afectación por episodio histórico de El Niño en Paraguay.\n\n\nRESTRICCIONES - Priorizar fuentes oficiales y datos primarios sobre notas de prensa cuando estén disponibles. - Señalar explícitamente vacíos de información o datos no verificables. - No fabricar cifras; si un dato numérico no tiene fuente verificable, indicarlo como estimación no confirmada. - Actualizar el repositorio con foco en el episodio 2026-2027 actualmente en desarrollo, sin descartar el valor comparativo de episodios históricos."
   },
   {
     "objectID": "contexto-paraguay/departamentos/index.html",
@@ -1167,34 +1160,6 @@
       "📚 Contexto histórico (ENOS)",
       "Paraguay (nivel nacional)"
     ]
-  },
-  {
-    "objectID": "datos/diccionario-datos.html",
-    "href": "datos/diccionario-datos.html",
-    "title": "",
-    "section": "",
-    "text": "Código"
-  },
-  {
-    "objectID": "datos/diccionario-datos.html#columnas-transversales",
-    "href": "datos/diccionario-datos.html#columnas-transversales",
-    "title": "",
-    "section": "Columnas transversales",
-    "text": "Columnas transversales\n\n\n\n\n\n\n\nColumna\nDescripción\n\n\n\n\nfuente\nIdentificador corto de la fuente (ver fuentes/registro.csv)\n\n\nconfiabilidad\noficial | academico | prensa | estimacion\n\n\nfecha_publicacion\nFecha del documento fuente (AAAA-MM-DD)\n\n\nvariable\nVariable medida (precipitacion, temperatura, nivel_rio, poblacion_afectada, sector_economico)"
-  },
-  {
-    "objectID": "datos/diccionario-datos.html#convención-para-vacíos",
-    "href": "datos/diccionario-datos.html#convención-para-vacíos",
-    "title": "",
-    "section": "Convención para vacíos",
-    "text": "Convención para vacíos\n\nCelda vacía = dato aún no recolectado.\nValor s/d = la fuente existe pero no reporta el dato (sin dato).\nValor NC = estimación no confirmada (debe ir acompañada de nota).\n\nNunca se rellena una celda con un número sin fuente verificable."
-  },
-  {
-    "objectID": "datos/diccionario-datos.html#archivos",
-    "href": "datos/diccionario-datos.html#archivos",
-    "title": "",
-    "section": "Archivos",
-    "text": "Archivos\n\n\n\n\n\n\n\nArchivo\nContenido\n\n\n\n\nepisodios.csv\nClasificación de intensidad de cada episodio El Niño (base ONI de NOAA)\n\n\nparaguay-series.csv\nSeries de tiempo por episodio y variable a nivel Paraguay\n\n\nnivel-rio-paraguay.csv\nNivel del río Paraguay en Asunción por episodio\n\n\npoblacion-afectada.csv\nPoblación / familias afectadas o desplazadas por episodio y nivel\n\n\n\n\nintensidad_oni (episodios.csv)\nClasificación estándar del Oceanic Niño Index (ONI) de NOAA/CPC según el pico de anomalía en la región Niño 3.4:\n\n\n\nCategoría\nUmbral ONI (°C)\n\n\n\n\ndébil\n0.5 a 0.9\n\n\nmoderado\n1.0 a 1.4\n\n\nfuerte\n1.5 a 1.9\n\n\nmuy fuerte\n≥ 2.0"
   },
   {
     "objectID": "fuentes/index.html",
