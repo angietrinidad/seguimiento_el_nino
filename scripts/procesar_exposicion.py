@@ -16,7 +16,7 @@ Salidas:
 - datos/geo/expuestos-inundacion.geojson       (salud/escuelas dentro de huellas Asunción)
 - datos/exposicion/resumen.json                (tablero de cifras)
 """
-import os, csv, json, unicodedata
+import os, csv, json, unicodedata, time
 from shapely.geometry import shape, mapping, Point
 from shapely.ops import unary_union
 from shapely.prepared import prep
@@ -98,23 +98,25 @@ def matricula(codigo):
     if codigo in _mat_cache:
         return _mat_cache[codigo]
     res = (None, None)
-    try:
-        url = ("https://datos.mec.gov.py/app/mapa_establecimientos/datos"
-               f"?tipo_consulta=13&periodo=2014&establecimiento={codigo}")
-        raw = urllib.request.urlopen(url, timeout=30).read()
+    url = ("https://datos.mec.gov.py/app/mapa_establecimientos/datos"
+           f"?tipo_consulta=13&periodo=2014&establecimiento={codigo}")
+    for intento in range(3):  # reintenta ante fallos de red transitorios
         try:
-            data = json.loads(raw.decode("utf-8"))
-        except UnicodeDecodeError:
-            data = json.loads(raw.decode("latin-1"))
-        por_anio = {}
-        for inst in data:
-            for y, v in (inst.get("cantidad_matriculados") or {}).items():
-                if v and v not in ("--", ""):
-                    por_anio[y] = por_anio.get(y, 0) + int(v)
-        if por_anio:
-            a = max(por_anio); res = (por_anio[a], a)
-    except Exception:
-        pass
+            raw = urllib.request.urlopen(url, timeout=30).read()
+            try:
+                data = json.loads(raw.decode("utf-8"))
+            except UnicodeDecodeError:
+                data = json.loads(raw.decode("latin-1"))
+            por_anio = {}
+            for inst in data:
+                for y, v in (inst.get("cantidad_matriculados") or {}).items():
+                    if v and v not in ("--", ""):
+                        por_anio[y] = por_anio.get(y, 0) + int(v)
+            if por_anio:
+                a = max(por_anio); res = (por_anio[a], a)
+            break
+        except Exception:
+            time.sleep(1.5 * (intento + 1))
     _mat_cache[codigo] = res
     return res
 
@@ -150,21 +152,24 @@ for f in deps["features"]:
 # --- Zonas de riesgo de inundación (multi-zona) ---
 # Cada zona = unión de huellas Sentinel-1 + buffer ~550 m (barrios adyacentes).
 BUFFER_DEG = 0.005
+# Orden específica-primero: las zonas locales (Villa Hayes) reclaman sus
+# establecimientos antes que la metropolitana de Asunción, con la que se solapan.
 ZONAS = [
+    {"id": "villahayes", "nombre": "Villa Hayes", "huellas": ["anegamiento-villahayes-s1.geojson"]},
+    {"id": "fuerteolimpo", "nombre": "Fuerte Olimpo", "huellas": ["anegamiento-fuerteolimpo-s1.geojson"]},
+    {"id": "alberdi", "nombre": "Alberdi / bajo Ñeembucú", "huellas": ["anegamiento-alberdi-s1.geojson"]},
+    {"id": "neembucu", "nombre": "Pilar / Ñeembucú",
+     "huellas": ["zona-anegamiento-neembucu-s1.geojson"]},
     {"id": "asuncion", "nombre": "Asunción y área metropolitana",
      "huellas": ["inundacion-2015-16-s1.geojson", "inundacion-2018-19-s1.geojson",
                  "inundacion-2023-24-s1.geojson"]},
-    {"id": "neembucu", "nombre": "Pilar / Ñeembucú",
-     "huellas": ["zona-anegamiento-neembucu-s1.geojson"]},
-    {"id": "alberdi", "nombre": "Alberdi / bajo Ñeembucú", "huellas": ["anegamiento-alberdi-s1.geojson"]},
-    {"id": "villahayes", "nombre": "Villa Hayes", "huellas": ["anegamiento-villahayes-s1.geojson"]},
-    {"id": "fuerteolimpo", "nombre": "Fuerte Olimpo", "huellas": ["anegamiento-fuerteolimpo-s1.geojson"]},
 ]
 
 def guardar(obj, path):
     json.dump(obj, open(path, "w", encoding="utf-8"), separators=(",", ":"))
 
 exp_feats, zona_feats, resumen_zonas = [], [], {}
+asignados = set()  # (lon,lat) ya contados: evita doble conteo en solapamientos
 for z in ZONAS:
     geoms = []
     for fn in z["huellas"]:
@@ -183,7 +188,11 @@ for z in ZONAS:
     ns = ne = 0
     for clase, lista in (("salud", salud), ("educacion", escuelas)):
         for r in lista:
+            clave = (r["lon"], r["lat"])
+            if clave in asignados:
+                continue
             if pz.contains(Point(r["lon"], r["lat"])):
+                asignados.add(clave)
                 if clase == "salud": ns += 1
                 else: ne += 1
                 props = {"clase": clase, "tipo": r["tipo"], "nombre": r["nombre"], "zona": z["nombre"]}

@@ -173,6 +173,16 @@ escuelas comparten predio (misma coordenada) y se cuentan como servicios distint
 Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos
 expuestos.*
 
+::: {.callout-tip}
+## Descarga: escuelas en riesgo (Excel)
+Las **24 escuelas** dentro de la zona de riesgo, con ubicación, **matrícula** (MEC,
+último año disponible), **tipo de gestión** y **el nivel del río al que se inundan**,
+están disponibles en una planilla:
+**[⬇ Descargar escuelas_riesgo.xlsx](../datos/exposicion/escuelas_riesgo.xlsx)**.
+Cada escuela se cuenta en una sola zona (sin doble conteo en el solapamiento
+Asunción–Villa Hayes).
+:::
+
 ## Cómo se define la exposición
 
 - **Zona de riesgo de inundación:** unión de las huellas de inundación derivadas

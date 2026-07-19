@@ -176,6 +176,93 @@ evidencia de Paraguay muestra sobrerrepresentados en los albergues —en 2019,
 - **Asentamientos informales:** los bañados concentran el riesgo por su ubicación
   *y* por la precariedad —la vulnerabilidad es social, no solo geográfica.
 
+## Recomendaciones según el ciclo de vida
+
+*La misma inundación golpea distinto a una bebé, a una adolescente, a una persona
+adulta o a una persona mayor.* La edad determina tanto la exposición al peligro
+(quién se ahoga, quién enferma) como la capacidad de responder y de recuperarse.
+El **Plan de Contingencia de la SEN** convoca explícitamente al **Ministerio de la
+Niñez y la Adolescencia** al Consejo Ejecutivo [@sen_plan_inund], y las normas HSP
+—Normas mínimas para la protección de la niñez (**CPMS**), **INEE** (educación en
+emergencias) y Normas de Inclusión Humanitaria (**HIS**)— aportan el detalle
+[@hsp]. La evidencia paraguaya lo confirma: en 2019 los albergues de Asunción
+registraron **13.500 menores de edad** y **~1.000 adultos mayores** [@muni_2019].
+
+- **Primera infancia (0–5 años).** El grupo de mayor riesgo de muerte por
+  ahogamiento, diarrea y desnutrición aguda. Priorizar en la **evacuación**;
+  garantizar **agua segura, lactancia y alimentación adecuada** para la edad;
+  vigilancia nutricional y de enfermedades transmisibles; **espacios protegidos**
+  para la primera infancia en los albergues [@esfera; @hsp].
+- **Niñez (6–12 años).** Prevenir la **separación familiar** (registro e
+  identificación desde la evacuación), habilitar **espacios amigables** y sostener
+  la **continuidad educativa** —la escuela como factor de protección y de
+  normalidad; apoyo psicosocial ante el trauma, como el que UNICEF brindó en
+  inundaciones previas [@hsp; @unicef_py_inund].
+- **Adolescencia (13–17 años).** Riesgos específicos de **deserción escolar**,
+  trabajo infantil y violencia; las adolescentes enfrentan mayor riesgo de
+  violencia sexual y embarazo. Mantener el vínculo educativo, ofrecer **espacios
+  seguros diferenciados** y canales de denuncia accesibles; involucrar a
+  adolescentes en los comités como agentes, no solo como víctimas [@hsp; @chs].
+- **Juventud y personas adultas.** Suelen sostener la respuesta familiar y
+  comunitaria: integrarlas a los **comités de gestión de riesgo** y a la evacuación
+  de terceros; atender la **pérdida de medios de vida** e ingresos (ver
+  [recuperación económica](#medios-de-vida-rurales-ñeembucú-chaco)) y la carga
+  psicosocial de ser cuidadores [@chs].
+- **Personas mayores.** Movilidad reducida, enfermedades crónicas y dependencia de
+  medicación las dejan atrás en evacuaciones apresuradas. Garantizar **apoyo físico
+  para evacuar**, **continuidad de tratamientos crónicos**, albergues **accesibles**
+  e información en formatos que lleguen a quienes no usan medios digitales —Normas de
+  Inclusión Humanitaria (HIS) [@hsp; @esfera].
+
+::: {.callout-note}
+## Transversal: discapacidad
+La discapacidad atraviesa todo el ciclo de vida y multiplica el riesgo en cada
+etapa. Las Normas de Inclusión Humanitaria exigen **accesibilidad física** de
+albergues y letrinas, **información accesible** (visual, auditiva, lenguaje
+sencillo) y **apoyos personalizados** para la evacuación [@hsp].
+:::
+
+## Recomendaciones por género
+
+*El género no es una casilla más: estructura quién decide, quién cuida, quién está
+en riesgo y quién queda fuera de la información.* En emergencias, las mujeres y las
+niñas asumen la carga desproporcionada del cuidado, enfrentan mayor riesgo de
+**violencia basada en género (VBG)** y ven interrumpida su salud sexual y
+reproductiva. La evidencia paraguaya es contundente: en 2019 los albergues de
+Asunción alojaban **778 embarazadas** [@muni_2019], una necesidad de salud materna
+que no admite pausa durante la crecida.
+
+- **Mujeres y niñas.** Diseñar albergues con **privacidad y separación por sexo**
+  en dormitorios y sanitarios, **iluminación** y rutas seguras para prevenir la
+  VBG; asegurar **insumos de higiene menstrual**; garantizar la **participación de
+  las mujeres en las decisiones** sobre el albergue y la distribución, no solo como
+  receptoras [@esfera; @chs].
+- **Personas gestantes y lactantes.** Continuidad de **controles prenatales y
+  atención del parto** (identificar el establecimiento de salud de referencia
+  operativo —ver [exposición](../06-exposicion/index.qmd)); espacios y apoyo para la
+  **lactancia**; prioridad en evacuación y en el reparto de agua y alimentos
+  [@esfera; @sen_plan_inund].
+- **Prevención y respuesta a la VBG.** Rutas de **derivación** conocidas y
+  accesibles, mecanismos de **denuncia** seguros y confidenciales (parte de la
+  rendición de cuentas de la CHS), y coordinación con el sistema de protección; el
+  riesgo de violencia y de explotación aumenta con el hacinamiento y la pérdida de
+  redes [@chs; @esfera].
+- **Diversidad sexual (LGBTIQ+).** Los albergues binarios pueden excluir o exponer
+  a personas trans y no binarias; aplicar el principio de **no discriminación** y
+  **no generar daño** de la CHS, ofreciendo alojamiento y sanitarios que respeten su
+  identidad y seguridad [@chs].
+- **Masculinidades y cuidado.** Involucrar a los hombres en las tareas de cuidado y
+  en la prevención de la violencia; el enfoque de género no es "temas de mujeres"
+  sino una condición de eficacia de toda la respuesta [@chs].
+
+::: {.callout-tip}
+El cruce **ciclo de vida × género** es donde se concentra el riesgo: una
+**adolescente embarazada**, una **niña con discapacidad**, una **adulta mayor que
+cuida nietos** enfrentan riesgos acumulados que ninguna categoría por separado
+captura. La planificación debe partir de estos perfiles interseccionales, no de un
+"damnificado" promedio.
+:::
+
 ## Medios de vida rurales (Ñeembucú, Chaco)
 
 En las zonas ribereñas rurales, la crecida amenaza cultivos y ganado. Las normas

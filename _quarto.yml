@@ -4,6 +4,8 @@ project:
   # Ejecutar todo el código con la raíz del proyecto como directorio de trabajo,
   # para que las rutas a datos/*.csv sean idénticas en todas las páginas.
   execute-dir: project
+  resources:
+    - datos/exposicion/escuelas_riesgo.xlsx
 
 website:
   title: "Seguimiento El Niño (ENOS)"
