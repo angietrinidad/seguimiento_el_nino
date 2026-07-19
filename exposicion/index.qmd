@@ -41,7 +41,7 @@ rg = r["en_riesgo"]
 html = "<div style='display:flex;gap:1em;flex-wrap:wrap'>" + card(
     "Paraguay (total)",
     [("Población", f"{n['poblacion']:,}"), ("Servicios de salud", f"{n['salud']:,}"),
-     ("Centros educativos", f"{n['escuelas']:,}")], "#1b5e7a") + card(
+     ("Centros educativos", f"{n['escuelas']:,}")], "#A81C9A") + card(
     "⚠ Dentro de la zona de inundación",
     [("Población en riesgo", f"{rg['poblacion']:,}"), ("Servicios de salud", f"{rg['salud']:,}"),
      ("Centros educativos", f"{rg['escuelas']:,}"), ("Alumnos (matrícula)", f"{rg['matricula']:,}")],

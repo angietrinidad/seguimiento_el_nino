@@ -98,7 +98,7 @@ for etiqueta, fn, color in capas_ne:
         ).add_to(m)
 
 # --- Zonas de riesgo documentadas ---
-color_conf = {"oficial": "#1b5e7a", "prensa": "#b26a00",
+color_conf = {"oficial": "#A81C9A", "prensa": "#b26a00",
               "estimacion": "#8a1c1c", "academico": "#4a7c59"}
 capa_zonas = folium.FeatureGroup(name="Zonas de riesgo documentadas").add_to(m)
 capa_hidro = folium.FeatureGroup(name="Estación hidrométrica").add_to(m)
@@ -133,7 +133,7 @@ leyenda = """
   <span style="color:#7b2cbf">▮</span> 2023-24<br>
   <span style="color:#2b6cb0">▮</span> Cauce permanente<br>
   <b>Zonas documentadas</b><br>
-  <span style="color:#1b5e7a">●</span> Oficial &nbsp;
+  <span style="color:#A81C9A">●</span> Oficial &nbsp;
   <span style="color:#b26a00">●</span> Prensa
   (tamaño ∝ familias)<br>
   <span style="color:#c0392b">▮</span> Departamento prioritario
