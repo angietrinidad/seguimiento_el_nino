@@ -1,9 +1,6 @@
-/*-- scss:defaults --*/
-$primary: #1b5e7a;
-$body-color: #1f2933;
-$font-family-sans-serif: "Source Sans Pro", -apple-system, system-ui, sans-serif;
-
 /*-- scss:rules --*/
+// El color primario, la tipografía (Nunito) y el navbar los define la marca
+// (_brand.yml + brand-custom.scss). Aquí solo quedan los componentes propios.
 // Etiquetas de nivel de confiabilidad de cada hallazgo
 .badge-oficial   { background:#1b5e7a; color:#fff; padding:.1em .5em; border-radius:.4em; font-size:.75em; }
 .badge-academico { background:#4a7c59; color:#fff; padding:.1em .5em; border-radius:.4em; font-size:.75em; }

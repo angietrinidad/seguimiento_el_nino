@@ -1,0 +1,24 @@
+color:
+  palette:
+    fucsia: "#A81C9A"
+    tinta: "#141414"
+    papel: "#F4EFE6"
+    gris: "#6B6763"
+  primary: fucsia
+  link: fucsia
+
+typography:
+  fonts:
+    - family: Nunito
+      source: google
+      weight: [400, 600, 700, 800]
+  base:
+    family: Nunito
+  headings:
+    family: Nunito
+    weight: 800
+
+logo:
+  images:
+    icon: assets/favicon.png
+    small: assets/navbar_logo.png

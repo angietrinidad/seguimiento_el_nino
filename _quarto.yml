@@ -17,6 +17,8 @@ project:
 
 website:
   title: "Desastres Anunciados"
+  favicon: assets/favicon.png
+  image: assets/logo_card.png
   description: >-
     Riesgo de desastres en Paraguay desde una mirada crítica: desastres previsibles
     y socialmente construidos. Base empírica sobre amenazas (inundación fluvial y
@@ -29,7 +31,10 @@ website:
   reader-mode: true
   search: true
   navbar:
-    background: primary
+    background: light
+    logo: assets/navbar_logo.png
+    logo-alt: "Desastres Anunciados"
+    title: false
     left:
       - text: "Inicio"
         file: index.qmd
@@ -125,7 +130,13 @@ format:
   html:
     theme:
       - cosmo
+      - brand-custom.scss
       - styles.scss
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     toc: true
     toc-title: "En esta página"
     toc-depth: 3
