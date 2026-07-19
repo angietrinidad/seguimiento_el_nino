@@ -76,7 +76,7 @@
     "href": "situacion-actual/index.html#cómo-se-compara-con-episodios-pasados",
     "title": "Situación actual: episodio 2026-2027",
     "section": "4. Cómo se compara con episodios pasados",
-    "text": "4. Cómo se compara con episodios pasados\nEl episodio en curso se lee sobre el registro de 1997-98, 2015-16, 2018-19 y 2023-24. La comparación de intensidad (ONI) está en la portada; las huellas de inundación derivadas de satélite, en el mapa histórico de inundaciones.\n\n\n\n\n\n\nNota\n\n\n\nPágina viva: se actualiza con cada nuevo boletín de la DINAC y de NOAA/OMM. La fecha de arriba indica la última actualización.",
+    "text": "4. Cómo se compara con episodios pasados\nEl episodio en curso se lee sobre el registro de 1997-98, 2015-16, 2018-19 y 2023-24. La comparación de intensidad (ONI) está en el marco; las huellas de inundación derivadas de satélite, en el mapa histórico de inundaciones.\n\n\n\n\n\n\nNota\n\n\n\nPágina viva: se actualiza con cada nuevo boletín de la DINAC y de NOAA/OMM. La fecha de arriba indica la última actualización.",
     "crumbs": [
       "Inicio",
       "👥 Exposición y situación",
@@ -172,7 +172,7 @@
     "href": "index.html",
     "title": "Desastres Anunciados",
     "section": "",
-    "text": "Base empírica y documental sobre el riesgo de desastres en Paraguay, desde una doble premisa: el desastre no es natural —se construye socialmente— y casi nunca es sorpresa —está anunciado—. La amenaza se vuelve desastre allí donde hay vulnerabilidad; y como el clima se pronostica y la vulnerabilidad se conoce, el golpe suele llegar avisado. Este repositorio prioriza fuentes oficiales y datos primarios, señala de forma explícita los vacíos de información y no incorpora cifras sin fuente verificable (ver metodología).\nCubre varias amenazas —inundación fluvial y pluvial, sequía, olas de frío, dengue e incendios— y su exposición, con el eje del ciclo El Niño-Oscilación del Sur (ENOS) como motor climático central.",
+    "text": "Base empírica y documental sobre el riesgo de desastres en Paraguay, desde una doble premisa: el desastre no es natural —se construye socialmente— y casi nunca es sorpresa —está anunciado—. La amenaza se vuelve desastre allí donde hay vulnerabilidad; y como el clima se pronostica y la vulnerabilidad se conoce, el golpe suele llegar avisado. Prioriza fuentes oficiales y datos primarios y no incorpora cifras sin fuente verificable (ver metodología).",
     "crumbs": [
       "Inicio",
       "🏠 Panel de control"
@@ -190,44 +190,11 @@
     ]
   },
   {
-    "objectID": "index.html#cómo-está-organizado",
-    "href": "index.html#cómo-está-organizado",
+    "objectID": "index.html#explorá-el-sitio",
+    "href": "index.html#explorá-el-sitio",
     "title": "Desastres Anunciados",
-    "section": "Cómo está organizado",
-    "text": "Cómo está organizado\n\nMarco: el desastre construido y anunciado — la tesis y el ENOS como motor.\nAmenazas — inundación fluvial, pluvial, sequía, frío, dengue, incendios.\nExposición y vulnerabilidad · Agricultura y ganadería · Situación actual · Recomendaciones.\nContexto histórico (ENOS): América Latina · Paraguay · por departamento · Asunción.",
-    "crumbs": [
-      "Inicio",
-      "🏠 Panel de control"
-    ]
-  },
-  {
-    "objectID": "index.html#tabla-resumen-comparativa-por-episodio",
-    "href": "index.html#tabla-resumen-comparativa-por-episodio",
-    "title": "Desastres Anunciados",
-    "section": "Tabla resumen comparativa por episodio",
-    "text": "Tabla resumen comparativa por episodio\nClasificación de intensidad basada en el Oceanic Niño Index (ONI) de NOAA.\n\n\n\n\nTabla 1\n\n\n\n\n\n\nEpisodio\nIntensidad (ONI)\nPico ONI (°C)\nFuente\n\n\n\n\n1997-98\nmuy fuerte\n2.4\nNOAA_ONI\n\n\n2015-16\nmuy fuerte\n2.6\nNOAA_ONI\n\n\n2023-24\nmuy fuerte\n2.0\nNOAA_ONI\n\n\n2026-27\nen desarrollo\n—\nNOAA_CPC_pronostico\n\n\n\n\n\n\n\n\n: Episodios El Niño considerados en el repositorio. {#tbl-episodios}",
-    "crumbs": [
-      "Inicio",
-      "🏠 Panel de control"
-    ]
-  },
-  {
-    "objectID": "index.html#convención-de-confiabilidad",
-    "href": "index.html#convención-de-confiabilidad",
-    "title": "Desastres Anunciados",
-    "section": "Convención de confiabilidad",
-    "text": "Convención de confiabilidad\nCada hallazgo se etiqueta según su fuente: oficial organismo estatal o intergubernamental · académico revista/institución científica · prensa medios · estimación dato no confirmado.",
-    "crumbs": [
-      "Inicio",
-      "🏠 Panel de control"
-    ]
-  },
-  {
-    "objectID": "index.html#estado-de-avance",
-    "href": "index.html#estado-de-avance",
-    "title": "Desastres Anunciados",
-    "section": "Estado de avance",
-    "text": "Estado de avance\n\n\n\n\n\n\n\n\nBloque\nSección\nEstado\n\n\n\n\nMarco\nQué es el ENOS\n🟢 Redactado y citado\n\n\nHistórico\nAmérica Latina\n🟢 Redactado y citado (OMM, OPS, IRI, OCHA)\n\n\nHistórico\nParaguay (nacional)\n🟢 Redactado y citado (DINAC, DGRRD, prensa)\n\n\nHistórico\nDepartamentos\n🟡 Ñeembucú/Central/Alto Paraguay; resto pendiente\n\n\nHistórico\nAsunción metropolitana\n🟢 Redactado y citado (DGRRD, prensa)\n\n\nHistórico\nMapa de inundaciones\n🟢 Huellas Sentinel-1 2016/2019/2024 (comparables)\n\n\nActual\nEstado del episodio 2026-27\n🟢 NOAA/IRI/OMM + DINAC\n\n\nActual\nExposición y población en riesgo\n🟢 Nacional: población, salud y educación\n\n\nDatos\nSeries numéricas\n🟡 ONI, población afectada, niveles del río; sectores pendientes\n\n\nActual\nInundación en Pilar/Ñeembucú\n🔴 Detección satelital pendiente de ajuste",
+    "section": "Explorá el sitio",
+    "text": "Explorá el sitio\nAmenazas: fluvial · pluvial · sequía · frío · dengue · incendios\nTransversal: Marco · Exposición · Agricultura y ganadería · Situación actual · Recomendaciones · Fuentes",
     "crumbs": [
       "Inicio",
       "🏠 Panel de control"
