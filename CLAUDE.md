@@ -6,7 +6,8 @@ natural** (se construye socialmente: riesgo = amenaza × vulnerabilidad) y está
 **anunciado** (el clima se pronostica, la vulnerabilidad se conoce). Uso: investigación
 en sociología y gestión del riesgo de desastres (enfoque feminista-decolonial).
 
-Publicado en GitHub Pages: <https://angietrinidad.github.io/seguimiento_el_nino/>
+Repo **privado**; sitio alojado en **Netlify** con dominio propio:
+<https://desastresanunciados.org>
 
 ## Regla dura (innegociable) — ver `CONTEXTO.md`
 **No fabricar cifras.** Todo número debe tener fuente verificable (URL/DOI). Lo no
@@ -19,9 +20,9 @@ Priorizar fuentes oficiales y primarias. Antes de publicar cualquier análisis d
   `python`). Quarto: `& "$env:LOCALAPPDATA\Programs\Quarto\bin\quarto.cmd"` (no está en PATH).
 - **Render:** `quarto render` (proyecto completo; `execute-dir: project`, rutas a
   `datos/` relativas a la raíz). Freeze `auto`.
-- **Publicar:** `quarto publish gh-pages --no-prompt` (renderiza y pushea a la rama
-  `gh-pages`). Credenciales cacheadas en Git Credential Manager.
-- **Commit/push a `main`** con cada cambio; luego publicar.
+- **Publicar:** `quarto publish netlify` (renderiza en local y sube el `_site` a
+  Netlify; token cacheado tras la 1ª autorización). Antes se usaba `gh-pages`.
+- **Commit/push a `main`** (repo privado) con cada cambio; luego publicar.
 - Tras cada render puede aparecer `_quarto_internal_scss_error.scss` — es un **quirk no
   fatal** del tema cosmo; borrarlo y seguir (el sitio renderiza bien).
 

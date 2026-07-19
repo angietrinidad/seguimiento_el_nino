@@ -48,11 +48,15 @@ quarto render       # genera el sitio en _site/
 
 ## Publicación
 
-El sitio se publica en GitHub Pages. Opción recomendada:
+Repositorio **privado**; el sitio se aloja en **Netlify** con dominio propio
+(<https://desastresanunciados.org>). Se publica renderizando en local y subiendo:
 
 ```bash
-quarto publish gh-pages
+quarto publish netlify
 ```
+
+El post-render (`scripts/fix_redirects.py`) normaliza los redirects de las URLs
+viejas. Los `aliases` en cada página siguen funcionando en el dominio nuevo.
 
 ## Licencia
 

@@ -24,9 +24,8 @@ website:
     y socialmente construidos. Base empírica sobre amenazas (inundación fluvial y
     pluvial, sequía, frío, dengue, incendios), exposición y vulnerabilidad, con
     fuentes oficiales y datos primarios.
-  site-url: "https://angietrinidad.github.io/seguimiento_el_nino/"
-  repo-url: "https://github.com/angietrinidad/seguimiento_el_nino"
-  repo-actions: [edit, source, issue]
+  site-url: "https://desastresanunciados.org"
+  # Repo privado: sin enlaces públicos "editar/ver fuente/issue" (darían 404).
   page-navigation: true
   reader-mode: true
   search: true
