@@ -101,7 +101,7 @@ lluvia (EMAs de la DMH). Estado del ENOS según NOAA/CPC. Las amenazas marcadas
 
 ## Cómo está organizado
 
-- **[Marco: desastres construidos](marco/index.qmd)** — la tesis y el ENOS como motor.
+- **[Marco: el desastre construido y anunciado](marco/index.qmd)** — la tesis y el ENOS como motor.
 - **Amenazas** — [inundación fluvial](amenazas/inundacion-fluvial/index.qmd), [pluvial](amenazas/inundacion-pluvial/index.qmd),
   [sequía](amenazas/sequia/index.qmd), [frío](amenazas/frio/index.qmd),
   [dengue](amenazas/dengue/index.qmd), [incendios](amenazas/incendios/index.qmd).
