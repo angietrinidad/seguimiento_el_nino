@@ -10,11 +10,12 @@ project:
     - datos/exposicion/comercio_riesgo.xlsx
 
 website:
-  title: "Desastres Construidos"
+  title: "Desastres Anunciados"
   description: >-
-    Riesgo de desastres en Paraguay desde una mirada crítica: el desastre como
-    construcción social. Base empírica sobre amenazas (inundación fluvial y pluvial,
-    y otras), exposición y vulnerabilidad, con fuentes oficiales y datos primarios.
+    Riesgo de desastres en Paraguay desde una mirada crítica: desastres previsibles
+    y socialmente construidos. Base empírica sobre amenazas (inundación fluvial y
+    pluvial, sequía, frío, dengue, incendios), exposición y vulnerabilidad, con
+    fuentes oficiales y datos primarios.
   site-url: "https://angietrinidad.github.io/seguimiento_el_nino/"
   repo-url: "https://github.com/angietrinidad/seguimiento_el_nino"
   repo-actions: [edit, source, issue]

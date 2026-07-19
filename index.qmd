@@ -1,20 +1,23 @@
 ---
-title: "Desastres Construidos"
-subtitle: "Riesgo de desastres en Paraguay desde una mirada crítica — el desastre como construcción social"
+title: "Desastres Anunciados"
+subtitle: "Riesgo de desastres en Paraguay desde una mirada crítica — previsibles y socialmente construidos"
 date: last-modified
 date-format: "D [de] MMMM [de] YYYY"
 ---
 
-Base empírica y documental sobre el **riesgo de desastres en Paraguay**, desde la
-premisa de que **el desastre no es natural: se construye socialmente** —la amenaza
-se vuelve desastre allí donde hay vulnerabilidad—. Prioriza **fuentes oficiales y
-datos primarios**, señala de forma explícita los **vacíos de información** y **no
-incorpora cifras sin fuente verificable** (ver [metodología](metodologia.qmd)).
+Base empírica y documental sobre el **riesgo de desastres en Paraguay**, desde una
+doble premisa: **el desastre no es natural —se construye socialmente— y casi nunca es
+sorpresa —está anunciado—**. La amenaza se vuelve desastre allí donde hay
+vulnerabilidad; y como el clima **se pronostica** y la vulnerabilidad **se conoce**, el
+golpe suele llegar avisado. Este repositorio prioriza **fuentes oficiales y datos
+primarios**, señala de forma explícita los **vacíos de información** y **no incorpora
+cifras sin fuente verificable** (ver [metodología](metodologia.qmd)).
 
-El repositorio arranca con la amenaza **más desarrollada** —la **inundación**
-(fluvial y pluvial) asociada al ciclo **El Niño-Oscilación del Sur (ENOS)**— y está
-diseñado para **escalar a otras amenazas** (sequía, olas de frío, enfermedades
-climáticas).
+Cubre varias **amenazas** —[inundación fluvial](05-mapa-riesgo/index.qmd) y
+[pluvial](08-pluvial/index.qmd), [sequía](amenazas/sequia/index.qmd),
+[olas de frío](amenazas/frio/index.qmd), [dengue](amenazas/dengue/index.qmd) e
+[incendios](amenazas/incendios/index.qmd)— y su exposición, con el eje del ciclo
+**El Niño-Oscilación del Sur (ENOS)** como motor climático central.
 
 ## Panel de control
 

@@ -1,8 +1,9 @@
-# Desastres Construidos
+# Desastres Anunciados
 
 Base empírica y documental sobre el **riesgo de desastres en Paraguay** desde una
-mirada crítica: **el desastre no es natural, se construye socialmente** (riesgo =
-amenaza × vulnerabilidad). Cubre varias **amenazas** —inundación fluvial y pluvial,
+mirada crítica: los desastres **no son naturales** —se construyen socialmente
+(riesgo = amenaza × vulnerabilidad)— y **casi nunca son sorpresa**: el clima se
+pronostica y la vulnerabilidad se conoce, así que el desastre llega **anunciado**. Cubre varias **amenazas** —inundación fluvial y pluvial,
 sequía y bajante, olas de frío, dengue e incendios— y su **exposición** (población,
 salud, educación, actividad comercial, agricultura y ganadería). Base para
 investigación en sociología y gestión del riesgo de desastres.

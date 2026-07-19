@@ -12,10 +12,17 @@ amenaza por una **vulnerabilidad socialmente construida**:
 Esta mirada —de la geografía crítica de los desastres y la antropología del riesgo
 [@wisner2004atrisk; @garciaacosta2005]— desplaza el foco: de "la furia de la naturaleza"
 a las **decisiones sociales, económicas y políticas** que determinan quién vive en el
-bañado, quién no tiene agua por red, quién carece de seguro agrícola. Por eso el sitio se
-llama **Desastres Construidos**: analiza cómo se **produce la vulnerabilidad** —con una
-lente atenta al **género**, la **clase** y la **desigualdad territorial**— y no solo el
-peligro que la detona.
+bañado, quién no tiene agua por red, quién carece de seguro agrícola.
+
+Y hay un segundo desplazamiento: estos desastres **están anunciados**. El clima **se
+pronostica** (el ENOS se vigila con meses de anticipación), la estacionalidad se repite
+y la **vulnerabilidad se conoce de antemano**. Cuando el golpe llega, rara vez es
+sorpresa: es un riesgo **previsible** sobre el que se decidió —o se omitió— actuar. Por
+eso el sitio se llama **Desastres Anunciados**: analiza cómo se **produce la
+vulnerabilidad** —con una lente atenta al **género**, la **clase** y la **desigualdad
+territorial**— y por qué, sabiéndolo, el desastre igual ocurre. Es también el sentido de
+la **[acción anticipatoria](../07-recomendaciones/index.qmd)**: actuar antes, sobre lo
+anunciado.
 
 ## Amenazas y motores: dónde entra el ENOS
 
