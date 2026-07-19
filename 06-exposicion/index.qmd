@@ -145,6 +145,19 @@ if os.path.exists("datos/geo/protegido-costanera.geojson"):
         style_function=lambda f: {"fillColor": "#1a9850", "color": "#1a9850",
                                   "weight": 0, "fillOpacity": 0.55}, show=False).add_to(m)
 
+# Susceptibilidad a inundación PLUVIAL (modelo topográfico DEM) — distinta de la
+# fluvial (río). Azul = donde la lluvia se acumula/concentra por el relieve.
+if os.path.exists("datos/geo/susceptibilidad-pluvial-asuncion.geojson"):
+    plu = json.load(open("datos/geo/susceptibilidad-pluvial-asuncion.geojson", encoding="utf-8"))
+    col_plu = {"alta": "#2b8cbe", "media": "#a6bddb"}
+    folium.GeoJson(plu, name="Susceptibilidad pluvial (DEM · modelo)",
+        style_function=lambda f: {"fillColor": col_plu.get(f["properties"]["clase"], "#a6bddb"),
+                                  "color": col_plu.get(f["properties"]["clase"], "#a6bddb"),
+                                  "weight": 0, "fillOpacity": 0.6},
+        tooltip=folium.GeoJsonTooltip(fields=["clase", "area_km2"],
+                                      aliases=["Susceptibilidad pluvial:", "Área (km²):"]),
+        show=False).add_to(m)
+
 folium.LayerControl(collapsed=False).add_to(m)
 
 leyenda = """
@@ -156,7 +169,8 @@ leyenda = """
   <span style="color:#6baed6">■</span> 150-300k &nbsp;
   <span style="color:#eff3ff;text-shadow:0 0 1px #999">■</span> &lt;50k<br>
   <span style="color:#c0392b">▮</span> Departamento ribereño prioritario<br>
-  <span style="color:#d1495b">▮</span> Zona de riesgo de inundación<br>
+  <span style="color:#d1495b">▮</span> Zona de riesgo de inundación (fluvial)<br>
+  <span style="color:#2b8cbe">▮</span> Susceptibilidad pluvial alta (DEM · modelo)<br>
   <span style="color:#7b2cbf">▬</span> Costanera (defensa) ·
   <span style="color:#1a9850">▮</span> Franja baja protegida (DEM)<br>
   <span style="color:#1b5e7a">●</span> Salud ·
@@ -224,6 +238,44 @@ cuantificar el nivel de protección. Sirve para *señalar* dónde mirar, no para
 afirmar cuánto protege.
 :::
 
+## Susceptibilidad a inundación pluvial (modelo DEM)
+
+Junto a la inundación **fluvial** (río), el mapa incluye una capa activable de
+**susceptibilidad pluvial** —dónde el relieve favorece que la **lluvia** se acumule
+o concentre, con independencia del río—. Se deriva del **Copernicus DEM (30 m)**
+combinando el relleno de depresiones (encharcamiento), la acumulación de flujo y el
+índice topográfico de humedad. El detalle de la evidencia (temporales documentados,
+arroyos urbanos, vínculo con El Niño) está en
+[Asunción metropolitana](../04-asuncion-metropolitana/index.qmd#inundaciones-pluviales-urbanas).
+
+```{python}
+#| label: pluvial-exp
+#| echo: false
+import json, os
+from IPython.display import Markdown
+p = "datos/exposicion/pluvial_resumen.json"
+if os.path.exists(p):
+    d = json.load(open(p, encoding="utf-8"))
+    md = (f"En el modelo, la susceptibilidad **alta** cubre ~**{d['km2_alta']} km²** "
+          f"en Asunción y el metro interior. Considerando un **corredor anegable de "
+          f"~{d['buffer_m']} m** en torno a esos fondos de valle (~{d['km2_corredor_100m']} km²), "
+          f"quedan expuestos aproximadamente **{d['poblacion']:,} habitantes** "
+          f"(Kontur), **{d['escuelas']} centros educativos** (MEC) y **{d['salud']} "
+          f"servicios de salud** (MSPBS).")
+else:
+    md = "::: {.vacio}\nResumen de exposición pluvial pendiente de generar.\n:::"
+Markdown(md)
+```
+
+::: {.vacio}
+**Modelo topográfico, no evento observado ni estudio hidráulico.** El DEM de 30 m
+identifica *lows* a escala de barrio; no capta la red de desagües pluviales ni el
+anegamiento a escala de calle. La exposición se cuenta en un corredor de ~100 m
+alrededor de los fondos de valle (la inundación pluvial se extiende lateralmente),
+por lo que es orientativa. Donde la susceptibilidad pluvial se solapa con la huella
+fluvial, **ambas amenazas se combinan**.
+:::
+
 ## Fuentes
 
 - Población (total por departamento): **COD-PS 2023** (UNFPA/DGEEC), CC BY-IGO
@@ -239,6 +291,10 @@ afirmar cuánto protege.
 - Zonas inundables: derivadas de **Sentinel-1** en este repositorio.
 - **Costanera** y vialidad: **OpenStreetMap** (Overpass) [@osm].
 - **Elevación del terreno:** **Copernicus DEM GLO-30** (30 m) [@copernicus_dem].
+- **Susceptibilidad pluvial:** modelo topográfico propio sobre el Copernicus DEM
+  (relleno de depresiones + acumulación de flujo + índice de humedad topográfica)
+  [@copernicus_dem]. Evidencia de eventos y teleconexión ENOS-lluvia citada en
+  [Asunción metropolitana](../04-asuncion-metropolitana/index.qmd).
 
 ## Vacíos y límites
 

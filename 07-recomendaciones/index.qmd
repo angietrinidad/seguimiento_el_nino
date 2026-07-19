@@ -93,6 +93,21 @@ Al día de hoy el río está en fase **0 (preparación)** — la mejor ventana p
 actuar sin la presión de la emergencia.
 :::
 
+::: {.callout-warning}
+## Dos amenazas, dos disparadores
+El nivel del río gobierna la inundación **fluvial**, pero la inundación **pluvial**
+(raudales por lluvia intensa) tiene un disparador distinto: el **pronóstico
+meteorológico de lluvia**, no la cota del río. Puede golpear con el río bajo y
+afecta a toda la ciudad, no solo a los bañados (ver
+[inundaciones pluviales](../04-asuncion-metropolitana/index.qmd#inundaciones-pluviales-urbanas)).
+La acción anticipatoria pluvial se activa con los **avisos de tormenta severa de la
+DINAC**: difundir la alerta, despejar desagües y arroyos *antes* del evento
+—como la limpieza del arroyo Ferreira que la Municipalidad hizo dentro de su Plan de
+Contingencia por El Niño [@mun_ferreira2023]—, señalizar los **puntos críticos de
+raudales** y evitar circular por ellos. Recordar que **10-40 cm de agua a 1-3 m/s ya
+arrastran personas y vehículos** [@ruizdiaz2018].
+:::
+
 ## Fase 0 · Preparación (río bajo o estable)
 
 *La ventana más valiosa y la más desaprovechada. Cuando el río está bajo es

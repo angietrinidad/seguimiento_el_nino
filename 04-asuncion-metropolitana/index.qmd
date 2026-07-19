@@ -66,14 +66,105 @@ vigentes de la DGRRD pendientes de incorporar desde documento oficial.
 
 ## Inundaciones pluviales urbanas
 
-Además del desborde del río, Asunción sufre **inundaciones pluviales** por
-lluvias intensas sobre una **infraestructura de drenaje insuficiente**: en abril
-de 2024 un temporal dejó destrozos e inundaciones en Asunción y Central
-[prensa]{.badge-prensa} [@lanacion_2024].
+Junto al desborde del río (riesgo **fluvial**), Asunción sufre inundaciones
+**pluviales**: anegamientos y **raudales** que la lluvia intensa genera sobre una
+**infraestructura de drenaje insuficiente**, con independencia del nivel del río.
+Son dos amenazas distintas —la fluvial afecta los bañados ribereños bajos; la
+pluvial golpea toda la ciudad, incluida la "tierra firme"— que además **se
+combinan** cuando coinciden en el tiempo.
+
+### Contexto climático: cuánto y con qué intensidad llueve
+
+La normal anual de Asunción ronda los **1.400 mm** (OMM/NOAA, 1971-2000; la DINAC
+usa como referencia la normal 1981-2010) [oficial]{.badge-oficial}
+[@dinac_anuario2021], concentrada en primavera-verano.
+Lo relevante para el riesgo pluvial no es el total sino la **intensidad**: el
+**récord histórico en 24 h ronda los 220 mm** (temporal de febrero de 2014) y en
+**marzo de 2026** Asunción registró **210,8 mm**, superando el récord de marzo
+vigente desde 1964 (135,6 mm) [oficial]{.badge-oficial} [@dinac_records2026]. La
+serie histórica muestra además una **tendencia positiva de la precipitación anual**
+(~+3,2 mm/año en Asunción) [académico]{.badge-academico} [@grassi_tend2005]: llueve
+más, y en eventos más intensos, sobre un drenaje que no acompaña.
+
+### Por qué El Niño agrava el riesgo pluvial
+
+El Niño no solo eleva el río: **aumenta la lluvia** en el sudeste de Sudamérica.
+La teleconexión está bien establecida en la literatura: El Niño se asocia con
+**anomalías positivas de precipitación** en Paraguay, sur de Brasil, Uruguay y
+noreste de Argentina, con máximos en primavera (nov.) y fin de verano (feb.-mar.)
+[@grimm2000; @ropelewski1987; @boulanger2005], y **aumenta la frecuencia de
+eventos de lluvia extrema** (percentil 90 en 3 días) [@grimm_tedeschi2009]. Se
+estima que cerca de la **mitad de la tendencia de aumento de lluvia** en el NE
+argentino, sur de Brasil y Paraguay proviene de la fase El Niño
+[@barros2008], y que el ENOS incrementa la **probabilidad de crecidas y eventos
+extremos** en la cuenca del Plata [@petry2025; @goudard2024]. En el episodio muy
+fuerte de 2015-16, el centro de Paraguay acumuló **hasta 400 mm entre el 1 y el 23
+de diciembre de 2015** [oficial]{.badge-oficial} [@nasa_paraguay2015]; para Paraguay,
+las anomalías positivas de El Niño se dan de mediados de primavera a mediados de
+otoño, sobre todo en la región Oriental [oficial]{.badge-oficial} [@sissa_nino2023].
+Bajo calentamiento global se proyecta, además, una **mayor frecuencia de El Niño
+extremos** [@cai2014; @cai2020] —es decir, más episodios como los que disparan los
+temporales severos.
+
+### Temporales documentados (lluvia, no río)
+
+| Fecha | Lluvia | Impacto pluvial | Fuente |
+|---|---|---|---|
+| **25-26 feb 2014** | **222 mm** (récord) | Desborde del arroyo Itay; Parque Ñu Guasú sumergido; 1 muerto; 3.000 desplazados (SEN) | [prensa]{.badge-prensa} [@abc_temporal2014] |
+| **dic 2015** | s/d | Al menos 2 niños muertos y ~40 personas atrapadas en raudales (Asunción y Central) | [académico]{.badge-academico} [@ruizdiaz2018] |
+| **28 ene 2018** | **47 mm en ~50 min** | Raudal en Ñemby estudiado con imagen (LSPIV) y simulación: láminas de 10-40 cm a 1-3 m/s **arrastran vehículos y personas** | [académico]{.badge-academico} [@ruizdiaz2018] |
+| **2 nov 2023** | s/d | Raudal en Lambaré arrastró a **2 militares** (desaparecidos); ~20.000 usuarios sin luz | [prensa]{.badge-prensa} [@lanacion_temporal2023] |
+| **12-16 abr 2024** | **80-106 mm** | Viviendas colapsadas sobre el arroyo Ferreira (barrio Republicano); barrio Trinidad anegado; Parque Ñu Guasú cerrado | [oficial]{.badge-oficial} [@mspbs_lluvias2024]; [prensa]{.badge-prensa} [@abc_temporal2024] |
+| **24 abr 2024** | s/d | Segunda oleada: **2 fallecidos en Luque** (vehículo arrastrado); barrios incomunicados | [prensa]{.badge-prensa} [@lanacion_temporal2024c] |
+
+: Temporales con anegamiento pluvial en Asunción y área metropolitana. `s/d` = sin dato de lluvia con estación en la fuente. Los mm de 2014 (222) y 2019 (~95) provienen de prensa; el estudio de Ñemby (47 mm) es medición académica; los 80-106 mm de abril 2024 son dato oficial del MSPBS (sin estación/día exacto).
+
+El estudio del **raudal de Ñemby** [@ruizdiaz2018] es clave: cuantifica que
+**láminas de apenas 10-40 cm con velocidades de 1-3 m/s ya arrastran personas y
+vehículos**. El peligro pluvial no requiere grandes profundidades; los raudales
+matan en calles aparentemente transitables.
+
+### Arroyos urbanos y puntos críticos
+
+Buena parte del anegamiento pluvial se organiza en torno a los **arroyos urbanos**,
+cuyos cauces —angostos, contaminados, parcialmente entubados— se desbordan con
+lluvia intensa:
+
+- **Arroyo Mburicaó:** ~16 km, cruza siete barrios hasta la bahía; drenaje
+  insuficiente y desbordes recurrentes [prensa]{.badge-prensa} [@lanacion_puntos2025].
+- **Arroyo Ferreira:** barrios Republicano y Roberto L. Petit; en abril de 2024 sus
+  crecidas hicieron **colapsar viviendas** en su margen. La Municipalidad retiró
+  ~40.000 kg de residuos de un brazo (Cantaluppi) dentro del **Plan de Contingencia
+  por El Niño** de 2023 [oficial]{.badge-oficial} [@mun_ferreira2023].
+- **Arroyo Itay:** ~35 km, límite natural del Gran Asunción; desborde recurrente en
+  Limpio y Luque; canalización parcial iniciada por la Municipalidad y el MOPC
+  [oficial]{.badge-oficial} [@asuncion_itay].
+- **Arroyos entubados del centro** (p. ej. Ycuá Satí, bajo la calle Antequera): al
+  correr bajo el pavimento pierden capacidad y **ocultan el riesgo**, alimentando
+  los raudales de superficie [prensa]{.badge-prensa} [@abc_zonas2023].
+
+La propia Municipalidad reconoce **intersecciones críticas** donde se forman
+raudales peligrosos (Artigas y Mburicaó; Gral. Santos y San Antonio; Eusebio Ayala
+y Boggiani; Fernando de la Mora y Bartolomé de las Casas, entre otras), y estudios
+académicos han mapeado decenas de **puntos críticos** de anegamiento en la capital
+[prensa]{.badge-prensa} [@lanacion_puntos2025].
+
+### Dónde se acumula el agua: modelo topográfico (DEM)
+
+Para pasar de los eventos puntuales a una **capa de susceptibilidad**, se derivó del
+**Copernicus DEM (30 m)** dónde el relieve favorece el encharcamiento y la
+concentración del escurrimiento (relleno de depresiones + acumulación de flujo +
+índice topográfico de humedad). El resultado —la red de **fondos de valle y
+depresiones** donde el agua de lluvia tiende a juntarse— es un **modelo de
+susceptibilidad**, no un evento observado, y se muestra como capa activable en el
+[mapa de exposición](../06-exposicion/index.qmd).
 
 ::: {.vacio}
-Falta caracterización cuantitativa del drenaje urbano (puntos críticos,
-capacidad, población expuesta a anegamiento pluvial) con fuente técnica.
+**Límites.** El DEM de 30 m no capta la red de desagües pluviales, el
+alcantarillado ni el anegamiento a escala de calle; identifica lows topográficos a
+escala de barrio. Falta el **estudio hidráulico urbano** oficial (capacidad de
+desagües, caudales de diseño, población expuesta por evento) del MOPC/ESSAP y la
+**serie de lluvia por estación** de la DINAC para fechar y dimensionar cada temporal.
 :::
 
 ## Población en situación de vulnerabilidad
