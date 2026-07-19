@@ -2,63 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://angietrinidad.github.io/seguimiento_el_nino/situacion-actual/index.html</loc>
-    <lastmod>2026-07-19T02:10:06.389Z</lastmod>
+    <lastmod>2026-07-19T14:09:37.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/metodologia.html</loc>
+    <lastmod>2026-07-17T22:49:30.491Z</lastmod>
   </url>
   <url>
     <loc>https://angietrinidad.github.io/seguimiento_el_nino/index.html</loc>
-    <lastmod>2026-07-19T12:43:02.510Z</lastmod>
+    <lastmod>2026-07-19T14:10:06.969Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/datos/diccionario-datos.html</loc>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/exposicion/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.238Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/CONTEXTO.html</loc>
     <lastmod>2026-07-17T22:49:30.469Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/sequia/index.html</loc>
-    <lastmod>2026-07-19T09:54:03.295Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/frio/index.html</loc>
-    <lastmod>2026-07-19T09:46:39.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/agro-ganaderia/index.html</loc>
-    <lastmod>2026-07-19T14:00:10.359Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/08-pluvial/index.html</loc>
-    <lastmod>2026-07-19T13:59:24.845Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/06-exposicion/index.html</loc>
-    <lastmod>2026-07-19T10:54:16.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/04-asuncion-metropolitana/index.html</loc>
-    <lastmod>2026-07-19T02:04:38.891Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/03-paraguay/departamentos/index.html</loc>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/contexto-paraguay/departamentos/index.html</loc>
     <lastmod>2026-07-18T10:47:54.142Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/01-marco-conceptual/index.html</loc>
-    <lastmod>2026-07-19T12:43:39.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/02-america-latina/index.html</loc>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/contexto-america-latina/index.html</loc>
     <lastmod>2026-07-18T10:50:01.557Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/03-paraguay/nacional.html</loc>
-    <lastmod>2026-07-18T10:50:01.573Z</lastmod>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/inundacion-pluvial/index.html</loc>
+    <lastmod>2026-07-19T14:12:08.831Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/05-mapa-riesgo/index.html</loc>
-    <lastmod>2026-07-18T18:51:07.366Z</lastmod>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/index.html</loc>
+    <lastmod>2026-07-19T14:15:52.096Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/07-recomendaciones/index.html</loc>
-    <lastmod>2026-07-19T12:46:08.258Z</lastmod>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/frio/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.228Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/agro-ganaderia/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.217Z</lastmod>
   </url>
   <url>
     <loc>https://angietrinidad.github.io/seguimiento_el_nino/admin/index.html</loc>
@@ -66,14 +50,30 @@
   </url>
   <url>
     <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/dengue/index.html</loc>
-    <lastmod>2026-07-19T10:12:11.909Z</lastmod>
+    <lastmod>2026-07-19T14:09:37.217Z</lastmod>
   </url>
   <url>
     <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/incendios/index.html</loc>
-    <lastmod>2026-07-19T09:54:23.705Z</lastmod>
+    <lastmod>2026-07-19T14:09:37.229Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/CONTEXTO.html</loc>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/inundacion-fluvial/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/amenazas/sequia/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.234Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/contexto-asuncion/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/contexto-paraguay/nacional.html</loc>
+    <lastmod>2026-07-18T10:50:01.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/datos/diccionario-datos.html</loc>
     <lastmod>2026-07-17T22:49:30.469Z</lastmod>
   </url>
   <url>
@@ -81,7 +81,11 @@
     <lastmod>2026-07-17T22:49:30.485Z</lastmod>
   </url>
   <url>
-    <loc>https://angietrinidad.github.io/seguimiento_el_nino/metodologia.html</loc>
-    <lastmod>2026-07-17T22:49:30.491Z</lastmod>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/marco/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://angietrinidad.github.io/seguimiento_el_nino/recomendaciones/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.240Z</lastmod>
   </url>
 </urlset>
