@@ -6,6 +6,10 @@ project:
   execute-dir: project
   # Normaliza las contrabarras de Windows en los stubs de redirección (aliases).
   post-render: scripts/fix_redirects.py
+  # Renderizar solo las páginas .qmd (excluye docs .md: README.md, CLAUDE.md).
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
   resources:
     - datos/exposicion/escuelas_riesgo.xlsx
     - datos/exposicion/salud_riesgo.xlsx
