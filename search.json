@@ -110,7 +110,7 @@
     "href": "index.html#cómo-está-organizado",
     "title": "Desastres Construidos",
     "section": "Cómo está organizado",
-    "text": "Cómo está organizado\n\nMarco: desastres construidos — la tesis y el ENOS como motor.\nAmenazas — inundación fluvial, pluvial, sequía, frío, dengue, incendios.\nExposición y vulnerabilidad · Situación actual · Recomendaciones.\nContexto histórico (ENOS): América Latina · Paraguay · por departamento · Asunción.",
+    "text": "Cómo está organizado\n\nMarco: desastres construidos — la tesis y el ENOS como motor.\nAmenazas — inundación fluvial, pluvial, sequía, frío, dengue, incendios.\nExposición y vulnerabilidad · Agricultura y ganadería · Situación actual · Recomendaciones.\nContexto histórico (ENOS): América Latina · Paraguay · por departamento · Asunción.",
     "crumbs": [
       "Inicio",
       "🏠 Panel de control"
@@ -322,32 +322,670 @@
     ]
   },
   {
-    "objectID": "admin/index.html",
-    "href": "admin/index.html",
-    "title": "Panel administrativo — establecimientos expuestos",
+    "objectID": "agro-ganaderia/index.html",
+    "href": "agro-ganaderia/index.html",
+    "title": "Agricultura y ganadería",
     "section": "",
-    "text": "AdvertenciaUso administrativo — leer antes\n\n\n\nEsta página individualiza los servicios de salud y centros educativos que caen dentro de las zonas de riesgo de inundación, para planificación operativa (evacuación, refugios, continuidad de servicios).\n\nNo está enlazada en la navegación pública del sitio.\nNo es una página privada: se publica en GitHub Pages, que es público; cualquiera con esta URL puede verla. Para privacidad real, esta página debe dejar de publicarse (generarse solo en local) o alojarse en un repositorio con control de acceso (ver nota al pie).\nEducación: registro OFICIAL del MEC (datos.mec.gov.py, período 2014), georreferenciado y con matrícula (cantidad de alumnos) por establecimiento.\nSalud: registro OFICIAL del MSPBS/DIGIES (establecimientos georreferenciados), con categoría oficial (USF, puesto, centro, hospital). No incluye camas.\n\nSe regenera automáticamente con cada actualización de los datos (fecha arriba).\nTotal: 8 servicios de salud y 27 centros educativos en zonas de riesgo de inundación, con 5,701 alumnos matriculados (MEC) en las escuelas expuestas.\n\nAsunción y área metropolitana\nServicios de salud expuestos: 8\n\n\n\n#\nEstablecimiento (MSPBS)\nCategoría\nSubtipo\nDistrito\nUbicación\n\n\n\n\n1\nH.D.-FALCON\nHospitales Distritales\nHD\n06 JOSE FALCON\n-25.26108, -57.71084\n\n\n2\nUSF- 3 DE FEBRERO I - SAN MIGUEL\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n3\nUSF- 3 DE FEBRERO II SAN BLAS\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n4\nUSF- 6 DE MAYO\nUnidades De Salud De La Familia\nESTANDAR\n10 MARIANO ROQUE ALONSO\n-25.18250, -57.53367\n\n\n5\nUSF- CAMSAT - SAN FELIPE Y SANTIAGO\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.31257, -57.66770\n\n\n6\nUSF- CHACO-Í\nUnidades De Salud De La Familia\nESTANDAR\n04 VILLA HAYES\n-25.25094, -57.63964\n\n\n7\nUSF- SAN BLAS - CATEURA\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.32380, -57.64764\n\n\n8\nUSF- SAN FELIPE\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.27944, -57.61703\n\n\n\nCentros educativos expuestos: 22 (matrícula sumada: 4,136)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1274 FULGENCIO YEGROS\n13 (2014)\nVILLA HAYES / ZONA BETERETE KUE\n-25.32919, -57.68822\n\n\n2\n150 / 18 REPUBLICA DE CUBA / RCA. DE CUBA\n10 (2022)\nASUNCION / LAS MERCEDES\n-25.27609, -57.61079\n\n\n3\n15069 VIRGEN DE LUJAN DE FE Y ALEGRIA\n204 (2021)\nASUNCION / SAN CAYETANO\n-25.32206, -57.65382\n\n\n4\n182 DR.ANTOLIANO GARCETE / SAN FRANCISCO DE ASIS / NRO. 69\n322 (2022)\nJOSE FALCON / SAN FRANCISCO SUB-URBANO\n-25.26088, -57.71082\n\n\n5\n335 CARLOS ANTONIO LOPEZ\n67 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69804\n\n\n6\n407 ELISA ALICIA LYNCH\n246 (2021)\nASUNCION / RICARDO BRUGADA\n-25.28077, -57.62941\n\n\n7\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n8\n4625 LOMA CONCHE\n78 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.26528, -57.69168\n\n\n9\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n10\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391\n\n\n11\n94 SAN FELIPE / 1510 SAN FELIPE\n70 (2022)\nASUNCION / RICARDO BRUGADA\n-25.27897, -57.61686\n\n\n12\nACADEMIA DE ARTE SARAKI\n39 (2012)\nASUNCION / JARA\n-25.27443, -57.60846\n\n\n13\nCAP. DE NAVIO(SR) ING. ZOILO RODAS ORTIZ / 15-41 / 1271 ING. ZOILO RODAS ORTIZ\n220 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.23855, -57.63066\n\n\n14\nCARLOS ANTONIO LOPEZ / 708 CARLOS ANTONIO LOPEZ\n718 (2022)\nVILLETA / INMACULADA\n-25.50478, -57.57014\n\n\n15\nE.M.A CERRO POTY / 147 CERRO POTY / 5934\n33 (2022)\nASUNCION / JUKYTY\n-25.33524, -57.64360\n\n\n16\nEN CIENCIAS GEOGRAFICAS\n75 (2021)\nASUNCION / LAS MERCEDES\n-25.27782, -57.61419\n\n\n17\nM-11 COMANDO DE COMUNIC.\n22 (2022)\nASUNCION / TACUMBU\n-25.30260, -57.65615\n\n\n18\nM-56\n24 (2013)\nASUNCION / LAS MERCEDES\n-25.27587, -57.61192\n\n\n19\nMIGUEL MARIA PFANNEL\n390 (2022)\nLIMPIO / PIQUETE KUE CENTRO\n-25.10554, -57.48623\n\n\n20\nNTRA. SRA. DEL ROSARIO\n33 (2012)\nVILLETA / INMACULADA\n-25.50493, -57.56724\n\n\n21\nPDTE. CARLOS A. LOPEZ\n15 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69827\n\n\n22\nSANTA TERESITA\n28 (2012)\nVILLA HAYES / SALADILLO\n-25.09322, -57.55072\n\n\n\n\n\nPilar / Ñeembucú\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 2 (matrícula sumada: 36)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1809 ENFERMERAS DEL CHACO\n31 (2022)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / LOMA CAMBA KUA\n-26.67348, -58.01323\n\n\n2\n5645 (11357) BENJAMIN PORTILLO QUIŃONEZ\n5 (2021)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / COSTA PINDO\n-26.67953, -57.97349\n\n\n\n\n\nVilla Hayes\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 3 (matrícula sumada: 1,529)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n2\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n3\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391"
+    "text": "La agricultura y la ganadería son el medio de vida de cientos de miles de familias paraguayas y, a la vez, el eje de la economía exportadora. Pero no todas las escalas están igual de expuestas a las amenazas: la misma sequía o inundación que el agronegocio absorbe con capital, riego y seguros puede liquidar a la agricultura familiar y a la ganadería de subsistencia. Analizar el agro “en todas sus escalas” es, por eso, analizar cómo se construye socialmente la vulnerabilidad.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
   },
   {
-    "objectID": "admin/index.html#asunción-y-área-metropolitana",
-    "href": "admin/index.html#asunción-y-área-metropolitana",
-    "title": "Panel administrativo — establecimientos expuestos",
-    "section": "Asunción y área metropolitana",
-    "text": "Asunción y área metropolitana\nServicios de salud expuestos: 8\n\n\n\n#\nEstablecimiento (MSPBS)\nCategoría\nSubtipo\nDistrito\nUbicación\n\n\n\n\n1\nH.D.-FALCON\nHospitales Distritales\nHD\n06 JOSE FALCON\n-25.26108, -57.71084\n\n\n2\nUSF- 3 DE FEBRERO I - SAN MIGUEL\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n3\nUSF- 3 DE FEBRERO II SAN BLAS\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n4\nUSF- 6 DE MAYO\nUnidades De Salud De La Familia\nESTANDAR\n10 MARIANO ROQUE ALONSO\n-25.18250, -57.53367\n\n\n5\nUSF- CAMSAT - SAN FELIPE Y SANTIAGO\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.31257, -57.66770\n\n\n6\nUSF- CHACO-Í\nUnidades De Salud De La Familia\nESTANDAR\n04 VILLA HAYES\n-25.25094, -57.63964\n\n\n7\nUSF- SAN BLAS - CATEURA\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.32380, -57.64764\n\n\n8\nUSF- SAN FELIPE\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.27944, -57.61703\n\n\n\nCentros educativos expuestos: 22 (matrícula sumada: 4,136)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1274 FULGENCIO YEGROS\n13 (2014)\nVILLA HAYES / ZONA BETERETE KUE\n-25.32919, -57.68822\n\n\n2\n150 / 18 REPUBLICA DE CUBA / RCA. DE CUBA\n10 (2022)\nASUNCION / LAS MERCEDES\n-25.27609, -57.61079\n\n\n3\n15069 VIRGEN DE LUJAN DE FE Y ALEGRIA\n204 (2021)\nASUNCION / SAN CAYETANO\n-25.32206, -57.65382\n\n\n4\n182 DR.ANTOLIANO GARCETE / SAN FRANCISCO DE ASIS / NRO. 69\n322 (2022)\nJOSE FALCON / SAN FRANCISCO SUB-URBANO\n-25.26088, -57.71082\n\n\n5\n335 CARLOS ANTONIO LOPEZ\n67 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69804\n\n\n6\n407 ELISA ALICIA LYNCH\n246 (2021)\nASUNCION / RICARDO BRUGADA\n-25.28077, -57.62941\n\n\n7\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n8\n4625 LOMA CONCHE\n78 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.26528, -57.69168\n\n\n9\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n10\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391\n\n\n11\n94 SAN FELIPE / 1510 SAN FELIPE\n70 (2022)\nASUNCION / RICARDO BRUGADA\n-25.27897, -57.61686\n\n\n12\nACADEMIA DE ARTE SARAKI\n39 (2012)\nASUNCION / JARA\n-25.27443, -57.60846\n\n\n13\nCAP. DE NAVIO(SR) ING. ZOILO RODAS ORTIZ / 15-41 / 1271 ING. ZOILO RODAS ORTIZ\n220 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.23855, -57.63066\n\n\n14\nCARLOS ANTONIO LOPEZ / 708 CARLOS ANTONIO LOPEZ\n718 (2022)\nVILLETA / INMACULADA\n-25.50478, -57.57014\n\n\n15\nE.M.A CERRO POTY / 147 CERRO POTY / 5934\n33 (2022)\nASUNCION / JUKYTY\n-25.33524, -57.64360\n\n\n16\nEN CIENCIAS GEOGRAFICAS\n75 (2021)\nASUNCION / LAS MERCEDES\n-25.27782, -57.61419\n\n\n17\nM-11 COMANDO DE COMUNIC.\n22 (2022)\nASUNCION / TACUMBU\n-25.30260, -57.65615\n\n\n18\nM-56\n24 (2013)\nASUNCION / LAS MERCEDES\n-25.27587, -57.61192\n\n\n19\nMIGUEL MARIA PFANNEL\n390 (2022)\nLIMPIO / PIQUETE KUE CENTRO\n-25.10554, -57.48623\n\n\n20\nNTRA. SRA. DEL ROSARIO\n33 (2012)\nVILLETA / INMACULADA\n-25.50493, -57.56724\n\n\n21\nPDTE. CARLOS A. LOPEZ\n15 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69827\n\n\n22\nSANTA TERESITA\n28 (2012)\nVILLA HAYES / SALADILLO\n-25.09322, -57.55072"
+    "objectID": "agro-ganaderia/index.html#estructura-agraria-muchas-fincas-poca-tierra",
+    "href": "agro-ganaderia/index.html#estructura-agraria-muchas-fincas-poca-tierra",
+    "title": "Agricultura y ganadería",
+    "section": "Estructura agraria: muchas fincas, poca tierra",
+    "text": "Estructura agraria: muchas fincas, poca tierra\nEl CAN 2022 relevó 291.497 fincas productivas sobre 30,4 millones de hectáreas oficial (Ministerio de Agricultura y Ganadería (MAG) — DCEA / FAO, 2023). Su distribución revela una estructura bimodal —una masa de fincas campesinas y una élite latifundista—:\n\nLa agricultura familiar es el 89 % de las fincas pero ocupa ~8 % de la tierra; en el otro extremo, 182 propietarios controlan ~40 % de la superficie (MarketData, 2023; Pereira Cardozo & Solís, 2024).\n\n\n\n\n\n\n\nEscala\nFincas\nTierra\n\n\n\n\nAgricultura familiar (89% de las fincas)\n~259.188\n~2,5 millones de ha (~8%)\n\n\nGran propiedad (0,07% de propietarios)\n~182\n&gt;12 millones de ha (~40%)\n\n\n\nEl índice de Gini de la tierra es 0,97 —una de las distribuciones más desiguales del mundo, prácticamente sin cambios entre 2008 y 2022— académico (Pereira Cardozo & Solís, 2024). El 38 % de las fincas familiares están encabezadas por mujeres (MarketData, 2023). Entre censos, cuatro rubros de exportación (soja, trigo, maíz, arroz) pasaron de ocupar el 84 % al 93 % de la superficie cultivada, desplazando a los cultivos de autoconsumo (Pereira Cardozo & Solís, 2024).\n\n\n\n\n\n\nLa distribución de la tierra es, en sí, un factor de riesgo construido: sin tierra suficiente ni reservas, la finca campesina no tiene margen para absorber un mal año.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
   },
   {
-    "objectID": "admin/index.html#pilar-ñeembucú",
-    "href": "admin/index.html#pilar-ñeembucú",
-    "title": "Panel administrativo — establecimientos expuestos",
-    "section": "Pilar / Ñeembucú",
-    "text": "Pilar / Ñeembucú\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 2 (matrícula sumada: 36)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1809 ENFERMERAS DEL CHACO\n31 (2022)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / LOMA CAMBA KUA\n-26.67348, -58.01323\n\n\n2\n5645 (11357) BENJAMIN PORTILLO QUIŃONEZ\n5 (2021)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / COSTA PINDO\n-26.67953, -57.97349"
+    "objectID": "agro-ganaderia/index.html#agricultura-por-rubro-y-escala",
+    "href": "agro-ganaderia/index.html#agricultura-por-rubro-y-escala",
+    "title": "Agricultura y ganadería",
+    "section": "Agricultura por rubro y escala",
+    "text": "Agricultura por rubro y escala\nEl agronegocio (exportación). La soja es el cultivo insignia: ~3,6 millones de ha y ~10 millones de toneladas en la zafra 2024/25, con un complejo sojero que exportó USD 3.571 millones en 2025 gremial (Cámara Paraguaya de Exportadores y Comercializadores de Cereales y Oleaginosas (CAPECO), 2026). Se concentra en Alto Paraná, Itapúa, Canindeyú y Caaguazú (&gt;87 % en cinco departamentos). El arroz con riego creció a 266.327 ha (+41 % en un año) —un rubro intensivo en agua, en conflicto directo con Ñeembucú (ver más abajo)—.\nLa agricultura familiar (alimento). Las ~259.188 fincas familiares producen mandioca, poroto, sésamo, horticultura y autoconsumo, y son la base de la seguridad alimentaria interna. Su vulnerabilidad es estructural académico (Centro de Análisis y Difusión de la Economía Paraguaya (CADEP), 2022): el algodón, que fue su principal rubro de renta, colapsó, y su reemplazo (sésamo) es volátil. El desplazamiento de alimentos por monocultivo de exportación es una decisión político-económica, no un dato natural (Heñói — Centro de Estudios y Promoción de la Democracia, los DDHH y la Sostenibilidad, 2023).",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
   },
   {
-    "objectID": "admin/index.html#villa-hayes",
-    "href": "admin/index.html#villa-hayes",
-    "title": "Panel administrativo — establecimientos expuestos",
-    "section": "Villa Hayes",
-    "text": "Villa Hayes\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 3 (matrícula sumada: 1,529)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n2\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n3\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391"
+    "objectID": "agro-ganaderia/index.html#ganadería-en-todas-sus-escalas",
+    "href": "agro-ganaderia/index.html#ganadería-en-todas-sus-escalas",
+    "title": "Agricultura y ganadería",
+    "section": "Ganadería en todas sus escalas",
+    "text": "Ganadería en todas sus escalas\nEl hato bovino nacional ronda los 13 millones de cabezas (13,22 M en el CAN 2022; ~12,8 M en 2025 tras la sequía) oficial (Ministerio de Agricultura y Ganadería (MAG) — DCEA / FAO, 2023). Coexisten dos ganaderías:\n\nEl Chaco, con pocas y enormes explotaciones, se acerca al liderazgo ganadero (ValorAgro, 2025).\n\n\n\n\n\n\n\n\nRegión Oriental\nChaco (Occidental)\n\n\n\n\nHato (2025)\n~7 M (54,6%)\n~5,82 M (45,4%)\n\n\nPerfil\nmixto; incluye pequeña ganadería familiar\ngrandes estancias exportadoras\n\n\n\nLa concentración también marca la ganadería: hay ~116.224 tenedores de bovinos, pero ~3 % de los establecimientos genera ~61 % de la producción, mientras &gt;122.000 productores tienen menos de 20 cabezas (ganadería de ahorro, leche y autoconsumo) prensa (Última Hora, 2024). La exportación de carne alcanzó 355.744 t y ~USD 2.130 millones en 2025 prensa (Forbes Paraguay, 2026) —un récord que convive con la crisis de los pequeños criadores—.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
+  },
+  {
+    "objectID": "agro-ganaderia/index.html#exposición-diferencial-a-las-amenazas",
+    "href": "agro-ganaderia/index.html#exposición-diferencial-a-las-amenazas",
+    "title": "Agricultura y ganadería",
+    "section": "Exposición diferencial a las amenazas",
+    "text": "Exposición diferencial a las amenazas\nLa misma amenaza golpea distinto según la escala. Este es el nexo con los módulos de amenaza del sitio:\n\nInundación: las crecidas anegan cultivos y ganado en Ñeembucú, Central y el Chaco (abril de 2026, miles de vacunos en el agua). Un caso de riesgo construido: productores atribuyen la “inundación artificial” a los terraplenes y el represamiento de cauces por grandes arroceras —el pequeño productor absorbe el costo de una infraestructura del agronegocio— prensa (ABC Color, 2025; Centro de Tecnología Apropiada — Universidad Nacional de Pilar (CTA-UNP), 2025).\nSequía / bajante: la zafra 2021/22 fue la peor de la historia (pérdidas ~USD 3.000 millones) (La Nación (Paraguay), 2022); la sequía de 2024 obligó a trasladar &gt;40.000 cabezas en el Chaco, con mortandad y preñeces por debajo del 50 % prensa (LaPolíticaOnline, 2024).\nHeladas: dañan trigo, maíz, horticultura y pasturas del sur; la horticultura bajo invernadero resiste mejor —la brecha tecnológica es brecha de vulnerabilidad—.\nIncendios: en 2024 el fuego arrasó &gt;350.000 ha, con fuerte impacto en campos ganaderos del Chaco y el Pantanal.\n\n\n\n\n\n\n\nImportanteLa deforestación como amenaza que se fabrica\n\n\n\nLa expansión ganadera transformó ~4,37 millones de ha de bosque del Chaco entre 2005 y 2020 (~90 % de la deforestación nacional) (BASE Investigaciones Sociales (BASE-IS), 2024); la cobertura forestal del país cerró 2024 en 44,4 % (Instituto Forestal Nacional (INFONA), 2026). Esa deforestación produce más sequía, más fuego y alteración hidrológica —la amenaza no es solo “natural”: se construye—, y luego se distribuye de forma desigual.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
+  },
+  {
+    "objectID": "agro-ganaderia/index.html#síntesis-vulnerabilidad-diferencial",
+    "href": "agro-ganaderia/index.html#síntesis-vulnerabilidad-diferencial",
+    "title": "Agricultura y ganadería",
+    "section": "Síntesis: vulnerabilidad diferencial",
+    "text": "Síntesis: vulnerabilidad diferencial\nEl agronegocio absorbe mejor el golpe (capital, riego, movilidad de la hacienda, diversificación de mercados, seguros); la agricultura familiar y la ganadería de subsistencia quedan expuestas sin cobertura. El desastre agropecuario no es una fatalidad climática: es el resultado de una estructura agraria desigual que decide, de antemano, quién resiste y quién pierde todo.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
+  },
+  {
+    "objectID": "agro-ganaderia/index.html#datos-abiertos-y-vacíos",
+    "href": "agro-ganaderia/index.html#datos-abiertos-y-vacíos",
+    "title": "Agricultura y ganadería",
+    "section": "Datos abiertos y vacíos",
+    "text": "Datos abiertos y vacíos\nPara mapear el uso del suelo agropecuario y su cambio hay datos abiertos: MapBiomas Paraguay (cobertura 1985-2024 por departamento, incluye fuego) (MapBiomas Paraguay, 2024) e INFONA (cobertura forestal) (Instituto Forestal Nacional (INFONA), 2026); el dataset del CAN 2022 está en datos.gov.py.\n\nPendiente de fuente primaria única: series 2020-2025 por rubro de la agricultura familiar (mandioca, poroto, sésamo) desagregadas por departamento; caña de azúcar 2024-2025; cuantificación monetaria de las pérdidas por heladas; y el origen preciso del dato “la AF provee ~85 % de la canasta básica” (circula sin cita primaria localizable). Conviene, además, descargar el reporte primario del MAG-DCEA y citar tabla y página.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Agricultura y ganadería (medios de vida)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html",
+    "href": "08-pluvial/index.html",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "",
+    "text": "La inundación pluvial —anegamientos y raudales que la lluvia intensa genera sobre un drenaje insuficiente— es una amenaza distinta del desborde del río. No depende del nivel del río, golpea a toda la ciudad (no solo la ribera baja) y afecta a varias ciudades del país. Esta página la caracteriza y la separa explícitamente de la amenaza fluvial tratada en el resto del repositorio.",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#fluvial-vs-pluvial-dos-amenazas-distintas",
+    "href": "08-pluvial/index.html#fluvial-vs-pluvial-dos-amenazas-distintas",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Fluvial vs pluvial: dos amenazas distintas",
+    "text": "Fluvial vs pluvial: dos amenazas distintas\n\n  \n    🌊 Fluvial (desborde del río)\n    \n    Causa: crecida del río Paraguay/Paraná.\n    Disparador: el nivel del río (cota hidrométrica).\n    Dónde: los bañados y barrios ribereños bajos.\n    Ritmo: lento (días–semanas); previsible.\n    En el sitio: mapa histórico,\n    exposición,\n    cota actual.\n  \n  \n    🌧️ Pluvial (lluvia y drenaje)\n    \n    Causa: lluvia intensa + drenaje insuficiente.\n    Disparador: el pronóstico de lluvia (mm/h), no el río.\n    Dónde: toda la ciudad; arroyos urbanos y puntos bajos.\n    Ritmo: súbito (minutos–horas); raudales letales.\n    En el sitio: esta página + lluvia en vivo.\n  \n\nCuando ambas coinciden en el tiempo, se combinan: el agua de lluvia no puede drenar hacia un río ya desbordado.",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#por-qué-el-niño-agrava-el-riesgo-pluvial",
+    "href": "08-pluvial/index.html#por-qué-el-niño-agrava-el-riesgo-pluvial",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Por qué El Niño agrava el riesgo pluvial",
+    "text": "Por qué El Niño agrava el riesgo pluvial\nEl Niño no solo eleva el río: aumenta la lluvia en el sudeste de Sudamérica. La teleconexión está bien establecida —anomalías positivas de precipitación en Paraguay, sur de Brasil, Uruguay y NE argentino, con máximos en primavera y fin de verano (Boulanger et al., 2005; Grimm et al., 2000; Ropelewski & Halpert, 1987), y más eventos de lluvia extrema (Grimm & Tedeschi, 2009; Petry et al., 2025)—. Cerca de la mitad de la tendencia de aumento de lluvia en la región provendría de la fase El Niño (Barros et al., 2008). En el episodio muy fuerte de 2015-16, el centro del país acumuló hasta 400 mm entre el 1 y el 23 de diciembre de 2015 oficial (NASA, 2015); para Paraguay las anomalías positivas van de media primavera a media otoño, sobre todo en la región Oriental oficial (Sistema de Información sobre Sequías para el sur de Sudamérica (SISSA / CRC-SAS), 2023). Bajo calentamiento global se proyecta mayor frecuencia de El Niño extremos (Cai et al., 2014; Cai et al., 2020).\n\n\n\n\n\n\nContexto climático de Asunción: normal anual ~1.400 mm; récord en 24 h ~220 mm (feb 2014) y 210,8 mm en marzo de 2026 (récord de marzo desde 1964); tendencia +3,2 mm/año oficial (Dirección de Meteorología e Hidrología (DMH/DINAC), 2026b).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf",
+    "href": "08-pluvial/index.html#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Cuánta lluvia colapsa la ciudad: escala e IDF",
+    "text": "Cuánta lluvia colapsa la ciudad: escala e IDF\nNo existe una escala oficial que traduzca milímetros en nivel de colapso. La siguiente es empírica, calibrada con los temporales documentados y la clasificación de intensidad AEMET/OMM (Agencia Estatal de Meteorología (AEMET), 2024). La clave: manda la intensidad (mm/h), no el total del día —50 mm en una hora provocan raudales letales; los mismos 50 mm en un día los absorbe el drenaje—.\n\n  \n    \n    \n      0 · Sin colapso — intensidad débil a moderada (&lt; 15 mm/h). El drenaje absorbe.\n  \n  \n    \n    \n      1 · Encharcamientos — lluvia fuerte (15-30 mm/h). Raudales incipientes en puntos críticos.\n  \n  \n    \n    \n      2 · Raudales peligrosos — muy fuerte (30-60 mm/h, ≈40-50 mm en &lt;1 h).\n      10-40 cm a 1-3 m/s ya arrastran personas y vehículos.\n  \n  \n    \n    \n      3 · Anegamiento extendido — torrencial (&gt; 60 mm/h) y/o 80-110 mm/día.\n      Barrios y arroyos desbordados, víctimas. La SEN declara alerta máxima ante ~120 mm.\n  \n  \n    \n    \n      4 · Colapso / catástrofe — &gt; ~150-200 mm/24 h. Arroyos mayores, socavones,\n      fallecidos, miles de desplazados.\n  \n\nEventos reales sobre esta escala: Encarnación 147,5 mm (2 may 2024, nivel 3-4) (ABC Color, 2024b); Gran Asunción 100-120 mm (jun 2025, nivel 3) (Última Hora, 2025b); Concepción ~90 mm (abr 2026, nivel 3) (ABC Color, 2026c); Ciudad del Este 68,6 mm (jun 2025, nivel 2-3) (ABC Color, 2025); raudal de Ñemby 47 mm en 50 min ≈ 56 mm/h (muy fuerte) (Ruiz Díaz Cardozo et al., 2018).\n\nEl eje de duración (IDF simplificada)\nLa curva IDF (intensidad-duración-frecuencia) es la herramienta estándar del diseño de drenaje. Aquí se construye solo el eje intensidad-duración; el de frecuencia (período de retorno) requiere la serie pluviográfica local, que en Paraguay trabajó Monte Domecq (Monte Domecq, 1995; Monte Domecq & Báez, 1999). Como intensidad = lámina ÷ duración, un aguacero corto alcanza intensidad de raudal con pocos milímetros:\n\nLámina (mm) que alcanza cada intensidad según la duración (aritmética simple, clases AEMET/OMM (Agencia Estatal de Meteorología (AEMET), 2024)). Único punto observado: Ñemby, 47 mm/50 min (Ruiz Díaz Cardozo et al., 2018).\n\n\n\n\n\n\n\n\nDuración\n“Fuerte” 15-30 mm/h\n“Muy fuerte” 30-60\n“Torrencial” &gt;60\n\n\n\n\n10 min\n2,5-5 mm\n5-10 mm\n&gt; 10 mm\n\n\n30 min\n7,5-15 mm\n15-30 mm\n&gt; 30 mm\n\n\n1 hora\n15-30 mm\n30-60 mm\n&gt; 60 mm\n\n\n2 horas\n30-60 mm\n60-120 mm\n&gt; 120 mm\n\n\n\n\n  \n  \n  25102050100\n  Intensidad (mm/h, escala log)\n  10 min30 min1 h3 h6 h24 h\n  Duración del aguacero (escala log)\n  \n  umbral aproximado de colapso\n  (desciende con la duración)\n  ↑ raudales / anegamiento\n  ↓ el drenaje absorbe\n  \n  Ñemby 2018: 47 mm / 50 min (≈56 mm/h)\n  \n  Feb 2014: 222 mm / 24 h (≈9 mm/h)\n\nEsquema conceptual, no una IDF estadística: solo los dos puntos marcados son datos observados. Una IDF real (con períodos de retorno) exige los registros de la DINAC y el método de ajuste de (Monte Domecq, 1995).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#dónde-se-acumula-el-agua-modelo-topográfico-dem",
+    "href": "08-pluvial/index.html#dónde-se-acumula-el-agua-modelo-topográfico-dem",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Dónde se acumula el agua: modelo topográfico (DEM)",
+    "text": "Dónde se acumula el agua: modelo topográfico (DEM)\nPara pasar de eventos puntuales a una capa de susceptibilidad, se derivó del Copernicus DEM (30 m) dónde el relieve favorece el encharcamiento y la concentración del escurrimiento (relleno de depresiones + acumulación de flujo + índice topográfico de humedad). Es un modelo de susceptibilidad, no un evento observado. El método es reproducible por ciudad (scripts/analisis_pluvial_dem.py); el mapa muestra las ciudades ya procesadas:\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\nModelo, no evento. El DEM de 30 m identifica lows a escala de barrio; no capta la red de desagües ni el anegamiento a escala de calle. Falta el estudio hidráulico urbano oficial (MOPC/ESSAP) y la serie de lluvia por estación de la DINAC. La susceptibilidad de Ciudad del Este, Encarnación, Concepción y Pilar queda pendiente (se regenera con scripts/analisis_pluvial_dem.py cuando el servicio de datos DEM esté disponible).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#temporales-documentados-por-ciudad",
+    "href": "08-pluvial/index.html#temporales-documentados-por-ciudad",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Temporales documentados por ciudad",
+    "text": "Temporales documentados por ciudad\n\nAsunción y Gran AsunciónCiudad del EsteEncarnaciónConcepciónPilar\n\n\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto pluvial\nFuente\n\n\n\n\n25-26 feb 2014\n222 mm (récord)\nDesborde del arroyo Itay; Ñu Guasú sumergido; 1 muerto; 3.000 desplazados\nprensa (ABC Color, 2014)\n\n\n28 ene 2018\n47 mm / 50 min\nRaudal en Ñemby (estudio LSPIV): 10-40 cm a 1-3 m/s arrastran personas\nacadémico (Ruiz Díaz Cardozo et al., 2018)\n\n\n2 nov 2023\ns/d\nRaudal en Lambaré: 2 militares arrastrados; ~20.000 sin luz\nprensa (La Nación (Paraguay), 2023)\n\n\n12-16 abr 2024\n80-106 mm\nViviendas colapsadas sobre el arroyo Ferreira; Trinidad anegado\noficial (Ministerio de Salud Pública y Bienestar Social (MSPBS), 2024)\n\n\n24 abr 2024\ns/d\n2 fallecidas en Luque (raudal urbano); barrios incomunicados\nprensa (ABC Color, 2024a)\n\n\n5-6 jun 2025\n100-120 mm\nTemporal en todo el Gran Asunción; arroyo de Ñemby arrastró 4 vehículos; ~90.000 sin luz\nprensa (Última Hora, 2025b, 2025a)\n\n\n8 mar 2026\ns/d\nRaudal en San Lorenzo; Hospital Materno Infantil de Fdo. de la Mora anegado\nprensa (ABC Color, 2026b)\n\n\n17 mar 2026\ns/d\nComplejo San Blas (MUVH), Mariano Roque Alonso: ~600 familias\nprensa (ABC Color, 2026a)\n\n\n\n\n\nPatrón de microcuenca urbana: los arroyos Amambay y Acaraymí, canalizados con secciones insuficientes, inundan los barrios Che La Reina, 23 de Octubre, San Rafael, San Agustín.\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n23 mar 2022\ns/d\nDesborde de los arroyos Amambay y Acaraymí; ~100 familias (Che La Reina, 23 de Octubre)\nprensa (Última Hora, 2022)\n\n\n28-30 oct 2023\ns/d\n&gt;100 casas bajo agua (San Rafael, San Agustín); niños a la escuela en canoa\nprensa (ABC Color, 2023a)\n\n\n5 jun 2025\nhasta 68,6 mm\nDesborde del arroyo Amambay; escuela San Dionisio anegada\nprensa (ABC Color, 2025)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n2 may 2024\nCostanera 147,5 mm; Aeropuerto 103,6 mm\nMicrocentro anegado; barrio Sagrada Familia: 30 casas inundadas; piden reubicación\nprensa (ABC Color, 2024b; La Nación (Paraguay), 2024)\n\n\n\nLa lámina de la mañana superó el promedio mensual normal de mayo (~140 mm). Es anegamiento pluvial (drenaje), no desborde del Paraná.\n\n\nPatrón: colapso del sistema de desagüe. Barrios recurrentes: Villa Armando, Santo Domingo, San Carlos, Santa María, Inmaculada, Itacurubí.\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n24 abr 2025\ns/d\n+10 h de lluvia continua; buena parte de la ciudad afectada\nprensa (La Nación (Paraguay), 2025a)\n\n\n15 abr 2026\n~90 mm\nColapso del desagüe; casas inundadas; zona del mercado municipal\nprensa (ABC Color, 2026c)\n\n\n\n\n\nPilar sufre sobre todo inundación fluvial (río Paraguay). Lo estrictamente pluvial aparece ligado a obras de drenaje inconclusas:\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n1 jul 2026\ns/d\nBarrios Ytororó, Aurora y Colinas intransitables tras lluvias; obras de canalización inconclusas\nprensa (ABC Color, 2026d)",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#arroyos-urbanos-y-puntos-críticos-asunción",
+    "href": "08-pluvial/index.html#arroyos-urbanos-y-puntos-críticos-asunción",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Arroyos urbanos y puntos críticos (Asunción)",
+    "text": "Arroyos urbanos y puntos críticos (Asunción)\nEl anegamiento pluvial de la capital se organiza en torno a los arroyos urbanos, de cauces angostos, contaminados y parcialmente entubados:\n\nMburicaó: ~16 km, cruza siete barrios; desbordes recurrentes (La Nación (Paraguay), 2025b).\nFerreira: barrios Republicano y Roberto L. Petit; en abril 2024 hizo colapsar viviendas. La Municipalidad limpió un brazo (Cantaluppi) dentro de su Plan de Contingencia por El Niño de 2023 oficial (Municipalidad de Asunción, 2023).\nItay: ~35 km, límite del Gran Asunción; desborde recurrente en Limpio y Luque; canalización parcial (Municipalidad/MOPC) oficial (Municipalidad de Asunción, 2024).\nEntubados del centro (p. ej. Ycuá Satí): al correr bajo el pavimento pierden capacidad y ocultan el riesgo prensa (ABC Color, 2023b).\n\nLa Municipalidad reconoce intersecciones críticas de raudales, y estudios académicos mapearon decenas de puntos críticos en la capital (La Nación (Paraguay), 2025b).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#monitoreo-en-vivo-y-cómo-cerrar-la-idf",
+    "href": "08-pluvial/index.html#monitoreo-en-vivo-y-cómo-cerrar-la-idf",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Monitoreo en vivo y cómo cerrar la IDF",
+    "text": "Monitoreo en vivo y cómo cerrar la IDF\nLa DMH/DINAC opera Estaciones Meteorológicas Automáticas (EMAs) en todo el país (Dirección de Meteorología e Hidrología (DMH/DINAC), 2026a); la de referencia climatológica de Asunción/Central es el Aeropuerto Silvio Pettirossi (Luque). El estado de lluvia en vivo (acumulado del día, red nacional) está en Situación actual. Para convertir la escala empírica en una IDF con períodos de retorno, el paso concreto es solicitar a la DMH la serie pluviográfica histórica de estas estaciones (o los coeficientes de (Monte Domecq, 1995)).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "08-pluvial/index.html#fuentes-y-límites",
+    "href": "08-pluvial/index.html#fuentes-y-límites",
+    "title": "Inundaciones pluviales urbanas en Paraguay",
+    "section": "Fuentes y límites",
+    "text": "Fuentes y límites\n\n\nLas láminas de lluvia provienen mayormente de prensa citando a Meteorología; rara vez con estación/hora exacta. Los datos por sitio de Encarnación (147,5 / 103,6 mm) son la excepción (ABC Color, 2024b). Se marca s/d donde no hay mm.\nLa susceptibilidad DEM es un modelo topográfico de escala de barrio, no un estudio hidráulico ni un mapa de inundación observada.\nLa escala de colapso es empírica; su calibración fina exige la serie de la DINAC.",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación pluvial (lluvia)"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html",
+    "href": "06-exposicion/index.html",
+    "title": "Exposición y población en riesgo",
+    "section": "",
+    "text": "Mapa de la situación actual de exposición ante el episodio de El Niño 2026-27 en curso (con pronóstico de primavera lluviosa e inundaciones para Paraguay). Cruza las zonas inundables —definidas empíricamente por las huellas de inundación de episodios pasados— con la población, los servicios de salud y los centros educativos.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#tablero-de-exposición",
+    "href": "06-exposicion/index.html#tablero-de-exposición",
+    "title": "Exposición y población en riesgo",
+    "section": "Tablero de exposición",
+    "text": "Tablero de exposición\n\n\nParaguay (total)Población7,552,654Servicios de salud1,056Centros educativos8,030⚠ Dentro de la zona de inundaciónPoblación en riesgo59,695Servicios de salud7Centros educativos24Alumnos (matrícula)4,172Departamentos ribereños prioritariosPoblación4,685,270Niñez (0-14)1,315,238Adultos mayores (65+)310,321Servicios de salud575Centros educativos4,281Expuestos · Villa HayesServicios de salud0Centros educativos3Expuestos · Fuerte OlimpoServicios de salud0Centros educativos0Expuestos · Alberdi / bajo ÑeembucúServicios de salud0Centros educativos0Expuestos · Pilar / ÑeembucúServicios de salud0Centros educativos2Expuestos · Asunción y área metropolitanaServicios de salud7Centros educativos19\n\n\nPoblación: proyección 2023 (COD-PS, UNFPA/DGEEC). Salud: registro oficial MSPBS/DIGIES. Educación: registro oficial MEC (2014). Zona de riesgo: huellas Sentinel-1 + buffer de 550 m.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#mapa",
+    "href": "06-exposicion/index.html#mapa",
+    "title": "Exposición y población en riesgo",
+    "section": "Mapa",
+    "text": "Mapa\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nLos 8.030 centros educativos (MEC) se agregan por departamento (conteo en el tooltip); los 1.056 servicios de salud (MSPBS) y los 10.342 puntos de actividad comercial (OSM, capa activable) se muestran agrupados. Solo se dibujan individualmente los expuestos en la zona de riesgo (24 escuelas, 7 servicios de salud, 73 comercios y servicios). Nota: varias USF y escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos. Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.\n\n\n\n\n\n\nTipDescargas: establecimientos en riesgo (Excel)\n\n\n\nLos establecimientos dentro de la zona de inundación, con ubicación, atributos y el nivel del río al que se inundan (cada uno contado en una sola zona, sin doble conteo):\n\n⬇ escuelas_riesgo.xlsx — 24 escuelas (MEC): matrícula, tipo de gestión, zona y nivel del río.\n⬇ salud_riesgo.xlsx — 7 servicios de salud (MSPBS): categoría (6 USF + 1 hospital distrital), distrito, zona y nivel del río.\n⬇ comercio_riesgo.xlsx — 73 comercios y servicios (OpenStreetMap): tipo, rubro y ubicación. Cota inferior (OSM subrepresenta el comercio informal).",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#cómo-se-define-la-exposición",
+    "href": "06-exposicion/index.html#cómo-se-define-la-exposición",
+    "title": "Exposición y población en riesgo",
+    "section": "Cómo se define la exposición",
+    "text": "Cómo se define la exposición\n\nZona de riesgo de inundación: unión de las huellas de inundación derivadas de Sentinel-1 para 2015-16, 2018-19 y 2023-24 (ver mapa histórico), más un buffer de 550 m para incluir los barrios afectados adyacentes, no solo la lámina de agua.\nExpuestos: servicios de salud y centros educativos cuya ubicación cae dentro de esa zona de riesgo.\nDepartamentos prioritarios: los ocho de mayor exposición ribereña/agrícola (Central, Concepción, San Pedro, Pdte. Hayes, Ñeembucú, Misiones, Itapúa, Alto Paraná), usados como aproximación de exposición a escala nacional.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#efecto-de-la-costanera-análisis-de-elevación-dem",
+    "href": "06-exposicion/index.html#efecto-de-la-costanera-análisis-de-elevación-dem",
+    "title": "Exposición y población en riesgo",
+    "section": "Efecto de la Costanera (análisis de elevación / DEM)",
+    "text": "Efecto de la Costanera (análisis de elevación / DEM)\nPara empezar a considerar las obras de defensa, se incorporó el modelo de elevación Copernicus DEM (30 m). Hallazgos (sobre los bañados de Asunción):\n\n\n\n\n\n\n\nTerreno\nElevación (m s/mar)\n\n\n\n\nBañados inundados (huella observada)\nmediana 56,8 · p90 58,5\n\n\nCiudad (tierra firme circundante)\n~60-65\n\n\nCostanera (terraplén de defensa)\nmediana 58,8 → +2 m sobre el bañado\n\n\n\nEs decir: los bañados son la tierra más baja (por eso se inundan) y la Costanera es un terraplén elevado por encima del nivel que alcanzó la inundación observada — coherente con su función de defensa. En el mapa, la capa “Franja baja protegida (DEM)” marca 7,9 km² de terreno bajo (≤ 58,5 m) junto a la Costanera que no figuran en la huella observada: candidatos a estar protegidos por el terraplén.\n\nAnálisis exploratorio, no un modelo hidráulico. (1) El DEM de 30 m no capta la microtopografía ni los edificios de los bañados. (2) El umbral de inundación se calibra con lo observado por satélite, no con una cota absoluta. (3) La “franja protegida” puede deberse a la Costanera o a otras causas (desconexión hidráulica, otras defensas). (4) Falta la cota de coronamiento de la Costanera (MOPC/Municipalidad) y la conversión al cero hidrométrico del río para cuantificar el nivel de protección. Sirve para señalar dónde mirar, no para afirmar cuánto protege.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#susceptibilidad-a-inundación-pluvial-modelo-dem",
+    "href": "06-exposicion/index.html#susceptibilidad-a-inundación-pluvial-modelo-dem",
+    "title": "Exposición y población en riesgo",
+    "section": "Susceptibilidad a inundación pluvial (modelo DEM)",
+    "text": "Susceptibilidad a inundación pluvial (modelo DEM)\nJunto a la inundación fluvial (río), el mapa incluye una capa activable de susceptibilidad pluvial —dónde el relieve favorece que la lluvia se acumule o concentre, con independencia del río—. Se deriva del Copernicus DEM (30 m) combinando el relleno de depresiones (encharcamiento), la acumulación de flujo y el índice topográfico de humedad. El detalle de la evidencia (temporales documentados, arroyos urbanos, vínculo con El Niño) está en Inundaciones pluviales.\n\n\nEn el modelo, la susceptibilidad alta cubre ~6.6 km² en Asunción y el metro interior. Considerando un corredor anegable de ~100 m en torno a esos fondos de valle (~16.6 km²), quedan expuestos aproximadamente 10,661 habitantes (Kontur), 3 centros educativos (MEC) y 0 servicios de salud (MSPBS).\n\n\n\nModelo topográfico, no evento observado ni estudio hidráulico. El DEM de 30 m identifica lows a escala de barrio; no capta la red de desagües pluviales ni el anegamiento a escala de calle. La exposición se cuenta en un corredor de ~100 m alrededor de los fondos de valle (la inundación pluvial se extiende lateralmente), por lo que es orientativa. Donde la susceptibilidad pluvial se solapa con la huella fluvial, ambas amenazas se combinan.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#fuentes",
+    "href": "06-exposicion/index.html#fuentes",
+    "title": "Exposición y población en riesgo",
+    "section": "Fuentes",
+    "text": "Fuentes\n\nPoblación (total por departamento): COD-PS 2023 (UNFPA/DGEEC), CC BY-IGO (UNFPA / DGEEC Paraguay, 2023).\nPoblación en riesgo (dentro de la zona de inundación): Kontur Population 2023 (hexágonos H3 ~400 m), CC BY (Kontur, 2023). Se cuenta la población de los hexágonos cuyo centroide cae en la zona de riesgo.\nServicios de salud: registro oficial del MSPBS/DIGIES (establecimientos georreferenciados, 1.056 con categoría oficial) (Ministerio de Salud Pública y Bienestar Social (MSPBS) — DIGIES, 2025).\nCentros educativos: registro oficial del MEC (datos.mec.gov.py, período 2014), georreferenciado y con matrícula por establecimiento (Ministerio de Educación y Ciencias (MEC), Paraguay, 2014).\nDepartamentos: geoBoundaries (geoBoundaries (William & Mary geoLab), 2023).\nZonas inundables: derivadas de Sentinel-1 en este repositorio.\nCostanera y vialidad: OpenStreetMap (Overpass) (OpenStreetMap contributors, 2026).\nActividad comercial: OpenStreetMap (shop=* + mercados, vía Overpass) (OpenStreetMap contributors, 2026). Cota inferior: OSM subrepresenta el comercio informal y los barrios sin mapear.\nElevación del terreno: Copernicus DEM GLO-30 (30 m) (Copernicus / ESA, 2021).\nSusceptibilidad pluvial: modelo topográfico propio sobre el Copernicus DEM (relleno de depresiones + acumulación de flujo + índice de humedad topográfica) (Copernicus / ESA, 2021). Evidencia de eventos y teleconexión ENOS-lluvia en Inundaciones pluviales.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "06-exposicion/index.html#vacíos-y-límites",
+    "href": "06-exposicion/index.html#vacíos-y-límites",
+    "title": "Exposición y población en riesgo",
+    "section": "Vacíos y límites",
+    "text": "Vacíos y límites\nHay zonas de riesgo detalladas para Asunción, Pilar/Ñeembucú, Alberdi y Villa Hayes. La exposición fuera de Asunción es baja (0-2 establecimientos por zona): las zonas de anegamiento son los canales del río —no los centros urbanos— y la cobertura de OSM en pueblos chicos es escasa; muchos establecimientos quedan apenas fuera del buffer. Es una cota inferior, no la exposición real.\n\n\nEducación usa el registro oficial del MEC con matrícula, pero del período 2014 (último publicado en el portal); la ubicación es representativa aunque desactualizada.\nSalud usa el registro oficial del MSPBS/DIGIES (georreferenciado, con categoría oficial). No incluye camas ni dotación de personal por establecimiento.\nObras de defensa no ajustadas: el mapa se basa en huellas históricas de inundación y no descuenta la protección de obras como la Costanera (Norte/Sur) o el drenaje reciente. Donde hay defensa nueva, la exposición puede estar sobreestimada. La Costanera se muestra como capa de contexto, no como reductor cuantificado (haría falta la cota de protección del MOPC/Municipalidad). La huella de 2019 ya es posterior a la Costanera Norte (~2013); la Costanera Sur y obras 2020s no están reflejadas.\nConcepción quedó pendiente: no hay cobertura de Sentinel-1 RTC reciente (2022-2024) sobre el norte para derivar su zona de anegamiento con este método.\nLa exposición no incorpora aún vulnerabilidad social (asentamientos informales, pobreza), que agravaría el riesgo en las mismas zonas.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Exposición y vulnerabilidad"
+    ]
+  },
+  {
+    "objectID": "04-asuncion-metropolitana/index.html",
+    "href": "04-asuncion-metropolitana/index.html",
+    "title": "Asunción y área metropolitana",
+    "section": "",
+    "text": "Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —los bañados Norte y Sur y La Chacarita—, donde reside población en situación de vulnerabilidad social. El riesgo es doble: fluvial (crecida del río Paraguay) y pluvial (lluvias intensas sobre drenaje insuficiente).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Asunción y área metropolitana"
+    ]
+  },
+  {
+    "objectID": "04-asuncion-metropolitana/index.html#hidrología-del-río-paraguay",
+    "href": "04-asuncion-metropolitana/index.html#hidrología-del-río-paraguay",
+    "title": "Asunción y área metropolitana",
+    "section": "Hidrología del río Paraguay",
+    "text": "Hidrología del río Paraguay\n\n\n\n\n\n\n\n\n\n\n\n\n\nEpisodio\nFecha\nNivel (m)\nEstación\nFuente\nConf.\n\n\n\n\n1982-83\n1983\n9.05\nAsuncion\nSEN_MADES\noficial\n\n\n2015-16\n2016\n7.88\nAsuncion\nSEN_MADES\noficial\n\n\n2015-16\n2016-01-07\n7.84\nAsuncion\nFloodList_DMH\nprensa\n\n\n2015-16\n2016-01-12\n7.61\nAsuncion\nFloodList_DMH\nprensa\n\n\n2015-16\n2016-01-18\n7.25\nAsuncion\nFloodList_DMH\nprensa\n\n\n2018-19\n2019-05-30\n7.57\nAsuncion\nDGRRD\noficial\n\n\nLa Niña 2024\n2024-11-02\n-1.61\nAsuncion\nparaguayfluvial\nprensa\n\n\n\n\n\n: Niveles del río Paraguay en Asunción. NC = no confirmado en fuente primaria.\nLa estación hidrométrica de Asunción registra niveles diarios desde el 1 de enero de 1904 prensa (Paraguay Fluvial, 2024). El contraste entre fases del ENOS es marcado: frente a las crecidas de El Niño, la fase fría (La Niña) trajo una bajante extrema de −1,61 m el 2 de noviembre de 2024 prensa (Paraguay Fluvial, 2024).\n\n\n\n\n\n\nNota\n\n\n\nDato oficial confirmado. El Plan de Contingencia de la SEN (Grassi 2020, MADES) registra el pico de 2015-16 en 7,88 m (788 cm) y el récord histórico en 1983: 9,05 m (905 cm) —ambos en años de El Niño fuerte (Secretaría de Emergencia Nacional (SEN), 2024). Esto confirma y precisa el dato que antes se tenía solo por prensa (~7,85 m).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Asunción y área metropolitana"
+    ]
+  },
+  {
+    "objectID": "04-asuncion-metropolitana/index.html#población-desplazada-en-episodios-recientes",
+    "href": "04-asuncion-metropolitana/index.html#población-desplazada-en-episodios-recientes",
+    "title": "Asunción y área metropolitana",
+    "section": "Población desplazada en episodios recientes",
+    "text": "Población desplazada en episodios recientes\n\nEl Niño 2015-16 (muy fuerte): &gt;72.000 personas desplazadas en Asunción (&gt;100.000 nacional), según estimaciones gubernamentales estimación (Última Hora, 2015). Por zona: Bañado Sur/Tacumbú 1.765 familias, Bañado Norte 1.695 familias, La Chacarita 756 familias prensa (Última Hora, 2015).\nEl Niño 2018-19 (débil): 14.823 familias / &gt;47.400 personas desplazadas desde marzo de 2019 (río en 7,57 m). Distribución en albergues: Bañado Sur 6.500 familias (48 albergues), Bañado Norte 4.404 familias (49 zonas), La Chacarita &gt;1.800 familias (21 albergues) oficial (DGRRD, 2019-05-30) (Municipalidad de Asunción — DGRRD, 2019).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Asunción y área metropolitana"
+    ]
+  },
+  {
+    "objectID": "04-asuncion-metropolitana/index.html#gestión-municipal-del-riesgo-dgrrd",
+    "href": "04-asuncion-metropolitana/index.html#gestión-municipal-del-riesgo-dgrrd",
+    "title": "Asunción y área metropolitana",
+    "section": "Gestión municipal del riesgo (DGRRD)",
+    "text": "Gestión municipal del riesgo (DGRRD)\nLa Dirección General de Gestión y Reducción de Riesgos de Desastres (DGRRD) de la Municipalidad de Asunción coordina la respuesta: sistema de albergues (118 albergues activos y a capacidad durante el pico de 2019), reportes de situación y atención a población vulnerable oficial (Municipalidad de Asunción — DGRRD, 2019).\n\nProtocolos formales, umbrales de alerta temprana y planes de contingencia vigentes de la DGRRD pendientes de incorporar desde documento oficial.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Asunción y área metropolitana"
+    ]
+  },
+  {
+    "objectID": "04-asuncion-metropolitana/index.html#inundaciones-pluviales-urbanas",
+    "href": "04-asuncion-metropolitana/index.html#inundaciones-pluviales-urbanas",
+    "title": "Asunción y área metropolitana",
+    "section": "Inundaciones pluviales urbanas",
+    "text": "Inundaciones pluviales urbanas\nJunto al desborde del río (riesgo fluvial), Asunción sufre inundaciones pluviales: raudales que la lluvia intensa genera sobre un drenaje insuficiente, con independencia del nivel del río. Son dos amenazas distintas —la fluvial afecta los bañados ribereños bajos; la pluvial golpea toda la ciudad— que además se combinan cuando coinciden en el tiempo.\nEn abril de 2024 un temporal (80-106 mm) hizo colapsar viviendas sobre el arroyo Ferreira y anegó el barrio Trinidad oficial (Ministerio de Salud Pública y Bienestar Social (MSPBS), 2024); el récord histórico ronda los 222 mm en 24 h (feb 2014) (ABC Color, 2014).\n\n\n\n\n\n\nNota\n\n\n\nLa amenaza pluvial se trata en detalle —con su escala de colapso, la relación intensidad-duración (IDF), el modelo de susceptibilidad topográfica y los temporales documentados en Asunción y otras ciudades del país— en Inundaciones pluviales urbanas en Paraguay.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Asunción y área metropolitana"
+    ]
+  },
+  {
+    "objectID": "04-asuncion-metropolitana/index.html#población-en-situación-de-vulnerabilidad",
+    "href": "04-asuncion-metropolitana/index.html#población-en-situación-de-vulnerabilidad",
+    "title": "Asunción y área metropolitana",
+    "section": "Población en situación de vulnerabilidad",
+    "text": "Población en situación de vulnerabilidad\nLos bañados y La Chacarita concentran asentamientos informales con viviendas precárias en la ribera. El reporte municipal de 2019 registró en los albergues 13.500 menores de edad, 778 embarazadas y ~1.000 adultos mayores, indicativo del perfil de vulnerabilidad de la población desplazada oficial (DGRRD, 2019-05-30) (Municipalidad de Asunción — DGRRD, 2019). UNICEF brindó asistencia psicosocial a niñez afectada por inundaciones oficial (UNICEF, 2024).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Asunción y área metropolitana"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/departamentos/index.html",
+    "href": "03-paraguay/departamentos/index.html",
+    "title": "Impacto por departamento",
+    "section": "",
+    "text": "Departamentos priorizados por su exposición a crecidas de la cuenca del Paraná/Paraguay y a variabilidad agrícola. Las fichas se completan a medida que se localizan datos verificados por episodio.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Impacto por departamento"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/departamentos/index.html#ñeembucú",
+    "href": "03-paraguay/departamentos/index.html#ñeembucú",
+    "title": "Impacto por departamento",
+    "section": "Ñeembucú",
+    "text": "Ñeembucú\nDepartamento ribereño del sur, entre los ríos Paraguay y Paraná; uno de los más expuestos a inundación por crecida.\n\nEl Niño 2023-24: ~2.150 familias evacuadas en 11 distritos (abril-mayo 2024); localidades aisladas (Guazucuá, Tacuara, Belén, Humaitá, Paso de Patria, Alberdi, entre otras). La Cámara de Diputados sancionó la declaración de emergencia del departamento por 90 días prensa (Agencia de Noticias Fides, 2024).\nCiudad de Pilar: históricamente vulnerable (la inundación de 1983 dejó a la ciudad bajo agua); en 2024 volvió a una situación crítica prensa (ABC Color, 2024).\nObras anunciadas: refuerzo de muros de contención en Alberdi y Pilar ante El Niño prensa (Agencia de Noticias Fides, 2024).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Impacto por departamento"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/departamentos/index.html#central",
+    "href": "03-paraguay/departamentos/index.html#central",
+    "title": "Impacto por departamento",
+    "section": "Central",
+    "text": "Central\nDepartamento más poblado, contiguo a Asunción; afectado sobre todo por inundaciones pluviales urbanas.\n\n2024: temporales causaron destrozos e inundaciones en Asunción y Central (abril 2024) prensa (La Nación (Paraguay), 2024).\n\n\nSeries cuantificadas de afectación por episodio para Central pendientes de fuente primaria.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Impacto por departamento"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/departamentos/index.html#alto-paraguay",
+    "href": "03-paraguay/departamentos/index.html#alto-paraguay",
+    "title": "Impacto por departamento",
+    "section": "Alto Paraguay",
+    "text": "Alto Paraguay\n\nCiudad ribereña de Fuerte Olimpo incluida en las obras de refuerzo de muros de contención ante El Niño prensa (Agencia de Noticias Fides, 2024).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Impacto por departamento"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/departamentos/index.html#concepción-san-pedro-presidente-hayes-misiones-itapúa-alto-paraná",
+    "href": "03-paraguay/departamentos/index.html#concepción-san-pedro-presidente-hayes-misiones-itapúa-alto-paraná",
+    "title": "Impacto por departamento",
+    "section": "Concepción · San Pedro · Presidente Hayes · Misiones · Itapúa · Alto Paraná",
+    "text": "Concepción · San Pedro · Presidente Hayes · Misiones · Itapúa · Alto Paraná\n\nFichas pendientes de redacción con datos verificados por episodio (afectación agrícola, ganadera y de infraestructura; población desplazada). Priorizar boletines de la DINAC, reportes de la SEN y de la Dirección de Gestión de Riesgos Agrícolas del MAG.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Impacto por departamento"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html",
+    "href": "01-marco-conceptual/index.html",
+    "title": "Marco conceptual: qué es el ENOS",
+    "section": "",
+    "text": "El El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html#qué-es-el-niño-oscilación-del-sur-enos",
+    "href": "01-marco-conceptual/index.html#qué-es-el-niño-oscilación-del-sur-enos",
+    "title": "Marco conceptual: qué es el ENOS",
+    "section": "",
+    "text": "El El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html#fases-el-niño-la-niña-y-fase-neutral",
+    "href": "01-marco-conceptual/index.html#fases-el-niño-la-niña-y-fase-neutral",
+    "title": "Marco conceptual: qué es el ENOS",
+    "section": "Fases: El Niño, La Niña y fase neutral",
+    "text": "Fases: El Niño, La Niña y fase neutral\n\n\n\nFase\nEstado del Pacífico ecuatorial\nAlisios\n\n\n\n\nEl Niño\nTSM anómalamente cálida (centro-este)\nDebilitados\n\n\nLa Niña\nTSM anómalamente fría\nReforzados\n\n\nNeutral\nCercana al promedio\nNormales\n\n\n\nEl ciclo es irregular, con recurrencia típica de 2 a 7 años y una duración de cada episodio de entre 9 y 12 meses, ocasionalmente más (Organización Meteorológica Mundial, 2026). Las fases suelen consolidarse hacia el final del año calendario del hemisferio norte.",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html#umbrales-de-clasificación-oni",
+    "href": "01-marco-conceptual/index.html#umbrales-de-clasificación-oni",
+    "title": "Marco conceptual: qué es el ENOS",
+    "section": "Umbrales de clasificación (ONI)",
+    "text": "Umbrales de clasificación (ONI)\nNOAA clasifica los episodios mediante el Oceanic Niño Index (ONI), la media móvil trimestral de la anomalía de TSM en Niño 3.4. Un episodio se declara cuando el ONI alcanza o supera ±0,5 °C durante cinco trimestres consecutivos (NOAA Climate Prediction Center, 2026a).\n\n\n\nCategoría\nUmbral ONI (°C)\n\n\n\n\nDébil\n0,5 – 0,9\n\n\nModerado\n1,0 – 1,4\n\n\nFuerte\n1,5 – 1,9\n\n\nMuy fuerte\n≥ 2,0\n\n\n\nLos episodios de referencia de este repositorio y su pico ONI:\n\n\n\n\nTabla 1\n\n\n\n\n\n\nEpisodio\nIntensidad\nPico ONI (°C)\n\n\n\n\n1997-98\nmuy fuerte\n2.4\n\n\n2015-16\nmuy fuerte\n2.6\n\n\n2023-24\nmuy fuerte\n2.0\n\n\n2026-27\nen desarrollo\n—\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos episodios 1997-98 (2,4 °C) y 2015-16 (2,6 °C) figuran entre los más intensos del registro instrumental desde 1950; 2023-24 alcanzó categoría muy fuerte (≈2,0 °C) (NOAA Climate Prediction Center, 2026a). En febrero de 2026, NOAA adoptó el Relative Oceanic Niño Index (RONI) como índice de referencia operativo, para corregir el calentamiento de fondo del océano (NOAA Climate Prediction Center, 2026b).",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html#mecanismos-físicos-de-impacto-en-sudamérica",
+    "href": "01-marco-conceptual/index.html#mecanismos-físicos-de-impacto-en-sudamérica",
+    "title": "Marco conceptual: qué es el ENOS",
+    "section": "Mecanismos físicos de impacto en Sudamérica",
+    "text": "Mecanismos físicos de impacto en Sudamérica\nDurante El Niño, el desplazamiento hacia el este de la convección tropical altera la circulación atmosférica por teleconexión, con efectos característicos en Sudamérica (Organización Meteorológica Mundial, 2026):\n\nNorte de los Andes / Amazonía y Nordeste de Brasil: tendencia a déficit de lluvias y sequía.\nCosta de Perú y Ecuador: lluvias intensas e inundaciones.\nSudeste de Sudamérica (Cono Sur): en la cuenca del Plata —sur de Brasil, Uruguay, noreste de Argentina y Paraguay— El Niño se asocia a precipitaciones por encima de lo normal, especialmente en primavera y comienzos del verano austral, por un reforzamiento del chorro subtropical y mayor ingreso de humedad.\n\nLa señal es probabilística, no determinista: El Niño inclina la balanza hacia ciertos regímenes de lluvia/temperatura, pero no garantiza un resultado en un punto y momento dados.",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "01-marco-conceptual/index.html#por-qué-importa-para-la-cuenca-del-plata-y-paraguay",
+    "href": "01-marco-conceptual/index.html#por-qué-importa-para-la-cuenca-del-plata-y-paraguay",
+    "title": "Marco conceptual: qué es el ENOS",
+    "section": "Por qué importa para la cuenca del Plata y Paraguay",
+    "text": "Por qué importa para la cuenca del Plata y Paraguay\nPara Paraguay, la relevancia de El Niño es directa: la fase cálida tiende a aumentar las precipitaciones sobre la cuenca del Paraná-Paraguay, lo que se traduce en crecidas de los ríos Paraguay y Paraná y en inundaciones —tanto ribereñas como pluviales urbanas— con impacto sobre población en zonas de riesgo, agricultura y ganadería. Este encadenamiento —anomalía oceánica → lluvia → crecida → afectación social— es el eje que estructura las secciones Paraguay y Asunción.\n\n\n\n\n\n\nImportanteEpisodio en curso\n\n\n\nHay un episodio de El Niño 2026-2027 en desarrollo. Su estado detallado, pronóstico y la población expuesta se siguen en Situación actual.",
+    "crumbs": [
+      "Inicio",
+      "🧭 Marco: desastres construidos"
+    ]
+  },
+  {
+    "objectID": "02-america-latina/index.html",
+    "href": "02-america-latina/index.html",
+    "title": "América Latina: panorama regional",
+    "section": "",
+    "text": "Panorama regional del ENOS: impactos del episodio 2023-24 por subregión y sector, y marco institucional de alerta temprana. Toda cifra remite a su fuente; los datos sin respaldo primario se marcan como vacío.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "América Latina (panorama regional)"
+    ]
+  },
+  {
+    "objectID": "02-america-latina/index.html#mapa-de-impactos-por-subregión-episodio-2023-2024",
+    "href": "02-america-latina/index.html#mapa-de-impactos-por-subregión-episodio-2023-2024",
+    "title": "América Latina: panorama regional",
+    "section": "Mapa de impactos por subregión (episodio 2023-2024)",
+    "text": "Mapa de impactos por subregión (episodio 2023-2024)\nLa síntesis regional proviene del informe del Estado del Clima para América Latina y el Caribe de la OMM (Organización Meteorológica Mundial, 2024).\n\n\n\n\n\n\n\nSubregión\nImpacto dominante 2023-24\n\n\n\n\nAmazonía\nSequía extrema; el río Negro alcanzó su nivel más bajo en +120 años de registro (desde 1902)\n\n\nCentroamérica y Panamá\nSequía en el Corredor Seco; el Canal de Panamá restringió el tránsito de buques desde agosto de 2023 por bajos niveles de agua\n\n\nRegión andina (costa de Ecuador y Perú)\nLluvias intensas e inundaciones\n\n\nCono Sur y México\nCalor extremo: México registró 51,4 °C (29-ago-2023) y 76 % del territorio con sequía; Brasil superó 41 °C\n\n\nCaribe\nHuracán Otis: daños por USD 12 000 millones\n\n\n\nTodos: oficial OMM (2024-05-08) (Organización Meteorológica Mundial, 2024).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "América Latina (panorama regional)"
+    ]
+  },
+  {
+    "objectID": "02-america-latina/index.html#impactos-sectoriales-2023-2024",
+    "href": "02-america-latina/index.html#impactos-sectoriales-2023-2024",
+    "title": "América Latina: panorama regional",
+    "section": "Impactos sectoriales (2023-2024)",
+    "text": "Impactos sectoriales (2023-2024)\n\nAgricultura y seguridad alimentaria\nEn 2023, 13,8 millones de personas en crisis alimentaria aguda (fase 3+ de la CIF), sobre todo en Centroamérica y el Caribe oficial (Organización Meteorológica Mundial, 2024).\n\n\nSalud\n\nDengue: 2024 fue la mayor epidemia registrada en las Américas: más de 12,6 millones de casos, ~21 000 graves y más de 7 700 muertes, casi el triple que 2023; Argentina, Brasil, Colombia y México concentraron el 90 % de los casos oficial (Organización Panamericana de la Salud, 2024).\nCalor: exceso anual de muertes por calor estimado en 36 695 (promedio 2000-2019) oficial (Organización Meteorológica Mundial, 2024).\n\n\n\nSeguridad hídrica\nEl estrés hídrico se refleja en los bajos niveles del Canal de Panamá y de ríos amazónicos (río Negro, mínimo en +120 años) oficial (Organización Meteorológica Mundial, 2024).\n\n\nDaños económicos\nDaños reportados por USD 21 000 millones en la región, 66 % asociados a tormentas (incluidos los USD 12 000 M del huracán Otis) oficial (Organización Meteorológica Mundial, 2024).\n\n\nMigración y desplazamiento\n\nNo se localizó una cifra oficial de desplazamiento atribuida específicamente a El Niño 2023-2024 en fuente primaria. El informe de OCHA que lo abordaría no fue accesible directamente (HTTP 403); pendiente de revisar el PDF original.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "América Latina (panorama regional)"
+    ]
+  },
+  {
+    "objectID": "02-america-latina/index.html#marco-institucional-regional",
+    "href": "02-america-latina/index.html#marco-institucional-regional",
+    "title": "América Latina: panorama regional",
+    "section": "Marco institucional regional",
+    "text": "Marco institucional regional\n\nOMM (WMO): emite las actualizaciones oficiales El Niño/La Niña y el informe del Estado del Clima regional (Organización Meteorológica Mundial, 2026).\nCIIFEN (Guayaquil): promueve investigación y alerta temprana del ENOS a escala regional; organiza foros con el Centro Regional del Clima para el Oeste de Sudamérica (CRC-OSA) y publica boletines mensuales (Centro Internacional para la Investigación del Fenómeno de El Niño, 2026).\nIFRC / Cruz Roja: opera con Protocolos de Acción Temprana (EAP) que liberan financiamiento al cruzarse umbrales científicos (Federación Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja, 2026).\nOCHA / ReliefWeb: publicó el informe de efectos humanitarios de El Niño 2023/2024, que identifica países en riesgo y zonas de monitoreo (Corredor Seco, Amazonía, Gran Chaco, Andes) (Oficina de Coordinación de Asuntos Humanitarios (OCHA), 2024).\n\n\nCEPAL: no se localizó un informe primario de CEPAL con cifras propias sobre El Niño 2023-2024. Los datos regionales anteriores provienen de OMM y OPS.\n\n\n\n\n\n\n\nAdvertenciaDatos descartados por falta de respaldo primario\n\n\n\n\n\nSe excluyeron por no confirmarse en fuente primaria: cifras de exposición a sequía y de acción anticipatoria atribuidas a OCHA/FAO (documento OCHA no accesible; datos FAO solo en literatura secundaria); “22 000 personas protegidas” por EAP de IFRC (comunicación institucional sin informe de evaluación); y la cifra de “13 millones” de casos de dengue en 2024 (el valor oficial de cierre de OPS es 12,6 millones).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "América Latina (panorama regional)"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/nacional.html",
+    "href": "03-paraguay/nacional.html",
+    "title": "Paraguay: nivel nacional",
+    "section": "",
+    "text": "En Paraguay, la fase cálida del ENOS (El Niño) se asocia a precipitaciones por encima de lo normal y a crecidas de los ríos Paraguay y Paraná, con inundaciones ribereñas y pluviales. Esta sección reúne el pronóstico oficial para 2026-27 y el registro de los episodios recientes.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Paraguay (nivel nacional)"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/nacional.html#pronóstico-oficial-para-el-episodio-2026-2027",
+    "href": "03-paraguay/nacional.html#pronóstico-oficial-para-el-episodio-2026-2027",
+    "title": "Paraguay: nivel nacional",
+    "section": "Pronóstico oficial para el episodio 2026-2027",
+    "text": "Pronóstico oficial para el episodio 2026-2027\n\nLa Dirección de Meteorología e Hidrología (DINAC/DMH), por su director Eduardo Mingo, estimó un 80 % de probabilidad de que El Niño se manifieste como factor climático dominante entre julio y agosto de 2026, y advirtió que la primavera será una temporada lluviosa, con riesgo de lluvias intensas e inundaciones hacia finales de 2026 prensa (ABC Color citando a la DMH, 2026-06-03) (ABC Color, 2026).\nEl patrón estacional previsto por la DMH combina un invierno 2026 con lluvias por debajo de lo normal en buena parte del país (salvo extremo norte y nordeste) y una primavera con superávit de precipitación, tendencia que podría intensificarse en el primer trimestre de 2027 prensa (ABC Color, 2026).\n\n\n\n\n\n\n\nNota\n\n\n\nLos boletines de perspectivas climáticas trimestrales de la DINAC se publican en meteorologia.gov.py y son la fuente primaria a la que remitir para cada actualización.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Paraguay (nivel nacional)"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/nacional.html#historial-de-episodios-recientes",
+    "href": "03-paraguay/nacional.html#historial-de-episodios-recientes",
+    "title": "Paraguay: nivel nacional",
+    "section": "Historial de episodios recientes",
+    "text": "Historial de episodios recientes\n\nEl Niño 2015-2016 (muy fuerte)\nEl episodio muy fuerte de 2015-16 produjo la mayor crecida reciente del río Paraguay asociada a El Niño, con desbordes en Asunción y desplazamientos masivos en las zonas ribereñas.\n\n&gt;72.000 personas desplazadas en Asunción y &gt;100.000 a nivel nacional, según estimaciones gubernamentales estimación (SEN, citado por prensa, dic-2015) (Última Hora, 2015).\n\n\nEl pico exacto del río Paraguay en Asunción durante 2015-16 (la prensa cita 7,85 m, presentado como máximo desde 1904) no pudo confirmarse en un registro primario de la DINAC. Debe verificarse contra el anuario/registro hidrológico oficial antes de citarse como dato. Nótese además que existió una crecida histórica mayor en 1983.\n\n\n\nEl Niño 2018-2019 (débil)\nAun tratándose de un El Niño débil, la crecida de 2019 generó una emergencia prolongada en Asunción, con datos oficiales de la Municipalidad:\n\nRío Paraguay en 7,57 m (30-may-2019); 14.823 familias / &gt;47.400 personas desplazadas desde marzo oficial (DGRRD, 2019-05-30) (Municipalidad de Asunción — DGRRD, 2019).\n\n\n\nEl Niño 2023-2024 (muy fuerte)\nEl episodio 2023-24 se expresó con inundaciones fluviales y pluviales, especialmente en Ñeembucú:\n\n~2.150 familias evacuadas en 11 distritos de Ñeembucú (abril-mayo 2024); la Cámara de Diputados sancionó la declaración de emergencia del departamento por 90 días prensa (Agencia de Noticias Fides, 2024).\nInundaciones pluviales en Asunción y Central por temporales en abril de 2024 prensa (La Nación (Paraguay), 2024).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Paraguay (nivel nacional)"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/nacional.html#sectores-afectados",
+    "href": "03-paraguay/nacional.html#sectores-afectados",
+    "title": "Paraguay: nivel nacional",
+    "section": "Sectores afectados",
+    "text": "Sectores afectados\n\nAgricultura y ganadería (MAG): el exceso hídrico en primavera-verano afecta cultivos y campos ganaderos, sobre todo en el sur y la cuenca del Paraná.\nCrecidas de ríos: ejes Paraguay y Paraná; ciudades ribereñas como Alberdi y Pilar (Ñeembucú) y Fuerte Olimpo (Alto Paraguay). El Gobierno anunció obras de refuerzo de muros de contención ante la llegada de El Niño prensa (Agencia de Noticias Fides, 2024).\nSalud pública: inundaciones y albergues; asistencia psicosocial a niñez afectada (UNICEF) oficial (UNICEF, 2024).\nInfraestructura vial: afectación por anegamientos.\n\n\nFaltan series cuantificadas por sector (hectáreas agrícolas afectadas, pérdidas económicas del BCP, km de rutas dañadas) con fuente primaria por episodio.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Paraguay (nivel nacional)"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/nacional.html#marco-institucional-nacional",
+    "href": "03-paraguay/nacional.html#marco-institucional-nacional",
+    "title": "Paraguay: nivel nacional",
+    "section": "Marco institucional nacional",
+    "text": "Marco institucional nacional\nSEN (respuesta y declaraciones de emergencia) · DINAC (pronóstico y monitoreo hidrológico) · MAG (riesgos agrícolas) · municipalidades · cooperación internacional (Cruz Roja Paraguaya, PNUD, UNICEF).",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Paraguay (nivel nacional)"
+    ]
+  },
+  {
+    "objectID": "03-paraguay/nacional.html#series-comparativas-población-afectada",
+    "href": "03-paraguay/nacional.html#series-comparativas-población-afectada",
+    "title": "Paraguay: nivel nacional",
+    "section": "Series comparativas — población afectada",
+    "text": "Series comparativas — población afectada\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEpisodio\nUbicación\nIndicador\nValor\nFecha\nFuente\nConf.\n\n\n\n\n2015-16\nAsunción\npersonas desplazadas\n72,000 personas\n2015-12\nSEN\nestimacion\n\n\n2015-16\nParaguay\npersonas desplazadas\n100,000 personas\n2015-12\nSEN\nestimacion\n\n\n2015-16\nBañado Sur (Tacumbú)\nfamilias desplazadas\n1,765 familias\n2015-12\nprensa\nprensa\n\n\n2015-16\nBañado Norte\nfamilias desplazadas\n1,695 familias\n2015-12\nprensa\nprensa\n\n\n2015-16\nLa Chacarita (Ricardo Brugada)\nfamilias desplazadas\n756 familias\n2015-12\nprensa\nprensa\n\n\n2018-19\nAsunción\nfamilias desplazadas\n14,823 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nAsunción\npersonas desplazadas\n47,400 personas\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nBañado Sur\nfamilias albergadas\n6,500 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nBañado Norte\nfamilias albergadas\n4,404 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nLa Chacarita\nfamilias albergadas\n1,800 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nAsunción\nninez en albergues\n13,500 personas\n2019-05-30\nDGRRD\noficial\n\n\n2023-24\nÑeembucú\nfamilias evacuadas\n2,150 familias\n2024-05\nprensa\nprensa\n\n\n\n\n\nCifras de 2015-16 a nivel ciudad/país: estimaciones gubernamentales vía prensa; las de 2018-19 provienen del reporte oficial de la Municipalidad de Asunción.",
+    "crumbs": [
+      "Inicio",
+      "📚 Contexto histórico (ENOS)",
+      "Paraguay (nivel nacional)"
+    ]
+  },
+  {
+    "objectID": "05-mapa-riesgo/index.html",
+    "href": "05-mapa-riesgo/index.html",
+    "title": "Mapa histórico de inundaciones",
+    "section": "",
+    "text": "Mapa interactivo de zonas expuestas a inundación en Paraguay, con foco nacional y posibilidad de acercarse a Asunción y su área metropolitana. Combina límites departamentales oficiales con las zonas de riesgo documentadas en este repositorio. Hacé clic en cada punto para ver el dato, su fuente y su nivel de confiabilidad.\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\nCoordenadas de las zonas: aproximadas al centro del área (dato geográfico público). La afectación proviene de los CSV del repositorio; ver Asunción y Paraguay para el detalle y las citas.",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación fluvial (río)"
+    ]
+  },
+  {
+    "objectID": "05-mapa-riesgo/index.html#capas-del-mapa",
+    "href": "05-mapa-riesgo/index.html#capas-del-mapa",
+    "title": "Mapa histórico de inundaciones",
+    "section": "Capas del mapa",
+    "text": "Capas del mapa\n\nDepartamentos: límites oficiales de geoBoundaries (fuente: Dirección General de Estadística, Encuestas y Censos, Paraguay; licencia CC BY 4.0) (geoBoundaries (William & Mary geoLab), 2023). Se resaltan los ocho departamentos priorizados por exposición ribereña y agrícola.\nZonas de riesgo documentadas: puntos con afectación registrada (bañados de Asunción, ciudades ribereñas de Ñeembucú y Alto Paraguay). El tamaño del círculo es proporcional al máximo de familias afectadas documentado; el color indica la confiabilidad de la fuente.\nEstación hidrométrica de Asunción: referencia del nivel del río Paraguay (pico de 7,84 m el 7-ene-2016; etapa crítica 5,5 m) (FloodList, 2016).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación fluvial (río)"
+    ]
+  },
+  {
+    "objectID": "05-mapa-riesgo/index.html#agua-satelital",
+    "href": "05-mapa-riesgo/index.html#agua-satelital",
+    "title": "Mapa histórico de inundaciones",
+    "section": "Huella de inundación por episodio (Sentinel-1)",
+    "text": "Huella de inundación por episodio (Sentinel-1)\nLas capas de colores son la inundación de cada episodio (2015-16, 2018-19, 2023-24); la azul, el cauce permanente del río. Es un producto preliminar y automático, no cartografía oficial.\nMétodo (reproducible), en dos pasos:\n\nAgua en el pico. Por episodio se escanean las escenas Sentinel-1 RTC (gamma0 terreno-corregido; Copernicus/ESA, vía Microsoft Planetary Computer) y se elige la de mayor extensión de agua (el pico real: 9-ene-2016, 23-may-2019, 15-mar-2024). El agua abierta refleja poca señal al radar: se clasifica como agua todo píxel con VV &lt; −17 dB (piso −28 dB). Todas en la misma órbita (68) para que sean comparables entre sí.\nResta del cauce permanente. Al agua del pico se le resta el agua permanente del JRC Global Surface Water (ocurrencia ≥ 50 %, 1984-2021). Lo que queda es la inundación; lo común a ambos, el cauce.\n\nSe usa el JRC (37 años de imágenes) y no una fecha de aguas bajas porque una referencia SAR de estación seca confunde suelo desnudo con agua —arrojaba más “agua” que el propio pico— y habría borrado inundación real. Scripts: derivar_huella_agua.py, aislar_inundacion.py y detectar_episodios.py (Copernicus / Agencia Espacial Europea (ESA), 2016; Microsoft, 2026; Pekel et al., 2016).\nResultado comparativo (inundación aislada sobre el AOI de Asunción):\n\n\n\nEpisodio\nFecha del pico\nInundación\n\n\n\n\n2015-16\n9-ene-2016\n~23,7 km²\n\n\n2018-19\n23-may-2019\n~23,2 km²\n\n\n2023-24\n15-mar-2024\n~0,8 km²\n\n\n\nLa huella mínima de 2023-24 en Asunción es coherente: la gran crecida de ese episodio afectó aguas abajo (Ñeembucú/Pilar), no la capital.\n\n\n\n\n\n\nAdvertenciaCómo leer (y cómo no leer) estas capas\n\n\n\n\nEs detección automática, no validada en campo; producto preliminar.\nLa cobertura es irregular: el viento sobre el agua eleva la señal y puede hacer que zonas realmente inundadas no aparezcan. La ausencia de color no prueba ausencia de inundación.\nCoincidencia que da confianza: las huellas de 2015-16 y 2018-19 se ubican sobre los bañados Norte, Sur y La Chacarita, consistente con el desplazamiento documentado.\nLas áreas son indicativas, sensibles a la fecha y las condiciones de cada pasada satelital; sirven para comparar patrones, no como medición exacta.",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación fluvial (río)"
+    ]
+  },
+  {
+    "objectID": "05-mapa-riesgo/index.html#umbrales",
+    "href": "05-mapa-riesgo/index.html#umbrales",
+    "title": "Mapa histórico de inundaciones",
+    "section": "Umbrales de referencia del río Paraguay",
+    "text": "Umbrales de referencia del río Paraguay\n\n\n\n\n\n\n\nNivel en Asunción\nInterpretación\n\n\n\n\n5,5 m\nEtapa crítica (inicio de afectación en zonas bajas) (FloodList, 2016)\n\n\n7,57 m\nCrecida de 2019 (14.823 familias desplazadas) (Municipalidad de Asunción — DGRRD, 2019)\n\n\n7,84 m\nPico de 2015-16, 7-ene-2016 (FloodList, 2016)",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación fluvial (río)"
+    ]
+  },
+  {
+    "objectID": "05-mapa-riesgo/index.html#vacio-capa",
+    "href": "05-mapa-riesgo/index.html#vacio-capa",
+    "title": "Mapa histórico de inundaciones",
+    "section": "Vacío de información — capa de huella de inundación",
+    "text": "Vacío de información — capa de huella de inundación\n\nEl mapa incluye huellas de inundación derivadas por nosotros de Sentinel-1 para los tres episodios, ya con el cauce permanente restado (preliminar, ver arriba), pero falta una capa oficial y validada. Tras una búsqueda sistemática (julio de 2026) no se localizó un vector oficial abierto para los episodios de El Niño en Paraguay. Queda pendiente validar en campo el resultado automático y extender la detección aguas abajo (Pilar/Ñeembucú).\n\nBúsqueda realizada (para no repetirla):\n\n\n\n\n\n\n\nFuente\nResultado\n\n\n\n\nCopernicus EMS Rapid Mapping\nSin activación para Paraguay en estos episodios (p. ej., EMSR853 = Bolivia; EMSR154 = Irlanda)\n\n\nInternational Charter (activación 609, Paraguay 2019)\n34 productos, pero solo mapas PDF, sin capa vectorial pública (International Charter Space and Major Disasters, 2019)\n\n\nDartmouth Flood Observatory — Global Archive\nGeometría de puntos/centroides, no polígonos; cobertura hasta ~2009 (Dartmouth Flood Observatory (G. R. Brakenridge), 2019)\n\n\nHDX (búsqueda “paraguay flood”)\n5 datasets, ninguno de huella de inundación (desplazamiento IDMC, indicadores, hidrografía OSM, FAPAR)\n\n\n\nVías pendientes para obtener la huella real: solicitar los productos vectoriales a la SEN/DINAC/MADES por canal oficial; revisar el geoportal de UNOSAT (floods.unosat.org) y sus productos históricos; o digitalizar la extensión a partir de imágenes satelitales documentadas (NASA Earth Observatory publicó imágenes de la crecida de Asunción del 12-ene-2016).",
+    "crumbs": [
+      "Inicio",
+      "⚠️ Amenazas",
+      "Inundación fluvial (río)"
+    ]
   },
   {
     "objectID": "07-recomendaciones/index.html",
@@ -530,586 +1168,32 @@
     ]
   },
   {
-    "objectID": "05-mapa-riesgo/index.html",
-    "href": "05-mapa-riesgo/index.html",
-    "title": "Mapa histórico de inundaciones",
+    "objectID": "admin/index.html",
+    "href": "admin/index.html",
+    "title": "Panel administrativo — establecimientos expuestos",
     "section": "",
-    "text": "Mapa interactivo de zonas expuestas a inundación en Paraguay, con foco nacional y posibilidad de acercarse a Asunción y su área metropolitana. Combina límites departamentales oficiales con las zonas de riesgo documentadas en este repositorio. Hacé clic en cada punto para ver el dato, su fuente y su nivel de confiabilidad.\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\nCoordenadas de las zonas: aproximadas al centro del área (dato geográfico público). La afectación proviene de los CSV del repositorio; ver Asunción y Paraguay para el detalle y las citas.",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación fluvial (río)"
-    ]
+    "text": "AdvertenciaUso administrativo — leer antes\n\n\n\nEsta página individualiza los servicios de salud y centros educativos que caen dentro de las zonas de riesgo de inundación, para planificación operativa (evacuación, refugios, continuidad de servicios).\n\nNo está enlazada en la navegación pública del sitio.\nNo es una página privada: se publica en GitHub Pages, que es público; cualquiera con esta URL puede verla. Para privacidad real, esta página debe dejar de publicarse (generarse solo en local) o alojarse en un repositorio con control de acceso (ver nota al pie).\nEducación: registro OFICIAL del MEC (datos.mec.gov.py, período 2014), georreferenciado y con matrícula (cantidad de alumnos) por establecimiento.\nSalud: registro OFICIAL del MSPBS/DIGIES (establecimientos georreferenciados), con categoría oficial (USF, puesto, centro, hospital). No incluye camas.\n\nSe regenera automáticamente con cada actualización de los datos (fecha arriba).\nTotal: 8 servicios de salud y 27 centros educativos en zonas de riesgo de inundación, con 5,701 alumnos matriculados (MEC) en las escuelas expuestas.\n\nAsunción y área metropolitana\nServicios de salud expuestos: 8\n\n\n\n#\nEstablecimiento (MSPBS)\nCategoría\nSubtipo\nDistrito\nUbicación\n\n\n\n\n1\nH.D.-FALCON\nHospitales Distritales\nHD\n06 JOSE FALCON\n-25.26108, -57.71084\n\n\n2\nUSF- 3 DE FEBRERO I - SAN MIGUEL\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n3\nUSF- 3 DE FEBRERO II SAN BLAS\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n4\nUSF- 6 DE MAYO\nUnidades De Salud De La Familia\nESTANDAR\n10 MARIANO ROQUE ALONSO\n-25.18250, -57.53367\n\n\n5\nUSF- CAMSAT - SAN FELIPE Y SANTIAGO\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.31257, -57.66770\n\n\n6\nUSF- CHACO-Í\nUnidades De Salud De La Familia\nESTANDAR\n04 VILLA HAYES\n-25.25094, -57.63964\n\n\n7\nUSF- SAN BLAS - CATEURA\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.32380, -57.64764\n\n\n8\nUSF- SAN FELIPE\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.27944, -57.61703\n\n\n\nCentros educativos expuestos: 22 (matrícula sumada: 4,136)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1274 FULGENCIO YEGROS\n13 (2014)\nVILLA HAYES / ZONA BETERETE KUE\n-25.32919, -57.68822\n\n\n2\n150 / 18 REPUBLICA DE CUBA / RCA. DE CUBA\n10 (2022)\nASUNCION / LAS MERCEDES\n-25.27609, -57.61079\n\n\n3\n15069 VIRGEN DE LUJAN DE FE Y ALEGRIA\n204 (2021)\nASUNCION / SAN CAYETANO\n-25.32206, -57.65382\n\n\n4\n182 DR.ANTOLIANO GARCETE / SAN FRANCISCO DE ASIS / NRO. 69\n322 (2022)\nJOSE FALCON / SAN FRANCISCO SUB-URBANO\n-25.26088, -57.71082\n\n\n5\n335 CARLOS ANTONIO LOPEZ\n67 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69804\n\n\n6\n407 ELISA ALICIA LYNCH\n246 (2021)\nASUNCION / RICARDO BRUGADA\n-25.28077, -57.62941\n\n\n7\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n8\n4625 LOMA CONCHE\n78 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.26528, -57.69168\n\n\n9\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n10\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391\n\n\n11\n94 SAN FELIPE / 1510 SAN FELIPE\n70 (2022)\nASUNCION / RICARDO BRUGADA\n-25.27897, -57.61686\n\n\n12\nACADEMIA DE ARTE SARAKI\n39 (2012)\nASUNCION / JARA\n-25.27443, -57.60846\n\n\n13\nCAP. DE NAVIO(SR) ING. ZOILO RODAS ORTIZ / 15-41 / 1271 ING. ZOILO RODAS ORTIZ\n220 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.23855, -57.63066\n\n\n14\nCARLOS ANTONIO LOPEZ / 708 CARLOS ANTONIO LOPEZ\n718 (2022)\nVILLETA / INMACULADA\n-25.50478, -57.57014\n\n\n15\nE.M.A CERRO POTY / 147 CERRO POTY / 5934\n33 (2022)\nASUNCION / JUKYTY\n-25.33524, -57.64360\n\n\n16\nEN CIENCIAS GEOGRAFICAS\n75 (2021)\nASUNCION / LAS MERCEDES\n-25.27782, -57.61419\n\n\n17\nM-11 COMANDO DE COMUNIC.\n22 (2022)\nASUNCION / TACUMBU\n-25.30260, -57.65615\n\n\n18\nM-56\n24 (2013)\nASUNCION / LAS MERCEDES\n-25.27587, -57.61192\n\n\n19\nMIGUEL MARIA PFANNEL\n390 (2022)\nLIMPIO / PIQUETE KUE CENTRO\n-25.10554, -57.48623\n\n\n20\nNTRA. SRA. DEL ROSARIO\n33 (2012)\nVILLETA / INMACULADA\n-25.50493, -57.56724\n\n\n21\nPDTE. CARLOS A. LOPEZ\n15 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69827\n\n\n22\nSANTA TERESITA\n28 (2012)\nVILLA HAYES / SALADILLO\n-25.09322, -57.55072\n\n\n\n\n\nPilar / Ñeembucú\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 2 (matrícula sumada: 36)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1809 ENFERMERAS DEL CHACO\n31 (2022)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / LOMA CAMBA KUA\n-26.67348, -58.01323\n\n\n2\n5645 (11357) BENJAMIN PORTILLO QUIŃONEZ\n5 (2021)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / COSTA PINDO\n-26.67953, -57.97349\n\n\n\n\n\nVilla Hayes\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 3 (matrícula sumada: 1,529)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n2\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n3\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391"
   },
   {
-    "objectID": "05-mapa-riesgo/index.html#capas-del-mapa",
-    "href": "05-mapa-riesgo/index.html#capas-del-mapa",
-    "title": "Mapa histórico de inundaciones",
-    "section": "Capas del mapa",
-    "text": "Capas del mapa\n\nDepartamentos: límites oficiales de geoBoundaries (fuente: Dirección General de Estadística, Encuestas y Censos, Paraguay; licencia CC BY 4.0) (geoBoundaries (William & Mary geoLab), 2023). Se resaltan los ocho departamentos priorizados por exposición ribereña y agrícola.\nZonas de riesgo documentadas: puntos con afectación registrada (bañados de Asunción, ciudades ribereñas de Ñeembucú y Alto Paraguay). El tamaño del círculo es proporcional al máximo de familias afectadas documentado; el color indica la confiabilidad de la fuente.\nEstación hidrométrica de Asunción: referencia del nivel del río Paraguay (pico de 7,84 m el 7-ene-2016; etapa crítica 5,5 m) (FloodList, 2016).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación fluvial (río)"
-    ]
+    "objectID": "admin/index.html#asunción-y-área-metropolitana",
+    "href": "admin/index.html#asunción-y-área-metropolitana",
+    "title": "Panel administrativo — establecimientos expuestos",
+    "section": "Asunción y área metropolitana",
+    "text": "Asunción y área metropolitana\nServicios de salud expuestos: 8\n\n\n\n#\nEstablecimiento (MSPBS)\nCategoría\nSubtipo\nDistrito\nUbicación\n\n\n\n\n1\nH.D.-FALCON\nHospitales Distritales\nHD\n06 JOSE FALCON\n-25.26108, -57.71084\n\n\n2\nUSF- 3 DE FEBRERO I - SAN MIGUEL\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n3\nUSF- 3 DE FEBRERO II SAN BLAS\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.28061, -57.62975\n\n\n4\nUSF- 6 DE MAYO\nUnidades De Salud De La Familia\nESTANDAR\n10 MARIANO ROQUE ALONSO\n-25.18250, -57.53367\n\n\n5\nUSF- CAMSAT - SAN FELIPE Y SANTIAGO\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.31257, -57.66770\n\n\n6\nUSF- CHACO-Í\nUnidades De Salud De La Familia\nESTANDAR\n04 VILLA HAYES\n-25.25094, -57.63964\n\n\n7\nUSF- SAN BLAS - CATEURA\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.32380, -57.64764\n\n\n8\nUSF- SAN FELIPE\nUnidades De Salud De La Familia\nESTANDAR\n30 ASUNCION\n-25.27944, -57.61703\n\n\n\nCentros educativos expuestos: 22 (matrícula sumada: 4,136)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1274 FULGENCIO YEGROS\n13 (2014)\nVILLA HAYES / ZONA BETERETE KUE\n-25.32919, -57.68822\n\n\n2\n150 / 18 REPUBLICA DE CUBA / RCA. DE CUBA\n10 (2022)\nASUNCION / LAS MERCEDES\n-25.27609, -57.61079\n\n\n3\n15069 VIRGEN DE LUJAN DE FE Y ALEGRIA\n204 (2021)\nASUNCION / SAN CAYETANO\n-25.32206, -57.65382\n\n\n4\n182 DR.ANTOLIANO GARCETE / SAN FRANCISCO DE ASIS / NRO. 69\n322 (2022)\nJOSE FALCON / SAN FRANCISCO SUB-URBANO\n-25.26088, -57.71082\n\n\n5\n335 CARLOS ANTONIO LOPEZ\n67 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69804\n\n\n6\n407 ELISA ALICIA LYNCH\n246 (2021)\nASUNCION / RICARDO BRUGADA\n-25.28077, -57.62941\n\n\n7\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n8\n4625 LOMA CONCHE\n78 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.26528, -57.69168\n\n\n9\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n10\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391\n\n\n11\n94 SAN FELIPE / 1510 SAN FELIPE\n70 (2022)\nASUNCION / RICARDO BRUGADA\n-25.27897, -57.61686\n\n\n12\nACADEMIA DE ARTE SARAKI\n39 (2012)\nASUNCION / JARA\n-25.27443, -57.60846\n\n\n13\nCAP. DE NAVIO(SR) ING. ZOILO RODAS ORTIZ / 15-41 / 1271 ING. ZOILO RODAS ORTIZ\n220 (2022)\nVILLA HAYES / ZONA CHACO’I\n-25.23855, -57.63066\n\n\n14\nCARLOS ANTONIO LOPEZ / 708 CARLOS ANTONIO LOPEZ\n718 (2022)\nVILLETA / INMACULADA\n-25.50478, -57.57014\n\n\n15\nE.M.A CERRO POTY / 147 CERRO POTY / 5934\n33 (2022)\nASUNCION / JUKYTY\n-25.33524, -57.64360\n\n\n16\nEN CIENCIAS GEOGRAFICAS\n75 (2021)\nASUNCION / LAS MERCEDES\n-25.27782, -57.61419\n\n\n17\nM-11 COMANDO DE COMUNIC.\n22 (2022)\nASUNCION / TACUMBU\n-25.30260, -57.65615\n\n\n18\nM-56\n24 (2013)\nASUNCION / LAS MERCEDES\n-25.27587, -57.61192\n\n\n19\nMIGUEL MARIA PFANNEL\n390 (2022)\nLIMPIO / PIQUETE KUE CENTRO\n-25.10554, -57.48623\n\n\n20\nNTRA. SRA. DEL ROSARIO\n33 (2012)\nVILLETA / INMACULADA\n-25.50493, -57.56724\n\n\n21\nPDTE. CARLOS A. LOPEZ\n15 (2022)\nVILLA HAYES / ZONA BETERETE KUE\n-25.31247, -57.69827\n\n\n22\nSANTA TERESITA\n28 (2012)\nVILLA HAYES / SALADILLO\n-25.09322, -57.55072"
   },
   {
-    "objectID": "05-mapa-riesgo/index.html#agua-satelital",
-    "href": "05-mapa-riesgo/index.html#agua-satelital",
-    "title": "Mapa histórico de inundaciones",
-    "section": "Huella de inundación por episodio (Sentinel-1)",
-    "text": "Huella de inundación por episodio (Sentinel-1)\nLas capas de colores son la inundación de cada episodio (2015-16, 2018-19, 2023-24); la azul, el cauce permanente del río. Es un producto preliminar y automático, no cartografía oficial.\nMétodo (reproducible), en dos pasos:\n\nAgua en el pico. Por episodio se escanean las escenas Sentinel-1 RTC (gamma0 terreno-corregido; Copernicus/ESA, vía Microsoft Planetary Computer) y se elige la de mayor extensión de agua (el pico real: 9-ene-2016, 23-may-2019, 15-mar-2024). El agua abierta refleja poca señal al radar: se clasifica como agua todo píxel con VV &lt; −17 dB (piso −28 dB). Todas en la misma órbita (68) para que sean comparables entre sí.\nResta del cauce permanente. Al agua del pico se le resta el agua permanente del JRC Global Surface Water (ocurrencia ≥ 50 %, 1984-2021). Lo que queda es la inundación; lo común a ambos, el cauce.\n\nSe usa el JRC (37 años de imágenes) y no una fecha de aguas bajas porque una referencia SAR de estación seca confunde suelo desnudo con agua —arrojaba más “agua” que el propio pico— y habría borrado inundación real. Scripts: derivar_huella_agua.py, aislar_inundacion.py y detectar_episodios.py (Copernicus / Agencia Espacial Europea (ESA), 2016; Microsoft, 2026; Pekel et al., 2016).\nResultado comparativo (inundación aislada sobre el AOI de Asunción):\n\n\n\nEpisodio\nFecha del pico\nInundación\n\n\n\n\n2015-16\n9-ene-2016\n~23,7 km²\n\n\n2018-19\n23-may-2019\n~23,2 km²\n\n\n2023-24\n15-mar-2024\n~0,8 km²\n\n\n\nLa huella mínima de 2023-24 en Asunción es coherente: la gran crecida de ese episodio afectó aguas abajo (Ñeembucú/Pilar), no la capital.\n\n\n\n\n\n\nAdvertenciaCómo leer (y cómo no leer) estas capas\n\n\n\n\nEs detección automática, no validada en campo; producto preliminar.\nLa cobertura es irregular: el viento sobre el agua eleva la señal y puede hacer que zonas realmente inundadas no aparezcan. La ausencia de color no prueba ausencia de inundación.\nCoincidencia que da confianza: las huellas de 2015-16 y 2018-19 se ubican sobre los bañados Norte, Sur y La Chacarita, consistente con el desplazamiento documentado.\nLas áreas son indicativas, sensibles a la fecha y las condiciones de cada pasada satelital; sirven para comparar patrones, no como medición exacta.",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación fluvial (río)"
-    ]
+    "objectID": "admin/index.html#pilar-ñeembucú",
+    "href": "admin/index.html#pilar-ñeembucú",
+    "title": "Panel administrativo — establecimientos expuestos",
+    "section": "Pilar / Ñeembucú",
+    "text": "Pilar / Ñeembucú\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 2 (matrícula sumada: 36)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n1809 ENFERMERAS DEL CHACO\n31 (2022)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / LOMA CAMBA KUA\n-26.67348, -58.01323\n\n\n2\n5645 (11357) BENJAMIN PORTILLO QUIŃONEZ\n5 (2021)\nSAN JUAN BAUTISTA DE ÐEEMBUCU / COSTA PINDO\n-26.67953, -57.97349"
   },
   {
-    "objectID": "05-mapa-riesgo/index.html#umbrales",
-    "href": "05-mapa-riesgo/index.html#umbrales",
-    "title": "Mapa histórico de inundaciones",
-    "section": "Umbrales de referencia del río Paraguay",
-    "text": "Umbrales de referencia del río Paraguay\n\n\n\n\n\n\n\nNivel en Asunción\nInterpretación\n\n\n\n\n5,5 m\nEtapa crítica (inicio de afectación en zonas bajas) (FloodList, 2016)\n\n\n7,57 m\nCrecida de 2019 (14.823 familias desplazadas) (Municipalidad de Asunción — DGRRD, 2019)\n\n\n7,84 m\nPico de 2015-16, 7-ene-2016 (FloodList, 2016)",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación fluvial (río)"
-    ]
-  },
-  {
-    "objectID": "05-mapa-riesgo/index.html#vacio-capa",
-    "href": "05-mapa-riesgo/index.html#vacio-capa",
-    "title": "Mapa histórico de inundaciones",
-    "section": "Vacío de información — capa de huella de inundación",
-    "text": "Vacío de información — capa de huella de inundación\n\nEl mapa incluye huellas de inundación derivadas por nosotros de Sentinel-1 para los tres episodios, ya con el cauce permanente restado (preliminar, ver arriba), pero falta una capa oficial y validada. Tras una búsqueda sistemática (julio de 2026) no se localizó un vector oficial abierto para los episodios de El Niño en Paraguay. Queda pendiente validar en campo el resultado automático y extender la detección aguas abajo (Pilar/Ñeembucú).\n\nBúsqueda realizada (para no repetirla):\n\n\n\n\n\n\n\nFuente\nResultado\n\n\n\n\nCopernicus EMS Rapid Mapping\nSin activación para Paraguay en estos episodios (p. ej., EMSR853 = Bolivia; EMSR154 = Irlanda)\n\n\nInternational Charter (activación 609, Paraguay 2019)\n34 productos, pero solo mapas PDF, sin capa vectorial pública (International Charter Space and Major Disasters, 2019)\n\n\nDartmouth Flood Observatory — Global Archive\nGeometría de puntos/centroides, no polígonos; cobertura hasta ~2009 (Dartmouth Flood Observatory (G. R. Brakenridge), 2019)\n\n\nHDX (búsqueda “paraguay flood”)\n5 datasets, ninguno de huella de inundación (desplazamiento IDMC, indicadores, hidrografía OSM, FAPAR)\n\n\n\nVías pendientes para obtener la huella real: solicitar los productos vectoriales a la SEN/DINAC/MADES por canal oficial; revisar el geoportal de UNOSAT (floods.unosat.org) y sus productos históricos; o digitalizar la extensión a partir de imágenes satelitales documentadas (NASA Earth Observatory publicó imágenes de la crecida de Asunción del 12-ene-2016).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación fluvial (río)"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/nacional.html",
-    "href": "03-paraguay/nacional.html",
-    "title": "Paraguay: nivel nacional",
-    "section": "",
-    "text": "En Paraguay, la fase cálida del ENOS (El Niño) se asocia a precipitaciones por encima de lo normal y a crecidas de los ríos Paraguay y Paraná, con inundaciones ribereñas y pluviales. Esta sección reúne el pronóstico oficial para 2026-27 y el registro de los episodios recientes.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Paraguay (nivel nacional)"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/nacional.html#pronóstico-oficial-para-el-episodio-2026-2027",
-    "href": "03-paraguay/nacional.html#pronóstico-oficial-para-el-episodio-2026-2027",
-    "title": "Paraguay: nivel nacional",
-    "section": "Pronóstico oficial para el episodio 2026-2027",
-    "text": "Pronóstico oficial para el episodio 2026-2027\n\nLa Dirección de Meteorología e Hidrología (DINAC/DMH), por su director Eduardo Mingo, estimó un 80 % de probabilidad de que El Niño se manifieste como factor climático dominante entre julio y agosto de 2026, y advirtió que la primavera será una temporada lluviosa, con riesgo de lluvias intensas e inundaciones hacia finales de 2026 prensa (ABC Color citando a la DMH, 2026-06-03) (ABC Color, 2026).\nEl patrón estacional previsto por la DMH combina un invierno 2026 con lluvias por debajo de lo normal en buena parte del país (salvo extremo norte y nordeste) y una primavera con superávit de precipitación, tendencia que podría intensificarse en el primer trimestre de 2027 prensa (ABC Color, 2026).\n\n\n\n\n\n\n\nNota\n\n\n\nLos boletines de perspectivas climáticas trimestrales de la DINAC se publican en meteorologia.gov.py y son la fuente primaria a la que remitir para cada actualización.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Paraguay (nivel nacional)"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/nacional.html#historial-de-episodios-recientes",
-    "href": "03-paraguay/nacional.html#historial-de-episodios-recientes",
-    "title": "Paraguay: nivel nacional",
-    "section": "Historial de episodios recientes",
-    "text": "Historial de episodios recientes\n\nEl Niño 2015-2016 (muy fuerte)\nEl episodio muy fuerte de 2015-16 produjo la mayor crecida reciente del río Paraguay asociada a El Niño, con desbordes en Asunción y desplazamientos masivos en las zonas ribereñas.\n\n&gt;72.000 personas desplazadas en Asunción y &gt;100.000 a nivel nacional, según estimaciones gubernamentales estimación (SEN, citado por prensa, dic-2015) (Última Hora, 2015).\n\n\nEl pico exacto del río Paraguay en Asunción durante 2015-16 (la prensa cita 7,85 m, presentado como máximo desde 1904) no pudo confirmarse en un registro primario de la DINAC. Debe verificarse contra el anuario/registro hidrológico oficial antes de citarse como dato. Nótese además que existió una crecida histórica mayor en 1983.\n\n\n\nEl Niño 2018-2019 (débil)\nAun tratándose de un El Niño débil, la crecida de 2019 generó una emergencia prolongada en Asunción, con datos oficiales de la Municipalidad:\n\nRío Paraguay en 7,57 m (30-may-2019); 14.823 familias / &gt;47.400 personas desplazadas desde marzo oficial (DGRRD, 2019-05-30) (Municipalidad de Asunción — DGRRD, 2019).\n\n\n\nEl Niño 2023-2024 (muy fuerte)\nEl episodio 2023-24 se expresó con inundaciones fluviales y pluviales, especialmente en Ñeembucú:\n\n~2.150 familias evacuadas en 11 distritos de Ñeembucú (abril-mayo 2024); la Cámara de Diputados sancionó la declaración de emergencia del departamento por 90 días prensa (Agencia de Noticias Fides, 2024).\nInundaciones pluviales en Asunción y Central por temporales en abril de 2024 prensa (La Nación (Paraguay), 2024).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Paraguay (nivel nacional)"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/nacional.html#sectores-afectados",
-    "href": "03-paraguay/nacional.html#sectores-afectados",
-    "title": "Paraguay: nivel nacional",
-    "section": "Sectores afectados",
-    "text": "Sectores afectados\n\nAgricultura y ganadería (MAG): el exceso hídrico en primavera-verano afecta cultivos y campos ganaderos, sobre todo en el sur y la cuenca del Paraná.\nCrecidas de ríos: ejes Paraguay y Paraná; ciudades ribereñas como Alberdi y Pilar (Ñeembucú) y Fuerte Olimpo (Alto Paraguay). El Gobierno anunció obras de refuerzo de muros de contención ante la llegada de El Niño prensa (Agencia de Noticias Fides, 2024).\nSalud pública: inundaciones y albergues; asistencia psicosocial a niñez afectada (UNICEF) oficial (UNICEF, 2024).\nInfraestructura vial: afectación por anegamientos.\n\n\nFaltan series cuantificadas por sector (hectáreas agrícolas afectadas, pérdidas económicas del BCP, km de rutas dañadas) con fuente primaria por episodio.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Paraguay (nivel nacional)"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/nacional.html#marco-institucional-nacional",
-    "href": "03-paraguay/nacional.html#marco-institucional-nacional",
-    "title": "Paraguay: nivel nacional",
-    "section": "Marco institucional nacional",
-    "text": "Marco institucional nacional\nSEN (respuesta y declaraciones de emergencia) · DINAC (pronóstico y monitoreo hidrológico) · MAG (riesgos agrícolas) · municipalidades · cooperación internacional (Cruz Roja Paraguaya, PNUD, UNICEF).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Paraguay (nivel nacional)"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/nacional.html#series-comparativas-población-afectada",
-    "href": "03-paraguay/nacional.html#series-comparativas-población-afectada",
-    "title": "Paraguay: nivel nacional",
-    "section": "Series comparativas — población afectada",
-    "text": "Series comparativas — población afectada\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEpisodio\nUbicación\nIndicador\nValor\nFecha\nFuente\nConf.\n\n\n\n\n2015-16\nAsunción\npersonas desplazadas\n72,000 personas\n2015-12\nSEN\nestimacion\n\n\n2015-16\nParaguay\npersonas desplazadas\n100,000 personas\n2015-12\nSEN\nestimacion\n\n\n2015-16\nBañado Sur (Tacumbú)\nfamilias desplazadas\n1,765 familias\n2015-12\nprensa\nprensa\n\n\n2015-16\nBañado Norte\nfamilias desplazadas\n1,695 familias\n2015-12\nprensa\nprensa\n\n\n2015-16\nLa Chacarita (Ricardo Brugada)\nfamilias desplazadas\n756 familias\n2015-12\nprensa\nprensa\n\n\n2018-19\nAsunción\nfamilias desplazadas\n14,823 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nAsunción\npersonas desplazadas\n47,400 personas\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nBañado Sur\nfamilias albergadas\n6,500 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nBañado Norte\nfamilias albergadas\n4,404 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nLa Chacarita\nfamilias albergadas\n1,800 familias\n2019-05-30\nDGRRD\noficial\n\n\n2018-19\nAsunción\nninez en albergues\n13,500 personas\n2019-05-30\nDGRRD\noficial\n\n\n2023-24\nÑeembucú\nfamilias evacuadas\n2,150 familias\n2024-05\nprensa\nprensa\n\n\n\n\n\nCifras de 2015-16 a nivel ciudad/país: estimaciones gubernamentales vía prensa; las de 2018-19 provienen del reporte oficial de la Municipalidad de Asunción.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Paraguay (nivel nacional)"
-    ]
-  },
-  {
-    "objectID": "02-america-latina/index.html",
-    "href": "02-america-latina/index.html",
-    "title": "América Latina: panorama regional",
-    "section": "",
-    "text": "Panorama regional del ENOS: impactos del episodio 2023-24 por subregión y sector, y marco institucional de alerta temprana. Toda cifra remite a su fuente; los datos sin respaldo primario se marcan como vacío.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "América Latina (panorama regional)"
-    ]
-  },
-  {
-    "objectID": "02-america-latina/index.html#mapa-de-impactos-por-subregión-episodio-2023-2024",
-    "href": "02-america-latina/index.html#mapa-de-impactos-por-subregión-episodio-2023-2024",
-    "title": "América Latina: panorama regional",
-    "section": "Mapa de impactos por subregión (episodio 2023-2024)",
-    "text": "Mapa de impactos por subregión (episodio 2023-2024)\nLa síntesis regional proviene del informe del Estado del Clima para América Latina y el Caribe de la OMM (Organización Meteorológica Mundial, 2024).\n\n\n\n\n\n\n\nSubregión\nImpacto dominante 2023-24\n\n\n\n\nAmazonía\nSequía extrema; el río Negro alcanzó su nivel más bajo en +120 años de registro (desde 1902)\n\n\nCentroamérica y Panamá\nSequía en el Corredor Seco; el Canal de Panamá restringió el tránsito de buques desde agosto de 2023 por bajos niveles de agua\n\n\nRegión andina (costa de Ecuador y Perú)\nLluvias intensas e inundaciones\n\n\nCono Sur y México\nCalor extremo: México registró 51,4 °C (29-ago-2023) y 76 % del territorio con sequía; Brasil superó 41 °C\n\n\nCaribe\nHuracán Otis: daños por USD 12 000 millones\n\n\n\nTodos: oficial OMM (2024-05-08) (Organización Meteorológica Mundial, 2024).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "América Latina (panorama regional)"
-    ]
-  },
-  {
-    "objectID": "02-america-latina/index.html#impactos-sectoriales-2023-2024",
-    "href": "02-america-latina/index.html#impactos-sectoriales-2023-2024",
-    "title": "América Latina: panorama regional",
-    "section": "Impactos sectoriales (2023-2024)",
-    "text": "Impactos sectoriales (2023-2024)\n\nAgricultura y seguridad alimentaria\nEn 2023, 13,8 millones de personas en crisis alimentaria aguda (fase 3+ de la CIF), sobre todo en Centroamérica y el Caribe oficial (Organización Meteorológica Mundial, 2024).\n\n\nSalud\n\nDengue: 2024 fue la mayor epidemia registrada en las Américas: más de 12,6 millones de casos, ~21 000 graves y más de 7 700 muertes, casi el triple que 2023; Argentina, Brasil, Colombia y México concentraron el 90 % de los casos oficial (Organización Panamericana de la Salud, 2024).\nCalor: exceso anual de muertes por calor estimado en 36 695 (promedio 2000-2019) oficial (Organización Meteorológica Mundial, 2024).\n\n\n\nSeguridad hídrica\nEl estrés hídrico se refleja en los bajos niveles del Canal de Panamá y de ríos amazónicos (río Negro, mínimo en +120 años) oficial (Organización Meteorológica Mundial, 2024).\n\n\nDaños económicos\nDaños reportados por USD 21 000 millones en la región, 66 % asociados a tormentas (incluidos los USD 12 000 M del huracán Otis) oficial (Organización Meteorológica Mundial, 2024).\n\n\nMigración y desplazamiento\n\nNo se localizó una cifra oficial de desplazamiento atribuida específicamente a El Niño 2023-2024 en fuente primaria. El informe de OCHA que lo abordaría no fue accesible directamente (HTTP 403); pendiente de revisar el PDF original.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "América Latina (panorama regional)"
-    ]
-  },
-  {
-    "objectID": "02-america-latina/index.html#marco-institucional-regional",
-    "href": "02-america-latina/index.html#marco-institucional-regional",
-    "title": "América Latina: panorama regional",
-    "section": "Marco institucional regional",
-    "text": "Marco institucional regional\n\nOMM (WMO): emite las actualizaciones oficiales El Niño/La Niña y el informe del Estado del Clima regional (Organización Meteorológica Mundial, 2026).\nCIIFEN (Guayaquil): promueve investigación y alerta temprana del ENOS a escala regional; organiza foros con el Centro Regional del Clima para el Oeste de Sudamérica (CRC-OSA) y publica boletines mensuales (Centro Internacional para la Investigación del Fenómeno de El Niño, 2026).\nIFRC / Cruz Roja: opera con Protocolos de Acción Temprana (EAP) que liberan financiamiento al cruzarse umbrales científicos (Federación Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja, 2026).\nOCHA / ReliefWeb: publicó el informe de efectos humanitarios de El Niño 2023/2024, que identifica países en riesgo y zonas de monitoreo (Corredor Seco, Amazonía, Gran Chaco, Andes) (Oficina de Coordinación de Asuntos Humanitarios (OCHA), 2024).\n\n\nCEPAL: no se localizó un informe primario de CEPAL con cifras propias sobre El Niño 2023-2024. Los datos regionales anteriores provienen de OMM y OPS.\n\n\n\n\n\n\n\nAdvertenciaDatos descartados por falta de respaldo primario\n\n\n\n\n\nSe excluyeron por no confirmarse en fuente primaria: cifras de exposición a sequía y de acción anticipatoria atribuidas a OCHA/FAO (documento OCHA no accesible; datos FAO solo en literatura secundaria); “22 000 personas protegidas” por EAP de IFRC (comunicación institucional sin informe de evaluación); y la cifra de “13 millones” de casos de dengue en 2024 (el valor oficial de cierre de OPS es 12,6 millones).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "América Latina (panorama regional)"
-    ]
-  },
-  {
-    "objectID": "01-marco-conceptual/index.html",
-    "href": "01-marco-conceptual/index.html",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "",
-    "text": "El El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
-    "crumbs": [
-      "Inicio",
-      "🧭 Marco: desastres construidos"
-    ]
-  },
-  {
-    "objectID": "01-marco-conceptual/index.html#qué-es-el-niño-oscilación-del-sur-enos",
-    "href": "01-marco-conceptual/index.html#qué-es-el-niño-oscilación-del-sur-enos",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "",
-    "text": "El El Niño-Oscilación del Sur (ENOS) —El Niño–Southern Oscillation, ENSO— es un patrón climático recurrente de interacción océano-atmósfera en el Pacífico tropical, y el principal modo de variabilidad climática interanual del planeta (Organización Meteorológica Mundial, 2026). Tiene dos componentes acoplados:\n\nOceánico: variaciones de la temperatura superficial del mar (TSM) en el Pacífico ecuatorial central y oriental. El calentamiento anómalo corresponde a El Niño y el enfriamiento a La Niña.\nAtmosférico: la Oscilación del Sur, un vaivén de la presión atmosférica entre el Pacífico occidental (Darwin) y el oriental (Tahití), que modula los vientos alisios.\n\nEl monitoreo operativo se basa en la región Niño 3.4 (5°N–5°S, 170°W–120°W), cuya anomalía de TSM resume el estado del sistema (NOAA Climate Prediction Center, 2026a).",
-    "crumbs": [
-      "Inicio",
-      "🧭 Marco: desastres construidos"
-    ]
-  },
-  {
-    "objectID": "01-marco-conceptual/index.html#fases-el-niño-la-niña-y-fase-neutral",
-    "href": "01-marco-conceptual/index.html#fases-el-niño-la-niña-y-fase-neutral",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "Fases: El Niño, La Niña y fase neutral",
-    "text": "Fases: El Niño, La Niña y fase neutral\n\n\n\nFase\nEstado del Pacífico ecuatorial\nAlisios\n\n\n\n\nEl Niño\nTSM anómalamente cálida (centro-este)\nDebilitados\n\n\nLa Niña\nTSM anómalamente fría\nReforzados\n\n\nNeutral\nCercana al promedio\nNormales\n\n\n\nEl ciclo es irregular, con recurrencia típica de 2 a 7 años y una duración de cada episodio de entre 9 y 12 meses, ocasionalmente más (Organización Meteorológica Mundial, 2026). Las fases suelen consolidarse hacia el final del año calendario del hemisferio norte.",
-    "crumbs": [
-      "Inicio",
-      "🧭 Marco: desastres construidos"
-    ]
-  },
-  {
-    "objectID": "01-marco-conceptual/index.html#umbrales-de-clasificación-oni",
-    "href": "01-marco-conceptual/index.html#umbrales-de-clasificación-oni",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "Umbrales de clasificación (ONI)",
-    "text": "Umbrales de clasificación (ONI)\nNOAA clasifica los episodios mediante el Oceanic Niño Index (ONI), la media móvil trimestral de la anomalía de TSM en Niño 3.4. Un episodio se declara cuando el ONI alcanza o supera ±0,5 °C durante cinco trimestres consecutivos (NOAA Climate Prediction Center, 2026a).\n\n\n\nCategoría\nUmbral ONI (°C)\n\n\n\n\nDébil\n0,5 – 0,9\n\n\nModerado\n1,0 – 1,4\n\n\nFuerte\n1,5 – 1,9\n\n\nMuy fuerte\n≥ 2,0\n\n\n\nLos episodios de referencia de este repositorio y su pico ONI:\n\n\n\n\nTabla 1\n\n\n\n\n\n\nEpisodio\nIntensidad\nPico ONI (°C)\n\n\n\n\n1997-98\nmuy fuerte\n2.4\n\n\n2015-16\nmuy fuerte\n2.6\n\n\n2023-24\nmuy fuerte\n2.0\n\n\n2026-27\nen desarrollo\n—\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos episodios 1997-98 (2,4 °C) y 2015-16 (2,6 °C) figuran entre los más intensos del registro instrumental desde 1950; 2023-24 alcanzó categoría muy fuerte (≈2,0 °C) (NOAA Climate Prediction Center, 2026a). En febrero de 2026, NOAA adoptó el Relative Oceanic Niño Index (RONI) como índice de referencia operativo, para corregir el calentamiento de fondo del océano (NOAA Climate Prediction Center, 2026b).",
-    "crumbs": [
-      "Inicio",
-      "🧭 Marco: desastres construidos"
-    ]
-  },
-  {
-    "objectID": "01-marco-conceptual/index.html#mecanismos-físicos-de-impacto-en-sudamérica",
-    "href": "01-marco-conceptual/index.html#mecanismos-físicos-de-impacto-en-sudamérica",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "Mecanismos físicos de impacto en Sudamérica",
-    "text": "Mecanismos físicos de impacto en Sudamérica\nDurante El Niño, el desplazamiento hacia el este de la convección tropical altera la circulación atmosférica por teleconexión, con efectos característicos en Sudamérica (Organización Meteorológica Mundial, 2026):\n\nNorte de los Andes / Amazonía y Nordeste de Brasil: tendencia a déficit de lluvias y sequía.\nCosta de Perú y Ecuador: lluvias intensas e inundaciones.\nSudeste de Sudamérica (Cono Sur): en la cuenca del Plata —sur de Brasil, Uruguay, noreste de Argentina y Paraguay— El Niño se asocia a precipitaciones por encima de lo normal, especialmente en primavera y comienzos del verano austral, por un reforzamiento del chorro subtropical y mayor ingreso de humedad.\n\nLa señal es probabilística, no determinista: El Niño inclina la balanza hacia ciertos regímenes de lluvia/temperatura, pero no garantiza un resultado en un punto y momento dados.",
-    "crumbs": [
-      "Inicio",
-      "🧭 Marco: desastres construidos"
-    ]
-  },
-  {
-    "objectID": "01-marco-conceptual/index.html#por-qué-importa-para-la-cuenca-del-plata-y-paraguay",
-    "href": "01-marco-conceptual/index.html#por-qué-importa-para-la-cuenca-del-plata-y-paraguay",
-    "title": "Marco conceptual: qué es el ENOS",
-    "section": "Por qué importa para la cuenca del Plata y Paraguay",
-    "text": "Por qué importa para la cuenca del Plata y Paraguay\nPara Paraguay, la relevancia de El Niño es directa: la fase cálida tiende a aumentar las precipitaciones sobre la cuenca del Paraná-Paraguay, lo que se traduce en crecidas de los ríos Paraguay y Paraná y en inundaciones —tanto ribereñas como pluviales urbanas— con impacto sobre población en zonas de riesgo, agricultura y ganadería. Este encadenamiento —anomalía oceánica → lluvia → crecida → afectación social— es el eje que estructura las secciones Paraguay y Asunción.\n\n\n\n\n\n\nImportanteEpisodio en curso\n\n\n\nHay un episodio de El Niño 2026-2027 en desarrollo. Su estado detallado, pronóstico y la población expuesta se siguen en Situación actual.",
-    "crumbs": [
-      "Inicio",
-      "🧭 Marco: desastres construidos"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/departamentos/index.html",
-    "href": "03-paraguay/departamentos/index.html",
-    "title": "Impacto por departamento",
-    "section": "",
-    "text": "Departamentos priorizados por su exposición a crecidas de la cuenca del Paraná/Paraguay y a variabilidad agrícola. Las fichas se completan a medida que se localizan datos verificados por episodio.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Impacto por departamento"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/departamentos/index.html#ñeembucú",
-    "href": "03-paraguay/departamentos/index.html#ñeembucú",
-    "title": "Impacto por departamento",
-    "section": "Ñeembucú",
-    "text": "Ñeembucú\nDepartamento ribereño del sur, entre los ríos Paraguay y Paraná; uno de los más expuestos a inundación por crecida.\n\nEl Niño 2023-24: ~2.150 familias evacuadas en 11 distritos (abril-mayo 2024); localidades aisladas (Guazucuá, Tacuara, Belén, Humaitá, Paso de Patria, Alberdi, entre otras). La Cámara de Diputados sancionó la declaración de emergencia del departamento por 90 días prensa (Agencia de Noticias Fides, 2024).\nCiudad de Pilar: históricamente vulnerable (la inundación de 1983 dejó a la ciudad bajo agua); en 2024 volvió a una situación crítica prensa (ABC Color, 2024).\nObras anunciadas: refuerzo de muros de contención en Alberdi y Pilar ante El Niño prensa (Agencia de Noticias Fides, 2024).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Impacto por departamento"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/departamentos/index.html#central",
-    "href": "03-paraguay/departamentos/index.html#central",
-    "title": "Impacto por departamento",
-    "section": "Central",
-    "text": "Central\nDepartamento más poblado, contiguo a Asunción; afectado sobre todo por inundaciones pluviales urbanas.\n\n2024: temporales causaron destrozos e inundaciones en Asunción y Central (abril 2024) prensa (La Nación (Paraguay), 2024).\n\n\nSeries cuantificadas de afectación por episodio para Central pendientes de fuente primaria.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Impacto por departamento"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/departamentos/index.html#alto-paraguay",
-    "href": "03-paraguay/departamentos/index.html#alto-paraguay",
-    "title": "Impacto por departamento",
-    "section": "Alto Paraguay",
-    "text": "Alto Paraguay\n\nCiudad ribereña de Fuerte Olimpo incluida en las obras de refuerzo de muros de contención ante El Niño prensa (Agencia de Noticias Fides, 2024).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Impacto por departamento"
-    ]
-  },
-  {
-    "objectID": "03-paraguay/departamentos/index.html#concepción-san-pedro-presidente-hayes-misiones-itapúa-alto-paraná",
-    "href": "03-paraguay/departamentos/index.html#concepción-san-pedro-presidente-hayes-misiones-itapúa-alto-paraná",
-    "title": "Impacto por departamento",
-    "section": "Concepción · San Pedro · Presidente Hayes · Misiones · Itapúa · Alto Paraná",
-    "text": "Concepción · San Pedro · Presidente Hayes · Misiones · Itapúa · Alto Paraná\n\nFichas pendientes de redacción con datos verificados por episodio (afectación agrícola, ganadera y de infraestructura; población desplazada). Priorizar boletines de la DINAC, reportes de la SEN y de la Dirección de Gestión de Riesgos Agrícolas del MAG.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Impacto por departamento"
-    ]
-  },
-  {
-    "objectID": "04-asuncion-metropolitana/index.html",
-    "href": "04-asuncion-metropolitana/index.html",
-    "title": "Asunción y área metropolitana",
-    "section": "",
-    "text": "Asunción concentra el riesgo de inundación en las zonas ribereñas bajas —los bañados Norte y Sur y La Chacarita—, donde reside población en situación de vulnerabilidad social. El riesgo es doble: fluvial (crecida del río Paraguay) y pluvial (lluvias intensas sobre drenaje insuficiente).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Asunción y área metropolitana"
-    ]
-  },
-  {
-    "objectID": "04-asuncion-metropolitana/index.html#hidrología-del-río-paraguay",
-    "href": "04-asuncion-metropolitana/index.html#hidrología-del-río-paraguay",
-    "title": "Asunción y área metropolitana",
-    "section": "Hidrología del río Paraguay",
-    "text": "Hidrología del río Paraguay\n\n\n\n\n\n\n\n\n\n\n\n\n\nEpisodio\nFecha\nNivel (m)\nEstación\nFuente\nConf.\n\n\n\n\n1982-83\n1983\n9.05\nAsuncion\nSEN_MADES\noficial\n\n\n2015-16\n2016\n7.88\nAsuncion\nSEN_MADES\noficial\n\n\n2015-16\n2016-01-07\n7.84\nAsuncion\nFloodList_DMH\nprensa\n\n\n2015-16\n2016-01-12\n7.61\nAsuncion\nFloodList_DMH\nprensa\n\n\n2015-16\n2016-01-18\n7.25\nAsuncion\nFloodList_DMH\nprensa\n\n\n2018-19\n2019-05-30\n7.57\nAsuncion\nDGRRD\noficial\n\n\nLa Niña 2024\n2024-11-02\n-1.61\nAsuncion\nparaguayfluvial\nprensa\n\n\n\n\n\n: Niveles del río Paraguay en Asunción. NC = no confirmado en fuente primaria.\nLa estación hidrométrica de Asunción registra niveles diarios desde el 1 de enero de 1904 prensa (Paraguay Fluvial, 2024). El contraste entre fases del ENOS es marcado: frente a las crecidas de El Niño, la fase fría (La Niña) trajo una bajante extrema de −1,61 m el 2 de noviembre de 2024 prensa (Paraguay Fluvial, 2024).\n\n\n\n\n\n\nNota\n\n\n\nDato oficial confirmado. El Plan de Contingencia de la SEN (Grassi 2020, MADES) registra el pico de 2015-16 en 7,88 m (788 cm) y el récord histórico en 1983: 9,05 m (905 cm) —ambos en años de El Niño fuerte (Secretaría de Emergencia Nacional (SEN), 2024). Esto confirma y precisa el dato que antes se tenía solo por prensa (~7,85 m).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Asunción y área metropolitana"
-    ]
-  },
-  {
-    "objectID": "04-asuncion-metropolitana/index.html#población-desplazada-en-episodios-recientes",
-    "href": "04-asuncion-metropolitana/index.html#población-desplazada-en-episodios-recientes",
-    "title": "Asunción y área metropolitana",
-    "section": "Población desplazada en episodios recientes",
-    "text": "Población desplazada en episodios recientes\n\nEl Niño 2015-16 (muy fuerte): &gt;72.000 personas desplazadas en Asunción (&gt;100.000 nacional), según estimaciones gubernamentales estimación (Última Hora, 2015). Por zona: Bañado Sur/Tacumbú 1.765 familias, Bañado Norte 1.695 familias, La Chacarita 756 familias prensa (Última Hora, 2015).\nEl Niño 2018-19 (débil): 14.823 familias / &gt;47.400 personas desplazadas desde marzo de 2019 (río en 7,57 m). Distribución en albergues: Bañado Sur 6.500 familias (48 albergues), Bañado Norte 4.404 familias (49 zonas), La Chacarita &gt;1.800 familias (21 albergues) oficial (DGRRD, 2019-05-30) (Municipalidad de Asunción — DGRRD, 2019).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Asunción y área metropolitana"
-    ]
-  },
-  {
-    "objectID": "04-asuncion-metropolitana/index.html#gestión-municipal-del-riesgo-dgrrd",
-    "href": "04-asuncion-metropolitana/index.html#gestión-municipal-del-riesgo-dgrrd",
-    "title": "Asunción y área metropolitana",
-    "section": "Gestión municipal del riesgo (DGRRD)",
-    "text": "Gestión municipal del riesgo (DGRRD)\nLa Dirección General de Gestión y Reducción de Riesgos de Desastres (DGRRD) de la Municipalidad de Asunción coordina la respuesta: sistema de albergues (118 albergues activos y a capacidad durante el pico de 2019), reportes de situación y atención a población vulnerable oficial (Municipalidad de Asunción — DGRRD, 2019).\n\nProtocolos formales, umbrales de alerta temprana y planes de contingencia vigentes de la DGRRD pendientes de incorporar desde documento oficial.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Asunción y área metropolitana"
-    ]
-  },
-  {
-    "objectID": "04-asuncion-metropolitana/index.html#inundaciones-pluviales-urbanas",
-    "href": "04-asuncion-metropolitana/index.html#inundaciones-pluviales-urbanas",
-    "title": "Asunción y área metropolitana",
-    "section": "Inundaciones pluviales urbanas",
-    "text": "Inundaciones pluviales urbanas\nJunto al desborde del río (riesgo fluvial), Asunción sufre inundaciones pluviales: raudales que la lluvia intensa genera sobre un drenaje insuficiente, con independencia del nivel del río. Son dos amenazas distintas —la fluvial afecta los bañados ribereños bajos; la pluvial golpea toda la ciudad— que además se combinan cuando coinciden en el tiempo.\nEn abril de 2024 un temporal (80-106 mm) hizo colapsar viviendas sobre el arroyo Ferreira y anegó el barrio Trinidad oficial (Ministerio de Salud Pública y Bienestar Social (MSPBS), 2024); el récord histórico ronda los 222 mm en 24 h (feb 2014) (ABC Color, 2014).\n\n\n\n\n\n\nNota\n\n\n\nLa amenaza pluvial se trata en detalle —con su escala de colapso, la relación intensidad-duración (IDF), el modelo de susceptibilidad topográfica y los temporales documentados en Asunción y otras ciudades del país— en Inundaciones pluviales urbanas en Paraguay.",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Asunción y área metropolitana"
-    ]
-  },
-  {
-    "objectID": "04-asuncion-metropolitana/index.html#población-en-situación-de-vulnerabilidad",
-    "href": "04-asuncion-metropolitana/index.html#población-en-situación-de-vulnerabilidad",
-    "title": "Asunción y área metropolitana",
-    "section": "Población en situación de vulnerabilidad",
-    "text": "Población en situación de vulnerabilidad\nLos bañados y La Chacarita concentran asentamientos informales con viviendas precárias en la ribera. El reporte municipal de 2019 registró en los albergues 13.500 menores de edad, 778 embarazadas y ~1.000 adultos mayores, indicativo del perfil de vulnerabilidad de la población desplazada oficial (DGRRD, 2019-05-30) (Municipalidad de Asunción — DGRRD, 2019). UNICEF brindó asistencia psicosocial a niñez afectada por inundaciones oficial (UNICEF, 2024).",
-    "crumbs": [
-      "Inicio",
-      "📚 Contexto histórico (ENOS)",
-      "Asunción y área metropolitana"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html",
-    "href": "06-exposicion/index.html",
-    "title": "Exposición y población en riesgo",
-    "section": "",
-    "text": "Mapa de la situación actual de exposición ante el episodio de El Niño 2026-27 en curso (con pronóstico de primavera lluviosa e inundaciones para Paraguay). Cruza las zonas inundables —definidas empíricamente por las huellas de inundación de episodios pasados— con la población, los servicios de salud y los centros educativos.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#tablero-de-exposición",
-    "href": "06-exposicion/index.html#tablero-de-exposición",
-    "title": "Exposición y población en riesgo",
-    "section": "Tablero de exposición",
-    "text": "Tablero de exposición\n\n\nParaguay (total)Población7,552,654Servicios de salud1,056Centros educativos8,030⚠ Dentro de la zona de inundaciónPoblación en riesgo59,695Servicios de salud7Centros educativos24Alumnos (matrícula)4,172Departamentos ribereños prioritariosPoblación4,685,270Niñez (0-14)1,315,238Adultos mayores (65+)310,321Servicios de salud575Centros educativos4,281Expuestos · Villa HayesServicios de salud0Centros educativos3Expuestos · Fuerte OlimpoServicios de salud0Centros educativos0Expuestos · Alberdi / bajo ÑeembucúServicios de salud0Centros educativos0Expuestos · Pilar / ÑeembucúServicios de salud0Centros educativos2Expuestos · Asunción y área metropolitanaServicios de salud7Centros educativos19\n\n\nPoblación: proyección 2023 (COD-PS, UNFPA/DGEEC). Salud: registro oficial MSPBS/DIGIES. Educación: registro oficial MEC (2014). Zona de riesgo: huellas Sentinel-1 + buffer de 550 m.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#mapa",
-    "href": "06-exposicion/index.html#mapa",
-    "title": "Exposición y población en riesgo",
-    "section": "Mapa",
-    "text": "Mapa\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\nLos 8.030 centros educativos (MEC) se agregan por departamento (conteo en el tooltip); los 1.056 servicios de salud (MSPBS) y los 10.342 puntos de actividad comercial (OSM, capa activable) se muestran agrupados. Solo se dibujan individualmente los expuestos en la zona de riesgo (24 escuelas, 7 servicios de salud, 73 comercios y servicios). Nota: varias USF y escuelas comparten predio (misma coordenada) y se cuentan como servicios distintos. Acercá el mapa a Asunción para ver la zona de riesgo y los establecimientos expuestos.\n\n\n\n\n\n\nTipDescargas: establecimientos en riesgo (Excel)\n\n\n\nLos establecimientos dentro de la zona de inundación, con ubicación, atributos y el nivel del río al que se inundan (cada uno contado en una sola zona, sin doble conteo):\n\n⬇ escuelas_riesgo.xlsx — 24 escuelas (MEC): matrícula, tipo de gestión, zona y nivel del río.\n⬇ salud_riesgo.xlsx — 7 servicios de salud (MSPBS): categoría (6 USF + 1 hospital distrital), distrito, zona y nivel del río.\n⬇ comercio_riesgo.xlsx — 73 comercios y servicios (OpenStreetMap): tipo, rubro y ubicación. Cota inferior (OSM subrepresenta el comercio informal).",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#cómo-se-define-la-exposición",
-    "href": "06-exposicion/index.html#cómo-se-define-la-exposición",
-    "title": "Exposición y población en riesgo",
-    "section": "Cómo se define la exposición",
-    "text": "Cómo se define la exposición\n\nZona de riesgo de inundación: unión de las huellas de inundación derivadas de Sentinel-1 para 2015-16, 2018-19 y 2023-24 (ver mapa histórico), más un buffer de 550 m para incluir los barrios afectados adyacentes, no solo la lámina de agua.\nExpuestos: servicios de salud y centros educativos cuya ubicación cae dentro de esa zona de riesgo.\nDepartamentos prioritarios: los ocho de mayor exposición ribereña/agrícola (Central, Concepción, San Pedro, Pdte. Hayes, Ñeembucú, Misiones, Itapúa, Alto Paraná), usados como aproximación de exposición a escala nacional.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#efecto-de-la-costanera-análisis-de-elevación-dem",
-    "href": "06-exposicion/index.html#efecto-de-la-costanera-análisis-de-elevación-dem",
-    "title": "Exposición y población en riesgo",
-    "section": "Efecto de la Costanera (análisis de elevación / DEM)",
-    "text": "Efecto de la Costanera (análisis de elevación / DEM)\nPara empezar a considerar las obras de defensa, se incorporó el modelo de elevación Copernicus DEM (30 m). Hallazgos (sobre los bañados de Asunción):\n\n\n\n\n\n\n\nTerreno\nElevación (m s/mar)\n\n\n\n\nBañados inundados (huella observada)\nmediana 56,8 · p90 58,5\n\n\nCiudad (tierra firme circundante)\n~60-65\n\n\nCostanera (terraplén de defensa)\nmediana 58,8 → +2 m sobre el bañado\n\n\n\nEs decir: los bañados son la tierra más baja (por eso se inundan) y la Costanera es un terraplén elevado por encima del nivel que alcanzó la inundación observada — coherente con su función de defensa. En el mapa, la capa “Franja baja protegida (DEM)” marca 7,9 km² de terreno bajo (≤ 58,5 m) junto a la Costanera que no figuran en la huella observada: candidatos a estar protegidos por el terraplén.\n\nAnálisis exploratorio, no un modelo hidráulico. (1) El DEM de 30 m no capta la microtopografía ni los edificios de los bañados. (2) El umbral de inundación se calibra con lo observado por satélite, no con una cota absoluta. (3) La “franja protegida” puede deberse a la Costanera o a otras causas (desconexión hidráulica, otras defensas). (4) Falta la cota de coronamiento de la Costanera (MOPC/Municipalidad) y la conversión al cero hidrométrico del río para cuantificar el nivel de protección. Sirve para señalar dónde mirar, no para afirmar cuánto protege.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#susceptibilidad-a-inundación-pluvial-modelo-dem",
-    "href": "06-exposicion/index.html#susceptibilidad-a-inundación-pluvial-modelo-dem",
-    "title": "Exposición y población en riesgo",
-    "section": "Susceptibilidad a inundación pluvial (modelo DEM)",
-    "text": "Susceptibilidad a inundación pluvial (modelo DEM)\nJunto a la inundación fluvial (río), el mapa incluye una capa activable de susceptibilidad pluvial —dónde el relieve favorece que la lluvia se acumule o concentre, con independencia del río—. Se deriva del Copernicus DEM (30 m) combinando el relleno de depresiones (encharcamiento), la acumulación de flujo y el índice topográfico de humedad. El detalle de la evidencia (temporales documentados, arroyos urbanos, vínculo con El Niño) está en Inundaciones pluviales.\n\n\nEn el modelo, la susceptibilidad alta cubre ~6.6 km² en Asunción y el metro interior. Considerando un corredor anegable de ~100 m en torno a esos fondos de valle (~16.6 km²), quedan expuestos aproximadamente 10,661 habitantes (Kontur), 3 centros educativos (MEC) y 0 servicios de salud (MSPBS).\n\n\n\nModelo topográfico, no evento observado ni estudio hidráulico. El DEM de 30 m identifica lows a escala de barrio; no capta la red de desagües pluviales ni el anegamiento a escala de calle. La exposición se cuenta en un corredor de ~100 m alrededor de los fondos de valle (la inundación pluvial se extiende lateralmente), por lo que es orientativa. Donde la susceptibilidad pluvial se solapa con la huella fluvial, ambas amenazas se combinan.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#fuentes",
-    "href": "06-exposicion/index.html#fuentes",
-    "title": "Exposición y población en riesgo",
-    "section": "Fuentes",
-    "text": "Fuentes\n\nPoblación (total por departamento): COD-PS 2023 (UNFPA/DGEEC), CC BY-IGO (UNFPA / DGEEC Paraguay, 2023).\nPoblación en riesgo (dentro de la zona de inundación): Kontur Population 2023 (hexágonos H3 ~400 m), CC BY (Kontur, 2023). Se cuenta la población de los hexágonos cuyo centroide cae en la zona de riesgo.\nServicios de salud: registro oficial del MSPBS/DIGIES (establecimientos georreferenciados, 1.056 con categoría oficial) (Ministerio de Salud Pública y Bienestar Social (MSPBS) — DIGIES, 2025).\nCentros educativos: registro oficial del MEC (datos.mec.gov.py, período 2014), georreferenciado y con matrícula por establecimiento (Ministerio de Educación y Ciencias (MEC), Paraguay, 2014).\nDepartamentos: geoBoundaries (geoBoundaries (William & Mary geoLab), 2023).\nZonas inundables: derivadas de Sentinel-1 en este repositorio.\nCostanera y vialidad: OpenStreetMap (Overpass) (OpenStreetMap contributors, 2026).\nActividad comercial: OpenStreetMap (shop=* + mercados, vía Overpass) (OpenStreetMap contributors, 2026). Cota inferior: OSM subrepresenta el comercio informal y los barrios sin mapear.\nElevación del terreno: Copernicus DEM GLO-30 (30 m) (Copernicus / ESA, 2021).\nSusceptibilidad pluvial: modelo topográfico propio sobre el Copernicus DEM (relleno de depresiones + acumulación de flujo + índice de humedad topográfica) (Copernicus / ESA, 2021). Evidencia de eventos y teleconexión ENOS-lluvia en Inundaciones pluviales.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "06-exposicion/index.html#vacíos-y-límites",
-    "href": "06-exposicion/index.html#vacíos-y-límites",
-    "title": "Exposición y población en riesgo",
-    "section": "Vacíos y límites",
-    "text": "Vacíos y límites\nHay zonas de riesgo detalladas para Asunción, Pilar/Ñeembucú, Alberdi y Villa Hayes. La exposición fuera de Asunción es baja (0-2 establecimientos por zona): las zonas de anegamiento son los canales del río —no los centros urbanos— y la cobertura de OSM en pueblos chicos es escasa; muchos establecimientos quedan apenas fuera del buffer. Es una cota inferior, no la exposición real.\n\n\nEducación usa el registro oficial del MEC con matrícula, pero del período 2014 (último publicado en el portal); la ubicación es representativa aunque desactualizada.\nSalud usa el registro oficial del MSPBS/DIGIES (georreferenciado, con categoría oficial). No incluye camas ni dotación de personal por establecimiento.\nObras de defensa no ajustadas: el mapa se basa en huellas históricas de inundación y no descuenta la protección de obras como la Costanera (Norte/Sur) o el drenaje reciente. Donde hay defensa nueva, la exposición puede estar sobreestimada. La Costanera se muestra como capa de contexto, no como reductor cuantificado (haría falta la cota de protección del MOPC/Municipalidad). La huella de 2019 ya es posterior a la Costanera Norte (~2013); la Costanera Sur y obras 2020s no están reflejadas.\nConcepción quedó pendiente: no hay cobertura de Sentinel-1 RTC reciente (2022-2024) sobre el norte para derivar su zona de anegamiento con este método.\nLa exposición no incorpora aún vulnerabilidad social (asentamientos informales, pobreza), que agravaría el riesgo en las mismas zonas.",
-    "crumbs": [
-      "Inicio",
-      "👥 Exposición y situación",
-      "Exposición y vulnerabilidad"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html",
-    "href": "08-pluvial/index.html",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "",
-    "text": "La inundación pluvial —anegamientos y raudales que la lluvia intensa genera sobre un drenaje insuficiente— es una amenaza distinta del desborde del río. No depende del nivel del río, golpea a toda la ciudad (no solo la ribera baja) y afecta a varias ciudades del país. Esta página la caracteriza y la separa explícitamente de la amenaza fluvial tratada en el resto del repositorio.",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#fluvial-vs-pluvial-dos-amenazas-distintas",
-    "href": "08-pluvial/index.html#fluvial-vs-pluvial-dos-amenazas-distintas",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Fluvial vs pluvial: dos amenazas distintas",
-    "text": "Fluvial vs pluvial: dos amenazas distintas\n\n  \n    🌊 Fluvial (desborde del río)\n    \n    Causa: crecida del río Paraguay/Paraná.\n    Disparador: el nivel del río (cota hidrométrica).\n    Dónde: los bañados y barrios ribereños bajos.\n    Ritmo: lento (días–semanas); previsible.\n    En el sitio: mapa histórico,\n    exposición,\n    cota actual.\n  \n  \n    🌧️ Pluvial (lluvia y drenaje)\n    \n    Causa: lluvia intensa + drenaje insuficiente.\n    Disparador: el pronóstico de lluvia (mm/h), no el río.\n    Dónde: toda la ciudad; arroyos urbanos y puntos bajos.\n    Ritmo: súbito (minutos–horas); raudales letales.\n    En el sitio: esta página + lluvia en vivo.\n  \n\nCuando ambas coinciden en el tiempo, se combinan: el agua de lluvia no puede drenar hacia un río ya desbordado.",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#por-qué-el-niño-agrava-el-riesgo-pluvial",
-    "href": "08-pluvial/index.html#por-qué-el-niño-agrava-el-riesgo-pluvial",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Por qué El Niño agrava el riesgo pluvial",
-    "text": "Por qué El Niño agrava el riesgo pluvial\nEl Niño no solo eleva el río: aumenta la lluvia en el sudeste de Sudamérica. La teleconexión está bien establecida —anomalías positivas de precipitación en Paraguay, sur de Brasil, Uruguay y NE argentino, con máximos en primavera y fin de verano (Boulanger et al., 2005; Grimm et al., 2000; Ropelewski & Halpert, 1987), y más eventos de lluvia extrema (Grimm & Tedeschi, 2009; Petry et al., 2025)—. Cerca de la mitad de la tendencia de aumento de lluvia en la región provendría de la fase El Niño (Barros et al., 2008). En el episodio muy fuerte de 2015-16, el centro del país acumuló hasta 400 mm entre el 1 y el 23 de diciembre de 2015 oficial (NASA, 2015); para Paraguay las anomalías positivas van de media primavera a media otoño, sobre todo en la región Oriental oficial (Sistema de Información sobre Sequías para el sur de Sudamérica (SISSA / CRC-SAS), 2023). Bajo calentamiento global se proyecta mayor frecuencia de El Niño extremos (Cai et al., 2014; Cai et al., 2020).\n\n\n\n\n\n\nContexto climático de Asunción: normal anual ~1.400 mm; récord en 24 h ~220 mm (feb 2014) y 210,8 mm en marzo de 2026 (récord de marzo desde 1964); tendencia +3,2 mm/año oficial (Dirección de Meteorología e Hidrología (DMH/DINAC), 2026b).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf",
-    "href": "08-pluvial/index.html#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Cuánta lluvia colapsa la ciudad: escala e IDF",
-    "text": "Cuánta lluvia colapsa la ciudad: escala e IDF\nNo existe una escala oficial que traduzca milímetros en nivel de colapso. La siguiente es empírica, calibrada con los temporales documentados y la clasificación de intensidad AEMET/OMM (Agencia Estatal de Meteorología (AEMET), 2024). La clave: manda la intensidad (mm/h), no el total del día —50 mm en una hora provocan raudales letales; los mismos 50 mm en un día los absorbe el drenaje—.\n\n  \n    \n    \n      0 · Sin colapso — intensidad débil a moderada (&lt; 15 mm/h). El drenaje absorbe.\n  \n  \n    \n    \n      1 · Encharcamientos — lluvia fuerte (15-30 mm/h). Raudales incipientes en puntos críticos.\n  \n  \n    \n    \n      2 · Raudales peligrosos — muy fuerte (30-60 mm/h, ≈40-50 mm en &lt;1 h).\n      10-40 cm a 1-3 m/s ya arrastran personas y vehículos.\n  \n  \n    \n    \n      3 · Anegamiento extendido — torrencial (&gt; 60 mm/h) y/o 80-110 mm/día.\n      Barrios y arroyos desbordados, víctimas. La SEN declara alerta máxima ante ~120 mm.\n  \n  \n    \n    \n      4 · Colapso / catástrofe — &gt; ~150-200 mm/24 h. Arroyos mayores, socavones,\n      fallecidos, miles de desplazados.\n  \n\nEventos reales sobre esta escala: Encarnación 147,5 mm (2 may 2024, nivel 3-4) (ABC Color, 2024b); Gran Asunción 100-120 mm (jun 2025, nivel 3) (Última Hora, 2025b); Concepción ~90 mm (abr 2026, nivel 3) (ABC Color, 2026c); Ciudad del Este 68,6 mm (jun 2025, nivel 2-3) (ABC Color, 2025); raudal de Ñemby 47 mm en 50 min ≈ 56 mm/h (muy fuerte) (Ruiz Díaz Cardozo et al., 2018).\n\nEl eje de duración (IDF simplificada)\nLa curva IDF (intensidad-duración-frecuencia) es la herramienta estándar del diseño de drenaje. Aquí se construye solo el eje intensidad-duración; el de frecuencia (período de retorno) requiere la serie pluviográfica local, que en Paraguay trabajó Monte Domecq (Monte Domecq, 1995; Monte Domecq & Báez, 1999). Como intensidad = lámina ÷ duración, un aguacero corto alcanza intensidad de raudal con pocos milímetros:\n\nLámina (mm) que alcanza cada intensidad según la duración (aritmética simple, clases AEMET/OMM (Agencia Estatal de Meteorología (AEMET), 2024)). Único punto observado: Ñemby, 47 mm/50 min (Ruiz Díaz Cardozo et al., 2018).\n\n\n\n\n\n\n\n\nDuración\n“Fuerte” 15-30 mm/h\n“Muy fuerte” 30-60\n“Torrencial” &gt;60\n\n\n\n\n10 min\n2,5-5 mm\n5-10 mm\n&gt; 10 mm\n\n\n30 min\n7,5-15 mm\n15-30 mm\n&gt; 30 mm\n\n\n1 hora\n15-30 mm\n30-60 mm\n&gt; 60 mm\n\n\n2 horas\n30-60 mm\n60-120 mm\n&gt; 120 mm\n\n\n\n\n  \n  \n  25102050100\n  Intensidad (mm/h, escala log)\n  10 min30 min1 h3 h6 h24 h\n  Duración del aguacero (escala log)\n  \n  umbral aproximado de colapso\n  (desciende con la duración)\n  ↑ raudales / anegamiento\n  ↓ el drenaje absorbe\n  \n  Ñemby 2018: 47 mm / 50 min (≈56 mm/h)\n  \n  Feb 2014: 222 mm / 24 h (≈9 mm/h)\n\nEsquema conceptual, no una IDF estadística: solo los dos puntos marcados son datos observados. Una IDF real (con períodos de retorno) exige los registros de la DINAC y el método de ajuste de (Monte Domecq, 1995).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#dónde-se-acumula-el-agua-modelo-topográfico-dem",
-    "href": "08-pluvial/index.html#dónde-se-acumula-el-agua-modelo-topográfico-dem",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Dónde se acumula el agua: modelo topográfico (DEM)",
-    "text": "Dónde se acumula el agua: modelo topográfico (DEM)\nPara pasar de eventos puntuales a una capa de susceptibilidad, se derivó del Copernicus DEM (30 m) dónde el relieve favorece el encharcamiento y la concentración del escurrimiento (relleno de depresiones + acumulación de flujo + índice topográfico de humedad). Es un modelo de susceptibilidad, no un evento observado. El método es reproducible por ciudad (scripts/analisis_pluvial_dem.py); el mapa muestra las ciudades ya procesadas:\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\nModelo, no evento. El DEM de 30 m identifica lows a escala de barrio; no capta la red de desagües ni el anegamiento a escala de calle. Falta el estudio hidráulico urbano oficial (MOPC/ESSAP) y la serie de lluvia por estación de la DINAC. La susceptibilidad de Ciudad del Este, Encarnación, Concepción y Pilar queda pendiente (se regenera con scripts/analisis_pluvial_dem.py cuando el servicio de datos DEM esté disponible).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#temporales-documentados-por-ciudad",
-    "href": "08-pluvial/index.html#temporales-documentados-por-ciudad",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Temporales documentados por ciudad",
-    "text": "Temporales documentados por ciudad\n\nAsunción y Gran AsunciónCiudad del EsteEncarnaciónConcepciónPilar\n\n\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto pluvial\nFuente\n\n\n\n\n25-26 feb 2014\n222 mm (récord)\nDesborde del arroyo Itay; Ñu Guasú sumergido; 1 muerto; 3.000 desplazados\nprensa (ABC Color, 2014)\n\n\n28 ene 2018\n47 mm / 50 min\nRaudal en Ñemby (estudio LSPIV): 10-40 cm a 1-3 m/s arrastran personas\nacadémico (Ruiz Díaz Cardozo et al., 2018)\n\n\n2 nov 2023\ns/d\nRaudal en Lambaré: 2 militares arrastrados; ~20.000 sin luz\nprensa (La Nación (Paraguay), 2023)\n\n\n12-16 abr 2024\n80-106 mm\nViviendas colapsadas sobre el arroyo Ferreira; Trinidad anegado\noficial (Ministerio de Salud Pública y Bienestar Social (MSPBS), 2024)\n\n\n24 abr 2024\ns/d\n2 fallecidas en Luque (raudal urbano); barrios incomunicados\nprensa (ABC Color, 2024a)\n\n\n5-6 jun 2025\n100-120 mm\nTemporal en todo el Gran Asunción; arroyo de Ñemby arrastró 4 vehículos; ~90.000 sin luz\nprensa (Última Hora, 2025b, 2025a)\n\n\n8 mar 2026\ns/d\nRaudal en San Lorenzo; Hospital Materno Infantil de Fdo. de la Mora anegado\nprensa (ABC Color, 2026b)\n\n\n17 mar 2026\ns/d\nComplejo San Blas (MUVH), Mariano Roque Alonso: ~600 familias\nprensa (ABC Color, 2026a)\n\n\n\n\n\nPatrón de microcuenca urbana: los arroyos Amambay y Acaraymí, canalizados con secciones insuficientes, inundan los barrios Che La Reina, 23 de Octubre, San Rafael, San Agustín.\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n23 mar 2022\ns/d\nDesborde de los arroyos Amambay y Acaraymí; ~100 familias (Che La Reina, 23 de Octubre)\nprensa (Última Hora, 2022)\n\n\n28-30 oct 2023\ns/d\n&gt;100 casas bajo agua (San Rafael, San Agustín); niños a la escuela en canoa\nprensa (ABC Color, 2023a)\n\n\n5 jun 2025\nhasta 68,6 mm\nDesborde del arroyo Amambay; escuela San Dionisio anegada\nprensa (ABC Color, 2025)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n2 may 2024\nCostanera 147,5 mm; Aeropuerto 103,6 mm\nMicrocentro anegado; barrio Sagrada Familia: 30 casas inundadas; piden reubicación\nprensa (ABC Color, 2024b; La Nación (Paraguay), 2024)\n\n\n\nLa lámina de la mañana superó el promedio mensual normal de mayo (~140 mm). Es anegamiento pluvial (drenaje), no desborde del Paraná.\n\n\nPatrón: colapso del sistema de desagüe. Barrios recurrentes: Villa Armando, Santo Domingo, San Carlos, Santa María, Inmaculada, Itacurubí.\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n24 abr 2025\ns/d\n+10 h de lluvia continua; buena parte de la ciudad afectada\nprensa (La Nación (Paraguay), 2025a)\n\n\n15 abr 2026\n~90 mm\nColapso del desagüe; casas inundadas; zona del mercado municipal\nprensa (ABC Color, 2026c)\n\n\n\n\n\nPilar sufre sobre todo inundación fluvial (río Paraguay). Lo estrictamente pluvial aparece ligado a obras de drenaje inconclusas:\n\n\n\n\n\n\n\n\n\nFecha\nLluvia\nImpacto\nFuente\n\n\n\n\n1 jul 2026\ns/d\nBarrios Ytororó, Aurora y Colinas intransitables tras lluvias; obras de canalización inconclusas\nprensa (ABC Color, 2026d)",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#arroyos-urbanos-y-puntos-críticos-asunción",
-    "href": "08-pluvial/index.html#arroyos-urbanos-y-puntos-críticos-asunción",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Arroyos urbanos y puntos críticos (Asunción)",
-    "text": "Arroyos urbanos y puntos críticos (Asunción)\nEl anegamiento pluvial de la capital se organiza en torno a los arroyos urbanos, de cauces angostos, contaminados y parcialmente entubados:\n\nMburicaó: ~16 km, cruza siete barrios; desbordes recurrentes (La Nación (Paraguay), 2025b).\nFerreira: barrios Republicano y Roberto L. Petit; en abril 2024 hizo colapsar viviendas. La Municipalidad limpió un brazo (Cantaluppi) dentro de su Plan de Contingencia por El Niño de 2023 oficial (Municipalidad de Asunción, 2023).\nItay: ~35 km, límite del Gran Asunción; desborde recurrente en Limpio y Luque; canalización parcial (Municipalidad/MOPC) oficial (Municipalidad de Asunción, 2024).\nEntubados del centro (p. ej. Ycuá Satí): al correr bajo el pavimento pierden capacidad y ocultan el riesgo prensa (ABC Color, 2023b).\n\nLa Municipalidad reconoce intersecciones críticas de raudales, y estudios académicos mapearon decenas de puntos críticos en la capital (La Nación (Paraguay), 2025b).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#monitoreo-en-vivo-y-cómo-cerrar-la-idf",
-    "href": "08-pluvial/index.html#monitoreo-en-vivo-y-cómo-cerrar-la-idf",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Monitoreo en vivo y cómo cerrar la IDF",
-    "text": "Monitoreo en vivo y cómo cerrar la IDF\nLa DMH/DINAC opera Estaciones Meteorológicas Automáticas (EMAs) en todo el país (Dirección de Meteorología e Hidrología (DMH/DINAC), 2026a); la de referencia climatológica de Asunción/Central es el Aeropuerto Silvio Pettirossi (Luque). El estado de lluvia en vivo (acumulado del día, red nacional) está en Situación actual. Para convertir la escala empírica en una IDF con períodos de retorno, el paso concreto es solicitar a la DMH la serie pluviográfica histórica de estas estaciones (o los coeficientes de (Monte Domecq, 1995)).",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
-  },
-  {
-    "objectID": "08-pluvial/index.html#fuentes-y-límites",
-    "href": "08-pluvial/index.html#fuentes-y-límites",
-    "title": "Inundaciones pluviales urbanas en Paraguay",
-    "section": "Fuentes y límites",
-    "text": "Fuentes y límites\n\n\nLas láminas de lluvia provienen mayormente de prensa citando a Meteorología; rara vez con estación/hora exacta. Los datos por sitio de Encarnación (147,5 / 103,6 mm) son la excepción (ABC Color, 2024b). Se marca s/d donde no hay mm.\nLa susceptibilidad DEM es un modelo topográfico de escala de barrio, no un estudio hidráulico ni un mapa de inundación observada.\nLa escala de colapso es empírica; su calibración fina exige la serie de la DINAC.",
-    "crumbs": [
-      "Inicio",
-      "⚠️ Amenazas",
-      "Inundación pluvial (lluvia)"
-    ]
+    "objectID": "admin/index.html#villa-hayes",
+    "href": "admin/index.html#villa-hayes",
+    "title": "Panel administrativo — establecimientos expuestos",
+    "section": "Villa Hayes",
+    "text": "Villa Hayes\nServicios de salud expuestos: 0\nNinguno detectado en esta zona.\nCentros educativos expuestos: 3 (matrícula sumada: 1,529)\n\n\n\n#\nInstitución (MEC)\nMatrícula (año)\nDistrito / barrio\nUbicación\n\n\n\n\n1\n4294 MARIA AUXILIADORA\n130 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15475, -57.55305\n\n\n2\n5925 DON JORGE GAYOSO / 15-15\n1339 (2022)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.15352, -57.55322\n\n\n3\n766 JAIME PEŃA (EX REMANSITO)\n60 (2014)\nVILLA HAYES / REMANSITO SUB-URBANO\n-25.16469, -57.54391"
   },
   {
     "objectID": "amenazas/dengue/index.html",
