@@ -105,7 +105,8 @@ DINAC**: difundir la alerta, despejar desagües y arroyos *antes* del evento
 —como la limpieza del arroyo Ferreira que la Municipalidad hizo dentro de su Plan de
 Contingencia por El Niño [@mun_ferreira2023]—, señalizar los **puntos críticos de
 raudales** y evitar circular por ellos. Recordar que **10-40 cm de agua a 1-3 m/s ya
-arrastran personas y vehículos** [@ruizdiaz2018].
+arrastran personas y vehículos** [@ruizdiaz2018]. Ver la
+[escala de cuánta lluvia colapsa la ciudad](../04-asuncion-metropolitana/index.qmd#una-escala-empírica-cuánta-lluvia-colapsa-asunción).
 :::
 
 ## Fase 0 · Preparación (río bajo o estable)
