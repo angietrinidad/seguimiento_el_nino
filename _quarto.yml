@@ -35,8 +35,10 @@ website:
             file: 03-paraguay/departamentos/index.qmd
           - text: "Asunción y área metropolitana"
             file: 04-asuncion-metropolitana/index.qmd
-          - text: "Mapa histórico de inundaciones"
+          - text: "Mapa histórico de inundaciones (fluvial)"
             file: 05-mapa-riesgo/index.qmd
+          - text: "Inundaciones pluviales (lluvia)"
+            file: 08-pluvial/index.qmd
       - text: "Situación actual (2026-27)"
         menu:
           - text: "Estado del episodio 2026-27"
@@ -65,8 +67,10 @@ website:
             file: 03-paraguay/departamentos/index.qmd
           - text: "Asunción y área metropolitana"
             file: 04-asuncion-metropolitana/index.qmd
-          - text: "Mapa histórico de inundaciones"
+          - text: "Mapa histórico de inundaciones (fluvial)"
             file: 05-mapa-riesgo/index.qmd
+          - text: "Inundaciones pluviales (lluvia)"
+            file: 08-pluvial/index.qmd
       - section: "Situación actual (2026-27)"
         contents:
           - text: "Estado del episodio en curso"

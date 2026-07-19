@@ -75,9 +75,9 @@ cota: correr `scripts/actualizar_nivel_rio.py` y re-renderizar.
 ## Lluvia actual (estaciones automáticas de la DMH)
 
 La amenaza **pluvial** (raudales por lluvia) no depende del río sino de la
-intensidad de la lluvia. Este panel lee las **Estaciones Meteorológicas Automáticas
-(EMAs)** de la DMH en el área metropolitana [@dmh_emas], con el acumulado del día,
-y lo ubica en la [escala de colapso pluvial](../04-asuncion-metropolitana/index.qmd#una-escala-empírica-cuánta-lluvia-colapsa-asunción).
+intensidad de la lluvia. Este panel lee la red **nacional** de Estaciones
+Meteorológicas Automáticas (EMAs) de la DMH [@dmh_emas], con el acumulado del día, y
+lo ubica en la [escala de colapso pluvial](../08-pluvial/index.qmd#cuánta-lluvia-colapsa-la-ciudad-escala-e-idf).
 
 ```{python}
 #| echo: false
@@ -88,47 +88,47 @@ if not os.path.exists(p):
     salida = "<div class='vacio'>Datos de estaciones DMH pendientes de generar.</div>"
 else:
     d = json.load(open(p, encoding="utf-8"))
-    activas = [e for e in d["estaciones"] if e["activa"] and e["precip_dia_mm"] is not None]
-    inactivas = [e for e in d["estaciones"] if not e["activa"]]
-    # nivel de la escala según el acumulado del día (bandas coherentes con 04)
+    act = [e for e in d["estaciones"] if e["activa"] and e["precip_dia_mm"] is not None]
+    prio = [e for e in act if e["prioritario"]]
     def banda(mm):
-        if mm >= 150: return ("4 · Colapso / catástrofe", "#7a1f2b")
-        if mm >= 80:  return ("3 · Anegamiento urbano extendido", "#d1495b")
-        if mm >= 40:  return ("1-2 · Encharcamientos y raudales localizados", "#e8842c")
+        if mm >= 150: return ("colapso / catástrofe", "#7a1f2b")
+        if mm >= 80:  return ("anegamiento urbano extendido", "#d1495b")
+        if mm >= 40:  return ("encharcamientos y raudales localizados", "#e8842c")
         if mm > 0:    return ("bajo el umbral de afectación", "#2a9d3f")
-        return ("sin lluvia significativa (0 mm)", "#2a9d3f")
-    maxmm = max((e["precip_dia_mm"] for e in activas), default=None)
-    if maxmm is None:
-        estado = "<i>sin estaciones activas con dato de lluvia ahora mismo.</i>"
+        return ("sin lluvia significativa", "#2a9d3f")
+    top = max(act, key=lambda e: e["precip_dia_mm"], default=None)
+    r = d.get("resumen", {})
+    if top is None:
+        head = "<i>sin estaciones activas con dato de lluvia ahora mismo.</i>"
     else:
-        etq, col = banda(maxmm)
-        estado = (f"Máximo acumulado hoy entre las estaciones activas: "
-                  f"<b style='font-size:20px'>{maxmm} mm</b> → "
-                  f"<b style='color:{col}'>{etq}</b>")
+        etq, col = banda(top["precip_dia_mm"])
+        head = (f"Máximo hoy en el país: <b style='font-size:20px'>{top['precip_dia_mm']} mm</b> "
+                f"({top['ciudad']}) → <b style='color:{col}'>{etq}</b><br>"
+                f"<span style='font-size:13px;color:#555'>{r.get('activas','?')} estaciones activas "
+                f"({r.get('activas_prioritarias','?')} en departamentos prioritarios).</span>")
     filas = "".join(
-        f"<tr><td style='padding:3px 12px 3px 0'>{e['ciudad']} — {e['nombre']}</td>"
-        f"<td style='padding:3px 0;text-align:right'><b>{e['precip_dia_mm']} mm</b></td></tr>"
-        for e in activas)
-    tabla = (f"<table style='font-size:14px;border-collapse:collapse;margin:.6em 0'>"
-             f"<tr style='color:#555;border-bottom:1px solid #ddd'>"
-             f"<th style='text-align:left'>Estación activa</th>"
-             f"<th style='text-align:right'>Acum. del día</th></tr>{filas}</table>")
+        f"<tr><td style='padding:2px 12px 2px 0'>{e['ciudad']}</td>"
+        f"<td style='padding:2px 12px 2px 0;color:#666'>{e['departamento']}</td>"
+        f"<td style='padding:2px 0;text-align:right'><b>{e['precip_dia_mm']} mm</b></td></tr>"
+        for e in sorted(prio, key=lambda e: (-e["precip_dia_mm"], e["ciudad"] or "")))
+    detalle = (f"<details style='margin:.6em 0'><summary style='cursor:pointer;color:#2b6cb0'>"
+               f"Ver estaciones activas en zonas prioritarias ({len(prio)})</summary>"
+               f"<table style='font-size:13px;border-collapse:collapse;margin:.5em 0'>"
+               f"<tr style='color:#555;border-bottom:1px solid #ddd'><th style='text-align:left'>Ciudad</th>"
+               f"<th style='text-align:left'>Departamento</th><th style='text-align:right'>Acum. día</th></tr>"
+               f"{filas}</table></details>")
     upd = (d.get("actualizado") or {}).get("local", "s/f")
-    pie = (f"<div style='font-size:12px;color:#888;margin-top:.4em'>Última actualización del feed: "
-           f"<b>{upd}</b> · fuente: DMH/DINAC (EMAs), orientativa, no oficial · "
-           f"{len(inactivas)} estación(es) del metro sin transmitir al día. "
-           f"Para refrescar: correr <code>scripts/estaciones_dmh.py</code>.</div>")
-    salida = f"<div style='max-width:600px'><div style='margin-bottom:.4em'>{estado}</div>{tabla}{pie}</div>"
+    pie = (f"<div style='font-size:12px;color:#888'>Feed DMH/DINAC (EMAs), acumulado del día, "
+           f"orientativo · actualizado {upd} · regenerar con <code>scripts/estaciones_dmh.py</code>.</div>")
+    salida = f"<div style='max-width:620px'>{head}{detalle}{pie}</div>"
 # HTML() debe ir a nivel superior (dentro de if/else no se auto-muestra)
 HTML(salida)
 ```
 
 ::: {.callout-note appearance="minimal"}
-La DMH publica la precipitación como **acumulado del día en hora local** (medición
-cada 10 min); es orientativa. El acumulado diario **subestima el riesgo de raudal**,
-que depende de la intensidad en minutos (ver la
-[IDF simplificada](../04-asuncion-metropolitana/index.qmd#el-eje-de-duración-una-idf-simplificada)):
-un valor moderado caído en una hora puede ya generar raudales.
+Acumulado **del día en hora local** (orientativo). Subestima el riesgo de **raudal**,
+que depende de la intensidad en minutos: ver la
+[escala intensidad-duración](../08-pluvial/index.qmd#el-eje-de-duración-idf-simplificada).
 :::
 
 ## 1. El fenómeno hoy

@@ -1,0 +1,307 @@
+---
+title: "Inundaciones pluviales urbanas en Paraguay"
+---
+
+La inundación **pluvial** —anegamientos y **raudales** que la lluvia intensa genera
+sobre un drenaje insuficiente— es una amenaza distinta del desborde del río. No
+depende del nivel del río, golpea a **toda la ciudad** (no solo la ribera baja) y
+afecta a varias ciudades del país. Esta página la caracteriza y la separa
+explícitamente de la amenaza **fluvial** tratada en el resto del repositorio.
+
+## Fluvial vs pluvial: dos amenazas distintas
+
+```{=html}
+<div style="display:flex;gap:1em;flex-wrap:wrap;margin:1em 0">
+  <div style="flex:1;min-width:260px;border-top:4px solid #1b5e7a;background:#f4f8fa;padding:.8em 1em;border-radius:6px">
+    <div style="font-weight:700;color:#1b5e7a;margin-bottom:.4em">🌊 Fluvial (desborde del río)</div>
+    <div style="font-size:14px;line-height:1.6">
+    <b>Causa:</b> crecida del río Paraguay/Paraná.<br>
+    <b>Disparador:</b> el <b>nivel del río</b> (cota hidrométrica).<br>
+    <b>Dónde:</b> los bañados y barrios ribereños bajos.<br>
+    <b>Ritmo:</b> lento (días–semanas); previsible.<br>
+    <b>En el sitio:</b> <a href="../05-mapa-riesgo/index.html">mapa histórico</a>,
+    <a href="../06-exposicion/index.html">exposición</a>,
+    <a href="../situacion-actual/index.html">cota actual</a>.</div>
+  </div>
+  <div style="flex:1;min-width:260px;border-top:4px solid #2b8cbe;background:#f2f7fb;padding:.8em 1em;border-radius:6px">
+    <div style="font-weight:700;color:#2b6cb0;margin-bottom:.4em">🌧️ Pluvial (lluvia y drenaje)</div>
+    <div style="font-size:14px;line-height:1.6">
+    <b>Causa:</b> lluvia intensa + drenaje insuficiente.<br>
+    <b>Disparador:</b> el <b>pronóstico de lluvia</b> (mm/h), no el río.<br>
+    <b>Dónde:</b> toda la ciudad; arroyos urbanos y puntos bajos.<br>
+    <b>Ritmo:</b> súbito (minutos–horas); raudales letales.<br>
+    <b>En el sitio:</b> esta página + <a href="../situacion-actual/index.html#lluvia-actual-estaciones-automáticas-de-la-dmh">lluvia en vivo</a>.</div>
+  </div>
+</div>
+```
+
+Cuando ambas coinciden en el tiempo, **se combinan**: el agua de lluvia no puede
+drenar hacia un río ya desbordado.
+
+## Por qué El Niño agrava el riesgo pluvial
+
+El Niño no solo eleva el río: **aumenta la lluvia** en el sudeste de Sudamérica. La
+teleconexión está bien establecida —anomalías **positivas** de precipitación en
+Paraguay, sur de Brasil, Uruguay y NE argentino, con máximos en primavera y fin de
+verano [@grimm2000; @ropelewski1987; @boulanger2005], y **más eventos de lluvia
+extrema** [@grimm_tedeschi2009; @petry2025]—. Cerca de la **mitad** de la tendencia
+de aumento de lluvia en la región provendría de la fase El Niño [@barros2008]. En el
+episodio muy fuerte de 2015-16, el centro del país acumuló **hasta 400 mm** entre el
+1 y el 23 de diciembre de 2015 [oficial]{.badge-oficial} [@nasa_paraguay2015]; para
+Paraguay las anomalías positivas van de media primavera a media otoño, sobre todo en
+la región Oriental [oficial]{.badge-oficial} [@sissa_nino2023]. Bajo calentamiento
+global se proyecta **mayor frecuencia de El Niño extremos** [@cai2014; @cai2020].
+
+::: {.callout-note appearance="minimal"}
+Contexto climático de Asunción: normal anual ~**1.400 mm**; **récord en 24 h ~220 mm**
+(feb 2014) y **210,8 mm** en marzo de 2026 (récord de marzo desde 1964); tendencia
+**+3,2 mm/año** [oficial]{.badge-oficial} [@dinac_records2026].
+:::
+
+## Cuánta lluvia colapsa la ciudad: escala e IDF
+
+No existe una escala oficial que traduzca milímetros en nivel de colapso. La
+siguiente es **empírica**, calibrada con los temporales documentados y la
+clasificación de intensidad AEMET/OMM [@aemet_intensidad]. La clave: **manda la
+intensidad (mm/h), no el total del día** —50 mm en una hora provocan raudales
+letales; los mismos 50 mm en un día los absorbe el drenaje—.
+
+```{=html}
+<div style="display:flex;flex-direction:column;gap:6px;margin:1em 0;font-size:14px">
+  <div style="display:flex;align-items:stretch;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.15)">
+    <div style="width:8px;background:#2a9d3f"></div>
+    <div style="flex:1;background:#eefbf0;padding:.5em .8em">
+      <b>0 · Sin colapso</b> — intensidad débil a moderada (&lt; 15 mm/h). El drenaje absorbe.</div>
+  </div>
+  <div style="display:flex;align-items:stretch;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.15)">
+    <div style="width:8px;background:#f2c53d"></div>
+    <div style="flex:1;background:#fdf7e3;padding:.5em .8em">
+      <b>1 · Encharcamientos</b> — lluvia <b>fuerte</b> (15-30 mm/h). Raudales incipientes en puntos críticos.</div>
+  </div>
+  <div style="display:flex;align-items:stretch;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.15)">
+    <div style="width:8px;background:#e8842c"></div>
+    <div style="flex:1;background:#fdf0e4;padding:.5em .8em">
+      <b>2 · Raudales peligrosos</b> — <b>muy fuerte</b> (30-60 mm/h, ≈40-50 mm en &lt;1 h).
+      10-40 cm a 1-3 m/s ya arrastran personas y vehículos.</div>
+  </div>
+  <div style="display:flex;align-items:stretch;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.15)">
+    <div style="width:8px;background:#d1495b"></div>
+    <div style="flex:1;background:#fbe9ec;padding:.5em .8em">
+      <b>3 · Anegamiento extendido</b> — <b>torrencial</b> (&gt; 60 mm/h) y/o <b>80-110 mm/día</b>.
+      Barrios y arroyos desbordados, víctimas. La SEN declara alerta máxima ante ~120 mm.</div>
+  </div>
+  <div style="display:flex;align-items:stretch;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.15)">
+    <div style="width:8px;background:#7a1f2b"></div>
+    <div style="flex:1;background:#f3dde0;padding:.5em .8em">
+      <b>4 · Colapso / catástrofe</b> — <b>&gt; ~150-200 mm/24 h</b>. Arroyos mayores, socavones,
+      fallecidos, miles de desplazados.</div>
+  </div>
+</div>
+```
+
+Eventos reales sobre esta escala: **Encarnación 147,5 mm** (2 may 2024, nivel 3-4)
+[@abc_encarnacion2024]; **Gran Asunción 100-120 mm** (jun 2025, nivel 3)
+[@uh_granasuncion2025]; **Concepción ~90 mm** (abr 2026, nivel 3)
+[@abc_concepcion2026]; **Ciudad del Este 68,6 mm** (jun 2025, nivel 2-3)
+[@abc_cde2025]; **raudal de Ñemby 47 mm en 50 min** ≈ 56 mm/h (muy fuerte)
+[@ruizdiaz2018].
+
+### El eje de duración (IDF simplificada)
+
+La **curva IDF (intensidad-duración-frecuencia)** es la herramienta estándar del
+diseño de drenaje. Aquí se construye solo el eje **intensidad-duración**; el de
+**frecuencia** (período de retorno) requiere la serie pluviográfica local, que en
+Paraguay trabajó Monte Domecq [@montedomecq1995; @montedomecq_baez1999]. Como
+intensidad = lámina ÷ duración, un aguacero corto alcanza intensidad de raudal con
+pocos milímetros:
+
+| Duración | "Fuerte" 15-30 mm/h | "Muy fuerte" 30-60 | "Torrencial" >60 |
+|---|---|---|---|
+| **10 min** | 2,5-5 mm | 5-10 mm | > 10 mm |
+| **30 min** | 7,5-15 mm | 15-30 mm | > 30 mm |
+| **1 hora** | 15-30 mm | 30-60 mm | > 60 mm |
+| **2 horas** | 30-60 mm | 60-120 mm | > 120 mm |
+
+: Lámina (mm) que alcanza cada intensidad según la duración (aritmética simple, clases AEMET/OMM [@aemet_intensidad]). Único punto observado: Ñemby, 47 mm/50 min [@ruizdiaz2018].
+
+```{=html}
+<svg viewBox="0 0 640 360" width="100%" style="max-width:640px;font-family:sans-serif;font-size:11px">
+  <rect x="70" y="30" width="530" height="290" fill="#fafbfc" stroke="#ccc"/>
+  <g stroke="#eee"><line x1="70" y1="252" x2="600" y2="252"/><line x1="70" y1="201" x2="600" y2="201"/><line x1="70" y1="149" x2="600" y2="149"/><line x1="70" y1="81" x2="600" y2="81"/></g>
+  <g fill="#666" text-anchor="end"><text x="64" y="323">2</text><text x="64" y="255">5</text><text x="64" y="204">10</text><text x="64" y="152">20</text><text x="64" y="84">50</text><text x="64" y="34">100</text></g>
+  <text x="20" y="180" fill="#444" transform="rotate(-90 20,180)" text-anchor="middle">Intensidad (mm/h, escala log)</text>
+  <g fill="#666" text-anchor="middle"><text x="70" y="335">10 min</text><text x="187" y="335">30 min</text><text x="261" y="335">1 h</text><text x="378" y="335">3 h</text><text x="452" y="335">6 h</text><text x="600" y="335">24 h</text></g>
+  <text x="335" y="353" fill="#444" text-anchor="middle">Duración del aguacero (escala log)</text>
+  <path d="M 95,48 Q 320,165 600,235" fill="none" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7,4"/>
+  <text x="150" y="70" fill="#d1495b">umbral aproximado de colapso</text>
+  <text x="330" y="150" fill="#d1495b" transform="rotate(20 330,150)">(desciende con la duración)</text>
+  <text x="120" y="120" fill="#b06a2c" opacity="0.8">↑ raudales / anegamiento</text>
+  <text x="430" y="290" fill="#4a8f4a" opacity="0.8">↓ el drenaje absorbe</text>
+  <circle cx="242" cy="73" r="6" fill="#e8842c" stroke="#7a3d10"/>
+  <text x="252" y="70" fill="#7a3d10">Ñemby 2018: 47 mm / 50 min (≈56 mm/h)</text>
+  <circle cx="600" cy="206" r="6" fill="#7a1f2b" stroke="#3a0f16"/>
+  <text x="592" y="199" fill="#3a0f16" text-anchor="end">Feb 2014: 222 mm / 24 h (≈9 mm/h)</text>
+</svg>
+```
+
+*Esquema **conceptual**, no una IDF estadística: solo los dos puntos marcados son
+datos observados. Una IDF real (con períodos de retorno) exige los registros de la
+DINAC y el método de ajuste de [@montedomecq1995].*
+
+## Dónde se acumula el agua: modelo topográfico (DEM)
+
+Para pasar de eventos puntuales a una **capa de susceptibilidad**, se derivó del
+**Copernicus DEM (30 m)** dónde el relieve favorece el encharcamiento y la
+concentración del escurrimiento (relleno de depresiones + acumulación de flujo +
+índice topográfico de humedad). Es un **modelo de susceptibilidad**, no un evento
+observado. El método es reproducible por ciudad
+(`scripts/analisis_pluvial_dem.py`); el mapa muestra las ciudades ya procesadas:
+
+```{python}
+#| label: mapa-pluvial
+#| echo: false
+import json, os, glob
+import folium
+
+ciudades = {
+    "asuncion": ("Asunción", [-25.30, -57.58]),
+    "ciudad-del-este": ("Ciudad del Este", [-25.51, -54.61]),
+    "encarnacion": ("Encarnación", [-27.33, -55.87]),
+    "concepcion": ("Concepción", [-23.42, -57.43]),
+    "pilar": ("Pilar", [-26.86, -58.30]),
+}
+m = folium.Map(location=[-25.6, -57.0], zoom_start=6, tiles="cartodbpositron", control_scale=True)
+col = {"alta": "#2b8cbe", "media": "#a6bddb"}
+n_capas = 0
+for cid, (nom, latlon) in ciudades.items():
+    fn = f"datos/geo/susceptibilidad-pluvial-{cid}.geojson"
+    if not os.path.exists(fn):
+        continue
+    n_capas += 1
+    d = json.load(open(fn, encoding="utf-8"))
+    km2 = d.get("metadata", {}).get("km2", {})
+    folium.GeoJson(
+        d, name=f"{nom} — susceptibilidad pluvial",
+        style_function=lambda f: {"fillColor": col.get(f["properties"]["clase"], "#a6bddb"),
+                                  "color": col.get(f["properties"]["clase"], "#a6bddb"),
+                                  "weight": 0, "fillOpacity": 0.6},
+        tooltip=folium.GeoJsonTooltip(fields=["clase", "area_km2"],
+                                      aliases=["Susceptibilidad:", "km²:"]),
+    ).add_to(m)
+    folium.Marker(latlon, tooltip=f"{nom} · alta {km2.get('alta','?')} km²",
+                  icon=folium.Icon(color="blue", icon="tint", prefix="fa")).add_to(m)
+folium.LayerControl(collapsed=False).add_to(m)
+leyenda = """<div style="position:fixed;bottom:26px;left:12px;z-index:9999;background:white;
+ padding:8px 10px;border:1px solid #ccc;border-radius:6px;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,.2)">
+ <b>Susceptibilidad pluvial (DEM)</b><br>
+ <span style="color:#2b8cbe">■</span> alta &nbsp; <span style="color:#a6bddb">■</span> media</div>"""
+m.get_root().html.add_child(folium.Element(leyenda))
+m
+```
+
+::: {.vacio}
+**Modelo, no evento.** El DEM de 30 m identifica *lows* a escala de barrio; no capta
+la red de desagües ni el anegamiento a escala de calle. Falta el **estudio hidráulico
+urbano** oficial (MOPC/ESSAP) y la **serie de lluvia por estación** de la DINAC.
+La susceptibilidad de Ciudad del Este, Encarnación, Concepción y Pilar queda
+**pendiente** (se regenera con `scripts/analisis_pluvial_dem.py` cuando el servicio
+de datos DEM esté disponible).
+:::
+
+## Temporales documentados por ciudad
+
+::: {.panel-tabset}
+
+### Asunción y Gran Asunción
+
+| Fecha | Lluvia | Impacto pluvial | Fuente |
+|---|---|---|---|
+| **25-26 feb 2014** | **222 mm** (récord) | Desborde del arroyo Itay; Ñu Guasú sumergido; 1 muerto; 3.000 desplazados | [prensa]{.badge-prensa} [@abc_temporal2014] |
+| **28 ene 2018** | **47 mm / 50 min** | Raudal en Ñemby (estudio LSPIV): 10-40 cm a 1-3 m/s arrastran personas | [académico]{.badge-academico} [@ruizdiaz2018] |
+| **2 nov 2023** | s/d | Raudal en Lambaré: **2 militares** arrastrados; ~20.000 sin luz | [prensa]{.badge-prensa} [@lanacion_temporal2023] |
+| **12-16 abr 2024** | **80-106 mm** | Viviendas colapsadas sobre el arroyo Ferreira; Trinidad anegado | [oficial]{.badge-oficial} [@mspbs_lluvias2024] |
+| **24 abr 2024** | s/d | **2 fallecidas en Luque** (raudal urbano); barrios incomunicados | [prensa]{.badge-prensa} [@abc_luque2024] |
+| **5-6 jun 2025** | **100-120 mm** | Temporal en todo el Gran Asunción; arroyo de Ñemby arrastró 4 vehículos; ~90.000 sin luz | [prensa]{.badge-prensa} [@uh_granasuncion2025; @uh_nemby2025] |
+| **8 mar 2026** | s/d | Raudal en San Lorenzo; Hospital Materno Infantil de Fdo. de la Mora anegado | [prensa]{.badge-prensa} [@abc_sanlorenzo2026] |
+| **17 mar 2026** | s/d | Complejo San Blas (MUVH), Mariano Roque Alonso: ~600 familias | [prensa]{.badge-prensa} [@abc_mra2026] |
+
+### Ciudad del Este
+
+Patrón de **microcuenca urbana**: los arroyos **Amambay** y **Acaraymí**, canalizados
+con secciones insuficientes, inundan los barrios **Che La Reina, 23 de Octubre, San
+Rafael, San Agustín**.
+
+| Fecha | Lluvia | Impacto | Fuente |
+|---|---|---|---|
+| **23 mar 2022** | s/d | Desborde de los arroyos Amambay y Acaraymí; ~100 familias (Che La Reina, 23 de Octubre) | [prensa]{.badge-prensa} [@uh_cde2022] |
+| **28-30 oct 2023** | s/d | >100 casas bajo agua (San Rafael, San Agustín); niños a la escuela en canoa | [prensa]{.badge-prensa} [@abc_cde2023] |
+| **5 jun 2025** | **hasta 68,6 mm** | Desborde del arroyo Amambay; escuela San Dionisio anegada | [prensa]{.badge-prensa} [@abc_cde2025] |
+
+### Encarnación
+
+| Fecha | Lluvia | Impacto | Fuente |
+|---|---|---|---|
+| **2 may 2024** | **Costanera 147,5 mm; Aeropuerto 103,6 mm** | Microcentro anegado; barrio **Sagrada Familia**: 30 casas inundadas; piden reubicación | [prensa]{.badge-prensa} [@abc_encarnacion2024; @lanacion_encarnacion2024] |
+
+La lámina de la mañana **superó el promedio mensual normal de mayo** (~140 mm). Es
+anegamiento **pluvial** (drenaje), no desborde del Paraná.
+
+### Concepción
+
+Patrón: colapso del sistema de **desagüe**. Barrios recurrentes: Villa Armando, Santo
+Domingo, San Carlos, Santa María, Inmaculada, Itacurubí.
+
+| Fecha | Lluvia | Impacto | Fuente |
+|---|---|---|---|
+| **24 abr 2025** | s/d | +10 h de lluvia continua; buena parte de la ciudad afectada | [prensa]{.badge-prensa} [@lanacion_concepcion2025] |
+| **15 abr 2026** | **~90 mm** | Colapso del desagüe; casas inundadas; zona del mercado municipal | [prensa]{.badge-prensa} [@abc_concepcion2026] |
+
+### Pilar
+
+Pilar sufre sobre todo inundación **fluvial** (río Paraguay). Lo estrictamente
+**pluvial** aparece ligado a **obras de drenaje inconclusas**:
+
+| Fecha | Lluvia | Impacto | Fuente |
+|---|---|---|---|
+| **1 jul 2026** | s/d | Barrios Ytororó, Aurora y Colinas intransitables tras lluvias; obras de canalización inconclusas | [prensa]{.badge-prensa} [@abc_pilar_pluvial2026] |
+
+:::
+
+## Arroyos urbanos y puntos críticos (Asunción)
+
+El anegamiento pluvial de la capital se organiza en torno a los **arroyos urbanos**,
+de cauces angostos, contaminados y parcialmente entubados:
+
+- **Mburicaó:** ~16 km, cruza siete barrios; desbordes recurrentes [@lanacion_puntos2025].
+- **Ferreira:** barrios Republicano y Roberto L. Petit; en abril 2024 hizo colapsar
+  viviendas. La Municipalidad limpió un brazo (Cantaluppi) dentro de su **Plan de
+  Contingencia por El Niño** de 2023 [oficial]{.badge-oficial} [@mun_ferreira2023].
+- **Itay:** ~35 km, límite del Gran Asunción; desborde recurrente en Limpio y Luque;
+  canalización parcial (Municipalidad/MOPC) [oficial]{.badge-oficial} [@asuncion_itay].
+- **Entubados del centro** (p. ej. Ycuá Satí): al correr bajo el pavimento pierden
+  capacidad y **ocultan el riesgo** [prensa]{.badge-prensa} [@abc_zonas2023].
+
+La Municipalidad reconoce **intersecciones críticas** de raudales, y estudios
+académicos mapearon decenas de **puntos críticos** en la capital [@lanacion_puntos2025].
+
+## Monitoreo en vivo y cómo cerrar la IDF
+
+La DMH/DINAC opera **Estaciones Meteorológicas Automáticas (EMAs)** en todo el país
+[@dmh_emas]; la de **referencia climatológica** de Asunción/Central es el
+**Aeropuerto Silvio Pettirossi** (Luque). El **estado de lluvia en vivo** (acumulado
+del día, red nacional) está en
+[Situación actual](../situacion-actual/index.qmd#lluvia-actual-estaciones-automáticas-de-la-dmh).
+Para convertir la escala empírica en una **IDF con períodos de retorno**, el paso
+concreto es solicitar a la DMH la **serie pluviográfica histórica** de estas
+estaciones (o los coeficientes de [@montedomecq1995]).
+
+## Fuentes y límites
+
+::: {.vacio}
+- Las láminas de lluvia provienen mayormente de **prensa** citando a Meteorología;
+  rara vez con estación/hora exacta. Los datos por sitio de Encarnación (147,5 /
+  103,6 mm) son la excepción [@abc_encarnacion2024]. Se marca `s/d` donde no hay mm.
+- La susceptibilidad DEM es un **modelo topográfico** de escala de barrio, no un
+  estudio hidráulico ni un mapa de inundación observada.
+- La escala de colapso es **empírica**; su calibración fina exige la serie de la DINAC.
+:::

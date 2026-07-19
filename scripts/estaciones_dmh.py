@@ -1,6 +1,5 @@
 """
-Estaciones Meteorológicas Automáticas (EMAs) de la DMH/DINAC — subconjunto del
-área metropolitana de Asunción (departamentos Asunción y Central).
+Estaciones Meteorológicas Automáticas (EMAs) de la DMH/DINAC — cobertura NACIONAL.
 
 Feed oficial en tiempo real: https://www.meteorologia.gov.py/emas/data.json
 (se actualiza ~cada 3 min). La DMH publica la precipitación de las automáticas como
@@ -9,18 +8,23 @@ oficial" según la propia DMH.
 
 Salida: datos/estaciones-dmh-metro.json
 - actualizado (utc/local del feed)
-- estaciones: nombre, ciudad, departamento, lat, lon, altura, activa (transmite),
-  ultima_obs (local), precip_mm (acumulado del día según DMH)
+- estaciones (todas las del país): nombre, ciudad, departamento, lat, lon, altura,
+  activa (transmite <=3 h), metro (Asunción+Central), prioritario (depto ribereño),
+  ultima_obs (local), precip_dia_mm (acumulado del día según DMH)
 
-Uso: monitoreo pluvial en vivo (situación actual) y referencia de qué estaciones
-pedir a la DMH para reconstruir la serie histórica / curvas IDF de Asunción.
+Uso: monitoreo pluvial en vivo (situación actual, nacional + metro) y referencia de
+qué estaciones pedir a la DMH para reconstruir la serie histórica / curvas IDF.
 """
 import os, json, ssl, urllib.request
 from datetime import datetime
 
 URL = "https://www.meteorologia.gov.py/emas/data.json"
 OUT = os.path.join(os.path.dirname(__file__), "..", "datos", "estaciones-dmh-metro.json")
-DEPTOS = {"Asunción", "Asuncion", "Central"}
+METRO = {"Asunción", "Asuncion", "Central"}
+# Departamentos ribereños/agrícolas prioritarios del repositorio
+PRIORITARIOS = {"Asunción", "Asuncion", "Central", "Concepción", "Concepcion",
+                "San Pedro", "Presidente Hayes", "Pdte. Hayes", "Ñeembucú", "Neembucu",
+                "Misiones", "Itapúa", "Itapua", "Alto Paraná", "Alto Parana"}
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -43,34 +47,40 @@ ref_local = val(d, "actualizado", "local")
 estaciones = []
 for e in d.get("estaciones", {}).values():
     m = e.get("metadatos", {})
-    if m.get("departamento") not in DEPTOS:
-        continue
     o = e.get("ultima_observacion") or {}
     obs_local = val(o, "fecha", "local")
     atraso_h = horas_desde(obs_local, ref_local) if obs_local else None
+    dep = m.get("departamento")
     estaciones.append({
         "id": m.get("id"),
         "nombre": m.get("nombre"),
         "ciudad": m.get("ciudad"),
-        "departamento": m.get("departamento"),
+        "departamento": dep,
         "lat": m.get("latitud"), "lon": m.get("longitud"), "altura_m": m.get("altura"),
         # activa = transmitió en las últimas ~3 horas
         "activa": atraso_h is not None and atraso_h <= 3,
         "atraso_horas": atraso_h,
+        "metro": dep in METRO,
+        "prioritario": dep in PRIORITARIOS,
         "ultima_obs_local": obs_local,
         "precip_dia_mm": val(o, "precipitacion", "valor"),
         "temp_c": val(o, "temperatura_aire", "valor"),
     })
 
-# orden: activas primero, luego por ciudad
-estaciones.sort(key=lambda s: (not s["activa"], s["ciudad"] or ""))
+# orden: activas primero, luego por departamento y ciudad
+estaciones.sort(key=lambda s: (not s["activa"], s["departamento"] or "", s["ciudad"] or ""))
+activas = [s for s in estaciones if s["activa"]]
 out = {"fuente": "DMH/DINAC — EMAs (data.json)", "url": URL,
        "nota": "Precipitación = acumulado del día en hora local (DMH); orientativa, no oficial.",
-       "actualizado": d.get("actualizado"), "estaciones": estaciones}
+       "actualizado": d.get("actualizado"),
+       "resumen": {"total": len(estaciones), "activas": len(activas),
+                   "activas_prioritarias": len([s for s in activas if s["prioritario"]])},
+       "estaciones": estaciones}
 json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
-activas = [s for s in estaciones if s["activa"]]
-print(f"estaciones metro (Asunción+Central): {len(estaciones)} | activas: {len(activas)}")
-for s in estaciones:
-    flag = "*" if s["activa"] else "-"
-    print(f"  {flag} {s['ciudad']:14s} {(s['nombre'] or '')[:40]:40s} | {s['ultima_obs_local']} | {s['precip_dia_mm']} mm")
+print(f"estaciones nacionales: {len(estaciones)} | activas: {len(activas)} "
+      f"| activas en deptos prioritarios: {out['resumen']['activas_prioritarias']}")
+for s in activas:
+    flag = "P" if s["prioritario"] else " "
+    print(f"  [{flag}] {(s['departamento'] or '')[:14]:14s} {(s['ciudad'] or '')[:14]:14s} "
+          f"{(s['nombre'] or '')[:34]:34s} | {s['precip_dia_mm']} mm")

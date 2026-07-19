@@ -246,7 +246,7 @@ o concentre, con independencia del río—. Se deriva del **Copernicus DEM (30 m
 combinando el relleno de depresiones (encharcamiento), la acumulación de flujo y el
 índice topográfico de humedad. El detalle de la evidencia (temporales documentados,
 arroyos urbanos, vínculo con El Niño) está en
-[Asunción metropolitana](../04-asuncion-metropolitana/index.qmd#inundaciones-pluviales-urbanas).
+[Inundaciones pluviales](../08-pluvial/index.qmd).
 
 ```{python}
 #| label: pluvial-exp
@@ -293,8 +293,8 @@ fluvial, **ambas amenazas se combinan**.
 - **Elevación del terreno:** **Copernicus DEM GLO-30** (30 m) [@copernicus_dem].
 - **Susceptibilidad pluvial:** modelo topográfico propio sobre el Copernicus DEM
   (relleno de depresiones + acumulación de flujo + índice de humedad topográfica)
-  [@copernicus_dem]. Evidencia de eventos y teleconexión ENOS-lluvia citada en
-  [Asunción metropolitana](../04-asuncion-metropolitana/index.qmd).
+  [@copernicus_dem]. Evidencia de eventos y teleconexión ENOS-lluvia en
+  [Inundaciones pluviales](../08-pluvial/index.qmd).
 
 ## Vacíos y límites
 
