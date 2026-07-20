@@ -14,7 +14,7 @@ project:
     - datos/exposicion/escuelas_riesgo.xlsx
     - datos/exposicion/salud_riesgo.xlsx
     - datos/exposicion/comercio_riesgo.xlsx
-    - informes/informe-elnino-educacion-universitaria.docx
+    - informes/informe-elnino-facso-una.docx
 
 website:
   title: "Desastres Anunciados"

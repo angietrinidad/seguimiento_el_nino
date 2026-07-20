@@ -19,10 +19,11 @@ probabilidad de persistir hasta inicios de 2027 y **81 %** de alcanzar categorí
 
 ::: {.callout-tip}
 ## Informe descargable
-**[⬇ Situación del ENOS 2026-2027 y medidas para las clases en la educación
-universitaria (Word)](../informes/informe-elnino-educacion-universitaria.docx)** —
-situación y evolución del fenómeno, **pronóstico de lluvias** y recomendaciones para
-la continuidad de clases (INEE, Marco de Sendai).
+**[⬇ El Niño 2026-2027: situación, evolución y recomendaciones para la Facultad de
+Ciencias Sociales (UNA) — Word](../informes/informe-elnino-facso-una.docx)** —
+síntesis del estado y la evolución del fenómeno con **pronóstico de lluvias** (una
+página, con fuentes enlazadas) y recomendaciones para la comunidad académica de la
+FACSO (INEE, Marco de Sendai).
 :::
 
 ## Cota actual del río Paraguay
