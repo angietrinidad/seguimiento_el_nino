@@ -17,6 +17,14 @@ probabilidad de persistir hasta inicios de 2027 y **81 %** de alcanzar categorí
 *muy fuerte* en octubre-diciembre de 2026 [@noaa_enso_disc_2026].
 :::
 
+::: {.callout-tip}
+## Informe descargable
+**[⬇ Situación del ENOS 2026-2027 y medidas para las clases en la educación
+universitaria (Word)](../informes/informe-elnino-educacion-universitaria.docx)** —
+situación y evolución del fenómeno, **pronóstico de lluvias** y recomendaciones para
+la continuidad de clases (INEE, Marco de Sendai).
+:::
+
 ## Cota actual del río Paraguay
 
 ```{python}
