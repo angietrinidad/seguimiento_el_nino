@@ -52,7 +52,7 @@ def kpi(icono, label, valor, sub, color):
 
 ACC = "#d8dee2"  # acento neutro uniforme (el color con significado va en las amenazas)
 kpis = "<div style='display:flex;gap:.8em;flex-wrap:wrap;margin:.6em 0 1.2em'>" + "".join([
-    kpi("🌀", "ENOS", "El Niño", "Niño 3.4 +1,2 °C · aviso NOAA", ACC),
+    kpi("🌀", "ENOS", "El Niño", "Niño 3.4 +1,2 °C · muy fuerte en oct-dic (81%)", ACC),
     kpi("🌊", "Río en Asunción", rio_val, rio_sub, ACC),
     kpi("🌧️", "Lluvia hoy", lluvia_val, lluvia_sub, ACC),
     kpi("👥", "Población en riesgo", f"{er.get('poblacion',0):,}".replace(",", "."), "en zona de inundación", ACC),

@@ -10,11 +10,15 @@ de la población. Para el registro de episodios pasados, ver
 [Antecedentes históricos](../amenazas/inundacion-fluvial/index.qmd).
 
 ::: {.callout-important}
-## Estado al día
-**El Niño en curso y en fortalecimiento.** NOAA/CPC mantiene un **Aviso de El
-Niño** (boletín del 9-jul-2026): Niño 3.4 en **+1,2 °C**, con **97 %** de
-probabilidad de persistir hasta inicios de 2027 y **81 %** de alcanzar categoría
-*muy fuerte* en octubre-diciembre de 2026 [@noaa_enso_disc_2026].
+## Estado al día (7 de agosto de 2026)
+**El Niño en curso y en fortalecimiento.** NOAA/CPC mantiene el **Aviso de El Niño**:
+según el último boletín (9-jul-2026, el de agosto se emite a mediados de mes) el
+Niño 3.4 está en **+1,2 °C**, con **97 %** de probabilidad de persistir hasta inicios
+de 2027 y **81 %** de alcanzar categoría *muy fuerte* en octubre-diciembre de 2026
+[@noaa_enso_disc_2026]. En Paraguay, el Gobierno se prepara para un El Niño de
+**"fuerte intensidad"** entre **agosto de 2026 y marzo de 2027**, con lluvias intensas
+y crecidas de los ríos [@infobae_nino_fuerte2026]; la DINAC prevé **precipitaciones por
+encima del promedio** hacia la primavera [@abc_dmh_2026].
 :::
 
 ::: {.callout-tip}
