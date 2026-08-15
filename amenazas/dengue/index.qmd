@@ -31,9 +31,13 @@ de **297.059 en 2024**, frente a 31.647 en 2025 y 6.135 hasta la SE 13 de 2026
   Asunción [académico]{.badge-academico} [@torales_chik2023].
 
 ::: {.callout-note appearance="minimal"}
-La temporada **2025-2026** ha sido leve hasta la SE 13 (126 casos clasificados, sin
-muertes confirmadas), pero la reaparición del DENV-3 y el pronóstico de El Niño
-mantienen el riesgo latente [@dgvs_arbovirosis2026].
+**Al día (jul-2026, DGVS SE 25-27):** en lo que va de 2026 se acumulan **288 casos**
+de dengue, con circulación de **DENV-1** y **sin hospitalizaciones ni fallecidos** en
+las últimas semanas (promedio ~102 notificaciones/semana, tendencia estable);
+el chikungunya suma **18 casos** confirmados (3 importados) [oficial]{.badge-oficial}
+[@dgvs_dengue_jul2026]. Es el **bajo riesgo del invierno**: el verano —con el
+pronóstico de El Niño y la reaparición del DENV-3— mantiene el riesgo latente
+[@dgvs_serotipos2025].
 :::
 
 ## Vínculo con el clima, la inundación y el ENOS
