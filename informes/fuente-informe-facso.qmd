@@ -1,0 +1,292 @@
+---
+title: "El Niño 2026-2027: situación, escenarios y recomendaciones para la Facultad de Ciencias Sociales (UNA)"
+subtitle: "Informe técnico · Proyecto *Desastres Anunciados*"
+author: "Universidad Nacional de Asunción — Facultad de Ciencias Sociales"
+date: "2026-08-15"
+lang: es
+format:
+  docx:
+    toc: true
+    toc-title: "Contenido"
+    number-sections: false
+---
+
+# Situación actual del fenómeno El Niño (ENOS) y hacia dónde evoluciona
+
+**Estado (julio de 2026).** Hay un **Aviso de El Niño** vigente y en fortalecimiento:
+las temperaturas del Pacífico central-oriental están por encima del promedio. La
+NOAA/CPC estima un **81 % de probabilidad de un El Niño muy fuerte en
+octubre–diciembre de 2026** —de los mayores del registro desde 1950— y un **97 % de
+que persista hasta inicios de 2027**
+([NOAA/CPC](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml);
+[IRI](https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/);
+[The Weather Channel](https://weather.com/2026/07/09/news/climate/july-update-super-el-nino-strengthening-noaa)).
+
+**Evolución.** El fenómeno se **intensifica hasta un pico en octubre–diciembre de
+2026**, persiste durante el verano austral y **decae hacia el primer trimestre de
+2027**: un evento de **6 a 9 meses**.
+
+**Pronóstico de lluvias.** El pronóstico estacional favorece **lluvias por encima de lo
+normal** en el sudeste de Sudamérica —Paraguay incluido—. La OMM señala, para
+agosto–octubre de 2026, *"una franja de probabilidad aumentada de lluvias por encima de
+lo normal"*, con El Niño alcanzando anomalías de mar de **~2,9 °C**, pico en noviembre
+([OMM](https://wmo.int/media/update/global-seasonal-climate-update-august-september-october-2026)).
+La **DINAC** expresa su *Perspectiva Climática* en **terciles**; con el El Niño en
+curso, la balanza se inclina al tercil **"por encima de lo normal"** para el centro-sur
+y el este en primavera-verano ([DINAC](https://www.meteorologia.gov.py/publicaciones/)).
+
+**Qué significa para Asunción y el área metropolitana.** El ámbito de interés es el
+**Gran Asunción** (la capital y los municipios de Central), donde se concentran la
+población, los servicios y la comunidad universitaria. Allí la primavera-verano lluviosa
+se traduce en **inundación pluvial urbana** —raudales por lluvia intensa sobre un
+drenaje insuficiente, que anegan calles y los puntos críticos de Asunción y ciudades de
+Central— y en **inundación fluvial** —la crecida del río Paraguay sobre los **bañados
+Norte y Sur y La Chacarita**—, además del **dengue** en el periurbano (agua estancada +
+calor). La **SEN** prepara la respuesta metropolitana (limpieza de cauces y albergues
+con la Municipalidad de Asunción); con el río en **5 m**, unas **2.000 viviendas** de
+Asunción podrían afectarse, y el episodio se extendería hasta **febrero–abril de 2027**
+([DINAC/SEN vía prensa](https://www.abc.com.py/nacionales/2026/07/18/el-nino-como-se-prepara-paraguay-ante-el-inminente-aumento-de-lluvias-e-inundaciones/)).
+
+**Lectura.** El pronóstico es **probabilístico** —inclina la balanza, no fija el día—;
+en el **Gran Asunción** el riesgo operativo son los **eventos de lluvia intensa**
+(temporales y raudales), más probables esta temporada. El desastre está **anunciado**:
+el clima se pronostica y la vulnerabilidad se conoce.
+
+{{< pagebreak >}}
+
+# Escenarios de riesgo para el Gran Asunción (2026-2027)
+
+Los escenarios **no son predicciones**: son **futuros plausibles** que sirven para
+ordenar la preparación. Responden a *"¿qué pasaría si…?"* para que las decisiones se
+tomen **antes** y no durante la emergencia. Cada uno cruza el **clima esperado** con
+**quién está expuesto**, porque el desastre no lo fija la amenaza sola, sino su
+encuentro con la **vulnerabilidad**.
+
+**Cómo se construyen.** Se combinan cuatro piezas, todas con fuente: (1) el
+**pronóstico** del episodio (NOAA/OMM/DINAC) fija la *plausibilidad*; (2) los
+**umbrales de cota** del río Paraguay en Asunción (5,5 m etapa crítica; 7,57 m pico de
+2019; 7,84 m de 2015-16) ordenan la *severidad*; (3) la **exposición modelada** cruza la
+malla de población Kontur con la **huella de inundación** del episodio análogo —derivada
+de imágenes Sentinel-1— y la **desagrega por edad** con la estructura etaria
+departamental (COD-PS 2023); y (4) los **análogos históricos observados** (2019 y
+2015-16) aportan la afectación realmente registrada.
+
+## Los tres escenarios
+
+| Escenario | Detonante hidroclimático | Qué pasaría en el Gran Asunción | Análogo histórico |
+|---|---|---|---|
+| **1 · Esperado** *(más probable)* | Primavera-verano lluviosos con temporales frecuentes; el río sube pero se mantiene bajo la etapa crítica (< 5,5 m) | Inundación **pluvial** recurrente: raudales y anegamientos en puntos críticos, cortes de tránsito y energía, clases suspendidas por jornada; dengue de verano al alza | Temporal del 13-abr-2024 en Asunción y Central |
+| **2 · Severo** | Lluvias sostenidas en la cuenca alta → río a ~7,5 m (nivel de 2019) | Afectación **fluvial**: evacuación de bañados Norte y Sur y La Chacarita; escuelas y servicios de salud de la zona baja anegados; crecida y temporales combinados | Crecida de 2019 (7,57 m; 14.823 familias desplazadas) |
+| **3 · Extremo** | El Niño *muy fuerte* con río ≥ 7,84 m y amenazas encadenadas | Desplazamiento masivo; tensión sobre los servicios; secuencia inundación → temporales → dengue posinundación | El Niño 2015-16 (7,84 m; más de 21.000 desplazados) |
+
+## Población expuesta, desagregada
+
+Exposición **modelada** por escenario (población dentro de la huella de inundación, con
+niñez y adultos mayores, y establecimientos en la zona). Datos a agosto de 2026.
+
+| Indicador | 1 · Esperado (pluvial) | 2 · Severo (~2019) | 3 · Extremo (~2015-16) |
+|---|---:|---:|---:|
+| **Población en la huella** | **10.661** | **40.817** | **34.202** |
+| — niñez (0-14) | s/d | 7.691 | 7.171 |
+| — adultos mayores (65+) | s/d | 2.907 | 3.074 |
+| Servicios de salud en la huella | 0 | 4 | 6 |
+| Centros educativos en la huella | 3 | 14 | 18 |
+| **Afectación observada (histórica)** | s/d | 14.823 familias | > 21.000 personas |
+
+**Cómo leer la tabla.** La severidad se ordena por el **nivel del río** (5,5 < 7,57 <
+7,84 m) y por la **afectación observada**, no por la cifra modelada: la huella satelital
+de 2018-19 abarca más área urbana poblada que la de 2015-16, por lo que *captura* más
+población pese a que 2015-16 tuvo el pico más alto y más desplazados. Las dos cifras
+modeladas son del **mismo orden** (~35-40 mil) y caen dentro de la incertidumbre del
+modelo. **Exposición modelada** (población que vive en la huella) y **afectación
+observada** (desplazados reales) miden cosas distintas y no son intercambiables; además,
+las huellas Sentinel-1 son **preliminares** (sin validación de campo), por lo que las
+cifras modeladas son **órdenes de magnitud**.
+
+## Medidas por escenario
+
+Siguen la lógica de la **acción anticipatoria** (actuar por disparador, antes del
+impacto). Los pasos operativos detallados están en los **Protocolos de actuación** más
+abajo.
+
+**Escenario 1 · Esperado (pluvial).** *Disparador: aviso de temporal de la DINAC.*
+Vigilar avisos; mantener **desagües limpios** y ordenar la **gestión de residuos**;
+señalizar **puntos críticos** de raudal; activar el **protocolo de suspensión de clases**
+por jornada; **control vectorial** preventivo del verano (dengue).
+
+**Escenario 2 · Severo (crecida fluvial).** *Disparador: cota del río en ascenso hacia
+5,5 m.* Activar el **plan de contingencia por inundación** de la SEN según la cota;
+**preavisar y preparar la evacuación** de los bañados (unas 40 mil personas en la
+huella, con ~7.700 niñas y niños); asegurar **albergues** y agua segura; **continuidad
+educativa** para las ~14 escuelas de la zona; **proteger los servicios de salud**
+expuestos; **control vectorial posinundación**.
+
+**Escenario 3 · Extremo (crecida mayor + amenazas encadenadas).** *Disparador: cota ≥
+7,5 m o pronóstico de crecida excepcional.* Escala máxima: **declaración de emergencia**
+(antecedente: Ley N.º 6502/2020) y **coordinación multinivel**; **albergues masivos**;
+salud con **vigilancia de brotes** (dengue, diarreas, respiratorias); **protección de la
+niñez** con apoyo psicosocial; reconstrucción con criterio de **reducción de riesgo** (no
+volver a exponer).
+
+> Detalle y datos en vivo en el sitio: **Escenarios de riesgo** —
+> <https://desastresanunciados.org/escenarios/>.
+
+{{< pagebreak >}}
+
+# Recomendaciones para la comunidad académica de la Facultad de Ciencias Sociales (UNA)
+
+La **Facultad de Ciencias Sociales (FACSO)** no es un actor cualquiera frente a este
+riesgo: las ciencias sociales estudian, precisamente, **cómo una sociedad produce la
+vulnerabilidad** que convierte una amenaza natural en desastre. La facultad puede, a la
+vez, **protegerse** (sostener las clases) y **aportar** (conocimiento, formación y
+extensión). El enfoque es doble —reactivo y proactivo—.
+
+## 1. Continuidad de las clases
+
+- **Plan de contingencia académico** de la facultad, con responsables y **umbrales de
+  decisión definidos por adelantado**.
+- **Criterios claros de suspensión y reprogramación** de clases y exámenes, vinculados a
+  los avisos de la **DINAC** y la **SEN** (no decidir en plena emergencia).
+- **Modalidad híbrida/virtual de respaldo**: aula virtual activa, materiales
+  asincrónicos, foros y lecturas —formatos que las ciencias sociales aprovechan bien—
+  para no perder el ciclo los días sin clases presenciales.
+- **Evaluación flexible** (ventanas de entrega, alternativas ante conectividad
+  intermitente) que no penalice a quien fue afectado por el evento.
+
+## 2. El aula: enseñar el desastre como construcción social
+
+- Usar la coyuntura como **caso de estudio vivo** en las materias (sociología del riesgo,
+  políticas públicas, metodología, trabajo social).
+- Integrar en el currículo la **gestión del riesgo de desastres**, el **cambio
+  climático** y la **vulnerabilidad social**, con enfoque de género y territorio.
+
+## 3. Investigación
+
+- Fortalecer líneas sobre la **construcción social del riesgo**, la **desigualdad
+  territorial** y **género y desastres** —el repositorio *Desastres Anunciados* es un
+  insumo y un ejemplo—.
+- Orientar **tesis y trabajos de grado** hacia los bañados, la agricultura familiar y las
+  comunidades ribereñas afectadas.
+
+## 4. Extensión y vínculo con el territorio
+
+- **Extensión y trabajo social** con las comunidades expuestas (Bañados Norte y Sur, La
+  Chacarita): acompañamiento, sistematización y apoyo a la **acción anticipatoria**.
+- Articular con **SEN, DINAC y la Municipalidad de Asunción**; impulsar un **observatorio
+  social del riesgo** desde la facultad.
+
+## 5. Equidad y bienestar de la comunidad universitaria
+
+- Muchos estudiantes provienen de **zonas expuestas** o dependen de transporte
+  vulnerable: prever **apoyos ante inasistencias** justificadas por la emergencia.
+- Reforzar la **atención en salud** (dengue en el calor; respiratorias en el frío) y el
+  **apoyo psicosocial**, con enfoque de **género y ciclo de vida**.
+- **Campus seguro:** drenaje pluvial, eliminación de criaderos de dengue y rutas de
+  evacuación señalizadas.
+
+## 6. Cronograma sugerido
+
+| Momento | Acciones |
+|---|---|
+| **Antes** (ago–sep 2026) | Plan de contingencia; aula virtual lista; criterios de suspensión; drenaje y criaderos; mapeo de estudiantes en riesgo. |
+| **Durante** (oct 2026–feb 2027) | Seguir avisos DINAC/SEN; alternar modalidad; evaluación flexible; extensión y apoyo a afectados; vigilancia de dengue. |
+| **Después** (mar–abr 2027) | Recuperar clases; evaluar aprendizajes; documentar para el próximo ciclo; devolver a la comunidad lo investigado. |
+
+{{< pagebreak >}}
+
+# Protocolos de actuación (Gran Asunción)
+
+Pautas concretas y accionables. Cada protocolo indica el **disparador** (cuándo se
+activa) y los **pasos** a seguir. Los umbrales se apoyan en los avisos de la DINAC/SEN y
+en la evidencia del proyecto.
+
+## Protocolo 1 · Alerta meteorológica y decisión sobre las clases
+
+**Disparador:** aviso de temporal o lluvia intensa de la DINAC/SEN para el Gran
+Asunción, o ascenso del río hacia niveles de alerta.
+
+1. Un **referente académico designado** (p. ej. Secretaría Académica) monitorea a diario
+   los avisos de la **DINAC/SEN** y el nivel del río.
+2. Ante un **aviso naranja o rojo** o pronóstico de temporal severo, se aplica el
+   criterio predefinido y se decide entre: **presencial · virtual · suspensión con
+   recuperación**.
+3. **Comunicar la decisión con la mayor antelación posible** (idealmente la tarde
+   anterior) por los canales oficiales: aula virtual, correo institucional y redes.
+4. Si se pasa a virtual, activar el **Protocolo 3**.
+
+## Protocolo 2 · Durante un temporal o raudal (seguridad en el campus)
+
+**Disparador:** temporal en curso durante la jornada.
+
+1. **Resguardarse** en lugares techados y seguros; **no circular por zonas anegadas** ni
+   cruzar raudales —láminas de **10–40 cm a 1–3 m/s ya arrastran personas y vehículos**—.
+2. Cortar la energía en sectores inundados; alejarse de tendidos eléctricos caídos.
+3. Al amainar, disponer una **salida ordenada**; evitar avenidas y arroyos desbordados
+   del entorno.
+4. Reportar novedades a la coordinación y **registrar la interrupción**.
+
+## Protocolo 3 · Continuidad pedagógica (jornada no presencial)
+
+1. Cada docente deja disponible ese día **material o clase asincrónica** (lectura guiada,
+   grabación, foro o consigna) en el aula virtual.
+2. **Asistencia y entregas flexibles**: ventana ampliada, sin penalizar a quien fue
+   afectado por el evento.
+3. Habilitar **soporte para estudiantes sin conectividad** (reprogramación, materiales
+   descargables).
+4. **Registrar la actividad** para su reconocimiento y la posterior recuperación.
+
+## Protocolo 4 · Prevención de dengue en el predio
+
+1. **Recorridas semanales** de eliminación de criaderos (recipientes, cubiertas, agua
+   estancada), antes y durante la temporada de lluvias.
+2. Mantener el predio sin acumulación de agua; **mingas ambientales** periódicas.
+3. Ante un **caso sospechoso** en la comunidad, derivar al sistema de salud y notificar
+   según el protocolo del MSPBS.
+
+## Protocolo 5 · Estudiantes en zonas de riesgo (bañados / crecida del río)
+
+1. **Relevar** al inicio del semestre quiénes viven en zonas inundables o dependen de
+   transporte vulnerable.
+2. Habilitar un **canal de aviso de inasistencia justificada** por la emergencia.
+3. Aplicar **flexibilidad académica** y derivar a Bienestar Estudiantil / extensión para
+   el acompañamiento.
+
+{{< pagebreak >}}
+
+# Conclusión
+
+La FACSO tiene una oportunidad única: **su objeto de estudio es, justamente, el riesgo
+socialmente construido**. Anticiparse protege sus clases y, a la vez, la posiciona como
+**referente** en la comprensión y la reducción del desastre anunciado. Actuar sobre lo
+previsible es más barato y más justo que responder tras el daño.
+
+# Fuentes
+
+1. NOAA / Climate Prediction Center. *ENSO Diagnostic Discussion* (Aviso de El Niño,
+   jul-2026). <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml>
+2. IRI (Columbia University). *ENSO Forecast*.
+   <https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/>
+3. The Weather Channel. "El Niño poised to rank among the largest events in the
+   historical record" (09-jul-2026).
+   <https://weather.com/2026/07/09/news/climate/july-update-super-el-nino-strengthening-noaa>
+4. OMM. *Global Seasonal Climate Update — August–September–October 2026*.
+   <https://wmo.int/media/update/global-seasonal-climate-update-august-september-october-2026>
+5. DINAC / DMH. *Boletín de Perspectivas Climáticas* (trimestral).
+   <https://www.meteorologia.gov.py/publicaciones/>
+6. ABC Color. "El Niño en Paraguay: advierten sobre lluvias intensas e inundaciones para
+   finales de 2026" (03-jun-2026).
+   <https://www.abc.com.py/clima/2026/06/03/el-nino-en-paraguay-advierten-sobre-lluvias-intensas-e-inundaciones-para-finales-de-2026/>
+7. ABC Color. "El Niño: ¿cómo se prepara Paraguay?" (18-jul-2026).
+   <https://www.abc.com.py/nacionales/2026/07/18/el-nino-como-se-prepara-paraguay-ante-el-inminente-aumento-de-lluvias-e-inundaciones/>
+8. Municipalidad de Asunción (DGRRD). *La crecida del río desplazó a más de 47 mil
+   personas* (2019). <https://www.asuncion.gov.py/intendencia/la-crecida-del-rio-desplazo-a-mas-de-47-mil-personas>
+9. Última Hora. *Más de 21.000 desplazados por inundaciones en Asunción* (2015-16).
+   <https://www.ultimahora.com/mas-21000-desplazados-inundaciones-asuncion-n1130570.html>
+10. FloodList. *Paraguay – Floods in Asunción* (crecida 2015-16, pico 7,84 m).
+    <https://floodlist.com/south-america/paraguay-floods-asuncion-january-2016>
+11. Escenarios y método de exposición: Proyecto *Desastres Anunciados*.
+    <https://desastresanunciados.org/escenarios/>
+12. INEE. *Normas Mínimas para la Educación en Situaciones de Emergencia*.
+    <https://inee.org/es>
+13. UNDRR. *Marco de Sendai para la Reducción del Riesgo de Desastres 2015-2030*.
+    <https://www.undrr.org/marco-de-sendai>

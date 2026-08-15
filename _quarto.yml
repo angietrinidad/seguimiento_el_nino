@@ -10,6 +10,7 @@ project:
   render:
     - "*.qmd"
     - "**/*.qmd"
+    - "!informes/**"
   resources:
     - datos/exposicion/escuelas_riesgo.xlsx
     - datos/exposicion/salud_riesgo.xlsx
