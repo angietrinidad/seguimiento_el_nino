@@ -190,31 +190,14 @@ f"""| Indicador | Valor |
 Mapa completo e interactivo en
 [Exposición y población en riesgo](../exposicion/index.qmd).
 
-## 4. Escenarios de riesgo (2026-2027) {#escenarios}
+## 4. Escenarios de riesgo (2026-2027)
 
-Los escenarios **no son predicciones**: son **futuros plausibles** que sirven para
-ordenar la preparación. Cada uno combina el **pronóstico** (primavera-verano lluviosos,
-§2) con la **exposición** conocida (§3) y el **registro histórico** (§5). Se ordenan de
-más probable a más severo. El desastre solo se materializa en el punto donde la amenaza
-se encuentra con la vulnerabilidad: por eso el escenario no lo fija únicamente el clima,
-sino **dónde llueve y sobre quién**.
+A partir del pronóstico (§2) y de la exposición (§3), el sitio define **tres escenarios
+plausibles** para el Gran Asunción —*esperado* (pluvial), *severo* (crecida ~2019) y
+*extremo* (~2015-16)—, con su **metodología**, la **población expuesta desagregada** por
+edad y las **medidas a tomar** en cada uno.
 
-| Escenario | Detonante hidroclimático | Qué pasaría en el Gran Asunción | Ancla histórica |
-|---|---|---|---|
-| **1 · Esperado** *(más probable)* | Primavera-verano lluviosos con **temporales frecuentes**; el río sube pero se mantiene **bajo la etapa crítica** (< 5,5 m) | Inundación **pluvial** recurrente: raudales y anegamientos en los puntos críticos, cortes de tránsito y energía, clases suspendidas por jornada; **dengue** de verano al alza | Temporal del 13-abr-2024 en Asunción y Central [@lanacion_2024] |
-| **2 · Severo** | Lluvias **sostenidas en la cuenca alta** → río a ~**7,5 m** (nivel de 2019) | Se activa la afectación **fluvial**: del orden de **14.823 familias** desplazadas de los bañados Norte y Sur y La Chacarita; los establecimientos de salud y educación de la zona de inundación (§3) quedan anegados; crecida y temporales se **combinan** | Crecida de 2019, pico 7,57 m [@muni_2019] |
-| **3 · Extremo** | El Niño *muy fuerte* con río ≥ **7,84 m** y amenazas **encadenadas** | Desplazamiento **masivo** (más de **21.000** personas, como en 2015-16); tensión sobre los servicios; secuencia inundación → temporales → **dengue posinundación** | El Niño 2015-16, pico 7,84 m [@floodlist_2016] |
-
-::: {.callout-note appearance="minimal"}
-**Qué decide entre un escenario y otro.** No es solo *cuánto* llueve, sino **dónde y con
-qué intensidad**. La lluvia sobre la **cuenca alta** (Alto Paraguay–Pantanal) determina
-la crecida del río con **semanas de anticipación** —la ventana para la acción
-anticipatoria—; la **intensidad en minutos** sobre la ciudad decide el **raudal urbano**
-(ver la [escala intensidad-duración](../amenazas/inundacion-pluvial/index.qmd#el-eje-de-duración-idf-simplificada)).
-Los pasos operativos por disparador están en los
-[protocolos de actuación](../recomendaciones/index.qmd) y en el
-[informe para la FACSO](#informe-descargable).
-:::
+➡️ **[Ver los escenarios de riesgo completos](../escenarios/index.qmd)**
 
 ## 5. Cómo se compara con episodios pasados
 

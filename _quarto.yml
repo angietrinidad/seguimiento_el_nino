@@ -64,6 +64,8 @@ website:
             file: agro-ganaderia/index.qmd
       - text: "Situación actual"
         file: situacion-actual/index.qmd
+      - text: "Escenarios"
+        file: escenarios/index.qmd
       - text: "Recomendaciones"
         file: recomendaciones/index.qmd
       - text: "Contexto ENOS"
@@ -109,6 +111,8 @@ website:
             file: agro-ganaderia/index.qmd
           - text: "Situación actual (2026-27)"
             file: situacion-actual/index.qmd
+          - text: "Escenarios de riesgo (2026-27)"
+            file: escenarios/index.qmd
           - text: "Recomendaciones"
             file: recomendaciones/index.qmd
       - section: "📚 Contexto histórico (ENOS)"

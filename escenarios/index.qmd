@@ -1,0 +1,179 @@
+---
+title: "Escenarios de riesgo (2026-2027)"
+subtitle: "Futuros plausibles para el Gran Asunción: cómo se construyeron, a quién exponen y qué hacer en cada uno"
+date: last-modified
+date-format: "D [de] MMMM [de] YYYY"
+---
+
+Los escenarios **no son predicciones ni pronósticos**: son **futuros plausibles** que
+sirven para **ordenar la preparación**. Responden a la pregunta *"¿qué pasaría si…?"*
+para que las decisiones —de la comunidad, de la universidad, del Estado— se tomen
+**antes** y no durante la emergencia. Se apoyan en la premisa del sitio: el desastre no
+lo fija la amenaza sola, sino su encuentro con la **vulnerabilidad**; por eso cada
+escenario cruza el **clima esperado** con **quién está expuesto**.
+
+Se definen tres, ordenados por **severidad creciente** según el nivel del río Paraguay
+en Asunción —un umbral objetivo y con fuente— y anclados en episodios **realmente
+ocurridos** que funcionan como análogos.
+
+## Cómo se construyeron (metodología) {#metodologia}
+
+Cada escenario combina **cuatro piezas**, todas con fuente verificable:
+
+1. **Pronóstico del episodio en curso.** El estado y la probabilidad del El Niño
+   2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,2 °C, 81 % de
+   probabilidad de categoría *muy fuerte* en octubre-diciembre de 2026, con primavera
+   lluviosa y riesgo de crecidas [@noaa_enso_disc_2026; @wmo_update_2026; @abc_dmh_2026].
+   El pronóstico fija la **plausibilidad** (qué tan esperable es cada escenario), no el
+   número de afectados.
+
+2. **Umbrales del río Paraguay en Asunción.** La severidad se ordena por la **cota**,
+   un dato objetivo de la DINAC: **5,5 m** marca la etapa crítica (inicio de afectación
+   en zonas bajas); **7,57 m** fue el pico de la crecida de 2019; **7,84 m** el de
+   2015-16 [@floodlist_2016; @muni_2019]. Ver los
+   [umbrales de referencia](../amenazas/inundacion-fluvial/index.qmd#umbrales).
+
+3. **Exposición modelada (¿quién está en la huella?).** Para cada escenario fluvial se
+   cruza la **malla de población Kontur** (H3, ~400 m) con la **huella de inundación**
+   del episodio análogo —derivada por nosotros de imágenes **Sentinel-1**— más un
+   *buffer* de ~550 m para barrios adyacentes, y se **desagrega por edad** aplicando la
+   estructura etaria departamental (COD-PS 2023, niñez 0-14 y mayores 65+). Los
+   servicios de **salud** (MSPBS) y **educación** (MEC) se cuentan por su ubicación
+   oficial dentro de la huella. Es la **misma metodología** del
+   [mapa de exposición](../exposicion/index.qmd); el script es
+   `scripts/escenarios_poblacion.py`. Para el escenario **pluvial** no hay huella
+   fluvial: la población proviene del **corredor de susceptibilidad pluvial** derivado
+   del DEM (`analisis_pluvial_dem.py`, *buffer* 100 m).
+
+4. **Análogos históricos observados.** Cada escenario se ata a un episodio ocurrido
+   —2019 y 2015-16— del que existe un **conteo oficial de afectación** (familias o
+   personas desplazadas), que se muestra junto a la exposición modelada como contraste.
+
+::: {.callout-important appearance="minimal"}
+**Qué es y qué no es cada cifra.** La **exposición modelada** cuenta la población que
+*vive dentro de la huella* (un límite superior de personas potencialmente afectadas);
+la **afectación observada** cuenta *desplazados reales* reportados por la autoridad.
+Miden cosas distintas y no son intercambiables. Además, las huellas Sentinel-1 son
+**preliminares** (sin validación de campo), por lo que las cifras modeladas son
+**órdenes de magnitud**, no conteos exactos.
+:::
+
+## Los tres escenarios {#tabla}
+
+| Escenario | Detonante hidroclimático | Qué pasaría en el Gran Asunción | Análogo histórico |
+|---|---|---|---|
+| **1 · Esperado** *(más probable)* | Primavera-verano lluviosos con **temporales frecuentes**; el río sube pero se mantiene **bajo la etapa crítica** (< 5,5 m) | Inundación **pluvial** recurrente: raudales y anegamientos en los puntos críticos, cortes de tránsito y energía, clases suspendidas por jornada; **dengue** de verano al alza | Temporal del 13-abr-2024 en Asunción y Central [@lanacion_2024] |
+| **2 · Severo** | Lluvias **sostenidas en la cuenca alta** → río a ~**7,5 m** (nivel de 2019) | Afectación **fluvial**: evacuación de bañados Norte y Sur y La Chacarita; escuelas y servicios de salud de la zona baja anegados; crecida y temporales se **combinan** | Crecida de 2019 (7,57 m; **14.823 familias** desplazadas) [@muni_2019] |
+| **3 · Extremo** | El Niño *muy fuerte* con río ≥ **7,84 m** y amenazas **encadenadas** | Desplazamiento **masivo**; tensión sobre los servicios; secuencia inundación → temporales → **dengue posinundación** | El Niño 2015-16 (7,84 m; **más de 21.000** desplazados) [@floodlist_2016; @uh_desplazados_2015] |
+
+## Población expuesta, desagregada {#poblacion}
+
+Exposición **modelada** por escenario (población dentro de la huella, con niñez y
+adultos mayores; establecimientos de salud y educación en la zona):
+
+```{python}
+#| label: tabla-poblacion
+#| echo: false
+import json
+from IPython.display import Markdown
+
+esc = json.load(open("datos/exposicion/escenarios_poblacion.json", encoding="utf-8"))
+def f(n):
+    return f"{n:,}".replace(",", ".") if isinstance(n, int) else n
+plu, sev, ext = esc["esperado_pluvial"], esc["severo"], esc["extremo"]
+
+Markdown(f"""
+| Indicador | 1 · Esperado (pluvial) | 2 · Severo (~2019) | 3 · Extremo (~2015-16) |
+|---|---:|---:|---:|
+| **Población en la huella** | **{f(plu['poblacion'])}** | **{f(sev['poblacion'])}** | **{f(ext['poblacion'])}** |
+| — niñez (0-14) | s/d | {f(sev['ninez'])} | {f(ext['ninez'])} |
+| — adultos mayores (65+) | s/d | {f(sev['mayores'])} | {f(ext['mayores'])} |
+| Servicios de salud en la huella | {plu['salud']} | {sev['salud']} | {ext['salud']} |
+| Centros educativos en la huella | {plu['escuelas']} | {sev['escuelas']} | {ext['escuelas']} |
+| **Afectación observada (histórica)** | s/d | 14.823 familias | > 21.000 personas |
+""")
+```
+
+::: {.callout-note appearance="minimal"}
+**Cómo leer la tabla.** La severidad se ordena por el **nivel del río** (5,5 < 7,57 <
+7,84 m) y por la **afectación observada**, no por la cifra modelada: la huella
+Sentinel-1 de 2018-19 abarca más área urbana poblada que la de 2015-16, por lo que
+*captura* más población pese a que 2015-16 tuvo el pico más alto y más desplazados. Las
+dos cifras modeladas son del **mismo orden** (~35-40 mil) y caen dentro de la
+incertidumbre del modelo. La niñez y los adultos mayores del escenario pluvial figuran
+como `s/d` porque el corredor DEM no se desagregó por edad.
+:::
+
+Detalle de establecimientos (nombre, matrícula, distrito) en el
+[mapa de exposición](../exposicion/index.qmd) y sus planillas descargables.
+
+## Medidas por escenario {#medidas}
+
+Las medidas siguen la lógica de la **acción anticipatoria**: actuar por
+**disparador** (el aviso, la cota) antes del impacto. Se detallan por fase y remiten a
+las [recomendaciones por amenaza](../recomendaciones/index.qmd) y a los
+[protocolos de actuación](../recomendaciones/index.qmd) del informe FACSO.
+
+### Escenario 1 · Esperado (pluvial) {#medidas-1}
+
+*Disparador: aviso de temporal de la DINAC / acumulados intensos en minutos.*
+
+- **Anticipación.** Vigilar los avisos de la DINAC; mantener **desagües y bocas de
+  tormenta limpios** y ordenar la **gestión de residuos** (los recipientes y la basura
+  taponan y crean criaderos); señalizar y difundir los **puntos críticos** de raudal
+  [@dgrrd_prevencion; @lanacion_puntos2025].
+- **Respuesta.** Activar el **protocolo de suspensión de clases** por jornada; evitar
+  circular por zonas de raudal; asistencia a personas atrapadas.
+- **Recuperación.** **Control vectorial** preventivo del verano (eliminación de
+  criaderos, ante el riesgo de dengue con El Niño) [@paho_dengue_action2024].
+
+### Escenario 2 · Severo (crecida fluvial) {#medidas-2}
+
+*Disparador: cota del río en ascenso hacia la etapa crítica (5,5 m) y sostenida.*
+
+- **Anticipación.** Activar el **plan de contingencia por inundación** de la SEN según
+  la cota; **preavisar y preparar la evacuación** de los bañados Norte y Sur y La
+  Chacarita; asegurar **albergues** y agua segura; registrar a las familias expuestas
+  (unas **40 mil personas** en la huella, con ~7.700 niñas y niños)
+  [@sen_plan_inund; @sen_plan2026].
+- **Respuesta.** **Evacuación preventiva** a albergues; **continuidad educativa** para
+  las ~14 escuelas de la zona baja (aulas alternativas); **protección de los servicios
+  de salud** expuestos y de la cadena de frío; saneamiento y agua segura
+  [@esfera; @unicef_py_inund].
+- **Recuperación.** Retorno seguro, rehabilitación de escuelas y centros de salud, y
+  **control vectorial posinundación** (el agua estancada dispara el dengue).
+
+### Escenario 3 · Extremo (crecida mayor + amenazas encadenadas) {#medidas-3}
+
+*Disparador: cota ≥ 7,5 m y/o pronóstico de crecida excepcional en la cuenca alta.*
+
+- **Anticipación.** Escala máxima de preparación: **declaración de emergencia** (existe
+  antecedente legal, Ley N.º 6502/2020) y **coordinación multinivel** (SEN, municipios,
+  salud, educación); logística de **albergues masivos** y reservas
+  [@ley6502_2020; @sen_plan2026].
+- **Respuesta.** Evacuación masiva; atención de salud con **vigilancia de brotes**
+  (dengue, diarreas, respiratorias); **protección de la niñez** con apoyo psicosocial;
+  aseguramiento de agua y saneamiento a gran escala [@unicef_py_inund; @esfera].
+- **Recuperación.** Reconstrucción con criterio de **reducción de riesgo** (no volver a
+  exponer), control vectorial sostenido y acompañamiento a los medios de vida.
+
+## Fuentes y límites {#fuentes}
+
+- **Pronóstico:** NOAA/CPC [@noaa_enso_disc_2026], OMM [@wmo_update_2026], DINAC/DMH
+  [@abc_dmh_2026].
+- **Umbrales y análogos:** cotas y picos DINAC/press [@floodlist_2016]; afectación 2019
+  (Municipalidad de Asunción) [@muni_2019]; afectación 2015-16 (Última Hora / estimación
+  gubernamental) [@uh_desplazados_2015].
+- **Exposición:** población Kontur (H3); estructura etaria COD-PS 2023; salud MSPBS;
+  educación MEC; huellas de inundación Sentinel-1 (este repositorio). Método en
+  [Exposición](../exposicion/index.qmd) y en `scripts/escenarios_poblacion.py`.
+
+::: {.vacio}
+**Límites.** Las huellas Sentinel-1 son **preliminares** y no validadas en campo (ver el
+[vacío de la capa de inundación](../amenazas/inundacion-fluvial/index.qmd#vacio-capa)):
+las cifras modeladas son órdenes de magnitud. Falta una **capa oficial validada** de
+inundación por nivel del río que permita una curva población-vs-cota continua; y la
+desagregación por edad del escenario pluvial. La afectación observada y la exposición
+modelada **no son comparables** término a término (desplazados reales vs población en la
+huella).
+:::
