@@ -61,6 +61,17 @@ def cargar_puntos(path, campo_nombre):
 salud = cargar_puntos(os.path.join(OFI, "mspbs_salud.geojson"), "nombre")
 escuelas = cargar_puntos(os.path.join(OFI, "mec_escuelas_oficiales.geojson"), "nombre")
 
+# Establecimientos educativos YA expuestos, con matrícula oficial ya resuelta
+# (evita re-consultar el endpoint MEC tc=13). Fuente: procesar_exposicion.py.
+exp_edu = []
+_exp_path = os.path.join(GEO, "expuestos-inundacion.geojson")
+if os.path.exists(_exp_path):
+    for f in json.load(open(_exp_path, encoding="utf-8"))["features"]:
+        p = f["properties"]
+        if p.get("clase") == "educacion":
+            lon, lat = f["geometry"]["coordinates"]
+            exp_edu.append((lon, lat, p.get("matricula") or 0))
+
 def huella_zona(archivos):
     geoms = []
     for fn in archivos:
@@ -90,8 +101,10 @@ def poblacion_en(zona):
     pz = prep(zona)
     ns = sum(1 for lon, lat, _ in salud if pz.contains(Point(lon, lat)))
     ne = sum(1 for lon, lat, _ in escuelas if pz.contains(Point(lon, lat)))
+    matricula = sum(m for lon, lat, m in exp_edu if pz.contains(Point(lon, lat)))
     return {"poblacion": int(round(tot)), "ninez": int(round(ninez)),
-            "mayores": int(round(may)), "salud": ns, "escuelas": ne}
+            "mayores": int(round(may)), "salud": ns, "escuelas": ne,
+            "matricula": int(matricula)}
 
 ESCENARIOS = {
     "severo":  {"huellas": ["inundacion-2018-19-s1.geojson"],

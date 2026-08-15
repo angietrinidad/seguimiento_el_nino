@@ -90,6 +90,7 @@ Markdown(f"""
 | — adultos mayores (65+) | s/d | {f(sev['mayores'])} | {f(ext['mayores'])} |
 | Servicios de salud en la huella | {plu['salud']} | {sev['salud']} | {ext['salud']} |
 | Centros educativos en la huella | {plu['escuelas']} | {sev['escuelas']} | {ext['escuelas']} |
+| — matrícula en esos centros | s/d | {f(sev.get('matricula', 0))} | {f(ext.get('matricula', 0))} |
 | **Afectación observada (histórica)** | s/d | 14.823 familias | > 21.000 personas |
 """)
 ```
@@ -220,6 +221,34 @@ Markdown(
   87.585 millones** (ejecutado G. 24.677 millones) [@mef_sen2015].
 - **Reconstrucción:** el BID prestó **USD 35 millones** a Paraguay para reparar daños de
   El Niño 2015-16 (caminos, drenaje, obras de protección, albergues) [@bid_elnino2016].
+
+### Agricultura y ganadería {#agro}
+
+La crecida no solo desplaza personas: anega **cultivos y ganado** en las mismas zonas
+ribereñas. Lo expuesto por escenario (severo y extremo alcanzan estos departamentos):
+
+- **Ñeembucú (sur):** agricultura **familiar** y **ganadería** sobre la llanura de
+  inundación. Es un caso de **riesgo construido**: los productores atribuyen la
+  "**inundación artificial**" a los terraplenes y el represamiento de cauces de las
+  **grandes arroceras** (el arroz con riego llegó a **266.327 ha** en el país) —el pequeño
+  productor absorbe el costo de una infraestructura del agronegocio—
+  [prensa]{.badge-prensa} [@abc_neembucu_arroceras2025; @cta_riadas2025].
+- **Chaco (Pdte. Hayes, Alto Paraguay, Boquerón):** **ganadería extensiva** sobre campos
+  bajos; en abril de 2026 hubo **miles de vacunos en el agua** (el hato nacional ronda los
+  **13 millones de cabezas**).
+- **Central y Gran Asunción:** **horticultura** periurbana y granjas anegadas.
+
+Análisis completo de escalas, rubros y vulnerabilidad diferencial en
+[Agricultura y ganadería](../agro-ganaderia/index.qmd).
+
+::: {.vacio}
+**Monto del daño agropecuario por inundación: sin fuente.** No hay una evaluación que
+cuantifique en dinero las pérdidas de cultivos y ganado por las crecidas de Paraguay. La
+cifra de **~USD 3.000 millones** que circula es de la **sequía** 2021/22 [@lanacion_agro2022]
+—otra amenaza—, **no** de inundación: no se traslada. En el molde CEPAL (río Salado 2003)
+la **agricultura y ganadería fue el mayor sector de daño** (USD 364 M de 1.028 M)
+[@cepal_salado2018], lo que indica el peso probable del sector, no un monto para Paraguay.
+:::
 
 ### Daños y pérdidas monetarios {#danos-perdidas}
 
