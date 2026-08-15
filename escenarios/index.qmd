@@ -107,6 +107,110 @@ como `s/d` porque el corredor DEM no se desagregó por edad.
 Detalle de establecimientos (nombre, matrícula, distrito) en el
 [mapa de exposición](../exposicion/index.qmd) y sus planillas descargables.
 
+## Afectación a escala nacional {#nacional}
+
+El modelo anterior es del **Gran Asunción**. Pero la crecida del río Paraguay afecta a
+**muchos departamentos** a la vez. Para el nivel país no usamos nuestra huella satelital
+(que cubre el corredor metropolitano), sino la **afectación oficial registrada** en los
+episodios análogos:
+
+| Escenario | Análogo | Afectación **nacional** | Departamentos |
+|---|---|---|---|
+| **1 · Esperado** | Temporales de 2024 | **> 1.500** familias (abr, pluvial) a **> 2.700** familias (may, sur) [@lanacion_2024; @infobae_sur2024] | Central y Asunción; Ñeembucú y Misiones |
+| **2 · Severo** | Crecida de 2019 | **62.119 familias** (~273.000 personas) [@eldiario_sen2019; @shelterprojects_py2019] | **9**: Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay |
+| **3 · Extremo** | El Niño 2015-16 | **136.450 personas / 27.290 familias**; ≥130.000 evacuados [@ifrc_mdrpy018_2016] | **10 de 27** (emergencia en 7: Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central) |
+
+::: {.callout-important}
+**Hallazgo: la magnitud nacional no sigue la intensidad del El Niño ni la cota en
+Asunción.** La crecida de **2019** —con un El Niño **débil**— afectó a **más familias en
+el país** (62.119) que el El Niño **muy fuerte** de **2015-16** (27.290), porque lo que
+manda es **dónde y cuánto llueve en la cuenca alta**, no la fuerza del ENOS. Por eso el
+**escenario extremo** se define como el **peor caso compuesto**: el pico de cota más alto
+en Asunción (tipo 2015-16) coincidiendo con un alcance de cuenca amplio (tipo 2019 **o
+mayor**) y amenazas encadenadas. Es coherente con la tesis del sitio: el desastre se
+**construye**, no lo fija el clima solo.
+:::
+
+## Localidades afectadas por escenario {#localidades}
+
+| Escenario | Dónde afecta |
+|---|---|
+| **1 · Esperado** (pluvial) | Puntos bajos urbanos de **Asunción** y **Central** (arroyos Mburicaó, Ferreira, Itay); en el análogo 2024, también el sur: **Pilar**, bajo **Ñeembucú**, **Misiones** |
+| **2 · Severo** (~2019) | **Gran Asunción:** Asunción (bañados **Norte** y **Sur**, **La Chacarita**), **Villeta**, **Limpio**, **Mariano Roque Alonso**; **Villa Hayes** y **José Falcón** (Pdte. Hayes). **País (9 deptos):** Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay |
+| **3 · Extremo** (~2015-16 y mayor) | **Gran Asunción:** Asunción (bañados y La Chacarita; **124 albergues** en 2015-16) y Central. **País (10 deptos):** Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central — más el corredor ribereño (**Pilar**, **Alberdi**, **Fuerte Olimpo**) |
+
+Las localidades del Gran Asunción provienen de los establecimientos oficiales (MEC/MSPBS)
+dentro de la huella; las nacionales, de las declaraciones de emergencia de la SEN y del
+llamamiento de la Cruz Roja de cada episodio.
+
+## Daños, pérdidas y costo de respuesta {#costos}
+
+En la metodología **DALA/PDNA de la CEPAL** se distinguen tres cosas: **daños** (acervos
+destruidos: viviendas, escuelas, caminos), **pérdidas** (flujos que se dejan de producir:
+cosechas, comercio, servicios) y **necesidades / costo de respuesta** (lo que cuesta
+atender la emergencia). Aquí estimamos lo **acotable con fuente**; lo demás se marca como
+vacío, no se inventa.
+
+### Costo de respuesta (estimación paramétrica) {#costo-respuesta}
+
+Se estima con un **costo unitario verificado**: el **kit de albergue + artículos de
+primera necesidad** costó **USD 100 por hogar** (costo directo) a **USD 200 por hogar**
+(costo total) en la respuesta a la inundación de Asunción 2019-20 [@shelterprojects_py2019].
+Multiplicado por las familias afectadas de cada escenario:
+
+```{python}
+#| label: costo-respuesta
+#| echo: false
+from IPython.display import Markdown
+
+# familias afectadas (nacional) por escenario, de fuentes oficiales
+esc = [
+    ("1 · Esperado", (1500, 2700), "Temporales 2024 (SEN vía prensa)"),
+    ("2 · Severo",   (62119, 62119), "Crecida 2019 (SEN)"),
+    ("3 · Extremo",  (27290, 62119), "2015-16 (piso) → ≥ 2019 (peor caso)"),
+]
+UNIT = (100, 200)  # USD por hogar, Shelter Projects Paraguay 2019-20
+
+def usd(n):
+    return f"{n/1_000_000:.2f}".replace(".", ",")
+
+filas = ""
+for nombre, (flo, fhi), fuente in esc:
+    clo, chi = flo * UNIT[0], fhi * UNIT[1]
+    fam = f"{flo:,}".replace(",", ".") if flo == fhi else f"{flo:,}–{fhi:,}".replace(",", ".")
+    filas += f"| **{nombre}** | {fam} | **USD {usd(clo)}–{usd(chi)} M** | {fuente} |\n"
+
+Markdown(
+"| Escenario | Familias afectadas (nacional) | Costo directo de respuesta (kits, USD 100–200/hogar) | Base |\n"
+"|---|---:|---:|---|\n" + filas)
+```
+
+**Referencias de respuesta real** (para contrastar el orden de magnitud):
+
+- **Llamamiento de la Cruz Roja 2015-16:** CHF **2.084.871** para 24.560 personas objetivo
+  (≈ CHF 85/persona) [@ifrc_mdrpy018_2016]; en 2023, transferencia monetaria de **CHF 350
+  por familia** [@ifrc_mdrpy022_2023].
+- **Estado (SEN):** el Plan Financiero de la SEN del 1er semestre de 2015 fue de **G.
+  87.585 millones** (ejecutado G. 24.677 millones) [@mef_sen2015].
+- **Reconstrucción:** el BID prestó **USD 35 millones** a Paraguay para reparar daños de
+  El Niño 2015-16 (caminos, drenaje, obras de protección, albergues) [@bid_elnino2016].
+
+### Daños y pérdidas monetarios {#danos-perdidas}
+
+::: {.vacio}
+**No se estiman en guaraníes/dólares: no existe fuente.** Tras la búsqueda (ago-2026)
+**no se localizó ninguna evaluación de daños y pérdidas (DALA) de la CEPAL o el Banco
+Mundial para una inundación de Paraguay**; el Perfil de Riesgo del BID (2018) tiene
+pérdida anual esperada por inundación, pero su PDF está bloqueado. Poner un monto de
+daños o pérdidas para Paraguay sería **fabricarlo**. Lo que sí existe como **molde
+metodológico** es la evaluación CEPAL de una inundación análoga en la misma cuenca —el
+**río Salado, Santa Fe (Argentina), 2003: USD 1.028 millones, 35 % daños y 65 %
+pérdidas**, concentrados en agricultura/ganadería, industria/comercio y transporte
+[@cepal_salado2018]—, que indica **dónde** se concentraría el daño, no cuánto en
+Paraguay. Cerrar este vacío requiere una **evaluación DALA post-evento** o el acceso a la
+pérdida anual esperada del Perfil BID.
+:::
+
 ## Medidas por escenario {#medidas}
 
 Las medidas siguen la lógica de la **acción anticipatoria**: actuar por
