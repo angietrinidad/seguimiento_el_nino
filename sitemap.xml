@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://desastresanunciados.org/situacion-actual/index.html</loc>
-    <lastmod>2026-08-15T20:21:13.004Z</lastmod>
+    <lastmod>2026-08-15T20:38:33.786Z</lastmod>
   </url>
   <url>
     <loc>https://desastresanunciados.org/metodologia.html</loc>
@@ -17,7 +17,47 @@
     <lastmod>2026-07-19T21:39:35.252Z</lastmod>
   </url>
   <url>
-    <loc>https://desastresanunciados.org/contexto-paraguay/departamentos/index.html</loc>
+    <loc>https://desastresanunciados.org/contexto-paraguay/nacional.html</loc>
+    <lastmod>2026-07-19T14:21:42.543Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/contexto-asuncion/index.html</loc>
+    <lastmod>2026-07-19T14:21:42.543Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/sequia/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.234Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/inundacion-fluvial/index.html</loc>
+    <lastmod>2026-07-19T21:39:21.218Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/incendios/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.229Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/dengue/index.html</loc>
+    <lastmod>2026-08-15T20:13:28.920Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/admin/index.html</loc>
+    <lastmod>2026-07-18T17:50:40.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/agro-ganaderia/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.217Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/frio/index.html</loc>
+    <lastmod>2026-07-19T14:09:37.228Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/index.html</loc>
+    <lastmod>2026-07-19T14:15:52.096Z</lastmod>
+  </url>
+  <url>
+    <loc>https://desastresanunciados.org/amenazas/inundacion-pluvial/index.html</loc>
     <lastmod>2026-07-19T14:21:42.543Z</lastmod>
   </url>
   <url>
@@ -25,48 +65,12 @@
     <lastmod>2026-07-19T14:21:42.543Z</lastmod>
   </url>
   <url>
-    <loc>https://desastresanunciados.org/amenazas/inundacion-pluvial/index.html</loc>
+    <loc>https://desastresanunciados.org/contexto-paraguay/departamentos/index.html</loc>
     <lastmod>2026-07-19T14:21:42.543Z</lastmod>
   </url>
   <url>
-    <loc>https://desastresanunciados.org/amenazas/index.html</loc>
-    <lastmod>2026-07-19T14:15:52.096Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/amenazas/frio/index.html</loc>
-    <lastmod>2026-07-19T14:09:37.228Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/agro-ganaderia/index.html</loc>
-    <lastmod>2026-07-19T14:09:37.217Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/admin/index.html</loc>
-    <lastmod>2026-07-18T17:50:40.841Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/amenazas/dengue/index.html</loc>
-    <lastmod>2026-08-15T20:13:28.920Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/amenazas/incendios/index.html</loc>
-    <lastmod>2026-07-19T14:09:37.229Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/amenazas/inundacion-fluvial/index.html</loc>
-    <lastmod>2026-07-19T21:39:21.218Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/amenazas/sequia/index.html</loc>
-    <lastmod>2026-07-19T14:09:37.234Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/contexto-asuncion/index.html</loc>
-    <lastmod>2026-07-19T14:21:42.543Z</lastmod>
-  </url>
-  <url>
-    <loc>https://desastresanunciados.org/contexto-paraguay/nacional.html</loc>
-    <lastmod>2026-07-19T14:21:42.543Z</lastmod>
+    <loc>https://desastresanunciados.org/escenarios/index.html</loc>
+    <lastmod>2026-08-15T20:38:12.143Z</lastmod>
   </url>
   <url>
     <loc>https://desastresanunciados.org/fuentes/index.html</loc>
