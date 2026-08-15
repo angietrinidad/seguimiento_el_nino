@@ -1189,6 +1189,42 @@
     ]
   },
   {
+    "objectID": "escenarios/index.html#nacional",
+    "href": "escenarios/index.html#nacional",
+    "title": "Escenarios de riesgo (2026-2027)",
+    "section": "Afectación a escala nacional",
+    "text": "Afectación a escala nacional\nEl modelo anterior es del Gran Asunción. Pero la crecida del río Paraguay afecta a muchos departamentos a la vez. Para el nivel país no usamos nuestra huella satelital (que cubre el corredor metropolitano), sino la afectación oficial registrada en los episodios análogos:\n\n\n\n\n\n\n\n\n\nEscenario\nAnálogo\nAfectación nacional\nDepartamentos\n\n\n\n\n1 · Esperado\nTemporales de 2024\n&gt; 1.500 familias (abr, pluvial) a &gt; 2.700 familias (may, sur) (Infobae / EFE, 2024; La Nación (Paraguay), 2024)\nCentral y Asunción; Ñeembucú y Misiones\n\n\n2 · Severo\nCrecida de 2019\n62.119 familias (~273.000 personas) (El Diario / EFE, 2019; Global Shelter Cluster — Shelter Projects, 2021)\n9: Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay\n\n\n3 · Extremo\nEl Niño 2015-16\n136.450 personas / 27.290 familias; ≥130.000 evacuados (IFRC / Cruz Roja Paraguaya, 2016)\n10 de 27 (emergencia en 7: Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central)\n\n\n\n\n\n\n\n\n\nImportante\n\n\n\nHallazgo: la magnitud nacional no sigue la intensidad del El Niño ni la cota en Asunción. La crecida de 2019 —con un El Niño débil— afectó a más familias en el país (62.119) que el El Niño muy fuerte de 2015-16 (27.290), porque lo que manda es dónde y cuánto llueve en la cuenca alta, no la fuerza del ENOS. Por eso el escenario extremo se define como el peor caso compuesto: el pico de cota más alto en Asunción (tipo 2015-16) coincidiendo con un alcance de cuenca amplio (tipo 2019 o mayor) y amenazas encadenadas. Es coherente con la tesis del sitio: el desastre se construye, no lo fija el clima solo.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Escenarios de riesgo (2026-27)"
+    ]
+  },
+  {
+    "objectID": "escenarios/index.html#localidades",
+    "href": "escenarios/index.html#localidades",
+    "title": "Escenarios de riesgo (2026-2027)",
+    "section": "Localidades afectadas por escenario",
+    "text": "Localidades afectadas por escenario\n\n\n\n\n\n\n\nEscenario\nDónde afecta\n\n\n\n\n1 · Esperado (pluvial)\nPuntos bajos urbanos de Asunción y Central (arroyos Mburicaó, Ferreira, Itay); en el análogo 2024, también el sur: Pilar, bajo Ñeembucú, Misiones\n\n\n2 · Severo (~2019)\nGran Asunción: Asunción (bañados Norte y Sur, La Chacarita), Villeta, Limpio, Mariano Roque Alonso; Villa Hayes y José Falcón (Pdte. Hayes). País (9 deptos): Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay\n\n\n3 · Extremo (~2015-16 y mayor)\nGran Asunción: Asunción (bañados y La Chacarita; 124 albergues en 2015-16) y Central. País (10 deptos): Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central — más el corredor ribereño (Pilar, Alberdi, Fuerte Olimpo)\n\n\n\nLas localidades del Gran Asunción provienen de los establecimientos oficiales (MEC/MSPBS) dentro de la huella; las nacionales, de las declaraciones de emergencia de la SEN y del llamamiento de la Cruz Roja de cada episodio.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Escenarios de riesgo (2026-27)"
+    ]
+  },
+  {
+    "objectID": "escenarios/index.html#costos",
+    "href": "escenarios/index.html#costos",
+    "title": "Escenarios de riesgo (2026-2027)",
+    "section": "Daños, pérdidas y costo de respuesta",
+    "text": "Daños, pérdidas y costo de respuesta\nEn la metodología DALA/PDNA de la CEPAL se distinguen tres cosas: daños (acervos destruidos: viviendas, escuelas, caminos), pérdidas (flujos que se dejan de producir: cosechas, comercio, servicios) y necesidades / costo de respuesta (lo que cuesta atender la emergencia). Aquí estimamos lo acotable con fuente; lo demás se marca como vacío, no se inventa.\n\nCosto de respuesta (estimación paramétrica)\nSe estima con un costo unitario verificado: el kit de albergue + artículos de primera necesidad costó USD 100 por hogar (costo directo) a USD 200 por hogar (costo total) en la respuesta a la inundación de Asunción 2019-20 (Global Shelter Cluster — Shelter Projects, 2021). Multiplicado por las familias afectadas de cada escenario:\n\n\n\n\n\n\n\n\n\n\n\nEscenario\nFamilias afectadas (nacional)\nCosto directo de respuesta (kits, USD 100–200/hogar)\nBase\n\n\n\n\n1 · Esperado\n1.500–2.700\nUSD 0,15–0,54 M\nTemporales 2024 (SEN vía prensa)\n\n\n2 · Severo\n62.119\nUSD 6,21–12,42 M\nCrecida 2019 (SEN)\n\n\n3 · Extremo\n27.290–62.119\nUSD 2,73–12,42 M\n2015-16 (piso) → ≥ 2019 (peor caso)\n\n\n\n\n\nReferencias de respuesta real (para contrastar el orden de magnitud):\n\nLlamamiento de la Cruz Roja 2015-16: CHF 2.084.871 para 24.560 personas objetivo (≈ CHF 85/persona) (IFRC / Cruz Roja Paraguaya, 2016); en 2023, transferencia monetaria de CHF 350 por familia (IFRC / Cruz Roja Paraguaya, 2023).\nEstado (SEN): el Plan Financiero de la SEN del 1er semestre de 2015 fue de G. 87.585 millones (ejecutado G. 24.677 millones) (Ministerio de Hacienda (MEF) — Paraguay, 2015).\nReconstrucción: el BID prestó USD 35 millones a Paraguay para reparar daños de El Niño 2015-16 (caminos, drenaje, obras de protección, albergues) (Banco Interamericano de Desarrollo (BID), 2016).\n\n\n\nDaños y pérdidas monetarios\n\nNo se estiman en guaraníes/dólares: no existe fuente. Tras la búsqueda (ago-2026) no se localizó ninguna evaluación de daños y pérdidas (DALA) de la CEPAL o el Banco Mundial para una inundación de Paraguay; el Perfil de Riesgo del BID (2018) tiene pérdida anual esperada por inundación, pero su PDF está bloqueado. Poner un monto de daños o pérdidas para Paraguay sería fabricarlo. Lo que sí existe como molde metodológico es la evaluación CEPAL de una inundación análoga en la misma cuenca —el río Salado, Santa Fe (Argentina), 2003: USD 1.028 millones, 35 % daños y 65 % pérdidas, concentrados en agricultura/ganadería, industria/comercio y transporte (CEPAL, 2018)—, que indica dónde se concentraría el daño, no cuánto en Paraguay. Cerrar este vacío requiere una evaluación DALA post-evento o el acceso a la pérdida anual esperada del Perfil BID.",
+    "crumbs": [
+      "Inicio",
+      "👥 Exposición y situación",
+      "Escenarios de riesgo (2026-27)"
+    ]
+  },
+  {
     "objectID": "escenarios/index.html#medidas",
     "href": "escenarios/index.html#medidas",
     "title": "Escenarios de riesgo (2026-2027)",
