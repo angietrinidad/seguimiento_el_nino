@@ -494,7 +494,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">15 de agosto de 2026</p>
+      <p class="date">1 de septiembre de 2026</p>
     </div>
   </div>
   
@@ -512,7 +512,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="metodologia">Cómo se construyeron (metodología)</h2>
 <p>Cada escenario combina <strong>cuatro piezas</strong>, todas con fuente verificable:</p>
 <ol type="1">
-<li><p><strong>Pronóstico del episodio en curso.</strong> El estado y la probabilidad del El Niño 2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,2 °C, 81 % de probabilidad de categoría <em>muy fuerte</em> en octubre-diciembre de 2026, con primavera lluviosa y riesgo de crecidas <span class="citation" data-cites="noaa_enso_disc_2026 wmo_update_2026 abc_dmh_2026">(<a href="#ref-abc_dmh_2026" role="doc-biblioref">ABC Color, 2026</a>; <a href="#ref-noaa_enso_disc_2026" role="doc-biblioref">NOAA Climate Prediction Center, 2026</a>; <a href="#ref-wmo_update_2026" role="doc-biblioref">Organización Meteorológica Mundial, 2026</a>)</span>. El pronóstico fija la <strong>plausibilidad</strong> (qué tan esperable es cada escenario), no el número de afectados.</p></li>
+<li><p><strong>Pronóstico del episodio en curso.</strong> El estado y la probabilidad del El Niño 2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,4 °C, más del 90 % de probabilidad de categoría <em>muy fuerte</em> en el verano 2026-27 (69 % de un evento histórico en octubre-diciembre), con primavera lluviosa y riesgo de crecidas <span class="citation" data-cites="noaa_enso_disc_2026 wmo_update_2026 abc_dmh_2026">(<a href="#ref-abc_dmh_2026" role="doc-biblioref">ABC Color, 2026</a>; <a href="#ref-noaa_enso_disc_2026" role="doc-biblioref">NOAA Climate Prediction Center, 2026</a>; <a href="#ref-wmo_update_2026" role="doc-biblioref">Organización Meteorológica Mundial, 2026</a>)</span>. El pronóstico fija la <strong>plausibilidad</strong> (qué tan esperable es cada escenario), no el número de afectados.</p></li>
 <li><p><strong>Umbrales del río Paraguay en Asunción.</strong> La severidad se ordena por la <strong>cota</strong>, un dato objetivo de la DINAC: <strong>5,5 m</strong> marca la etapa crítica (inicio de afectación en zonas bajas); <strong>7,57 m</strong> fue el pico de la crecida de 2019; <strong>7,84 m</strong> el de 2015-16 <span class="citation" data-cites="floodlist_2016 muni_2019">(<a href="#ref-floodlist_2016" role="doc-biblioref">FloodList, 2016</a>; <a href="#ref-muni_2019" role="doc-biblioref">Municipalidad de Asunción — DGRRD, 2019</a>)</span>. Ver los <a href="../amenazas/inundacion-fluvial/index.html#umbrales">umbrales de referencia</a>.</p></li>
 <li><p><strong>Exposición modelada (¿quién está en la huella?).</strong> Para cada escenario fluvial se cruza la <strong>malla de población Kontur</strong> (H3, ~400 m) con la <strong>huella de inundación</strong> del episodio análogo —derivada por nosotros de imágenes <strong>Sentinel-1</strong>— más un <em>buffer</em> de ~550 m para barrios adyacentes, y se <strong>desagrega por edad</strong> aplicando la estructura etaria departamental (COD-PS 2023, niñez 0-14 y mayores 65+). Los servicios de <strong>salud</strong> (MSPBS) y <strong>educación</strong> (MEC) se cuentan por su ubicación oficial dentro de la huella. Es la <strong>misma metodología</strong> del <a href="../exposicion/index.html">mapa de exposición</a>; el script es <code>scripts/escenarios_poblacion.py</code>. Para el escenario <strong>pluvial</strong> no hay huella fluvial: la población proviene del <strong>corredor de susceptibilidad pluvial</strong> derivado del DEM (<code>analisis_pluvial_dem.py</code>, <em>buffer</em> 100 m).</p></li>
 <li><p><strong>Análogos históricos observados.</strong> Cada escenario se ata a un episodio ocurrido —2019 y 2015-16— del que existe un <strong>conteo oficial de afectación</strong> (familias o personas desplazadas), que se muestra junto a la exposición modelada como contraste.</p></li>
@@ -1461,321 +1461,322 @@ UNICEF. (2024). <em>UNICEF brinda asistencia psicosocial a niños y niñas afect
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Cada escenario combina **cuatro piezas**, todas con fuente verificable:</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Pronóstico del episodio en curso.** El estado y la probabilidad del El Niño</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>   2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,2 °C, 81 % de</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>   probabilidad de categoría *muy fuerte* en octubre-diciembre de 2026, con primavera</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>   lluviosa y riesgo de crecidas <span class="co">[</span><span class="ot">@noaa_enso_disc_2026; @wmo_update_2026; @abc_dmh_2026</span><span class="co">]</span>.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>   El pronóstico fija la **plausibilidad** (qué tan esperable es cada escenario), no el</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>   número de afectados.</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Umbrales del río Paraguay en Asunción.** La severidad se ordena por la **cota**,</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>   un dato objetivo de la DINAC: **5,5 m** marca la etapa crítica (inicio de afectación</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>   en zonas bajas); **7,57 m** fue el pico de la crecida de 2019; **7,84 m** el de</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>   2015-16 <span class="co">[</span><span class="ot">@floodlist_2016; @muni_2019</span><span class="co">]</span>. Ver los</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>   <span class="co">[</span><span class="ot">umbrales de referencia</span><span class="co">](../amenazas/inundacion-fluvial/index.qmd#umbrales)</span>.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Exposición modelada (¿quién está en la huella?).** Para cada escenario fluvial se</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>   cruza la **malla de población Kontur** (H3, ~400 m) con la **huella de inundación**</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>   del episodio análogo —derivada por nosotros de imágenes **Sentinel-1**— más un</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>   *buffer* de ~550 m para barrios adyacentes, y se **desagrega por edad** aplicando la</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>   estructura etaria departamental (COD-PS 2023, niñez 0-14 y mayores 65+). Los</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>   servicios de **salud** (MSPBS) y **educación** (MEC) se cuentan por su ubicación</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>   oficial dentro de la huella. Es la **misma metodología** del</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>   <span class="co">[</span><span class="ot">mapa de exposición</span><span class="co">](../exposicion/index.qmd)</span>; el script es</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>   <span class="in">`scripts/escenarios_poblacion.py`</span>. Para el escenario **pluvial** no hay huella</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>   fluvial: la población proviene del **corredor de susceptibilidad pluvial** derivado</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>   del DEM (<span class="in">`analisis_pluvial_dem.py`</span>, *buffer* 100 m).</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Análogos históricos observados.** Cada escenario se ata a un episodio ocurrido</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>   —2019 y 2015-16— del que existe un **conteo oficial de afectación** (familias o</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>   personas desplazadas), que se muestra junto a la exposición modelada como contraste.</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>**Qué es y qué no es cada cifra.** La **exposición modelada** cuenta la población que</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>*vive dentro de la huella* (un límite superior de personas potencialmente afectadas);</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>la **afectación observada** cuenta *desplazados reales* reportados por la autoridad.</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Miden cosas distintas y no son intercambiables. Además, las huellas Sentinel-1 son</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>**preliminares** (sin validación de campo), por lo que las cifras modeladas son</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>**órdenes de magnitud**, no conteos exactos.</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Los tres escenarios {#tabla}</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Escenario <span class="pp">|</span> Detonante hidroclimático <span class="pp">|</span> Qué pasaría en el Gran Asunción <span class="pp">|</span> Análogo histórico <span class="pp">|</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 · Esperado** *(más probable)* | Primavera-verano lluviosos con **temporales frecuentes**; el río sube pero se mantiene **bajo la etapa crítica** (&lt; 5,5 m) | Inundación **pluvial** recurrente: raudales y anegamientos en los puntos críticos, cortes de tránsito y energía, clases suspendidas por jornada; **dengue** de verano al alza <span class="pp">|</span> Temporal del 13-abr-2024 en Asunción y Central <span class="co">[</span><span class="ot">@lanacion_2024</span><span class="co">]</span> <span class="pp">|</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 · Severo** | Lluvias **sostenidas en la cuenca alta** → río a ~**7,5 m** (nivel de 2019) | Afectación **fluvial**: evacuación de bañados Norte y Sur y La Chacarita; escuelas y servicios de salud de la zona baja anegados; crecida y temporales se **combinan** | Crecida de 2019 (7,57 m; **14.823 familias** desplazadas) <span class="co">[</span><span class="ot">@muni_2019</span><span class="co">]</span> <span class="pp">|</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **3 · Extremo** | El Niño *muy fuerte* con río ≥ **7,84 m** y amenazas **encadenadas** | Desplazamiento **masivo**; tensión sobre los servicios; secuencia inundación → temporales → **dengue posinundación** | El Niño 2015-16 (7,84 m; **más de 21.000** desplazados) <span class="co">[</span><span class="ot">@floodlist_2016; @uh_desplazados_2015</span><span class="co">]</span> <span class="pp">|</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## Población expuesta, desagregada {#poblacion}</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Exposición **modelada** por escenario (población dentro de la huella, con niñez y</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>adultos mayores; establecimientos de salud y educación en la zona):</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tabla-poblacion</span></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>esc <span class="op">=</span> json.load(<span class="bu">open</span>(<span class="st">"datos/exposicion/escenarios_poblacion.json"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>))</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(n):</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>n<span class="sc">:,}</span><span class="ss">"</span>.replace(<span class="st">","</span>, <span class="st">"."</span>) <span class="cf">if</span> <span class="bu">isinstance</span>(n, <span class="bu">int</span>) <span class="cf">else</span> n</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>plu, sev, ext <span class="op">=</span> esc[<span class="st">"esperado_pluvial"</span>], esc[<span class="st">"severo"</span>], esc[<span class="st">"extremo"</span>]</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Markdown(<span class="ss">f"""</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">| Indicador | 1 · Esperado (pluvial) | 2 · Severo (~2019) | 3 · Extremo (~2015-16) |</span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">|---|---:|---:|---:|</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">| **Población en la huella** | **</span><span class="sc">{</span>f(plu[<span class="st">'poblacion'</span>])<span class="sc">}</span><span class="ss">** | **</span><span class="sc">{</span>f(sev[<span class="st">'poblacion'</span>])<span class="sc">}</span><span class="ss">** | **</span><span class="sc">{</span>f(ext[<span class="st">'poblacion'</span>])<span class="sc">}</span><span class="ss">** |</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">| — niñez (0-14) | s/d | </span><span class="sc">{</span>f(sev[<span class="st">'ninez'</span>])<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>f(ext[<span class="st">'ninez'</span>])<span class="sc">}</span><span class="ss"> |</span></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">| — adultos mayores (65+) | s/d | </span><span class="sc">{</span>f(sev[<span class="st">'mayores'</span>])<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>f(ext[<span class="st">'mayores'</span>])<span class="sc">}</span><span class="ss"> |</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">| Servicios de salud en la huella | </span><span class="sc">{</span>plu[<span class="st">'salud'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>sev[<span class="st">'salud'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>ext[<span class="st">'salud'</span>]<span class="sc">}</span><span class="ss"> |</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">| Centros educativos en la huella | </span><span class="sc">{</span>plu[<span class="st">'escuelas'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>sev[<span class="st">'escuelas'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>ext[<span class="st">'escuelas'</span>]<span class="sc">}</span><span class="ss"> |</span></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">| — matrícula en esos centros | s/d | </span><span class="sc">{</span>f(sev.get(<span class="st">'matricula'</span>, <span class="dv">0</span>))<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>f(ext.get(<span class="st">'matricula'</span>, <span class="dv">0</span>))<span class="sc">}</span><span class="ss"> |</span></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">| **Afectación observada (histórica)** | s/d | 14.823 familias | &gt; 21.000 personas |</span></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span>)</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>**Cómo leer la tabla.** La severidad se ordena por el **nivel del río** (5,5 &lt; 7,57 &lt;</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>7,84 m) y por la **afectación observada**, no por la cifra modelada: la huella</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>Sentinel-1 de 2018-19 abarca más área urbana poblada que la de 2015-16, por lo que</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>*captura* más población pese a que 2015-16 tuvo el pico más alto y más desplazados. Las</span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>dos cifras modeladas son del **mismo orden** (~35-40 mil) y caen dentro de la</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>incertidumbre del modelo. La niñez y los adultos mayores del escenario pluvial figuran</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>como <span class="in">`s/d`</span> porque el corredor DEM no se desagregó por edad.</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>Detalle de establecimientos (nombre, matrícula, distrito) en el</span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">mapa de exposición</span><span class="co">](../exposicion/index.qmd)</span> y sus planillas descargables.</span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="fu">## Afectación a escala nacional {#nacional}</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>El modelo anterior es del **Gran Asunción**. Pero la crecida del río Paraguay afecta a</span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>**muchos departamentos** a la vez. Para el nivel país no usamos nuestra huella satelital</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>(que cubre el corredor metropolitano), sino la **afectación oficial registrada** en los</span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>episodios análogos:</span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Escenario <span class="pp">|</span> Análogo <span class="pp">|</span> Afectación **nacional** <span class="pp">|</span> Departamentos <span class="pp">|</span></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 · Esperado** | Temporales de 2024 | **&gt; 1.500** familias (abr, pluvial) a **&gt; 2.700** familias (may, sur) <span class="co">[</span><span class="ot">@lanacion_2024; @infobae_sur2024</span><span class="co">]</span> <span class="pp">|</span> Central y Asunción; Ñeembucú y Misiones <span class="pp">|</span></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 · Severo** | Crecida de 2019 | **62.119 familias** (~273.000 personas) [@eldiario_sen2019; @shelterprojects_py2019] | **9**: Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay <span class="pp">|</span></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **3 · Extremo** | El Niño 2015-16 | **136.450 personas / 27.290 familias**; ≥130.000 evacuados [@ifrc_mdrpy018_2016] | **10 de 27** (emergencia en 7: Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central) <span class="pp">|</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>**Hallazgo: la magnitud nacional no sigue la intensidad del El Niño ni la cota en</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>Asunción.** La crecida de **2019** —con un El Niño **débil**— afectó a **más familias en</span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>el país** (62.119) que el El Niño **muy fuerte** de **2015-16** (27.290), porque lo que</span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>manda es **dónde y cuánto llueve en la cuenca alta**, no la fuerza del ENOS. Por eso el</span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>**escenario extremo** se define como el **peor caso compuesto**: el pico de cota más alto</span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>en Asunción (tipo 2015-16) coincidiendo con un alcance de cuenca amplio (tipo 2019 **o</span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>mayor**) y amenazas encadenadas. Es coherente con la tesis del sitio: el desastre se</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>**construye**, no lo fija el clima solo.</span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="al">![Departamentos con emergencia declarada por crecida y las ciudades ribereñas de los ríos Paraguay y Paraná que se inundan. El color distingue el escenario **severo** (crecida de 2019, SEN, 9 deptos), el **extremo** (El Niño 2015-16, emergencia en 7 deptos) y su solape.](../datos/geo/mapa-escenarios-nacional.png)</span>{#fig-nacional fig-alt="Mapa de Paraguay con los departamentos ribereños coloreados según afectación por crecida y las ciudades del corredor de los ríos Paraguay y Paraná (Bahía Negra, Fuerte Olimpo, Concepción, Villa Hayes, Asunción, Villeta, Alberdi, Pilar, Ayolas, Encarnación) marcadas como puntos." width="88%"}</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Localidades afectadas por escenario {#localidades}</span></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>Las **ciudades ribereñas** del corredor de los ríos Paraguay y Paraná son las que se</span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>inundan en cada crecida (de norte a sur): **Bahía Negra**, **Fuerte Olimpo** (Alto</span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>Paraguay), **Concepción**, **Villa Hayes**, **Asunción**, **Villeta**, **Alberdi**,</span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>**Pilar** (Ñeembucú), **Ayolas** (Misiones) y **Encarnación** (Itapúa, sobre el Paraná).</span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Escenario <span class="pp">|</span> Dónde afecta <span class="pp">|</span></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 · Esperado** (pluvial) | Puntos bajos urbanos de **Asunción** y **Central** (arroyos Mburicaó, Ferreira, Itay); en el análogo 2024, también el sur: **Pilar**, bajo **Ñeembucú**, **Misiones** <span class="pp">|</span></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 · Severo** (~2019) | **Gran Asunción:** Asunción (bañados **Norte** y **Sur**, **La Chacarita**), **Villeta**, **Limpio**, **Mariano Roque Alonso**; **Villa Hayes** y **José Falcón** (Pdte. Hayes). **País (9 deptos):** Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay <span class="pp">|</span></span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **3 · Extremo** (~2015-16 y mayor) | **Gran Asunción:** Asunción (bañados y La Chacarita; **124 albergues** en 2015-16) y Central. **País (10 deptos):** Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central — más el corredor ribereño (**Pilar**, **Alberdi**, **Fuerte Olimpo**) <span class="pp">|</span></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>Las localidades del Gran Asunción provienen de los establecimientos oficiales (MEC/MSPBS)</span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>dentro de la huella; las nacionales, de las declaraciones de emergencia de la SEN y del</span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>llamamiento de la Cruz Roja de cada episodio.</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>**¿Se puede llegar al conteo por ciudad?** Solo cuando la fuente oficial lo desglosa. Para</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>2015-16 y 2019 la SEN reportó por **departamento**; el único episodio reciente con conteo</span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>**por ciudad** es la crecida del sur de **mayo de 2024** (Ñeembucú y Misiones)</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@infobae_sur2024</span><span class="co">]</span>:</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Ciudad (departamento) <span class="pp">|</span> Familias afectadas <span class="pp">|</span></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---:|</span></span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> San Juan de Ñeembucú (Ñeembucú) <span class="pp">|</span> 961 <span class="pp">|</span></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tacuaras (Ñeembucú) <span class="pp">|</span> 649 <span class="pp">|</span></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Guazú Cuá (Ñeembucú) <span class="pp">|</span> 575 <span class="pp">|</span></span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pilar (Ñeembucú) <span class="pp">|</span> 510 <span class="pp">|</span></span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Villa Florida (Misiones) <span class="pp">|</span> 195 <span class="pp">|</span></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>Un conteo **por ciudad** para los grandes episodios (2015-16, 2019) **no está publicado**:</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>la SEN informa por departamento. Cerrarlo requeriría los registros por localidad de la SEN</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>o de las gobernaciones (bañado por bañado), hoy no accesibles como dato abierto.</span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu">## Daños, pérdidas y costo de respuesta {#costos}</span></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>En la metodología **DALA/PDNA de la CEPAL** se distinguen tres cosas: **daños** (acervos</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>destruidos: viviendas, escuelas, caminos), **pérdidas** (flujos que se dejan de producir:</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>cosechas, comercio, servicios) y **necesidades / costo de respuesta** (lo que cuesta</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>atender la emergencia). Aquí estimamos lo **acotable con fuente**; lo demás se marca como</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>vacío, no se inventa.</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">### Costo de respuesta (estimación paramétrica) {#costo-respuesta}</span></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>Se estima con un **costo unitario verificado**: el **kit de albergue + artículos de</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>primera necesidad** costó **USD 100 por hogar** (costo directo) a **USD 200 por hogar**</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>(costo total) en la respuesta a la inundación de Asunción 2019-20 <span class="co">[</span><span class="ot">@shelterprojects_py2019</span><span class="co">]</span>.</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>Multiplicado por las familias afectadas de cada escenario:</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: costo-respuesta</span></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="co"># familias afectadas (nacional) por escenario, de fuentes oficiales</span></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>esc <span class="op">=</span> [</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"1 · Esperado"</span>, (<span class="dv">1500</span>, <span class="dv">2700</span>), <span class="st">"Temporales 2024 (SEN vía prensa)"</span>),</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"2 · Severo"</span>,   (<span class="dv">62119</span>, <span class="dv">62119</span>), <span class="st">"Crecida 2019 (SEN)"</span>),</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"3 · Extremo"</span>,  (<span class="dv">27290</span>, <span class="dv">62119</span>), <span class="st">"2015-16 (piso) → ≥ 2019 (peor caso)"</span>),</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>UNIT <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">200</span>)  <span class="co"># USD por hogar, Shelter Projects Paraguay 2019-20</span></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> usd(n):</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>n<span class="op">/</span><span class="dv">1_000_000</span><span class="sc">:.2f}</span><span class="ss">"</span>.replace(<span class="st">"."</span>, <span class="st">","</span>)</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>filas <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> nombre, (flo, fhi), fuente <span class="kw">in</span> esc:</span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>    clo, chi <span class="op">=</span> flo <span class="op">*</span> UNIT[<span class="dv">0</span>], fhi <span class="op">*</span> UNIT[<span class="dv">1</span>]</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>    fam <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>flo<span class="sc">:,}</span><span class="ss">"</span>.replace(<span class="st">","</span>, <span class="st">"."</span>) <span class="cf">if</span> flo <span class="op">==</span> fhi <span class="cf">else</span> <span class="ss">f"</span><span class="sc">{</span>flo<span class="sc">:,}</span><span class="ss">–</span><span class="sc">{</span>fhi<span class="sc">:,}</span><span class="ss">"</span>.replace(<span class="st">","</span>, <span class="st">"."</span>)</span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>    filas <span class="op">+=</span> <span class="ss">f"| **</span><span class="sc">{</span>nombre<span class="sc">}</span><span class="ss">** | </span><span class="sc">{</span>fam<span class="sc">}</span><span class="ss"> | **USD </span><span class="sc">{</span>usd(clo)<span class="sc">}</span><span class="ss">–</span><span class="sc">{</span>usd(chi)<span class="sc">}</span><span class="ss"> M** | </span><span class="sc">{</span>fuente<span class="sc">}</span><span class="ss"> |</span><span class="ch">\n</span><span class="ss">"</span></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>Markdown(</span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="st">"| Escenario | Familias afectadas (nacional) | Costo directo de respuesta (kits, USD 100–200/hogar) | Base |</span><span class="ch">\n</span><span class="st">"</span></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="st">"|---|---:|---:|---|</span><span class="ch">\n</span><span class="st">"</span> <span class="op">+</span> filas)</span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>**Referencias de respuesta real** (para contrastar el orden de magnitud):</span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Llamamiento de la Cruz Roja 2015-16:** CHF **2.084.871** para 24.560 personas objetivo</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>  (≈ CHF 85/persona) <span class="co">[</span><span class="ot">@ifrc_mdrpy018_2016</span><span class="co">]</span>; en 2023, transferencia monetaria de **CHF 350</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>  por familia** <span class="co">[</span><span class="ot">@ifrc_mdrpy022_2023</span><span class="co">]</span>.</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Estado (SEN):** el Plan Financiero de la SEN del 1er semestre de 2015 fue de **G.</span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>  87.585 millones** (ejecutado G. 24.677 millones) <span class="co">[</span><span class="ot">@mef_sen2015</span><span class="co">]</span>.</span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reconstrucción:** el BID prestó **USD 35 millones** a Paraguay para reparar daños de</span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>  El Niño 2015-16 (caminos, drenaje, obras de protección, albergues) <span class="co">[</span><span class="ot">@bid_elnino2016</span><span class="co">]</span>.</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="fu">### Agricultura y ganadería {#agro}</span></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>La crecida no solo desplaza personas: anega **cultivos y ganado** en las mismas zonas</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>ribereñas. Lo expuesto por escenario (severo y extremo alcanzan estos departamentos):</span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ñeembucú (sur):** agricultura **familiar** y **ganadería** sobre la llanura de</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>  inundación. Es un caso de **riesgo construido**: los productores atribuyen la</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>  "**inundación artificial**" a los terraplenes y el represamiento de cauces de las</span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>  **grandes arroceras** (el arroz con riego llegó a **266.327 ha** en el país) —el pequeño</span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>  productor absorbe el costo de una infraestructura del agronegocio—</span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@abc_neembucu_arroceras2025; @cta_riadas2025</span><span class="co">]</span>.</span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Chaco (Pdte. Hayes, Alto Paraguay, Boquerón):** **ganadería extensiva** sobre campos</span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>  bajos; en abril de 2026 hubo **miles de vacunos en el agua** (el hato nacional ronda los</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>  **13 millones de cabezas**).</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Central y Gran Asunción:** **horticultura** periurbana y granjas anegadas.</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>Análisis completo de escalas, rubros y vulnerabilidad diferencial en</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Agricultura y ganadería</span><span class="co">](../agro-ganaderia/index.qmd)</span>.</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>**Monto del daño agropecuario por inundación: sin fuente.** No hay una evaluación que</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>cuantifique en dinero las pérdidas de cultivos y ganado por las crecidas de Paraguay. La</span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>cifra de **~USD 3.000 millones** que circula es de la **sequía** 2021/22 <span class="co">[</span><span class="ot">@lanacion_agro2022</span><span class="co">]</span></span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>—otra amenaza—, **no** de inundación: no se traslada. En el molde CEPAL (río Salado 2003)</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>la **agricultura y ganadería fue el mayor sector de daño** (USD 364 M de 1.028 M)</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@cepal_salado2018</span><span class="co">]</span>, lo que indica el peso probable del sector, no un monto para Paraguay.</span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="fu">### Daños y pérdidas monetarios {#danos-perdidas}</span></span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>**No se estiman en guaraníes/dólares: no existe fuente.** Tras la búsqueda (ago-2026)</span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>**no se localizó ninguna evaluación de daños y pérdidas (DALA) de la CEPAL o el Banco</span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>Mundial para una inundación de Paraguay**; el Perfil de Riesgo del BID (2018) tiene</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>pérdida anual esperada por inundación, pero su PDF está bloqueado. Poner un monto de</span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>daños o pérdidas para Paraguay sería **fabricarlo**. Lo que sí existe como **molde</span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>metodológico** es la evaluación CEPAL de una inundación análoga en la misma cuenca —el</span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>**río Salado, Santa Fe (Argentina), 2003: USD 1.028 millones, 35 % daños y 65 %</span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>pérdidas**, concentrados en agricultura/ganadería, industria/comercio y transporte</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@cepal_salado2018</span><span class="co">]</span>—, que indica **dónde** se concentraría el daño, no cuánto en</span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>Paraguay. Cerrar este vacío requiere una **evaluación DALA post-evento** o el acceso a la</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>pérdida anual esperada del Perfil BID.</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="fu">## Medidas por escenario {#medidas}</span></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>Las medidas siguen la lógica de la **acción anticipatoria**: actuar por</span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>**disparador** (el aviso, la cota) antes del impacto. Se detallan por fase y remiten a</span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>las <span class="co">[</span><span class="ot">recomendaciones por amenaza</span><span class="co">](../recomendaciones/index.qmd)</span> y a los</span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">protocolos de actuación</span><span class="co">](../recomendaciones/index.qmd)</span> del informe FACSO.</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escenario 1 · Esperado (pluvial) {#medidas-1}</span></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>*Disparador: aviso de temporal de la DINAC / acumulados intensos en minutos.*</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Anticipación.** Vigilar los avisos de la DINAC; mantener **desagües y bocas de</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>  tormenta limpios** y ordenar la **gestión de residuos** (los recipientes y la basura</span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>  taponan y crean criaderos); señalizar y difundir los **puntos críticos** de raudal</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@dgrrd_prevencion; @lanacion_puntos2025</span><span class="co">]</span>.</span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Respuesta.** Activar el **protocolo de suspensión de clases** por jornada; evitar</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>  circular por zonas de raudal; asistencia a personas atrapadas.</span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Recuperación.** **Control vectorial** preventivo del verano (eliminación de</span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>  criaderos, ante el riesgo de dengue con El Niño) <span class="co">[</span><span class="ot">@paho_dengue_action2024</span><span class="co">]</span>.</span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escenario 2 · Severo (crecida fluvial) {#medidas-2}</span></span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>*Disparador: cota del río en ascenso hacia la etapa crítica (5,5 m) y sostenida.*</span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Anticipación.** Activar el **plan de contingencia por inundación** de la SEN según</span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>  la cota; **preavisar y preparar la evacuación** de los bañados Norte y Sur y La</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>  Chacarita; asegurar **albergues** y agua segura; registrar a las familias expuestas</span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>  (unas **40 mil personas** en la huella, con ~7.700 niñas y niños)</span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@sen_plan_inund; @sen_plan2026</span><span class="co">]</span>.</span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Respuesta.** **Evacuación preventiva** a albergues; **continuidad educativa** para</span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>  las ~14 escuelas de la zona baja (aulas alternativas); **protección de los servicios</span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>  de salud** expuestos y de la cadena de frío; saneamiento y agua segura</span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@esfera; @unicef_py_inund</span><span class="co">]</span>.</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Recuperación.** Retorno seguro, rehabilitación de escuelas y centros de salud, y</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>  **control vectorial posinundación** (el agua estancada dispara el dengue).</span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escenario 3 · Extremo (crecida mayor + amenazas encadenadas) {#medidas-3}</span></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>*Disparador: cota ≥ 7,5 m y/o pronóstico de crecida excepcional en la cuenca alta.*</span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Anticipación.** Escala máxima de preparación: **declaración de emergencia** (existe</span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>  antecedente legal, Ley N.º 6502/2020) y **coordinación multinivel** (SEN, municipios,</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  salud, educación); logística de **albergues masivos** y reservas</span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@ley6502_2020; @sen_plan2026</span><span class="co">]</span>.</span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Respuesta.** Evacuación masiva; atención de salud con **vigilancia de brotes**</span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  (dengue, diarreas, respiratorias); **protección de la niñez** con apoyo psicosocial;</span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>  aseguramiento de agua y saneamiento a gran escala <span class="co">[</span><span class="ot">@unicef_py_inund; @esfera</span><span class="co">]</span>.</span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Recuperación.** Reconstrucción con criterio de **reducción de riesgo** (no volver a</span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>  exponer), control vectorial sostenido y acompañamiento a los medios de vida.</span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="fu">## Fuentes y límites {#fuentes}</span></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Pronóstico:** NOAA/CPC <span class="co">[</span><span class="ot">@noaa_enso_disc_2026</span><span class="co">]</span>, OMM <span class="co">[</span><span class="ot">@wmo_update_2026</span><span class="co">]</span>, DINAC/DMH</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@abc_dmh_2026</span><span class="co">]</span>.</span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Umbrales y análogos:** cotas y picos DINAC/press <span class="co">[</span><span class="ot">@floodlist_2016</span><span class="co">]</span>; afectación 2019</span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>  (Municipalidad de Asunción) <span class="co">[</span><span class="ot">@muni_2019</span><span class="co">]</span>; afectación 2015-16 (Última Hora / estimación</span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>  gubernamental) <span class="co">[</span><span class="ot">@uh_desplazados_2015</span><span class="co">]</span>.</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Exposición:** población Kontur (H3); estructura etaria COD-PS 2023; salud MSPBS;</span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>  educación MEC; huellas de inundación Sentinel-1 (este repositorio). Método en</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">Exposición</span><span class="co">](../exposicion/index.qmd)</span> y en <span class="in">`scripts/escenarios_poblacion.py`</span>.</span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>**Límites.** Las huellas Sentinel-1 son **preliminares** y no validadas en campo (ver el</span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">vacío de la capa de inundación</span><span class="co">](../amenazas/inundacion-fluvial/index.qmd#vacio-capa)</span>):</span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>las cifras modeladas son órdenes de magnitud. Falta una **capa oficial validada** de</span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>inundación por nivel del río que permita una curva población-vs-cota continua; y la</span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>desagregación por edad del escenario pluvial. La afectación observada y la exposición</span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>modelada **no son comparables** término a término (desplazados reales vs población en la</span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>huella).</span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>   2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,4 °C, más del</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>   90 % de probabilidad de categoría *muy fuerte* en el verano 2026-27 (69 % de un evento</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>   histórico en octubre-diciembre), con primavera lluviosa y riesgo de crecidas</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>   <span class="co">[</span><span class="ot">@noaa_enso_disc_2026; @wmo_update_2026; @abc_dmh_2026</span><span class="co">]</span>.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>   El pronóstico fija la **plausibilidad** (qué tan esperable es cada escenario), no el</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>   número de afectados.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Umbrales del río Paraguay en Asunción.** La severidad se ordena por la **cota**,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>   un dato objetivo de la DINAC: **5,5 m** marca la etapa crítica (inicio de afectación</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>   en zonas bajas); **7,57 m** fue el pico de la crecida de 2019; **7,84 m** el de</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>   2015-16 <span class="co">[</span><span class="ot">@floodlist_2016; @muni_2019</span><span class="co">]</span>. Ver los</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>   <span class="co">[</span><span class="ot">umbrales de referencia</span><span class="co">](../amenazas/inundacion-fluvial/index.qmd#umbrales)</span>.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Exposición modelada (¿quién está en la huella?).** Para cada escenario fluvial se</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>   cruza la **malla de población Kontur** (H3, ~400 m) con la **huella de inundación**</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>   del episodio análogo —derivada por nosotros de imágenes **Sentinel-1**— más un</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>   *buffer* de ~550 m para barrios adyacentes, y se **desagrega por edad** aplicando la</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>   estructura etaria departamental (COD-PS 2023, niñez 0-14 y mayores 65+). Los</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>   servicios de **salud** (MSPBS) y **educación** (MEC) se cuentan por su ubicación</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>   oficial dentro de la huella. Es la **misma metodología** del</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>   <span class="co">[</span><span class="ot">mapa de exposición</span><span class="co">](../exposicion/index.qmd)</span>; el script es</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>   <span class="in">`scripts/escenarios_poblacion.py`</span>. Para el escenario **pluvial** no hay huella</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>   fluvial: la población proviene del **corredor de susceptibilidad pluvial** derivado</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>   del DEM (<span class="in">`analisis_pluvial_dem.py`</span>, *buffer* 100 m).</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Análogos históricos observados.** Cada escenario se ata a un episodio ocurrido</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>   —2019 y 2015-16— del que existe un **conteo oficial de afectación** (familias o</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>   personas desplazadas), que se muestra junto a la exposición modelada como contraste.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>::: {.callout-important appearance="minimal"}</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>**Qué es y qué no es cada cifra.** La **exposición modelada** cuenta la población que</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>*vive dentro de la huella* (un límite superior de personas potencialmente afectadas);</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>la **afectación observada** cuenta *desplazados reales* reportados por la autoridad.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Miden cosas distintas y no son intercambiables. Además, las huellas Sentinel-1 son</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>**preliminares** (sin validación de campo), por lo que las cifras modeladas son</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>**órdenes de magnitud**, no conteos exactos.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Los tres escenarios {#tabla}</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Escenario <span class="pp">|</span> Detonante hidroclimático <span class="pp">|</span> Qué pasaría en el Gran Asunción <span class="pp">|</span> Análogo histórico <span class="pp">|</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 · Esperado** *(más probable)* | Primavera-verano lluviosos con **temporales frecuentes**; el río sube pero se mantiene **bajo la etapa crítica** (&lt; 5,5 m) | Inundación **pluvial** recurrente: raudales y anegamientos en los puntos críticos, cortes de tránsito y energía, clases suspendidas por jornada; **dengue** de verano al alza <span class="pp">|</span> Temporal del 13-abr-2024 en Asunción y Central <span class="co">[</span><span class="ot">@lanacion_2024</span><span class="co">]</span> <span class="pp">|</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 · Severo** | Lluvias **sostenidas en la cuenca alta** → río a ~**7,5 m** (nivel de 2019) | Afectación **fluvial**: evacuación de bañados Norte y Sur y La Chacarita; escuelas y servicios de salud de la zona baja anegados; crecida y temporales se **combinan** | Crecida de 2019 (7,57 m; **14.823 familias** desplazadas) <span class="co">[</span><span class="ot">@muni_2019</span><span class="co">]</span> <span class="pp">|</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **3 · Extremo** | El Niño *muy fuerte* con río ≥ **7,84 m** y amenazas **encadenadas** | Desplazamiento **masivo**; tensión sobre los servicios; secuencia inundación → temporales → **dengue posinundación** | El Niño 2015-16 (7,84 m; **más de 21.000** desplazados) <span class="co">[</span><span class="ot">@floodlist_2016; @uh_desplazados_2015</span><span class="co">]</span> <span class="pp">|</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Población expuesta, desagregada {#poblacion}</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>Exposición **modelada** por escenario (población dentro de la huella, con niñez y</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>adultos mayores; establecimientos de salud y educación en la zona):</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tabla-poblacion</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>esc <span class="op">=</span> json.load(<span class="bu">open</span>(<span class="st">"datos/exposicion/escenarios_poblacion.json"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>))</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(n):</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>n<span class="sc">:,}</span><span class="ss">"</span>.replace(<span class="st">","</span>, <span class="st">"."</span>) <span class="cf">if</span> <span class="bu">isinstance</span>(n, <span class="bu">int</span>) <span class="cf">else</span> n</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>plu, sev, ext <span class="op">=</span> esc[<span class="st">"esperado_pluvial"</span>], esc[<span class="st">"severo"</span>], esc[<span class="st">"extremo"</span>]</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Markdown(<span class="ss">f"""</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">| Indicador | 1 · Esperado (pluvial) | 2 · Severo (~2019) | 3 · Extremo (~2015-16) |</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">|---|---:|---:|---:|</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">| **Población en la huella** | **</span><span class="sc">{</span>f(plu[<span class="st">'poblacion'</span>])<span class="sc">}</span><span class="ss">** | **</span><span class="sc">{</span>f(sev[<span class="st">'poblacion'</span>])<span class="sc">}</span><span class="ss">** | **</span><span class="sc">{</span>f(ext[<span class="st">'poblacion'</span>])<span class="sc">}</span><span class="ss">** |</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">| — niñez (0-14) | s/d | </span><span class="sc">{</span>f(sev[<span class="st">'ninez'</span>])<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>f(ext[<span class="st">'ninez'</span>])<span class="sc">}</span><span class="ss"> |</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">| — adultos mayores (65+) | s/d | </span><span class="sc">{</span>f(sev[<span class="st">'mayores'</span>])<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>f(ext[<span class="st">'mayores'</span>])<span class="sc">}</span><span class="ss"> |</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">| Servicios de salud en la huella | </span><span class="sc">{</span>plu[<span class="st">'salud'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>sev[<span class="st">'salud'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>ext[<span class="st">'salud'</span>]<span class="sc">}</span><span class="ss"> |</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">| Centros educativos en la huella | </span><span class="sc">{</span>plu[<span class="st">'escuelas'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>sev[<span class="st">'escuelas'</span>]<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>ext[<span class="st">'escuelas'</span>]<span class="sc">}</span><span class="ss"> |</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">| — matrícula en esos centros | s/d | </span><span class="sc">{</span>f(sev.get(<span class="st">'matricula'</span>, <span class="dv">0</span>))<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>f(ext.get(<span class="st">'matricula'</span>, <span class="dv">0</span>))<span class="sc">}</span><span class="ss"> |</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">| **Afectación observada (histórica)** | s/d | 14.823 familias | &gt; 21.000 personas |</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span>)</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>**Cómo leer la tabla.** La severidad se ordena por el **nivel del río** (5,5 &lt; 7,57 &lt;</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>7,84 m) y por la **afectación observada**, no por la cifra modelada: la huella</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>Sentinel-1 de 2018-19 abarca más área urbana poblada que la de 2015-16, por lo que</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>*captura* más población pese a que 2015-16 tuvo el pico más alto y más desplazados. Las</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>dos cifras modeladas son del **mismo orden** (~35-40 mil) y caen dentro de la</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>incertidumbre del modelo. La niñez y los adultos mayores del escenario pluvial figuran</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>como <span class="in">`s/d`</span> porque el corredor DEM no se desagregó por edad.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Detalle de establecimientos (nombre, matrícula, distrito) en el</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">mapa de exposición</span><span class="co">](../exposicion/index.qmd)</span> y sus planillas descargables.</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="fu">## Afectación a escala nacional {#nacional}</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>El modelo anterior es del **Gran Asunción**. Pero la crecida del río Paraguay afecta a</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>**muchos departamentos** a la vez. Para el nivel país no usamos nuestra huella satelital</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>(que cubre el corredor metropolitano), sino la **afectación oficial registrada** en los</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>episodios análogos:</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Escenario <span class="pp">|</span> Análogo <span class="pp">|</span> Afectación **nacional** <span class="pp">|</span> Departamentos <span class="pp">|</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 · Esperado** | Temporales de 2024 | **&gt; 1.500** familias (abr, pluvial) a **&gt; 2.700** familias (may, sur) <span class="co">[</span><span class="ot">@lanacion_2024; @infobae_sur2024</span><span class="co">]</span> <span class="pp">|</span> Central y Asunción; Ñeembucú y Misiones <span class="pp">|</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 · Severo** | Crecida de 2019 | **62.119 familias** (~273.000 personas) [@eldiario_sen2019; @shelterprojects_py2019] | **9**: Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay <span class="pp">|</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **3 · Extremo** | El Niño 2015-16 | **136.450 personas / 27.290 familias**; ≥130.000 evacuados [@ifrc_mdrpy018_2016] | **10 de 27** (emergencia en 7: Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central) <span class="pp">|</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>**Hallazgo: la magnitud nacional no sigue la intensidad del El Niño ni la cota en</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Asunción.** La crecida de **2019** —con un El Niño **débil**— afectó a **más familias en</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>el país** (62.119) que el El Niño **muy fuerte** de **2015-16** (27.290), porque lo que</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>manda es **dónde y cuánto llueve en la cuenca alta**, no la fuerza del ENOS. Por eso el</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>**escenario extremo** se define como el **peor caso compuesto**: el pico de cota más alto</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>en Asunción (tipo 2015-16) coincidiendo con un alcance de cuenca amplio (tipo 2019 **o</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>mayor**) y amenazas encadenadas. Es coherente con la tesis del sitio: el desastre se</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>**construye**, no lo fija el clima solo.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="al">![Departamentos con emergencia declarada por crecida y las ciudades ribereñas de los ríos Paraguay y Paraná que se inundan. El color distingue el escenario **severo** (crecida de 2019, SEN, 9 deptos), el **extremo** (El Niño 2015-16, emergencia en 7 deptos) y su solape.](../datos/geo/mapa-escenarios-nacional.png)</span>{#fig-nacional fig-alt="Mapa de Paraguay con los departamentos ribereños coloreados según afectación por crecida y las ciudades del corredor de los ríos Paraguay y Paraná (Bahía Negra, Fuerte Olimpo, Concepción, Villa Hayes, Asunción, Villeta, Alberdi, Pilar, Ayolas, Encarnación) marcadas como puntos." width="88%"}</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## Localidades afectadas por escenario {#localidades}</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>Las **ciudades ribereñas** del corredor de los ríos Paraguay y Paraná son las que se</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>inundan en cada crecida (de norte a sur): **Bahía Negra**, **Fuerte Olimpo** (Alto</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>Paraguay), **Concepción**, **Villa Hayes**, **Asunción**, **Villeta**, **Alberdi**,</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>**Pilar** (Ñeembucú), **Ayolas** (Misiones) y **Encarnación** (Itapúa, sobre el Paraná).</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Escenario <span class="pp">|</span> Dónde afecta <span class="pp">|</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **1 · Esperado** (pluvial) | Puntos bajos urbanos de **Asunción** y **Central** (arroyos Mburicaó, Ferreira, Itay); en el análogo 2024, también el sur: **Pilar**, bajo **Ñeembucú**, **Misiones** <span class="pp">|</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **2 · Severo** (~2019) | **Gran Asunción:** Asunción (bañados **Norte** y **Sur**, **La Chacarita**), **Villeta**, **Limpio**, **Mariano Roque Alonso**; **Villa Hayes** y **José Falcón** (Pdte. Hayes). **País (9 deptos):** Pdte. Hayes, Central, San Pedro, Concepción, Cordillera, Capital, Ñeembucú, Boquerón, Alto Paraguay <span class="pp">|</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **3 · Extremo** (~2015-16 y mayor) | **Gran Asunción:** Asunción (bañados y La Chacarita; **124 albergues** en 2015-16) y Central. **País (10 deptos):** Concepción, San Pedro, Misiones, Ñeembucú, Amambay, Pdte. Hayes, Central — más el corredor ribereño (**Pilar**, **Alberdi**, **Fuerte Olimpo**) <span class="pp">|</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>Las localidades del Gran Asunción provienen de los establecimientos oficiales (MEC/MSPBS)</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>dentro de la huella; las nacionales, de las declaraciones de emergencia de la SEN y del</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>llamamiento de la Cruz Roja de cada episodio.</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>**¿Se puede llegar al conteo por ciudad?** Solo cuando la fuente oficial lo desglosa. Para</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>2015-16 y 2019 la SEN reportó por **departamento**; el único episodio reciente con conteo</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>**por ciudad** es la crecida del sur de **mayo de 2024** (Ñeembucú y Misiones)</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@infobae_sur2024</span><span class="co">]</span>:</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Ciudad (departamento) <span class="pp">|</span> Familias afectadas <span class="pp">|</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---:|</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> San Juan de Ñeembucú (Ñeembucú) <span class="pp">|</span> 961 <span class="pp">|</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tacuaras (Ñeembucú) <span class="pp">|</span> 649 <span class="pp">|</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Guazú Cuá (Ñeembucú) <span class="pp">|</span> 575 <span class="pp">|</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pilar (Ñeembucú) <span class="pp">|</span> 510 <span class="pp">|</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Villa Florida (Misiones) <span class="pp">|</span> 195 <span class="pp">|</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>Un conteo **por ciudad** para los grandes episodios (2015-16, 2019) **no está publicado**:</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>la SEN informa por departamento. Cerrarlo requeriría los registros por localidad de la SEN</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>o de las gobernaciones (bañado por bañado), hoy no accesibles como dato abierto.</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="fu">## Daños, pérdidas y costo de respuesta {#costos}</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>En la metodología **DALA/PDNA de la CEPAL** se distinguen tres cosas: **daños** (acervos</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>destruidos: viviendas, escuelas, caminos), **pérdidas** (flujos que se dejan de producir:</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>cosechas, comercio, servicios) y **necesidades / costo de respuesta** (lo que cuesta</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>atender la emergencia). Aquí estimamos lo **acotable con fuente**; lo demás se marca como</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>vacío, no se inventa.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="fu">### Costo de respuesta (estimación paramétrica) {#costo-respuesta}</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>Se estima con un **costo unitario verificado**: el **kit de albergue + artículos de</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>primera necesidad** costó **USD 100 por hogar** (costo directo) a **USD 200 por hogar**</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>(costo total) en la respuesta a la inundación de Asunción 2019-20 <span class="co">[</span><span class="ot">@shelterprojects_py2019</span><span class="co">]</span>.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>Multiplicado por las familias afectadas de cada escenario:</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: costo-respuesta</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="co"># familias afectadas (nacional) por escenario, de fuentes oficiales</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>esc <span class="op">=</span> [</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"1 · Esperado"</span>, (<span class="dv">1500</span>, <span class="dv">2700</span>), <span class="st">"Temporales 2024 (SEN vía prensa)"</span>),</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"2 · Severo"</span>,   (<span class="dv">62119</span>, <span class="dv">62119</span>), <span class="st">"Crecida 2019 (SEN)"</span>),</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"3 · Extremo"</span>,  (<span class="dv">27290</span>, <span class="dv">62119</span>), <span class="st">"2015-16 (piso) → ≥ 2019 (peor caso)"</span>),</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>UNIT <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">200</span>)  <span class="co"># USD por hogar, Shelter Projects Paraguay 2019-20</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> usd(n):</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>n<span class="op">/</span><span class="dv">1_000_000</span><span class="sc">:.2f}</span><span class="ss">"</span>.replace(<span class="st">"."</span>, <span class="st">","</span>)</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>filas <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> nombre, (flo, fhi), fuente <span class="kw">in</span> esc:</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>    clo, chi <span class="op">=</span> flo <span class="op">*</span> UNIT[<span class="dv">0</span>], fhi <span class="op">*</span> UNIT[<span class="dv">1</span>]</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>    fam <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>flo<span class="sc">:,}</span><span class="ss">"</span>.replace(<span class="st">","</span>, <span class="st">"."</span>) <span class="cf">if</span> flo <span class="op">==</span> fhi <span class="cf">else</span> <span class="ss">f"</span><span class="sc">{</span>flo<span class="sc">:,}</span><span class="ss">–</span><span class="sc">{</span>fhi<span class="sc">:,}</span><span class="ss">"</span>.replace(<span class="st">","</span>, <span class="st">"."</span>)</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>    filas <span class="op">+=</span> <span class="ss">f"| **</span><span class="sc">{</span>nombre<span class="sc">}</span><span class="ss">** | </span><span class="sc">{</span>fam<span class="sc">}</span><span class="ss"> | **USD </span><span class="sc">{</span>usd(clo)<span class="sc">}</span><span class="ss">–</span><span class="sc">{</span>usd(chi)<span class="sc">}</span><span class="ss"> M** | </span><span class="sc">{</span>fuente<span class="sc">}</span><span class="ss"> |</span><span class="ch">\n</span><span class="ss">"</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>Markdown(</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="st">"| Escenario | Familias afectadas (nacional) | Costo directo de respuesta (kits, USD 100–200/hogar) | Base |</span><span class="ch">\n</span><span class="st">"</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="st">"|---|---:|---:|---|</span><span class="ch">\n</span><span class="st">"</span> <span class="op">+</span> filas)</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>**Referencias de respuesta real** (para contrastar el orden de magnitud):</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Llamamiento de la Cruz Roja 2015-16:** CHF **2.084.871** para 24.560 personas objetivo</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>  (≈ CHF 85/persona) <span class="co">[</span><span class="ot">@ifrc_mdrpy018_2016</span><span class="co">]</span>; en 2023, transferencia monetaria de **CHF 350</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>  por familia** <span class="co">[</span><span class="ot">@ifrc_mdrpy022_2023</span><span class="co">]</span>.</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Estado (SEN):** el Plan Financiero de la SEN del 1er semestre de 2015 fue de **G.</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>  87.585 millones** (ejecutado G. 24.677 millones) <span class="co">[</span><span class="ot">@mef_sen2015</span><span class="co">]</span>.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reconstrucción:** el BID prestó **USD 35 millones** a Paraguay para reparar daños de</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>  El Niño 2015-16 (caminos, drenaje, obras de protección, albergues) <span class="co">[</span><span class="ot">@bid_elnino2016</span><span class="co">]</span>.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="fu">### Agricultura y ganadería {#agro}</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>La crecida no solo desplaza personas: anega **cultivos y ganado** en las mismas zonas</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>ribereñas. Lo expuesto por escenario (severo y extremo alcanzan estos departamentos):</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ñeembucú (sur):** agricultura **familiar** y **ganadería** sobre la llanura de</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>  inundación. Es un caso de **riesgo construido**: los productores atribuyen la</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>  "**inundación artificial**" a los terraplenes y el represamiento de cauces de las</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>  **grandes arroceras** (el arroz con riego llegó a **266.327 ha** en el país) —el pequeño</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>  productor absorbe el costo de una infraestructura del agronegocio—</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">prensa</span><span class="co">]</span>{.badge-prensa} <span class="co">[</span><span class="ot">@abc_neembucu_arroceras2025; @cta_riadas2025</span><span class="co">]</span>.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Chaco (Pdte. Hayes, Alto Paraguay, Boquerón):** **ganadería extensiva** sobre campos</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>  bajos; en abril de 2026 hubo **miles de vacunos en el agua** (el hato nacional ronda los</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>  **13 millones de cabezas**).</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Central y Gran Asunción:** **horticultura** periurbana y granjas anegadas.</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>Análisis completo de escalas, rubros y vulnerabilidad diferencial en</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Agricultura y ganadería</span><span class="co">](../agro-ganaderia/index.qmd)</span>.</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>**Monto del daño agropecuario por inundación: sin fuente.** No hay una evaluación que</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>cuantifique en dinero las pérdidas de cultivos y ganado por las crecidas de Paraguay. La</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>cifra de **~USD 3.000 millones** que circula es de la **sequía** 2021/22 <span class="co">[</span><span class="ot">@lanacion_agro2022</span><span class="co">]</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>—otra amenaza—, **no** de inundación: no se traslada. En el molde CEPAL (río Salado 2003)</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>la **agricultura y ganadería fue el mayor sector de daño** (USD 364 M de 1.028 M)</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@cepal_salado2018</span><span class="co">]</span>, lo que indica el peso probable del sector, no un monto para Paraguay.</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="fu">### Daños y pérdidas monetarios {#danos-perdidas}</span></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>**No se estiman en guaraníes/dólares: no existe fuente.** Tras la búsqueda (ago-2026)</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>**no se localizó ninguna evaluación de daños y pérdidas (DALA) de la CEPAL o el Banco</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>Mundial para una inundación de Paraguay**; el Perfil de Riesgo del BID (2018) tiene</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>pérdida anual esperada por inundación, pero su PDF está bloqueado. Poner un monto de</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>daños o pérdidas para Paraguay sería **fabricarlo**. Lo que sí existe como **molde</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>metodológico** es la evaluación CEPAL de una inundación análoga en la misma cuenca —el</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>**río Salado, Santa Fe (Argentina), 2003: USD 1.028 millones, 35 % daños y 65 %</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>pérdidas**, concentrados en agricultura/ganadería, industria/comercio y transporte</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@cepal_salado2018</span><span class="co">]</span>—, que indica **dónde** se concentraría el daño, no cuánto en</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>Paraguay. Cerrar este vacío requiere una **evaluación DALA post-evento** o el acceso a la</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>pérdida anual esperada del Perfil BID.</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="fu">## Medidas por escenario {#medidas}</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>Las medidas siguen la lógica de la **acción anticipatoria**: actuar por</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>**disparador** (el aviso, la cota) antes del impacto. Se detallan por fase y remiten a</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>las <span class="co">[</span><span class="ot">recomendaciones por amenaza</span><span class="co">](../recomendaciones/index.qmd)</span> y a los</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">protocolos de actuación</span><span class="co">](../recomendaciones/index.qmd)</span> del informe FACSO.</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escenario 1 · Esperado (pluvial) {#medidas-1}</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>*Disparador: aviso de temporal de la DINAC / acumulados intensos en minutos.*</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Anticipación.** Vigilar los avisos de la DINAC; mantener **desagües y bocas de</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>  tormenta limpios** y ordenar la **gestión de residuos** (los recipientes y la basura</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>  taponan y crean criaderos); señalizar y difundir los **puntos críticos** de raudal</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@dgrrd_prevencion; @lanacion_puntos2025</span><span class="co">]</span>.</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Respuesta.** Activar el **protocolo de suspensión de clases** por jornada; evitar</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>  circular por zonas de raudal; asistencia a personas atrapadas.</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Recuperación.** **Control vectorial** preventivo del verano (eliminación de</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>  criaderos, ante el riesgo de dengue con El Niño) <span class="co">[</span><span class="ot">@paho_dengue_action2024</span><span class="co">]</span>.</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escenario 2 · Severo (crecida fluvial) {#medidas-2}</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>*Disparador: cota del río en ascenso hacia la etapa crítica (5,5 m) y sostenida.*</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Anticipación.** Activar el **plan de contingencia por inundación** de la SEN según</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>  la cota; **preavisar y preparar la evacuación** de los bañados Norte y Sur y La</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>  Chacarita; asegurar **albergues** y agua segura; registrar a las familias expuestas</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>  (unas **40 mil personas** en la huella, con ~7.700 niñas y niños)</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@sen_plan_inund; @sen_plan2026</span><span class="co">]</span>.</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Respuesta.** **Evacuación preventiva** a albergues; **continuidad educativa** para</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>  las ~14 escuelas de la zona baja (aulas alternativas); **protección de los servicios</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>  de salud** expuestos y de la cadena de frío; saneamiento y agua segura</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@esfera; @unicef_py_inund</span><span class="co">]</span>.</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Recuperación.** Retorno seguro, rehabilitación de escuelas y centros de salud, y</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>  **control vectorial posinundación** (el agua estancada dispara el dengue).</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="fu">### Escenario 3 · Extremo (crecida mayor + amenazas encadenadas) {#medidas-3}</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>*Disparador: cota ≥ 7,5 m y/o pronóstico de crecida excepcional en la cuenca alta.*</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Anticipación.** Escala máxima de preparación: **declaración de emergencia** (existe</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  antecedente legal, Ley N.º 6502/2020) y **coordinación multinivel** (SEN, municipios,</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  salud, educación); logística de **albergues masivos** y reservas</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@ley6502_2020; @sen_plan2026</span><span class="co">]</span>.</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Respuesta.** Evacuación masiva; atención de salud con **vigilancia de brotes**</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>  (dengue, diarreas, respiratorias); **protección de la niñez** con apoyo psicosocial;</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>  aseguramiento de agua y saneamiento a gran escala <span class="co">[</span><span class="ot">@unicef_py_inund; @esfera</span><span class="co">]</span>.</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Recuperación.** Reconstrucción con criterio de **reducción de riesgo** (no volver a</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>  exponer), control vectorial sostenido y acompañamiento a los medios de vida.</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="fu">## Fuentes y límites {#fuentes}</span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Pronóstico:** NOAA/CPC <span class="co">[</span><span class="ot">@noaa_enso_disc_2026</span><span class="co">]</span>, OMM <span class="co">[</span><span class="ot">@wmo_update_2026</span><span class="co">]</span>, DINAC/DMH</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">@abc_dmh_2026</span><span class="co">]</span>.</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Umbrales y análogos:** cotas y picos DINAC/press <span class="co">[</span><span class="ot">@floodlist_2016</span><span class="co">]</span>; afectación 2019</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>  (Municipalidad de Asunción) <span class="co">[</span><span class="ot">@muni_2019</span><span class="co">]</span>; afectación 2015-16 (Última Hora / estimación</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>  gubernamental) <span class="co">[</span><span class="ot">@uh_desplazados_2015</span><span class="co">]</span>.</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Exposición:** población Kontur (H3); estructura etaria COD-PS 2023; salud MSPBS;</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>  educación MEC; huellas de inundación Sentinel-1 (este repositorio). Método en</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">Exposición</span><span class="co">](../exposicion/index.qmd)</span> y en <span class="in">`scripts/escenarios_poblacion.py`</span>.</span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>::: {.vacio}</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>**Límites.** Las huellas Sentinel-1 son **preliminares** y no validadas en campo (ver el</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">vacío de la capa de inundación</span><span class="co">](../amenazas/inundacion-fluvial/index.qmd#vacio-capa)</span>):</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>las cifras modeladas son órdenes de magnitud. Falta una **capa oficial validada** de</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>inundación por nivel del río que permita una curva población-vs-cota continua; y la</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>desagregación por edad del escenario pluvial. La afectación observada y la exposición</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>modelada **no son comparables** término a término (desplazados reales vs población en la</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>huella).</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>:::</span>
 </code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
