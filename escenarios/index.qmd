@@ -21,9 +21,10 @@ ocurridos** que funcionan como análogos.
 Cada escenario combina **cuatro piezas**, todas con fuente verificable:
 
 1. **Pronóstico del episodio en curso.** El estado y la probabilidad del El Niño
-   2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,2 °C, 81 % de
-   probabilidad de categoría *muy fuerte* en octubre-diciembre de 2026, con primavera
-   lluviosa y riesgo de crecidas [@noaa_enso_disc_2026; @wmo_update_2026; @abc_dmh_2026].
+   2026-27 provienen de NOAA/CPC, la OMM y la DINAC/DMH: Niño 3.4 en +1,4 °C, más del
+   90 % de probabilidad de categoría *muy fuerte* en el verano 2026-27 (69 % de un evento
+   histórico en octubre-diciembre), con primavera lluviosa y riesgo de crecidas
+   [@noaa_enso_disc_2026; @wmo_update_2026; @abc_dmh_2026].
    El pronóstico fija la **plausibilidad** (qué tan esperable es cada escenario), no el
    número de afectados.
 

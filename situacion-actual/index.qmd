@@ -10,12 +10,12 @@ de la población. Para el registro de episodios pasados, ver
 [Antecedentes históricos](../amenazas/inundacion-fluvial/index.qmd).
 
 ::: {.callout-important}
-## Estado al día (7 de agosto de 2026)
+## Estado al día (1 de septiembre de 2026)
 **El Niño en curso y en fortalecimiento.** NOAA/CPC mantiene el **Aviso de El Niño**:
-según el último boletín (9-jul-2026, el de agosto se emite a mediados de mes) el
-Niño 3.4 está en **+1,2 °C**, con **97 %** de probabilidad de persistir hasta inicios
-de 2027 y **81 %** de alcanzar categoría *muy fuerte* en octubre-diciembre de 2026
-[@noaa_enso_disc_2026]. En Paraguay, el Gobierno se prepara para un El Niño de
+según el último boletín (13-ago-2026) el Niño 3.4 subió a **+1,4 °C** (valores de julio),
+con **más del 90 %** de probabilidad de alcanzar categoría *muy fuerte* en el verano boreal
+2026-27 y un **69 %** de que octubre-diciembre sea un evento **histórico** —el mayor desde
+1950 (RONI ≥ +2,5 °C)— [@noaa_enso_disc_2026]. En Paraguay, el Gobierno se prepara para un El Niño de
 **"fuerte intensidad"** entre **agosto de 2026 y marzo de 2027**, con lluvias intensas
 y crecidas de los ríos [@infobae_nino_fuerte2026]; la DINAC prevé **precipitaciones por
 encima del promedio** hacia la primavera [@abc_dmh_2026].
@@ -148,7 +148,7 @@ que depende de la intensidad en minutos: ver la
 
 | Autoridad | Diagnóstico (mediados de 2026) |
 |---|---|
-| **NOAA/CPC** | Aviso de El Niño; Niño 3.4 +1,2 °C; 81 % *muy fuerte* en oct-dic [@noaa_enso_disc_2026] |
+| **NOAA/CPC** | Aviso de El Niño; Niño 3.4 +1,4 °C; >90 % *muy fuerte* (verano 2026-27); 69 % evento histórico en oct-dic [@noaa_enso_disc_2026] |
 | **IRI (Columbia)** | ~100 % de probabilidad de El Niño hasta fin de 2026 [@iri_enso_2026] |
 | **OMM** | 80 % para jun-ago 2026, ≥90 % en los trimestres siguientes [@wmo_update_2026] |
 

@@ -1,49 +1,49 @@
 {
   "fuente": "DINAC (meteorologia.gov.py/nivel-rio)",
-  "fecha": "07-08-2026",
+  "fecha": "01-09-2026",
   "critica_asuncion_m": 5.5,
   "estaciones": [
     {
       "nombre": "Concepción",
-      "fecha": "07-08-2026",
-      "nivel_m": 2.27,
-      "cambio_cm": 3
+      "fecha": "01-09-2026",
+      "nivel_m": 1.97,
+      "cambio_cm": -3
     },
     {
       "nombre": "Fuerte Olimpo",
-      "fecha": "07-08-2026",
-      "nivel_m": 4.13,
-      "cambio_cm": 0
+      "fecha": "01-09-2026",
+      "nivel_m": 3.79,
+      "cambio_cm": -1
     },
     {
       "nombre": "Isla Margarita",
-      "fecha": "07-08-2026",
-      "nivel_m": 3.18,
+      "fecha": "01-09-2026",
+      "nivel_m": 2.94,
       "cambio_cm": 0
     },
     {
       "nombre": "Asunción",
-      "fecha": "07-08-2026",
-      "nivel_m": 1.54,
+      "fecha": "01-09-2026",
+      "nivel_m": 0.88,
       "cambio_cm": -2
     },
     {
       "nombre": "Villeta",
-      "fecha": "07-08-2026",
-      "nivel_m": 1.99,
-      "cambio_cm": -4
+      "fecha": "01-09-2026",
+      "nivel_m": 1.26,
+      "cambio_cm": -2
     },
     {
       "nombre": "Alberdi",
-      "fecha": "07-08-2026",
-      "nivel_m": 3.47,
-      "cambio_cm": -1
+      "fecha": "01-09-2026",
+      "nivel_m": 2.38,
+      "cambio_cm": -3
     },
     {
       "nombre": "Pilar",
-      "fecha": "07-08-2026",
-      "nivel_m": 3.58,
-      "cambio_cm": -5
+      "fecha": "01-09-2026",
+      "nivel_m": 2.59,
+      "cambio_cm": -6
     }
   ]
 }
